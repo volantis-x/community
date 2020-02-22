@@ -12,7 +12,7 @@ links:
 通常来说，一个全新的工程全部使用默认配置是正常没有故障的。
 :::
 
-[<i class='fas fa-play-circle'></i> 示例博客1](https://xaoxuu) &nbsp;&nbsp;&nbsp; [<i class='fas fa-play-circle'></i> 示例博客2](https://mxclub.github.io)
+[<i class='fas fa-play-circle'></i> 示例博客1](https://xaoxuu.com) &nbsp;&nbsp;&nbsp; [<i class='fas fa-play-circle'></i> 示例博客2](https://mxclub.github.io)
 
 如果无法使用或者效果与示例有较大区别，可以使用hexo官方提供的用于单元测试的博客应用本主题查看样式是否正常，对比 `_config.yml` 文件排查问题。
 
