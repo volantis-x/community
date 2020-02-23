@@ -1,7 +1,7 @@
 ---
 layout: page
 group: docs
-title: 站点配置
+title: Site Settings「站点配置」
 cover: false
 links:
   repo: https://github.com/xaoxuu/hexo-theme-volantis

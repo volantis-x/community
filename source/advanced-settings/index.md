@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 进阶设定
+title: Advanced Settings「进阶设定」
 cover: false
 links:
   repo: https://github.com/xaoxuu/hexo-theme-volantis

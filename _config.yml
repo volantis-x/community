@@ -15,7 +15,7 @@ timezone: ''
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://xaoxuu.com/wiki/volantis
 root: /wiki/volantis/
-permalink: :title/
+permalink: news/:title/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -25,7 +25,7 @@ pretty_urls:
 source_dir: source
 public_dir: public
 tag_dir: tags
-archive_dir: archives
+archive_dir: news/archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang

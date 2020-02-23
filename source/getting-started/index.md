@@ -1,7 +1,7 @@
 ---
 layout: page
 group: docs
-title: 开始使用
+title: Getting Started「开始使用」
 cover: false
 meta:
   header: []

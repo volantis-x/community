@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 鸣谢
+title: Contributors「鸣谢」
 links:
   repo: https://github.com/xaoxuu/hexo-theme-volantis
   bug: https://github.com/xaoxuu/hexo-theme-volantis/issues/new?assignees=&labels=BUG&template=bug-report.md

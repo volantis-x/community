@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 常见问题
+title: FAQ「常见问题」
 links:
   repo: https://github.com/xaoxuu/hexo-theme-volantis
   bug: https://github.com/xaoxuu/hexo-theme-volantis/issues/new?assignees=&labels=BUG&template=bug-report.md
