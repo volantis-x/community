@@ -3,6 +3,8 @@ layout: page
 group: docs
 title: Theme Settings「主题配置」
 cover: false
+meta:
+  header: [title, author, updated]
 links:
   repo: https://github.com/xaoxuu/hexo-theme-volantis
   bug: https://github.com/xaoxuu/hexo-theme-volantis/issues/new?assignees=&labels=BUG&template=bug-report.md

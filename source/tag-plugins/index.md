@@ -3,6 +3,8 @@ layout: page
 group: docs
 title: Tag Plugins「内建标签」
 cover: false
+meta:
+  header: [title, author, updated]
 mathjax: true
 links:
   repo: https://github.com/xaoxuu/hexo-theme-volantis
