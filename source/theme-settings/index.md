@@ -24,8 +24,9 @@ readmore: true
 ```yaml 主题配置文件
 backstretch:
   position: background  # cover: 封面背景   background: 整个网页背景
-  duration: 6000        # 持续时间（毫秒）
+  duration: 10000       # 持续时间（毫秒）
   fade: 2500            # 渐变（毫秒）
+  is_dark: # true       # 图片是否是暗色的（调整文字为白色）
   images:
     - https://i.loli.net/2020/02/08/HNuVoted2mUxILl.jpg
     # - https://i.loli.net/2020/02/08/dNJyR4LHtarTqPu.jpg
@@ -33,8 +34,10 @@ backstretch:
     # - https://i.loli.net/2020/02/08/RP7JpGvWaCYfuB6.jpg
 ```
 
-::: info
-images中设置多个图片即自动循环播放。
+::: success
+**建议：**
+- 要么全部使用浅色图片。
+- 要么全部使用深色图片，然后上方 `is_dark: true`，然后前往 `source/less/_color.less` 文件中把 `@theme_background:` 设置为深色。
 :::
 
 ## 设置封面
@@ -129,7 +132,7 @@ navbar:
 ```
 
 
-其中 icon 是 `fontawesome` 图标名，你要显示什么图标，去 [fontawesome.com](https://fontawesome.com/icons?d=gallery&m=free) 找免费版的就可以了。
+其中 `icon` 是 `fontawesome` 图标名，你要显示什么图标，去 [fontawesome.com](https://fontawesome.com/icons?d=gallery&m=free) 找免费版的就可以了。
 
 
 ## 毛玻璃与卡片阴影 <sup class='blue'>^1.5</sup>
@@ -203,7 +206,7 @@ layout:
   # 其他的页面布局暂时等于文章列表
 ```
 
-其中 `meta`、`meta.header`、`meta.footer` 从 [Meta库](#Meta库) 中选取，其他字段值均从 [组件库](#组件库) 中选取。
+其中 `meta`、`meta.header`、`meta.footer` 从 <btn>[Meta库](#Meta库)</btn> 中选取，其他字段值均从 <btn>[组件库](#组件库)</btn> 中选取。
 
 
 ## Meta库

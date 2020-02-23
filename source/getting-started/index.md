@@ -15,7 +15,7 @@ links:
 
 <center>
 <p class='large'>Volantis</p>
-<b style='font-size:.8em;color:#666'>A Wonderful Theme for Hexo 4.2+</b>
+<b style='font-size:.9em;color:#666'>A Wonderful Theme for Hexo 4.2+</b>
 </center>
 <br>
 
@@ -50,7 +50,7 @@ Volantis（原名 Material X），一个高度模块化和可定制化、功能�
 
 ### 手动安装
 
-1. 下载 [主题源码](https://github.com/xaoxuu/hexo-theme-volantis) 到 `themes/` 文件夹：
+1. 下载 <btn>[主题源码](https://github.com/xaoxuu/hexo-theme-volantis)</btn> 到 `themes/` 文件夹：
 ```sh
 git clone https://github.com/xaoxuu/hexo-theme-volantis themes/volantis
 ```
@@ -62,7 +62,7 @@ npm i -S hexo-generator-search hexo-generator-json-content hexo-renderer-less
 
 ## 许可协议
 
-本主题采用<btn>[MIT开源许可协议](https://cdn.jsdelivr.net/gh/xaoxuu/hexo-theme-volantis/LICENSE)</btn>，永久无限制免费使用。
+本主题采用 <btn>[MIT开源许可协议](https://cdn.jsdelivr.net/gh/xaoxuu/hexo-theme-volantis/LICENSE)</btn> ，永久无限制免费使用。
 
 > **MIT开源许可协议**
 > 被授权人有权利使用、复制、修改、合并、出版发行、散布、再授权及贩售软件及软件的副本。

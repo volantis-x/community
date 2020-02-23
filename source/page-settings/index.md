@@ -23,9 +23,17 @@ links:
 | links | 友链页面 |
 | list | 列表页面（类似于首页的文章列表） |
 
-## Front-matter
+## front-matter
 
-Front-matter 是文件最上方以 `---` 分隔的区域，用于指定个别文件的变量。【详见官方文档】
+front-matter 是文件最上方以 `---` 分隔的区域，用于指定个别文件的变量。
+
+
+{% raw %}
+<details>
+<summary>
+查看全部取值
+</summary>
+{% endraw %}
 
 | 字段        | 含义         | 值类型        | 默认值 |
 | ----------- | ------------ | ------------- | ------ |
@@ -34,28 +42,28 @@ Front-matter 是文件最上方以 `---` 分隔的区域，用于指定个别文
 | date        | 创建时间     | Date          | 文件创建时间 |
 | updated     | 更新日期     | Date          | 文件修改时间 |
 | permalink   | 覆盖文章网址 | String        | -      |
-| music       | 内部音乐控件 | 详见【music】 | -      |
+| music       | 内部音乐控件 | [Object] | -      |
 | keywords    | 页面关键词   | String        | -      |
 | description | 页面描述、摘要     | String        | -      |
 | cover | 是否显示封面     | Bool        | true      |
 | meta | 文章或页面的meta信息     | Bool, Array        | theme.layout.*.meta      |
 | sidebar | 页面侧边栏     | Bool, Array        | theme.layout.*.sidebar      |
 | body | 页面主体元素     | Array        | theme.layout.on_page.body      |
-
-**layout=post时特有的字段：**
-
-| 字段              | 含义         | 值类型        | 默认值 |
-| ----------------- | ------------ | ------------- | ------ |
-| author            | 文章作者     | -        | config.author      |
-| categories        | 分类         | String, Array | -      |
-| tags               | 标签         | String, Array | -      |
-| toc               | 是否生成目录 | Bool          | true   |
 | mathjax           | 是否渲染公式 | Bool, String  | false  |
-| top           | 是否置顶 | Bool  | false  |
 | thumbnail           | 缩略图 | String | false  |
 | icons           | 图标 | Array | []  |
 
-**author**
+`layout:post` 时特有的字段：
+
+| 字段              | 含义         | 值类型        | 默认值 |
+| ----------------- | ------------ | ------------- | ------ |
+| author            | 文章作者     | [Object]        | config.author      |
+| categories        | 分类         | String, Array | -      |
+| tags               | 标签         | String, Array | -      |
+| toc               | 是否生成目录 | Bool          | true   |
+| top           | 是否置顶 | Bool  | false  |
+
+author
 
 | 字段              | 含义         | 值类型        | 默认值 |
 | ----------------- | ------------ | ------------- | ------ |
@@ -63,8 +71,17 @@ Front-matter 是文件最上方以 `---` 分隔的区域，用于指定个别文
 | avatar        | 头像         | String | config.avatar      |
 | url               | 链接         | String | config.url      |
 
+music
 
-> 更多请见Hexo官方文档：[front-matter](https://hexo.io/zh-cn/docs/front-matter)
+| 字段              | 是否必须         | 值类型      |
+| ----------------- | ------------ | ----------------- |
+| server            | 是     | netease, tencent, kugou, xiami, baidu           |
+| type        | 是         | song, playlist, album, search, artist  |
+| id               | 是         | song id / playlist id / album id / search keyword   |
+
+{% raw %}</details>{% endraw %}
+
+> 更多请见Hexo官方文档：[#front-matter](https://hexo.io/zh-cn/docs/front-matter)
 
 ## 独立页面
 
@@ -260,8 +277,6 @@ categories:
   - [分类C, 分类D]
 ```
 
-
-
 ### 文章摘要
 
 在文章中插入`<!-- more -->`，前面的部分即为摘要。
@@ -282,25 +297,6 @@ date: 2020-02-21
 ::: warning
 **注意**： `<!-- more -->` 前后一定要有空行，不然可能导致显示错位。
 :::
-
-### 是否开启渲染MathJax
-
-
-| 取值  | 含义  |
-| ----- | ----  |
-| false | 不渲染，默认值 |
-| true | 渲染 |
-| internal | 只在文章内部渲染，文章列表中不渲染 |
-
-```yaml front-matter
----
-mathjax: true
----
-```
-
-> 如果公式仍无法正确渲染可以阅读@MicDZ大神的这篇文章：[《在material-x上使用KaTeX》](https://www.micdz.cn/article/katex-on-volantis/)。
-
-
 
 ### 设置文章作者
 

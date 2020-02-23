@@ -33,6 +33,8 @@ links:
 **同样感谢那些在评论和Issue中互相帮助的网友~**
 如果你有一个好点子或者解决了我这里没有解决的问题，欢迎去 <btn>[GitHub](https://github.com/xaoxuu/hexo-theme-volantis/)</btn> 贡献一下代码👏。
 
+<btn class='regular'>[查看项目全部参与者](https://github.com/xaoxuu/hexo-theme-volantis/Contr)</btn>
+
 ### 站点收录
 
 感谢以下网站的收录与分享，让本主题能够被更多人发现，主题就会做的越来越好~
@@ -66,7 +68,7 @@ links:
 
 ## 论坛与交流
 
-有疑问请前往本项目的【[GitHub Issues](https://github.com/xaoxuu/hexo-theme-volantis/issues)】页面搜索问题，如果没有相关问题，点击【New issue】进行提问。
+有疑问请前往本项目的 <btn>[Issues](https://github.com/xaoxuu/hexo-theme-volantis/issues)<btn> 页面搜索问题，如果没有相关问题，点击 <btn>[New issue](https://github.com/xaoxuu/hexo-theme-volantis/issues/new)<btn> 进行提问。
 
 由于个人精力有限，没有提供QQ群、微信公众号等其他社群。如果需要论坛，请暂时以项目的Issues页面作为论坛进行交流。文档页面下方的评论不容易查找。
 

@@ -91,4 +91,4 @@ import:
 
 ## 更多配置
 
-更多请见Hexo官方文档：[Hexo配置](https://hexo.io/zh-cn/docs/configuration)
+更多请见Hexo官方文档：[#Hexo配置](https://hexo.io/zh-cn/docs/configuration)

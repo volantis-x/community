@@ -23,44 +23,6 @@ git submodule add git@github.com:xaoxuu/hexo-theme-volantis themes/volantis
 ```
 {% raw %}</details>{% endraw %}
 
-## 图片放大预览功能
-
-将需要放大预览的图片用 `<fancybox></fancybox>` 包含起来。
-例如这个图是不能点开的：
-![](https://img.vim-cn.com/52/a54815c02ce232f11f54b2c547c1337828833c.png)
-而这个图是可以点开的：
-<fancybox>
-<img src='https://img.vim-cn.com/52/a54815c02ce232f11f54b2c547c1337828833c.png'>
-</fancybox>
-
-
-```md 上述示例源码：
-例如这个图是不能点开的：
-![](https://img.vim-cn.com/52/a54815c02ce232f11f54b2c547c1337828833c.png)
-而这个图是可以点开的：
-<fancybox>
-<img src='https://img.vim-cn.com/52/a54815c02ce232f11f54b2c547c1337828833c.png'>
-</fancybox>
-```
-
-```md ⚠️ 错误写法：
-<fancybox>
-![](https://img.vim-cn.com/52/a54815c02ce232f11f54b2c547c1337828833c.png)
-</fancybox>
-```
-
-如需一行显示多图，将多个图片同时放在一对 `<fancybox></fancybox>` 中即可：
-
-```html
-<fancybox>
-<img src='https://i.loli.net/2019/08/20/sgultOmRLXrwfA3.png'>&nbsp;
-<img src='https://i.loli.net/2019/08/20/a2mCq871PwfbZEG.png'>&nbsp;
-<img src='https://i.loli.net/2019/08/20/Zdz2cTphOlu3XKf.png'>&nbsp;
-<img src='https://i.loli.net/2019/08/20/87UdSGaMuevV1iF.png'>&nbsp;
-<img src='https://i.loli.net/2019/08/20/HEusSLBgG3XC1nN.png'>
-</fancybox>
-```
-
 
 ## 复选框和Container
 
@@ -185,7 +147,7 @@ here be danger
 @fontfamily_base: 'Varela Round', ...
 ```
 
-选择字体源： <btn>[jsdelivr](https://www.jsdelivr.com/package/gh/xaoxuu/cdn-fonts)</btn> <btn>[Google Fonts](https://fonts.google.com)</btn>
+选择字体源： <btn class='small'>[jsdelivr](https://www.jsdelivr.com/package/gh/xaoxuu/cdn-fonts)</btn> <btn class='small'>[Google Fonts](https://fonts.google.com)</btn>
 
 > 目前主题默认使用的字体源 [@xaoxuu/cdn-fonts](https://www.jsdelivr.com/package/gh/xaoxuu/cdn-fonts) 是我专门为存放字体建的一个仓库，由jsdelivr提供CDN服务，目前已经收录20余种精选字体。如果你想添加某个喜爱的字体，可以提交到这里： [https://github.com/xaoxuu/cdn-fonts/](https://github.com/xaoxuu/cdn-fonts/)。
 
@@ -472,7 +434,7 @@ livere_uid: #你的livere的uid
 ```
 
 
-## 「相关文章」功能
+## 安装「相关文章」插件
 
 1. 安装插件
 

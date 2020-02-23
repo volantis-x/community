@@ -8,13 +8,9 @@ links:
   idea: https://github.com/xaoxuu/hexo-theme-volantis/issues/new?assignees=&labels=建议&template=feature-request.md
 ---
 
-::: success
-通常来说，一个全新的工程全部使用默认配置是正常没有故障的。
-:::
+<btn class='regular'>[<i class='fas fa-play-circle'></i> 示例博客1](https://xaoxuu.com)</btn> <btn class='regular'>[<i class='fas fa-play-circle'></i> 示例博客2](https://mxclub.github.io)</btn>
 
-[<i class='fas fa-play-circle'></i> 示例博客1](https://xaoxuu.com) &nbsp;&nbsp;&nbsp; [<i class='fas fa-play-circle'></i> 示例博客2](https://mxclub.github.io)
-
-如果无法使用或者效果与示例有较大区别，可以使用hexo官方提供的用于单元测试的博客应用本主题查看样式是否正常，对比 `_config.yml` 文件排查问题。
+通常来说，一个全新的工程全部使用默认配置是<green>正常</green>没有故障的。如果无法使用或者效果与示例有较大区别，可以使用Hexo官方提供的用于单元测试的博客应用本主题查看样式是否正常，对比 `_config.yml` 文件排查问题。
 
 > Hexo官方的单元测试项目： [https://github.com/hexojs/hexo-theme-unit-test.git](https://github.com/hexojs/hexo-theme-unit-test.git)
 
@@ -48,11 +44,16 @@ links:
 
 如果安装了「相关文章推荐」插件后，每次修改front-matter后都需要重新 `hexo s`
 
+## 关掉CDN之后样式错乱
+
+- 请前往文档「开始」页面，检查是否安装了必要的依赖包。
+- 是否修改了less文件，如果修改了，请检查是否有语法错误。
+
 ## 搜索无法使用
 
-1. 检查是否安装文档要求正确的安装了依赖包。
-2. 检查根目录配置文件是否有search字段冲突。
-3. 如果以上两步都无法找到问题，请下载示例源码进行对比。
+- 请前往文档「开始」页面，检查是否安装了必要的依赖包。
+- 检查根目录配置文件是否有search字段冲突。
+- 如果以上两步都无法找到问题，请下载示例源码进行对比。
 
 ## 搜索结果链接不正确
 
