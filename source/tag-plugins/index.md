@@ -34,7 +34,7 @@ links:
 {% endraw %}
 
 <center>
-<p class='large'>Volantis</p>
+<p class='large' style='color:#666'>Volantis</p>
 <b style='font-size:.9em;color:#666'>A Wonderful Theme for Hexo 4.2+</b>
 </center>
 
@@ -42,7 +42,7 @@ links:
 
 ```md 写法如下：
 <center>
-<p class='large'>Volantis</p>
+<p class='large' style='color:#666'>Volantis</p>
 <b style='font-size:.9em;color:#666'>A Wonderful Theme for Hexo 4.2+</b>
 </center>
 ```
