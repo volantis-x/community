@@ -133,7 +133,7 @@ One More Thing 👇
 </summary>
 {% endraw %}
 
-懒加载占位图如果喜欢请拿去：<btn>[图片地址](https://img.vim-cn.com/92/d570170f4f12e1ee829ca0e85a7dffeb77343a.svg)</btn>
+懒加载占位图如果喜欢请拿去：<btn>[图片地址](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/placeholder/d570170f4f12e1ee829ca0e85a7dffeb77343a.svg)</btn>
 
 {% raw %}</details>{% endraw %}
 
@@ -145,7 +145,7 @@ One More Thing 👇
 </summary>
 {% endraw %}
 
-懒加载占位图如果喜欢请拿去：<btn>[图片地址](https://img.vim-cn.com/92/d570170f4f12e1ee829ca0e85a7dffeb77343a.svg)</btn>
+懒加载占位图如果喜欢请拿去：<btn>[图片地址](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/placeholder/d570170f4f12e1ee829ca0e85a7dffeb77343a.svg)</btn>
 
 {% raw %}</details>{% endraw %}
 ```

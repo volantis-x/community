@@ -181,7 +181,7 @@ style:
 
 这里的「布局」是指放置什么模块、顺序如何。对于一个普通文章页面来说，左侧区域称为 `body`，右侧区域称为 `sidebar`，左侧body区域默认上下分为 `article`、`comments` 两个模块。层级图为：
 
-<fancybox><img src='https://i.loli.net/2020/02/18/Y1wm5OnSPVuJpTG.png'></fancybox>
+<fancybox><img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/2020/2020-02-1820.13.44.png'></fancybox>
 
 ```yaml 主题配置文件
 layout:

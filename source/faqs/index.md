@@ -79,4 +79,4 @@ SEO跟主题之间没有什么耦合，所以主题没有捆绑SEO插件，你�
 
 请一定要阅读官方文档！ [Hexo官方文档](https://hexo.io) | [Valine官方文档](https://valine.js.org)
 
-<img src="https://cdn.jsdelivr.net/gh/xaoxuu/volantis@1.0/img/aru/161.png" style="width:100%">
+<img src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/emoji/aru/161.png" style="width:100%">
