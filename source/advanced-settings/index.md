@@ -309,17 +309,15 @@ use_cdn: true
 ```yaml 主题配置文件
 info:
   name: Volantis
-  version: 1.5.2
+  version: 1.5.4
   docs: https://xaoxuu.com/wiki/volantis/
   cdn: # 要使用CDN，请在根目录的config文件中写上 use_cdn: true
     css:
-      style: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@20.2.25/css/style.css
+      style: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@20.2.33/css/style.css
     js:
-      app: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@20.2.22/js/app.js
-      search: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@20.2.22/js/search.js
-      volantis: https://cdn.jsdelivr.net/gh/xaoxuu/volantis@1.0.6/js/volantis.min.js
-      backstretch: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@20.2.22/js/backstretch.min.js
-      commentTyping: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@20.2.22/js/commentTyping.js
+      app: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@20.2.33/js/app.js
+      search: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@20.2.33/js/search.js
+      valine: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@20.2.33/js/valine.js
 ```
 
 
