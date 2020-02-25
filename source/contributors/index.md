@@ -52,7 +52,7 @@ links:
 这些是我不定期从主流搜索引擎搜索到的与本主题相关的博文：
 
 | 作者   | 文章                                                         |
-| ------ | ------------------------------------------------------------ |
+| :------ | :------------------------------------------------------------ |
 | 我自己 | [《Material X 一个简约的卡片式Hexo博客主题》](https://segmentfault.com/a/1190000016006194) |
 | MicDZ | [《在material-x上使用KaTeX》](https://www.micdz.cn/article/katex-on-volantis/) |
 | ZYMIN | [《hexo+ejs+material x 添加CNZZ统计代码》](https://zymin.cn/arcticle/hexo+ejs+material.html) |

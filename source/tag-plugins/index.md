@@ -26,7 +26,7 @@ links:
 
 ## 超大文字 <sup class='blue'>^1.5.2</sup>
 
-文档「开始」页面中的标题部分就是超大文字。
+文档「开始」页面中的标题部分就是超大文字。目前支持的尺寸有：`large`、`huge`。
 
 {% raw %}
 <details>
@@ -49,9 +49,9 @@ links:
 </center>
 ```
 
-## 插入按钮 <sup class='blue'>^1.5.2</sup>
+## 插入按钮 <sup class='blue'>^1.5.5</sup>
 
-目前共支持三种尺寸的按钮。
+目前共支持四种尺寸的按钮。
 
 {% raw %}
 <details>
@@ -60,25 +60,59 @@ links:
 </summary>
 {% endraw %}
 
-在一句话中插入一个不太重要的 <btn class='small'>[小按钮]()</btn> 。
-在一句话中插入一个正常尺寸的 <btn>[按钮]()</btn> 。
+在一句话中插入一个不太重要的 <btn class='small'>[小按钮](/)</btn> 。
+在一句话中插入一个正常尺寸的 <btn>[按钮](/)</btn> 。
 而这个更像是常规的按钮：
-<btn class='regular'>[常规按钮]()</btn>
+<btn class='regular'>[常规按钮](/)</btn>
+
+这个适合用作首页：
+<center>
+
+<btn class='large'>[<i class='fas fa-download'></i> 开始使用](/wiki/volantis/getting-started/)</btn>
+
+</center>
 
 {% raw %}</details>{% endraw %}
 
 
 ```md 写法如下：
-在一句话中插入一个不太重要的 <btn class='small'>[小按钮]()</btn> 。
-在一句话中插入一个正常尺寸的 <btn>[按钮]()</btn> 。
+在一句话中插入一个不太重要的 <btn class='small'>[小按钮](/)</btn> 。
+在一句话中插入一个正常尺寸的 <btn>[按钮](/)</btn> 。
 而这个更像是常规的按钮：
-<btn class='regular'>[常规按钮]()</btn>
+<btn class='regular'>[常规按钮](/)</btn>
+
+这个适合用作首页：
+<center><btn class='large'>[<i class='fas fa-download'></i> 开始使用](/wiki/volantis/getting-started/)</btn></center>
 ```
+
+::: danger
+
+由于未知原因，上例中如果 `<center></center>` 与其中的 `<btn>[按钮](/)</btn>` 之间没有空行，hexo不会解析成按钮。
+
+:::
 
 
 ## 图片放大
 
-将需要放大预览的图片用 `<fancybox></fancybox>` 包含起来。
+1. 在主题配置文件中开启插件。
+
+```yaml 主题配置文件
+plugins:
+  fancybox:
+    css: '//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css'
+    js: '//cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js'
+```
+
+2. 将需要放大预览的图片用 `<fancybox></fancybox>` 包含起来。
+
+```md 写法如下：
+例如这个图是不能点开的：
+![](https://img.vim-cn.com/52/a54815c02ce232f11f54b2c547c1337828833c.png)
+而这个图是可以点开的：
+<fancybox>
+<img src='https://img.vim-cn.com/52/a54815c02ce232f11f54b2c547c1337828833c.png'>
+</fancybox>
+```
 
 {% raw %}
 <details>
@@ -95,15 +129,6 @@ links:
 </fancybox>
 
 {% raw %}</details>{% endraw %}
-
-```md 写法如下：
-例如这个图是不能点开的：
-![](https://img.vim-cn.com/52/a54815c02ce232f11f54b2c547c1337828833c.png)
-而这个图是可以点开的：
-<fancybox>
-<img src='https://img.vim-cn.com/52/a54815c02ce232f11f54b2c547c1337828833c.png'>
-</fancybox>
-```
 
 ```md 「<b><red>注意</red></b>」这样写是无效的：
 <fancybox>
@@ -123,6 +148,58 @@ links:
 </fancybox>
 ```
 
+## 表格滚动
+
+一般来说，表格默认会横向铺满，格子内文字过多会自动换行。但是当列数比较多时，每一列都很窄，推荐使用支持滚动的表格样式，用一对 `<overflow></overflow>` 把表格包起来。
+
+```md 格式为：
+<overflow>
+
+md表格内容
+
+</overflow>
+```
+
+{% raw %}
+<details>
+<summary>
+示例
+</summary>
+{% endraw %}
+
+<overflow>
+
+| 类别     | 排序方法 | 平均时间复杂度       | 最优时间复杂度       | 最差时间复杂度       | 空间复杂度                  | 稳定性 | 复杂性 |
+| :-------- | :-------- | :-------------------- | :-------------------- | :-------------------- | :--------------------------- | :------ | :------ |
+| 插入排序 | 直接插入 | O(n<sup>2</sup>)     | O(n)                 | O(n<sup>2</sup>)     | O(1)                        | 稳定   | 简单   |
+| 插入排序 | 希尔排序 | O(n<sup>1.3</sup>)   | O(n)                 | O(n<sup>2</sup>)     | O(1)                        | 不稳定 | 复杂   |
+| 选择排序 | 直接选择 | O(n<sup>2</sup>)     | O(n<sup>2</sup>)     | O(n<sup>2</sup>)     | O(1)                        | 不稳定 | 简单   |
+| 选择排序 | 堆排序   | O(nlog<sub>2</sub>n) | O(nlog<sub>2</sub>n) | O(nlog<sub>2</sub>n) | O(1)                        | 不稳定 | 复杂   |
+| 交换排序 | 冒泡排序 | O(n<sup>2</sup>)     | O(n)                 | O(n<sup>2</sup>)     | O(1)                        | 稳定   | 简单   |
+| 交换排序 | 快速排序 | O(nlog<sub>2</sub>n) | O(nlog<sub>2</sub>n) | O(n<sup>2</sup>)     | O(nlog<sub>2</sub>n)~O(n) | 不稳定 | 复杂   |
+|          | 归并排序 | O(nlog<sub>2</sub>n) | O(nlog<sub>2</sub>n) | O(nlog<sub>2</sub>n) | O(n)                        | 稳定   | 复杂   |
+|          | 基数排序 | O(d(r+n))            | O(d(r+n))            | O(d(r+n))            | O(rd+n)                     | 稳定   | 复杂   |
+
+</overflow>
+
+```md 写法如下：
+<overflow>
+
+| 类别     | 排序方法 | 平均时间复杂度       | 最优时间复杂度       | 最差时间复杂度       | 空间复杂度                  | 稳定性 | 复杂性 |
+| :-------- | :-------- | :-------------------- | :-------------------- | :-------------------- | :--------------------------- | :------ | :------ |
+| 插入排序 | 直接插入 | O(n<sup>2</sup>)     | O(n)                 | O(n<sup>2</sup>)     | O(1)                        | 稳定   | 简单   |
+| 插入排序 | 希尔排序 | O(n<sup>1.3</sup>)   | O(n)                 | O(n<sup>2</sup>)     | O(1)                        | 不稳定 | 复杂   |
+| 选择排序 | 直接选择 | O(n<sup>2</sup>)     | O(n<sup>2</sup>)     | O(n<sup>2</sup>)     | O(1)                        | 不稳定 | 简单   |
+| 选择排序 | 堆排序   | O(nlog<sub>2</sub>n) | O(nlog<sub>2</sub>n) | O(nlog<sub>2</sub>n) | O(1)                        | 不稳定 | 复杂   |
+| 交换排序 | 冒泡排序 | O(n<sup>2</sup>)     | O(n)                 | O(n<sup>2</sup>)     | O(1)                        | 稳定   | 简单   |
+| 交换排序 | 快速排序 | O(nlog<sub>2</sub>n) | O(nlog<sub>2</sub>n) | O(n<sup>2</sup>)     | O(nlog<sub>2</sub>n)~O(n) | 不稳定 | 复杂   |
+|          | 归并排序 | O(nlog<sub>2</sub>n) | O(nlog<sub>2</sub>n) | O(nlog<sub>2</sub>n) | O(n)                        | 稳定   | 复杂   |
+|          | 基数排序 | O(d(r+n))            | O(d(r+n))            | O(d(r+n))            | O(rd+n)                     | 稳定   | 复杂   |
+
+</overflow>
+```
+
+{% raw %}</details>{% endraw %}
 
 ## 折叠区域 <sup class='blue'>^1.5.2</sup>
 

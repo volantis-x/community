@@ -119,6 +119,27 @@ import:
   - "<link rel='manifest' href='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/favicon/site.webmanifest'>"
   # script:
 
+
+# # 图片懒加载  # hexo-lazyload-image
+# lazyload:
+#   enable: true
+#   onlypost: false
+#   loadingImg: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/placeholder/d570170f4f12e1ee829ca0e85a7dffeb77343a.svg
+
+# hexo-all-minifier
+all_minifier: true
+
+# hexo-autonofollow
+nofollow:
+  enable: true
+  exclude:
+  - xaoxuu.com
+
+# autoprefixer
+autoprefixer:
+  exclude:
+  - '*.min.css'
+
 # offline config passed to sw-precache.
 offline:
   maximumFileSizeToCacheInBytes: 10485760

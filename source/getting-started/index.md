@@ -28,7 +28,7 @@ Volantis（原名 Material X），一个高度模块化和可定制化、功能�
 如果您从旧版本更新或着其它主题迁移，请确保环境版本不要太低，否则会产生兼容性问题。
 
 | 环境 | 建议最低版本 |
-| -- | -- |
+| :-- | :-- |
 | Hexo | <red>4.2</red> |
 | hexo-cli | 3.1 |
 | node.js | 12.16 |
@@ -39,23 +39,19 @@ Volantis（原名 Material X），一个高度模块化和可定制化、功能�
 
 ### 自动安装
 
-1. 打开终端输入下面命令安装脚本：
-  ```sh
-  curl -s https://xaoxuu.com/install | sh -s hexo.sh
-  ```
-2. 安装成功后，在你的博客路径打开终端，输入下面命令即可安装主题和依赖包：
-  ```sh
-  hexo.sh i v
-  ```
+```sh 1. 打开终端输入下面命令安装脚本：
+curl -s https://xaoxuu.com/install | sh -s hexo.sh
+```
+```sh 2. 在博客路径打开终端，输入下面命令即可安装主题和依赖包：
+hexo.sh i v
+```
 
 ### 手动安装
 
-1. 下载 <btn>[主题源码](https://github.com/xaoxuu/hexo-theme-volantis)</btn> 到 `themes/` 文件夹：
-```sh
+```sh 1. 下载主题源码到 `themes/` 文件夹：
 git clone https://github.com/xaoxuu/hexo-theme-volantis themes/volantis
 ```
-2. 然后安装必要的依赖包：
-```sh
+```sh 2. 然后安装必要的依赖包：
 npm i -S hexo-generator-search hexo-generator-json-content hexo-renderer-less
 ```
 

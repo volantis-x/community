@@ -17,13 +17,13 @@ links:
 ## 布局模板
 
 | 取值  | 含义  |
-| ----- | ----  |
+| :----- | :----  |
 | page | 独立页面 |
 | post | 文章页面 |
 | category | 分类页面 |
 | tag | 标签页面 |
 | links | 友链页面 |
-| list | 列表页面（类似于首页的文章列表） |
+| list | 列表页面 |
 
 ## front-matter
 
@@ -37,8 +37,10 @@ front-matter 是文件最上方以 `---` 分隔的区域，用于指定个别文
 </summary>
 {% endraw %}
 
+<overflow>
+
 | 字段        | 含义         | 值类型        | 默认值 |
-| ----------- | ------------ | ------------- | ------ |
+| :----------- | :------------ | :------------- | :------ |
 | layout      | 布局模版     | String        | -      |
 | title       | 标题         | String        | -      |
 | date        | 创建时间     | Date          | 文件创建时间 |
@@ -58,7 +60,7 @@ front-matter 是文件最上方以 `---` 分隔的区域，用于指定个别文
 `layout:post` 时特有的字段：
 
 | 字段              | 含义         | 值类型        | 默认值 |
-| ----------------- | ------------ | ------------- | ------ |
+| :----------------- | :------------ | :------------- | :------ |
 | author            | 文章作者     | [Object]        | config.author      |
 | categories        | 分类         | String, Array | -      |
 | tags               | 标签         | String, Array | -      |
@@ -68,7 +70,7 @@ front-matter 是文件最上方以 `---` 分隔的区域，用于指定个别文
 author
 
 | 字段              | 含义         | 值类型        | 默认值 |
-| ----------------- | ------------ | ------------- | ------ |
+| :----------------- | :------------ | :------------- | :------ |
 | name            | 作者名     | String        | config.author      |
 | avatar        | 头像         | String | config.avatar      |
 | url               | 链接         | String | config.url      |
@@ -76,10 +78,12 @@ author
 music
 
 | 字段              | 是否必须         | 值类型      |
-| ----------------- | ------------ | ----------------- |
+| :----------------- | :------------ | :----------------- |
 | server            | 是     | netease, tencent, kugou, xiami, baidu           |
 | type        | 是         | song, playlist, album, search, artist  |
 | id               | 是         | song id / playlist id / album id / search keyword   |
+
+</overflow>
 
 {% raw %}</details>{% endraw %}
 

@@ -19,6 +19,6 @@ Volantis（原名 Material X），一个高度模块化和可定制化、功能�
 
 <center>
 
-<btn class='regular' style=''>[&nbsp;&nbsp;&nbsp; <i class='fas fa-play'></i>&nbsp; 开始使用 &nbsp;&nbsp;&nbsp;](/wiki/volantis/getting-started/)</btn>
+<btn class='large'>[<i class='fas fa-download'></i> 开始使用](/wiki/volantis/getting-started/)</btn>
 
 </center>

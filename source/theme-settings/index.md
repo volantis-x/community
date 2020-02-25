@@ -14,41 +14,6 @@ links:
 
 如无特殊说明，本页面的配置信息写在 <red>**主题**</red> 的 `config.yml` 文件中。
 
-## 服务开关
-
-开启过多服务会导致网页加载缓慢、运行卡顿。
-
-```yaml 主题配置文件
-service:
-  # jquery是很多功能的基础，请勿关闭
-  jquery: '//cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js'
-  ################################################## 提升速度类的服务
-  # 鼠标放在链接上就提前开始加载了
-  instant_page: '//instant.page/3.0.0'
-  ################################################## 优化体验类的服务
-  # 图片放大预览
-  fancybox:
-    css: '//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css'
-    js: '//cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js'
-  # 页面滚动显示动画
-  # scrollreveal: '//cdn.jsdelivr.net/npm/scrollreveal@4.0.5/dist/scrollreveal.min.js'
-  # 代码块复制按钮
-  # clipboard: '//cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js'
-  ################################################## 运维服务
-  # 访问量统计【加载非常缓慢】
-  busuanzi: '//cdn.jsdelivr.net/gh/xaoxuu/cdn-busuanzi@2.3/js/busuanzi.pure.mini.js'
-  # 文章字数统计、阅读时长，开启需要安装插件: npm i --save hexo-wordcount
-  # wordcount: true
-  ################################################## 美化类的服务
-  # 按钮点击涟漪效果
-  # nodewaves:
-  #   css: '//cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.css'
-  #   js: '//cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.js'
-  # 文本框打字机特效
-  # comment_typing: '//cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@20.2.33/js/comment_typing.js'
-```
-
-
 ## 显示「阅读全文」按钮 <sup class='blue'>^1.5.2</sup>
 
 ```yaml 主题配置文件
@@ -186,7 +151,7 @@ style:
   blur:
     navbar: true
     widget: true
-    body: true
+    # body: true
 ```
 
 ::: success
@@ -242,7 +207,7 @@ layout:
   # 其他的页面布局暂时等于文章列表
 ```
 
-其中 `meta`、`meta.header`、`meta.footer` 从 <btn>[Meta库](#Meta库)</btn> 中选取，其他字段值均从 <btn>[组件库](#组件库)</btn> 中选取。
+其中 `meta`、`meta.header`、`meta.footer` 从 <btn>[Meta库](#Meta库)</btn> 中选取，其他字段值均从 <btn>[Widget库](#Widget库)</btn> 中选取。
 
 
 ## Meta库
@@ -326,12 +291,12 @@ meta:
 
 ```
 
-## 组件库
+## Widget库
 
-组件库中的小部件通常可用于侧边栏、左边主体区域，部分也可用作文章页脚。组件的类别（class）共有以下几种：
+Widget库中的小部件通常可用于侧边栏、左边主体区域，部分也可用作文章页脚。组件的类别（class）共有以下几种：
 
 | class   | 功能                   | 适用区域 |
-| ------ | ---------------------- | -------- |
+| :------ | :---------------------- | :-------- |
 | blogger | 博主信息模块 | sidebar |
 | toc | 目录  | sidebar |
 | category   | 文章分类  |  sidebar、body |
@@ -578,4 +543,40 @@ social:
     url: https://music.163.com/#/user/home?id=63035382
 ```
 
-这些社交按钮也会同时出现在侧边栏头像下方，可以组件库的配置中设置不显示。
+这些社交按钮也会同时出现在侧边栏头像下方，可以在Widget库的配置中设置不显示。
+
+## 第三方插件
+
+开启过多服务会导致网页加载缓慢、运行卡顿。
+
+### 预加载
+
+鼠标放在链接上就提前开始加载了，开启此项服务时请注意主题配置文件中本地的路径要以 `/` 结尾。
+
+```yaml 主题配置文件
+plugins:
+  instant_page: '//instant.page/3.0.0'
+```
+
+### 文本框打字特效
+
+```yaml 主题配置文件
+plugins:
+  comment_typing: '//cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@20.2.33/js/comment_typing.js'
+```
+
+### 代码块复制按钮
+
+```yaml 主题配置文件
+plugins:
+  clipboard: '//cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js'
+```
+
+### 按钮点击涟漪效果
+
+```yaml 主题配置文件
+plugins:
+  nodewaves:
+    css: '//cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.css'
+    js: '//cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.js'
+```
