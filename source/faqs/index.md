@@ -68,15 +68,15 @@ root: /
 
 ## 关于SEO
 
-SEO跟主题之间没有什么耦合，所以主题没有捆绑SEO插件，你需要的话可以自己安装，我安装了以下SEO优化插件：
+推荐的SEO优化插件：
 
 - [hexo-autonofollow](https://github.com/liuzc/hexo-autonofollow)
 - [hexo-generator-seo-friendly-sitemap](https://github.com/ludoviclefevre/hexo-generator-seo-friendly-sitemap)
 
 ## 教程与指南
 
-亲这里是MaterialX主题的使用文档，不是Hexo博客一站式教程。与MaterialX主题无关的，例如markdown的写法、Valine的用法以及BUG之类的，请自行搜索相关教程。
+<btn>[Hexo官方文档](https://hexo.io) [Valine官方文档](https://valine.js.org)</btn>
 
-请一定要阅读官方文档！ [Hexo官方文档](https://hexo.io) | [Valine官方文档](https://valine.js.org)
+请一定要阅读官方文档！
 
 <img src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/emoji/aru/161.png" style="width:100%">

@@ -43,7 +43,7 @@ filename_case: 0
 render_drafts: false
 post_asset_folder: false
 relative_link: false
-future: true
+future: false
 highlight:
   enable: true
   line_number: false
@@ -118,6 +118,23 @@ import:
   - "<link rel='mask-icon' color='#1BC3FB' href='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/favicon/safari-pinned-tab.svg'>"
   - "<link rel='manifest' href='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/favicon/site.webmanifest'>"
   # script:
+
+# offline config passed to sw-precache.
+offline:
+  maximumFileSizeToCacheInBytes: 10485760
+  staticFileGlobs:
+    - public/**/*.{js,html,css,png,jpg,gif,svg,eot,ttf,woff,woff2}
+  stripPrefix: public
+  verbose: true
+  runtimeCaching:
+    - urlPattern: /*
+      handler: cacheFirst
+      options:
+        origin: cdn.jsdelivr.net
+    - urlPattern: /*
+      handler: cacheFirst
+      options:
+        origin: cdnjs.cloudflare.com
 
 markdown:
   render:
