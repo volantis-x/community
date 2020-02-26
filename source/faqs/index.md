@@ -1,6 +1,7 @@
 ---
 layout: page
 title: FAQ「常见问题」
+cover: false
 meta:
   header: [title, author, updated]
 links:
@@ -10,7 +11,7 @@ links:
   idea: https://github.com/xaoxuu/hexo-theme-volantis/issues/new?assignees=&labels=建议&template=feature-request.md
 ---
 
-<btn class='regular'>[<i class='fas fa-play-circle'></i> 示例博客](https://xaoxuu.com)</btn> 
+<btn class='regular'>[<i class='fas fa-play-circle'></i> 示例博客](https://xaoxuu.com)</btn>
 
 通常来说，一个全新的工程全部使用默认配置是<green>正常</green>没有故障的。如果无法使用或者效果与示例有较大区别，可以使用Hexo官方提供的用于单元测试的博客应用本主题查看样式是否正常，对比 `_config.yml` 文件排查问题。
 
@@ -25,7 +26,7 @@ links:
 
 ## 无法成功运行本地预览
 
-可能是没有安装依赖，请按照【开始使用 -> 下载安装】中的步骤进行安装，并安装所需依赖。
+可能是没有安装依赖，请按照「开始」页面中的步骤进行安装，并安装所需依赖。
 
 如果开启了某些第三方服务，请查看文档中是否要求安装插件。
 

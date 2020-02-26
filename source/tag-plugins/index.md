@@ -49,7 +49,7 @@ links:
 </center>
 ```
 
-## 插入按钮 <sup class='blue'>^1.5.5</sup>
+## 插入单个按钮 <sup class='blue'>^1.5.5</sup>
 
 目前共支持四种尺寸的按钮。
 
@@ -91,6 +91,40 @@ links:
 
 :::
 
+
+## 插入一组含有头像的按钮 <sup class='blue'>^1.5.6</sup>
+
+如果需要显示类似「团队成员」之类的一组含有头像的链接，建议使用这种方式：
+
+{% raw %}
+<div class='links-wrapper circle'>
+<a href='https://github.com/xaoxuu'><img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png'>xaoxuu</a>
+<a href='https://github.com/xaoxuu'><img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png'>xaoxuu</a>
+<a href='https://github.com/xaoxuu'><img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png'>xaoxuu</a>
+<a href='https://github.com/xaoxuu'><img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png'>xaoxuu</a>
+</div>
+{% endraw %}
+
+```md 写法如下：
+{% raw %}
+<div class='links-wrapper circle'>
+<a href='https://github.com/xaoxuu'><img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png'>xaoxuu</a>
+<a href='https://github.com/xaoxuu'><img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png'>xaoxuu</a>
+<a href='https://github.com/xaoxuu'><img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png'>xaoxuu</a>
+<a href='https://github.com/xaoxuu'><img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png'>xaoxuu</a>
+</div>
+{% endraw %}
+```
+
+```md 提示：
+{% raw %} 和 {% endraw %} 之间的内容是不解析的，只能写HTML标签。
+```
+
+图片支持三种样式：
+
+- 方形（`<div class='links-wrapper'>`）。
+- 圆角矩形（`<div class='links-wrapper rounded'>`），适合app图标。
+- 圆形（`<div class='links-wrapper circle'>`），适合头像。
 
 ## 图片放大
 
@@ -148,7 +182,7 @@ plugins:
 </fancybox>
 ```
 
-## 表格滚动
+## 表格滚动 <sup class='blue'>^1.5.5</sup>
 
 一般来说，表格默认会横向铺满，格子内文字过多会自动换行。但是当列数比较多时，每一列都很窄，推荐使用支持滚动的表格样式，用一对 `<overflow></overflow>` 把表格包起来。
 
