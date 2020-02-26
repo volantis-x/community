@@ -11,8 +11,6 @@ links:
   idea: https://github.com/xaoxuu/hexo-theme-volantis/issues/new?assignees=&labels=建议&template=feature-request.md
 ---
 
-<btn class='regular'>[<i class='fas fa-play-circle'></i> 示例博客](https://xaoxuu.com)</btn>
-
 通常来说，一个全新的工程全部使用默认配置是<green>正常</green>没有故障的。如果无法使用或者效果与示例有较大区别，可以使用Hexo官方提供的用于单元测试的博客应用本主题查看样式是否正常，对比 `_config.yml` 文件排查问题。
 
 > Hexo官方的单元测试项目： [https://github.com/hexojs/hexo-theme-unit-test.git](https://github.com/hexojs/hexo-theme-unit-test.git)

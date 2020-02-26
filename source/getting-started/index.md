@@ -21,7 +21,7 @@ links:
 
 Volantis（原名 Material X），一个高度模块化和可定制化、功能相对完善的Hexo博客主题，既可以用作个人博客，也适合用来搭建文档。
 
-这些是使用了本主题的博客： <btn>[Issue #97](https://github.com/xaoxuu/hexo-theme-volantis/issues/97)</btn>
+这些是使用了本主题的博客： <btn>[<i class='fas fa-play-circle'></i> 示例博客](/wiki/volantis/examples/)</btn>
 
 ## 环境要求
 

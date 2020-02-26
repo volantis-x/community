@@ -91,13 +91,15 @@ music
 
 ## 独立页面
 
+除了归档页面是自动生成的，其它独立页面都需要手动创建md文件。
+
 ### 归档页面
 
 归档页面是自动生成的，并且初始化的时候已经生成，路径如下：
 
 ```yaml 站点配置文件
 # Directory
-archive_dir: blog/archives
+archive_dir: archives
 ```
 
 ### 关于页面

@@ -14,7 +14,7 @@ links:
 ---
 
 
-主题支持 **<red>丰</red><yellow>富</yellow><green>多</green><blue>彩</blue>** 的标签。
+主题支持<b><red>丰</red><yellow>富</yellow><green>多</green><blue>彩</blue></b>的标签。
 
 ## 彩色文字 <sup class='blue'>^1.5.2</sup>
 
@@ -125,7 +125,7 @@ links:
 - 圆角矩形（`<div class='links-wrapper rounded'>`），适合app图标。
 - 圆形（`<div class='links-wrapper circle'>`），适合头像。
 
-### 文字格式
+### 文字样式
 
 - 标题（`<p class='title'>标题</p>`）。
 - 内容（`<p>内容描述</p>`）。

@@ -46,11 +46,12 @@ backstretch:
 ```yaml 主题配置文件
 # page的封面
 cover:
-  scheme: search    # 后期将会提供多种封面方案
-  # height: half      # full（默认值）: 首页封面占据整个第一屏幕，其他页面占半个屏幕高度， half: 所有页面都封面都只占半个屏幕高度
-  title: xaoxuu
-  # logo:    # logo和title只显示一个，若同时设置，则只显示logo
-  # search: '搜索'
+  scheme: search    # 后期将会提供多种封面布局方案
+  height: full      # full: 首页封面占据整个第一屏幕，其他页面占半个屏幕高度， half: 所有页面都封面都只占半个屏幕高度
+  title: Volantis
+  subtitle: 'A Wonderful Theme for Hexo 4.2+'
+  logo: # assets/logo.png    # logo和title只显示一个，若同时设置，则只显示logo
+  search: '搜索文档'
   # 主页封面菜单
   features:
     - name: 博文
@@ -189,7 +190,7 @@ layout:
     # 列表中每一篇文章的meta信息
     meta: [title, author, date, category, wordcount, top]
     # 列表类页面的侧边栏
-    sidebar: [blogger, dao_hang, huan_ying, category, tagcloud, tui_jian, donate]
+    sidebar: [blogger, dao_hang, huan_ying, category, tagcloud, tui_jian, qrcode]
   # 文章页面布局
   on_page:
     # 文章页面主体元素，你也可以在页面的Front-matter中设置
@@ -201,9 +202,9 @@ layout:
       header: [title, author, date, category, counter, wordcount, top]
       footer: [updated, tags, share]
     # 文章页脚，自动在每一篇文章末尾添加
-    footer: [copyright, donate]
+    footer: [copyright, qrcode]
     # 文章页面的侧边栏
-    sidebar: [blogger, toc, category, tagcloud, donate]
+    sidebar: [blogger, toc, category, tagcloud, qrcode]
   # 其他的页面布局暂时等于文章列表
 ```
 
@@ -303,7 +304,7 @@ Widget库中的小部件通常可用于侧边栏、左边主体区域，部分�
 | tagcloud  | 标签云                   |  sidebar、body、article |
 | related_posts   | 相关文章推荐   | sidebar、body、article  |
 | copyright | 版权标识 | article |
-| donate | 打赏控件 | sidebar、body、article |
+| qrcode | 二维码控件 | sidebar、body、article |
 | text | 文本控件 | sidebar、body、article |
 | grid | 网格控件 | sidebar、body、article |
 | list | 列表控件 | sidebar、body、article |
@@ -333,8 +334,10 @@ widget:
   # 目录小部件配置(仅在文章中有效)
   - id: toc
     class: toc
-    icon: fas fa-list
-    title: 本文目录
+    display: [desktop, mobile] # [desktop, mobile]
+    header:
+      icon: fas fa-list
+      title: TOC
     list_number: false # 是否显示章节
     min_depth: 2 # H1建议用作网页或者文章的标题，章节从H2开始。
     max_depth: 5 # 由于宽度有限，主题没有针对所有层级进行布局优化，建议文章最多分为：H2/H3/H4/H5四个层级
@@ -348,13 +351,11 @@ widget:
   # 文章分类小部件配置
   - id: category
     class: category
-    icon: fas fa-folder-open
-    title: 文章分类
-    more: # 右上角的按钮
-      icon: fas fa-expand-arrows-alt
-      url: blog/categories/
-      rel: external nofollow noopener noreferrer
-      target: _self
+    display: [desktop] # [desktop, mobile]
+    header:
+      icon: fas fa-folder-open
+      title: 文章分类
+      url: /blog/categories/
 ```
 
 ### tagcloud
@@ -365,13 +366,11 @@ widget:
   # 标签云小部件配置
   - id: tagcloud
     class: tagcloud
-    icon: fas fa-tags
-    title: 热门标签
-    more: # 右上角的按钮
-      icon: fas fa-expand-arrows-alt
-      url: blog/tags/
-      rel: external nofollow noopener noreferrer
-      target: _self
+    display: [desktop] # [desktop, mobile]
+    header:
+      icon: fas fa-tags
+      title: 热门标签
+      url: /blog/tags/
     min_font: 14
     max_font: 24
     color: true
@@ -387,8 +386,10 @@ widget:
   # 相关文章小部件配置
   - id: related_posts
     class: related_posts # 需要安装插件  npm i -S hexo-related-popular-posts
-    icon: fas fa-bookmark
-    title: 相关文章
+    display: [desktop, mobile] # [desktop, mobile]
+    header:
+      icon: fas fa-bookmark
+      title: 相关文章
 ```
 
 
@@ -400,6 +401,8 @@ widget:
   # 版权说明小部件（仅用于文章中）
   - id: copyright
     class: copyright
+    display: [desktop, mobile] # [desktop, mobile]
+    blockquote: true # 是否把内容放到blockquote中
     permalink: '本文永久链接是：' # 显示文章永久链接
     content:
       - '这是文章页脚，可以放置版权说明以及打赏图片。<br>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议'
@@ -407,23 +410,22 @@ widget:
       - permalink
 ```
 
-### donate
+### qrcode
 
 ```yaml 主题配置文件
 widget:
   # ---------------------------------------
-  # 捐赠小部件（可用于文章中和侧边栏）
-  - id: donate
-    class: donate
-    icon: fas fa-donate
-    title: 打赏
-    height: 64px
-    fancybox: true # 是否允许点击放大
+  # 二维码小部件（可用于文章中的打赏，只显示图片，无其他功能）
+  - id: qrcode
+    class: qrcode
+    display: [desktop] # [desktop, mobile]
+    header:
+      icon: fas fa-mobile
+      title: 手机观看
+    height: #64px  # 不设置则自动高度
+    fancybox: #true # 是否允许点击放大
     images:
-      - https://img.vim-cn.com/4e/3c87a2fd28fd0b9c2f27ce3f83f1e9275d0488.png
-      # - https://img.vim-cn.com/4e/3c87a2fd28fd0b9c2f27ce3f83f1e9275d0488.png
-      # - https://img.vim-cn.com/4e/3c87a2fd28fd0b9c2f27ce3f83f1e9275d0488.png
-      # - https://img.vim-cn.com/4e/3c87a2fd28fd0b9c2f27ce3f83f1e9275d0488.png
+      - https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/qrcode/wiki_volantis.png
 ```
 
 ### text
@@ -434,17 +436,14 @@ widget:
   # 自定义组件，仿照如下写法
   - id: huan_ying # 唯一标识，自己命名，建议全英文
     class: text # 小部件类型，对应_widget文件夹中的文件名
-    icon: fas fa-file
-    title: 文本部件
+    header:
+      icon: fas fa-file
+      title: 文本部件
+      url: # 点击标题时跳转
     content:
       - '这是一段支持markdown的文本'
       - '![](https://img.vim-cn.com/4e/3c87a2fd28fd0b9c2f27ce3f83f1e9275d0488.png)'
       - haha
-    more: # 右上角的按钮
-      icon: far fa-heart
-      url: https://music.163.com/#/user/home?id=63035382
-      rel: external nofollow noopener noreferrer
-      target: _blank
 ```
 
 ### grid
@@ -453,10 +452,12 @@ widget:
 widget:
   # ---------------------------------------
   # 自定义组件，仿照如下写法
-  - id: dao_hang
+  - id: navigation
     class: grid
-    icon: fas fa-map-signs
-    title: 站内导航
+    display: [desktop, mobile] # [desktop, mobile]
+    header:
+      icon: fas fa-map-signs
+      title: 站内导航
     rows:
       - name: 近期文章
         icon: fas fa-clock
@@ -464,13 +465,10 @@ widget:
       - name: 文章归档
         icon: fas fa-archive
         url: blog/archives/
-        rel: external nofollow noopener noreferrer
-        target: _self
-    more: # 右上角的按钮
-      icon: far fa-heart
-      url: https://music.163.com/#/user/home?id=63035382
-      rel: external nofollow noopener noreferrer
-      target: _blank
+        rel: nofollow
+      - name: 项目Wiki
+        icon: fas fa-landmark
+        url: wiki/
 ```
 
 ### list
@@ -479,24 +477,22 @@ widget:
 widget:
   # ---------------------------------------
   # 自定义组件，仿照如下写法
-  - id: tui_jian
+  - id: wiki-ios
     class: list
-    icon: fas fa-thumbs-up
-    title: 强烈推荐
+    display: [desktop, mobile] # [desktop, mobile]
+    header:
+      icon: fas fa-chevron-left
+      title: CocoaPods
+      url: /wiki/
     rows:
-      - name: 带图片的列表
-        img: https://img.vim-cn.com/4e/3c87a2fd28fd0b9c2f27ce3f83f1e9275d0488.png
-      - name: 带图标的列表
-        icon: fas fa-home
-      - name: Hexo脚本（Mac）
-        url: https://xaoxuu.com/wiki/hexo.sh/
-        rel: external nofollow noopener noreferrer
-        target: _blank
-    more: # 右上角的按钮
-      icon: far fa-heart
-      url: https://music.163.com/#/user/home?id=63035382
-      rel: external nofollow noopener noreferrer
-      target: _blank
+      - name: ProHUD (Swift)
+        url: /wiki/prohud/
+      - name: ValueX (ObjC)
+        url: /wiki/valuex/
+      - name: Inspire (Swift)
+        url: /wiki/inspire/
+      - name: AXKit (ObjC)
+        url: /wiki/axkit/
 ```
 
 
