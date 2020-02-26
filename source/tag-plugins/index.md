@@ -49,7 +49,7 @@ links:
 </center>
 ```
 
-## 插入单个按钮 <sup class='blue'>^1.5.5</sup>
+## 插入简单按钮 <sup class='blue'>^1.6</sup>
 
 目前共支持四种尺寸的按钮。
 
@@ -91,8 +91,7 @@ links:
 
 :::
 
-
-## 插入一组含有头像的按钮 <sup class='blue'>^1.5.6</sup>
+## 插入含有丰富内容的按钮 <sup class='blue'>^1.6</sup>
 
 如果需要显示类似「团队成员」之类的一组含有头像的链接，建议使用这种方式：
 
@@ -120,11 +119,85 @@ links:
 {% raw %} 和 {% endraw %} 之间的内容是不解析的，只能写HTML标签。
 ```
 
-图片支持三种样式：
+### 图片样式
 
 - 方形（`<div class='links-wrapper'>`）。
 - 圆角矩形（`<div class='links-wrapper rounded'>`），适合app图标。
 - 圆形（`<div class='links-wrapper circle'>`），适合头像。
+
+### 文字格式
+
+- 标题（`<p class='title'>标题</p>`）。
+- 内容（`<p>内容描述</p>`）。
+
+### 布局方式
+
+- 占容器50%宽的按钮（`<div class='links-wrapper wide'>`）
+- 自动宽度（`<div class='links-wrapper auto'>`）,适合视野内只有一两个的情况，多了显得乱。
+- 填充布局（`<div class='links-wrapper fill'>`），适合文字量大的情况。
+
+
+### 再举一个例子
+
+圆角矩形 + 标题 + 描述 + 填充布局
+
+{% raw %}
+<div class='links-wrapper rounded fill'>
+<a href='https://xaoxuu.com/wiki/heartmate/'>
+  <img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/proj/heartmate/icon.png'>
+  <p class='title'>一个简单易用的掌上心率计</p>
+  <p style='text-align:left'>专为那些没有智能手环或手表却需要测量心率的用户而设计，可以方便快捷的测量和记录心率。</p>
+  <p style='text-align:left'>使用Heart Mate心率助手，你可以在没有智能手环等心率监测设备的情况下随时检测并记录自己的心率。 通过设置tag标签，快速记录当前状态，如饭后、运动后等，方便以后检索具有同样标签的心率数据，从而分析这些情景下的心率数据，发现健康问题。</p>
+</a>
+<a href='https://xaoxuu.com/wiki/heartmate/'>
+  <img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/proj/heartmate/icon_lite.png'>
+  <p class='title'>一个简单易用的掌上心率计</p>
+  <p style='text-align:left'>专为那些没有智能手环或手表却需要测量心率的用户而设计，可以方便快捷的测量和记录心率。</p>
+  <p style='text-align:left'>「免费版」仅仅是个性化定制功能锁定，核心功能完全不受限制，并且没有任何广告。</p>
+</a>
+<a href='https://xaoxuu.com/wiki/prohud/'>
+  <img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/proj/prohud/icon.png'>
+  <p class='title'>ProHUD</p>
+  <p>Toast + Alert + ActionSheet</p>
+  <p style='text-align:left'>用简便的方法拿到已发布的实例，避免重复发布实例。可对已发布的实例进行数据更新。可对所有实例设置监听事件。对多实例并存堆叠的极端情况做了优化。完全可定制并易于扩展。</p>
+</a>
+</div>
+{% endraw %}
+
+
+{% raw %}
+<details>
+<summary>
+上例写法如下
+</summary>
+{% endraw %}
+
+```html
+{% raw %}
+<div class='links-wrapper rounded fill'>
+<a href='https://xaoxuu.com/wiki/heartmate/'>
+  <img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/proj/heartmate/icon.png'>
+  <p class='title'>一个简单易用的掌上心率计</p>
+  <p style='text-align:left'>专为那些没有智能手环或手表却需要测量心率的用户而设计，可以方便快捷的测量和记录心率。</p>
+  <p style='text-align:left'>使用Heart Mate心率助手，你可以在没有智能手环等心率监测设备的情况下随时检测并记录自己的心率。 通过设置tag标签，快速记录当前状态，如饭后、运动后等，方便以后检索具有同样标签的心率数据，从而分析这些情景下的心率数据，发现健康问题。</p>
+</a>
+<a href='https://xaoxuu.com/wiki/heartmate/'>
+  <img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/proj/heartmate/icon_lite.png'>
+  <p class='title'>一个简单易用的掌上心率计</p>
+  <p style='text-align:left'>专为那些没有智能手环或手表却需要测量心率的用户而设计，可以方便快捷的测量和记录心率。</p>
+  <p style='text-align:left'>「免费版」仅仅是个性化定制功能锁定，核心功能完全不受限制，并且没有任何广告。</p>
+</a>
+<a href='https://xaoxuu.com/wiki/prohud/'>
+  <img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/proj/prohud/icon.png'>
+  <p class='title'>ProHUD</p>
+  <p>Toast + Alert + ActionSheet</p>
+  <p style='text-align:left'>用简便的方法拿到已发布的实例，避免重复发布实例。可对已发布的实例进行数据更新。可对所有实例设置监听事件。对多实例并存堆叠的极端情况做了优化。完全可定制并易于扩展。</p>
+</a>
+</div>
+{% endraw %}
+```
+
+{% raw %}</details>{% endraw %}
 
 ## 图片放大
 
@@ -182,7 +255,7 @@ plugins:
 </fancybox>
 ```
 
-## 表格滚动 <sup class='blue'>^1.5.5</sup>
+## 表格滚动 <sup class='blue'>^1.6</sup>
 
 一般来说，表格默认会横向铺满，格子内文字过多会自动换行。但是当列数比较多时，每一列都很窄，推荐使用支持滚动的表格样式，用一对 `<overflow></overflow>` 把表格包起来。
 

@@ -5,7 +5,7 @@ cover: false
 meta:
   header: [title]
 links:
-  - group: 版本：^1.5
+  - group: 版本：^1.6
     items:
     - name: xaoxuu
       avatar: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png
