@@ -5,13 +5,13 @@ cover: false
 meta:
   header: [title]
 links:
-  - group: 版本：^1.6
+  - group: '版本：^1.6'
     items:
     - name: xaoxuu
       avatar: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png
       url: https://xaoxuu.com
       tags: [主题作者]
-  - group: 版本: ^1.5
+  - group: '版本：^1.5'
     items:
     - name: Linhk1606
       avatar: https://cdn.jsdelivr.net/gh/Linhk1606/Linhk1606@V2.0.4/me.jpg
