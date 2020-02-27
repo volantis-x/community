@@ -4,7 +4,7 @@ title: Contributors「鸣谢」
 cover: false
 meta:
   header: [title, author, updated]
-links:
+btns:
   repo: https://github.com/xaoxuu/hexo-theme-volantis
   bug: https://github.com/xaoxuu/hexo-theme-volantis/issues/new?assignees=&labels=BUG&template=bug-report.md
   doubt: https://github.com/xaoxuu/hexo-theme-volantis/issues/new?labels=疑问&template=question-report.md
@@ -13,7 +13,7 @@ links:
 
 主题的迭代和完善离不开大家的共同参与！
 
-## 贡献者
+## 参与项目
 
 ### 提交源码
 
@@ -47,8 +47,8 @@ links:
 {% raw %}
 <div class='links-wrapper'>
 <a href='https://hexo.io/themes/'><img height='48px' src='https://img.vim-cn.com/72/7e917e9b7bd3ee1cb593494610506c998eefb2.jpg'>Hexo Themes</a>
-<a href='https://valine.js.org/hexo.html#hexo-theme-volantis'><img height='48px' src='https://img.vim-cn.com/69/c9df34f04c86d32de9096a595fb5865711403c.png'>Valine</a>
-<a href='https://easyhexo.com/2-Theme-use-and-config/2-6-hexo-theme-volantis/'><img height='48px' src='https://img.vim-cn.com/f9/9aa61ab88b95cdbee98929700ec250c640def9.jpg'>Easy Hexo</a>
+<a href='https://valine.js.org/hexo.html#hexo-theme-material-x'><img height='48px' src='https://img.vim-cn.com/69/c9df34f04c86d32de9096a595fb5865711403c.png'>Valine</a>
+<a href='https://easyhexo.com/2-Theme-use-and-config/2-6-hexo-theme-material-x/'><img height='48px' src='https://img.vim-cn.com/f9/9aa61ab88b95cdbee98929700ec250c640def9.jpg'>Easy Hexo</a>
 </div>
 {% endraw %}
 
@@ -75,14 +75,6 @@ links:
 **<i class='fas fa-share-alt fa-fw'></i> 感谢分享**
 
 把主题分享到SegmenuFault、简书、知乎等平台可以快速增加「Volantis」主题被发现和使用的几率，所以如果你喜欢本主题，欢迎写原创文章或者转载分享哦。
-
-
-## 论坛与交流
-
-有疑问请前往本项目的 <btn>[Issues](https://github.com/xaoxuu/hexo-theme-volantis/issues)<btn> 页面搜索问题，如果没有相关问题，点击 <btn>[New issue](https://github.com/xaoxuu/hexo-theme-volantis/issues/new)<btn> 进行提问。
-
-由于个人精力有限，没有提供QQ群、微信公众号等其他社群。如果需要论坛，请暂时以项目的Issues页面作为论坛进行交流。文档页面下方的评论不容易查找。
-
 
 ## 如何提交源码
 

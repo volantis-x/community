@@ -5,7 +5,7 @@ title: Getting Started「开始使用」
 cover: false
 meta:
   header: []
-links:
+btns:
   repo: https://github.com/xaoxuu/hexo-theme-volantis
   bug: https://github.com/xaoxuu/hexo-theme-volantis/issues/new?assignees=&labels=BUG&template=bug-report.md
   doubt: https://github.com/xaoxuu/hexo-theme-volantis/issues/new?labels=疑问&template=question-report.md

@@ -5,7 +5,7 @@ title: Theme Settings「主题配置」
 cover: false
 meta:
   header: [title, author, updated]
-links:
+btns:
   repo: https://github.com/xaoxuu/hexo-theme-volantis
   bug: https://github.com/xaoxuu/hexo-theme-volantis/issues/new?assignees=&labels=BUG&template=bug-report.md
   doubt: https://github.com/xaoxuu/hexo-theme-volantis/issues/new?labels=疑问&template=question-report.md
@@ -264,7 +264,11 @@ meta:
     #   name: QRcode
     #   img: https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/qrcode.png
   # 链接
-  links:
+  btns:
+    edit:
+      icon: fas fa-edit
+      title: 在GitHub上编辑此页
+      color: '#888'
     repo: # 源码链接
       icon: fas fa-code-branch
       title: 源码

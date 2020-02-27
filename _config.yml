@@ -197,3 +197,10 @@ markdown:
     permalinkSymbol: '¶'
     case: 0
     separator: ''
+
+
+# leancloud国际版
+leancloud:
+  app_id: FIKAgh6n0pUM08JXxhJHChVQ-MdYXbMMI
+  app_key: RJGiOYFc1fBvfox4frBPpRzU
+  valine_path: /wiki/volantis/

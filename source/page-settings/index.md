@@ -5,7 +5,7 @@ title: Page Settings「页面配置」
 cover: false
 meta:
   header: [title, author, updated]
-links:
+btns:
   repo: https://github.com/xaoxuu/hexo-theme-volantis
   bug: https://github.com/xaoxuu/hexo-theme-volantis/issues/new?assignees=&labels=BUG&template=bug-report.md
   doubt: https://github.com/xaoxuu/hexo-theme-volantis/issues/new?labels=疑问&template=question-report.md
@@ -394,8 +394,8 @@ accent为链接高亮颜色: @color_text_highlight
 ```yaml front-matter
 ---
 meta:
-  footer: [links]
-links:
+  footer: [btns]
+btns:
   repo: https://github.com/xaoxuu/hexo-theme-volantis
   bug: https://github.com/xaoxuu/hexo-theme-volantis/issues/new?assignees=&labels=BUG&template=bug-report.md
   doubt: https://github.com/xaoxuu/hexo-theme-volantis/issues/new?labels=疑问&template=question-report.md
