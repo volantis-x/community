@@ -12,11 +12,8 @@ btns:
   idea: https://github.com/xaoxuu/hexo-theme-volantis/issues/new?assignees=&labels=建议&template=feature-request.md
 ---
 
-
-<center>
-<p class='large' style='color:#666'>Volantis</p>
-<b style='font-size:.9em;color:#666'>A Wonderful Theme for Hexo 4.2+</b>
-</center>
+<p center large gray>Volantis</p>
+<p center small gray>A Wonderful Theme for Hexo 4.2+</p>
 <br>
 
 Volantis（原名 Material X），一个高度模块化和可定制化、功能相对完善的Hexo博客主题，既可以用作个人博客，也适合用来搭建文档。
