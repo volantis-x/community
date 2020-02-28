@@ -154,20 +154,20 @@ btns:
 
 ### 图文并茂的例子
 
-圆角矩形 + 标题 + 描述 + 网格3列 + 居中
+圆形图标 + 标题 + 描述 + 图片 + 网格4列 + 居中
 
 {% raw %}
-<btns rounded center grid3>
-<a href='https://xaoxuu.com/wiki/heartmate/'>
-  <img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/proj/heartmate/icon.png'>
-  <b>Heart Mate Pro</b>
-  <p style='text-align:left'>专为那些没有智能手环或手表却需要测量心率的用户而设计，可以方便快捷的测量和记录心率。</p>
+<btns circle center grid4>
+<a href='https://apps.apple.com/cn/app/heart-mate-pro-hrm-utility/id1463348922?ls=1'>
+  <i class='fab fa-apple'></i>
+  <b>心率管家</b>
+  <p red>专业版</p>
   <img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/qrcode/heartmate_pro.png'>
 </a>
-<a href='https://xaoxuu.com/wiki/heartmate/'>
-  <img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/proj/heartmate/icon_lite.png'>
-  <b>Heart Mate Lite</b>
-  <p style='text-align:left'>「免费版」仅仅是个性化定制功能锁定，核心功能完全不受限制，并且没有任何广告。</p>
+<a href='https://apps.apple.com/cn/app/heart-mate-lite-hrm-utility/id1475747930?ls=1'>
+  <i class='fab fa-apple'></i>
+  <b>心率管家</b>
+  <p green>免费版</p>
   <img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/qrcode/heartmate_lite.png'>
 </a>
 </btns>
@@ -183,17 +183,17 @@ btns:
 
 ```html
 {% raw %}
-<btns rounded center grid3>
-<a href='https://xaoxuu.com/wiki/heartmate/'>
-  <img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/proj/heartmate/icon.png'>
-  <b>Heart Mate Pro</b>
-  <p style='text-align:left'>专为那些没有智能手环或手表却需要测量心率的用户而设计，可以方便快捷的测量和记录心率。</p>
+<btns circle center grid4>
+<a href='https://apps.apple.com/cn/app/heart-mate-pro-hrm-utility/id1463348922?ls=1'>
+  <i class='fab fa-apple'></i>
+  <b>心率管家</b>
+  <p red>专业版</p>
   <img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/qrcode/heartmate_pro.png'>
 </a>
-<a href='https://xaoxuu.com/wiki/heartmate/'>
-  <img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/proj/heartmate/icon_lite.png'>
-  <b>Heart Mate Lite</b>
-  <p style='text-align:left'>「免费版」仅仅是个性化定制功能锁定，核心功能完全不受限制，并且没有任何广告。</p>
+<a href='https://apps.apple.com/cn/app/heart-mate-lite-hrm-utility/id1475747930?ls=1'>
+  <i class='fab fa-apple'></i>
+  <b>心率管家</b>
+  <p green>免费版</p>
   <img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/qrcode/heartmate_lite.png'>
 </a>
 </btns>
