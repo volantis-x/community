@@ -13,8 +13,8 @@ timezone: ''
 avatar: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://xaoxuu.com/wiki/volantis
-root: /wiki/volantis/
+url: https://volantis.js.org
+root: /
 permalink: news/:title/
 permalink_defaults:
 pretty_urls:

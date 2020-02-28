@@ -68,7 +68,7 @@ btns:
 这个适合用作首页：
 <center>
 
-<btn class='large'>[<i class='fas fa-download'></i> 开始使用](/wiki/volantis/getting-started/)</btn>
+<btn class='large'>[<i class='fas fa-download'></i> 开始使用](/getting-started/)</btn>
 
 </center>
 
@@ -82,7 +82,7 @@ btns:
 <btn class='regular'>[常规按钮](/)</btn>
 
 这个适合用作首页：
-<center><btn class='large'>[<i class='fas fa-download'></i> 开始使用](/wiki/volantis/getting-started/)</btn></center>
+<center><btn class='large'>[<i class='fas fa-download'></i> 开始使用](/getting-started/)</btn></center>
 ```
 
 ::: danger
