@@ -150,7 +150,7 @@ index: true
 ---
 ```
 
-结果就是筛选出所有文章中 `layout: post` 且 `group: mylist` 的文章。
+结果就是筛选出所有文章中 `front-matter` 部分含有 `group: mylist` 的文章。
 
 > 上述中的 `mylist` 只是示例，你可以用任何名字作为一个列表。
 

@@ -16,7 +16,11 @@ btns:
 
 主题支持<b><red>丰</red><yellow>富</yellow><green>多</green><blue>彩</blue></b>的标签。
 
-## 彩色文字 <sup class='blue'>^1.5.2</sup>
+## 文本属性
+
+`<p 文本属性>文本内容</p>`
+
+### 彩色文字 <sup class='blue'>^1.5.2</sup>
 
 在一段话中方便插入各种颜色的标签，包括：<red>红色</red>、<yellow>黄色</yellow>、<green>绿色</green>、<cyan>青色</cyan>、<blue>蓝色</blue>、<gray>灰色</gray>。
 
@@ -24,9 +28,9 @@ btns:
 在一段话中方便插入各种颜色的标签，包括：<red>红色</red>、<yellow>黄色</yellow>、<green>绿色</green>、<cyan>青色</cyan>、<blue>蓝色</blue>、<gray>灰色</gray>。
 ```
 
-## 超大文字 <sup class='blue'>^1.5.2</sup>
+### 超大文字 <sup class='blue'>^1.5.2</sup>
 
-文档「开始」页面中的标题部分就是超大文字。目前支持的尺寸有：`large`、`huge`。
+文档「开始」页面中的标题部分就是超大文字。
 
 {% raw %}
 <details>
@@ -35,19 +39,17 @@ btns:
 </summary>
 {% endraw %}
 
-<center>
-<p class='large' style='color:#666'>Volantis</p>
-<b style='font-size:.9em;color:#666'>A Wonderful Theme for Hexo 4.2+</b>
-</center>
+<p center large gray>Volantis</p>
+<p center small gray>A Wonderful Theme for Hexo 4.2+</p>
 
 {% raw %}</details>{% endraw %}
 
 ```md 写法如下：
-<center>
-<p class='large' style='color:#666'>Volantis</p>
-<b style='font-size:.9em;color:#666'>A Wonderful Theme for Hexo 4.2+</b>
-</center>
+<p center large gray>Volantis</p>
+<p center small gray>A Wonderful Theme for Hexo 4.2+</p>
 ```
+
+目前支持的尺寸有：`small`、`large`、`huge`，布局有：`left`、`center`、`right`。
 
 ## 插入简单按钮 <sup class='blue'>^1.6</sup>
 
@@ -85,7 +87,7 @@ btns:
 <btn center large>[<i class='fas fa-download'></i> 开始使用](/)</btn>
 ```
 
-## 插入高级按钮 <sup class='blue'>^1.6</sup>
+## 插入高级按钮 <sup class='blue'>^1.6.1</sup>
 
 如果需要显示类似「团队成员」之类的一组含有头像的链接：
 
