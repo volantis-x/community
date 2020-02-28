@@ -23,7 +23,7 @@ pretty_urls:
 
 # Directory
 source_dir: source
-public_dir: public/volantis
+public_dir: public
 tag_dir: tags
 archive_dir: news/archives
 category_dir: categories
@@ -100,7 +100,7 @@ theme: volantis
 # npm install hexo-deployer-git --save
 deploy:
   - type: git
-    repo: https://github.com/xaoxuu/volantis.js.org.git
+    repo: git@github.com:xaoxuu/volantis.js.org.git
     branch: master
     message: update pages
 
