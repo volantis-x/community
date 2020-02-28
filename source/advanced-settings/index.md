@@ -157,8 +157,8 @@ here be danger
 @fontfamily_base: 'Varela Round', ...
 ```
 
-选择字体源： <btn class='small'>[jsdelivr](https://www.jsdelivr.com/package/gh/xaoxuu/cdn-fonts)</btn> <btn class='small'>[Google Fonts](https://fonts.google.com)</btn>
-
+> 选择字体源： <btn>[jsdelivr](https://www.jsdelivr.com/package/gh/xaoxuu/cdn-fonts)[Google Fonts](https://fonts.google.com)</btn>
+>
 > 目前主题默认使用的字体源 [@xaoxuu/cdn-fonts](https://www.jsdelivr.com/package/gh/xaoxuu/cdn-fonts) 是我专门为存放字体建的一个仓库，由jsdelivr提供CDN服务，目前已经收录20余种精选字体。如果你想添加某个喜爱的字体，可以提交到这里： [https://github.com/xaoxuu/cdn-fonts/](https://github.com/xaoxuu/cdn-fonts/)。
 
 

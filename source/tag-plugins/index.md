@@ -51,7 +51,7 @@ btns:
 
 ## 插入简单按钮 <sup class='blue'>^1.6</sup>
 
-目前共支持四种尺寸的按钮。
+目前共支持3种尺寸的按钮。
 
 {% raw %}
 <details>
@@ -60,58 +60,62 @@ btns:
 </summary>
 {% endraw %}
 
-在一句话中插入一个不太重要的 <btn class='small'>[小按钮](/)</btn> 。
-在一句话中插入一个正常尺寸的 <btn>[按钮](/)</btn> 。
-而这个更像是常规的按钮：
-<btn class='regular'>[常规按钮](/)</btn>
+第1种 <btn>[按钮](/)</btn> 适合融入段落中。
 
-这个适合用作首页：
-<center>
+第2种按钮适合独立于段落之外独占一行：
 
-<btn class='large'>[<i class='fas fa-download'></i> 开始使用](/getting-started/)</btn>
+<btn regular>[<i class='fas fa-play-circle'></i> 示例博客](https://xaoxuu.com)</btn>
 
-</center>
+第3种按钮更具有强调作用，建议搭配 `center` 使用：
+
+<btn center large>[<i class='fas fa-download'></i> 开始使用](/)</btn>
 
 {% raw %}</details>{% endraw %}
 
 
 ```md 写法如下：
-在一句话中插入一个不太重要的 <btn class='small'>[小按钮](/)</btn> 。
-在一句话中插入一个正常尺寸的 <btn>[按钮](/)</btn> 。
-而这个更像是常规的按钮：
-<btn class='regular'>[常规按钮](/)</btn>
+第1种 <btn>[按钮](/)</btn> 适合融入段落中。
 
-这个适合用作首页：
-<center><btn class='large'>[<i class='fas fa-download'></i> 开始使用](/getting-started/)</btn></center>
+第2种按钮适合独立于段落之外独占一行：
+
+<btn regular>[<i class='fas fa-play-circle'></i> 示例博客](https://xaoxuu.com)</btn>
+
+第3种按钮更具有强调作用，建议搭配 center 使用：
+
+<btn center large>[<i class='fas fa-download'></i> 开始使用](/)</btn>
 ```
 
-::: danger
+## 插入高级按钮 <sup class='blue'>^1.6</sup>
 
-由于未知原因，上例中如果 `<center></center>` 与其中的 `<btn>[按钮](/)</btn>` 之间没有空行，hexo不会解析成按钮。
-
-:::
-
-## 插入含有丰富内容的按钮 <sup class='blue'>^1.6</sup>
-
-如果需要显示类似「团队成员」之类的一组含有头像的链接，建议使用这种方式：
+如果需要显示类似「团队成员」之类的一组含有头像的链接：
 
 {% raw %}
-<div class='links-wrapper circle'>
+<btns circle grid5>
 <a href='https://github.com/xaoxuu'><img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png'>xaoxuu</a>
 <a href='https://github.com/xaoxuu'><img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png'>xaoxuu</a>
 <a href='https://github.com/xaoxuu'><img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png'>xaoxuu</a>
 <a href='https://github.com/xaoxuu'><img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png'>xaoxuu</a>
-</div>
+</btns>
+或者含有图标的按钮：
+<btns rounded grid5>
+<a href='https://github.com/xaoxuu/hexo-theme-volantis/'><i class='fas fa-download'></i>下载源码</a>
+<a href='https://xaoxuu.com/wiki/volantis/'><i class='fas fa-book-open'></i>查看文档</a>
+</btns>
 {% endraw %}
 
 ```md 写法如下：
 {% raw %}
-<div class='links-wrapper circle'>
+<btns circle grid5>
 <a href='https://github.com/xaoxuu'><img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png'>xaoxuu</a>
 <a href='https://github.com/xaoxuu'><img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png'>xaoxuu</a>
 <a href='https://github.com/xaoxuu'><img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png'>xaoxuu</a>
 <a href='https://github.com/xaoxuu'><img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png'>xaoxuu</a>
-</div>
+</btns>
+或者含有图标的按钮：
+<btns rounded grid5>
+<a href='https://github.com/xaoxuu/hexo-theme-volantis/'><i class='fas fa-download'></i>下载源码</a>
+<a href='https://xaoxuu.com/wiki/volantis/'><i class='fas fa-book-open'></i>查看文档</a>
+</btns>
 {% endraw %}
 ```
 
@@ -119,49 +123,54 @@ btns:
 {% raw %} 和 {% endraw %} 之间的内容是不解析的，只能写HTML标签。
 ```
 
-### 图片样式
+### 自定样式
 
-- 方形（`<div class='links-wrapper'>`）。
-- 圆角矩形（`<div class='links-wrapper rounded'>`），适合app图标。
-- 圆形（`<div class='links-wrapper circle'>`），适合头像。
+```md 格式如下：
+<btns 样式>
+很多按钮
+</btns>
+```
 
-### 文字样式
+#### 图片样式
 
-- 标题（`<p class='title'>标题</p>`）。
-- 内容（`<p>内容描述</p>`）。
+- 默认为方形（即等同于全局的图片样式：圆角半径2px）
+- 圆角矩形（`rounded`），适合app图标。
+- 圆形（`circle`），适合头像。
 
-### 布局方式
+#### 布局方式
 
-- 占容器50%宽的按钮（`<div class='links-wrapper wide'>`）
-- 自动宽度（`<div class='links-wrapper auto'>`）,适合视野内只有一两个的情况，多了显得乱。
-- 填充布局（`<div class='links-wrapper fill'>`），适合文字量大的情况。
+- 默认为自动宽度，适合视野内只有一两个的情况，多了显乱。
+- 宽一点的按钮（`wide`）。
+- 填充布局（`fill`），自动铺满至少一行，多了会换行。
+- 居中（`center`），按钮之间是固定间距。
+- 居中分散（`around`）。
+- 网格布局（`grid3`），最多3列，屏幕变窄会适当减少列数。
+- 网格布局（`grid4`），最多4列，屏幕变窄会适当减少列数。
+- 网格布局（`grid5`），最多5列，屏幕变窄会适当减少列数。
 
+#### 增加文字样式
 
-### 再举一个例子
+可以在 `<btns></btns>` 容器内增加 `<p>标题</p>` 和 `<p>描述文字</p>`
 
-圆角矩形 + 标题 + 描述 + 填充布局
+### 图文并茂的例子
+
+圆形图标 + 标题 + 描述 + 图片 + 网格4列 + 居中
 
 {% raw %}
-<div class='links-wrapper rounded fill'>
-<a href='https://xaoxuu.com/wiki/heartmate/'>
-  <img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/proj/heartmate/icon.png'>
-  <p class='title'>一个简单易用的掌上心率计</p>
-  <p style='text-align:left'>专为那些没有智能手环或手表却需要测量心率的用户而设计，可以方便快捷的测量和记录心率。</p>
-  <p style='text-align:left'>使用Heart Mate心率助手，你可以在没有智能手环等心率监测设备的情况下随时检测并记录自己的心率。 通过设置tag标签，快速记录当前状态，如饭后、运动后等，方便以后检索具有同样标签的心率数据，从而分析这些情景下的心率数据，发现健康问题。</p>
+<btns circle center grid4>
+<a href='https://apps.apple.com/cn/app/heart-mate-pro-hrm-utility/id1463348922?ls=1'>
+  <i class='fab fa-apple'></i>
+  <b>心率管家</b>
+  <p red>专业版</p>
+  <img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/qrcode/heartmate_pro.png'>
 </a>
-<a href='https://xaoxuu.com/wiki/heartmate/'>
-  <img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/proj/heartmate/icon_lite.png'>
-  <p class='title'>一个简单易用的掌上心率计</p>
-  <p style='text-align:left'>专为那些没有智能手环或手表却需要测量心率的用户而设计，可以方便快捷的测量和记录心率。</p>
-  <p style='text-align:left'>「免费版」仅仅是个性化定制功能锁定，核心功能完全不受限制，并且没有任何广告。</p>
+<a href='https://apps.apple.com/cn/app/heart-mate-lite-hrm-utility/id1475747930?ls=1'>
+  <i class='fab fa-apple'></i>
+  <b>心率管家</b>
+  <p green>免费版</p>
+  <img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/qrcode/heartmate_lite.png'>
 </a>
-<a href='https://xaoxuu.com/wiki/prohud/'>
-  <img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/proj/prohud/icon.png'>
-  <p class='title'>ProHUD</p>
-  <p>Toast + Alert + ActionSheet</p>
-  <p style='text-align:left'>用简便的方法拿到已发布的实例，避免重复发布实例。可对已发布的实例进行数据更新。可对所有实例设置监听事件。对多实例并存堆叠的极端情况做了优化。完全可定制并易于扩展。</p>
-</a>
-</div>
+</btns>
 {% endraw %}
 
 
@@ -174,26 +183,20 @@ btns:
 
 ```html
 {% raw %}
-<div class='links-wrapper rounded fill'>
-<a href='https://xaoxuu.com/wiki/heartmate/'>
-  <img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/proj/heartmate/icon.png'>
-  <p class='title'>一个简单易用的掌上心率计</p>
-  <p style='text-align:left'>专为那些没有智能手环或手表却需要测量心率的用户而设计，可以方便快捷的测量和记录心率。</p>
-  <p style='text-align:left'>使用Heart Mate心率助手，你可以在没有智能手环等心率监测设备的情况下随时检测并记录自己的心率。 通过设置tag标签，快速记录当前状态，如饭后、运动后等，方便以后检索具有同样标签的心率数据，从而分析这些情景下的心率数据，发现健康问题。</p>
+<btns circle center grid4>
+<a href='https://apps.apple.com/cn/app/heart-mate-pro-hrm-utility/id1463348922?ls=1'>
+  <i class='fab fa-apple'></i>
+  <b>心率管家</b>
+  <p red>专业版</p>
+  <img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/qrcode/heartmate_pro.png'>
 </a>
-<a href='https://xaoxuu.com/wiki/heartmate/'>
-  <img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/proj/heartmate/icon_lite.png'>
-  <p class='title'>一个简单易用的掌上心率计</p>
-  <p style='text-align:left'>专为那些没有智能手环或手表却需要测量心率的用户而设计，可以方便快捷的测量和记录心率。</p>
-  <p style='text-align:left'>「免费版」仅仅是个性化定制功能锁定，核心功能完全不受限制，并且没有任何广告。</p>
+<a href='https://apps.apple.com/cn/app/heart-mate-lite-hrm-utility/id1475747930?ls=1'>
+  <i class='fab fa-apple'></i>
+  <b>心率管家</b>
+  <p green>免费版</p>
+  <img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/qrcode/heartmate_lite.png'>
 </a>
-<a href='https://xaoxuu.com/wiki/prohud/'>
-  <img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/proj/prohud/icon.png'>
-  <p class='title'>ProHUD</p>
-  <p>Toast + Alert + ActionSheet</p>
-  <p style='text-align:left'>用简便的方法拿到已发布的实例，避免重复发布实例。可对已发布的实例进行数据更新。可对所有实例设置监听事件。对多实例并存堆叠的极端情况做了优化。完全可定制并易于扩展。</p>
-</a>
-</div>
+</btns>
 {% endraw %}
 ```
 
