@@ -317,8 +317,8 @@ use_cdn: true
 ```yaml 主题配置文件
 info:
   name: Volantis
-  version: 1.5.4
-  docs: https://xaoxuu.com/wiki/volantis/
+  version: 1.6.2
+  docs: https://volantis.js.org/
   cdn: # 要使用CDN，请在根目录的config文件中写上 use_cdn: true
     css:
       style: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@20.2.33/css/style.css

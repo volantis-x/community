@@ -124,7 +124,7 @@ navbar:
         rel: nofollow
       - name: 主题文档
         icon: fas fa-book
-        url: https://xaoxuu.com/wiki/volantis/
+        url: https://volantis.js.org/
         rel: nofollow
       - name: 关于小站
         icon: fas fa-info-circle

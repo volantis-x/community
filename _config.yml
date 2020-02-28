@@ -97,8 +97,13 @@ theme: volantis
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
+# npm install hexo-deployer-git --save
 deploy:
-  type: ''
+  - type: git
+    repo: https://github.com/xaoxuu/volantis.js.org.git
+    branch: master
+    message: update pages
+
 
 
 use_cdn: true
@@ -203,4 +208,4 @@ markdown:
 leancloud:
   app_id: FIKAgh6n0pUM08JXxhJHChVQ-MdYXbMMI
   app_key: RJGiOYFc1fBvfox4frBPpRzU
-  valine_path: /wiki/volantis/
+  valine_path: /

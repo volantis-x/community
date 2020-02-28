@@ -101,7 +101,7 @@ btns:
 或者含有图标的按钮：
 <btns rounded grid5>
 <a href='https://github.com/xaoxuu/hexo-theme-volantis/'><i class='fas fa-download'></i>下载源码</a>
-<a href='https://xaoxuu.com/wiki/volantis/'><i class='fas fa-book-open'></i>查看文档</a>
+<a href='https://volantis.js.org/'><i class='fas fa-book-open'></i>查看文档</a>
 </btns>
 {% endraw %}
 
@@ -116,7 +116,7 @@ btns:
 或者含有图标的按钮：
 <btns rounded grid5>
 <a href='https://github.com/xaoxuu/hexo-theme-volantis/'><i class='fas fa-download'></i>下载源码</a>
-<a href='https://xaoxuu.com/wiki/volantis/'><i class='fas fa-book-open'></i>查看文档</a>
+<a href='https://volantis.js.org/'><i class='fas fa-book-open'></i>查看文档</a>
 </btns>
 {% endraw %}
 ```
