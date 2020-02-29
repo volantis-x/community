@@ -470,20 +470,27 @@ layout:
 ### 字数和阅读时长
 
 1. 安装以下插件：
-  ```
-  npm i --save hexo-wordcount
-  ```
-2. 然后修改配置文件，将 `wordcount` 写入需要显示的meta位置：
-  ```yaml 主题配置文件
-  # 布局
-  layout:
-    on_list:
-      meta: [..., wordcount, ...]
-    on_page:
-      meta:
-        header: [..., wordcount, ...]
-        footer: [..., wordcount, ...]
-  ```
+```
+npm i --save hexo-wordcount
+```
+2. 修改配置文件，将 `wordcount` 插件打开
+```yaml 主题配置文件
+plugins:
+  ...
+  # 文章字数统计、阅读时长，开启需要安装插件: npm i --save hexo-wordcount
+  wordcount: true
+```
+3. 然后修改配置文件，将 `wordcount` 写入需要显示的meta位置：
+```yaml 主题配置文件
+# 布局
+layout:
+  on_list:
+    meta: [..., wordcount, ...]
+  on_page:
+    meta:
+      header: [..., wordcount, ...]
+      footer: [..., wordcount, ...]
+```
 
 ### 百度统计
 
