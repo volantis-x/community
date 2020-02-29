@@ -97,14 +97,14 @@ music
 
 归档页面是自动生成的，并且初始化的时候已经生成，路径如下：
 
-```yaml 站点配置文件
+```yaml blog/_config.yml
 # Directory
 archive_dir: archives
 ```
 
 ### 关于页面
 
-```yaml 手动创建文件：source/about/index.md
+```yaml Create file if not exists: source/about/index.md
 ---
 layout: page
 title: 关于
@@ -122,7 +122,7 @@ valine:
 
 ### 分类页面
 
-```yaml 手动创建文件：source/categories/index.md
+```yaml Create file if not exists: source/categories/index.md
 ---
 layout: category
 index: true
@@ -132,7 +132,7 @@ title: 所有分类
 
 ### 标签页面
 
-```yaml 手动创建文件：source/tags/index.md
+```yaml Create file if not exists: source/tags/index.md
 ---
 layout: tag
 index: true
@@ -142,7 +142,7 @@ title: 所有标签
 
 ### 列表页面
 
-```yaml 手动创建文件：source/mylist/index.md
+```yaml Create file if not exists: source/mylist/index.md
 ---
 layout: list
 group: mylist
@@ -157,7 +157,7 @@ index: true
 
 ### 友链页面
 
-```yaml 手动创建文件：source/friends/index.md
+```yaml Create file if not exists: source/friends/index.md
 ---
 layout: links     # 必须
 title: 我的朋友们   # 可选，这是友链页的标题
@@ -193,7 +193,7 @@ links:
 
 ### 404页面
 
-```yaml 手动创建文件：source/404.md
+```yaml Create file if not exists: source/404.md
 ---
 layout: page
 title: 404 Not Found

@@ -91,7 +91,7 @@ here be danger
   npm install markdown-it-abbr markdown-it-checkbox markdown-it-container markdown-it-deflist markdown-it-emoji markdown-it-footnote markdown-it-imsize markdown-it-ins markdown-it-mark markdown-it-regexp markdown-it-sub markdown-it-sup markdown-it-task-checkbox --save
   ```
 4. 修改配置文件
-  ```yaml 站点配置文件
+  ```yaml blog/_config.yml
   markdown:
     render:
       html: true
@@ -338,13 +338,13 @@ here be danger
 
 ### 开启方法
 
-```yaml 站点配置文件
+```yaml blog/_config.yml
 use_cdn: true
 ```
 
 如果你需要对样式进行DIY，可以只关闭style文件的CDN。
 
-```yaml 主题配置文件
+```yaml blog/themes/volantis/_config.yml
 info:
   name: Volantis
   version: 1.6.2
@@ -371,7 +371,7 @@ info:
 官网： [https://disqus.com/](https://disqus.com/)
 
 
-```yaml 站点配置文件
+```yaml blog/_config.yml
 # disqus评论
 disqus_shortname: #你的disqus的shortname#
 ```
@@ -380,7 +380,7 @@ disqus_shortname: #你的disqus的shortname#
 
 官网： [https://github.com/gitalk/gitalk](https://github.com/gitalk/gitalk)
 
-```yaml 站点配置文件
+```yaml blog/_config.yml
 gitalk: 要使用哪个请复制到根目录配置文件！
   clientID: 你的clientID
   clientSecret: 你的clientSecret
@@ -412,13 +412,13 @@ gitalk:
 
 官网： [https://valine.js.org](https://valine.js.org)
 
-```yaml 站点配置文件
+```yaml blog/_config.yml
 leancloud:
   app_id: 你的appId
   app_key: 你的appKey
 ```
 
-```yaml 主题配置文件
+```yaml blog/themes/volantis/_config.yml
 valine:
   enable: true # 如果你想用Valine评论系统，请设置enable为true
   volantis: true # 是否启用volantis版本（禁止匿名，增加若干贴吧、QQ表情）
@@ -458,7 +458,7 @@ valine:
 
 官网： [http://www.laibili.com.cn/](http://www.laibili.com.cn/)
 
-```yaml 站点配置文件
+```yaml blog/_config.yml
 # 来必力评论
 livere_uid: #你的livere的uid
 ```
@@ -484,7 +484,7 @@ npm i S hexo-related-popular-posts
 
 例如放在侧边栏：
 
-```yaml 主题配置文件
+```yaml blog/themes/volantis/_config.yml
 layout:
   on_page:
     sidebar: [related_posts]
@@ -504,14 +504,14 @@ layout:
 npm i --save hexo-wordcount
 ```
 2. 修改配置文件，将 `wordcount` 插件打开
-```yaml 主题配置文件
+```yaml blog/themes/volantis/_config.yml
 plugins:
   ...
   # 文章字数统计、阅读时长，开启需要安装插件: npm i --save hexo-wordcount
   wordcount: true
 ```
 3. 然后修改配置文件，将 `wordcount` 写入需要显示的meta位置：
-```yaml 主题配置文件
+```yaml blog/themes/volantis/_config.yml
 # 布局
 layout:
   on_list:
@@ -524,14 +524,14 @@ layout:
 
 ### 百度统计
 
-```yaml 站点配置文件
+```yaml blog/_config.yml
 baidu_analytics_key: 百度统计的key
 ```
 
 
 ### Google Analytics
 
-```yaml 站点配置文件
+```yaml blog/_config.yml
 google_analytics_key: Google Analytics Key
 ```
 

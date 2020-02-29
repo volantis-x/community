@@ -60,7 +60,7 @@ btns:
 
 请检查根目录配置文件中的链接是否正确，如：
 
-```yaml 站点配置文件
+```yaml blog/_config.yml
 url: https://xaoxuu.com
 root: /
 ```

@@ -24,7 +24,7 @@ btns:
 
 在一段话中方便插入各种颜色的标签，包括：<red>红色</red>、<yellow>黄色</yellow>、<green>绿色</green>、<cyan>青色</cyan>、<blue>蓝色</blue>、<gray>灰色</gray>。
 
-```md 写法如下：
+```md blog/source/_posts/example.md:
 在一段话中方便插入各种颜色的标签，包括：<red>红色</red>、<yellow>黄色</yellow>、<green>绿色</green>、<cyan>青色</cyan>、<blue>蓝色</blue>、<gray>灰色</gray>。
 ```
 
@@ -44,7 +44,7 @@ btns:
 
 {% raw %}</details>{% endraw %}
 
-```md 写法如下：
+```md blog/source/_posts/example.md:
 <p center large gray>Volantis</p>
 <p center small gray>A Wonderful Theme for Hexo 4.2+</p>
 ```
@@ -75,7 +75,7 @@ btns:
 {% raw %}</details>{% endraw %}
 
 
-```md 写法如下：
+```md blog/source/_posts/example.md:
 第1种 <btn>[按钮](/)</btn> 适合融入段落中。
 
 第2种按钮适合独立于段落之外独占一行：
@@ -105,7 +105,7 @@ btns:
 </btns>
 {% endraw %}
 
-```md 写法如下：
+```md blog/source/_posts/example.md:
 {% raw %}
 <btns circle grid5>
 <a href='https://github.com/xaoxuu'><img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png'>xaoxuu</a>
@@ -121,13 +121,13 @@ btns:
 {% endraw %}
 ```
 
-```md 提示：
+```md Tips:
 {% raw %} 和 {% endraw %} 之间的内容是不解析的，只能写HTML标签。
 ```
 
 ### 自定样式
 
-```md 格式如下：
+```html
 <btns 样式>
 很多按钮
 </btns>
@@ -208,7 +208,7 @@ btns:
 
 1. 在主题配置文件中开启插件。
 
-```yaml 主题配置文件
+```yaml blog/themes/volantis/_config.yml
 plugins:
   fancybox:
     css: '//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css'
@@ -217,7 +217,7 @@ plugins:
 
 2. 将需要放大预览的图片用 `<fancybox></fancybox>` 包含起来。
 
-```md 写法如下：
+```md blog/source/_posts/example.md:
 例如这个图是不能点开的：
 ![](https://img.vim-cn.com/52/a54815c02ce232f11f54b2c547c1337828833c.png)
 而这个图是可以点开的：
@@ -264,7 +264,7 @@ plugins:
 
 一般来说，表格默认会横向铺满，格子内文字过多会自动换行。但是当列数比较多时，每一列都很窄，推荐使用支持滚动的表格样式，用一对 `<overflow></overflow>` 把表格包起来。
 
-```md 格式为：
+```html
 <overflow>
 
 md表格内容
@@ -294,7 +294,7 @@ md表格内容
 
 </overflow>
 
-```md 写法如下：
+```md blog/source/_posts/example.md:
 <overflow>
 
 | 类别     | 排序方法 | 平均时间复杂度       | 最优时间复杂度       | 最差时间复杂度       | 空间复杂度                  | 稳定性 | 复杂性 |
@@ -326,7 +326,7 @@ One More Thing 👇
 
 {% raw %}</details>{% endraw %}
 
-```md 写法如下：
+```md blog/source/_posts/example.md:
 {% raw %}
 <details>
 <summary>
@@ -344,7 +344,7 @@ One More Thing 👇
 
 默认是不渲染的，如果文章内有公式，需要在 `front-matter` 中设置开启。
 
-```md 示例：
+```md blog/source/_posts/example.md:
 ---
 title: 渲染公式（MathJax）
 date: 2020-02-23
@@ -406,7 +406,7 @@ Every interaction is both precious and an opportunity to delight.
 
 ### 代码块
 
-```md 格式：
+```md
 {% codeblock [title] [lang:language] [url] [link text] [additional options] %}
 code snippet
 {% endcodeblock %}
@@ -418,7 +418,7 @@ code snippet
 [rectangle setX: 10 y: 10 width: 20 height: 20];
 {% endcodeblock %}
 
-```md 写法如下：
+```md blog/source/_posts/example.md:
 {% codeblock lang:objc %}
 [rectangle setX: 10 y: 10 width: 20 height: 20];
 {% endcodeblock %}
@@ -430,7 +430,7 @@ code snippet
 array.map(callback[, thisArg])
 {% endcodeblock %}
 
-```md 写法如下：
+```md blog/source/_posts/example.md:
 {% codeblock Array.map %}
 array.map(callback[, thisArg])
 {% endcodeblock %}
@@ -449,7 +449,7 @@ else:
    print(c)
 {% endcodeblock %}
 
-```md 写法如下：
+```md blog/source/_posts/example.md:
 {% codeblock lang:python line_number:true mark:3,5,8 %}
 n=eval(input())
 if n==0:
@@ -464,7 +464,7 @@ else:
 
 ### Pull Quote
 在文章中插入 `Pull quote`。
-```md 写法如下：
+```md blog/source/_posts/example.md:
 {% pullquote [class] %}
 content
 {% endpullquote %}
@@ -472,37 +472,37 @@ content
 
 ### jsFiddle
 在文章中嵌入 `jsFiddle`。
-```md 写法如下：
+```md blog/source/_posts/example.md:
 {% jsfiddle shorttag [tabs] [skin] [width] [height] %}
 ```
 
 ### Gist
 在文章中嵌入 `Gist`，<red>注意</red>：在国内无法加载。
-```md 写法如下：
+```md blog/source/_posts/example.md:
 {% gist gist_id [filename] %}
 ```
 
 ### iframe
 在文章中插入 `iframe`。
-```md 写法如下：
+```md blog/source/_posts/example.md:
 {% iframe url [width] [height] %}
 ```
 
 ### Image
 在文章中插入指定大小的图片。
-```md 写法如下：
+```md blog/source/_posts/example.md:
 {% img [class names] /path/to/image [width] [height] '"title text" "alt text"' %}
 ```
 
 ### Link
 在文章中插入链接，并自动给外部链接添加 `target="_blank"` 属性。
-```md 写法如下：
+```md blog/source/_posts/example.md:
 {% link text url [external] [title] %}
 ```
 
 ### Include Code
 插入 `source/downloads/code` 文件夹内的代码文件。`source/downloads/code` 不是固定的，取决于你在配置文件中 `code_dir` 的配置。
-```md 写法如下：
+```md blog/source/_posts/example.md:
 {% include_code [title] [lang:language] [from:line] [to:line] path/to/file %}
 ```
 
@@ -556,7 +556,7 @@ content
 
 引用这篇文章：{% post_link 2020-02-22 %}
 
-```md 写法如下：
+```md blog/source/_posts/example.md:
 引用这篇文章：{% post_link 2020-02-22 %}
 ```
 {% raw %}</details>{% endraw %}

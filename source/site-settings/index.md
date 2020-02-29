@@ -17,7 +17,7 @@ btns:
 
 ## 多语言支持
 
-```yml 站点配置文件
+```yaml blog/_config.yml
 language:
   - zh-CN
   - en
@@ -27,7 +27,7 @@ language:
 
 ## 网站标题
 
-```yaml 站点配置文件
+```yaml blog/_config.yml
 # 网站标题
 title: my blog
 ```
@@ -36,7 +36,7 @@ title: my blog
 
 ### 简单方式
 
-```yaml 站点配置文件
+```yaml blog/_config.yml
 # 网站图标，更多尺寸等图标请使用import方式批量导入
 favicon: https://cdn.jsdelivr.net/gh/xaoxuu/assets@master/favicon/favicon.ico
 # 作者头像，会出现在文章标题下方，不同于侧边栏的大头像
@@ -45,7 +45,7 @@ avatar: https://cdn.jsdelivr.net/gh/xaoxuu/assets@master/avatar/avatar.png
 
 ### 完全自定义方式
 
-```yaml 站点配置文件
+```yaml blog/_config.yml
 # 全局导入
 import:
   meta:
@@ -64,7 +64,7 @@ import:
 
 ## 设置网站页脚
 
-```yaml 站点配置文件
+```yaml blog/_config.yml
 # 网页最底部的文字，支持md
 copyright: '[Copyright © 2017-2020 Mr. X](https://xaoxuu.com)'
 ```
@@ -73,7 +73,7 @@ copyright: '[Copyright © 2017-2020 Mr. X](https://xaoxuu.com)'
 
 可以在无需修改主题文件的情况下在head和body中添加各种标签。`meta` 和 `link` 对应head中的 `<meta>` 和 `<link>` 标签。`script` 可以在body末尾导入js文件。
 
-```yaml 站点配置文件
+```yaml blog/_config.yml
 # 全局导入
 import:
   meta:

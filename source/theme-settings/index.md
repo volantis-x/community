@@ -16,13 +16,13 @@ btns:
 
 ## 显示「阅读全文」按钮 <sup class='blue'>^1.5.2</sup>
 
-```yaml 主题配置文件
+```yaml blog/themes/volantis/_config.yml
 readmore: true
 ```
 
 ## 设置幻灯片背景
 
-```yaml 主题配置文件
+```yaml blog/themes/volantis/_config.yml
 backstretch:
   position: background  # cover: 封面背景   background: 整个网页背景
   duration: 10000       # 持续时间（毫秒）
@@ -43,7 +43,7 @@ backstretch:
 
 ## 设置封面
 
-```yaml 主题配置文件
+```yaml blog/themes/volantis/_config.yml
 # page的封面
 cover:
   scheme: search    # 后期将会提供多种封面布局方案
@@ -73,7 +73,7 @@ cover:
 
 ## 设置导航栏
 
-```yaml 主题配置文件
+```yaml blog/themes/volantis/_config.yml
 navbar:
   # 左侧logo区
   logo:
@@ -139,7 +139,7 @@ navbar:
 
 ## 毛玻璃与卡片阴影 <sup class='blue'>^1.5</sup>
 
-```yaml 主题配置文件
+```yaml blog/themes/volantis/_config.yml
 # 样式
 style:
   # 卡片阴影效果
@@ -183,7 +183,7 @@ style:
 
 <fancybox><img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/2020/2020-02-1820.13.44.png'></fancybox>
 
-```yaml 主题配置文件
+```yaml blog/themes/volantis/_config.yml
 layout:
   # 文章列表（主页、自定义的列表）布局
   on_list:
@@ -213,7 +213,7 @@ layout:
 
 ## Meta库
 
-```yaml 主题配置文件
+```yaml blog/themes/volantis/_config.yml
 meta:
   # 文章标题
   title: # 暂无配置
@@ -317,7 +317,7 @@ Widget库中的小部件通常可用于侧边栏、左边主体区域，部分�
 
 ### blogger
 
-```yaml 主题配置文件
+```yaml blog/themes/volantis/_config.yml
 widget:
   # ---------------------------------------
   # 博主信息小部件配置
@@ -332,7 +332,7 @@ widget:
 
 ### toc
 
-```yaml 主题配置文件
+```yaml blog/themes/volantis/_config.yml
 widget:
   # ---------------------------------------
   # 目录小部件配置(仅在文章中有效)
@@ -349,7 +349,7 @@ widget:
 
 ### category
 
-```yaml 主题配置文件
+```yaml blog/themes/volantis/_config.yml
 widget:
   # ---------------------------------------
   # 文章分类小部件配置
@@ -364,7 +364,7 @@ widget:
 
 ### tagcloud
 
-```yaml 主题配置文件
+```yaml blog/themes/volantis/_config.yml
 widget:
   # ---------------------------------------
   # 标签云小部件配置
@@ -384,7 +384,7 @@ widget:
 
 ### related_posts
 
-```yaml 主题配置文件
+```yaml blog/themes/volantis/_config.yml
 widget:
   # ---------------------------------------
   # 相关文章小部件配置
@@ -399,7 +399,7 @@ widget:
 
 ### copyright
 
-```yaml 主题配置文件
+```yaml blog/themes/volantis/_config.yml
 widget:
   # ---------------------------------------
   # 版权说明小部件（仅用于文章中）
@@ -416,7 +416,7 @@ widget:
 
 ### qrcode
 
-```yaml 主题配置文件
+```yaml blog/themes/volantis/_config.yml
 widget:
   # ---------------------------------------
   # 二维码小部件（可用于文章中的打赏，只显示图片，无其他功能）
@@ -434,7 +434,7 @@ widget:
 
 ### text
 
-```yaml 主题配置文件
+```yaml blog/themes/volantis/_config.yml
 widget:
   # ---------------------------------------
   # 自定义组件，仿照如下写法
@@ -452,7 +452,7 @@ widget:
 
 ### grid
 
-```yaml 主题配置文件
+```yaml blog/themes/volantis/_config.yml
 widget:
   # ---------------------------------------
   # 自定义组件，仿照如下写法
@@ -477,7 +477,7 @@ widget:
 
 ### list
 
-```yaml 主题配置文件
+```yaml blog/themes/volantis/_config.yml
 widget:
   # ---------------------------------------
   # 自定义组件，仿照如下写法
@@ -504,7 +504,7 @@ widget:
 
 各个字段参数取值都有备注：
 
-```yaml 主题配置文件
+```yaml blog/themes/volantis/_config.yml
 # APlayer配置 https://github.com/metowolf/MetingJS
 aplayer:
   # 是否启用，注释此项则不加载服务
@@ -532,7 +532,7 @@ aplayer:
 
 ## 社交信息
 
-```yaml 主题配置文件
+```yaml blog/themes/volantis/_config.yml
 # 页脚社交信息
 social:
   - icon: fas fa-envelope
@@ -553,28 +553,28 @@ social:
 
 鼠标放在链接上就提前开始加载了，开启此项服务时请注意主题配置文件中本地的路径要以 `/` 结尾。
 
-```yaml 主题配置文件
+```yaml blog/themes/volantis/_config.yml
 plugins:
   instant_page: '//instant.page/3.0.0'
 ```
 
 ### 文本框打字特效
 
-```yaml 主题配置文件
+```yaml blog/themes/volantis/_config.yml
 plugins:
   comment_typing: '//cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@20.2.33/js/comment_typing.js'
 ```
 
 ### 代码块复制按钮
 
-```yaml 主题配置文件
+```yaml blog/themes/volantis/_config.yml
 plugins:
   clipboard: '//cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js'
 ```
 
 ### 按钮点击涟漪效果
 
-```yaml 主题配置文件
+```yaml blog/themes/volantis/_config.yml
 plugins:
   nodewaves:
     css: '//cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.css'
