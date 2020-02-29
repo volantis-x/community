@@ -27,15 +27,16 @@ btns:
 {% raw %}
 <btns circle grid5>
 <a href='https://github.com/xaoxuu'><img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png'>xaoxuu</a>
-<a href='https://github.com/inkss'><img src='https://avatars2.githubusercontent.com/u/31947043?s=48&v=4'>inkss</a>
-<a href='https://github.com/CRainyDay'><img src='https://avatars2.githubusercontent.com/u/46487957?s=48&v=4'>CRainyDay</a>
-<a href='https://github.com/zhaohaihao'><img src='https://avatars1.githubusercontent.com/u/16284860?s=48&v=4'>zhaohaihao</a>
-<a href='https://github.com/lunhui1994'><img src='https://avatars2.githubusercontent.com/u/18746902?s=48&v=4'>lunhui1994</a>
-<a href='https://github.com/ic3evi1'><img src='https://avatars0.githubusercontent.com/u/11464700?s=48&v=4'>ic3evi1</a>
-<a href='https://github.com/WillyChen123'><img src='https://avatars2.githubusercontent.com/u/8603271?s=48&v=4'>WillyChen123</a>
-<a href='https://github.com/TRHX'><img src='https://avatars3.githubusercontent.com/u/42269246?s=48&v=4'>TRHX</a>
-<a href='https://github.com/PHIKN1GHT'><img src='https://avatars0.githubusercontent.com/u/42083023?s=48&v=4'>PHIKN1GHT</a>
-<a href='https://github.com/Linhk1606'><img src='https://avatars1.githubusercontent.com/u/50829219?s=48&v=4'>Linhk1606</a>
+<a href='https://github.com/inkss'><img src='https://avatars2.githubusercontent.com/u/31947043?s=60&v=4'>inkss</a>
+<a href='https://github.com/CRainyDay'><img src='https://avatars2.githubusercontent.com/u/46487957?s=60&v=4'>CRainyDay</a>
+<a href='https://github.com/zhaohaihao'><img src='https://avatars1.githubusercontent.com/u/16284860?s=60&v=4'>zhaohaihao</a>
+<a href='https://github.com/MicDZ'><img src='https://avatars2.githubusercontent.com/u/34596177?s=60&v=4'>MicDZ</a>
+<a href='https://github.com/lunhui1994'><img src='https://avatars2.githubusercontent.com/u/18746902?s=60&v=4'>lunhui1994</a>
+<a href='https://github.com/ic3evi1'><img src='https://avatars0.githubusercontent.com/u/11464700?s=60&v=4'>ic3evi1</a>
+<a href='https://github.com/WillyChen123'><img src='https://avatars2.githubusercontent.com/u/8603271?s=60&v=4'>WillyChen123</a>
+<a href='https://github.com/TRHX'><img src='https://avatars3.githubusercontent.com/u/42269246?s=60&v=4'>TRHX</a>
+<a href='https://github.com/PHIKN1GHT'><img src='https://avatars0.githubusercontent.com/u/42083023?s=60&v=4'>PHIKN1GHT</a>
+<a href='https://github.com/Linhk1606'><img src='https://avatars1.githubusercontent.com/u/50829219?s=60&v=4'>Linhk1606</a>
 </btns>
 {% endraw %}
 
