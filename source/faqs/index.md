@@ -65,13 +65,6 @@ url: https://xaoxuu.com
 root: /
 ```
 
-## 关于SEO
-
-推荐的SEO优化插件：
-
-- [hexo-autonofollow](https://github.com/liuzc/hexo-autonofollow)
-- [hexo-generator-seo-friendly-sitemap](https://github.com/ludoviclefevre/hexo-generator-seo-friendly-sitemap)
-
 ## 教程与指南
 
 <btn>[Hexo官方文档](https://hexo.io) [Valine官方文档](https://valine.js.org)</btn>

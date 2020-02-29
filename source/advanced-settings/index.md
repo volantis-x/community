@@ -25,6 +25,36 @@ git submodule add git@github.com:xaoxuu/hexo-theme-volantis themes/volantis
 ```
 {% raw %}</details>{% endraw %}
 
+## 为网站提速
+
+### 加载速度
+
+- 尝试安装 `hexo-all-minifier` 插件。
+- 减少不必要的js插件，例如字数统计、动态背景。以Chrome浏览器为例，
+
+#### 查看拖慢速度的资源
+
+1. 页面中点击右键，选择「检查」。
+2. 在右边的窗口中「Network」选项卡，并勾选「Disable cache」。
+3. 刷新网页，查看加载速度慢的资源。
+  3.1. 如果是图片，建议使用CDN。
+  3.2. 如果非必须的js插件，建议舍弃。
+  3.3. 如果是必须使用的js插件，建议下载并自己上传至 `jsdelivr`。
+
+### 运行速度
+
+- 用手机访问具有动态特效背景（如雪花、粒子等）的网站很快会发烫变卡。如果你希望网站有好的使用体验请尽量不要安装这类插件。
+- 安装 [hexo-offline](https://github.com/JLHwung/hexo-offline) 插件。
+
+
+## 优化SEO
+
+- 文章内不要使用 H1 标题。
+- 通过死链检测工具检查并删除无法访问的链接。
+- 安装SEO优化插件：
+  - [hexo-autonofollow](https://github.com/liuzc/hexo-autonofollow)
+  - [hexo-generator-seo-friendly-sitemap](https://github.com/ludoviclefevre/hexo-generator-seo-friendly-sitemap)
+
 
 ## 复选框和Container
 
