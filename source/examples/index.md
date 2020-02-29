@@ -26,6 +26,10 @@ links:
       avatar: https://i.loli.net/2020/02/22/WbxiwCG1gDEF3Od.jpg
       url: https://233213fedf.github.io
       tags:
+    - name: MicDZ's blog
+      avatar: https://i.loli.net/2020/02/29/T2cijraFuM35ECO.jpg
+      url: https://www.micdz.cn 
+      tags: [OIer, C++]
 ---
 
 这些是一部分使用了「Volantis」主题的博客，由博主自助添加。如果你也使用了「Volantis」，希望在这里推广自己的博客，可以按照本页下方提供的格式自行添加。
