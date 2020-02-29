@@ -328,11 +328,11 @@ author:
 music:
   server: netease   # netease, tencent, kugou, xiami, baidu
   type: song        # song, playlist, album, search, artist
-  id: 26664345      # song id / playlist id / album id / search keyword
+  id: 16846091      # song id / playlist id / album id / search keyword
 ---
 ```
 
-> 实际效果见： https://xaoxuu.com/friends/
+> 实际效果见： [https://volantis.js.org/contributors/](/contributors/)
 > APlayer配置： https://github.com/metowolf/MetingJS
 
 

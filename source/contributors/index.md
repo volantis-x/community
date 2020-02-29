@@ -4,6 +4,11 @@ title: Contributors「鸣谢」
 cover: false
 meta:
   header: [title, author, updated]
+music:
+  server: netease   # netease, tencent, kugou, xiami, baidu
+  type: song        # song, playlist, album, search, artist
+  id: 41630480      # song id / playlist id / album id / search keyword
+  autoplay: true
 btns:
   repo: https://github.com/xaoxuu/hexo-theme-volantis
   bug: https://github.com/xaoxuu/hexo-theme-volantis/issues/new?assignees=&labels=BUG&template=bug-report.md

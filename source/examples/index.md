@@ -4,6 +4,11 @@ title: 示例博客
 cover: false
 meta:
   header: [title]
+music:
+  server: netease   # netease, tencent, kugou, xiami, baidu
+  type: song        # song, playlist, album, search, artist
+  id: 16846091      # song id / playlist id / album id / search keyword
+  autoplay: true
 links:
   - group: '版本：^1.6'
     items:
