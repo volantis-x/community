@@ -5,9 +5,9 @@
 # Site
 title: Volantis
 subtitle: ''
-description: ''
-keywords:
-author: Mr. X
+description: 'Volantis，一个高度模块化和可定制化、功能相对完善的Hexo博客主题，既可以用作个人博客，也适合用来搭建文档。'
+keywords: 'Volantis,Hexo,Hexo主题,Blog,博客'
+author: 'Mr. X'
 language: zh-CN
 timezone: ''
 avatar: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png
@@ -18,8 +18,8 @@ root: /
 permalink: news/:title/
 permalink_defaults:
 pretty_urls:
-  trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
-  trailing_html: true # Set to false to remove trailing '.html' from permalinks
+  trailing_index: false # Set to false to remove trailing 'index.html' from permalinks
+  trailing_html: false # Set to false to remove trailing '.html' from permalinks
 
 # Directory
 source_dir: source
@@ -39,7 +39,7 @@ external_link:
   enable: true # Open external links in new tab
   field: site # Apply to the whole site
   exclude: ''
-filename_case: 0
+filename_case: 1
 render_drafts: false
 post_asset_folder: false
 relative_link: false
@@ -129,6 +129,11 @@ import:
   - "<link rel='manifest' href='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/favicon/site.webmanifest'>"
   # script:
 
+# https://github.com/ludoviclefevre/hexo-generator-seo-friendly-sitemap
+sitemap:
+  path: sitemap.xml
+  tag: false
+  category: false
 
 # # 图片懒加载  # hexo-lazyload-image
 # lazyload:
@@ -144,6 +149,7 @@ nofollow:
   enable: true
   exclude:
   - xaoxuu.com
+  - volantis.js.org
 
 # autoprefixer
 autoprefixer:
