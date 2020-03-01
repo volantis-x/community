@@ -19,7 +19,11 @@ links:
     - name: 覃浩的博客
       avatar: https://www.zhengyuanyuan520.cn/img/blog/avatar.jpg
       url: https://www.zhengyuanyuan520.com
-      tags: 
+      tags:
+    - name: Throwable
+      avatar: https://public-1256189093.cos.ap-guangzhou.myqcloud.com/static/doge_avatar.jpg
+      url: http://www.throwable.club
+      tags: [Chives, Java]
   - group: '版本：^1.5'
     items:
     - name: Linhk1606
