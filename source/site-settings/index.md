@@ -62,13 +62,6 @@ import:
 ```
 
 
-## 设置网站页脚
-
-```yaml blog/_config.yml
-# 网页最底部的文字，支持md
-copyright: '[Copyright © 2017-2020 Mr. X](https://xaoxuu.com)'
-```
-
 ## Import
 
 可以在无需修改主题文件的情况下在head和body中添加各种标签。`meta` 和 `link` 对应head中的 `<meta>` 和 `<link>` 标签。`script` 可以在body末尾导入js文件。

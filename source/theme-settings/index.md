@@ -505,23 +505,25 @@ widget:
 各个字段参数取值都有备注：
 
 ```yaml blog/themes/volantis/_config.yml
-# APlayer配置 https://github.com/metowolf/MetingJS
-aplayer:
-  # 是否启用，注释此项则不加载服务
-  # enable: true
-  # 必选参数
-  server: netease   # netease, tencent, kugou, xiami, baidu
-  type: playlist    # song, playlist, album, search, artist
-  id: 3175833810    # song id / playlist id / album id / search keyword
-  # 可选参数
-  fixed: false      # enable fixed mode
-  theme: '#1BCDFC'  # main color
-  autoplay: false   # audio autoplay
-  order: list       # player play order, values: 'list', 'random'
-  loop: all         # player loop play, values: 'all', 'one', 'none'
-  volume: 0.7       # default volume, notice that player will remember user setting, default volume will not work after user set volume themselves
-  list_max_height: 340px # list max height
-  list_folded: true
+footer:
+  ...
+  # APlayer配置 https://github.com/metowolf/MetingJS
+  aplayer:
+    # 是否启用，注释此项则不加载服务
+    enable: true
+    # 必选参数
+    server: netease   # netease, tencent, kugou, xiami, baidu
+    type: playlist    # song, playlist, album, search, artist
+    id: 3175833810    # song id / playlist id / album id / search keyword
+    # 可选参数
+    fixed: false      # enable fixed mode
+    theme: '#1BCDFC'  # main color
+    autoplay: false   # audio autoplay
+    order: list       # player play order, values: 'list', 'random'
+    loop: all         # player loop play, values: 'all', 'one', 'none'
+    volume: 0.7       # default volume, notice that player will remember user setting, default volume will not work after user set volume themselves
+    list_max_height: 340px # list max height
+    list_folded: true
 ```
 
 > 相关文档：
@@ -533,14 +535,16 @@ aplayer:
 ## 社交信息
 
 ```yaml blog/themes/volantis/_config.yml
-# 页脚社交信息
-social:
-  - icon: fas fa-envelope
-    url: mailto:me@xaoxuu.com
-  - icon: fab fa-github
-    url: https://github.com/xaoxuu
-  - icon: fas fa-music
-    url: https://music.163.com/#/user/home?id=63035382
+footer:
+  ...
+  # 页脚社交信息
+  social:
+    - icon: fas fa-envelope
+      url: mailto:me@xaoxuu.com
+    - icon: fab fa-github
+      url: https://github.com/xaoxuu
+    - icon: fas fa-music
+      url: https://music.163.com/#/user/home?id=63035382
 ```
 
 这些社交按钮也会同时出现在侧边栏头像下方，可以在Widget库的配置中设置不显示。
@@ -555,21 +559,21 @@ social:
 
 ```yaml blog/themes/volantis/_config.yml
 plugins:
-  instant_page: '//instant.page/3.0.0'
+  instant_page: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@1.6.4/js/instant_page.js
 ```
 
 ### 文本框打字特效
 
 ```yaml blog/themes/volantis/_config.yml
 plugins:
-  comment_typing: '//cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@20.2.33/js/comment_typing.js'
+  comment_typing: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@1.6.4/js/comment_typing.js
 ```
 
 ### 代码块复制按钮
 
 ```yaml blog/themes/volantis/_config.yml
 plugins:
-  clipboard: '//cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js'
+  clipboard: https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js
 ```
 
 ### 按钮点击涟漪效果
@@ -577,6 +581,59 @@ plugins:
 ```yaml blog/themes/volantis/_config.yml
 plugins:
   nodewaves:
-    css: '//cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.css'
-    js: '//cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.js'
+    css: https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.css
+    js: https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.js
+```
+
+
+## 设置网站页脚 <sup class='blue'>^1.6.4</sup>
+
+从 `1.6.4` 开始，你可以自定义页脚了，通过 `footer.layout` 告诉主题页脚放什么内容以及顺序如何。
+
+```yaml blog/themes/volantis/_config.yml
+footer:
+  # 网站页脚布局，默认支持 aplayer/social/license/info/copyright
+  layout: [aplayer, social, license, info, copyright]
+  # APlayer配置 https://github.com/metowolf/MetingJS
+  aplayer:
+    # 是否启用，注释此项则不加载服务
+    enable: true
+    # 必选参数
+    server: netease   # netease, tencent, kugou, xiami, baidu
+    type: playlist    # song, playlist, album, search, artist
+    id: 3175833810    # song id / playlist id / album id / search keyword
+    # 可选参数
+    fixed: false      # enable fixed mode
+    theme: '#1BCDFC'  # main color
+    autoplay: false   # audio autoplay
+    order: list       # player play order, values: 'list', 'random'
+    loop: all         # player loop play, values: 'all', 'one', 'none'
+    volume: 0.7       # default volume, notice that player will remember user setting, default volume will not work after user set volume themselves
+    list_max_height: 340px # list max height
+    list_folded: true
+  # 社交信息配置
+  social:
+    - icon: fas fa-rss
+      url: atom.xml
+    - icon: fas fa-envelope
+      url: mailto:me@xaoxuu.com
+    - icon: fab fa-github
+      url: https://github.com/xaoxuu
+    - icon: fas fa-headphones-alt
+      url: https://music.163.com/#/user/home?id=63035382
+  copyright: '[Copyright © 2017-2020 Mr. X](https://xaoxuu.com)'
+```
+
+### 自定义页脚文字
+
+如果你不想显示某些内容，可以在 `footer.layout` 中删掉。
+
+如果你想显示自定义的一段话或者插入链接，可以在 `footer` 下增加，例如 `br: '<br>'`，代表换行，那么在 `footer.layout` 中适当位置插入一个 `br` 就可以增加一行间距。
+
+```yaml 例如：
+footer:
+  # 网站页脚布局，默认支持 aplayer/social/license/info/copyright
+  layout: [social, br, copyright]
+  ...
+  br: '<br>'
 ```

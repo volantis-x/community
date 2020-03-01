@@ -100,6 +100,8 @@ theme_config:
     busuanzi: false
   valine:
     placeholder: 这里仅供用户之间进行交流，如需联系开发者请移步「GitHub Issues」。
+  footer:
+    layout: [aplayer, social, copyright]
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 # npm install hexo-deployer-git --save
