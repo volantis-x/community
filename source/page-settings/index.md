@@ -47,6 +47,7 @@ front-matter 是文件最上方以 `---` 分隔的区域，用于指定个别文
 | updated     | 更新日期     | Date          | 文件修改时间 |
 | permalink   | 覆盖文章网址 | String        | -      |
 | music       | 内部音乐控件 | [Object] | -      |
+| robots    | robots   | String        | -      |
 | keywords    | 页面关键词   | String        | -      |
 | description | 页面描述、摘要     | String        | -      |
 | cover | 是否显示封面     | Bool        | true      |
