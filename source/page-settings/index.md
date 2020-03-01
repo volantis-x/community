@@ -162,7 +162,7 @@ index: true
 layout: links     # 必须
 title: 我的朋友们   # 可选，这是友链页的标题
 links:
-  - group: 技术大佬
+  - group: 分组1
     icon: fas fa-user-tie
     items:
     - name:     # 博客名
@@ -170,9 +170,8 @@ links:
       url:      # 博客链接
       backgroundColor: '#3E74C9' # 卡片背景颜色
       textColor: '#fff'  # 卡片文字颜色
-      tags:     # 标签
-      - 标签1
-      - 标签2
+      tags: [标签1, 标签2]    # 标签
+      desc: 描述文字
   - group: 分组2
     icon: fas fa-user-tie
     items:
@@ -181,14 +180,19 @@ links:
       url:      # 博客链接
       backgroundColor: '#3E74C9' # 卡片背景颜色
       textColor: '#fff'  # 卡片文字颜色
-      tags:     # 标签
-      - 标签1
-      - 标签2
+      tags: [标签1, 标签2]    # 标签
+      desc: 描述文字
 ---
+
+这里写友链上方的内容。
+
+<!-- more -->
 
 这里可以写友链页面下方的文字备注，例如自己的友链规范、示例等。
 
 ```
+
+> 姓名、头像、链接是必填项，其它选填。
 
 
 ### 404页面
@@ -208,7 +212,7 @@ valine:
 ---
 
 <center>
-<h1 style='border-bottom: none;font-size:64px;margin-top:.5em'>404</h1>
+<p huge gray>404</p>
 
 <b>很抱歉，您访问的页面不存在</b>
 
