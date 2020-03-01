@@ -135,11 +135,11 @@ sitemap:
   tag: false
   category: false
 
-# # 图片懒加载  # hexo-lazyload-image
-# lazyload:
-#   enable: true
-#   onlypost: false
-#   loadingImg: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/placeholder/d570170f4f12e1ee829ca0e85a7dffeb77343a.svg
+# 图片懒加载  # hexo-lazyload-image    hexo-fs
+lazyload:
+  enable: true
+  onlypost: false
+  loadingImg: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/placeholder/d570170f4f12e1ee829ca0e85a7dffeb77343a.svg
 
 # hexo-all-minifier
 all_minifier: true
