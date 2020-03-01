@@ -3,12 +3,7 @@ layout: links
 title: 示例博客
 cover: false
 meta:
-  header: [title]
-music:
-  server: netease   # netease, tencent, kugou, xiami, baidu
-  type: song        # song, playlist, album, search, artist
-  id: 16846091      # song id / playlist id / album id / search keyword
-  autoplay: true
+  header: []
 links:
   - group: '版本：^1.6'
     items:
@@ -36,11 +31,16 @@ links:
       tags:
     - name: MicDZ's blog
       avatar: https://i.loli.net/2020/02/29/T2cijraFuM35ECO.jpg
-      url: https://www.micdz.cn 
+      url: https://www.micdz.cn
       tags: [OIer, C++]
 ---
 
+<p center style='font-size:1.7em;margin:0;line-height:1.2'><red>shì</red>&nbsp;&nbsp;&nbsp;<yellow>lì</yellow>&nbsp;&nbsp;&nbsp;&nbsp;<green>bó</green>&nbsp;&nbsp;<blue>kè</blue></p>
+<p center style='font-size:3em;margin:0'><red>示</red><yellow>例</yellow><green>博</green><blue>客</blue></p>
+<br>
+
 这些是一部分使用了「Volantis」主题的博客，由博主自助添加。如果你也使用了「Volantis」，希望在这里推广自己的博客，可以按照本页下方提供的格式自行添加。
+
 
 <!-- more -->
 
