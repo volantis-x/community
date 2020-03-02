@@ -475,7 +475,7 @@ valine:
 
 ### Livere
 
-官网： [http://www.laibili.com.cn/](http://www.laibili.com.cn/)
+官网： [https://www.livere.com/](https://www.livere.com/)
 
 ```yaml blog/_config.yml
 # 来必力评论

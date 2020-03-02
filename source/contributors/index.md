@@ -71,7 +71,7 @@ btns:
 | ZYMIN | [hexo+ejs+material x 添加CNZZ统计代码](https://zymin.cn/arcticle/hexo+ejs+material.html) |
 | TRHX | [Hexo 博客主题个性化](https://itrhx.com/2018/08/27/A04-Hexo-blog-topic-personalization/) |
 | wxwoo | [hexo中的mathjax数学公式渲染优化](https://wxwoo.top/2019/05/15/hexo-mathjax-renderer-optimization/) |
-| LiYanan2004 | [在 material-x 的主题中加入深/浅模式](https://liyanan2004.ml/2019/Enable_Dark_mode_in_your_blog_with_material-x/) |
+| LiYanan2004 | [在 material-x 的主题中加入深/浅模式](https://liyanan2004.ml/Enable_Dark_mode_in_your_blog_with_material-x//) |
 | WuYongzhi·Blog | [Hexo主题MaterialX添加Pjax](https://wuyongzhi.top/undefined/999270176/) |
 
 </overflow>
