@@ -59,13 +59,16 @@ seo:
   # 当文章front-matter中没有description时，使用摘要作为description
   use_excerpt_as_description: true
   robots:
-    home: index,follow
+    home_first_page: index,follow
+    home_other_pages: noindex,follow
     archive: noindex,follow
     category: noindex,follow
     tag: noindex,follow
 ```
 
-在front-matter中，可以设置 `keywords`、`description` 和 `robots`。
+在front-matter中，可以设置 `keywords`、`description`、`robots` 和 `seotitle`。
+
+其中 `seotitle` 仅仅用作网页标题，优先级高于 `title`。
 
 - 文章内部不要使用 H1 标题。
 - 通过死链检测工具检查并删除无法访问的链接。
@@ -370,11 +373,11 @@ info:
   docs: https://volantis.js.org/
   cdn: # 要使用CDN，请在根目录的config文件中写上 use_cdn: true
     css:
-      style: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@1.6.4/css/style.css
+      style: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@1.7.0/css/style.css
     js:
-      app: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@1.6.4/js/app.js
-      search: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@1.6.4/js/search.js
-      valine: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@1.6.4/js/valine.js
+      app: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@1.7.0/js/app.js
+      search: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@1.7.0/js/search.js
+      valine: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@1.7.0/js/valine.js
 ```
 
 

@@ -43,6 +43,7 @@ front-matter 是文件最上方以 `---` 分隔的区域，用于指定个别文
 | :----------- | :------------ | :------------- | :------ |
 | layout      | 布局模版     | String        | -      |
 | title       | 标题         | String        | -      |
+| seotitle       | 网页标题         | String        | page.title   |
 | date        | 创建时间     | Date          | 文件创建时间 |
 | updated     | 更新日期     | Date          | 文件修改时间 |
 | permalink   | 覆盖文章网址 | String        | -      |
@@ -57,6 +58,8 @@ front-matter 是文件最上方以 `---` 分隔的区域，用于指定个别文
 | mathjax           | 是否渲染公式 | Bool, String  | false  |
 | thumbnail           | 缩略图 | String | false  |
 | icons           | 图标 | Array | []  |
+
+> 没有 `seotitle` 时，以 `title` 作为网页标题。
 
 `layout:post` 时特有的字段：
 

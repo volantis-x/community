@@ -312,8 +312,9 @@ Widget库中的小部件通常可用于侧边栏、左边主体区域，部分�
 | text | 文本控件 | sidebar、body、article |
 | grid | 网格控件 | sidebar、body、article |
 | list | 列表控件 | sidebar、body、article |
+| page | 页面控件 | sidebar、body、article |
 
-一种类型的组件可以创建多个，以 `id` 区分。
+一种类型（class）的组件可以创建多个，不能够重名。
 
 ### blogger
 
@@ -321,7 +322,7 @@ Widget库中的小部件通常可用于侧边栏、左边主体区域，部分�
 widget:
   # ---------------------------------------
   # 博主信息小部件配置
-  - id: blogger
+  blogger:
     class: blogger
     avatar: https://cdn.jsdelivr.net/gh/xaoxuu/assets@master/avatar/avatar.png
     # title:  标题
@@ -336,7 +337,7 @@ widget:
 widget:
   # ---------------------------------------
   # 目录小部件配置(仅在文章中有效)
-  - id: toc
+  toc:
     class: toc
     display: [desktop, mobile] # [desktop, mobile]
     header:
@@ -353,7 +354,7 @@ widget:
 widget:
   # ---------------------------------------
   # 文章分类小部件配置
-  - id: category
+  category:
     class: category
     display: [desktop] # [desktop, mobile]
     header:
@@ -368,7 +369,7 @@ widget:
 widget:
   # ---------------------------------------
   # 标签云小部件配置
-  - id: tagcloud
+  tagcloud:
     class: tagcloud
     display: [desktop] # [desktop, mobile]
     header:
@@ -388,7 +389,7 @@ widget:
 widget:
   # ---------------------------------------
   # 相关文章小部件配置
-  - id: related_posts
+  related_posts:
     class: related_posts # 需要安装插件  npm i -S hexo-related-popular-posts
     display: [desktop, mobile] # [desktop, mobile]
     header:
@@ -403,7 +404,7 @@ widget:
 widget:
   # ---------------------------------------
   # 版权说明小部件（仅用于文章中）
-  - id: copyright
+  copyright:
     class: copyright
     display: [desktop, mobile] # [desktop, mobile]
     blockquote: true # 是否把内容放到blockquote中
@@ -420,7 +421,7 @@ widget:
 widget:
   # ---------------------------------------
   # 二维码小部件（可用于文章中的打赏，只显示图片，无其他功能）
-  - id: qrcode
+  qrcode:
     class: qrcode
     display: [desktop] # [desktop, mobile]
     header:
@@ -438,7 +439,7 @@ widget:
 widget:
   # ---------------------------------------
   # 自定义组件，仿照如下写法
-  - id: huan_ying # 唯一标识，自己命名，建议全英文
+  huan_ying: # 唯一标识，自己命名，建议全英文
     class: text # 小部件类型，对应_widget文件夹中的文件名
     header:
       icon: fas fa-file
@@ -456,7 +457,7 @@ widget:
 widget:
   # ---------------------------------------
   # 自定义组件，仿照如下写法
-  - id: navigation
+  navigation:
     class: grid
     display: [desktop, mobile] # [desktop, mobile]
     header:
@@ -481,7 +482,7 @@ widget:
 widget:
   # ---------------------------------------
   # 自定义组件，仿照如下写法
-  - id: wiki-ios
+  wiki-ios:
     class: list
     display: [desktop, mobile] # [desktop, mobile]
     header:
@@ -499,6 +500,48 @@ widget:
         url: /wiki/axkit/
 ```
 
+### page <sup class='blue'>^1.7.0</sup>
+
+```yaml blog/themes/volantis/_config.yml
+widget:
+  # ---------------------------------------
+  # 自定义组件，仿照如下写法
+  some_page:
+    class: page
+    display: [desktop, mobile] # [desktop, mobile]
+    header:
+      icon: fas fa-chevron-left
+      title: CocoaPods
+      url: /wiki/
+    pid: # 在页面的front-matter中设置一个pid值
+    content: excerpt # excerpt, more, content
+```
+
+在页面的front-matter中设置一个 `pid` 值，然后 `page` 组件中传入对应的 `pid` 值，便可将页面作为组件。
+
+| content取值 | 含义 |
+| :-- | :-- |
+| excerpt | 只显示摘要 |
+| more | 只显示更多后面的内容 |
+| content | 显示全文 |
+
+### 如何新增自定义组件 <sup class='blue'>^1.7.0</sup>
+
+有些组件没有明确具体内容，例如 `text`、`list`、`grid`、`page`，这些组件可以称之为通用型组件。
+
+你可以直接在主题配置文件的 `widget` 相关内容后面新增，也可以单独创建一个文件，为了方便维护，建议使用第二种方式。在 `blog/source/` 路径下新建 `_data` 文件夹，然后创建 `widget.yml` 文件，在文件中写自己的组件。（详见： [Hexo官方文档：数据文件](https://hexo.io/zh-cn/docs/data-files)）
+
+例如：
+
+```yaml blog/source/_data/widget.yml
+my_widget_welcome:
+  class: page
+  display: [desktop, mobile] # [desktop, mobile]
+  pid: welcome # 与文章的 front-matter 中的 pid 对应
+  content: excerpt # excerpt, more, content
+```
+
+> 你也可以参考本站源码的文件结构。
 
 ## APlayer播放器
 
@@ -559,14 +602,14 @@ footer:
 
 ```yaml blog/themes/volantis/_config.yml
 plugins:
-  instant_page: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@1.6.4/js/instant_page.js
+  instant_page: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@1.7.0/js/instant_page.js
 ```
 
 ### 文本框打字特效
 
 ```yaml blog/themes/volantis/_config.yml
 plugins:
-  comment_typing: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@1.6.4/js/comment_typing.js
+  comment_typing: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@1.7.0/js/comment_typing.js
 ```
 
 ### 代码块复制按钮
