@@ -11,6 +11,9 @@ links:
       avatar: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png
       url: https://xaoxuu.com
       tags: [主题作者]
+    - name: ChrAlpha 的幻想乡
+      avatar: https://cdn.jsdelivr.net/npm/chrdnx@1.0.9/img/head-found.png
+      tags: [简介, 定制]
     - name: 覃浩的博客
       avatar: https://www.zhengyuanyuan520.cn/img/blog/avatar.jpg
       url: https://www.zhengyuanyuan520.com
