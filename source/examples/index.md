@@ -19,6 +19,10 @@ links:
       avatar: https://public-1256189093.cos.ap-guangzhou.myqcloud.com/static/doge_avatar.jpg
       url: http://www.throwable.club
       tags: [Chives, Java]
+    - name: ChrAlpha 的幻想乡
+      avatar: https://cdn.jsdelivr.net/npm/chrdnx@1.0.9/img/head-found.png
+      url: https://chralpha.com
+      tags: [简洁, 定制]
   - group: '版本：^1.5'
     items:
     - name: Linhk1606
