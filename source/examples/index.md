@@ -23,6 +23,10 @@ links:
       avatar: https://cdn.jsdelivr.net/npm/chrdnx@1.0.9/img/head-found.png
       url: https://chralpha.com
       tags: [简洁, 定制]
+    - name: 胖五
+      avatar: https://cdn.jsdelivr.net/gh/TianZonglin/tuchuang/img/logo.jpg
+      url: https://www.cz5h.com
+      tags: [暗色, 轻微修改]
   - group: '版本：^1.5'
     items:
     - name: Linhk1606
