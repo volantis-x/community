@@ -369,15 +369,15 @@ use_cdn: true
 ```yaml blog/themes/volantis/_config.yml
 info:
   name: Volantis
-  version: 1.6.4
+  version: 1.7.1
   docs: https://volantis.js.org/
   cdn: # 要使用CDN，请在根目录的config文件中写上 use_cdn: true
     css:
-      style: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@1.7.0/css/style.css
+      style: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@1.7.1/css/style.css
     js:
-      app: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@1.7.0/js/app.js
-      search: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@1.7.0/js/search.js
-      valine: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@1.7.0/js/valine.js
+      app: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@1.7.1/js/app.js
+      search: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@1.7.1/js/search.js
+      valine: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@1.7.1/js/valine.js
 ```
 
 
