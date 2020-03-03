@@ -121,8 +121,6 @@ deploy:
 
 
 use_cdn: true
-# 网页最底部的文字，支持md
-copyright: '[Copyright © 2017-2020 Mr. X](https://xaoxuu.com)'
 
 # 全局导入
 import:
