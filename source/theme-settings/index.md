@@ -602,14 +602,14 @@ footer:
 
 ```yaml blog/themes/volantis/_config.yml
 plugins:
-  instant_page: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@1.7.2/js/instant_page.js
+  instant_page: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@1.7.3/js/instant_page.js
 ```
 
 ### 文本框打字特效
 
 ```yaml blog/themes/volantis/_config.yml
 plugins:
-  comment_typing: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@1.7.2/js/comment_typing.js
+  comment_typing: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@1.7.3/js/comment_typing.js
 ```
 
 ### 代码块复制按钮

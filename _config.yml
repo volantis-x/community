@@ -108,6 +108,21 @@ theme_config:
     placeholder: 这里仅供用户之间进行交流，如需联系开发者请移步「GitHub Issues」。
   footer:
     layout: [aplayer, social, copyright]
+  cover:
+    search: '搜索文档'
+  navbar:
+    search: '搜索文档'
+  layout:
+    on_list:
+      meta: [title, author, date, updated, top]
+      sidebar: [guide, repos, qrcode]
+    on_page:
+      body: [article, comments]
+      meta:
+        header: [title, author, category, date, top]
+        footer: [btns, tags]
+      footer: #[copyright, qrcode]
+      sidebar: [guide, repos, qrcode, toc]
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
