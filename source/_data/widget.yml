@@ -15,8 +15,8 @@ guide:
     - name: 特别感谢
       icon: fas fa-handshake
       url: contributors/
-    - name: 历史事件
-      icon: fas fa-file-archive
+    - name: 所有公告
+      icon: fas fa-bullhorn
       url: news/archives/
     - name: 主题源码
       icon: fas fa-file-code

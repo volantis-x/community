@@ -42,6 +42,12 @@ on_mobile:
   - name: 帮助
     icon: fas fa-question-circle
     url: faqs/
+  - name: 示例
+    icon: fas fa-play-circle
+    url: faqs/
   - name: 鸣谢
     icon: fas fa-handshake
     url: contributors/
+  - name: 公告
+    icon: fas fa-bullhorn
+    url: news/archives/
