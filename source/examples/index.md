@@ -11,6 +11,10 @@ links:
       avatar: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png
       url: https://xaoxuu.com
       tags: [主题作者]
+    - name: Yanliang
+      avatar: https://cdn.jsdelivr.net/gh/gyl-coder/gyl-coder.github.com@v1.0.0/img/touxiang.jpg
+      url: https://gyl-coder.top
+      tags: [Java, 简介，自定义]
   - group: '版本：^1.6'
     items:
     - name: 覃浩的博客
