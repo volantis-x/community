@@ -96,11 +96,11 @@ ignore:
 theme: volantis
 # 覆盖主题配置
 theme_config:
-  backstretch:
-    position: cover
-  style:
-    blur:
-      widget: false
+  # backstretch:
+  #   position: cover
+  # style:
+  #   blur:
+  #     widget: false
   readmore: false
   plugins:
     busuanzi: false

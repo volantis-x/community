@@ -64,7 +64,7 @@ btns:
 
 第1种 <btn>[按钮](/)</btn> 适合融入段落中。
 
-第2种按钮适合独立于段落之外独占一行：
+第2种按钮适合独立于段落之外：
 
 <btn regular>[<i class='fas fa-play-circle'></i> 示例博客](https://xaoxuu.com)</btn>
 
@@ -78,7 +78,7 @@ btns:
 ```md blog/source/_posts/example.md:
 第1种 <btn>[按钮](/)</btn> 适合融入段落中。
 
-第2种按钮适合独立于段落之外独占一行：
+第2种按钮适合独立于段落之外：
 
 <btn regular>[<i class='fas fa-play-circle'></i> 示例博客](https://xaoxuu.com)</btn>
 

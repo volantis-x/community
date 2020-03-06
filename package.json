@@ -25,6 +25,7 @@
     "hexo-renderer-ejs": "^1.0.0",
     "hexo-renderer-less": "^1.0.0",
     "hexo-renderer-markdown-it": "^4.0.0",
+    "hexo-renderer-stylus": "^1.1.0",
     "hexo-server": "^1.0.0",
     "markdown-it-abbr": "^1.0.4",
     "markdown-it-checkbox": "^1.1.0",

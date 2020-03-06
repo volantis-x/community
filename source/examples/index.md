@@ -5,6 +5,11 @@ cover: false
 meta:
   header: []
 links:
+  - group: '版本：^2.0'
+    items:
+    - name: 主题文档
+      avatar: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/emoji/qq/可爱.gif
+      desc: 赶快体验吧
   - group: '版本：^1.7'
     items:
     - name: xaoxuu
@@ -49,7 +54,6 @@ links:
       tags: [OIer, C++]
 ---
 
-<p center style='font-size:1.7em;margin:0;line-height:1.2'><red>shì</red>&nbsp;&nbsp;&nbsp;<yellow>lì</yellow>&nbsp;&nbsp;&nbsp;&nbsp;<green>bó</green>&nbsp;&nbsp;<blue>kè</blue></p>
 <p center style='font-size:3em;margin:0'><red>示</red><yellow>例</yellow><green>博</green><blue>客</blue></p>
 <br>
 
