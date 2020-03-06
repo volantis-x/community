@@ -6,16 +6,18 @@ meta:
   header: []
 links:
   - group: '版本：^2.0'
+    desc: 目前是测试版，可能存在较多BUG。
     items:
     - name: 主题文档
       avatar: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/emoji/qq/可爱.gif
       desc: 赶快体验吧
-  - group: '版本：^1.7'
-    items:
     - name: xaoxuu
       avatar: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png
       url: https://xaoxuu.com
       tags: [主题作者]
+  - group: '版本：^1.7'
+    desc: 1.x的最后一个版本。
+    items:
     - name: Yanliang
       avatar: https://cdn.jsdelivr.net/gh/gyl-coder/gyl-coder.github.com@v1.0.0/img/touxiang.jpg
       url: https://gyl-coder.top

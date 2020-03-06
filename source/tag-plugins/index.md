@@ -1,7 +1,7 @@
 ---
 layout: page
 group: docs
-title: Tag Plugins「内建标签」
+title: Tag Plugins「标签插件」
 cover: false
 meta:
   header: [title, author, updated]

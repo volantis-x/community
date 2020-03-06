@@ -65,10 +65,19 @@ url: https://xaoxuu.com
 root: /
 ```
 
-## 教程与指南
+<br><br>
+
+{% raw %}
+<details>
+<summary>
+教程与指南
+</summary>
+{% endraw %}
 
 <btn>[Hexo官方文档](https://hexo.io) [Valine官方文档](https://valine.js.org)</btn>
 
 请一定要阅读官方文档！
 
 <img src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/emoji/aru/161.png" style="width:100%">
+
+{% raw %}</details>{% endraw %}

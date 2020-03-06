@@ -14,7 +14,7 @@ btns:
 建议有一定基础知识的朋友进行尝试。
 
 {% raw %}
-<details>
+<details yellow open>
 <summary>
 将主题添加为子模块
 </summary>
