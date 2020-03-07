@@ -31,21 +31,17 @@ git submodule add git@github.com:xaoxuu/hexo-theme-volantis themes/volantis
 
 - 尝试安装 [hexo-all-minifier](https://github.com/chenzhutian/hexo-all-minifier) 插件来压缩文件。
 - 减少不必要的 js 插件，例如字数统计、动态背景。
-
-#### 查找并解决拖慢速度的资源
-
-以 Chrome 浏览器为例：
-
-1. 页面中点击右键，选择「检查」。
-2. 在右边的窗口中「Network」选项卡，并勾选「Disable cache」。
-3. 刷新网页，查看加载速度慢的资源。
-  3.1. 加载缓慢的图片，建议使用CDN。
-  3.2. 加载缓慢的可以不用的js插件，建议舍弃。
-  3.3. 加载缓慢却必须使用的js插件，建议下载并自己上传至 `jsdelivr`。
+- 查找并解决拖慢速度的资源，以 Chrome 浏览器为例：
+  1. 页面中点击右键，选择「检查」。
+  2. 在右边的窗口中「Network」选项卡，并勾选「Disable cache」。
+  3. 刷新网页，查看加载速度慢的资源。
+    3.1. 加载缓慢的图片，建议使用 CDN。
+    3.2. 加载缓慢的可以不用的 js 插件，建议舍弃。
+    3.3. 加载缓慢却必须使用的 js 插件，建议下载并自己上传至 `jsdelivr`。
 
 ### 运行速度
 
-- 用手机访问具有动态特效背景（如雪花、粒子等）的网站很快会发烫变卡。如果你希望网站有好的使用体验请尽量不要安装这类插件。
+- 访问具有动态特效背景（如雪花、粒子等）的网站时，手机很快会发烫变卡，笔记本很快会风扇狂转并且浏览器提示建议关闭此页面。如果你希望网站有好的使用体验请尽量不要安装这类插件。
 - 强烈推荐安装 [hexo-offline](https://github.com/JLHwung/hexo-offline) 插件，初次加载速度不变，后期切换页面和刷新网页速度越来越快。
 - 推荐安装图片懒加载插件 [hexo-lazyload-image](https://github.com/Troy-Yang/hexo-lazyload-image)（需同时安装 `hexo-fs` 依赖库）。
 
