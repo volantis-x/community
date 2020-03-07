@@ -179,7 +179,7 @@ style:
 
 ## 模块化布局
 
-这里的「布局」是指放置什么模块、顺序如何。对于一个普通文章页面来说，左侧区域称为 `body`，右侧区域称为 `sidebar`，左侧body区域默认上下分为 `article`、`comments` 两个模块。层级图为：
+这里的「布局」是指放置什么模块、顺序如何。对于一个普通文章页面来说，左侧区域称为 `body`，右侧区域称为 `sidebar`，左侧 body 区域默认上下分为 `article`、`comments` 两个模块。层级图为：
 
 <fancybox><img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/2020/2020-02-1820.13.44.png'></fancybox>
 
@@ -590,7 +590,7 @@ footer:
       url: https://music.163.com/#/user/home?id=63035382
 ```
 
-这些社交按钮也会同时出现在侧边栏头像下方，可以在Widget库的配置中设置不显示。
+这些社交按钮也会同时出现在侧边栏头像下方，可以在 Widget 库的配置中设置不显示。
 
 ## 第三方插件
 

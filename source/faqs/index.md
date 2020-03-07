@@ -11,16 +11,16 @@ btns:
   idea: https://github.com/xaoxuu/hexo-theme-volantis/issues/new?assignees=&labels=建议&template=feature-request.md
 ---
 
-通常来说，一个全新的工程全部使用默认配置是<green>正常</green>没有故障的。如果无法使用或者效果与示例有较大区别，可以使用Hexo官方提供的用于单元测试的博客应用本主题查看样式是否正常，对比 `_config.yml` 文件排查问题。
+通常来说，一个全新的工程全部使用默认配置是<green>正常</green>没有故障的。如果无法使用或者效果与示例有较大区别，可以使用 Hexo 官方提供的用于单元测试的博客应用本主题查看样式是否正常，对比 `_config.yml` 文件排查问题。
 
-> Hexo官方的单元测试项目： [https://github.com/hexojs/hexo-theme-unit-test](https://github.com/hexojs/hexo-theme-unit-test)
+> Hexo 官方的单元测试项目： [https://github.com/hexojs/hexo-theme-unit-test](https://github.com/hexojs/hexo-theme-unit-test)
 
 
 ## 如何更新主题
 
-使用主题的时候，尽量fork主题到自己的GitHub，然后进行修改并使用。这样做的好处是：当主题进行重要更新的时候可以根据需要拉取合并代码，使自己DIY的主题能够通过更新获取BUG修复或者新特性。
+使用主题的时候，尽量 fork 主题到自己的 GitHub，然后进行修改并使用。这样做的好处是：当主题进行重要更新的时候可以根据需要拉取合并代码，使自己DIY的主题能够通过更新获取BUG修复或者新特性。
 
-如果不懂请自行搜索关键词：fork 更新
+如果不懂请自行搜索关键词：<red>fork 更新</red>
 
 ## 无法成功运行本地预览
 
@@ -37,23 +37,23 @@ btns:
 
 ## 主题样式修改没有生效
 
-如果主题配置文件中开启了cdn服务，那么修改本地的样式是不会生效的，需要关闭cdn服务。
+如果主题配置文件中开启了 cdn 服务，那么修改本地的样式是不会生效的，需要关闭 cdn 服务。
 
 ## 修改什么都没有生效
 
 需要 `hexo clean` 然后重新 `hexo s`
 
-如果安装了「相关文章推荐」插件后，每次修改front-matter后都需要重新 `hexo s`
+如果安装了「相关文章推荐」插件后，每次修改 md 文件后都需要重新 `hexo s`
 
-## 关掉CDN之后样式错乱
+## 关掉 CDN 之后样式错乱
 
 - 请前往文档「开始」页面，检查是否安装了必要的依赖包。
-- 是否修改了less文件，如果修改了，请检查是否有语法错误。
+- 是否修改了 `less` 文件，如果修改了，请检查是否有语法错误。
 
 ## 搜索无法使用
 
 - 请前往文档「开始」页面，检查是否安装了必要的依赖包。
-- 检查根目录配置文件是否有search字段冲突。
+- 检查根目录配置文件是否有 `search` 字段冲突。
 - 如果以上两步都无法找到问题，请下载示例源码进行对比。
 
 ## 搜索结果链接不正确

@@ -30,11 +30,11 @@ git submodule add git@github.com:xaoxuu/hexo-theme-volantis themes/volantis
 ### 加载速度
 
 - 尝试安装 [hexo-all-minifier](https://github.com/chenzhutian/hexo-all-minifier) 插件来压缩文件。
-- 减少不必要的js插件，例如字数统计、动态背景。
+- 减少不必要的 js 插件，例如字数统计、动态背景。
 
 #### 查找并解决拖慢速度的资源
 
-以Chrome浏览器为例：
+以 Chrome 浏览器为例：
 
 1. 页面中点击右键，选择「检查」。
 2. 在右边的窗口中「Network」选项卡，并勾选「Disable cache」。
@@ -66,7 +66,7 @@ seo:
     tag: noindex,follow
 ```
 
-在front-matter中，可以设置 `keywords`、`description`、`robots` 和 `seotitle`。
+在 front-matter 中，可以设置 `keywords`、`description`、`robots` 和 `seotitle`。
 
 其中 `seotitle` 仅仅用作网页标题，优先级高于 `title`。
 
@@ -96,7 +96,7 @@ here be success
 here be danger
 :::
 
-如果是其他markdown解析器，需要卸载并安装 `hexo-renderer-markdown-it` 插件：
+如果是其他 markdown 解析器，需要卸载并安装 `hexo-renderer-markdown-it` 插件：
 
 1. 卸载默认的 `hexo-renderer-marked`
   ```sh
@@ -156,7 +156,7 @@ here be danger
       separator: ''
   ```
 
-5. Container的写法：
+5. Container 的写法：
   ```
   ::: info
   here be info
@@ -182,13 +182,13 @@ here be danger
 
 **注意！**
 
-主题支持CDN服务，如果你需要对样式进行DIY，请确保关闭了CDN，否则修改的内容不会生效。
+主题支持 CDN 服务，如果你需要对样式进行 DIY，请确保关闭了 CDN，否则修改的内容不会生效。
 
 :::
 
 ### 自定义字体
 
-可以使用本地字体和任意CDN字体。CDN字体的使用方法：
+可以使用本地字体和任意 CDN 字体。CDN 字体的使用方法：
 
 
 ```less themes/volantis/source/less/_fonts.less
@@ -203,7 +203,7 @@ here be danger
 
 > 选择字体源： <btn>[jsdelivr](https://www.jsdelivr.com/package/gh/xaoxuu/cdn-fonts)[Google Fonts](https://fonts.google.com)</btn>
 >
-> 目前主题默认使用的字体源 [@xaoxuu/cdn-fonts](https://www.jsdelivr.com/package/gh/xaoxuu/cdn-fonts) 是我专门为存放字体建的一个仓库，由jsdelivr提供CDN服务，目前已经收录20余种精选字体。如果你想添加某个喜爱的字体，可以提交到这里： [https://github.com/xaoxuu/cdn-fonts/](https://github.com/xaoxuu/cdn-fonts/)。
+> 目前主题默认使用的字体源 [@xaoxuu/cdn-fonts](https://www.jsdelivr.com/package/gh/xaoxuu/cdn-fonts) 是我专门为存放字体建的一个仓库，由 jsdelivr 提供 CDN 服务，目前已经收录20余种精选字体。如果你想添加某个喜爱的字体，可以提交到这里： [https://github.com/xaoxuu/cdn-fonts/](https://github.com/xaoxuu/cdn-fonts/)。
 
 
 ### 调整字号
@@ -339,16 +339,16 @@ here be danger
 ```
 
 
-### 更多DIY玩法
+### 更多 DIY 玩法
 
 
 详见 [@TRHX](https://www.itrhx.com) 的这篇博客：[《Hexo 博客主题个性化》](https://www.itrhx.com/2018/08/27/A04-Hexo-blog-topic-personalization/)
 
 内含卡片半透明、增加卡通人物、自定义鼠标样式、鼠标特效、烟花特效、彩色滚动字体、网站运行时间、动态浏览器标题、雪花飘落特效等多种详细教程。
 
-## 使用CDN
+## 使用 CDN
 
-对于大部分将博客deploy到GitHub的用户来说，直接加载本地资源速度比较慢，可以使用jsdelivr为开源项目提供的CDN服务。
+对于大部分将博客 deploy 到 GitHub 的用户来说，直接加载本地资源速度比较慢，可以使用 jsdelivr 为开源项目提供的 CDN 服务。
 
 ### 开启方法
 
@@ -356,7 +356,7 @@ here be danger
 use_cdn: true
 ```
 
-如果你需要对样式进行DIY，可以只关闭style文件的CDN。
+如果你需要对样式进行 DIY，可以只关闭 style 文件的 CDN。
 
 ```yaml blog/themes/volantis/_config.yml
 info:
@@ -373,9 +373,9 @@ info:
 ```
 
 
-### 自定义CDN
+### 自定义 CDN
 
-如果你把对应的文件上传到自己的CDN服务器，可以把对应的链接改为自己的CDN链接。
+如果你把对应的文件上传到自己的 CDN 服务器，可以把对应的链接改为自己的 CDN 链接。
 
 
 ## 评论系统
@@ -403,7 +403,7 @@ gitalk: 要使用哪个请复制到根目录配置文件！
   admin: [] 至少填写你的GitHub名
 ```
 
-clientID和clientSecret的获取方法可自行搜索教程，这里仅简单描述一下步骤：
+clientID 和 clientSecret 的获取方法可自行搜索教程，这里仅简单描述一下步骤：
 1. 点击 GitHub -> Settings `https://github.com/settings/profile`
 2. 点击 Developer settings `https://github.com/settings/developers`
 3. 点击 New OAuth App `https://github.com/settings/applications/new`
@@ -450,7 +450,7 @@ valine:
   highlight: false
 ```
 
-其中，`placeholder` 支持在Front-matter中设置。
+其中，`placeholder` 支持在 front-matter 中设置。
 
 ```yaml front-matter
 ---
@@ -477,7 +477,7 @@ valine:
 livere_uid: #你的livere的uid
 ```
 
-在这里查看你的uid：`https://livere.com/insight/myCode`，在【代码管理 -> 一般网站】中找到如下这段代码，其中 `data-uid` 中的内容就是你的 `livere_uid`。
+在这里查看你的 uid：`https://livere.com/insight/myCode`，在【代码管理 -> 一般网站】中找到如下这段代码，其中 `data-uid` 中的内容就是你的 `livere_uid`。
 
 ```html
 <!-- 来必力City版安装代码 -->
@@ -494,7 +494,7 @@ livere_uid: #你的livere的uid
 npm i S hexo-related-popular-posts
 ```
 
-2. 在需要显示的位置添加`related_posts`
+2. 在需要显示的位置添加 `related_posts`
 
 例如放在侧边栏：
 
@@ -509,7 +509,7 @@ layout:
 
 ## 分析与统计
 
-默认支持并且开启 [不蒜子](http://busuanzi.ibruce.info/) 的访问统计，可以自行添加百度统计和Google Analytics。
+默认支持并且开启 [不蒜子](http://busuanzi.ibruce.info/) 的访问统计，可以自行添加百度统计和 Google Analytics。
 
 ### 字数和阅读时长
 
@@ -524,7 +524,7 @@ plugins:
   # 文章字数统计、阅读时长，开启需要安装插件: npm i --save hexo-wordcount
   wordcount: true
 ```
-3. 然后修改配置文件，将 `wordcount` 写入需要显示的meta位置：
+3. 然后修改配置文件，将 `wordcount` 写入需要显示的 meta 位置：
 ```yaml blog/themes/volantis/_config.yml
 # 布局
 layout:
@@ -549,10 +549,10 @@ baidu_analytics_key: 百度统计的key
 google_analytics_key: Google Analytics Key
 ```
 
-### CNZZ统计
+### CNZZ 统计
 
-请参考ZYMIN网友的这篇教程：[《hexo+ejs+material x 添加CNZZ统计代码》](https://zymin.cn/arcticle/hexo+ejs+material.html)
+请参考 ZYMIN 的这篇教程：[《hexo+ejs+material x 添加CNZZ统计代码》](https://zymin.cn/arcticle/hexo+ejs+material.html)
 
 ### 网站运行时间等
 
-请参考TRHX网友的这篇教程：[《Hexo 博客主题个性化》](https://itrhx.com/2018/08/27/A04-Hexo-blog-topic-personalization/)
+请参考 TRHX 的这篇教程：[《Hexo 博客主题个性化》](https://itrhx.com/2018/08/27/A04-Hexo-blog-topic-personalization/)

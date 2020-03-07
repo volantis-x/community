@@ -5,6 +5,7 @@ guide:
   header:
     icon: fas fa-map-signs
     title: 文档导航
+  fixed: true # 固定宽度
   rows:
     - name: 常见问题
       icon: fas fa-question-circle

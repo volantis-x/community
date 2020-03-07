@@ -6,7 +6,7 @@ meta:
   header: []
 links:
   - group: '版本：^2.0'
-    desc: 目前是测试版，可能存在较多BUG。
+    desc: 目前是 beta 版本。
     items:
     - name: 主题文档
       avatar: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/emoji/qq/可爱.gif
@@ -70,7 +70,7 @@ links:
 
 <br>
 
-自助添加方法：点击上方的按钮，在GitHub上编辑此页。
+自助添加方法：点击上方的按钮，在 GitHub 上编辑此页。
 
 新增内容格式即友链的格式，要求图片需是 `https://` 的。按照版本号分组，最新的版本在前，只保留两位版本号。
 

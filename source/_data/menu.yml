@@ -12,7 +12,7 @@ on_desktop:
   - name: 页面
     icon: fas fa-file-alt
     url: page-settings/
-  - name: 书写
+  - name: 写作
     icon: fas fa-pen-alt
     url: tag-plugins/
   - name: 进阶
@@ -33,7 +33,7 @@ on_mobile:
   - name: 页面
     icon: fas fa-file-alt
     url: page-settings/
-  - name: 书写
+  - name: 写作
     icon: fas fa-pen-alt
     url: tag-plugins/
   - name: 进阶

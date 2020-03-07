@@ -18,11 +18,9 @@ btns:
 
 主题的迭代和完善离不开大家的共同参与！
 
-## 参与项目
+## 提交源码
 
-### 提交源码
-
-**非常感谢直接提交了PR的朋友！**
+**非常感谢直接提交了 PR 的朋友！**
 
 {% raw %}
 <btns circle grid5>
@@ -37,16 +35,16 @@ btns:
 <a href='https://github.com/TRHX'><img src='https://avatars3.githubusercontent.com/u/42269246?s=60&v=4'>TRHX</a>
 <a href='https://github.com/PHIKN1GHT'><img src='https://avatars0.githubusercontent.com/u/42083023?s=60&v=4'>PHIKN1GHT</a>
 <a href='https://github.com/Linhk1606'><img src='https://avatars1.githubusercontent.com/u/50829219?s=60&v=4'>Linhk1606</a>
+<a href='https://github.com/xaoxuu/hexo-theme-volantis/graphs/contributors'><i class='fab fa-github'></i>查看全部</a>
 </btns>
 {% endraw %}
 
 
-**同样感谢那些在评论和Issue中互相帮助的网友~**
-如果你有一个好点子或者解决了我这里没有解决的问题，欢迎去 <btn>[GitHub](https://github.com/xaoxuu/hexo-theme-volantis/)</btn> 贡献一下代码👏。
+**同样感谢那些在评论和 Issue 中互相帮助的网友~**
+如果你有一个好点子或者解决了我这里没有解决的问题，欢迎去 [GitHub](https://github.com/xaoxuu/hexo-theme-volantis/) 贡献一下代码👏。
 
-<btn regular>[<i class='fab fa-github'></i> 查看项目全部参与者](https://github.com/xaoxuu/hexo-theme-volantis/graphs/contributors)</btn>
 
-### 站点收录
+## 站点收录
 
 感谢以下网站的收录与分享，让本主题能够被更多人发现，主题就会做的越来越好~
 
@@ -58,7 +56,7 @@ btns:
 </btns>
 {% endraw %}
 
-### 转载和分享
+## 转载和分享
 
 这些是我不定期从主流搜索引擎搜索到的与本主题相关的博文：
 
@@ -76,28 +74,4 @@ btns:
 
 </overflow>
 
-<br>
-
-**<i class='fas fa-share-alt fa-fw'></i> 感谢分享**
-
-把主题分享到SegmenuFault、简书、知乎等平台可以快速增加「Volantis」主题被发现和使用的几率，所以如果你喜欢本主题，欢迎写原创文章或者转载分享哦。
-
-## 如何提交源码
-
-如果你需要主题支持某个第三方服务，并且自己已经实现了，欢迎提交代码。👏
-
-### 1. fork最新代码
-
-URL: https://github.com/xaoxuu/hexo-theme-volantis
-
-### 2. 添加实现代码
-
-根据需要自行完成。
-
-### 3. 测试
-
-测试服务开启和关闭都正常。
-
-### 4. 提交代码
-
-在自己fork的项目主页，点击「New pull request」按钮提交代码。
+> 把主题分享到 SegmenuFault、简书、知乎等平台可以快速增加「Volantis」主题被发现和使用的几率，所以如果你喜欢本主题，欢迎写原创文章或者转载分享哦。

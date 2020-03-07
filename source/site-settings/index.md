@@ -64,7 +64,7 @@ import:
 
 ## Import
 
-可以在无需修改主题文件的情况下在head和body中添加各种标签。`meta` 和 `link` 对应head中的 `<meta>` 和 `<link>` 标签。`script` 可以在body末尾导入js文件。
+可以在无需修改主题文件的情况下在 head 和 body 中添加各种标签。`meta` 和 `link` 对应 head 中的 `<meta>` 和 `<link>` 标签。`script` 可以在 body 末尾导入 js 文件。
 
 ```yaml blog/_config.yml
 # 全局导入
@@ -84,4 +84,4 @@ import:
 
 ## 更多配置
 
-更多请见Hexo官方文档：[#Hexo配置](https://hexo.io/zh-cn/docs/configuration)
+更多请见 Hexo 官方文档：[#Hexo配置](https://hexo.io/zh-cn/docs/configuration)

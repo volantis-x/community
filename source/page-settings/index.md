@@ -91,7 +91,7 @@ music
 
 {% raw %}</details>{% endraw %}
 
-> 更多请见Hexo官方文档：[#front-matter](https://hexo.io/zh-cn/docs/front-matter)
+> 更多请见 Hexo 官方文档：[#front-matter](https://hexo.io/zh-cn/docs/front-matter)
 
 ## 独立页面
 
@@ -241,13 +241,13 @@ body: [article, related_posts, comments]
 ---
 ```
 
-如果想全局修改，在主题配置文件中的`layout.on_page.body`中设置。
+如果想全局修改，在主题配置文件中的 `layout.on_page.body` 中设置。
 
 ## 文章属性
 
 ### 文章置顶
 
-在Front-matter中设置以下值：
+在 front-matter 中设置以下值：
 ```yaml front-matter
 top: true
 ```
@@ -295,7 +295,7 @@ categories:
 
 ### 文章摘要
 
-在文章中插入`<!-- more -->`，前面的部分即为摘要。
+在文章中插入 `<!-- more -->`，前面的部分即为摘要。
 
 ```yml 某篇文章源码
 ---
@@ -344,10 +344,10 @@ music:
 > APlayer配置： https://github.com/metowolf/MetingJS
 
 
-## 显示meta标签
+## 显示 meta 标签
 
-文章顶部和底部的日期、分类、更新日期、标签、分享等属于meta标签。
-顶部的为`header`，底部的为`footer`，取值见主题配置文件中的meta库。
+文章顶部和底部的日期、分类、更新日期、标签、分享等属于 meta 标签。
+顶部的为 `header`，底部的为 `footer`，取值见主题配置文件中的 meta 库。
 
 ```yaml front-matter
 ---
@@ -389,13 +389,13 @@ icons: [fas fa-fire red, fas fa-star green]
 
 图标仅在归档页面中显示，可以用来标注热门文章。
 
-::: info
-可以通过 red/blue/green/yellow/orange/theme/accent 来设置图标的颜色
-theme为主题色: @theme_main
-accent为链接高亮颜色: @color_text_highlight
-:::
 
-## meta区显示外链按钮
+> 可以通过 red / blue / green / yellow / orange / theme / accent 来设置图标的颜色
+> theme 为主题色: @theme_main
+> accent 为链接高亮颜色: @color_text_highlight
+
+
+## meta 区域显示外链按钮
 
 例如当前文档页面的设置：
 
