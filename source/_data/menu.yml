@@ -44,7 +44,7 @@ on_mobile:
     url: faqs/
   - name: 示例
     icon: fas fa-play-circle
-    url: faqs/
+    url: examples/
   - name: 鸣谢
     icon: fas fa-handshake
     url: contributors/

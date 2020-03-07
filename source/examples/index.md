@@ -56,7 +56,7 @@ links:
       tags: [OIer, C++]
 ---
 
-<p center style='font-size:3em;margin:0'><red>示</red><yellow>例</yellow><green>博</green><blue>客</blue></p>
+<p center large><red>示</red><yellow>例</yellow><green>博</green><blue>客</blue></p>
 <br>
 
 这些是一部分使用了「Volantis」主题的博客，由博主自助添加。如果你也使用了「Volantis」，希望在这里推广自己的博客，可以按照本页下方提供的格式自行添加。
