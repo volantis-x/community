@@ -9,11 +9,6 @@ music:
   type: song        # song, playlist, album, search, artist
   id: 41630480      # song id / playlist id / album id / search keyword
   autoplay: true
-btns:
-  repo: https://github.com/xaoxuu/hexo-theme-volantis
-  bug: https://github.com/xaoxuu/hexo-theme-volantis/issues/new?assignees=&labels=BUG&template=bug-report.md
-  doubt: https://github.com/xaoxuu/hexo-theme-volantis/issues/new?labels=疑问&template=question-report.md
-  idea: https://github.com/xaoxuu/hexo-theme-volantis/issues/new?assignees=&labels=建议&template=feature-request.md
 ---
 
 主题的迭代和完善离不开大家的共同参与！

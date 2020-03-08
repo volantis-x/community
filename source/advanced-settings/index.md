@@ -4,11 +4,6 @@ title: Advanced Settings「进阶设定」
 cover: false
 meta:
   header: [title, author, updated]
-btns:
-  repo: https://github.com/xaoxuu/hexo-theme-volantis
-  bug: https://github.com/xaoxuu/hexo-theme-volantis/issues/new?assignees=&labels=BUG&template=bug-report.md
-  doubt: https://github.com/xaoxuu/hexo-theme-volantis/issues/new?labels=疑问&template=question-report.md
-  idea: https://github.com/xaoxuu/hexo-theme-volantis/issues/new?assignees=&labels=建议&template=feature-request.md
 ---
 
 建议有一定基础知识的朋友进行尝试。

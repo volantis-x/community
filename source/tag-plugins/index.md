@@ -6,11 +6,6 @@ cover: false
 meta:
   header: [title, author, updated]
 mathjax: true
-btns:
-  repo: https://github.com/xaoxuu/hexo-theme-volantis
-  bug: https://github.com/xaoxuu/hexo-theme-volantis/issues/new?assignees=&labels=BUG&template=bug-report.md
-  doubt: https://github.com/xaoxuu/hexo-theme-volantis/issues/new?labels=疑问&template=question-report.md
-  idea: https://github.com/xaoxuu/hexo-theme-volantis/issues/new?assignees=&labels=建议&template=feature-request.md
 ---
 
 
@@ -41,14 +36,14 @@ btns:
 </summary>
 {% endraw %}
 
-<p center large gray>Volantis</p>
-<p center small gray>A Wonderful Theme for Hexo 4.2+</p>
+<p center large>Volantis</p>
+<p center small>A Wonderful Theme for Hexo</p>
 
 {% raw %}</details>{% endraw %}
 
 ```md blog/source/_posts/example.md:
-<p center large gray>Volantis</p>
-<p center small gray>A Wonderful Theme for Hexo 4.2+</p>
+<p center large>Volantis</p>
+<p center small>A Wonderful Theme for Hexo</p>
 ```
 
 目前支持的尺寸有：`small`、`large`、`huge`，布局有：`left`、`center`、`right`。

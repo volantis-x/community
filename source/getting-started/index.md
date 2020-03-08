@@ -5,15 +5,10 @@ title: Getting Started「开始使用」
 cover: false
 meta:
   header: []
-btns:
-  repo: https://github.com/xaoxuu/hexo-theme-volantis
-  bug: https://github.com/xaoxuu/hexo-theme-volantis/issues/new?assignees=&labels=BUG&template=bug-report.md
-  doubt: https://github.com/xaoxuu/hexo-theme-volantis/issues/new?labels=疑问&template=question-report.md
-  idea: https://github.com/xaoxuu/hexo-theme-volantis/issues/new?assignees=&labels=建议&template=feature-request.md
 ---
 
-<p center large gray>Volantis</p>
-<p center small gray>A Wonderful Theme for Hexo</p>
+<p center large>Volantis</p>
+<p center small>A Wonderful Theme for Hexo</p>
 <br>
 
 Volantis，一个高度模块化和可定制化、功能相对完善的 Hexo 博客主题，既可以用作个人博客，也适合用来搭建文档。

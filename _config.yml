@@ -15,7 +15,7 @@ avatar: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://volantis.js.org
 root: /
-permalink: news/:title/
+permalink: :title/
 permalink_defaults:
 pretty_urls:
   trailing_index: false # Set to false to remove trailing 'index.html' from permalinks
@@ -25,7 +25,7 @@ pretty_urls:
 source_dir: source
 public_dir: public
 tag_dir: tags
-archive_dir: news/archives
+archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
@@ -97,16 +97,12 @@ ignore:
 theme: volantis
 # 覆盖主题配置
 theme_config:
-  # backstretch:
-  #   position: cover
-  # style:
-  #   blur:
-  #     widget: false
-  readmore: false
+  comments:
+    title: <i class='fas fa-comments'></i> 用户交流区
   plugins:
     busuanzi: false
   valine:
-    placeholder: 这里仅供用户之间进行交流，如需联系开发者请移步「GitHub Issues」。
+    placeholder: 这里仅供用户之间进行交流，在评论区询问开发者将不会得到回复，有任何问题请务必提Issue。
   footer:
     layout: [aplayer, social, copyright]
   cover:

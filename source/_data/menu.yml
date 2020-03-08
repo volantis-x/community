@@ -48,6 +48,6 @@ on_mobile:
   - name: 鸣谢
     icon: fas fa-handshake
     url: contributors/
-  - name: 公告
-    icon: fas fa-bullhorn
-    url: news/archives/
+  - name: 博文
+    icon: fas fa-rss
+    url: archives/

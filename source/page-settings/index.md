@@ -5,11 +5,6 @@ title: Page Settings「页面配置」
 cover: false
 meta:
   header: [title, author, updated]
-btns:
-  repo: https://github.com/xaoxuu/hexo-theme-volantis
-  bug: https://github.com/xaoxuu/hexo-theme-volantis/issues/new?assignees=&labels=BUG&template=bug-report.md
-  doubt: https://github.com/xaoxuu/hexo-theme-volantis/issues/new?labels=疑问&template=question-report.md
-  idea: https://github.com/xaoxuu/hexo-theme-volantis/issues/new?assignees=&labels=建议&template=feature-request.md
 ---
 
 如无特殊说明，本页面的配置信息写在 <red>**页面**</red> 文件的 `front-matter` 中。
@@ -216,7 +211,7 @@ valine:
 ---
 
 <center>
-<p huge gray>404</p>
+<p huge>404</p>
 
 <b>很抱歉，您访问的页面不存在</b>
 
