@@ -97,18 +97,39 @@ ignore:
 theme: volantis
 # 覆盖主题配置
 theme_config:
-  comments:
-    title: <i class='fas fa-comments'></i> 用户交流区
   plugins:
     busuanzi: false
-  valine:
-    placeholder: 这里仅供用户之间进行交流，在评论区询问开发者将不会得到回复，有任何问题请务必提Issue。
   footer:
     layout: [aplayer, social, copyright]
   cover:
     search: '搜索文档'
+    features:
+      - name: 文档
+        icon: fas fa-book
+        url: getting-started/
+      - name: 博文
+        icon: fas fa-rss
+        url: archives/
+      - name: 示例
+        icon: fas fa-play-circle
+        url: examples/
+      - name: 源码
+        icon: fas fa-file-code
+        url: https://github.com/xaoxuu/hexo-theme-volantis/
+        rel: external nofollow noopener noreferrer
+        target: _blank
+      - name: 鸣谢
+        icon: fas fa-handshake
+        url: contributors/
   navbar:
     search: '搜索文档'
+  comments:
+    title: <i class='fas fa-comments'></i> 用户交流区
+    valine:
+      appId: FIKAgh6n0pUM08JXxhJHChVQ-MdYXbMMI
+      appKey: RJGiOYFc1fBvfox4frBPpRzU
+      path: /
+      placeholder: 这里仅供用户之间进行交流，在评论区询问开发者将不会得到回复，有任何问题请务必提Issue。
 
 
 # Deployment
@@ -222,10 +243,3 @@ markdown:
     permalinkSymbol: '¶'
     case: 0
     separator: ''
-
-
-# leancloud国际版
-leancloud:
-  app_id: FIKAgh6n0pUM08JXxhJHChVQ-MdYXbMMI
-  app_key: RJGiOYFc1fBvfox4frBPpRzU
-  valine_path: /
