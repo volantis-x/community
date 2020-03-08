@@ -2,7 +2,6 @@
 layout: page
 group: docs
 title: Getting Started「开始使用」
-cover: false
 meta:
   header: []
 ---

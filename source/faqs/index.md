@@ -1,7 +1,6 @@
 ---
 layout: page
 title: FAQ「常见问题」
-cover: false
 meta:
   header: [title, author, updated]
 ---

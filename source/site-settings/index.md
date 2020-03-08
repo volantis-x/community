@@ -2,7 +2,6 @@
 layout: page
 group: docs
 title: Site Settings「站点配置」
-cover: false
 meta:
   header: [title, author, updated]
 ---

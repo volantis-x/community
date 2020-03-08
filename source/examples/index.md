@@ -1,7 +1,6 @@
 ---
 layout: links
 title: 示例博客
-cover: false
 meta:
   header: []
 links:

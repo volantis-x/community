@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Contributors「鸣谢」
-cover: false
 meta:
   header: [title, author, updated]
 music:

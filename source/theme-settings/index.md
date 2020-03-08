@@ -2,7 +2,6 @@
 layout: page
 group: docs
 title: Theme Settings「主题配置」
-cover: false
 meta:
   header: [title, author, updated]
 ---

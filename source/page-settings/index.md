@@ -2,7 +2,6 @@
 layout: page
 group: docs
 title: Page Settings「页面配置」
-cover: false
 meta:
   header: [title, author, updated]
 ---
@@ -410,10 +409,10 @@ btns:
 
 ## 是否要显示封面
 
-如果某个页面不需要封面，可以这样写：
+如果某个页面需要封面，可以这样写：
 ```yaml front-matter
 ---
-cover: false
+cover: true
 ---
 ```
 

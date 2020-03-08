@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Advanced Settings「进阶设定」
-cover: false
 meta:
   header: [title, author, updated]
 ---
