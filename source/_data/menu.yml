@@ -18,6 +18,27 @@ on_desktop:
   - name: 进阶
     icon: fas fa-flask
     url: advanced-settings/
+  - name: 更多
+    icon: fas fa-ellipsis-v
+    rows:
+      - name: 主题源码
+        url: https://github.com/xaoxuu/hexo-theme-volantis/
+      - name: 更新日志
+        url: https://github.com/xaoxuu/hexo-theme-volantis/releases/
+      - name: 有疑问？
+        rows:
+          - name: 看 FAQ
+            url: faqs/
+          - name: 看 本站源码
+            url: https://github.com/xaoxuu/volantis-docs/
+          - name: 提 Issue
+            url: https://github.com/xaoxuu/hexo-theme-volantis/issues/
+      - name: 公告和测试博文
+        url: archives/
+      - name: 示例博客
+        url: examples/
+      - name: 特别感谢
+        url: contributors/
 
 # 手机端导航菜单（从右上角的按钮点击展开）
 on_mobile:
