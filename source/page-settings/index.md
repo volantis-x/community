@@ -19,6 +19,10 @@ meta:
 | links | 友链页面 |
 | list | 列表页面 |
 
+::: warning
+post 页面几乎与 page 页面相同，但是，post 页面更适用于文章，网页向下滚动时导航栏会上翻显出文章标题。
+:::
+
 ## front-matter
 
 front-matter 是文件最上方以 `---` 分隔的区域，用于指定个别文件的变量。

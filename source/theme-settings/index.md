@@ -674,3 +674,11 @@ footer:
   ...
   br: '<br>'
 ```
+
+## 搜索
+
+默认配置为 Hexo 搜索，但是需要安装插件才能使用：
+
+```sh 2. 然后安装必要的依赖包：
+npm i -S hexo-generator-search hexo-generator-json-content
+```
