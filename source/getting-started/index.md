@@ -39,14 +39,17 @@ hexo.sh i v
 
 ### 手动安装
 
-```sh 1. 下载主题源码到 `themes/` 文件夹：
+```sh 下载主题源码到 `themes/` 文件夹：
 git clone https://github.com/xaoxuu/hexo-theme-volantis themes/volantis
 ```
-```sh 2. 然后安装必要的依赖包：
-npm i -S hexo-generator-search hexo-generator-json-content hexo-renderer-less
+如果您从其它主题迁移而来，并且原主题没有使用 `stylus`，则需要安装 `stylus` 渲染插件：
+```sh
+npm i -S hexo-renderer-stylus
 ```
-
-
+默认配置为 Hexo 搜索，但是需要安装插件才能使用：
+```sh
+npm i -S hexo-generator-search hexo-generator-json-content
+```
 ## 许可协议
 
 本主题采用 <btn>[MIT开源许可协议](https://cdn.jsdelivr.net/gh/xaoxuu/hexo-theme-volantis/LICENSE)</btn> ，永久无限制免费使用。

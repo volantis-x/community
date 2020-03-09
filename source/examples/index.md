@@ -5,11 +5,8 @@ meta:
   header: []
 links:
   - group: '版本：^2.0'
-    desc: 目前是 beta 版本。
+    desc: 拥有N级导航栏，快来体验吧。
     items:
-    - name: 主题文档
-      avatar: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/emoji/qq/可爱.gif
-      desc: 赶快体验吧
     - name: xaoxuu
       avatar: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png
       url: https://xaoxuu.com

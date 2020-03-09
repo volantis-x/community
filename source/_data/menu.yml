@@ -3,6 +3,10 @@ on_desktop:
   - name: 开始
     icon: fas fa-flag
     url: getting-started/
+    rows:
+      - name: 一键下载主题文件
+        icon: fas fa-download
+        url: https://github.com/xaoxuu/hexo-theme-volantis/archive/master.zip
   - name: 站点
     icon: fas fa-globe-asia
     url: site-settings/
@@ -25,6 +29,7 @@ on_desktop:
         url: https://github.com/xaoxuu/hexo-theme-volantis/
       - name: 更新日志
         url: https://github.com/xaoxuu/hexo-theme-volantis/releases/
+      - name: hr
       - name: 有疑问？
         rows:
           - name: 看 FAQ
@@ -33,6 +38,7 @@ on_desktop:
             url: https://github.com/xaoxuu/volantis-docs/
           - name: 提 Issue
             url: https://github.com/xaoxuu/hexo-theme-volantis/issues/
+      - name: hr
       - name: 公告和测试博文
         url: archives/
       - name: 示例博客

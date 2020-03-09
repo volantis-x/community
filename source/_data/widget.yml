@@ -63,3 +63,15 @@ repos:
     - '[<img src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/proj/prohud/logo.png" height="50px">](https://github.com/xaoxuu/ProHUD)'
     - '[<img src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/proj/valuex/logo.png" height="50px">](https://github.com/xaoxuu/ValueX)'
     - '[<img src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/proj/inspire/logo.png" height="50px">](https://github.com/xaoxuu/Inspire)'
+
+# qrcode widget
+qrcode:
+  class: qrcode
+  display: [desktop] # [desktop, mobile]
+  header:
+    icon: fas fa-mobile
+    title: 手机观看
+  height: #64px  # Automatic height if not set
+  fancybox: #true
+  images:
+    - https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/qrcode/wiki_volantis.png
