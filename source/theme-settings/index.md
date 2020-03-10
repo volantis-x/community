@@ -15,8 +15,8 @@ info:
   version: '2.0'
   docs: https://volantis.js.org/
   cdn: # To use CDN, write 'use_cdn: true' in 'blog/_config.yml'.
-    css: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@2.0.1/css/style.css
-    js: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@2.0.1/js/app.js
+    css: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@2.0.2/css/style.css
+    js: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@2.0.2/js/app.js
 ```
 这部分内容一般无需修改，方便您查看主题相关信息。如果您不需要修改样式，建议开启主题提供的 CDN 服务以提高加载速度。
 ``` yaml blog/_config.yml
@@ -844,7 +844,7 @@ comments:
   valine:
     appId: # your appId
     appKey: # your appKey
-    js: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@2.0.1/js/valine.js
+    js: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@2.0.2/js/valine.js
     path: # All pages use the same path (share the same comments data)
     meta: nick,mail,link #valine comment header info
     placeholder: 快来评论吧~ # valine comment input placeholder(like: Please leave your footprints )
@@ -922,7 +922,7 @@ comments:
   valine:
     appId: # your appId
     appKey: # your appKey
-    js: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@2.0.1/js/valine.js
+    js: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@2.0.2/js/valine.js
     path: # All pages use the same path (share the same comments data)
     meta: nick,mail,link #valine comment header info
     placeholder: 快来评论吧~ # valine comment input placeholder(like: Please leave your footprints )
@@ -979,7 +979,7 @@ comments:
 search:
   enable: true
   service: hexo  # hexo, google, algolia, azure, baidu
-  js: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@2.0.1/js/search.js
+  js: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@2.0.2/js/search.js
   google:
     apiKey:
     engineId:
