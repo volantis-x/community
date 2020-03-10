@@ -43,10 +43,10 @@ music:
 感谢以下网站的收录与分享，让本主题能够被更多人发现，主题就会做的越来越好~
 
 {% raw %}
-<btns grid5>
+<btns grid5 rounded>
 <a href='https://hexo.io/themes/'><img height='48px' src='https://img.vim-cn.com/72/7e917e9b7bd3ee1cb593494610506c998eefb2.jpg'>Hexo Themes</a>
 <a href='https://valine.js.org/hexo.html#hexo-theme-material-x'><img height='48px' src='https://img.vim-cn.com/69/c9df34f04c86d32de9096a595fb5865711403c.png'>Valine</a>
-<a href='https://easyhexo.com/2-Theme-use-and-config/2-6-hexo-theme-volantis/'><img height='48px' src='https://img.vim-cn.com/f9/9aa61ab88b95cdbee98929700ec250c640def9.jpg'>Easy Hexo</a>
+<a href='https://easyhexo.com/2-Theme-use-and-config/2-6-hexo-theme-volantis/'><img height='48px' src='https://i.loli.net/2020/03/10/vxqOKtnRYehP4ZW.png'>Easy Hexo</a>
 </btns>
 {% endraw %}
 
