@@ -139,7 +139,7 @@ deploy:
   - type: git
     repo: git@github.com:xaoxuu/volantis.js.org.git
     branch: master
-    message: update pages
+    message: "Github CI Auto Builder at {{ now('YYYY-MM-DD HH:mm:ss Z') }}"
 
 
 
