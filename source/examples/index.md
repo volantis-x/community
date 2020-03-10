@@ -5,7 +5,7 @@ meta:
   header: []
 links:
   - group: '版本：^2.0'
-    desc: 拥有N级导航栏，快来体验吧。
+    desc: 导航栏拥有N级菜单，快来体验吧。
     items:
     - name: xaoxuu
       avatar: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png
