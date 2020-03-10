@@ -157,7 +157,7 @@ And more text.
 
 [I'm a reference-style link][Arbitrary case-insensitive reference text]
 
-[I'm a relative reference to a repository file](../blob/master/LICENSE)
+[I'm a relative reference to a repository file](https://cdn.jsdelivr.net/gh/xaoxuu/hexo-theme-volantis/LICENSE)
 
 [You can use numbers for reference-style link definitions][1]
 

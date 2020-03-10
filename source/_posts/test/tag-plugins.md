@@ -4,7 +4,7 @@ tags:
 robots: noindex,nofollow
 ---
 
-This post is used for testing tag plugins. See [docs](http://zespia.tw/hexo/docs/tag-plugins.html) for more info.
+This post is used for testing tag plugins. See docs for more info.
 
 ## Block Quote
 
@@ -26,7 +26,7 @@ NEW: DevDocs now comes with syntax highlighting. http://devdocs.io
 
 ### Quote from an article on the web
 
-{% blockquote Seth Godin http://sethgodin.typepad.com/seths_blog/2009/07/welcome-to-island-marketing.html Welcome to Island Marketing %}
+{% blockquote Seth Godin `http://sethgodin.typepad.com/seths_blog/2009/07/welcome-to-island-marketing.html` Welcome to Island Marketing %}
 Every interaction is both precious and an opportunity to delight.
 {% endblockquote %}
 

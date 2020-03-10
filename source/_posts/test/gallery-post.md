@@ -16,5 +16,3 @@ This post contains 4 photos:
 - Small photo
 
 All photos should be displayed properly.
-
-*From [Wallbase.cc](http://wallbase.cc)*

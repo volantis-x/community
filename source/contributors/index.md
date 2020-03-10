@@ -46,7 +46,7 @@ music:
 <btns grid5>
 <a href='https://hexo.io/themes/'><img height='48px' src='https://img.vim-cn.com/72/7e917e9b7bd3ee1cb593494610506c998eefb2.jpg'>Hexo Themes</a>
 <a href='https://valine.js.org/hexo.html#hexo-theme-material-x'><img height='48px' src='https://img.vim-cn.com/69/c9df34f04c86d32de9096a595fb5865711403c.png'>Valine</a>
-<a href='https://easyhexo.com/2-Theme-use-and-config/2-6-hexo-theme-material-x/'><img height='48px' src='https://img.vim-cn.com/f9/9aa61ab88b95cdbee98929700ec250c640def9.jpg'>Easy Hexo</a>
+<a href='https://easyhexo.com/2-Theme-use-and-config/2-6-hexo-theme-volantis/'><img height='48px' src='https://img.vim-cn.com/f9/9aa61ab88b95cdbee98929700ec250c640def9.jpg'>Easy Hexo</a>
 </btns>
 {% endraw %}
 
