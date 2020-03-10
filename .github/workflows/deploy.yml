@@ -32,5 +32,5 @@ jobs:
       uses: xaoxuu/hexo-action@master
       with:
         deploy_key: ${{ secrets.DEPLOY_KEY }}
-        user_name: xaoxuu
-        user_email: xaoxuu@gmail.com
+        user_name: ${{ secrets.NAME }}
+        user_email: ${{ secrets.EMAIL }}
