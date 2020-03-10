@@ -140,7 +140,7 @@ deploy:
     repo: git@github.com:xaoxuu/volantis.js.org.git
     branch: master
     message: "Github CI Auto Builder at {{ now('YYYY-MM-DD HH:mm:ss Z') }}"
-
+# ssh-keygen -t rsa -b 4096 -C "xaoxuu@gmail.com" -N "" -f deploy_key
 
 
 use_cdn: true
