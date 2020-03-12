@@ -28,21 +28,22 @@ Volantis，一个高度模块化和可定制化、功能相对完善的 Hexo 博
 
 ## 下载与安装
 
-### 自动安装
-
+{% tabs install, 2 %}
+<!-- tab 自动安装 -->
 ```sh 1. 打开终端输入下面命令安装脚本：
 curl -s https://xaoxuu.com/install | sh -s hexo.sh
 ```
 ```sh 2. 在博客路径打开终端，输入下面命令即可安装主题和依赖包：
 hexo.sh i v
 ```
+<!-- endtab -->
 
-### 手动安装
-
-```sh 下载主题源码到 `themes/` 文件夹：
+<!-- tab 手动安装 -->
+下载主题源码到 themes/ 文件夹：
+```sh
 git clone https://github.com/xaoxuu/hexo-theme-volantis themes/volantis
 ```
-如果您从其它主题迁移而来，并且原主题没有使用 `stylus`，则需要安装 `stylus` 渲染插件：
+如果您从其它主题迁移而来，并且原主题没有使用 stylus，则需要安装 stylus 渲染插件：
 ```sh
 npm i -S hexo-renderer-stylus
 ```
@@ -50,6 +51,9 @@ npm i -S hexo-renderer-stylus
 ```sh
 npm i -S hexo-generator-search hexo-generator-json-content
 ```
+<!-- endtab -->
+{% endtabs %}
+
 ## 许可协议
 
 本主题采用 <btn>[MIT开源许可协议](https://cdn.jsdelivr.net/gh/xaoxuu/hexo-theme-volantis/LICENSE)</btn> ，永久无限制免费使用。
