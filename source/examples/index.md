@@ -11,6 +11,10 @@ links:
       avatar: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png
       url: https://xaoxuu.com
       tags: [主题作者]
+    - name: CRainyDay
+      avatar: https://cdn.jsdelivr.net/gh/crainyday/blog@master/avatar.png
+      url: https://crainyday.gitee.io
+      tags: [Java]
   - group: '版本：^1.7'
     desc: 1.x的最后一个版本。
     items:
