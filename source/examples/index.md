@@ -11,6 +11,10 @@ links:
       avatar: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png
       url: https://xaoxuu.com
       tags: [主题作者]
+    - name: 精算后花园
+      avatar: https://imgkr.cn-bj.ufileos.com/5ff3c7ea-3f6e-40c7-92ec-3b926c35afd7.png
+      url: https://actuarygarden.cn
+      tags: [精算师考试]
   - group: '版本：^2.0'
     desc: 导航栏N级菜单
     items:
