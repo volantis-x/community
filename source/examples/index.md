@@ -4,8 +4,15 @@ title: 示例博客
 meta:
   header: []
 links:
+  - group: '版本：^2.1'
+    desc: 支持Tab标签
+    items:
+    - name: xaoxuu
+      avatar: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png
+      url: https://xaoxuu.com
+      tags: [主题作者]
   - group: '版本：^2.0'
-    desc: 导航栏拥有N级菜单，快来体验吧。
+    desc: 导航栏N级菜单
     items:
     - name: xaoxuu
       avatar: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png
@@ -16,7 +23,6 @@ links:
       url: https://crainyday.gitee.io
       tags: [Java]
   - group: '版本：^1.7'
-    desc: 1.x的最后一个版本。
     items:
     - name: Yanliang
       avatar: https://cdn.jsdelivr.net/gh/gyl-coder/gyl-coder.github.com@v1.0.0/img/touxiang.jpg
