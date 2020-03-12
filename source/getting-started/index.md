@@ -29,29 +29,53 @@ Volantis，一个高度模块化和可定制化、功能相对完善的 Hexo 博
 ## 下载与安装
 
 {% tabs install, 2 %}
-<!-- tab 自动安装 -->
-```sh 1. 打开终端输入下面命令安装脚本：
-curl -s https://xaoxuu.com/install | sh -s hexo.sh
-```
-```sh 2. 在博客路径打开终端，输入下面命令即可安装主题和依赖包：
+
+<!-- tab 脚本自动安装 -->
+
+在博客路径打开终端，下载安装并应用主题：
+```sh
 hexo.sh i v
 ```
+
+{% raw %}
+<details>
+<summary>
+如果没有脚本，需要先安装脚本
+</summary>
+{% endraw %}
+```sh
+curl -s https://xaoxuu.com/install | sh -s hexo.sh
+```
+
+脚本更多使用方法：[#hexo.sh](https://xaoxuu.com/wiki/hexo-sh/)
+
+{% raw %}</details>{% endraw %}
+
 <!-- endtab -->
 
 <!-- tab 手动安装 -->
-下载主题源码到 themes/ 文件夹：
+
+第1/3步：下载主题源码到 themes/ 文件夹
 ```sh
 git clone https://github.com/xaoxuu/hexo-theme-volantis themes/volantis
 ```
-如果您从其它主题迁移而来，并且原主题没有使用 stylus，则需要安装 stylus 渲染插件：
-```sh
-npm i -S hexo-renderer-stylus
+
+第2/3步：修改站点配置文件
+```yaml blog/_config.yml
+theme: volantis
 ```
-默认配置为 Hexo 搜索，但是需要安装插件才能使用：
-```sh
+
+第3/3步：检查并安装依赖
+
+```sh 安装 Hexo 搜索的依赖包：
 npm i -S hexo-generator-search hexo-generator-json-content
 ```
+```sh 安装 stylus 渲染器：
+npm i -S hexo-renderer-stylus
+```
+
 <!-- endtab -->
+
 {% endtabs %}
 
 ## 许可协议

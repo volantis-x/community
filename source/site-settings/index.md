@@ -19,14 +19,18 @@ title: my blog
 
 
 {% tabs favicon, 2 %}
+
 <!-- tab 简单方式 -->
+
 ```yaml blog/_config.yml
 # 网站图标，更多尺寸等图标请使用import方式批量导入
 favicon: https://cdn.jsdelivr.net/gh/xaoxuu/assets@master/favicon/favicon.ico
 ```
+
 <!-- endtab -->
 
 <!-- tab 完全自定义 -->
+
 ```yaml blog/_config.yml
 import:
   meta:
@@ -40,6 +44,7 @@ import:
   - "<link rel='mask-icon' color='#1BC3FB' href='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-favicon@19.9.6/safari-pinned-tab.svg'>"
   - "<link rel='manifest' href='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-favicon@19.9.6/site.webmanifest'>"
 ```
+
 <!-- endtab -->
 
 {% endtabs %}
