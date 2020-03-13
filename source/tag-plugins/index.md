@@ -391,6 +391,13 @@ mathjax: true # false: 不渲染, true: 渲染, internal: 只在文章内部渲�
 ---
 
 $$
+\mbox{积累因子}=\begin{cases}
+1+ni & \mbox{单利}\\\\
+(1+i)^n & \mbox{复利}
+\end{cases}
+$$
+
+$$
 \begin{equation}
 \sum_{i=0}^n F_i \cdot \phi (H, p_i) - \sum_{i=1}^n a_i \cdot ( \tilde{x_i}, \tilde{y_i}) + b_i \cdot ( \tilde{x_i}^2 , \tilde{y_i}^2 )
 \end{equation}
@@ -409,6 +416,13 @@ $$
 示例效果
 </summary>
 {% endraw %}
+
+$$
+\mbox{积累因子}=\begin{cases}
+1+ni & \mbox{单利}\\\\
+(1+i)^n & \mbox{复利}
+\end{cases}
+$$
 
 $$
 \begin{equation}

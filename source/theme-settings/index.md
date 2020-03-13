@@ -123,7 +123,8 @@ style:
   body:
     effect: [shadow] # [shadow, floatable, blur]
     highlight:
-      language: false # show language of codeblock
+      language: true # show language of codeblock
+      copy_btn: true
     text_align: # left, right, justify, center
       h1: left
       h2: left
