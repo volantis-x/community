@@ -29,7 +29,7 @@ jobs:
     # Deploy hexo blog website.
     - name: Deploy # step4
       id: deploy
-      uses: xaoxuu/hexo-action@master
+      uses: sma11black/hexo-action@v1.0.0
       with:
         deploy_key: ${{ secrets.DEPLOY_KEY }}
         user_name: ${{ secrets.NAME }}
