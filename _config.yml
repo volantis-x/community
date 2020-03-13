@@ -126,10 +126,10 @@ theme_config:
   comments:
     title: <i class='fas fa-comments'></i> 用户交流区
     valine:
-      # appId: FIKAgh6n0pUM08JXxhJHChVQ-MdYXbMMI
-      # appKey: RJGiOYFc1fBvfox4frBPpRzU
+      appId: FIKAgh6n0pUM08JXxhJHChVQ-MdYXbMMI
+      appKey: RJGiOYFc1fBvfox4frBPpRzU
       path: /
-      placeholder: 这里仅供用户之间进行交流，在评论区询问开发者将不会得到回复，有任何问题请务必提Issue。
+      placeholder: 这里仅供用户之间进行交流，有任何疑问请前往GitHub提交Issue，在评论区进行反馈将不会收到开发者回复。
 
 
 # Deployment
