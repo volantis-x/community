@@ -97,7 +97,7 @@ style:
 您可以设置导航栏的高度以及视觉特效，视觉特效目前可选的有：
 - **shadow**：卡片阴影。
 - **floatable**：当鼠标移动到容器内时，呈现出浮起来的效果。
-- **blur**：背景模糊效果（毛玻璃）。
+- **blur**：背景模糊效果（毛玻璃），当浏览器不支持时显示为不透明。
 ```yaml blog/themes/volantis/_config.yml
 style:
   ...
