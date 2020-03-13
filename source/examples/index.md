@@ -15,6 +15,10 @@ links:
       avatar: https://imgkr.cn-bj.ufileos.com/5ff3c7ea-3f6e-40c7-92ec-3b926c35afd7.png
       url: https://actuarygarden.cn
       tags: [精算师考试]
+    - name: 剑无道
+      avatar: https://cdn.jsdelivr.net/gh/HaleShaw/cdn/img/favicon_512.svg
+      url: https://jianwudao.com
+      tags: [Java, C#, JavaScript]
   - group: '版本：^2.0'
     desc: 导航栏N级菜单
     items:
