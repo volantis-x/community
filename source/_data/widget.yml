@@ -37,18 +37,21 @@ feedback:
   header:
     icon: fas fa-headset
     title: 联系开发者
-    url: https://github.com/xaoxuu/hexo-theme-volantis
+    url: https://github.com/xaoxuu/hexo-theme-volantis/issues/
   fixed: true # 固定宽度
   rows:
     - name: 反馈BUG
       icon: fas fa-bug
-      url: https://github.com/xaoxuu/hexo-theme-volantis/issues/new?assignees=&template=bug-report.md
+      url: https://github.com/xaoxuu/hexo-theme-volantis/issues/new?assignees=&labels=New%2CQuestion&template=bug-report.md
     - name: 疑问求助
       icon: fas fa-question-circle
-      url: https://github.com/xaoxuu/hexo-theme-volantis/issues/new?labels=疑问&template=question-report.md
+      url: https://github.com/xaoxuu/hexo-theme-volantis/issues/new?assignees=&labels=New%2CQuestion&template=question-report.md
     - name: 提个建议
       icon: fas fa-lightbulb
-      url: https://github.com/xaoxuu/hexo-theme-volantis/issues/new?assignees=&labels=建议&template=feature-request.md
+      url: https://github.com/xaoxuu/hexo-theme-volantis/issues/new?assignees=&labels=New%2CSuggest&template=feature-request.md
+    - name: 其它问题
+      icon: fas fa-comment-dots
+      url: https://github.com/xaoxuu/hexo-theme-volantis/issues/new?assignees=&labels=New&template=other-issue.md
 
 # 项目仓库
 repos:
