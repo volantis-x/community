@@ -1,7 +1,9 @@
 name: Deploy # workflow name
 
 on:
-  [push] # 触发事件
+  push:
+    branches:
+      - master
 
 jobs:
   build: # job1 id

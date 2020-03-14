@@ -2,6 +2,7 @@ name: automerge
 on:
   pull_request:
     types:
+      - opened
       - labeled
       - synchronize
       - edited
