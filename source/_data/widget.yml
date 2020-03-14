@@ -42,16 +42,16 @@ feedback:
   rows:
     - name: 反馈BUG
       icon: fas fa-bug
-      url: https://github.com/xaoxuu/hexo-theme-volantis/issues/new?assignees=&labels=New%2CQuestion&template=bug-report.md
+      url: https://github.com/xaoxuu/hexo-theme-volantis/issues/new?assignees=&labels=new%2Cquestion&template=bug-report.md
     - name: 疑问求助
       icon: fas fa-question-circle
-      url: https://github.com/xaoxuu/hexo-theme-volantis/issues/new?assignees=&labels=New%2CQuestion&template=question-report.md
+      url: https://github.com/xaoxuu/hexo-theme-volantis/issues/new?assignees=&labels=new%2Cquestion&template=question-report.md
     - name: 提个建议
       icon: fas fa-lightbulb
-      url: https://github.com/xaoxuu/hexo-theme-volantis/issues/new?assignees=&labels=New%2CSuggest&template=feature-request.md
+      url: https://github.com/xaoxuu/hexo-theme-volantis/issues/new?assignees=&labels=new%2Csuggest&template=feature-request.md
     - name: 其它问题
       icon: fas fa-comment-dots
-      url: https://github.com/xaoxuu/hexo-theme-volantis/issues/new?assignees=&labels=New&template=other-issue.md
+      url: https://github.com/xaoxuu/hexo-theme-volantis/issues/new?assignees=&labels=new&template=other-issue.md
 
 # 项目仓库
 repos:
