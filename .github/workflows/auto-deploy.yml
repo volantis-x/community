@@ -1,4 +1,4 @@
-name: Deploy # workflow name
+name: auto deploy # workflow name
 
 on:
   [push] # 触发事件
