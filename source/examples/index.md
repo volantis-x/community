@@ -79,7 +79,7 @@ links:
 
 <br>
 
-{% tabs install, 2 %}
+{% tabs edit, 1 %}
 
 <!-- tab 如何添加 -->
 
