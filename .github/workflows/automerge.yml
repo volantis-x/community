@@ -1,0 +1,25 @@
+name: automerge
+on:
+  pull_request:
+    types:
+      - opened
+      - labeled
+      - synchronize
+      - edited
+      - ready_for_review
+      - reopened
+      - unlocked
+jobs:
+  automerge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: labeler
+        uses: actions/labeler@v2
+        with:
+          repo-token: "${{ secrets.GITHUB_TOKEN }}"
+      - name: automerge
+        uses: "pascalgn/automerge-action@ccae530ae13b6af67a7a2009c266fe925844e658"
+        env:
+          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+          MERGE_LABELS: ""
+          MERGE_METHOD: "rebase"
