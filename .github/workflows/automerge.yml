@@ -22,3 +22,4 @@ jobs:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
           MERGE_LABELS: "examples,!work in progress"
           MERGE_METHOD: "rebase"
+          MERGE_COMMIT_MESSAGE: "Add or update example blog."
