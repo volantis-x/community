@@ -1,9 +1,9 @@
 name: Deploy # workflow name
 
 on:
-  push:
-    branches:
-      - master
+  pull_request_review:
+    types:
+      - submitted
 
 jobs:
   build: # job1 id
