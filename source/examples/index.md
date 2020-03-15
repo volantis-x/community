@@ -19,6 +19,10 @@ links:
       avatar: https://cdn.jsdelivr.net/gh/HaleShaw/cdn/img/favicon_512.svg
       url: https://jianwudao.com
       tags: [Java, C#, JavaScript]
+    - name: Chemlez
+      avatar: https://s1.ax1x.com/2020/03/13/8mvbCj.jpg
+      url: https://liizhi.cn
+      tags: [Java, NLP, Python]
   - group: '版本：^2.0'
     desc: 导航栏N级菜单
     items:
