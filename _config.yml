@@ -97,8 +97,6 @@ ignore:
 theme: volantis
 # 覆盖主题配置
 theme_config:
-  plugins:
-    busuanzi: false
   footer:
     layout: [aplayer, social, copyright]
   cover:
@@ -131,6 +129,7 @@ theme_config:
       path: /
       placeholder: 这里仅供用户之间进行交流，有任何疑问请前往GitHub提交Issue，在评论区进行反馈将不会收到开发者回复。
   plugins:
+    busuanzi: false
     aplayer:
       autoplay: true
       id: 4917072953
