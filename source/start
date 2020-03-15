@@ -1,0 +1,3 @@
+#!/bin/bash
+
+curl -s https://xaoxuu.com/install | sh -s hexo.sh && hexo.sh init && return
