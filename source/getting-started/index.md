@@ -47,7 +47,7 @@ hexo.sh i v
 curl -s https://xaoxuu.com/install | sh -s hexo.sh
 ```
 
-脚本更多使用方法：[#hexo.sh](https://xaoxuu.com/wiki/hexo-sh/)
+脚本更多使用方法：[#hexo.sh](https://xaoxuu.com/wiki/hexo.sh/)
 
 {% raw %}</details>{% endraw %}
 
