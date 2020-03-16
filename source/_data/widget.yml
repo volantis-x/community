@@ -78,3 +78,12 @@ qrcode:
   fancybox: #true
   images:
     - https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/qrcode/wiki_volantis.png
+
+help:
+  class: page
+  display: [desktop, mobile]
+  header:
+    icon: fas fa-headset
+    title: 帮助
+  pid: faq
+  content: excerpt # excerpt, more, content
