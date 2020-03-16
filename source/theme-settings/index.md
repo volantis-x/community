@@ -802,12 +802,11 @@ plugins:
     position: cover       # cover: sticky on the cover.   fixed: Fixed as background for the site.
     duration: 20000       # Duration (ms)
     fade: 1500            # fade duration (ms) (Not more than 1500)
-    white_text: #true     # Whether the picture is dark (adjust the text to white)
     images:               # For personal use only. At your own risk if used for commercial purposes !!!
       - https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/41F215B9-261F-48B4-80B5-4E86E165259E.jpeg
       ...
 ```
-幻灯片背景图片显示的位置可以选择粘贴在封面上，跟随封面一起滑动，也可以选择固定作为网页背景图片。当图片是深色是，建议设置 `white_text: true` 来让封面文字显示为白色。
+幻灯片背景图片显示的位置可以选择粘贴在封面上，跟随封面一起滑动，也可以选择固定作为网页背景图片。
 
 ## APlayer
 ```yaml blog/themes/volantis/_config.yml
