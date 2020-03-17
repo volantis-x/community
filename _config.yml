@@ -97,6 +97,16 @@ ignore:
 theme: volantis
 # 覆盖主题配置
 theme_config:
+  info:
+    cdn:
+      css: false
+  style:
+    color:
+      site: '#E84D3B'
+      site_inner: '#FFCE48'
+      theme: '#E84D3B'
+    gap:
+      line: .5rem
   cover:
     search: '搜索文档'
     features:
@@ -130,10 +140,14 @@ theme_config:
     layout: [aplayer, social, copyright]
   plugins:
     busuanzi: false
+    backstretch:
+      enable: false
     aplayer:
       autoplay: true
-      id: 4917530132 # vol 1
-      # id: 4917524698 # vol 2
+      volume: 0.4
+      order: random
+      id: 4917530132 # vol red
+      # id: 4917524698 # vol blue
 
 
 

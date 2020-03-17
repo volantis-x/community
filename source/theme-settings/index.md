@@ -8,6 +8,21 @@ meta:
 
 如无特殊说明，本页面的配置信息写在 <red>**主题**</red> 的 `config.yml` 文件中。
 
+{% raw %}
+<details cyan open>
+<summary>
+实用小技巧 <i class='fas fa-lightbulb'></i>
+</summary>
+{% endraw %}
+
+所有需要写在主题配置文件中的配置都可以写在站点配置文件的 `theme_config:` 中。
+
+- 详见 Hexo 官方文档 [#覆盖主题配置](https://hexo.io/zh-cn/docs/configuration#%E8%A6%86%E7%9B%96%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE)
+- 也可以直接查看本站源码中站点配置文件的写法：[_config.yml](https://github.com/xaoxuu/volantis-docs/blob/master/_config.yml)
+
+{% raw %}</details>{% endraw %}
+
+
 ## 主题基本信息
 ```yaml blog/themes/volantis/_config.yml
 info:
