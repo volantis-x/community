@@ -22,7 +22,11 @@ links:
     - name: Chemlez
       avatar: https://s1.ax1x.com/2020/03/13/8mvbCj.jpg
       url: https://liizhi.cn
-      tags: [Java, NLP, Python]      
+      tags: [Java, NLP, Python]
+    - name: 果子小酱
+      avatar: https://cdn.jsdelivr.net/gh/cwxyr/mycdn@master/favicon_new.ico
+      url: https://sublimerui.top
+      tags: [Python, Web]
   - group: '版本：^2.0'
     desc: 导航栏N级菜单
     items:
