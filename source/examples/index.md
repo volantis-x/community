@@ -77,7 +77,7 @@ links:
     items:
     - name: 搅拌糖
       url: https://writeblog.github.io/
-      avatar: http://cdn.treelo.xin/avatar.png
+      avatar: https://i.loli.net/2020/03/18/J2Ss8hQfdn9ma6c.jpg
     - name: YuGao's Blog
       url: https://sxyugao.top/
       avatar: https://cdn.jsdelivr.net/gh/sxyugao/Website@master/images/avatar.png
@@ -140,7 +140,7 @@ links:
       avatar: https://cdn.jsdelivr.net/gh/hailou/Figurebed/img/201912/20191226152805.jpg
     - name: Candy Boy
       url: http://www.candysky.top/
-      avatar: http://image.candysky.top//title.png
+      avatar: https://i.loli.net/2020/03/18/RMwQiItbyjd7fvK.png
     - name: BFDZ
       url: https://www.bfdz.ink/
       avatar: https://www.bfdz.ink/favicon.ico
