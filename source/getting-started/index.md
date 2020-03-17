@@ -34,20 +34,11 @@ Volantis，一个高度模块化和可定制化、功能相对完善的 Hexo 博
 
 在博客路径打开终端，下载安装并应用主题：
 ```sh
-hexo.sh i v
+curl -s https://volantis.js.org/start | sh
 ```
+如果您还没有博客，执行这行命令将会自动检测并安装所需环境，初始化博客，然后下载安装并应用主题。
 
-{% raw %}
-<details>
-<summary>
-如果没有脚本，需要先安装脚本
-</summary>
-{% endraw %}
-```sh
-curl -s https://xaoxuu.com/install | sh -s hexo.sh
-```
-
-脚本更多使用方法：[#hexo.sh](https://xaoxuu.com/wiki/hexo.sh/)
+> 脚本更多使用方法：[#hexo.sh](https://xaoxuu.com/wiki/hexo.sh/)
 
 {% raw %}</details>{% endraw %}
 
