@@ -45,6 +45,9 @@ on_desktop:
         url: examples/
       - name: 特别感谢
         url: contributors/
+      - name: hr
+      - name: 背景音乐
+        icon: fas fa-compact-disc
 
 # 手机端导航菜单（从右上角的按钮点击展开）
 on_mobile:

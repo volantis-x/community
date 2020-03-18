@@ -101,10 +101,10 @@ theme_config:
     cdn:
       css: false
   style:
-    color:
-      site: '#E84D3B'
-      site_inner: '#FFCE48'
-      theme: '#E84D3B'
+    # color:
+    #   site: '#E84D3B'
+    #   site_inner: '#FFCE48'
+    #   theme: '#E84D3B'
     gap:
       line: .5rem
   cover:
@@ -137,18 +137,24 @@ theme_config:
       path: /
       placeholder: 这里仅供用户之间进行交流，有任何疑问请前往GitHub提交Issue，在评论区进行反馈将不会收到开发者回复。
   footer:
-    layout: [aplayer, social, copyright]
+    layout: [social, copyright]
   plugins:
     busuanzi: false
     backstretch:
-      enable: false
+    #   enable: false
+      images:               # For personal use only. At your own risk if used for commercial purposes !!!
+        - https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/41F215B9-261F-48B4-80B5-4E86E165259E.jpeg
+        - https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/BBC19066-E176-47C2-9D22-48C81EE5DF6B.jpeg
+        - https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/B18FCBB3-67FD-48CC-B4F3-457BA145F17A.jpeg
+        - https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/00E0F0ED-9F1C-407A-9AA6-545649D919F4.jpeg
+        - https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/67239FBB-E15D-4F4F-8EE8-0F1C9F3C4E7C.jpeg
     aplayer:
       autoplay: true
       volume: 0.4
-      order: random
-      id: 4917530132 # vol red
+      # order: random
+      # id: 4917530132 # vol red
       # id: 4917524698 # vol blue
-
+      id: 76244489 # vol white
 
 
 # Deployment
