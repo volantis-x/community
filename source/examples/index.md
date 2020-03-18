@@ -27,6 +27,9 @@ links:
       url: https://sublimerui.top
       avatar: https://cdn.jsdelivr.net/gh/cwxyr/mycdn@master/favicon_new.ico
       tags: [Python, Web]
+    - name: Linhk1606
+      url: https://blog.lhkstudio.me
+      avatar: https://cdn.jsdelivr.net/gh/Linhk1606/Linhk1606@V2.0.4/me.jpg
   - group: '版本：^2.0'
     desc: 导航栏N级菜单
     items:
@@ -60,10 +63,6 @@ links:
       tags: [暗色, 轻微修改]
   - group: '版本：^1.5'
     items:
-    - name: Linhk1606
-      url: https://blog.lhkstudio.me
-      avatar: https://cdn.jsdelivr.net/gh/Linhk1606/Linhk1606@V2.0.4/me.jpg
-      tags: [OIer, Qt]
     - name: 233213fedf
       url: https://233213fedf.github.io
       avatar: https://i.loli.net/2020/02/22/WbxiwCG1gDEF3Od.jpg
