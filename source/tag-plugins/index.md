@@ -47,6 +47,98 @@ mathjax: true
 
 目前支持的尺寸有：`small`、`large`、`huge`，布局有：`left`、`center`、`right`。
 
+## Note
+
+Note <sup class='blue'>^2.2</sup> 是 Blockquote 的增强版，在左边显示图标，并且可以自定颜色。
+
+{% tabs note %}
+
+<!-- tab 格式 -->
+
+```md
+{% note 参数1 参数2 %}
+
+文本段落
+
+{% endnote %}
+```
+{% note success %}
+
+从 2.2 版本开始支持
+
+{% endnote %}
+
+<!-- endtab -->
+
+<!-- tab 参数 -->
+
+`参数1`、`参数2` 位置可以写 `type` 和 `color`
+
+```md type
+# 自带色彩的 type:
+type: info, warning, done/success, error/danger
+# 灰色的 type:
+type: radiation, bug, idea, link, paperclip, todo, msg, guide, download
+```
+
+```md color
+color: light, gray, red, yellow, green, cyan, blue
+```
+
+<!-- endtab -->
+
+<!-- tab 示例 -->
+
+
+{% note %}
+exp1 什么参数都不传
+```md
+{% note %}
+exp1 什么参数都不传
+{% endnote %}
+```
+{% endnote %}
+
+{% note warning %}
+exp2 一个 warning
+```md
+{% note warning %}
+exp2 一个 warning
+{% endnote %}
+```
+{% endnote %}
+
+{% note success %}
+exp3 一个 success
+```md
+{% note success %}
+exp3 一个 success
+{% endnote %}
+```
+{% endnote %}
+
+{% note red bug %}
+exp4 一个红色的 bug
+```md
+{% note red bug %}
+exp4 一个红色的 bug
+{% endnote %}
+```
+{% endnote %}
+
+{% note link %}
+exp5 一个 link
+```md
+{% note link %}
+exp5 一个 link
+{% endnote %}
+```
+{% endnote %}
+
+<!-- endtab -->
+
+{% endtabs %}
+
 ## 插入简单按钮 <sup class='blue'>^1.6</sup>
 
 目前共支持3种尺寸的按钮。
