@@ -49,22 +49,22 @@ mathjax: true
 
 ## Note
 
-Note <sup class='blue'>^2.2</sup> 是 Blockquote 的增强版，在左边显示图标，并且可以自定颜色。
+Note 是 Blockquote 的增强版，在左边显示图标，并且可以自定颜色。
 
 {% tabs note %}
 
 <!-- tab 格式 -->
 
 ```md
-{% note 参数1 参数2 %}
+{% note 参数 %}
 
 文本段落
 
 {% endnote %}
 ```
-{% note success %}
+{% note up green %}
 
-从 2.2 版本开始支持
+Volantis: 2.2
 
 {% endnote %}
 
@@ -72,17 +72,18 @@ Note <sup class='blue'>^2.2</sup> 是 Blockquote 的增强版，在左边显示�
 
 <!-- tab 参数 -->
 
-`参数1`、`参数2` 位置可以写 `type` 和 `color`
+参数位置可以写 `type` 和 `color` ，多个参数用空格隔开
 
-```md type
-# 自带色彩的 type:
-type: info, warning, done/success, error/danger
-# 灰色的 type:
-type: radiation, bug, idea, link, paperclip, todo, msg, guide, download
+```md colorful type
+quote, info, warning, done/success, error/danger
+```
+
+```md more type
+radiation, bug, idea, link, paperclip, todo, msg, guide, download, up
 ```
 
 ```md color
-color: light, gray, red, yellow, green, cyan, blue
+clear, light, gray, red, yellow, green, cyan, blue
 ```
 
 <!-- endtab -->
@@ -91,8 +92,7 @@ color: light, gray, red, yellow, green, cyan, blue
 
 
 {% note %}
-exp1 什么参数都不传
-```md
+```md exp1 什么参数都不传
 {% note %}
 exp1 什么参数都不传
 {% endnote %}
@@ -100,8 +100,7 @@ exp1 什么参数都不传
 {% endnote %}
 
 {% note warning %}
-exp2 一个 warning
-```md
+```md exp2 一个 warning
 {% note warning %}
 exp2 一个 warning
 {% endnote %}
@@ -109,8 +108,7 @@ exp2 一个 warning
 {% endnote %}
 
 {% note success %}
-exp3 一个 success
-```md
+```md exp3 一个 success
 {% note success %}
 exp3 一个 success
 {% endnote %}
@@ -118,19 +116,25 @@ exp3 一个 success
 {% endnote %}
 
 {% note red bug %}
-exp4 一个红色的 bug
-```md
+```md exp4 一个红色的 bug
 {% note red bug %}
 exp4 一个红色的 bug
 {% endnote %}
 ```
 {% endnote %}
 
-{% note link %}
+{% note link clear %}
+```md exp5 一个 clear link
+{% note link clear %}
 exp5 一个 link
-```md
-{% note link %}
-exp5 一个 link
+{% endnote %}
+```
+{% endnote %}
+
+{% note quote %}
+```md exp6 一个 quote
+{% note quote %}
+exp6 一个 quote
 {% endnote %}
 ```
 {% endnote %}
