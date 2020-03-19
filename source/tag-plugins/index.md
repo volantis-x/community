@@ -258,23 +258,23 @@ plugins:
 
 ## Tab切换 <sup class='blue'>^2.1</sup>
 
-这部分功能借鉴自 NexT 主题，但外观风格上有所不同。
+这部分功能借鉴自 NexT 主题。
 
 
-{% tabs tabname %}
+{% tabs tab-id %}
 
 <!-- tab Tab的写法 -->
 
 ```md
-{% tabs tabname %}
+{% tabs tab-id %}
 
-<!-- tab Tab1 -->
+<!-- tab tab-name -->
 
-这里面写内容，支持的语法格式有限，请尽量<u>不要</u>写太过复杂的东西。
+![](https://i.loli.net/2020/03/18/f5PQlWisvm9zbgK.jpg)
 
 <!-- endtab -->
 
-<!-- tab Tab2 -->
+<!-- tab tab-name -->
 
 这里面写内容，支持的语法格式有限，请尽量<u>不要</u>写太过复杂的东西。
 
@@ -285,15 +285,44 @@ plugins:
 
 <!-- endtab -->
 
-<!-- tab Tab2 -->
+<!-- tab 图片测试 -->
 
-这里面写内容，支持的语法格式有限，请尽量<u>不要</u>写太过复杂的东西。
+![](https://i.loli.net/2020/03/18/f5PQlWisvm9zbgK.jpg)
+
+
+```md 测试 fancybox ：
+<fancybox>
+
+![](https://i.loli.net/2020/03/18/1TpiUwhuskGm5SV.png)
+
+![](https://i.loli.net/2020/03/18/LZwBtR5YO4zQH9A.png)
+
+![](https://i.loli.net/2020/03/18/ySw8zGHRBrDtUg7.png)
+
+![](https://i.loli.net/2020/03/18/5QTMYsScOz41Vhg.png)
+
+</fancybox>
+```
+
+<fancybox>
+
+![](https://i.loli.net/2020/03/18/1TpiUwhuskGm5SV.png)
+
+![](https://i.loli.net/2020/03/18/LZwBtR5YO4zQH9A.png)
+
+![](https://i.loli.net/2020/03/18/ySw8zGHRBrDtUg7.png)
+
+![](https://i.loli.net/2020/03/18/5QTMYsScOz41Vhg.png)
+
+</fancybox>
+
+有些格式不能识别的话，可以尝试增加空行。
 
 <!-- endtab -->
 
-<!-- tab Tab3 -->
+<!-- tab 注意 -->
 
-这里面写内容，支持的语法格式有限，请尽量<u>不要</u>写太过复杂的东西。
+支持的语法格式有限，请尽量<u>不要</u>写太过复杂的东西。
 
 <!-- endtab -->
 
@@ -352,16 +381,16 @@ md表格内容
 
 {% raw %}</details>{% endraw %}
 
-## 折叠区域 <sup class='blue'>^1.5.2</sup>
+## 折叠框
 
 {% raw %}
 <details>
 <summary>
-One More Thing 👇
+示例：查看图片
 </summary>
 {% endraw %}
 
-懒加载占位图如果喜欢请拿去：<btn>[图片地址](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/placeholder/d570170f4f12e1ee829ca0e85a7dffeb77343a.svg)</btn>
+![](https://i.loli.net/2020/03/18/f5PQlWisvm9zbgK.jpg)
 
 {% raw %}</details>{% endraw %}
 
@@ -369,11 +398,11 @@ One More Thing 👇
 {% raw %}
 <details>
 <summary>
-One More Thing 👇
+示例：查看图片
 </summary>
 {% endraw %}
 
-懒加载占位图如果喜欢请拿去：<btn>[图片地址](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/placeholder/d570170f4f12e1ee829ca0e85a7dffeb77343a.svg)</btn>
+![](https://i.loli.net/2020/03/18/f5PQlWisvm9zbgK.jpg)
 
 {% raw %}</details>{% endraw %}
 ```
@@ -605,10 +634,10 @@ content
 
 <br>
 
-引用这篇文章：{% post_link 2020-02-22 %}
+引用这篇文章：{% post_link news/2020-02-22 %}
 
 ```md blog/source/_posts/example.md:
-引用这篇文章：{% post_link 2020-02-22 %}
+引用这篇文章：{% post_link news/2020-02-22 %}
 ```
 {% raw %}</details>{% endraw %}
 
