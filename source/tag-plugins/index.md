@@ -132,7 +132,7 @@ Windows 10不是為所有人設計,而是為每個人設計
 {% note undo light %}
 **note undo light**
 
-我们都有不顺利的时候
+滚回到之前的版本
 {% endnote %}
 
 
