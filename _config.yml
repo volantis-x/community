@@ -228,43 +228,18 @@ offline:
       options:
         origin: cdnjs.cloudflare.com
 
-markdown:
-  render:
-    html: true
-    xhtmlOut: false
-    breaks: true
-    linkify: true
-    typographer: true
-    quotes: '“”‘’'
-  plugins:
-    - markdown-it-abbr
-    - markdown-it-footnote
-    - markdown-it-ins
-    - markdown-it-sub
-    - markdown-it-sup
-    - markdown-it-deflist
-    - markdown-it-imsize
-    - markdown-it-mark
-    - markdown-it-regexp
-    - markdown-it-task-checkbox
-    - name: markdown-it-container
-      options: success
-    - name: markdown-it-container
-      options: info
-    - name: markdown-it-container
-      options: warning
-    - name: markdown-it-container
-      options: danger
-    - markdown-it-deflist
-    - name: markdown-it-emoji
-      options:
-        shortcuts: {}
-  anchors:
-    level: 2
-    collisionSuffix: ''
-    permalink: false
-    permalinkClass: 'header-anchor'
-    permalinkSide: 'left'
-    permalinkSymbol: '¶'
-    case: 0
-    separator: ''
+marked:
+  gfm: true
+  pedantic: false
+  breaks: true
+  smartLists: true
+  smartypants: true
+  modifyAnchors: 0
+  autolink: true
+  sanitizeUrl: false
+  headerIds: true
+  prependRoot: false
+  external_link:
+    enable: true
+    exclude: []
+    nofollow: true

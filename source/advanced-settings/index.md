@@ -85,7 +85,7 @@ layout:
 ```
 
 {% note link %}
-插件的自定义配置方法：https://github.com/tea3/hexo-related-popular-posts
+插件的自定义配置方法： [hexo-related-popular-posts](https://github.com/tea3/hexo-related-popular-posts)
 {% endnote %}
 
 ## 分析与统计

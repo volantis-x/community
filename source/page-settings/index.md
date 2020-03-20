@@ -326,7 +326,7 @@ music:
 ```
 
 {% note play %}
-实际效果见： [https://volantis.js.org/contributors/](/contributors/)
+实际效果见： [#contributors](/contributors/)
 {% endnote %}
 
 ## 显示 meta 标签

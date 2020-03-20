@@ -23,22 +23,8 @@
     "hexo-lazyload-image": "^1.0.3",
     "hexo-offline": "^1.0.0",
     "hexo-renderer-ejs": "^1.0.0",
-    "hexo-renderer-less": "^1.0.0",
-    "hexo-renderer-markdown-it": "^4.0.0",
+    "hexo-renderer-marked": "^2.0.0",
     "hexo-renderer-stylus": "^1.1.0",
-    "hexo-server": "^1.0.0",
-    "markdown-it-abbr": "^1.0.4",
-    "markdown-it-checkbox": "^1.1.0",
-    "markdown-it-container": "^2.0.0",
-    "markdown-it-deflist": "^2.0.3",
-    "markdown-it-emoji": "^1.4.0",
-    "markdown-it-footnote": "^3.0.2",
-    "markdown-it-imsize": "^2.0.1",
-    "markdown-it-ins": "^3.0.0",
-    "markdown-it-mark": "^3.0.0",
-    "markdown-it-regexp": "^0.4.0",
-    "markdown-it-sub": "^1.0.0",
-    "markdown-it-sup": "^1.0.0",
-    "markdown-it-task-checkbox": "^1.0.6"
+    "hexo-server": "^1.0.0"
   }
 }

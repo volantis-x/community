@@ -185,8 +185,18 @@ links:
 
 <!-- tab 辅助工具 -->
 
-- 压缩图： https://www.yasuotu.com/
-- HTTPS 图床： https://sm.ms/
+{% btns rounded grid5 %}
+<a href='https://www.yasuotu.com/'>
+  <i class='fas fa-link'></i>
+  <b>yasuotu.com</b>
+  <p>压缩图</p>
+</a>
+<a href='https://sm.ms/'>
+  <i class='fas fa-link'></i>
+  <b>sm.ms</b>
+  <p>HTTPS 图床</p>
+</a>
+{% endbtns %}
 
 <!-- endtab -->
 

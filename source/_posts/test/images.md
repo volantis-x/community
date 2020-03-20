@@ -7,17 +7,11 @@ robots: noindex,nofollow
 
 This is a image test post.
 
-<fancybox>
-
-
+{% fancybox %}
 ![](https://i.loli.net/2020/03/18/1TpiUwhuskGm5SV.png)
-
 ![截屏2020-03-1317.25.10.png](https://i.loli.net/2020/03/18/LZwBtR5YO4zQH9A.png)
-
 ![截屏2020-03-1317.27.42.png](https://i.loli.net/2020/03/18/ySw8zGHRBrDtUg7.png)
-
 ![截屏2020-03-1317.28.02.png](https://i.loli.net/2020/03/18/5QTMYsScOz41Vhg.png)
-
-</fancybox>
+{% endfancybox %}
 
 ![](https://i.loli.net/2020/03/18/XWBGf95E2t1bdnl.jpg)
