@@ -181,7 +181,7 @@ import:
   - "<link rel='icon' type='image/x-icon' sizes='32x32' href='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/favicon/favicon-32x32.png'>"
   - "<link rel='apple-touch-icon' type='image/png' sizes='180x180' href='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/favicon/apple-touch-icon.png'>"
   - "<link rel='mask-icon' color='#1BC3FB' href='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/favicon/safari-pinned-tab.svg'>"
-  - "<link rel='manifest' href='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/favicon/site.webmanifest'>"
+  - "<link rel='manifest' href='/manifest.json'>"
   # script:
 
 # https://github.com/ludoviclefevre/hexo-generator-seo-friendly-sitemap

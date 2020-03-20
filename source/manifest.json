@@ -1,0 +1,21 @@
+{
+  "short_name": "xaoxuu",
+  "name": "xaoxuu",
+  "icons": [{
+    "src": "https://img.vim-cn.com/f5/fa917899eca6cba0dfda87c2db03c552925fc0.png",
+    "type": "image/png",
+    "sizes": "256x256"
+  }, {
+    "src": "https://img.vim-cn.com/42/0c5a7992c0fddc1453735e185f1d3fc34c62b8.png",
+    "type": "image/png",
+    "sizes": "192x192"
+  }, {
+    "src": "https://img.vim-cn.com/f5/ba9cef3cb1cba902cc2c989589a2bdfe93e10e.png",
+    "type": "image/png",
+    "sizes": "144x144"
+  }],
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "display": "standalone",
+  "start_url": "./index.html"
+}
