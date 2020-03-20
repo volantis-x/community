@@ -30,6 +30,10 @@ links:
     - name: Linhk1606
       url: https://blog.lhkstudio.me
       avatar: https://cdn.jsdelivr.net/gh/Linhk1606/Linhk1606@V2.0.4/me.jpg
+    - name: Charlie
+      url: https://charlie-zzy.github.io
+      avatar: https://cdn.jsdelivr.net/gh/charlie-zzy/imgCDN/avatar.png
+      tags: [OIer]
   - group: '版本：^2.0'
     desc: 导航栏N级菜单
     items:
