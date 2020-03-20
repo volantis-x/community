@@ -4,13 +4,16 @@ title: 示例博客
 meta:
   header: []
 links:
-  - group: '版本：^2.1'
-    desc: 支持Tab标签
+  - group: '版本：^2.2'
+    desc: 支持 Note 标签
     items:
     - name: xaoxuu
       url: https://xaoxuu.com
       avatar: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png
       tags: [主题作者]
+  - group: '版本：^2.1'
+    desc: 支持 Tab 标签
+    items:
     - name: 精算后花园
       url: https://actuarygarden.cn
       avatar: https://imgkr.cn-bj.ufileos.com/5ff3c7ea-3f6e-40c7-92ec-3b926c35afd7.png
@@ -35,7 +38,7 @@ links:
       avatar: https://cdn.jsdelivr.net/gh/charlie-zzy/imgCDN/avatar.png
       tags: [OIer]
   - group: '版本：^2.0'
-    desc: 导航栏N级菜单
+    desc: 导航栏 N 级菜单
     items:
     - name: CRainyDay
       url: https://crainyday.gitee.io
@@ -165,7 +168,12 @@ links:
 
 <br>
 
-请点击上方的按钮，在 GitHub 上编辑此页。新增内容格式即友链的格式，要求图片需是 `HTTPS` 的。按照版本号分组，最新的版本在前，只保留两位版本号。
+
+{% tabs examples %}
+
+<!-- tab 自助添加 -->
+
+请点击上方的按钮，在 GitHub 上编辑此页。新增内容格式即友链的格式，要求图片需是 `HTTPS` 的。
 ```md 举个栗子
 - name: xaoxuu
   url: https://xaoxuu.com
@@ -173,8 +181,17 @@ links:
   tags: [主题作者]
 ```
 
-其中，`tags` 写简短的关键词，例如“彩带背景”、“深度定制”、“暗色”等等，也可以不写。
+<!-- endtab -->
 
-{% note info %}
-本站使用了自动合并和持续集成，在您提交的更改通过审核并合并代码的几分钟后再刷新网页即生效。
+<!-- tab 辅助工具 -->
+
+- 压缩图： https://www.yasuotu.com/
+- HTTPS 图床： https://sm.ms/
+
+<!-- endtab -->
+
+{% endtabs %}
+
+{% note success %}
+本站使用了持续集成，在您提交的更改通过审核并合并代码的几分钟后再刷新网页即生效。
 {% endnote %}
