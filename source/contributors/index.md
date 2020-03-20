@@ -16,8 +16,7 @@ music:
 
 **非常感谢直接提交了 PR 的朋友！**
 
-{% raw %}
-<btns circle grid5>
+{% btns circle grid5 %}
 <a href='https://github.com/xaoxuu'><img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png'>xaoxuu</a>
 <a href='https://github.com/inkss'><img src='https://avatars2.githubusercontent.com/u/31947043?s=60&v=4'>inkss</a>
 <a href='https://github.com/CRainyDay'><img src='https://avatars2.githubusercontent.com/u/46487957?s=60&v=4'>CRainyDay</a>
@@ -30,8 +29,7 @@ music:
 <a href='https://github.com/PHIKN1GHT'><img src='https://avatars0.githubusercontent.com/u/42083023?s=60&v=4'>PHIKN1GHT</a>
 <a href='https://github.com/Linhk1606'><img src='https://avatars1.githubusercontent.com/u/50829219?s=60&v=4'>Linhk1606</a>
 <a href='https://github.com/xaoxuu/hexo-theme-volantis/graphs/contributors'><i class='fab fa-github'></i>查看全部</a>
-</btns>
-{% endraw %}
+{% endbtns %}
 
 
 **同样感谢那些在评论和 Issue 中互相帮助的网友~**
@@ -42,13 +40,11 @@ music:
 
 感谢以下网站的收录与分享，让本主题能够被更多人发现，主题就会做的越来越好~
 
-{% raw %}
-<btns grid5 rounded>
+{% btns rounded grid5 %}
 <a href='https://hexo.io/themes/'><img height='48px' src='https://img.vim-cn.com/72/7e917e9b7bd3ee1cb593494610506c998eefb2.jpg'>Hexo Themes</a>
 <a href='https://valine.js.org/hexo.html#hexo-theme-material-x'><img height='48px' src='https://img.vim-cn.com/69/c9df34f04c86d32de9096a595fb5865711403c.png'>Valine</a>
 <a href='https://easyhexo.com/2-Theme-use-and-config/2-6-hexo-theme-volantis/'><img height='48px' src='https://i.loli.net/2020/03/10/vxqOKtnRYehP4ZW.png'>Easy Hexo</a>
-</btns>
-{% endraw %}
+{% endbtns %}
 
 ## 转载和分享
 
@@ -66,6 +62,6 @@ music:
 | LiYanan2004 | [在 material-x 的主题中加入深/浅模式](https://liyanan2004.ml/Enable_Dark_mode_in_your_blog_with_material-x//) |
 | WuYongzhi·Blog | [Hexo主题MaterialX添加Pjax](https://wuyongzhi.top/undefined/999270176/) |
 
-</overflow>
-
-> 把主题分享到 SegmenuFault、简书、知乎等平台可以快速增加「Volantis」主题被发现和使用的几率，所以如果你喜欢本主题，欢迎写原创文章或者转载分享哦。
+{% note info %}
+把主题分享到 SegmenuFault、简书、知乎等平台可以快速增加「Volantis」主题被发现和使用的几率，所以如果你喜欢本主题，欢迎写原创文章或者转载分享哦。
+{% endnote %}

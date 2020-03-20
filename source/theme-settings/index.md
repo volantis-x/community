@@ -8,19 +8,14 @@ meta:
 
 如无特殊说明，本页面的配置信息写在 <red>**主题**</red> 的 `config.yml` 文件中。
 
-{% raw %}
-<details cyan open>
-<summary>
-实用小技巧 <i class='fas fa-lightbulb'></i>
-</summary>
-{% endraw %}
+{% note idea green %}
+**实用小技巧**
 
-所有需要写在主题配置文件中的配置都可以写在站点配置文件的 `theme_config:` 中。
+所有需要写在主题配置文件中的配置都可以写在站点配置文件的 `theme_config:` 中
+详见 Hexo 官方文档 [#覆盖主题配置](https://hexo.io/zh-cn/docs/configuration#%E8%A6%86%E7%9B%96%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE)
+也可以直接查看本站源码中站点配置文件的写法：[_config.yml](https://github.com/xaoxuu/volantis-docs/blob/master/_config.yml)
 
-- 详见 Hexo 官方文档 [#覆盖主题配置](https://hexo.io/zh-cn/docs/configuration#%E8%A6%86%E7%9B%96%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE)
-- 也可以直接查看本站源码中站点配置文件的写法：[_config.yml](https://github.com/xaoxuu/volantis-docs/blob/master/_config.yml)
-
-{% raw %}</details>{% endraw %}
+{% endnote %}
 
 
 ## 主题基本信息
@@ -42,62 +37,6 @@ use_cdn: true
 ## 主题样式
 
 您可以在主题配置文件中设定一些简单的样式，在开始前，确保没有使用 CDN 服务，否则修改不会生效。
-
-{% raw %}
-<details>
-<summary>
-查看所有相关配置
-</summary>
-{% endraw %}
-```yaml blog/themes/volantis/_config.yml
-style:
-  max_width: 1080px # Sum of body width and sidebar width
-  navbar:
-    height: 64px
-    effect: [shadow, blur] # [shadow, floatable, blur]
-  sidebar:
-    effect: [shadow] # [shadow, floatable, blur]
-  body:
-    effect: [shadow] # [shadow, floatable, blur]
-    highlight:
-      language: false # show language of codeblock
-    text_align: # left, right, justify, center
-      h1: left
-      h2: left
-      h3: left
-      h4: left
-      p: justify
-  gap:
-    h2: 2.5em # Spacing above H2
-    h3: 1.5em # Spacing above H3
-    h4: 1em # Spacing above H4
-    line: 1rem # Paragraph spacing
-    inline: .5rem # Paragraph spacing within a block
-  fontfamily:
-    bodyfont:
-      name: 'Varela Round'
-      url: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-fonts/VarelaRound/VarelaRound-Regular.ttf
-      weight: normal
-      style: normal
-    codefont:
-      name: 'Monaco'
-      url: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-fonts/Monaco/Monaco.ttf
-      weight: normal
-      style: normal
-  color:
-    site: '#21232F' # Website background color
-    card: '#444' # Card background color
-    text: '#fff' # The color of the text on the card.
-    theme: '#ff9800' # Main color
-    link: '#1BCDFC' # Link color
-    hover: '#ff5722' # Link highlight color
-    inner: '#333' # Text color inside the button
-    block: '#555' # Block color
-    inlinecode: yellow # Inline code color
-    codeblock: '#555' # Codeblock color
-    p: '#ccc' # Paragraph color
-```
-{% raw %}</details>{% endraw %}
 
 ### 最大布局宽度
 ```yaml blog/themes/volantis/_config.yml
@@ -199,43 +138,6 @@ style:
 
 ## 设置封面
 目前主题提供两种封面方案，全屏封面适用于项目文档，半屏封面适用于个人博客。您可以修改参数决定在任何页面是否显示。
-{% raw %}
-<details>
-<summary>
-查看所有相关配置
-</summary>
-{% endraw %}
-```yaml blog/themes/volantis/_config.yml
-cover:
-  scheme: docs # docs, blog
-  display:
-    home: true
-    archive: false
-    others: false # can be written in front-matter 'cover: true'
-  logo: # https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/logo/256/google_logo.png
-  title: Volantis
-  subtitle: 'A Wonderful Theme for Hexo'
-  search: # search bar placeholder
-  features:
-    - name: 文档
-      icon: fas fa-book
-      url: https://volantis.js.org/getting-started/
-    - name: 博文
-      icon: fas fa-rss
-      url: https://volantis.js.org/archives/
-    - name: 示例
-      icon: fas fa-play-circle
-      url: https://volantis.js.org/examples/
-    - name: 源码
-      icon: fas fa-file-code
-      url: https://github.com/xaoxuu/hexo-theme-volantis/
-      rel: external nofollow noopener noreferrer
-      target: _blank
-    - name: 鸣谢
-      icon: fas fa-handshake
-      url: https://volantis.js.org/contributors/
-```
-{% raw %}</details>{% endraw %}
 
 ### 默认显示设置
 ```yaml blog/themes/volantis/_config.yml
@@ -360,8 +262,10 @@ on_desktop:
     - name: 心率管家 App 的设计与开发
       url: blog/2019-07-23-heartmate/
 ```
-> 这个示例的实际效果： https://xaoxuu.com
 
+{% note play %}
+这个示例的实际效果： https://xaoxuu.com
+{% endnote %}
 
 ## 模块化布局
 您可以自由决定每个页面是否显示侧边栏，侧边栏显示什么小部件，正文区域显示什么卡片，文章卡片显示什么meta。
@@ -399,12 +303,9 @@ layout:
 
 ## meta 库
 <u>meta</u> 即文章的元数据，描述文章的作者、发布时间、更新时间等等信息，Volantis 不替您决定，显示什么图标、如何描述都可以自定义。
-{% raw %}
-<details>
-<summary>
-查看所有相关配置
-</summary>
-{% endraw %}
+
+{% folding 查看所有相关配置 %}
+
 ```yaml blog/themes/volantis/_config.yml
 meta:
   # 文章标题
@@ -481,17 +382,14 @@ meta:
       title: 反馈
       color: '#1BCDFC'
 ```
-{% raw %}</details>{% endraw %}
+{% endfolding %}
 
 
 ## widget 库
 <u>widget</u> 即小部件，大部分小部件都可以放置在侧边栏，一部分已经为正文区域显示做了优化，还有一部分只可以放置在文章页脚部分。与 meta 库不同的是：除了现有的 widget ，您可以很轻易地创建自己的 widget ，然后放在需要的地方。此外，您还可以将 widget 写在单独的文件中。
-{% raw %}
-<details>
-<summary>
-查看所有相关配置
-</summary>
-{% endraw %}
+
+{% folding 查看所有相关配置 %}
+
 ```yaml blog/themes/volantis/_config.yml
 widget:
   # The following can be written in `blog/source/_data/widget.yml`
@@ -571,7 +469,7 @@ widget:
   # You can add your own widget here or 'blog/source/_data/widget.yml'
   # class: text, list, grid, qrcode, page, ... see more at https://volantis.js.org/
 ```
-{% raw %}</details>{% endraw %}
+{% endfolding %}
 
 每一个小部件都有 `class` 和 `display`，前者代表这个小部件是什么，后者代表这个小部件在什么桌面和移动平台中是否显示，如果在移动平台显示，由于屏幕宽度有限，侧边栏的小部件则会被移动到正文区域下方，因此部分侧边栏小部件便失去意义，建议设置为仅桌面端显示。
 
@@ -651,9 +549,9 @@ related_posts:
 ```
 npm i -S hexo-related-popular-posts
 ```
-::: warning
+{% note warning %}
 值得注意的是，开启了这个功能之后，每次修改文章内容包括 `front-matter` 之后，都需要重新 `hexo s`。
-:::
+{% endnote %}
 
 ### 文章版权部件
 ```yaml blog/themes/volantis/_config.yml
@@ -846,9 +744,10 @@ plugins:
     list_max_height: 340px # list max height
     list_folded: true
 ```
-> APlayer播放器只可以在中国大陆地区使用。相关文档：
-> - [APlayer](https://aplayer.js.org/)
-> - [MetingJS](https://github.com/metowolf/MetingJS)
+
+{% note warning %}
+APlayer播放器只可以在中国大陆地区使用。相关文档： [APlayer](https://aplayer.js.org/) | [MetingJS](https://github.com/metowolf/MetingJS)
+{% endnote %}
 
 ## 评论系统
 ```yaml blog/themes/volantis/_config.yml

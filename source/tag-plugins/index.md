@@ -12,11 +12,23 @@ mathjax: true
 
 ## 文本属性
 
-```html format
+
+{% tabs p, 2 %}
+
+<!-- tab 格式 -->
+
+```html
 <p 属性参数>文本内容</p>
 ```
+{% note up green %}
 
-### 彩色文字 <sup class='blue'>^1.5.2</sup>
+请将您的 Volantis 升级至 1.5.2 版本以上使用。
+
+{% endnote %}
+
+<!-- endtab -->
+
+<!-- tab 彩色文字 -->
 
 在一段话中方便插入各种颜色的标签，包括：<red>红色</red>、<yellow>黄色</yellow>、<green>绿色</green>、<cyan>青色</cyan>、<blue>蓝色</blue>、<gray>灰色</gray>。
 
@@ -24,21 +36,14 @@ mathjax: true
 在一段话中方便插入各种颜色的标签，包括：<red>红色</red>、<yellow>黄色</yellow>、<green>绿色</green>、<cyan>青色</cyan>、<blue>蓝色</blue>、<gray>灰色</gray>。
 ```
 
-### 超大文字 <sup class='blue'>^1.5.2</sup>
+<!-- endtab -->
+
+<!-- tab 超大文字 -->
 
 文档「开始」页面中的标题部分就是超大文字。
 
-{% raw %}
-<details>
-<summary>
-示例效果
-</summary>
-{% endraw %}
-
 <p center large>Volantis</p>
 <p center small>A Wonderful Theme for Hexo</p>
-
-{% raw %}</details>{% endraw %}
 
 ```md blog/source/_posts/example.md:
 <p center large>Volantis</p>
@@ -47,11 +52,15 @@ mathjax: true
 
 目前支持的尺寸有：`small`、`large`、`huge`，布局有：`left`、`center`、`right`。
 
+<!-- endtab -->
+
+{% endtabs %}
+
 ## Note
 
 Note 是 Blockquote 的增强版，在左边显示图标，并且可以自定颜色。
 
-{% tabs note %}
+{% tabs note, 3 %}
 
 <!-- tab 格式 -->
 
@@ -64,7 +73,7 @@ Note 是 Blockquote 的增强版，在左边显示图标，并且可以自定颜
 ```
 {% note up green %}
 
-Volantis: 2.2
+请将您的 Volantis 升级至 2.2 版本以上使用。
 
 {% endnote %}
 
@@ -79,7 +88,7 @@ quote, info, warning, done/success, error/danger
 ```
 
 ```md more type
-radiation, bug, idea, link, paperclip, todo, msg, guide, download, up
+radiation, bug, idea, link, paperclip, todo, msg, guide, download, up, undo
 ```
 
 ```md color
@@ -88,150 +97,138 @@ clear, light, gray, red, yellow, green, cyan, blue
 
 <!-- endtab -->
 
-<!-- tab 示例 -->
+<!-- tab 演示 -->
 
+{% note quote %}
+**note quote**
+
+Windows 10不是為所有人設計,而是為每個人設計
+{% endnote %}
 
 {% note %}
-```md exp1 什么参数都不传
-{% note %}
-exp1 什么参数都不传
-{% endnote %}
-```
-{% endnote %}
+**note**
 
-{% note warning %}
-```md exp2 一个 warning
-{% note warning %}
-exp2 一个 warning
-{% endnote %}
-```
+正在处理一些事情
 {% endnote %}
 
 {% note success %}
-```md exp3 一个 success
-{% note success %}
-exp3 一个 success
+**note success**
+
+请坐和放宽，我正在帮你搞定一切...
 {% endnote %}
-```
+
+{% note warning %}
+**note warning**
+
+不要说我们没有警告过你
 {% endnote %}
 
 {% note red bug %}
-```md exp4 一个红色的 bug
-{% note red bug %}
-exp4 一个红色的 bug
-{% endnote %}
-```
+**note red bug**
+
+我们都有不顺利的时候
 {% endnote %}
 
-{% note link clear %}
-```md exp5 一个 clear link
-{% note link clear %}
-exp5 一个 link
-{% endnote %}
-```
+{% note undo light %}
+**note undo light**
+
+我们都有不顺利的时候
 {% endnote %}
 
-{% note quote %}
-```md exp6 一个 quote
-{% note quote %}
-exp6 一个 quote
-{% endnote %}
-```
-{% endnote %}
 
 <!-- endtab -->
 
 {% endtabs %}
 
-## 插入简单按钮 <sup class='blue'>^1.6</sup>
+## 基础按钮
 
-目前共支持3种尺寸的按钮。
+{% tabs btn, 3 %}
 
-{% raw %}
-<details>
-<summary>
-示例效果
-</summary>
-{% endraw %}
-
-第1种 <btn>[按钮](/)</btn> 适合融入段落中。
-
-第2种按钮适合独立于段落之外：
-
-<btn regular>[<i class='fas fa-play-circle'></i> 示例博客](https://xaoxuu.com)</btn>
-
-第3种按钮更具有强调作用，建议搭配 `center` 使用：
-
-<btn center large>[<i class='fas fa-download'></i> 开始使用](/)</btn>
-
-{% raw %}</details>{% endraw %}
-
-
-```md blog/source/_posts/example.md:
-第1种 <btn>[按钮](/)</btn> 适合融入段落中。
-
-第2种按钮适合独立于段落之外：
-
-<btn regular>[<i class='fas fa-play-circle'></i> 示例博客](https://xaoxuu.com)</btn>
-
-第3种按钮更具有强调作用，建议搭配 center 使用：
-
-<btn center large>[<i class='fas fa-download'></i> 开始使用](/)</btn>
-```
-
-## 插入高级按钮 <sup class='blue'>^1.6.1</sup>
-
-如果需要显示类似「团队成员」之类的一组含有头像的链接：
-
-{% raw %}
-<btns circle grid5>
-<a href='https://github.com/xaoxuu'><img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png'>xaoxuu</a>
-<a href='https://github.com/xaoxuu'><img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png'>xaoxuu</a>
-<a href='https://github.com/xaoxuu'><img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png'>xaoxuu</a>
-<a href='https://github.com/xaoxuu'><img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png'>xaoxuu</a>
-</btns>
-或者含有图标的按钮：
-<btns rounded grid5>
-<a href='https://github.com/xaoxuu/hexo-theme-volantis/'><i class='fas fa-download'></i>下载源码</a>
-<a href='https://volantis.js.org/'><i class='fas fa-book-open'></i>查看文档</a>
-</btns>
-{% endraw %}
-
-```md blog/source/_posts/example.md:
-{% raw %}
-<btns circle grid5>
-<a href='https://github.com/xaoxuu'><img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png'>xaoxuu</a>
-<a href='https://github.com/xaoxuu'><img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png'>xaoxuu</a>
-<a href='https://github.com/xaoxuu'><img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png'>xaoxuu</a>
-<a href='https://github.com/xaoxuu'><img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png'>xaoxuu</a>
-</btns>
-或者含有图标的按钮：
-<btns rounded grid5>
-<a href='https://github.com/xaoxuu/hexo-theme-volantis/'><i class='fas fa-download'></i>下载源码</a>
-<a href='https://volantis.js.org/'><i class='fas fa-book-open'></i>查看文档</a>
-</btns>
-{% endraw %}
-```
-
-```md Tips:
-{% raw %} 和 {% endraw %} 之间的内容是不解析的，只能写HTML标签。
-```
-
-### 自定样式
+<!-- tab 格式 -->
 
 ```html
-<btns 样式>
-很多按钮
-</btns>
+<btn 参数>[按钮](/)</btn>
 ```
 
-#### 图片样式
+{% note up green %}
+
+请将您的 Volantis 升级至 1.6 版本以上使用。
+
+{% endnote %}
+
+<!-- endtab -->
+
+<!-- tab 参数 -->
+
+可选的参数有： `regular` 、 `large` 、 `center`
+
+```html 不设置参数
+<btn>[按钮](/)</btn>
+```
+```html regular button
+<btn regular>[<i class='fas fa-play-circle'></i> 示例博客](https://xaoxuu.com)</btn>
+```
+```html large center button
+<btn center large>[<i class='fas fa-download'></i> 开始使用](/)</btn>
+```
+
+<!-- endtab -->
+
+<!-- tab 演示 -->
+
+不设置任何参数的 <btn>[按钮](/)</btn> 适合融入段落中。
+
+regular 按钮适合独立于段落之外：
+
+<btn regular>[<i class='fas fa-play-circle'></i> 示例博客](https://xaoxuu.com)</btn>
+
+large 按钮更具有强调作用，建议搭配 `center` 使用：
+
+<btn center large>[<i class='fas fa-download'></i> 开始使用](/)</btn>
+
+
+<!-- endtab -->
+
+{% endtabs %}
+
+
+## 富文本按钮
+
+{% tabs btns, 3 %}
+
+<!-- tab 格式 -->
+
+```md
+{% btns 参数 %}
+[![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png)按钮标题](/)
+{% endbtns %}
+```
+
+{% note up green %}
+
+请将您的 Volantis 升级至 2.2 版本以上使用。
+
+{% endnote %}
+
+<!-- endtab -->
+
+<!-- tab 参数 -->
+
+参数位置可以写图片样式、布局方式，多个参数用空格隔开
+
+<br><blue>**图片样式**</blue>
 
 - 默认为方形
 - 圆角矩形（`rounded`），适合app图标。
 - 圆形（`circle`），适合头像。
 
-#### 布局方式
+```md 示例
+{% btns circle %}
+[![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png)xaoxuu](/)
+{% endbtns %}
+```
+
+<br><blue>**布局方式**</blue>
 
 - 默认为自动宽度，适合视野内只有一两个的情况，多了显乱。
 - 宽一点的按钮（`wide`）。
@@ -242,16 +239,57 @@ exp6 一个 quote
 - 网格布局（`grid4`），最多4列，屏幕变窄会适当减少列数。
 - 网格布局（`grid5`），最多5列，屏幕变窄会适当减少列数。
 
-#### 增加文字样式
+```md 示例
+{% btns rounded grid5 %}
+[<i class='fas fa-download'></i> 下载源码](/)
+[<i class='fas fa-book-open'></i> 查看文档](/)
+{% endbtns %}
+```
 
-可以在 `<btns></btns>` 容器内增加 `<p>标题</p>` 和 `<p>描述文字</p>`
+<br><blue>**增加文字样式**</blue>
 
-### 图文并茂的例子
+可以在容器内增加 `<b>标题</b>` 和 `<p>描述文字</p>`
+
+```html 图文并茂的例子
+圆形图标 + 标题 + 描述 + 图片 + 网格4列 + 居中
+{% btns circle center grid4 %}
+<a href='https://apps.apple.com/cn/app/heart-mate-pro-hrm-utility/id1463348922?ls=1'>
+  <i class='fab fa-apple'></i>
+  <b>心率管家</b>
+  <p red>专业版</p>
+  <img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/qrcode/heartmate_pro.png'>
+</a>
+<a href='https://apps.apple.com/cn/app/heart-mate-lite-hrm-utility/id1475747930?ls=1'>
+  <i class='fab fa-apple'></i>
+  <b>心率管家</b>
+  <p green>免费版</p>
+  <img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/qrcode/heartmate_lite.png'>
+</a>
+{% endbtns %}
+```
+
+<!-- endtab -->
+
+<!-- tab 演示 -->
+
+如果需要显示类似「团队成员」之类的一组含有头像的链接：
+{% btns circle grid5 %}
+[![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png)xaoxuu](/)
+[![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png)xaoxuu](/)
+[![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png)xaoxuu](/)
+[![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png)xaoxuu](/)
+[![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png)xaoxuu](/)
+{% endbtns %}
+
+或者含有图标的按钮：
+{% btns rounded grid5 %}
+[<i class='fas fa-download'></i> 下载源码](/)
+[<i class='fas fa-book-open'></i> 查看文档](/)
+{% endbtns %}
+
 
 圆形图标 + 标题 + 描述 + 图片 + 网格4列 + 居中
-
-{% raw %}
-<btns circle center grid4>
+{% btns circle center grid4 %}
 <a href='https://apps.apple.com/cn/app/heart-mate-pro-hrm-utility/id1463348922?ls=1'>
   <i class='fab fa-apple'></i>
   <b>心率管家</b>
@@ -264,95 +302,77 @@ exp6 一个 quote
   <p green>免费版</p>
   <img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/qrcode/heartmate_lite.png'>
 </a>
-</btns>
-{% endraw %}
+{% endbtns %}
+
+<!-- endtab -->
+
+{% endtabs %}
 
 
-{% raw %}
-<details>
-<summary>
-上例写法如下
-</summary>
-{% endraw %}
+## Fancybox
 
-```html
-{% raw %}
-<btns circle center grid4>
-<a href='https://apps.apple.com/cn/app/heart-mate-pro-hrm-utility/id1463348922?ls=1'>
-  <i class='fab fa-apple'></i>
-  <b>心率管家</b>
-  <p red>专业版</p>
-  <img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/qrcode/heartmate_pro.png'>
-</a>
-<a href='https://apps.apple.com/cn/app/heart-mate-lite-hrm-utility/id1475747930?ls=1'>
-  <i class='fab fa-apple'></i>
-  <b>心率管家</b>
-  <p green>免费版</p>
-  <img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/qrcode/heartmate_lite.png'>
-</a>
-</btns>
-{% endraw %}
-```
+{% tabs fancybox, 3 %}
 
-{% raw %}</details>{% endraw %}
-
-## 图片放大
-
-1. 在主题配置文件中开启插件。
-
-```yaml blog/themes/volantis/_config.yml
-plugins:
-  fancybox:
-    css: '//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css'
-    js: '//cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js'
-```
-
-2. 将需要放大预览的图片用 `<fancybox></fancybox>` 包含起来。
+<!-- tab 格式 -->
 
 ```md blog/source/_posts/example.md:
-例如这个图是不能点开的：
-![](https://img.vim-cn.com/52/a54815c02ce232f11f54b2c547c1337828833c.png)
-而这个图是可以点开的：
-<fancybox>
-<img src='https://img.vim-cn.com/52/a54815c02ce232f11f54b2c547c1337828833c.png'>
-</fancybox>
+{% fancybox 参数, 列数 %}
+![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/B18FCBB3-67FD-48CC-B4F3-457BA145F17A.jpeg)
+![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/67239FBB-E15D-4F4F-8EE8-0F1C9F3C4E7C.jpeg)
+{% endfancybox %}
 ```
 
-{% raw %}
-<details>
-<summary>
-示例效果
-</summary>
-{% endraw %}
+{% note up green %}
 
-例如这个图是不能点开的：
-![](https://img.vim-cn.com/52/a54815c02ce232f11f54b2c547c1337828833c.png)
-而这个图是可以点开的：
-<fancybox>
-<img src='https://img.vim-cn.com/52/a54815c02ce232f11f54b2c547c1337828833c.png'>
-</fancybox>
+请将您的 Volantis 升级至 2.2 版本以上使用。
 
-{% raw %}</details>{% endraw %}
+{% endnote %}
 
-```md 「<b><red>注意</red></b>」这样写是无效的：
-<fancybox>
-![](https://img.vim-cn.com/52/a54815c02ce232f11f54b2c547c1337828833c.png)
-</fancybox>
-```
+<!-- endtab -->
 
-如需一行显示多图，将多个图片同时放在一对 `<fancybox></fancybox>` 中即可：
+<!-- tab 参数 -->
 
-```html
-<fancybox>
-<img src='https://i.loli.net/2019/08/20/sgultOmRLXrwfA3.png'>&nbsp;
-<img src='https://i.loli.net/2019/08/20/a2mCq871PwfbZEG.png'>&nbsp;
-<img src='https://i.loli.net/2019/08/20/Zdz2cTphOlu3XKf.png'>&nbsp;
-<img src='https://i.loli.net/2019/08/20/87UdSGaMuevV1iF.png'>&nbsp;
-<img src='https://i.loli.net/2019/08/20/HEusSLBgG3XC1nN.png'>
-</fancybox>
-```
+**对齐方向**
+默认居中，参数设为 `left` 则左对齐。
 
-## Tab切换 <sup class='blue'>^2.1</sup>
+**列数**
+逗号后面直接写列数，支持 2 ～ 8 列。设定列列数之后就是「多行多图」布局，此时图片默认左对齐。为了避免图片大小不一，建议搭配 `stretch` 来时图片放大填充。
+
+
+<!-- endtab -->
+
+<!-- tab 演示 -->
+
+一行一个图片
+{% fancybox %}
+![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/41F215B9-261F-48B4-80B5-4E86E165259E.jpeg)
+{% endfancybox %}
+
+一行多个图片（不换行）
+{% fancybox %}
+![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/B18FCBB3-67FD-48CC-B4F3-457BA145F17A.jpeg)
+![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/67239FBB-E15D-4F4F-8EE8-0F1C9F3C4E7C.jpeg)
+![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/00E0F0ED-9F1C-407A-9AA6-545649D919F4.jpeg)
+{% endfancybox %}
+
+多行多个图片（每行2～8个图片）
+{% fancybox stretch, 4 %}
+![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/B951AE18-D431-417F-B3FE-A382403FF21B.jpeg)
+![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/landscape/AEB33F9D-7294-4CF1-B8C5-3020748A9D45.jpeg)
+![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/landscape/250662D4-5A21-4AAA-BB63-CD25CF97CFF1.jpeg)
+![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/landscape/10A0FCE5-36A1-4AD0-8CF0-019259A89E03.jpeg)
+![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/B951AE18-D431-417F-B3FE-A382403FF21B.jpeg)
+![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/landscape/AEB33F9D-7294-4CF1-B8C5-3020748A9D45.jpeg)
+![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/landscape/250662D4-5A21-4AAA-BB63-CD25CF97CFF1.jpeg)
+![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/landscape/10A0FCE5-36A1-4AD0-8CF0-019259A89E03.jpeg)
+{% endfancybox %}
+
+<!-- endtab -->
+
+{% endtabs %}
+
+
+## Tab
 
 这部分功能借鉴自 NexT 主题。
 
@@ -379,6 +399,12 @@ plugins:
 {% endtabs %}
 ```
 
+{% note up green %}
+
+请将您的 Volantis 升级至 2.1 版本以上使用。
+
+{% endnote %}
+
 <!-- endtab -->
 
 <!-- tab 图片测试 -->
@@ -387,121 +413,118 @@ plugins:
 
 
 ```md 测试 fancybox ：
-<fancybox>
-
+{% fancybox %}
 ![](https://i.loli.net/2020/03/18/1TpiUwhuskGm5SV.png)
-
 ![](https://i.loli.net/2020/03/18/LZwBtR5YO4zQH9A.png)
-
 ![](https://i.loli.net/2020/03/18/ySw8zGHRBrDtUg7.png)
-
 ![](https://i.loli.net/2020/03/18/5QTMYsScOz41Vhg.png)
-
-</fancybox>
+{% endfancybox %}
 ```
 
-<fancybox>
-
+{% fancybox %}
 ![](https://i.loli.net/2020/03/18/1TpiUwhuskGm5SV.png)
-
 ![](https://i.loli.net/2020/03/18/LZwBtR5YO4zQH9A.png)
-
 ![](https://i.loli.net/2020/03/18/ySw8zGHRBrDtUg7.png)
-
 ![](https://i.loli.net/2020/03/18/5QTMYsScOz41Vhg.png)
+{% endfancybox %}
 
-</fancybox>
-
-有些格式不能识别的话，可以尝试增加空行。
 
 <!-- endtab -->
 
 <!-- tab 注意 -->
 
-支持的语法格式有限，请尽量<u>不要</u>写太过复杂的东西。
+支持的语法格式有限，请尽量<u>不要</u>写太过复杂的东西。有些格式不能识别的话，可以尝试增加空行。
 
 <!-- endtab -->
 
 {% endtabs %}
 
-## 表格滚动
 
-一般来说，表格默认会横向铺满，格子内文字过多会自动换行。但是当列数比较多时，每一列都很窄，推荐使用支持滚动的表格样式，用一对 `<overflow></overflow>` 把表格包起来。
+## Folding box
 
-```html
-<overflow>
+{% tabs folding, 3 %}
 
-md表格内容
+<!-- tab 格式 -->
 
-</overflow>
+```md
+{% folding 标题, 参数 %}
+
+![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/41F215B9-261F-48B4-80B5-4E86E165259E.jpeg)
+
+{% endfolding %}
 ```
 
-{% raw %}
-<details>
-<summary>
-示例
-</summary>
-{% endraw %}
+{% note up green %}
 
-<overflow>
+请将您的 Volantis 升级至 2.2 版本以上使用。
 
-| 类别     | 排序方法 | 平均时间复杂度       | 最优时间复杂度       | 最差时间复杂度       | 空间复杂度                  | 稳定性 | 复杂性 |
-| :-------- | :-------- | :-------------------- | :-------------------- | :-------------------- | :--------------------------- | :------ | :------ |
-| 插入排序 | 直接插入 | O(n<sup>2</sup>)     | O(n)                 | O(n<sup>2</sup>)     | O(1)                        | 稳定   | 简单   |
-| 插入排序 | 希尔排序 | O(n<sup>1.3</sup>)   | O(n)                 | O(n<sup>2</sup>)     | O(1)                        | 不稳定 | 复杂   |
-| 选择排序 | 直接选择 | O(n<sup>2</sup>)     | O(n<sup>2</sup>)     | O(n<sup>2</sup>)     | O(1)                        | 不稳定 | 简单   |
-| 选择排序 | 堆排序   | O(nlog<sub>2</sub>n) | O(nlog<sub>2</sub>n) | O(nlog<sub>2</sub>n) | O(1)                        | 不稳定 | 复杂   |
-| 交换排序 | 冒泡排序 | O(n<sup>2</sup>)     | O(n)                 | O(n<sup>2</sup>)     | O(1)                        | 稳定   | 简单   |
-| 交换排序 | 快速排序 | O(nlog<sub>2</sub>n) | O(nlog<sub>2</sub>n) | O(n<sup>2</sup>)     | O(nlog<sub>2</sub>n)~O(n) | 不稳定 | 复杂   |
-|          | 归并排序 | O(nlog<sub>2</sub>n) | O(nlog<sub>2</sub>n) | O(nlog<sub>2</sub>n) | O(n)                        | 稳定   | 复杂   |
-|          | 基数排序 | O(d(r+n))            | O(d(r+n))            | O(d(r+n))            | O(rd+n)                     | 稳定   | 复杂   |
+{% endnote %}
 
-</overflow>
+<!-- endtab -->
 
-```md blog/source/_posts/example.md:
-<overflow>
+<!-- tab 参数 -->
 
-| 类别     | 排序方法 | 平均时间复杂度       | 最优时间复杂度       | 最差时间复杂度       | 空间复杂度                  | 稳定性 | 复杂性 |
-| :-------- | :-------- | :-------------------- | :-------------------- | :-------------------- | :--------------------------- | :------ | :------ |
-| 插入排序 | 直接插入 | O(n<sup>2</sup>)     | O(n)                 | O(n<sup>2</sup>)     | O(1)                        | 稳定   | 简单   |
-| 插入排序 | 希尔排序 | O(n<sup>1.3</sup>)   | O(n)                 | O(n<sup>2</sup>)     | O(1)                        | 不稳定 | 复杂   |
-| 选择排序 | 直接选择 | O(n<sup>2</sup>)     | O(n<sup>2</sup>)     | O(n<sup>2</sup>)     | O(1)                        | 不稳定 | 简单   |
-| 选择排序 | 堆排序   | O(nlog<sub>2</sub>n) | O(nlog<sub>2</sub>n) | O(nlog<sub>2</sub>n) | O(1)                        | 不稳定 | 复杂   |
-| 交换排序 | 冒泡排序 | O(n<sup>2</sup>)     | O(n)                 | O(n<sup>2</sup>)     | O(1)                        | 稳定   | 简单   |
-| 交换排序 | 快速排序 | O(nlog<sub>2</sub>n) | O(nlog<sub>2</sub>n) | O(n<sup>2</sup>)     | O(nlog<sub>2</sub>n)~O(n) | 不稳定 | 复杂   |
-|          | 归并排序 | O(nlog<sub>2</sub>n) | O(nlog<sub>2</sub>n) | O(nlog<sub>2</sub>n) | O(n)                        | 稳定   | 复杂   |
-|          | 基数排序 | O(d(r+n))            | O(d(r+n))            | O(d(r+n))            | O(rd+n)                     | 稳定   | 复杂   |
+参数位置可以填写颜色和状态，多个参数用空格隔开。
 
-</overflow>
+```md 颜色
+blue, cyan, green, yellow, red
 ```
 
-{% raw %}</details>{% endraw %}
+状态填写 `open` 代表默认打开。
 
-## 折叠框
+<!-- endtab -->
 
-{% raw %}
-<details>
-<summary>
-示例：查看图片
-</summary>
-{% endraw %}
+<!-- tab 演示 -->
 
-![](https://i.loli.net/2020/03/18/f5PQlWisvm9zbgK.jpg)
+{% folding 查看图片测试 %}
 
-{% raw %}</details>{% endraw %}
+![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/41F215B9-261F-48B4-80B5-4E86E165259E.jpeg)
 
-```md blog/source/_posts/example.md:
-{% raw %}
-<details>
-<summary>
-示例：查看图片
-</summary>
-{% endraw %}
+{% endfolding %}
 
-![](https://i.loli.net/2020/03/18/f5PQlWisvm9zbgK.jpg)
+{% folding 查看默认打开的折叠框, cyan open %}
 
-{% raw %}</details>{% endraw %}
+这是一个默认打开的折叠框。
+
+{% endfolding %}
+
+{% folding 查看代码测试, green %}
+
+```md
+{% folding 查看代码测试, green %}
+
+查看代码测试
+
+{% endfolding %}
 ```
+
+{% endfolding %}
+
+{% folding 查看列表测试, yellow %}
+
+- haha
+- hehe
+
+{% endfolding %}
+
+{% folding 查看嵌套测试, red %}
+
+{% folding 查看嵌套测试2, blue %}
+
+{% folding 查看嵌套测试3 %}
+
+hahaha
+
+{% endfolding %}
+
+{% endfolding %}
+
+{% endfolding %}
+
+<!-- endtab -->
+
+{% endtabs %}
+
 
 
 ## 渲染公式（MathJax）
@@ -537,12 +560,7 @@ $$
 ```
 
 
-{% raw %}
-<details>
-<summary>
-示例效果
-</summary>
-{% endraw %}
+{% folding 示例效果 %}
 
 $t+1=2$
 
@@ -564,11 +582,11 @@ $$
 \end{equation}
 $$
 
-{% raw %}</details>{% endraw %}
+{% endfolding %}
 
-
-> 如果公式仍无法正确渲染可以阅读 [@MicDZ](https://www.micdz.cn) 的这篇文章：[《在material-x上使用KaTeX》](https://www.micdz.cn/article/katex-on-volantis/)。
-
+{% note info %}
+如果公式仍无法正确渲染可以阅读 [@MicDZ](https://www.micdz.cn) 的这篇文章：[《在material-x上使用KaTeX》](https://www.micdz.cn/article/katex-on-volantis/)。
+{% endnote %}
 
 ## Hexo原生支持的标签
 
@@ -682,12 +700,7 @@ content
 {% include_code [title] [lang:language] [from:line] [to:line] path/to/file %}
 ```
 
-{% raw %}
-<details>
-<summary>
-示例
-</summary>
-{% endraw %}
+{% folding 示例 %}
 
 嵌入 `test.js` 文件全文
 ```md
@@ -710,7 +723,7 @@ content
 {% include_code lang:javascript to:8 test.js %}
 ```
 
-{% raw %}</details>{% endraw %}
+{% endfolding %}
 
 ### 引用文章
 
@@ -721,25 +734,19 @@ content
 {% post_link filename [title] [escape] %}
 ```
 
-{% raw %}
-<details>
-<summary>
-示例
-</summary>
-{% endraw %}
-
-<br>
+{% folding 示例 %}
 
 引用这篇文章：{% post_link news/2020-02-22 %}
 
 ```md blog/source/_posts/example.md:
 引用这篇文章：{% post_link news/2020-02-22 %}
 ```
-{% raw %}</details>{% endraw %}
+{% endfolding %}
 
 ### 文章摘要和截断
 
 在文章中使用 `<!-- more -->`，那么 `<!-- more -->` 之前的文字将会被视为摘要。首页中将只出现这部分文字，同时这部分文字也会出现在正文之中。
 
-
-> 更多请见Hexo官方文档：[#标签插件](https://hexo.io/zh-cn/docs/tag-plugins)
+{% note link %}
+更多请见Hexo官方文档：[#标签插件](https://hexo.io/zh-cn/docs/tag-plugins)
+{% endnote %}

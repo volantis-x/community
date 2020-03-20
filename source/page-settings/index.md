@@ -19,23 +19,15 @@ meta:
 | links | 友链页面 |
 | list | 列表页面 |
 
-::: warning
+{% note info %}
 post 页面几乎与 page 页面相同，但是，post 页面更适用于文章，网页向下滚动时导航栏会上翻显出文章标题。
-:::
+{% endnote %}
 
 ## front-matter
 
-front-matter 是文件最上方以 `---` 分隔的区域，用于指定个别文件的变量。
+front-matter 是文件最上方以 `---` 分隔的区域，用于指定个别文件的变量。更多请见 Hexo 官方文档：[#front-matter](https://hexo.io/zh-cn/docs/front-matter)
 
-
-{% raw %}
-<details>
-<summary>
-查看全部取值
-</summary>
-{% endraw %}
-
-<overflow>
+{% folding 查看全部取值 %}
 
 | 字段        | 含义         | 值类型        | 默认值 |
 | :----------- | :------------ | :------------- | :------ |
@@ -56,8 +48,6 @@ front-matter 是文件最上方以 `---` 分隔的区域，用于指定个别文
 | mathjax           | 是否渲染公式 | Bool, String  | false  |
 | thumbnail           | 缩略图 | String | false  |
 | icons           | 图标 | Array | []  |
-
-> 没有 `seotitle` 时，以 `title` 作为网页标题。
 
 `layout:post` 时特有的字段：
 
@@ -85,11 +75,7 @@ music
 | type        | 是         | song, playlist, album, search, artist  |
 | id               | 是         | song id / playlist id / album id / search keyword   |
 
-</overflow>
-
-{% raw %}</details>{% endraw %}
-
-> 更多请见 Hexo 官方文档：[#front-matter](https://hexo.io/zh-cn/docs/front-matter)
+{% endfolding %}
 
 ## 独立页面
 
@@ -154,8 +140,6 @@ index: true
 
 结果就是筛选出所有文章中 `front-matter` 部分含有 `group: mylist` 的文章。
 
-> 上述中的 `mylist` 只是示例，你可以用任何名字作为一个列表。
-
 
 ### 友链页面
 
@@ -196,8 +180,9 @@ links:
 
 ```
 
-> 姓名、头像、链接是必填项，其它选填。
-
+{% note info %}
+姓名、头像、链接是必填项，其它选填。
+{% endnote %}
 
 ### 404页面
 
@@ -310,9 +295,9 @@ date: 2020-02-21
 这是正文
 ```
 
-::: warning
+{% note warning %}
 **注意**： `<!-- more -->` 前后一定要有空行，不然可能导致显示错位。
-:::
+{% endnote %}
 
 ### 设置文章作者
 
@@ -340,9 +325,9 @@ music:
 ---
 ```
 
-> 实际效果见： [https://volantis.js.org/contributors/](/contributors/)
-> APlayer配置： https://github.com/metowolf/MetingJS
-
+{% note play %}
+实际效果见： [https://volantis.js.org/contributors/](/contributors/)
+{% endnote %}
 
 ## 显示 meta 标签
 
@@ -389,11 +374,9 @@ icons: [fas fa-fire red, fas fa-star green]
 
 图标仅在归档页面中显示，可以用来标注热门文章。
 
-
-> 可以通过 red / blue / green / yellow / orange / theme / accent 来设置图标的颜色
-> theme 为主题色: @theme_main
-> accent 为链接高亮颜色: @color_text_highlight
-
+{% note info %}
+可以通过 red / blue / green / yellow / orange / theme / accent 来设置图标的颜色
+{% endnote %}
 
 ## meta 区域显示外链按钮
 

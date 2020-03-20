@@ -9,12 +9,7 @@ meta:
 
 下述操作将协助您解决在使用过程中遇到的<u>任何</u>问题：
 
-{% raw %}
-<details>
-<summary>
-主题文件（除了配置文件以外）未经任何修改，无法成功搭建博客
-</summary>
-{% endraw %}
+{% folding 主题文件（除了配置文件以外）未经任何修改，无法成功搭建博客 %}
 
 此流程适用于直接使用主题搭建博客的用户，在仅仅修改了主题配置文件、Hexo配置文件、增加了自己的文章，这种情况下无法成功搭建或者部署的问题。
 
@@ -48,13 +43,8 @@ meta:
 
 {% endtabs %}
 
-{% raw %}</details>{% endraw %}
-{% raw %}
-<details>
-<summary>
-主题文件（ejs、js、css、第三方插件等）有修改，无法成功搭建博客
-</summary>
-{% endraw %}
+{% endfolding %}
+{% folding 主题文件（ejs、js、css、第三方插件等）有修改，无法成功搭建博客 %}
 
 此流程适用于 fork 主题并对主题文件（ejs、js、css 等）进行了修改后搭建博客的用户，无法成功搭建或者部署的问题。
 
@@ -77,13 +67,8 @@ meta:
 
 {% endtabs %}
 
-{% raw %}</details>{% endraw %}
-{% raw %}
-<details>
-<summary>
-有明确的 BUG 或者建议
-</summary>
-{% endraw %}
+{% endfolding %}
+{% folding 有明确的 BUG 或者建议 %}
 
 此流程适用于您已经定位到了问题的具体所在，不需要协助定位问题。希望开发者予以修正。
 
@@ -93,9 +78,9 @@ meta:
 
 例如主题文档中也存在的问题，或者在指定的浏览器、平台，经过某个操作后确定可以复现的问题。请在 issues 页面新建 issue 进行反馈。对应的 issue 模板类型： <btn>[Bug Report](https://github.com/xaoxuu/hexo-theme-volantis/issues/new?assignees=&labels=new%2Cquestion&template=bug-report.md)</btn>
 
-::: warning
+{% note warning %}
 反馈一个 BUG 需要按照 issue 模板提供尽可能详细的信息，如果只有一个标题或者一句话，我们无法进行复现的话，是无法解决问题的。
-:::
+{% endnote %}
 
 <!-- endtab -->
 
@@ -107,14 +92,15 @@ meta:
 
 {% endtabs %}
 
-{% raw %}</details>{% endraw %}
+{% endfolding %}
 
 <!-- more -->
 
 通常来说，一个全新的工程全部使用默认配置是<green>正常</green>没有故障的。如果无法使用或者效果与示例有较大区别，可以使用 Hexo 官方提供的用于单元测试的博客应用本主题查看样式是否正常，对比 `_config.yml` 文件排查问题。
 
-> Hexo 官方的单元测试项目： [https://github.com/hexojs/hexo-theme-unit-test](https://github.com/hexojs/hexo-theme-unit-test)
-
+{% note warning yellow %}
+Hexo 官方的单元测试项目： [https://github.com/hexojs/hexo-theme-unit-test](https://github.com/hexojs/hexo-theme-unit-test)
+{% endnote %}
 
 ## 如何更新主题
 
@@ -166,12 +152,7 @@ root: /
 
 <br><br>
 
-{% raw %}
-<details open>
-<summary>
-教程与指南
-</summary>
-{% endraw %}
+{% folding 教程与指南, open %}
 
 <btn>[Hexo官方文档](https://hexo.io) [Valine官方文档](https://valine.js.org)</btn>
 
@@ -179,4 +160,4 @@ root: /
 
 <img src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/emoji/aru/161.png" style="width:100%">
 
-{% raw %}</details>{% endraw %}
+{% endfolding %}

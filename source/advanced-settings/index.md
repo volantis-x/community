@@ -7,17 +7,12 @@ meta:
 
 建议有一定基础知识的朋友进行尝试。
 
-{% raw %}
-<details yellow open>
-<summary>
-将主题添加为子模块
-</summary>
-{% endraw %}
+{% folding 将主题添加为子模块, yellow open %}
 
 ```sh
 git submodule add git@github.com:xaoxuu/hexo-theme-volantis themes/volantis
 ```
-{% raw %}</details>{% endraw %}
+{% endfolding %}
 
 ## 为网站提速
 
@@ -52,105 +47,6 @@ git submodule add git@github.com:xaoxuu/hexo-theme-volantis themes/volantis
 - 页面不要堆砌关键词，不要频繁更改路径。
 
 
-## 复选框和Container
-
-::: info
-here be info
-:::
-
-::: warning
-here be warning
-:::
-
-::: success
-here be success
-:::
-
-::: danger
-here be danger
-:::
-
-如果是其他 markdown 解析器，需要卸载并安装 `hexo-renderer-markdown-it` 插件：
-
-1. 卸载默认的 `hexo-renderer-marked`
-  ```sh
-  npm uninstall hexo-renderer-marked --save
-  ```
-
-2. 安装 `hexo-renderer-markdown-it`
-  ```sh
-  npm install hexo-renderer-markdown-it --save
-  ```
-
-3. 然后安装插件
-  ```sh
-  npm install markdown-it-abbr markdown-it-checkbox markdown-it-container markdown-it-deflist markdown-it-emoji markdown-it-footnote markdown-it-imsize markdown-it-ins markdown-it-mark markdown-it-regexp markdown-it-sub markdown-it-sup markdown-it-task-checkbox --save
-  ```
-4. 修改配置文件
-  ```yaml blog/_config.yml
-  markdown:
-    render:
-      html: true
-      xhtmlOut: false
-      breaks: true
-      linkify: true
-      typographer: true
-      quotes: '“”‘’'
-    plugins:
-      - markdown-it-abbr
-      - markdown-it-footnote
-      - markdown-it-ins
-      - markdown-it-sub
-      - markdown-it-sup
-      - markdown-it-deflist
-      - markdown-it-imsize
-      - markdown-it-mark
-      - markdown-it-regexp
-      - markdown-it-task-checkbox
-      - name: markdown-it-container
-        options: success
-      - name: markdown-it-container
-        options: info
-      - name: markdown-it-container
-        options: warning
-      - name: markdown-it-container
-        options: danger
-      - markdown-it-deflist
-      - name: markdown-it-emoji
-        options:
-          shortcuts: {}
-    anchors:
-      level: 2
-      collisionSuffix: ''
-      permalink: false
-      permalinkClass: 'header-anchor'
-      permalinkSide: 'left'
-      permalinkSymbol: '¶'
-      case: 0
-      separator: ''
-  ```
-
-5. Container 的写法：
-  ```
-  ::: info
-  here be info
-  :::
-
-  ::: warning
-  here be warning
-  :::
-
-  ::: success
-  here be success
-  :::
-
-  ::: danger
-  here be danger
-  :::
-  ```
-
-
-
 ## 使用 CDN
 
 对于大部分将博客 deploy 到 GitHub 的用户来说，直接加载本地资源速度比较慢，可以使用 jsdelivr 为开源项目提供的 CDN 服务。
@@ -161,7 +57,9 @@ here be danger
 use_cdn: true
 ```
 
-> 如果你需要对样式进行 DIY，可以只关闭 style 文件的 CDN。
+{% note info %}
+如果你需要对样式进行 DIY，可以只关闭 style 文件的 CDN。
+{% endnote %}
 
 ### 自定义 CDN
 
@@ -186,8 +84,9 @@ layout:
     sidebar: [related_posts]
 ```
 
+{% note link %}
 插件的自定义配置方法：https://github.com/tea3/hexo-related-popular-posts
-
+{% endnote %}
 
 ## 分析与统计
 
