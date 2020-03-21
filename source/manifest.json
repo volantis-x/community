@@ -10,9 +10,17 @@
     "type": "image/png",
     "sizes": "192x192"
   }, {
+    "src": "/assets/favicon/favicon_180.png",
+    "type": "image/png",
+    "sizes": "180x180"
+  }, {
     "src": "/assets/favicon/favicon_144.png",
     "type": "image/png",
     "sizes": "144x144"
+  }, {
+    "src": "/assets/favicon/favicon_128.png",
+    "type": "image/png",
+    "sizes": "128x128"
   }],
   "background_color": "#ffffff",
   "theme_color": "#ffffff",
