@@ -44,6 +44,12 @@ links:
       url: https://crainyday.gitee.io
       avatar: https://cdn.jsdelivr.net/gh/crainyday/blog@master/avatar.png
       tags: [Java]
+      
+    items:
+    - name: YINUXY'S BLOG
+      url: https://blog.yinuxy.com
+      avatar: https://cdn.jsdelivr.net/gh/InfiniteYinux/cloud@2.42/avatar/avatar.png
+      tags: [在原主题的基础上添加了仿github日历云和标签云以及文章分类雷达图]
   - group: '版本：^1.7'
     items:
     - name: Yanliang
