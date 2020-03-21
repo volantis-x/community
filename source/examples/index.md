@@ -11,6 +11,10 @@ links:
       url: https://xaoxuu.com
       avatar: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png
       tags: [主题作者]
+    - name: MicDZ's blog
+      url: https://www.micdz.cn
+      avatar: https://i.loli.net/2020/02/29/T2cijraFuM35ECO.jpg
+      tags: [OIer, C++]
   - group: '版本：^2.1'
     desc: 支持 Tab 标签
     items:
@@ -78,10 +82,6 @@ links:
       url: https://233213fedf.github.io
       avatar: https://i.loli.net/2020/02/22/WbxiwCG1gDEF3Od.jpg
       tags:
-    - name: MicDZ's blog
-      url: https://www.micdz.cn
-      avatar: https://i.loli.net/2020/02/29/T2cijraFuM35ECO.jpg
-      tags: [OIer, C++]
   - group: '上古版本'
     desc: 这是以前曾留言在 [issue#97](https://github.com/xaoxuu/hexo-theme-volantis/issues/97) 中的博主，如果您更新了版本，记得把您的卡片移动到新版本的分组中。
     items:
