@@ -2,15 +2,15 @@
   "short_name": "Volantis",
   "name": "Volantis",
   "icons": [{
-    "src": "https://img.vim-cn.com/f5/fa917899eca6cba0dfda87c2db03c552925fc0.png",
+    "src": "/assets/favicon/favicon_256.png",
     "type": "image/png",
     "sizes": "256x256"
   }, {
-    "src": "https://img.vim-cn.com/42/0c5a7992c0fddc1453735e185f1d3fc34c62b8.png",
+    "src": "/assets/favicon/favicon_192.png",
     "type": "image/png",
     "sizes": "192x192"
   }, {
-    "src": "https://img.vim-cn.com/f5/ba9cef3cb1cba902cc2c989589a2bdfe93e10e.png",
+    "src": "/assets/favicon/favicon_144.png",
     "type": "image/png",
     "sizes": "144x144"
   }],
