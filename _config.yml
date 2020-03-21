@@ -35,6 +35,7 @@ skip_render:
   - start
   - CNAME
   - robots.txt
+  - assets/*
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -179,13 +180,10 @@ use_cdn: true
 import:
   meta:
   - "<meta name='theme-color' content='#FFFFFF'>"
-  - "<meta name='msapplication-TileColor' content='#1BC3FB'>"
-  - "<meta name='msapplication-config' content='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/favicon/browserconfig.xml'>"
   link:
-  - "<link rel='shortcut icon' type='image/x-icon' href='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/favicon/favicon.ico'>"
-  - "<link rel='icon' type='image/x-icon' sizes='32x32' href='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/favicon/favicon-32x32.png'>"
-  - "<link rel='apple-touch-icon' type='image/png' sizes='180x180' href='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/favicon/apple-touch-icon.png'>"
-  - "<link rel='mask-icon' color='#1BC3FB' href='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/favicon/safari-pinned-tab.svg'>"
+  - "<link rel='shortcut icon' type='image/x-icon' sizes='16x16 32x32 48x48 64x64' href='/assets/favicon/favicon.ico'>"
+  - "<link rel='apple-touch-icon' type='image/png' sizes='180x180' href='/assets/favicon/favicon_180.png'>"
+  - "<link rel='mask-icon' color='#1BC3FB' href='/assets/favicon/favicon_180.png'>"
   - "<link rel='manifest' href='/manifest.json'>"
   # script:
 
