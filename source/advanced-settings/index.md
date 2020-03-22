@@ -71,7 +71,7 @@ use_cdn: true
 1. 安装插件
 
 ```sh
-npm i S hexo-related-popular-posts
+npm i -S hexo-related-popular-posts
 ```
 
 2. 在需要显示的位置添加 `related_posts`
