@@ -15,6 +15,10 @@ links:
       url: https://charlie-zzy.github.io
       avatar: https://cdn.jsdelivr.net/gh/charlie-zzy/imgCDN/avatar.png
       tags: [暗色, 最新主题]
+    - name: Huanhao
+      url: https://mrhuanhao.cn/
+      avatar: https://cdn.jsdelivr.net/gh/mrhuanhao/cdn/myimg/huanhao.jpg
+      tags: [2.2主题, linux]
   - group: '版本：^2.1'
     desc: 支持 Tab 标签
     items:
