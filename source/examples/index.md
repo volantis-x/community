@@ -163,7 +163,12 @@ links:
       avatar: https://cdn.jsdelivr.net/gh/ssmath/images-assets-cdn/try20200311205451.jpg
 ---
 
-<p center large><red>示</red><yellow>例</yellow><green>博</green><blue>客</blue></p>
+<center>
+{% span large red, 示 %}
+{% span large yellow, 例 %}
+{% span large green, 博 %}
+{% span large blue, 客 %}
+</center>
 <br>
 
 这些是一部分使用了「Volantis」主题的博客，由博主自助添加。如果你也使用了「Volantis」，希望在这里推广自己的博客，可以按照本页下方提供的格式自行添加。
@@ -210,6 +215,4 @@ links:
 
 {% endtabs %}
 
-{% noteblock success %}
-本站使用了持续集成，在您提交的更改通过审核并合并代码的几分钟后再刷新网页即生效。
-{% endnoteblock %}
+{% note success, 本站使用了持续集成，在您提交的更改通过审核并合并代码的几分钟后再刷新网页即生效。 %}

@@ -7,7 +7,7 @@ meta:
 
 建议有一定基础知识的朋友进行尝试。
 
-{% folding 将主题添加为子模块, yellow open %}
+{% folding yellow open, 将主题添加为子模块 %}
 
 ```sh
 git submodule add git@github.com:xaoxuu/hexo-theme-volantis themes/volantis
@@ -57,9 +57,7 @@ git submodule add git@github.com:xaoxuu/hexo-theme-volantis themes/volantis
 use_cdn: true
 ```
 
-{% noteblock info %}
-如果你需要对样式进行 DIY，可以只关闭 style 文件的 CDN。
-{% endnoteblock %}
+{% note info, 如果你需要对样式进行 DIY，可以只关闭 style 文件的 CDN。 %}
 
 ### 自定义 CDN
 
@@ -69,24 +67,18 @@ use_cdn: true
 ## 安装「相关文章」插件
 
 1. 安装插件
-
 ```sh
 npm i -S hexo-related-popular-posts
 ```
 
-2. 在需要显示的位置添加 `related_posts`
-
-例如放在侧边栏：
-
+2. 在需要显示的位置添加 `related_posts` 例如放在侧边栏：
 ```yaml blog/themes/volantis/_config.yml
 layout:
   on_page:
     sidebar: [related_posts]
 ```
 
-{% noteblock link %}
-插件的自定义配置方法： [hexo-related-popular-posts](https://github.com/tea3/hexo-related-popular-posts)
-{% endnoteblock %}
+{% note link, 插件的自定义配置方法： [hexo-related-popular-posts](https://github.com/tea3/hexo-related-popular-posts) %}
 
 ## 分析与统计
 

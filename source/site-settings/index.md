@@ -6,7 +6,7 @@ meta:
   header: [title, author, updated]
 ---
 
-如无特殊说明，本页面的配置信息写在 <red>**博客根目录**</red> 的 `_config.yml` 文件中。
+如无特殊说明，本页面的配置信息写在 <u>**博客根目录**</u> 的 `_config.yml` 文件中。
 
 ## 网站标题
 

@@ -22,7 +22,7 @@ Volantis，一个高度模块化和可定制化、功能相对完善的 Hexo 博
 
 | 环境 | 建议最低版本 |
 | :-- | :-- |
-| Hexo | <red>4.2</red> |
+| Hexo | <u>4.2</u> |
 | hexo-cli | 3.1 |
 | node.js | 12.16 |
 | npm | 6.13 |
@@ -40,11 +40,7 @@ curl -s https://volantis.js.org/start | sh
 ```
 如果您还没有博客，执行这行命令将会自动检测并安装所需环境，初始化博客，然后下载安装并应用主题。
 
-{% noteblock link blue %}
-
-脚本更多使用方法：[#hexo.sh](https://xaoxuu.com/wiki/hexo.sh/)
-
-{% endnoteblock %}
+{% note link blue, 脚本更多使用方法：[#hexo.sh](https://xaoxuu.com/wiki/hexo.sh/) %}
 
 <!-- endtab -->
 
@@ -77,7 +73,7 @@ npm i -S hexo-renderer-stylus
 
 本主题采用 [MIT开源许可协议](https://cdn.jsdelivr.net/gh/xaoxuu/hexo-theme-volantis/LICENSE) ，永久无限制免费使用。
 
-{% noteblock quote light %}
+{% noteblock quote %}
 **MIT开源许可协议**
 
 被授权人有权利使用、复制、修改、合并、出版发行、散布、再授权及贩售软件及软件的副本。

@@ -6,7 +6,7 @@ meta:
   header: [title, author, updated]
 ---
 
-如无特殊说明，本页面的配置信息写在 <red>**页面**</red> 文件的 `front-matter` 中。
+如无特殊说明，本页面的配置信息写在 <u>**页面**</u> 文件的 `front-matter` 中。
 
 ## 布局模板
 
@@ -19,9 +19,7 @@ meta:
 | links | 友链页面 |
 | list | 列表页面 |
 
-{% noteblock info %}
-post 页面几乎与 page 页面相同，但是，post 页面更适用于文章，网页向下滚动时导航栏会上翻显出文章标题。
-{% endnoteblock %}
+{% note info, post 页面几乎与 page 页面相同，但是，post 页面更适用于文章，网页向下滚动时导航栏会上翻显出文章标题。 %}
 
 ## front-matter
 
@@ -180,9 +178,7 @@ links:
 
 ```
 
-{% noteblock info %}
-姓名、头像、链接是必填项，其它选填。
-{% endnoteblock %}
+{% note info, 姓名、头像、链接是必填项，其它选填。 %}
 
 ### 404页面
 
@@ -199,15 +195,9 @@ valine:
   path: /404.html
   placeholder: 请留言告诉我您要访问哪个页面找不到了
 ---
-
-<center>
-<p huge>404</p>
-
-<b>很抱歉，您访问的页面不存在</b>
-
-可能是输入地址有误或该地址已被删除
-
-</center>
+{% p center huge, 404 %}
+{% p center bold, 很抱歉，您访问的页面不存在 %}
+{% p center small, 可能是输入地址有误或该地址已被删除 %}
 ```
 
 ## 页面元素排列
@@ -295,9 +285,7 @@ date: 2020-02-21
 这是正文
 ```
 
-{% noteblock warning %}
-**注意**： `<!-- more -->` 前后一定要有空行，不然可能导致显示错位。
-{% endnoteblock %}
+{% note warning, **注意**： `<!-- more -->` 前后一定要有空行，不然可能导致显示错位。 %}
 
 ### 设置文章作者
 
@@ -325,9 +313,7 @@ music:
 ---
 ```
 
-{% noteblock play %}
-实际效果见： [#contributors](/contributors/)
-{% endnoteblock %}
+{% note play, 实际效果见： [#contributors](/contributors/) %}
 
 ## 显示 meta 标签
 
@@ -374,9 +360,7 @@ icons: [fas fa-fire red, fas fa-star green]
 
 图标仅在归档页面中显示，可以用来标注热门文章。
 
-{% noteblock info %}
-可以通过 red / blue / green / yellow / orange / theme / accent 来设置图标的颜色
-{% endnoteblock %}
+{% note info, 可以通过 red / blue / green / yellow / orange / theme / accent 来设置图标的颜色 %}
 
 ## meta 区域显示外链按钮
 

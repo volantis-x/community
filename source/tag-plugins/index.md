@@ -8,9 +8,9 @@ mathjax: true
 ---
 
 
-主题支持<b><red>丰</red><yellow>富</yellow><green>多</green><blue>彩</blue></b>的标签。
+主题支持<b>{% span red, 丰 %}{% span yellow, 富 %}{% span green, 多 %}{% span blue, 彩 %}</b>的标签。
 
-## 文本属性
+## Span & P
 
 {% tabs p, 3 %}
 
@@ -22,11 +22,7 @@ mathjax: true
 ```md 独立段落
 {% p 样式参数, 文本内容 %}
 ```
-{% noteblock up green %}
-
-请将您的 Volantis 升级至 2.2.2 版本以上使用。
-
-{% endnoteblock %}
+{% note up green, 请将您的 Volantis 升级至 2.3 版本以上使用。 %}
 
 <!-- endtab -->
 
@@ -100,11 +96,8 @@ NoteBlock 是 Blockquote 的增强版，在左边显示图标，并且可以自�
 
 {% endnoteblock %}
 ```
-{% noteblock up green %}
 
-请将您的 Volantis 升级至 2.3 版本以上使用。
-
-{% endnoteblock %}
+{% note up green, 请将您的 Volantis 升级至 2.3 版本以上使用。 %}
 
 <!-- endtab -->
 
@@ -160,11 +153,16 @@ Windows 10不是為所有人設計,而是為每個人設計
 {% endnoteblock %}
 
 {% p subtitle, Folding 测试 %}
-{% folding 点击查看更多, green %}
+{% folding open, 点击查看更多 %}
 
+```md
 {% note warning, 不要说我们没有警告过你 %}
+```
+{% note warning, 不要说我们没有警告过你 %}
+```md
 {% note bug red, 我们都有不顺利的时候 %}
-{% note undo light, ![win10-rollback.jpg](https://i.loli.net/2020/03/28/RsUKraql1eCMSnm.jpg) %}
+```
+{% note bug red, 我们都有不顺利的时候 %}
 
 {% endfolding %}
 {% endnoteblock %}
@@ -183,17 +181,14 @@ Windows 10不是為所有人設計,而是為每個人設計
 {% btn 样式参数, 图标（可选）, 按钮标题, 链接地址 %}
 ```
 
-{% noteblock up green %}
+{% note up green, 请将您的 Volantis 升级至 2.3 版本以上使用。 %}
 
-请将您的 Volantis 升级至 2.2.2 版本以上使用。
-
-{% endnoteblock %}
 
 <!-- endtab -->
 
 <!-- tab 参数 -->
 
-**样式参数**
+{% p subtitle, 样式参数 %}
 
 可选的参数有： `regular` 、 `large` 、 `center`
 
@@ -207,15 +202,15 @@ Windows 10不是為所有人設計,而是為每個人設計
 {% btn center large, fas fa-download, 开始使用, https://volantis.js.org/getting-started/ %}
 ```
 
-**图标**
+{% p subtitle, 图标 %}
 
 需以 `fas ` 开头。
 
-**文本**
+{% p subtitle, 文本 %}
 
 按钮的文本。
 
-**链接地址**
+{% p subtitle, 链接地址 %}
 
 按钮的地址。
 
@@ -250,11 +245,7 @@ large 按钮更具有强调作用，建议搭配 `center` 使用：
 {% endbtns %}
 ```
 
-{% noteblock up green %}
-
-请将您的 Volantis 升级至 2.2 版本以上使用。
-
-{% endnoteblock %}
+{% note up green, 请将您的 Volantis 升级至 2.2 版本以上使用。 %}
 
 <!-- endtab -->
 
@@ -262,7 +253,7 @@ large 按钮更具有强调作用，建议搭配 `center` 使用：
 
 参数位置可以写图片样式、布局方式，多个参数用空格隔开
 
-<br><blue>**图片样式**</blue>
+{% p subtitle, 图片样式 %}
 
 - 默认为方形
 - 圆角矩形（`rounded`），适合app图标。
@@ -274,7 +265,7 @@ large 按钮更具有强调作用，建议搭配 `center` 使用：
 {% endbtns %}
 ```
 
-<br><blue>**布局方式**</blue>
+{% p subtitle, 布局方式 %}
 
 - 默认为自动宽度，适合视野内只有一两个的情况，多了显乱。
 - 宽一点的按钮（`wide`）。
@@ -292,7 +283,7 @@ large 按钮更具有强调作用，建议搭配 `center` 使用：
 {% endbtns %}
 ```
 
-<br><blue>**增加文字样式**</blue>
+{% p subtitle, 增加文字样式 %}
 
 可以在容器内增加 `<b>标题</b>` 和 `<p>描述文字</p>`
 
@@ -302,13 +293,13 @@ large 按钮更具有强调作用，建议搭配 `center` 使用：
 <a href='https://apps.apple.com/cn/app/heart-mate-pro-hrm-utility/id1463348922?ls=1'>
   <i class='fab fa-apple'></i>
   <b>心率管家</b>
-  <p red>专业版</p>
+  {% p red, 专业版 %}
   <img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/qrcode/heartmate_pro.png'>
 </a>
 <a href='https://apps.apple.com/cn/app/heart-mate-lite-hrm-utility/id1475747930?ls=1'>
   <i class='fab fa-apple'></i>
   <b>心率管家</b>
-  <p green>免费版</p>
+  {% p green, 免费版 %}
   <img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/qrcode/heartmate_lite.png'>
 </a>
 {% endbtns %}
@@ -339,13 +330,13 @@ large 按钮更具有强调作用，建议搭配 `center` 使用：
 <a href='https://apps.apple.com/cn/app/heart-mate-pro-hrm-utility/id1463348922?ls=1'>
   <i class='fab fa-apple'></i>
   <b>心率管家</b>
-  <p red>专业版</p>
+  {% p red, 专业版 %}
   <img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/qrcode/heartmate_pro.png'>
 </a>
 <a href='https://apps.apple.com/cn/app/heart-mate-lite-hrm-utility/id1475747930?ls=1'>
   <i class='fab fa-apple'></i>
   <b>心率管家</b>
-  <p green>免费版</p>
+  {% p green, 免费版 %}
   <img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/qrcode/heartmate_lite.png'>
 </a>
 {% endbtns %}
@@ -368,21 +359,19 @@ large 按钮更具有强调作用，建议搭配 `center` 使用：
 {% endfancybox %}
 ```
 
-{% noteblock up green %}
-
-请将您的 Volantis 升级至 2.2 版本以上使用。
-
-{% endnoteblock %}
+{% note up green, 请将您的 Volantis 升级至 2.2 版本以上使用。 %}
 
 <!-- endtab -->
 
 <!-- tab 参数 -->
 
-<blue>**对齐方向**</blue>
+{% p subtitle, 对齐方向 %}
+
 默认居中，参数设为 `left` 则左对齐。
 
 
-<br><blue>**列数**</blue>
+{% p subtitle, 列数 %}
+
 逗号后面直接写列数，支持 2 ～ 8 列。设定列列数之后就是「多行多图」布局，此时图片默认左对齐。为了避免图片大小不一，建议搭配 `stretch` 来时图片放大填充。
 
 
@@ -446,11 +435,7 @@ large 按钮更具有强调作用，建议搭配 `center` 使用：
 {% endtabs %}
 ```
 
-{% noteblock up green %}
-
-请将您的 Volantis 升级至 2.1 版本以上使用。
-
-{% endnoteblock %}
+{% note up green, 请将您的 Volantis 升级至 2.1 版本以上使用。 %}
 
 <!-- endtab -->
 
@@ -494,18 +479,14 @@ large 按钮更具有强调作用，建议搭配 `center` 使用：
 <!-- tab 格式 -->
 
 ```md
-{% folding 标题, 参数 %}
+{% folding 参数（可选）, 标题 %}
 
 ![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/41F215B9-261F-48B4-80B5-4E86E165259E.jpeg)
 
 {% endfolding %}
 ```
 
-{% noteblock up green %}
-
-请将您的 Volantis 升级至 2.2 版本以上使用。
-
-{% endnoteblock %}
+{% note up green, 请将您的 Volantis 升级至 2.3 版本以上使用。 %}
 
 <!-- endtab -->
 
@@ -529,16 +510,16 @@ blue, cyan, green, yellow, red
 
 {% endfolding %}
 
-{% folding 查看默认打开的折叠框, cyan open %}
+{% folding cyan open, 查看默认打开的折叠框 %}
 
 这是一个默认打开的折叠框。
 
 {% endfolding %}
 
-{% folding 查看代码测试, green %}
+{% folding green, 查看代码测试 %}
 
 ```md
-{% folding 查看代码测试, green %}
+{% folding green, 查看代码测试 %}
 
 查看代码测试
 
@@ -547,16 +528,16 @@ blue, cyan, green, yellow, red
 
 {% endfolding %}
 
-{% folding 查看列表测试, yellow %}
+{% folding yellow, 查看列表测试 %}
 
 - haha
 - hehe
 
 {% endfolding %}
 
-{% folding 查看嵌套测试, red %}
+{% folding red, 查看嵌套测试 %}
 
-{% folding 查看嵌套测试2, blue %}
+{% folding blue, 查看嵌套测试2 %}
 
 {% folding 查看嵌套测试3 %}
 
@@ -631,9 +612,7 @@ $$
 
 {% endfolding %}
 
-{% noteblock info %}
-如果公式仍无法正确渲染可以阅读 [@MicDZ](https://www.micdz.cn) 的这篇文章：[《在material-x上使用KaTeX》](https://www.micdz.cn/article/katex-on-volantis/)。
-{% endnoteblock %}
+{% note link, 如果公式仍无法正确渲染可以阅读 [@MicDZ](https://www.micdz.cn) 的这篇文章：[《在material-x上使用KaTeX》](https://www.micdz.cn/article/katex-on-volantis/)。 %}
 
 ## Hexo原生支持的标签
 
@@ -718,7 +697,7 @@ content
 ```
 
 ### Gist
-在文章中嵌入 `Gist`，<red>注意</red>：在国内无法加载。
+在文章中嵌入 `Gist`，<u>注意</u>：在国内无法加载。
 ```md example.md:
 {% gist gist_id [filename] %}
 ```
@@ -794,6 +773,4 @@ content
 
 在文章中使用 `<!-- more -->`，那么 `<!-- more -->` 之前的文字将会被视为摘要。首页中将只出现这部分文字，同时这部分文字也会出现在正文之中。
 
-{% noteblock link %}
-更多请见Hexo官方文档：[#标签插件](https://hexo.io/zh-cn/docs/tag-plugins)
-{% endnoteblock %}
+{% note link, 更多请见Hexo官方文档：[#标签插件](https://hexo.io/zh-cn/docs/tag-plugins) %}

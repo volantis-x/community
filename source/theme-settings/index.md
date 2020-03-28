@@ -6,7 +6,7 @@ meta:
   header: [title, author, updated]
 ---
 
-如无特殊说明，本页面的配置信息写在 <red>**主题**</red> 的 `config.yml` 文件中。
+如无特殊说明，本页面的配置信息写在 <u>**主题**</u> 的 `config.yml` 文件中。
 
 {% noteblock idea green %}
 **实用小技巧**
@@ -52,6 +52,7 @@ style:
 - **shadow**：卡片阴影。
 - **floatable**：当鼠标移动到容器内时，呈现出浮起来的效果。
 - **blur**：背景模糊效果（毛玻璃），当浏览器不支持时显示为不透明。
+
 ```yaml blog/themes/volantis/_config.yml
 style:
   ...
@@ -263,9 +264,7 @@ on_desktop:
       url: blog/2019-07-23-heartmate/
 ```
 
-{% noteblock play %}
-这个示例的实际效果： https://xaoxuu.com
-{% endnoteblock %}
+{% note play, 这个示例的实际效果： https://xaoxuu.com %}
 
 ## 模块化布局
 您可以自由决定每个页面是否显示侧边栏，侧边栏显示什么小部件，正文区域显示什么卡片，文章卡片显示什么meta。
@@ -549,9 +548,7 @@ related_posts:
 ```
 npm i -S hexo-related-popular-posts
 ```
-{% noteblock warning %}
-值得注意的是，开启了这个功能之后，每次修改文章内容包括 `front-matter` 之后，都需要重新 `hexo s`。
-{% endnoteblock %}
+{% note warning, 值得注意的是，开启了这个功能之后，每次修改文章内容包括 `front-matter` 之后，都需要重新 `hexo s`。 %}
 
 ### 文章版权部件
 ```yaml blog/themes/volantis/_config.yml
@@ -745,9 +742,7 @@ plugins:
     list_folded: true
 ```
 
-{% noteblock warning %}
-APlayer播放器只可以在中国大陆地区使用。相关文档： [APlayer](https://aplayer.js.org/) | [MetingJS](https://github.com/metowolf/MetingJS)
-{% endnoteblock %}
+{% note warning, APlayer播放器只可以在中国大陆地区使用。相关文档： [APlayer](https://aplayer.js.org/) | [MetingJS](https://github.com/metowolf/MetingJS) %}
 
 ## 评论系统
 ```yaml blog/themes/volantis/_config.yml

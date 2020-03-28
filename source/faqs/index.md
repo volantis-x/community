@@ -78,9 +78,7 @@ meta:
 
 例如主题文档中也存在的问题，或者在指定的浏览器、平台，经过某个操作后确定可以复现的问题。请在 issues 页面新建 issue 进行反馈。对应的 issue 模板类型： [Bug Report](https://github.com/xaoxuu/hexo-theme-volantis/issues/new?assignees=&labels=new%2Cquestion&template=bug-report.md)
 
-{% noteblock warning %}
-反馈一个 BUG 需要按照 issue 模板提供尽可能详细的信息，如果只有一个标题或者一句话，我们无法进行复现的话，是无法解决问题的。
-{% endnoteblock %}
+{% note warning, 反馈一个 BUG 需要按照 issue 模板提供尽可能详细的信息，如果只有一个标题或者一句话，我们无法进行复现的话，是无法解决问题的。 %}
 
 <!-- endtab -->
 
@@ -98,15 +96,13 @@ meta:
 
 通常来说，一个全新的工程全部使用默认配置是<green>正常</green>没有故障的。如果无法使用或者效果与示例有较大区别，可以使用 Hexo 官方提供的用于单元测试的博客应用本主题查看样式是否正常，对比 `_config.yml` 文件排查问题。
 
-{% noteblock warning yellow %}
-Hexo 官方的单元测试项目： [https://github.com/hexojs/hexo-theme-unit-test](https://github.com/hexojs/hexo-theme-unit-test)
-{% endnoteblock %}
+{% note warning yellow, Hexo 官方的单元测试项目： [https://github.com/hexojs/hexo-theme-unit-test](https://github.com/hexojs/hexo-theme-unit-test) %}
 
 ## 如何更新主题
 
 使用主题的时候，尽量 fork 主题到自己的 GitHub，然后进行修改并使用。这样做的好处是：当主题进行重要更新的时候可以根据需要拉取合并代码，使自己DIY的主题能够通过更新获取BUG修复或者新特性。
 
-如果不懂请自行搜索关键词：<red>fork 更新</red>
+如果不懂请自行搜索关键词：<u>fork 更新</u>
 
 ## 无法成功运行本地预览
 
@@ -152,7 +148,7 @@ root: /
 
 <br><br>
 
-{% folding 教程与指南, open %}
+{% folding open, 教程与指南 %}
 
 [Hexo官方文档](https://hexo.io) | [Valine官方文档](https://valine.js.org)
 
