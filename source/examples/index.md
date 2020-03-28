@@ -4,13 +4,16 @@ title: 示例博客
 meta:
   header: []
 links:
-  - group: '版本：^2.2'
-    desc: 支持 Note 标签
+  - group: '版本：^2.3'
+    desc: 优化更多标签
     items:
     - name: xaoxuu
       url: https://xaoxuu.com
       avatar: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png
       tags: [主题作者]
+  - group: '版本：^2.2'
+    desc: 支持 Note 标签
+    items:
     - name: Charlie
       url: https://charlie-zzy.github.io
       avatar: https://cdn.jsdelivr.net/gh/charlie-zzy/imgCDN/avatar.png

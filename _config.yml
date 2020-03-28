@@ -203,7 +203,7 @@ lazyload:
   loadingImg: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/placeholder/d570170f4f12e1ee829ca0e85a7dffeb77343a.svg
 
 # npm install hexo-all-minifier --save
-all_minifier: false
+# all_minifier: false
 
 # hexo-autonofollow
 nofollow:
