@@ -37,7 +37,7 @@ meta:
 
 按照文档描述进行修改配置之后发生错误，可能是文档有误或者过时。可以在 issues 页面发帖求助，务必按照 issue 模板提供尽可能详细的信息，如果只写个标题，我们很难帮助您解决问题。
 
-对应的 issue 模板类型： <btn>[Question Report](https://github.com/xaoxuu/hexo-theme-volantis/issues/new?assignees=&labels=new%2Cquestion&template=question-report.md)</btn>
+对应的 issue 模板类型： [Question Report](https://github.com/xaoxuu/hexo-theme-volantis/issues/new?assignees=&labels=new%2Cquestion&template=question-report.md)
 
 <!-- endtab -->
 
@@ -59,9 +59,9 @@ meta:
 
 <!-- tab 第三方插件 -->
 
-如果是主题文档中提到过的第三方插件（意味着有主动兼容），遇到无法使用的情况，可以在 issues 页面新建 issue 详细描述您的问题。对应的 issue 模板类型： <btn>[Question Report](https://github.com/xaoxuu/hexo-theme-volantis/issues/new?assignees=&labels=new%2Cquestion&template=question-report.md)</btn>
+如果是主题文档中提到过的第三方插件（意味着有主动兼容），遇到无法使用的情况，可以在 issues 页面新建 issue 详细描述您的问题。对应的 issue 模板类型： [Question Report](https://github.com/xaoxuu/hexo-theme-volantis/issues/new?assignees=&labels=new%2Cquestion&template=question-report.md)
 
-如果是主题文档中没有提到过的第三方插件，可能存在没有兼容的情况，可以在 issues 页面新建 issue 请求兼容。对应的 issue 模板类型： <btn>[Feature Request](https://github.com/xaoxuu/hexo-theme-volantis/issues/new?assignees=&labels=new%2Csuggest&template=feature-request.md)</btn>
+如果是主题文档中没有提到过的第三方插件，可能存在没有兼容的情况，可以在 issues 页面新建 issue 请求兼容。对应的 issue 模板类型： [Feature Request](https://github.com/xaoxuu/hexo-theme-volantis/issues/new?assignees=&labels=new%2Csuggest&template=feature-request.md)
 
 <!-- endtab -->
 
@@ -76,7 +76,7 @@ meta:
 
 <!-- tab 反馈 BUG -->
 
-例如主题文档中也存在的问题，或者在指定的浏览器、平台，经过某个操作后确定可以复现的问题。请在 issues 页面新建 issue 进行反馈。对应的 issue 模板类型： <btn>[Bug Report](https://github.com/xaoxuu/hexo-theme-volantis/issues/new?assignees=&labels=new%2Cquestion&template=bug-report.md)</btn>
+例如主题文档中也存在的问题，或者在指定的浏览器、平台，经过某个操作后确定可以复现的问题。请在 issues 页面新建 issue 进行反馈。对应的 issue 模板类型： [Bug Report](https://github.com/xaoxuu/hexo-theme-volantis/issues/new?assignees=&labels=new%2Cquestion&template=bug-report.md)
 
 {% note warning %}
 反馈一个 BUG 需要按照 issue 模板提供尽可能详细的信息，如果只有一个标题或者一句话，我们无法进行复现的话，是无法解决问题的。
@@ -86,7 +86,7 @@ meta:
 
 <!-- tab 提交建议 -->
 
-请在 issues 页面新建 issue 进行反馈。对应的 issue 模板类型： <btn>[Feature Request](https://github.com/xaoxuu/hexo-theme-volantis/issues/new?assignees=&labels=new%2Csuggest&template=feature-request.md)</btn>
+请在 issues 页面新建 issue 进行反馈。对应的 issue 模板类型： [Feature Request](https://github.com/xaoxuu/hexo-theme-volantis/issues/new?assignees=&labels=new%2Csuggest&template=feature-request.md)
 
 <!-- endtab -->
 
@@ -154,7 +154,7 @@ root: /
 
 {% folding 教程与指南, open %}
 
-<btn>[Hexo官方文档](https://hexo.io) [Valine官方文档](https://valine.js.org)</btn>
+[Hexo官方文档](https://hexo.io) | [Valine官方文档](https://valine.js.org)
 
 请一定要阅读官方文档！
 

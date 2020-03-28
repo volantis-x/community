@@ -12,7 +12,7 @@ meta:
 
 Volantis，一个高度模块化和可定制化、功能相对完善的 Hexo 博客主题，既可以用作个人博客，也适合用来搭建文档。
 
-这些是使用了本主题的博客： <btn>[<i class='fas fa-play-circle'></i> 示例博客](/examples/)</btn>
+这些是使用了本主题的博客： {% btn, fas fa-play-circle, 示例博客, /examples/ %}
 
 ## 环境要求
 
@@ -73,7 +73,7 @@ npm i -S hexo-renderer-stylus
 
 ## 许可协议
 
-本主题采用 <btn>[MIT开源许可协议](https://cdn.jsdelivr.net/gh/xaoxuu/hexo-theme-volantis/LICENSE)</btn> ，永久无限制免费使用。
+本主题采用 [MIT开源许可协议](https://cdn.jsdelivr.net/gh/xaoxuu/hexo-theme-volantis/LICENSE) ，永久无限制免费使用。
 
 {% note quote light %}
 **MIT开源许可协议**

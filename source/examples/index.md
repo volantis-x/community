@@ -172,7 +172,7 @@ links:
 
 <br><br>
 
-<btn large center>[<i class='fas fa-edit'></i> 编辑此页](https://github.com/xaoxuu/volantis-docs/blob/master/source/examples/index.md)</btn>
+{% btn large center, fas fa-edit, 编辑此页, https://github.com/xaoxuu/volantis-docs/blob/master/source/examples/index.md %}
 
 <br>
 

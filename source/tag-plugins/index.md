@@ -146,13 +146,13 @@ Windows 10不是為所有人設計,而是為每個人設計
 
 <!-- tab 格式 -->
 
-```html
-<btn 参数>[按钮](/)</btn>
+```
+{% btn 样式参数, 图标（可选）, 按钮标题, 链接地址 %}
 ```
 
 {% note up green %}
 
-请将您的 Volantis 升级至 1.6 版本以上使用。
+请将您的 Volantis 升级至 2.2.2 版本以上使用。
 
 {% endnote %}
 
@@ -160,32 +160,45 @@ Windows 10不是為所有人設計,而是為每個人設計
 
 <!-- tab 参数 -->
 
+**样式参数**
+
 可选的参数有： `regular` 、 `large` 、 `center`
 
-```html 不设置参数
-<btn>[按钮](/)</btn>
+```md 不设置参数
+{% btn, 按钮, / %}
 ```
-```html regular button
-<btn regular>[<i class='fas fa-play-circle'></i> 示例博客](https://xaoxuu.com)</btn>
+```md regular button
+{% btn regular, fas fa-play-circle, 示例博客, https://xaoxuu.com %}
 ```
-```html large center button
-<btn center large>[<i class='fas fa-download'></i> 开始使用](/)</btn>
+```md large center button
+{% btn center large, fas fa-download, 开始使用, https://volantis.js.org/getting-started/ %}
 ```
+
+**图标**
+
+需以 `fas ` 开头。
+
+**文本**
+
+按钮的文本。
+
+**链接地址**
+
+按钮的地址。
 
 <!-- endtab -->
 
 <!-- tab 演示 -->
 
-不设置任何参数的 <btn>[按钮](/)</btn> 适合融入段落中。
+不设置任何参数的 {% btn, 按钮, / %} 适合融入段落中。
 
 regular 按钮适合独立于段落之外：
 
-<btn regular>[<i class='fas fa-play-circle'></i> 示例博客](https://xaoxuu.com)</btn>
+{% btn regular, fas fa-play-circle, 示例博客, https://xaoxuu.com %}
 
 large 按钮更具有强调作用，建议搭配 `center` 使用：
 
-<btn center large>[<i class='fas fa-download'></i> 开始使用](/)</btn>
-
+{% btn center large, fas fa-download, 开始使用, https://volantis.js.org/getting-started/ %}
 
 <!-- endtab -->
 
