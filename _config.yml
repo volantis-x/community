@@ -135,6 +135,9 @@ theme_config:
         url: contributors/
   navbar:
     search: '搜索文档'
+  meta:
+    updated:
+      title: '本页文档最后更新于：'
   comments:
     title: <i class='fas fa-comments'></i> 用户交流区
     valine:

@@ -42,7 +42,7 @@ music:
 
 {% btns rounded grid5 %}
 <a href='https://hexo.io/themes/'><img height='48px' src='https://img.vim-cn.com/72/7e917e9b7bd3ee1cb593494610506c998eefb2.jpg'>Hexo Themes</a>
-<a href='https://valine.js.org/hexo.html#hexo-theme-material-x'><img height='48px' src='https://img.vim-cn.com/69/c9df34f04c86d32de9096a595fb5865711403c.png'>Valine</a>
+<a href='https://valine.js.org/hexo.html#hexo-theme-volantis'><img height='48px' src='https://img.vim-cn.com/69/c9df34f04c86d32de9096a595fb5865711403c.png'>Valine</a>
 <a href='https://easyhexo.com/2-Theme-use-and-config/2-6-hexo-theme-volantis/'><img height='48px' src='https://i.loli.net/2020/03/10/vxqOKtnRYehP4ZW.png'>Easy Hexo</a>
 {% endbtns %}
 
@@ -54,7 +54,6 @@ music:
 
 | 作者   | 文章                                                         |
 | :------ | :------------------------------------------------------------ |
-| 我自己 | [Material X 一个简约的卡片式Hexo博客主题](https://segmentfault.com/a/1190000016006194) |
 | MicDZ | [在Material-X上使用KaTeX](https://www.micdz.cn/article/katex-on-volantis/) |
 | ZYMIN | [hexo+ejs+material x 添加CNZZ统计代码](https://zymin.cn/arcticle/hexo+ejs+material.html) |
 | TRHX | [Hexo 博客主题个性化](https://itrhx.com/2018/08/27/A04-Hexo-blog-topic-personalization/) |
