@@ -19,6 +19,10 @@ links:
       url: https://mrhuanhao.cn/
       avatar: https://cdn.jsdelivr.net/gh/mrhuanhao/cdn/myimg/huanhao.jpg
       tags: [2.2主题, linux]
+    - name: Yanliang
+      url: https://gyl-coder.top
+      avatar: https://cdn.jsdelivr.net/gh/gyl-coder/gyl-coder.github.com@v1.0.0/img/touxiang.jpg
+      tags: [Java, 简介，自定义]
   - group: '版本：^2.1'
     desc: 支持 Tab 标签
     items:
@@ -52,12 +56,6 @@ links:
       url: https://blog.yinuxy.com
       avatar: https://cdn.jsdelivr.net/gh/InfiniteYinux/cloud@2.42/avatar/avatar.png
       tags: [在原主题的基础上添加了仿github日历云和标签云以及文章分类雷达图]
-  - group: '版本：^1.7'
-    items:
-    - name: Yanliang
-      url: https://gyl-coder.top
-      avatar: https://cdn.jsdelivr.net/gh/gyl-coder/gyl-coder.github.com@v1.0.0/img/touxiang.jpg
-      tags: [Java, 简介，自定义]
   - group: '版本：^1.6'
     items:
     - name: 覃浩的博客
