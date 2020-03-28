@@ -6,8 +6,10 @@ meta:
   header: []
 ---
 
-<p center large>Volantis</p>
-<p center small>A Wonderful Theme for Hexo</p>
+<p>
+{% span center large, Volantis %}
+{% span center small, A Wonderful Theme for Hexo %}
+</p>
 <br>
 
 Volantis，一个高度模块化和可定制化、功能相对完善的 Hexo 博客主题，既可以用作个人博客，也适合用来搭建文档。
@@ -38,11 +40,11 @@ curl -s https://volantis.js.org/start | sh
 ```
 如果您还没有博客，执行这行命令将会自动检测并安装所需环境，初始化博客，然后下载安装并应用主题。
 
-{% note link blue %}
+{% noteblock link blue %}
 
 脚本更多使用方法：[#hexo.sh](https://xaoxuu.com/wiki/hexo.sh/)
 
-{% endnote %}
+{% endnoteblock %}
 
 <!-- endtab -->
 
@@ -75,10 +77,10 @@ npm i -S hexo-renderer-stylus
 
 本主题采用 [MIT开源许可协议](https://cdn.jsdelivr.net/gh/xaoxuu/hexo-theme-volantis/LICENSE) ，永久无限制免费使用。
 
-{% note quote light %}
+{% noteblock quote light %}
 **MIT开源许可协议**
 
 被授权人有权利使用、复制、修改、合并、出版发行、散布、再授权及贩售软件及软件的副本。
 被授权人可根据程式的需要修改授权条款为适当的内容。
 在软件和软件的所有副本中都必须包含版权声明和许可声明。
-{% endnote %}
+{% endnoteblock %}

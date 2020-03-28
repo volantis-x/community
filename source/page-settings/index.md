@@ -19,9 +19,9 @@ meta:
 | links | 友链页面 |
 | list | 列表页面 |
 
-{% note info %}
+{% noteblock info %}
 post 页面几乎与 page 页面相同，但是，post 页面更适用于文章，网页向下滚动时导航栏会上翻显出文章标题。
-{% endnote %}
+{% endnoteblock %}
 
 ## front-matter
 
@@ -180,9 +180,9 @@ links:
 
 ```
 
-{% note info %}
+{% noteblock info %}
 姓名、头像、链接是必填项，其它选填。
-{% endnote %}
+{% endnoteblock %}
 
 ### 404页面
 
@@ -295,9 +295,9 @@ date: 2020-02-21
 这是正文
 ```
 
-{% note warning %}
+{% noteblock warning %}
 **注意**： `<!-- more -->` 前后一定要有空行，不然可能导致显示错位。
-{% endnote %}
+{% endnoteblock %}
 
 ### 设置文章作者
 
@@ -325,9 +325,9 @@ music:
 ---
 ```
 
-{% note play %}
+{% noteblock play %}
 实际效果见： [#contributors](/contributors/)
-{% endnote %}
+{% endnoteblock %}
 
 ## 显示 meta 标签
 
@@ -374,9 +374,9 @@ icons: [fas fa-fire red, fas fa-star green]
 
 图标仅在归档页面中显示，可以用来标注热门文章。
 
-{% note info %}
+{% noteblock info %}
 可以通过 red / blue / green / yellow / orange / theme / accent 来设置图标的颜色
-{% endnote %}
+{% endnoteblock %}
 
 ## meta 区域显示外链按钮
 

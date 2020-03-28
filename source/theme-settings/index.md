@@ -8,14 +8,14 @@ meta:
 
 如无特殊说明，本页面的配置信息写在 <red>**主题**</red> 的 `config.yml` 文件中。
 
-{% note idea green %}
+{% noteblock idea green %}
 **实用小技巧**
 
 所有需要写在主题配置文件中的配置都可以写在站点配置文件的 `theme_config:` 中
 详见 Hexo 官方文档 [#覆盖主题配置](https://hexo.io/zh-cn/docs/configuration#%E8%A6%86%E7%9B%96%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE)
 也可以直接查看本站源码中站点配置文件的写法：[_config.yml](https://github.com/xaoxuu/volantis-docs/blob/master/_config.yml)
 
-{% endnote %}
+{% endnoteblock %}
 
 
 ## 主题基本信息
@@ -263,9 +263,9 @@ on_desktop:
       url: blog/2019-07-23-heartmate/
 ```
 
-{% note play %}
+{% noteblock play %}
 这个示例的实际效果： https://xaoxuu.com
-{% endnote %}
+{% endnoteblock %}
 
 ## 模块化布局
 您可以自由决定每个页面是否显示侧边栏，侧边栏显示什么小部件，正文区域显示什么卡片，文章卡片显示什么meta。
@@ -549,9 +549,9 @@ related_posts:
 ```
 npm i -S hexo-related-popular-posts
 ```
-{% note warning %}
+{% noteblock warning %}
 值得注意的是，开启了这个功能之后，每次修改文章内容包括 `front-matter` 之后，都需要重新 `hexo s`。
-{% endnote %}
+{% endnoteblock %}
 
 ### 文章版权部件
 ```yaml blog/themes/volantis/_config.yml
@@ -745,9 +745,9 @@ plugins:
     list_folded: true
 ```
 
-{% note warning %}
+{% noteblock warning %}
 APlayer播放器只可以在中国大陆地区使用。相关文档： [APlayer](https://aplayer.js.org/) | [MetingJS](https://github.com/metowolf/MetingJS)
-{% endnote %}
+{% endnoteblock %}
 
 ## 评论系统
 ```yaml blog/themes/volantis/_config.yml

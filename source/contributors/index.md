@@ -61,6 +61,6 @@ music:
 | LiYanan2004 | [在 material-x 的主题中加入深/浅模式](https://liyanan2004.ml/Enable_Dark_mode_in_your_blog_with_material-x//) |
 | WuYongzhi·Blog | [Hexo主题MaterialX添加Pjax](https://wuyongzhi.top/undefined/999270176/) |
 
-{% note info %}
+{% noteblock info %}
 把主题分享到 SegmenuFault、简书、知乎等平台可以快速增加「Volantis」主题被发现和使用的几率，所以如果你喜欢本主题，欢迎写原创文章或者转载分享哦。
-{% endnote %}
+{% endnoteblock %}

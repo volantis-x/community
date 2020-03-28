@@ -12,86 +12,119 @@ mathjax: true
 
 ## 文本属性
 
-
-{% tabs p, 2 %}
+{% tabs p, 3 %}
 
 <!-- tab 格式 -->
 
-```html
-<p 属性参数>文本内容</p>
+```md 行内文本
+{% span 样式参数, 文本内容 %}
 ```
-{% note up green %}
+```md 独立段落
+{% p 样式参数, 文本内容 %}
+```
+{% noteblock up green %}
 
-请将您的 Volantis 升级至 1.5.2 版本以上使用。
+请将您的 Volantis 升级至 2.2.2 版本以上使用。
 
-{% endnote %}
+{% endnoteblock %}
 
 <!-- endtab -->
 
-<!-- tab 彩色文字 -->
+<!-- tab 样式参数 -->
 
-在一段话中方便插入各种颜色的标签，包括：<red>红色</red>、<yellow>黄色</yellow>、<green>绿色</green>、<cyan>青色</cyan>、<blue>蓝色</blue>、<gray>灰色</gray>。
+参数位置可以写颜色、大小和对齐方向，多个参数用空格隔开
 
-```md blog/source/_posts/example.md:
-在一段话中方便插入各种颜色的标签，包括：<red>红色</red>、<yellow>黄色</yellow>、<green>绿色</green>、<cyan>青色</cyan>、<blue>蓝色</blue>、<gray>灰色</gray>。
+{% p subtitle, 颜色 %}
+
+```md
+red, yellow, green, cyan, blue, gray
 ```
+
+{% p subtitle, 大小 %}
+
+```md
+huge, large, small
+```
+
+{% p subtitle, 对齐方向 %}
+
+```md
+left, center, right
+```
+
 
 <!-- endtab -->
 
-<!-- tab 超大文字 -->
+<!-- tab 演示 -->
+
+{% p subtitle, 彩色文字 %}
+
+在一段话中方便插入各种颜色的标签，包括：{% span red, 红色 %}、{% span yellow, 黄色 %}、{% span green, 绿色 %}、{% span cyan, 青色 %}、{% span blue, 蓝色 %}、{% span gray, 灰色 %}。
+
+```md example.md:
+在一段话中方便插入各种颜色的标签，包括：{% span red, 红色 %}、{% span yellow, 黄色 %}、{% span green, 绿色 %}、{% span cyan, 青色 %}、{% span blue, 蓝色 %}、{% span gray, 灰色 %}。
+```
+
+{% p subtitle, 超大文字 %}
 
 文档「开始」页面中的标题部分就是超大文字。
 
-<p center large>Volantis</p>
-<p center small>A Wonderful Theme for Hexo</p>
+{% p center large, Volantis %}
+{% p center small, A Wonderful Theme for Hexo %}
 
-```md blog/source/_posts/example.md:
-<p center large>Volantis</p>
-<p center small>A Wonderful Theme for Hexo</p>
+
+```md example.md:
+{% p center large, Volantis %}
+{% p center small, A Wonderful Theme for Hexo %}
 ```
-
-目前支持的尺寸有：`small`、`large`、`huge`，布局有：`left`、`center`、`right`。
 
 <!-- endtab -->
 
 {% endtabs %}
 
-## Note
+## Note & NoteBlock
 
-Note 是 Blockquote 的增强版，在左边显示图标，并且可以自定颜色。
+NoteBlock 是 Blockquote 的增强版，在左边显示图标，并且可以自定颜色。而 Note 是 NoteBlock 的简便写法。
 
 {% tabs note, 3 %}
 
 <!-- tab 格式 -->
 
-```md
-{% note 参数 %}
+```md Note
+{% note 参数, 文本内容 %}
+```
+```md NoteBlock
+{% noteblock 参数 %}
 
 文本段落
 
-{% endnote %}
+{% endnoteblock %}
 ```
-{% note up green %}
+{% noteblock up green %}
 
-请将您的 Volantis 升级至 2.2 版本以上使用。
+请将您的 Volantis 升级至 2.3 版本以上使用。
 
-{% endnote %}
+{% endnoteblock %}
 
 <!-- endtab -->
 
 <!-- tab 参数 -->
 
-参数位置可以写 `type` 和 `color` ，多个参数用空格隔开
+参数位置可以写图标和颜色，多个参数用空格隔开
 
-```md colorful type
+{% p subtitle, 图标 %}
+
+```md 彩色的
 quote, info, warning, done/success, error/danger
 ```
 
-```md more type
+```md 灰色的，也可以指定颜色
 radiation, bug, idea, link, paperclip, todo, msg, guide, download, up, undo
 ```
 
-```md color
+{% p subtitle, 颜色 %}
+
+```md 指定颜色
 clear, light, gray, red, yellow, green, cyan, blue
 ```
 
@@ -99,42 +132,42 @@ clear, light, gray, red, yellow, green, cyan, blue
 
 <!-- tab 演示 -->
 
-{% note quote %}
-**note quote**
+{% p subtitle, Note %}
+
+```md
+{% note, 为简单的一句话提供的简便写法。 %}
+```
+{% note, 为简单的一句话提供的简便写法。 %}
+
+```md
+{% note success, 支持同样丰富的参数。 %}
+```
+{% note success, 支持同样丰富的参数。 %}
+
+{% p subtitle, NoteBlock %}
+
+可以在区块中放置一些复杂的结构，支持嵌套。
+
+{% noteblock quote %}
+
+{% p subtitle, 小标题 %}
 
 Windows 10不是為所有人設計,而是為每個人設計
-{% endnote %}
 
-{% note %}
-**note**
-
-正在处理一些事情
-{% endnote %}
-
-{% note success %}
-**note success**
-
+{% p subtitle, 嵌套测试 %}
+{% noteblock %}
 请坐和放宽，我正在帮你搞定一切...
-{% endnote %}
+{% endnoteblock %}
 
-{% note warning %}
-**note warning**
+{% p subtitle, Folding 测试 %}
+{% folding 点击查看更多, green %}
 
-不要说我们没有警告过你
-{% endnote %}
+{% note warning, 不要说我们没有警告过你 %}
+{% note bug red, 我们都有不顺利的时候 %}
+{% note undo light, ![win10-rollback.jpg](https://i.loli.net/2020/03/28/RsUKraql1eCMSnm.jpg) %}
 
-{% note red bug %}
-**note red bug**
-
-我们都有不顺利的时候
-{% endnote %}
-
-{% note undo light %}
-**note undo light**
-
-我们都有不顺利的时候
-{% endnote %}
-
+{% endfolding %}
+{% endnoteblock %}
 
 <!-- endtab -->
 
@@ -150,11 +183,11 @@ Windows 10不是為所有人設計,而是為每個人設計
 {% btn 样式参数, 图标（可选）, 按钮标题, 链接地址 %}
 ```
 
-{% note up green %}
+{% noteblock up green %}
 
 请将您的 Volantis 升级至 2.2.2 版本以上使用。
 
-{% endnote %}
+{% endnoteblock %}
 
 <!-- endtab -->
 
@@ -217,11 +250,11 @@ large 按钮更具有强调作用，建议搭配 `center` 使用：
 {% endbtns %}
 ```
 
-{% note up green %}
+{% noteblock up green %}
 
 请将您的 Volantis 升级至 2.2 版本以上使用。
 
-{% endnote %}
+{% endnoteblock %}
 
 <!-- endtab -->
 
@@ -328,18 +361,18 @@ large 按钮更具有强调作用，建议搭配 `center` 使用：
 
 <!-- tab 格式 -->
 
-```md blog/source/_posts/example.md:
+```md example.md:
 {% fancybox 参数, 列数 %}
 ![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/B18FCBB3-67FD-48CC-B4F3-457BA145F17A.jpeg)
 ![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/67239FBB-E15D-4F4F-8EE8-0F1C9F3C4E7C.jpeg)
 {% endfancybox %}
 ```
 
-{% note up green %}
+{% noteblock up green %}
 
 请将您的 Volantis 升级至 2.2 版本以上使用。
 
-{% endnote %}
+{% endnoteblock %}
 
 <!-- endtab -->
 
@@ -413,11 +446,11 @@ large 按钮更具有强调作用，建议搭配 `center` 使用：
 {% endtabs %}
 ```
 
-{% note up green %}
+{% noteblock up green %}
 
 请将您的 Volantis 升级至 2.1 版本以上使用。
 
-{% endnote %}
+{% endnoteblock %}
 
 <!-- endtab -->
 
@@ -468,11 +501,11 @@ large 按钮更具有强调作用，建议搭配 `center` 使用：
 {% endfolding %}
 ```
 
-{% note up green %}
+{% noteblock up green %}
 
 请将您的 Volantis 升级至 2.2 版本以上使用。
 
-{% endnote %}
+{% endnoteblock %}
 
 <!-- endtab -->
 
@@ -545,7 +578,7 @@ hahaha
 
 默认是不渲染的，如果文章内有公式，需要在 `front-matter` 中设置开启。
 
-```md blog/source/_posts/example.md:
+```md example.md:
 ---
 title: 渲染公式（MathJax）
 date: 2020-02-23
@@ -598,9 +631,9 @@ $$
 
 {% endfolding %}
 
-{% note info %}
+{% noteblock info %}
 如果公式仍无法正确渲染可以阅读 [@MicDZ](https://www.micdz.cn) 的这篇文章：[《在material-x上使用KaTeX》](https://www.micdz.cn/article/katex-on-volantis/)。
-{% endnote %}
+{% endnoteblock %}
 
 ## Hexo原生支持的标签
 
@@ -626,7 +659,7 @@ code snippet
 [rectangle setX: 10 y: 10 width: 20 height: 20];
 {% endcodeblock %}
 
-```md blog/source/_posts/example.md:
+```md example.md:
 {% codeblock lang:objc %}
 [rectangle setX: 10 y: 10 width: 20 height: 20];
 {% endcodeblock %}
@@ -638,7 +671,7 @@ code snippet
 array.map(callback[, thisArg])
 {% endcodeblock %}
 
-```md blog/source/_posts/example.md:
+```md example.md:
 {% codeblock Array.map %}
 array.map(callback[, thisArg])
 {% endcodeblock %}
@@ -657,7 +690,7 @@ else:
    print(c)
 {% endcodeblock %}
 
-```md blog/source/_posts/example.md:
+```md example.md:
 {% codeblock lang:python line_number:true mark:3,5,8 %}
 n=eval(input())
 if n==0:
@@ -672,7 +705,7 @@ else:
 
 ### Pull Quote
 在文章中插入 `Pull quote`。
-```md blog/source/_posts/example.md:
+```md example.md:
 {% pullquote [class] %}
 content
 {% endpullquote %}
@@ -680,37 +713,37 @@ content
 
 ### jsFiddle
 在文章中嵌入 `jsFiddle`。
-```md blog/source/_posts/example.md:
+```md example.md:
 {% jsfiddle shorttag [tabs] [skin] [width] [height] %}
 ```
 
 ### Gist
 在文章中嵌入 `Gist`，<red>注意</red>：在国内无法加载。
-```md blog/source/_posts/example.md:
+```md example.md:
 {% gist gist_id [filename] %}
 ```
 
 ### iframe
 在文章中插入 `iframe`。
-```md blog/source/_posts/example.md:
+```md example.md:
 {% iframe url [width] [height] %}
 ```
 
 ### Image
 在文章中插入指定大小的图片。
-```md blog/source/_posts/example.md:
+```md example.md:
 {% img [class names] /path/to/image [width] [height] '"title text" "alt text"' %}
 ```
 
 ### Link
 在文章中插入链接，并自动给外部链接添加 `target="_blank"` 属性。
-```md blog/source/_posts/example.md:
+```md example.md:
 {% link text url [external] [title] %}
 ```
 
 ### Include Code
 插入 `source/downloads/code` 文件夹内的代码文件。`source/downloads/code` 不是固定的，取决于你在配置文件中 `code_dir` 的配置。
-```md blog/source/_posts/example.md:
+```md example.md:
 {% include_code [title] [lang:language] [from:line] [to:line] path/to/file %}
 ```
 
@@ -752,7 +785,7 @@ content
 
 引用这篇文章：{% post_link news/2020-02-22 %}
 
-```md blog/source/_posts/example.md:
+```md example.md:
 引用这篇文章：{% post_link news/2020-02-22 %}
 ```
 {% endfolding %}
@@ -761,6 +794,6 @@ content
 
 在文章中使用 `<!-- more -->`，那么 `<!-- more -->` 之前的文字将会被视为摘要。首页中将只出现这部分文字，同时这部分文字也会出现在正文之中。
 
-{% note link %}
+{% noteblock link %}
 更多请见Hexo官方文档：[#标签插件](https://hexo.io/zh-cn/docs/tag-plugins)
-{% endnote %}
+{% endnoteblock %}

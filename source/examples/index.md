@@ -210,6 +210,6 @@ links:
 
 {% endtabs %}
 
-{% note success %}
+{% noteblock success %}
 本站使用了持续集成，在您提交的更改通过审核并合并代码的几分钟后再刷新网页即生效。
-{% endnote %}
+{% endnoteblock %}

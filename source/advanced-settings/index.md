@@ -57,9 +57,9 @@ git submodule add git@github.com:xaoxuu/hexo-theme-volantis themes/volantis
 use_cdn: true
 ```
 
-{% note info %}
+{% noteblock info %}
 如果你需要对样式进行 DIY，可以只关闭 style 文件的 CDN。
-{% endnote %}
+{% endnoteblock %}
 
 ### 自定义 CDN
 
@@ -84,9 +84,9 @@ layout:
     sidebar: [related_posts]
 ```
 
-{% note link %}
+{% noteblock link %}
 插件的自定义配置方法： [hexo-related-popular-posts](https://github.com/tea3/hexo-related-popular-posts)
-{% endnote %}
+{% endnoteblock %}
 
 ## 分析与统计
 
