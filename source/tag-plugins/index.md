@@ -414,6 +414,15 @@ large 按钮更具有强调作用，建议搭配 `center` 使用：
 
 {% endtabs %}
 
+## Video
+
+{% video https://github.com/xaoxuu/volantis-docs/releases/download/assets/IMG_0341.mov %}
+
+```md
+{% video https://github.com/xaoxuu/volantis-docs/releases/download/assets/IMG_0341.mov %}
+```
+
+{% note up green, 请将您的 Volantis 升级至 2.3 版本以上使用。 %}
 
 ## Tab
 
