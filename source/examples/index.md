@@ -11,6 +11,10 @@ links:
       url: https://xaoxuu.com
       avatar: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png
       tags: [主题作者]
+    - name: Huanhao
+      url: https://mrhuanhao.cn/
+      avatar: https://cdn.jsdelivr.net/gh/mrhuanhao/cdn/myimg/huanhao.jpg
+      tags: [2.3主题, linux]
   - group: '版本：^2.2'
     desc: 支持 Note 标签
     items:
@@ -18,10 +22,6 @@ links:
       url: https://charlie-zzy.github.io
       avatar: https://cdn.jsdelivr.net/gh/charlie-zzy/imgCDN/avatar.png
       tags: [暗色, 最新主题]
-    - name: Huanhao
-      url: https://mrhuanhao.cn/
-      avatar: https://cdn.jsdelivr.net/gh/mrhuanhao/cdn/myimg/huanhao.jpg
-      tags: [2.2主题, linux]
     - name: Yanliang
       url: https://gyl-coder.top
       avatar: https://cdn.jsdelivr.net/gh/gyl-coder/gyl-coder.github.com@v1.0.0/img/touxiang.jpg
