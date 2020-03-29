@@ -26,6 +26,10 @@ links:
       url: https://gyl-coder.top
       avatar: https://cdn.jsdelivr.net/gh/gyl-coder/gyl-coder.github.com@v1.0.0/img/touxiang.jpg
       tags: [Java, 简介，自定义]
+    - name: Gmix
+      url: https://ilx.info
+      avatar: https://ilx.info/images/author.png
+      tags: [Linux, 小菜鸟]
   - group: '版本：^2.1'
     desc: 支持 Tab 标签
     items:
