@@ -160,9 +160,13 @@ Windows 10不是為所有人設計,而是為每個人設計
 ```
 {% note warning, 不要说我们没有警告过你 %}
 ```md
-{% note bug red, 我们都有不顺利的时候 %}
+{% noteblock bug red %}
+我们都有不顺利的时候
+{% endnoteblock %}
 ```
-{% note bug red, 我们都有不顺利的时候 %}
+{% noteblock bug red %}
+我们都有不顺利的时候
+{% endnoteblock %}
 
 {% endfolding %}
 {% endnoteblock %}
@@ -178,8 +182,10 @@ Windows 10不是為所有人設計,而是為每個人設計
 <!-- tab 格式 -->
 
 ```
-{% btn 样式参数, 图标（可选）, 按钮标题, 链接地址 %}
+{% btn 样式参数（可选）, 图标（可选）, 按钮标题, 链接地址 %}
 ```
+
+可选的参数可以省略，但是前后顺序不能乱。
 
 {% note up green, 请将您的 Volantis 升级至 2.3 版本以上使用。 %}
 
@@ -241,11 +247,12 @@ large 按钮更具有强调作用，建议搭配 `center` 使用：
 
 ```md
 {% btns 参数 %}
-[![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png)按钮标题](/)
+{% cell 标题, 链接, 图片或者图标 %}
+{% cell 标题, 链接, 图片或者图标 %}
 {% endbtns %}
 ```
 
-{% note up green, 请将您的 Volantis 升级至 2.2 版本以上使用。 %}
+{% note up green, 请将您的 Volantis 升级至 2.3 版本以上使用。 %}
 
 <!-- endtab -->
 
@@ -261,7 +268,7 @@ large 按钮更具有强调作用，建议搭配 `center` 使用：
 
 ```md 示例
 {% btns circle %}
-[![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png)xaoxuu](/)
+{% cell xaoxuu, https://xaoxuu.com, https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png %}
 {% endbtns %}
 ```
 
@@ -278,8 +285,8 @@ large 按钮更具有强调作用，建议搭配 `center` 使用：
 
 ```md 示例
 {% btns rounded grid5 %}
-[<i class='fas fa-download'></i> 下载源码](/)
-[<i class='fas fa-book-open'></i> 查看文档](/)
+{% cell 下载源码, /, fas fa-download %}
+{% cell 查看文档, /, fas fa-book-open %}
 {% endbtns %}
 ```
 
@@ -311,17 +318,17 @@ large 按钮更具有强调作用，建议搭配 `center` 使用：
 
 如果需要显示类似「团队成员」之类的一组含有头像的链接：
 {% btns circle grid5 %}
-[![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png)xaoxuu](/)
-[![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png)xaoxuu](/)
-[![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png)xaoxuu](/)
-[![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png)xaoxuu](/)
-[![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png)xaoxuu](/)
+{% cell xaoxuu, https://xaoxuu.com, https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png %}
+{% cell xaoxuu, https://xaoxuu.com, https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png %}
+{% cell xaoxuu, https://xaoxuu.com, https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png %}
+{% cell xaoxuu, https://xaoxuu.com, https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png %}
+{% cell xaoxuu, https://xaoxuu.com, https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png %}
 {% endbtns %}
 
 或者含有图标的按钮：
 {% btns rounded grid5 %}
-[<i class='fas fa-download'></i> 下载源码](/)
-[<i class='fas fa-book-open'></i> 查看文档](/)
+{% cell 下载源码, /, fas fa-download %}
+{% cell 查看文档, /, fas fa-book-open %}
 {% endbtns %}
 
 
