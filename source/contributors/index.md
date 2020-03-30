@@ -24,6 +24,7 @@ music:
 <a href='https://github.com/MicDZ'><img src='https://avatars2.githubusercontent.com/u/34596177?s=60&v=4'>MicDZ</a>
 <a href='https://github.com/lunhui1994'><img src='https://avatars2.githubusercontent.com/u/18746902?s=60&v=4'>lunhui1994</a>
 <a href='https://github.com/ic3evi1'><img src='https://avatars0.githubusercontent.com/u/11464700?s=60&v=4'>ic3evi1</a>
+<a href='https://github.com/cofm'><img src='https://avatars2.githubusercontent.com/u/9138369?s=60&v=4'>cofm</a>
 <a href='https://github.com/WillyChen123'><img src='https://avatars2.githubusercontent.com/u/8603271?s=60&v=4'>WillyChen123</a>
 <a href='https://github.com/TRHX'><img src='https://avatars3.githubusercontent.com/u/42269246?s=60&v=4'>TRHX</a>
 <a href='https://github.com/PHIKN1GHT'><img src='https://avatars0.githubusercontent.com/u/42083023?s=60&v=4'>PHIKN1GHT</a>
