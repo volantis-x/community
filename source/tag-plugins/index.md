@@ -12,54 +12,75 @@ mathjax: true
 
 ## Span & P
 
-{% tabs p, 3 %}
+请将您的 Volantis 升级至 <u>2.3</u> 版本以上使用。
 
-<!-- tab 格式 -->
+{% tabs span-p, 4 %}
 
-```md 行内文本
+<!-- tab 语法格式 -->
+
+{% p subtitle, 行内文本 %}
+
+```md
 {% span 样式参数, 文本内容 %}
 ```
-```md 独立段落
+
+{% p subtitle, 独立段落 %}
+
+```md
 {% p 样式参数, 文本内容 %}
 ```
-{% note up green, 请将您的 Volantis 升级至 2.3 版本以上使用。 %}
 
 <!-- endtab -->
 
-<!-- tab 样式参数 -->
+<!-- tab 参数列表 -->
 
-参数位置可以写颜色、大小和对齐方向，多个参数用空格隔开
+样式参数位置可以写颜色、大小和对齐方向，多个样式参数用空格隔开。
 
 {% p subtitle, 颜色 %}
 
-```md
+```
 red, yellow, green, cyan, blue, gray
 ```
 
 {% p subtitle, 大小 %}
 
-```md
-huge, large, small
+```
+small, large, huge, ultra
 ```
 
 {% p subtitle, 对齐方向 %}
 
-```md
+```
 left, center, right
 ```
 
 
 <!-- endtab -->
 
-<!-- tab 演示 -->
+<!-- tab 示例写法 -->
 
 {% p subtitle, 彩色文字 %}
-
-在一段话中方便插入各种颜色的标签，包括：{% span red, 红色 %}、{% span yellow, 黄色 %}、{% span green, 绿色 %}、{% span cyan, 青色 %}、{% span blue, 蓝色 %}、{% span gray, 灰色 %}。
 
 ```md example.md:
 在一段话中方便插入各种颜色的标签，包括：{% span red, 红色 %}、{% span yellow, 黄色 %}、{% span green, 绿色 %}、{% span cyan, 青色 %}、{% span blue, 蓝色 %}、{% span gray, 灰色 %}。
 ```
+
+{% p subtitle, 超大文字 %}
+
+```md example.md:
+文档「开始」页面中的标题部分就是超大文字。
+
+{% p center large, Volantis %}
+{% p center small, A Wonderful Theme for Hexo %}
+```
+
+<!-- endtab -->
+
+<!-- tab 示例效果 -->
+
+{% p subtitle, 彩色文字 %}
+
+在一段话中方便插入各种颜色的标签，包括：{% span red, 红色 %}、{% span yellow, 黄色 %}、{% span green, 绿色 %}、{% span cyan, 青色 %}、{% span blue, 蓝色 %}、{% span gray, 灰色 %}。
 
 {% p subtitle, 超大文字 %}
 
@@ -68,42 +89,39 @@ left, center, right
 {% p center large, Volantis %}
 {% p center small, A Wonderful Theme for Hexo %}
 
-
-```md example.md:
-{% p center large, Volantis %}
-{% p center small, A Wonderful Theme for Hexo %}
-```
-
 <!-- endtab -->
 
 {% endtabs %}
 
 ## Note & NoteBlock
 
-NoteBlock 是 Blockquote 的增强版，在左边显示图标，并且可以自定颜色。而 Note 是 NoteBlock 的简便写法。
+NoteBlock 是 Blockquote 的增强版，在左边显示图标，并且可以自定颜色。而 Note 是 NoteBlock 的简便写法。请将您的 Volantis 升级至 <u>2.3</u> 版本以上使用。
 
-{% tabs note, 3 %}
+{% tabs note, 4 %}
 
-<!-- tab 格式 -->
+<!-- tab 语法格式 -->
 
-```md Note
-{% note 参数, 文本内容 %}
+{% p subtitle, Note %}
+
+```md
+{% note 样式参数, 文本内容 %}
 ```
-```md NoteBlock
-{% noteblock 参数 %}
+
+{% p subtitle, NoteBlock %}
+
+```md
+{% noteblock 样式参数 %}
 
 文本段落
 
 {% endnoteblock %}
 ```
 
-{% note up green, 请将您的 Volantis 升级至 2.3 版本以上使用。 %}
-
 <!-- endtab -->
 
-<!-- tab 参数 -->
+<!-- tab 参数列表 -->
 
-参数位置可以写图标和颜色，多个参数用空格隔开
+样式参数位置可以写图标和颜色，多个样式参数用空格隔开。
 
 {% p subtitle, 图标 %}
 
@@ -123,18 +141,51 @@ clear, light, gray, red, yellow, green, cyan, blue
 
 <!-- endtab -->
 
-<!-- tab 演示 -->
+<!-- tab 示例写法 -->
 
 {% p subtitle, Note %}
 
-```md
-{% note, 为简单的一句话提供的简便写法。 %}
-```
+```md example.md:
 {% note, 为简单的一句话提供的简便写法。 %}
 
-```md
 {% note success, 支持同样丰富的参数。 %}
 ```
+
+{% p subtitle, NoteBlock %}
+
+```md example.md:
+可以在区块中放置一些复杂的结构，支持嵌套。
+
+{% noteblock quote %}
+
+{% p subtitle, 小标题 %}
+
+Windows 10不是為所有人設計,而是為每個人設計
+
+{% p subtitle, 嵌套测试 %}
+{% noteblock %}
+请坐和放宽，我正在帮你搞定一切...
+{% endnoteblock %}
+
+{% p subtitle, Folding 测试 %}
+{% folding 点击查看更多 %}
+
+{% note warning, 不要说我们没有警告过你 %}
+{% noteblock bug red %}
+我们都有不顺利的时候
+{% endnoteblock %}
+
+{% endfolding %}
+{% endnoteblock %}
+```
+<!-- endtab -->
+
+<!-- tab 示例效果 -->
+
+{% p subtitle, Note %}
+
+{% note, 为简单的一句话提供的简便写法。 %}
+
 {% note success, 支持同样丰富的参数。 %}
 
 {% p subtitle, NoteBlock %}
@@ -153,17 +204,9 @@ Windows 10不是為所有人設計,而是為每個人設計
 {% endnoteblock %}
 
 {% p subtitle, Folding 测试 %}
-{% folding open, 点击查看更多 %}
+{% folding 点击查看更多 %}
 
-```md
 {% note warning, 不要说我们没有警告过你 %}
-```
-{% note warning, 不要说我们没有警告过你 %}
-```md
-{% noteblock bug red %}
-我们都有不顺利的时候
-{% endnoteblock %}
-```
 {% noteblock bug red %}
 我们都有不顺利的时候
 {% endnoteblock %}
@@ -177,52 +220,52 @@ Windows 10不是為所有人設計,而是為每個人設計
 
 ## 基础按钮
 
-{% tabs btn, 3 %}
+请将您的 Volantis 升级至 <u>2.3</u> 版本以上使用。
 
-<!-- tab 格式 -->
+{% tabs btn, 4 %}
+
+<!-- tab 语法格式 -->
 
 ```
 {% btn 样式参数（可选）, 图标（可选）, 按钮标题, 链接地址 %}
 ```
 
-可选的参数可以省略，但是前后顺序不能乱。
-
-{% note up green, 请将您的 Volantis 升级至 2.3 版本以上使用。 %}
-
+{% note warning, 可选的参数可以省略，但是前后顺序不能乱。 %}
 
 <!-- endtab -->
 
-<!-- tab 参数 -->
+<!-- tab 参数列表 -->
 
 {% p subtitle, 样式参数 %}
 
-可选的参数有： `regular` 、 `large` 、 `center`
-
-```md 不设置参数
-{% btn, 按钮, / %}
 ```
-```md regular button
-{% btn regular, fas fa-play-circle, 示例博客, https://xaoxuu.com %}
-```
-```md large center button
-{% btn center large, fas fa-download, 开始使用, https://volantis.js.org/getting-started/ %}
+regular, large, center
 ```
 
 {% p subtitle, 图标 %}
 
 第1个或者第2个参数包含 `fa-` 的那个被识别为图标。
 
-{% p subtitle, 文本 %}
-
-按钮的文本。
-
-{% p subtitle, 链接地址 %}
-
-按钮的地址。
 
 <!-- endtab -->
 
-<!-- tab 演示 -->
+<!-- tab 示例写法 -->
+
+```md example.md:
+不设置任何参数的 {% btn, 按钮, / %} 适合融入段落中。
+
+regular 按钮适合独立于段落之外：
+
+{% btn regular, fas fa-play-circle, 示例博客, https://xaoxuu.com %}
+
+large 按钮更具有强调作用，建议搭配 `center` 使用：
+
+{% btn center large, fas fa-download, 开始使用, https://volantis.js.org/getting-started/ %}
+```
+
+<!-- endtab -->
+
+<!-- tab 示例效果 -->
 
 不设置任何参数的 {% btn, 按钮, / %} 适合融入段落中。
 
@@ -241,61 +284,81 @@ large 按钮更具有强调作用，建议搭配 `center` 使用：
 
 ## 富文本按钮
 
-{% tabs btns, 3 %}
+请将您的 Volantis 升级至 <u>2.3</u> 版本以上使用。
 
-<!-- tab 格式 -->
+{% tabs btns, 4 %}
 
-```md
-{% btns 参数 %}
+<!-- tab 语法格式 -->
+
+```
+{% btns 样式参数 %}
 {% cell 标题, 链接, 图片或者图标 %}
 {% cell 标题, 链接, 图片或者图标 %}
 {% endbtns %}
 ```
 
-{% note up green, 请将您的 Volantis 升级至 2.3 版本以上使用。 %}
+<!-- endtab -->
+
+<!-- tab 参数列表 -->
+
+样式参数位置可以写图片样式、布局方式，多个样式参数用空格隔开。
+
+{% p subtitle, 圆角样式 %}
+
+默认为方形
+
+```
+rounded, circle
+```
+
+
+{% p subtitle, 布局方式 %}
+
+默认为自动宽度，适合视野内只有一两个的情况。
+
+| 参数 | 含义 |
+| :-- | :-- |
+| wide | 宽一点的按钮 |
+| fill | 填充布局，自动铺满至少一行，多了会换行。 |
+| center | 居中，按钮之间是固定间距。 |
+| around | 居中分散 |
+| grid2 | 等宽最多2列，屏幕变窄会适当减少列数。 |
+| grid3 | 等宽最多3列，屏幕变窄会适当减少列数。 |
+| grid4 | 等宽最多4列，屏幕变窄会适当减少列数。 |
+| grid5 | 等宽最多5列，屏幕变窄会适当减少列数。 |
+
+{% p subtitle, 增加文字样式 %}
+
+可以在容器内增加 `<b>标题</b>` 和 `<p>描述文字</p>`
 
 <!-- endtab -->
 
-<!-- tab 参数 -->
+<!-- tab 示例写法 -->
 
-参数位置可以写图片样式、布局方式，多个参数用空格隔开
+如果需要显示类似「团队成员」之类的一组含有头像的链接：
 
-{% p subtitle, 图片样式 %}
-
-- 默认为方形
-- 圆角矩形（`rounded`），适合app图标。
-- 圆形（`circle`），适合头像。
-
-```md 示例
-{% btns circle %}
+```md example.md:
+{% btns circle grid5 %}
+{% cell xaoxuu, https://xaoxuu.com, https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png %}
+{% cell xaoxuu, https://xaoxuu.com, https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png %}
+{% cell xaoxuu, https://xaoxuu.com, https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png %}
+{% cell xaoxuu, https://xaoxuu.com, https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png %}
 {% cell xaoxuu, https://xaoxuu.com, https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png %}
 {% endbtns %}
 ```
 
-{% p subtitle, 布局方式 %}
+或者含有图标的按钮：
 
-- 默认为自动宽度，适合视野内只有一两个的情况，多了显乱。
-- 宽一点的按钮（`wide`）。
-- 填充布局（`fill`），自动铺满至少一行，多了会换行。
-- 居中（`center`），按钮之间是固定间距。
-- 居中分散（`around`）。
-- 网格布局（`grid3`），最多3列，屏幕变窄会适当减少列数。
-- 网格布局（`grid4`），最多4列，屏幕变窄会适当减少列数。
-- 网格布局（`grid5`），最多5列，屏幕变窄会适当减少列数。
-
-```md 示例
+```md example.md:
 {% btns rounded grid5 %}
 {% cell 下载源码, /, fas fa-download %}
 {% cell 查看文档, /, fas fa-book-open %}
 {% endbtns %}
 ```
 
-{% p subtitle, 增加文字样式 %}
-
-可以在容器内增加 `<b>标题</b>` 和 `<p>描述文字</p>`
-
-```html 图文并茂的例子
 圆形图标 + 标题 + 描述 + 图片 + 网格4列 + 居中
+
+```md example.md:
 {% btns circle center grid4 %}
 <a href='https://apps.apple.com/cn/app/heart-mate-pro-hrm-utility/id1463348922?ls=1'>
   <i class='fab fa-apple'></i>
@@ -314,7 +377,7 @@ large 按钮更具有强调作用，建议搭配 `center` 使用：
 
 <!-- endtab -->
 
-<!-- tab 演示 -->
+<!-- tab 示例效果 -->
 
 如果需要显示类似「团队成员」之类的一组含有头像的链接：
 {% btns circle grid5 %}
@@ -355,9 +418,11 @@ large 按钮更具有强调作用，建议搭配 `center` 使用：
 
 ## Fancybox
 
-{% tabs fancybox, 3 %}
+请将您的 Volantis 升级至 <u>2.2</u> 版本以上使用。
 
-<!-- tab 格式 -->
+{% tabs fancybox, 4 %}
+
+<!-- tab 语法格式 -->
 
 ```md example.md:
 {% fancybox 参数, 列数 %}
@@ -366,16 +431,21 @@ large 按钮更具有强调作用，建议搭配 `center` 使用：
 {% endfancybox %}
 ```
 
-{% note up green, 请将您的 Volantis 升级至 2.2 版本以上使用。 %}
-
 <!-- endtab -->
 
-<!-- tab 参数 -->
+<!-- tab 参数列表 -->
 
 {% p subtitle, 对齐方向 %}
 
-默认居中，参数设为 `left` 则左对齐。
+```
+left, center, right
+```
 
+{% p subtitle, 缩放 %}
+
+```
+stretch
+```
 
 {% p subtitle, 列数 %}
 
@@ -384,7 +454,44 @@ large 按钮更具有强调作用，建议搭配 `center` 使用：
 
 <!-- endtab -->
 
-<!-- tab 演示 -->
+<!-- tab 示例写法 -->
+
+一行一个图片
+
+```md example.md:
+{% fancybox %}
+![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/41F215B9-261F-48B4-80B5-4E86E165259E.jpeg)
+{% endfancybox %}
+```
+
+一行多个图片（不换行）
+
+```md example.md:
+{% fancybox %}
+![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/B18FCBB3-67FD-48CC-B4F3-457BA145F17A.jpeg)
+![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/67239FBB-E15D-4F4F-8EE8-0F1C9F3C4E7C.jpeg)
+![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/00E0F0ED-9F1C-407A-9AA6-545649D919F4.jpeg)
+{% endfancybox %}
+```
+
+多行多个图片（每行2～8个图片）
+
+```md example.md:
+{% fancybox stretch, 4 %}
+![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/B951AE18-D431-417F-B3FE-A382403FF21B.jpeg)
+![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/landscape/AEB33F9D-7294-4CF1-B8C5-3020748A9D45.jpeg)
+![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/landscape/250662D4-5A21-4AAA-BB63-CD25CF97CFF1.jpeg)
+![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/landscape/10A0FCE5-36A1-4AD0-8CF0-019259A89E03.jpeg)
+![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/B951AE18-D431-417F-B3FE-A382403FF21B.jpeg)
+![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/landscape/AEB33F9D-7294-4CF1-B8C5-3020748A9D45.jpeg)
+![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/landscape/250662D4-5A21-4AAA-BB63-CD25CF97CFF1.jpeg)
+![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/landscape/10A0FCE5-36A1-4AD0-8CF0-019259A89E03.jpeg)
+{% endfancybox %}
+```
+
+<!-- endtab -->
+
+<!-- tab 示例效果 -->
 
 一行一个图片
 {% fancybox %}
@@ -416,22 +523,121 @@ large 按钮更具有强调作用，建议搭配 `center` 使用：
 
 ## Video
 
-{% video https://github.com/xaoxuu/volantis-docs/releases/download/assets/IMG_0341.mov %}
+请将您的 Volantis 升级至 <u>2.3</u> 版本以上使用。
 
-```md
+{% tabs video, 1 %}
+
+<!-- tab 语法格式 -->
+
+{% p subtitle, 单个视频 %}
+
+```md example.md:
+{% video 视频链接 %}
+```
+
+{% p subtitle, 多个视频 %}
+
+```md example.md:
+{% videos 对齐方向, 列数 %}
+{% video 视频链接 %}
+{% video 视频链接 %}
+{% video 视频链接 %}
+{% endvideos %}
+```
+
+
+<!-- endtab -->
+
+<!-- tab 参数列表 -->
+
+{% p subtitle, 对齐方向 %}
+
+```
+left, center, right
+```
+
+{% p subtitle, 列数 %}
+
+逗号后面直接写列数，支持 1 ～ 4 列。
+
+<!-- endtab -->
+
+<!-- tab 示例写法 -->
+
+100%宽度
+
+```md example.md:
 {% video https://github.com/xaoxuu/volantis-docs/releases/download/assets/IMG_0341.mov %}
 ```
 
-{% note up green, 请将您的 Volantis 升级至 2.3 版本以上使用。 %}
+50%宽度
+
+```md example.md:
+{% videos, 2 %}
+{% video https://github.com/xaoxuu/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/xaoxuu/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/xaoxuu/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/xaoxuu/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% endvideos %}
+```
+
+25%宽度
+
+```md example.md:
+{% videos, 4 %}
+{% video https://github.com/xaoxuu/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/xaoxuu/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/xaoxuu/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/xaoxuu/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/xaoxuu/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/xaoxuu/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/xaoxuu/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/xaoxuu/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% endvideos %}
+```
+
+<!-- endtab -->
+
+<!-- tab 示例效果 -->
+
+100%宽度
+
+{% video https://github.com/xaoxuu/volantis-docs/releases/download/assets/IMG_0341.mov %}
+
+50%宽度
+
+{% videos, 2 %}
+{% video https://github.com/xaoxuu/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/xaoxuu/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/xaoxuu/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/xaoxuu/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% endvideos %}
+
+25%宽度
+
+{% videos, 4 %}
+{% video https://github.com/xaoxuu/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/xaoxuu/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/xaoxuu/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/xaoxuu/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/xaoxuu/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/xaoxuu/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/xaoxuu/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/xaoxuu/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% endvideos %}
+
+<!-- endtab -->
+
+{% endtabs %}
+
 
 ## Tab
 
-这部分功能借鉴自 NexT 主题。
-
+请将您的 Volantis 升级至 <u>2.1</u> 版本以上使用。
 
 {% tabs tab-id %}
 
-<!-- tab Tab的写法 -->
+<!-- tab 语法格式 -->
 
 ```md
 {% tabs tab-id %}
@@ -451,48 +657,30 @@ large 按钮更具有强调作用，建议搭配 `center` 使用：
 {% endtabs %}
 ```
 
-{% note up green, 请将您的 Volantis 升级至 2.1 版本以上使用。 %}
-
 <!-- endtab -->
 
-<!-- tab 图片测试 -->
+<!-- tab 参数列表 -->
 
-![](https://i.loli.net/2020/03/18/f5PQlWisvm9zbgK.jpg)
+{% p subtitle, tab-id %}
 
+必填，如果一个页面有多个 tabs 时，tab-id 不能重复。
 
-```md 测试 fancybox ：
-{% fancybox %}
-![](https://i.loli.net/2020/03/18/1TpiUwhuskGm5SV.png)
-![](https://i.loli.net/2020/03/18/LZwBtR5YO4zQH9A.png)
-![](https://i.loli.net/2020/03/18/ySw8zGHRBrDtUg7.png)
-![](https://i.loli.net/2020/03/18/5QTMYsScOz41Vhg.png)
-{% endfancybox %}
-```
+{% p subtitle, tab-name %}
 
-{% fancybox %}
-![](https://i.loli.net/2020/03/18/1TpiUwhuskGm5SV.png)
-![](https://i.loli.net/2020/03/18/LZwBtR5YO4zQH9A.png)
-![](https://i.loli.net/2020/03/18/ySw8zGHRBrDtUg7.png)
-![](https://i.loli.net/2020/03/18/5QTMYsScOz41Vhg.png)
-{% endfancybox %}
-
-
-<!-- endtab -->
-
-<!-- tab 注意 -->
-
-支持的语法格式有限，请尽量<u>不要</u>写太过复杂的东西。有些格式不能识别的话，可以尝试增加空行。
+标签文本。
 
 <!-- endtab -->
 
 {% endtabs %}
 
 
-## Folding box
+## Folding
 
-{% tabs folding, 3 %}
+请将您的 Volantis 升级至 <u>2.3</u> 版本以上使用。
 
-<!-- tab 格式 -->
+{% tabs folding, 4 %}
+
+<!-- tab 语法格式 -->
 
 ```md
 {% folding 参数（可选）, 标题 %}
@@ -502,23 +690,68 @@ large 按钮更具有强调作用，建议搭配 `center` 使用：
 {% endfolding %}
 ```
 
-{% note up green, 请将您的 Volantis 升级至 2.3 版本以上使用。 %}
-
 <!-- endtab -->
 
-<!-- tab 参数 -->
+<!-- tab 参数列表 -->
 
 参数位置可以填写颜色和状态，多个参数用空格隔开。
 
-```md 颜色
+{% p subtitle, 颜色 %}
+
+```
 blue, cyan, green, yellow, red
 ```
+
+{% p subtitle, 状态 %}
 
 状态填写 `open` 代表默认打开。
 
 <!-- endtab -->
 
-<!-- tab 演示 -->
+<!-- tab 示例写法 -->
+
+```
+{% folding 查看图片测试 %}
+
+![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/41F215B9-261F-48B4-80B5-4E86E165259E.jpeg)
+
+{% endfolding %}
+
+{% folding cyan open, 查看默认打开的折叠框 %}
+
+这是一个默认打开的折叠框。
+
+{% endfolding %}
+
+{% folding green, 查看代码测试 %}
+
+{% endfolding %}
+
+{% folding yellow, 查看列表测试 %}
+
+- haha
+- hehe
+
+{% endfolding %}
+
+{% folding red, 查看嵌套测试 %}
+
+{% folding blue, 查看嵌套测试2 %}
+
+{% folding 查看嵌套测试3 %}
+
+hahaha
+
+{% endfolding %}
+
+{% endfolding %}
+
+{% endfolding %}
+```
+
+<!-- endtab -->
+
+<!-- tab 示例效果 -->
 
 {% folding 查看图片测试 %}
 
@@ -630,7 +863,7 @@ $$
 
 {% note link, 如果公式仍无法正确渲染可以阅读 [@MicDZ](https://www.micdz.cn) 的这篇文章：[《在material-x上使用KaTeX》](https://www.micdz.cn/article/katex-on-volantis/)。 %}
 
-## Hexo原生支持的标签
+## Hexo 原生支持的标签
 
 ### 引用块
 
