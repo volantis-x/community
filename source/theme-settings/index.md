@@ -161,59 +161,42 @@ navbar:
     title:
   menu:
     # The following can be written in `blog/source/_data/menu.yml`
-    # This menu will be displayed on the laptop or desktop.
-    on_desktop:
-      - name: 博客
-        icon: fas fa-rss
-        url: /
-    # This menu will be displayed on the mobile.
-    on_mobile:
-      - name: 博客
-        icon: fas fa-rss
-        url: /
+    - name: 博客
+      icon: fas fa-rss
+      url: /
+    - name: 分类
+      icon: fas fa-folder-open
+      url: categories/
+    - name: 标签
+      icon: fas fa-tags
+      url: tags/
+    - name: 归档
+      icon: fas fa-archive
+      url: archives/
+    - name: 友链
+      icon: fas fa-link
+      url: friends/
+    - name: 关于
+      icon: fas fa-info-circle
+      url: about/
   search: 搜索   # Search bar placeholder
 ```
-
-### 导航栏菜单
-```yaml blog/themes/volantis/_config.yml
-navbar:
-  ...
-  menu:
-    # The following can be written in `blog/source/_data/menu.yml`
-    # This menu will be displayed on the laptop or desktop.
-    on_desktop:
-      - name: 博客
-        icon: fas fa-rss
-        url: /
-    # This menu will be displayed on the mobile.
-    on_mobile:
-      - name: 博客
-        icon: fas fa-rss
-        url: /
-```
-导航栏菜单支持嵌套，建议新建一个文件，专门存放导航栏菜单配置，文件的路径为：
+### 使用数据文件
+建议新建一个文件，专门存放导航栏<u>菜单</u>配置，文件的路径为：
 ```
 blog/source/_data/menu.yml
 ```
 文件的内容为：
 ```yaml blog/source/_data/menu.yml
-# This menu will be displayed on the laptop or desktop.
-on_desktop:
-  - name: 博客
-    icon: fas fa-rss
-    url: /
-# This menu will be displayed on the mobile.
-on_mobile:
-  - name: 博客
-    icon: fas fa-rss
-    url: /
+- name: 博客
+  icon: fas fa-rss
+  url: /
+...
 ```
 
-#### N级菜单
-只有 `on_desktop` 部分的菜单支持嵌套，嵌套的属性名为`rows`，写法示例：
+### N级菜单
+导航栏菜单支持嵌套，嵌套的属性名为 `rows` ，写法示例：
 ```yaml blog/source/_data/menu.yml
-# This menu will be displayed on the laptop or desktop.
-on_desktop:
 ...
 - name: 更多
   icon: fas fa-ellipsis-v
@@ -240,13 +223,13 @@ on_desktop:
       url: contributors/
 ```
 
-#### 分割线
+### 分割线
 在子菜单中，新增一个只有 `name: hr` 的“菜单”就会被渲染成一个分割线。
 ```yaml
 - name: hr
 ```
 
-#### 小标题
+### 小标题
 在子菜单中，新增一个只有 `name: 小标题内容`（也可以有 `icon: 小标题的图标`）的“菜单”就会被渲染成一个小标题。
 ```yaml
 ...
@@ -266,8 +249,17 @@ on_desktop:
 
 {% note play, 这个示例的实际效果： https://xaoxuu.com %}
 
+
+### 播放器
+在子菜单中，新增一个 `icon: fas fa-compact-disc` 的“菜单”就会被渲染成一个 APlayer 播放器。
+```yaml
+- name: 背景音乐
+  icon: fas fa-compact-disc
+```
+
+
 ## 模块化布局
-您可以自由决定每个页面是否显示侧边栏，侧边栏显示什么小部件，正文区域显示什么卡片，文章卡片显示什么meta。
+您可以自由决定每个页面是否显示侧边栏，侧边栏显示什么小部件，正文区域显示什么卡片，文章卡片显示什么 meta 信息。
 ```yaml
 layout:
   # The following can be written in `blog/source/_data/layout.yml`
