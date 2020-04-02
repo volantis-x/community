@@ -802,6 +802,79 @@ hahaha
 
 {% endtabs %}
 
+## Menu
+
+请将您的 Volantis 升级至 <u>2.4</u> 版本以上使用。
+
+{% tabs menu, 3 %}
+
+<!-- tab 语法格式 -->
+
+{% p subtitle, 容器 %}
+
+```md
+{% menu 下拉菜单, 图标 %}
+菜单内容
+{% endmenu %}
+```
+
+{% p subtitle, 菜单内容 %}
+
+菜单项
+
+```md
+{% menuitem 文本, 链接, 图标 %}
+```
+
+分割线
+
+```md
+{% menuitem hr %}
+```
+
+子菜单
+
+```md
+{% submenu 嵌套菜单, 图标 %}
+菜单内容
+{% endsubmenu %}
+```
+
+<!-- endtab -->
+
+<!-- tab 示例写法 -->
+
+```md
+{% menu 下拉菜单 %}
+{% menuitem 主题源码, https://github.com/xaoxuu/hexo-theme-volantis/, fas fa-file-code %}
+{% menuitem 更新日志, https://github.com/xaoxuu/hexo-theme-volantis/releases/, fas fa-clipboard-list %}
+{% menuitem hr %}
+{% submenu 有疑问？, fas fa-question-circle %}
+{% menuitem 看 FAQ, /faqs/ %}
+{% menuitem 看 本站源码, https://github.com/xaoxuu/volantis-docs/ %}
+{% menuitem 提 Issue, https://github.com/xaoxuu/hexo-theme-volantis/issues/ %}
+{% endsubmenu %}
+{% endmenu %}
+```
+
+<!-- endtab -->
+
+<!-- tab 示例效果 -->
+
+{% menu 下拉菜单 %}
+{% menuitem 主题源码, https://github.com/xaoxuu/hexo-theme-volantis/, fas fa-file-code %}
+{% menuitem 更新日志, https://github.com/xaoxuu/hexo-theme-volantis/releases/, fas fa-clipboard-list %}
+{% menuitem hr %}
+{% submenu 有疑问？, fas fa-question-circle %}
+{% menuitem 看 FAQ, /faqs/ %}
+{% menuitem 看 本站源码, https://github.com/xaoxuu/volantis-docs/ %}
+{% menuitem 提 Issue, https://github.com/xaoxuu/hexo-theme-volantis/issues/ %}
+{% endsubmenu %}
+{% endmenu %}
+
+<!-- endtab -->
+
+{% endtabs %}
 
 
 ## 渲染公式（MathJax）
