@@ -28,7 +28,7 @@ links:
     - name: Charlie
       url: https://charlie-zzy.github.io
       avatar: https://cdn.jsdelivr.net/gh/charlie-zzy/imgCDN/avatar.png
-      tags: [暗色, 最新主题]
+      tags: [暗色]
     - name: Yanliang
       url: https://gyl-coder.top
       avatar: https://cdn.jsdelivr.net/gh/gyl-coder/gyl-coder.github.com@v1.0.0/img/touxiang.jpg
