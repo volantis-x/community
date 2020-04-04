@@ -7,8 +7,7 @@ meta:
 mathjax: true
 ---
 
-
-主题支持<b>{% span red, 丰 %}{% span yellow, 富 %}{% span green, 多 %}{% span blue, 彩 %}</b>的标签。
+主题原生支持<b>{% span red, 丰 %}{% span yellow, 富 %}{% span green, 多 %}{% span blue, 彩 %}</b>的标签。
 
 ## 文本和段落
 
@@ -224,14 +223,14 @@ Windows 10不是為所有人設計,而是為每個人設計
 
 ### 基础按钮
 
-请将您的 Volantis 升级至 <u>2.3</u> 版本以上使用。
+请将您的 Volantis 升级至 <u>2.4</u> 版本以上使用。
 
 {% tabs btn, 4 %}
 
 <!-- tab 语法格式 -->
 
 ```
-{% btn 样式参数（可选）, 图标（可选）, 按钮标题, 链接地址 %}
+{% btn 样式参数（可选）, 标题, 链接, 图标（可选） %}
 ```
 
 {% note warning, 可选的参数可以省略，但是前后顺序不能乱。 %}
@@ -256,30 +255,30 @@ regular, large, center
 <!-- tab 示例写法 -->
 
 ```md example.md:
-不设置任何参数的 {% btn, 按钮, / %} 适合融入段落中。
+不设置任何参数的 {% btn 按钮, / %} 适合融入段落中。
 
 regular 按钮适合独立于段落之外：
 
-{% btn regular, fas fa-play-circle, 示例博客, https://xaoxuu.com %}
+{% btn regular, 示例博客, https://xaoxuu.com, fas fa-play-circle %}
 
-large 按钮更具有强调作用，建议搭配 `center` 使用：
+large 按钮更具有强调作用，建议搭配 center 使用：
 
-{% btn center large, fas fa-download, 开始使用, https://volantis.js.org/getting-started/ %}
+{% btn center large, 开始使用, https://volantis.js.org/getting-started/, fas fa-download %}
 ```
 
 <!-- endtab -->
 
 <!-- tab 示例效果 -->
 
-不设置任何参数的 {% btn, 按钮, / %} 适合融入段落中。
+不设置任何参数的 {% btn 按钮, / %} 适合融入段落中。
 
 regular 按钮适合独立于段落之外：
 
-{% btn regular, fas fa-play-circle, 示例博客, https://xaoxuu.com %}
+{% btn regular, 示例博客, https://xaoxuu.com, fas fa-play-circle %}
 
-large 按钮更具有强调作用，建议搭配 `center` 使用：
+large 按钮更具有强调作用，建议搭配 center 使用：
 
-{% btn center large, fas fa-download, 开始使用, https://volantis.js.org/getting-started/ %}
+{% btn center large, 开始使用, https://volantis.js.org/getting-started/, fas fa-download %}
 
 <!-- endtab -->
 
@@ -360,7 +359,7 @@ rounded, circle
 {% endbtns %}
 ```
 
-圆形图标 + 标题 + 描述 + 图片 + 网格4列 + 居中
+圆形图标 + 标题 + 描述 + 图片 + 网格5列 + 居中
 
 ```md example.md:
 {% btns circle center grid4 %}
@@ -399,7 +398,7 @@ rounded, circle
 {% endbtns %}
 
 
-圆形图标 + 标题 + 描述 + 图片 + 网格4列 + 居中
+圆形图标 + 标题 + 描述 + 图片 + 网格5列 + 居中
 {% btns circle center grid4 %}
 <a href='https://apps.apple.com/cn/app/heart-mate-pro-hrm-utility/id1463348922?ls=1'>
   <i class='fab fa-apple'></i>
@@ -606,7 +605,7 @@ blue, cyan, green, yellow, red
 
 {% folding 查看嵌套测试3 %}
 
-hahaha
+hahaha <span><img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/emoji/tieba/%E6%BB%91%E7%A8%BD.png' style='height:24px'></span>
 
 {% endfolding %}
 
@@ -656,7 +655,7 @@ hahaha
 
 {% folding 查看嵌套测试3 %}
 
-hahaha
+hahaha <span><img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/emoji/tieba/%E6%BB%91%E7%A8%BD.png' style='height:24px'></span>
 
 {% endfolding %}
 
@@ -917,6 +916,15 @@ left, center, right
 
 {% endtabs %}
 
+### APlayer
+
+主题对 APlayer 插件的样式进行了兼容。安装插件：
+
+```sh
+npm i -S hexo-tag-aplayer
+```
+
+{% note link, 官方文档： [hexo-tag-aplayer](https://github.com/MoePlayer/hexo-tag-aplayer) %}
 
 ## 公式
 
@@ -979,7 +987,7 @@ $$
 
 {% note link, 如果公式仍无法正确渲染可以阅读 [@MicDZ](https://www.micdz.cn) 的这篇文章：[《在material-x上使用KaTeX》](https://www.micdz.cn/article/katex-on-volantis/)。 %}
 
-## Hexo 原生支持的标签
+## Hexo 标签
 
 ### 引用块
 

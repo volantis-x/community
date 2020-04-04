@@ -14,7 +14,7 @@ meta:
 
 Volantis，一个高度模块化和可定制化、功能相对完善的 Hexo 博客主题，既可以用作个人博客，也适合用来搭建文档。
 
-这些是使用了本主题的博客： {% btn, fas fa-play-circle, 示例博客, /examples/ %}
+这些是使用了本主题的博客： {% btn 示例博客, /examples/, fas fa-play-circle %}
 
 ## 环境要求
 
