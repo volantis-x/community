@@ -21,12 +21,12 @@ meta:
 ## 主题基本信息
 ```yaml blog/themes/volantis/_config.yml
 info:
-  name: Volantis
-  version: '2.0'
-  docs: https://volantis.js.org/
+  name: Volantis # This is theme's name, not your blog's name.
+  version: '2.4.1' # This is theme's version.
+  docs: https://volantis.js.org/ # This is theme's URL.
   cdn: # To use CDN, write 'use_cdn: true' in 'blog/_config.yml'.
-    css: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@2.0.2/css/style.css
-    js: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@2.0.2/js/app.js
+    css: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@2.4.1/css/style.css
+    js: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@2.4.1/js/app.js
 ```
 这部分内容一般无需修改，方便您查看主题相关信息。如果您不需要修改样式，建议开启主题提供的 CDN 服务以提高加载速度。
 ``` yaml blog/_config.yml

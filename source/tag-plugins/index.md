@@ -10,7 +10,9 @@ mathjax: true
 
 主题支持<b>{% span red, 丰 %}{% span yellow, 富 %}{% span green, 多 %}{% span blue, 彩 %}</b>的标签。
 
-## Span & P
+## 文本和段落
+
+### Span & P
 
 请将您的 Volantis 升级至 <u>2.3</u> 版本以上使用。
 
@@ -93,7 +95,7 @@ left, center, right
 
 {% endtabs %}
 
-## Note & NoteBlock
+### Note & NoteBlock
 
 NoteBlock 是 Blockquote 的增强版，在左边显示图标，并且可以自定颜色。而 Note 是 NoteBlock 的简便写法。请将您的 Volantis 升级至 <u>2.3</u> 版本以上使用。
 
@@ -218,7 +220,9 @@ Windows 10不是為所有人設計,而是為每個人設計
 
 {% endtabs %}
 
-## 基础按钮
+## 按钮和菜单
+
+### 基础按钮
 
 请将您的 Volantis 升级至 <u>2.3</u> 版本以上使用。
 
@@ -282,7 +286,7 @@ large 按钮更具有强调作用，建议搭配 `center` 使用：
 {% endtabs %}
 
 
-## 富文本按钮
+### 富文本按钮
 
 请将您的 Volantis 升级至 <u>2.3</u> 版本以上使用。
 
@@ -416,222 +420,84 @@ rounded, circle
 {% endtabs %}
 
 
-## Fancybox
+### Menu
 
-请将您的 Volantis 升级至 <u>2.2</u> 版本以上使用。
+请将您的 Volantis 升级至 <u>2.4</u> 版本以上使用。
 
-{% tabs fancybox, 4 %}
+{% tabs menu, 3 %}
 
 <!-- tab 语法格式 -->
 
-```md example.md:
-{% fancybox 参数, 列数 %}
-![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/B18FCBB3-67FD-48CC-B4F3-457BA145F17A.jpeg)
-![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/67239FBB-E15D-4F4F-8EE8-0F1C9F3C4E7C.jpeg)
-{% endfancybox %}
+{% p subtitle, 容器 %}
+
+```md
+{% menu 下拉菜单, 图标 %}
+菜单内容
+{% endmenu %}
 ```
 
-<!-- endtab -->
+{% p subtitle, 菜单内容 %}
 
-<!-- tab 参数列表 -->
+菜单项
 
-{% p subtitle, 对齐方向 %}
-
-```
-left, center, right
+```md
+{% menuitem 文本, 链接, 图标 %}
 ```
 
-{% p subtitle, 缩放 %}
+分割线
 
+```md
+{% menuitem hr %}
 ```
-stretch
+
+子菜单
+
+```md
+{% submenu 嵌套菜单, 图标 %}
+菜单内容
+{% endsubmenu %}
 ```
-
-{% p subtitle, 列数 %}
-
-逗号后面直接写列数，支持 2 ～ 8 列。设定列列数之后就是「多行多图」布局，此时图片默认左对齐。为了避免图片大小不一，建议搭配 `stretch` 来时图片放大填充。
-
 
 <!-- endtab -->
 
 <!-- tab 示例写法 -->
 
-一行一个图片
-
-```md example.md:
-{% fancybox %}
-![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/41F215B9-261F-48B4-80B5-4E86E165259E.jpeg)
-{% endfancybox %}
-```
-
-一行多个图片（不换行）
-
-```md example.md:
-{% fancybox %}
-![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/B18FCBB3-67FD-48CC-B4F3-457BA145F17A.jpeg)
-![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/67239FBB-E15D-4F4F-8EE8-0F1C9F3C4E7C.jpeg)
-![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/00E0F0ED-9F1C-407A-9AA6-545649D919F4.jpeg)
-{% endfancybox %}
-```
-
-多行多个图片（每行2～8个图片）
-
-```md example.md:
-{% fancybox stretch, 4 %}
-![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/B951AE18-D431-417F-B3FE-A382403FF21B.jpeg)
-![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/landscape/AEB33F9D-7294-4CF1-B8C5-3020748A9D45.jpeg)
-![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/landscape/250662D4-5A21-4AAA-BB63-CD25CF97CFF1.jpeg)
-![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/landscape/10A0FCE5-36A1-4AD0-8CF0-019259A89E03.jpeg)
-![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/B951AE18-D431-417F-B3FE-A382403FF21B.jpeg)
-![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/landscape/AEB33F9D-7294-4CF1-B8C5-3020748A9D45.jpeg)
-![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/landscape/250662D4-5A21-4AAA-BB63-CD25CF97CFF1.jpeg)
-![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/landscape/10A0FCE5-36A1-4AD0-8CF0-019259A89E03.jpeg)
-{% endfancybox %}
+```md
+{% menu 下拉菜单 %}
+{% menuitem 主题源码, https://github.com/xaoxuu/hexo-theme-volantis/, fas fa-file-code %}
+{% menuitem 更新日志, https://github.com/xaoxuu/hexo-theme-volantis/releases/, fas fa-clipboard-list %}
+{% menuitem hr %}
+{% submenu 有疑问？, fas fa-question-circle %}
+{% menuitem 看 FAQ, /faqs/ %}
+{% menuitem 看 本站源码, https://github.com/xaoxuu/volantis-docs/ %}
+{% menuitem 提 Issue, https://github.com/xaoxuu/hexo-theme-volantis/issues/ %}
+{% endsubmenu %}
+{% endmenu %}
 ```
 
 <!-- endtab -->
 
 <!-- tab 示例效果 -->
 
-一行一个图片
-{% fancybox %}
-![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/41F215B9-261F-48B4-80B5-4E86E165259E.jpeg)
-{% endfancybox %}
-
-一行多个图片（不换行）
-{% fancybox %}
-![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/B18FCBB3-67FD-48CC-B4F3-457BA145F17A.jpeg)
-![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/67239FBB-E15D-4F4F-8EE8-0F1C9F3C4E7C.jpeg)
-![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/00E0F0ED-9F1C-407A-9AA6-545649D919F4.jpeg)
-{% endfancybox %}
-
-多行多个图片（每行2～8个图片）
-{% fancybox stretch, 4 %}
-![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/B951AE18-D431-417F-B3FE-A382403FF21B.jpeg)
-![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/landscape/AEB33F9D-7294-4CF1-B8C5-3020748A9D45.jpeg)
-![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/landscape/250662D4-5A21-4AAA-BB63-CD25CF97CFF1.jpeg)
-![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/landscape/10A0FCE5-36A1-4AD0-8CF0-019259A89E03.jpeg)
-![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/B951AE18-D431-417F-B3FE-A382403FF21B.jpeg)
-![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/landscape/AEB33F9D-7294-4CF1-B8C5-3020748A9D45.jpeg)
-![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/landscape/250662D4-5A21-4AAA-BB63-CD25CF97CFF1.jpeg)
-![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/landscape/10A0FCE5-36A1-4AD0-8CF0-019259A89E03.jpeg)
-{% endfancybox %}
-
-<!-- endtab -->
-
-{% endtabs %}
-
-## Video
-
-请将您的 Volantis 升级至 <u>2.3</u> 版本以上使用。
-
-{% tabs video, 1 %}
-
-<!-- tab 语法格式 -->
-
-{% p subtitle, 单个视频 %}
-
-```md example.md:
-{% video 视频链接 %}
-```
-
-{% p subtitle, 多个视频 %}
-
-```md example.md:
-{% videos 对齐方向, 列数 %}
-{% video 视频链接 %}
-{% video 视频链接 %}
-{% video 视频链接 %}
-{% endvideos %}
-```
-
-
-<!-- endtab -->
-
-<!-- tab 参数列表 -->
-
-{% p subtitle, 对齐方向 %}
-
-```
-left, center, right
-```
-
-{% p subtitle, 列数 %}
-
-逗号后面直接写列数，支持 1 ～ 4 列。
-
-<!-- endtab -->
-
-<!-- tab 示例写法 -->
-
-100%宽度
-
-```md example.md:
-{% video https://github.com/xaoxuu/volantis-docs/releases/download/assets/IMG_0341.mov %}
-```
-
-50%宽度
-
-```md example.md:
-{% videos, 2 %}
-{% video https://github.com/xaoxuu/volantis-docs/releases/download/assets/IMG_0341.mov %}
-{% video https://github.com/xaoxuu/volantis-docs/releases/download/assets/IMG_0341.mov %}
-{% video https://github.com/xaoxuu/volantis-docs/releases/download/assets/IMG_0341.mov %}
-{% video https://github.com/xaoxuu/volantis-docs/releases/download/assets/IMG_0341.mov %}
-{% endvideos %}
-```
-
-25%宽度
-
-```md example.md:
-{% videos, 4 %}
-{% video https://github.com/xaoxuu/volantis-docs/releases/download/assets/IMG_0341.mov %}
-{% video https://github.com/xaoxuu/volantis-docs/releases/download/assets/IMG_0341.mov %}
-{% video https://github.com/xaoxuu/volantis-docs/releases/download/assets/IMG_0341.mov %}
-{% video https://github.com/xaoxuu/volantis-docs/releases/download/assets/IMG_0341.mov %}
-{% video https://github.com/xaoxuu/volantis-docs/releases/download/assets/IMG_0341.mov %}
-{% video https://github.com/xaoxuu/volantis-docs/releases/download/assets/IMG_0341.mov %}
-{% video https://github.com/xaoxuu/volantis-docs/releases/download/assets/IMG_0341.mov %}
-{% video https://github.com/xaoxuu/volantis-docs/releases/download/assets/IMG_0341.mov %}
-{% endvideos %}
-```
-
-<!-- endtab -->
-
-<!-- tab 示例效果 -->
-
-100%宽度
-
-{% video https://github.com/xaoxuu/volantis-docs/releases/download/assets/IMG_0341.mov %}
-
-50%宽度
-
-{% videos, 2 %}
-{% video https://github.com/xaoxuu/volantis-docs/releases/download/assets/IMG_0341.mov %}
-{% video https://github.com/xaoxuu/volantis-docs/releases/download/assets/IMG_0341.mov %}
-{% video https://github.com/xaoxuu/volantis-docs/releases/download/assets/IMG_0341.mov %}
-{% video https://github.com/xaoxuu/volantis-docs/releases/download/assets/IMG_0341.mov %}
-{% endvideos %}
-
-25%宽度
-
-{% videos, 4 %}
-{% video https://github.com/xaoxuu/volantis-docs/releases/download/assets/IMG_0341.mov %}
-{% video https://github.com/xaoxuu/volantis-docs/releases/download/assets/IMG_0341.mov %}
-{% video https://github.com/xaoxuu/volantis-docs/releases/download/assets/IMG_0341.mov %}
-{% video https://github.com/xaoxuu/volantis-docs/releases/download/assets/IMG_0341.mov %}
-{% video https://github.com/xaoxuu/volantis-docs/releases/download/assets/IMG_0341.mov %}
-{% video https://github.com/xaoxuu/volantis-docs/releases/download/assets/IMG_0341.mov %}
-{% video https://github.com/xaoxuu/volantis-docs/releases/download/assets/IMG_0341.mov %}
-{% video https://github.com/xaoxuu/volantis-docs/releases/download/assets/IMG_0341.mov %}
-{% endvideos %}
+{% menu 下拉菜单 %}
+{% menuitem 主题源码, https://github.com/xaoxuu/hexo-theme-volantis/, fas fa-file-code %}
+{% menuitem 更新日志, https://github.com/xaoxuu/hexo-theme-volantis/releases/, fas fa-clipboard-list %}
+{% menuitem hr %}
+{% submenu 有疑问？, fas fa-question-circle %}
+{% menuitem 看 FAQ, /faqs/ %}
+{% menuitem 看 本站源码, https://github.com/xaoxuu/volantis-docs/ %}
+{% menuitem 提 Issue, https://github.com/xaoxuu/hexo-theme-volantis/issues/ %}
+{% endsubmenu %}
+{% endmenu %}
 
 <!-- endtab -->
 
 {% endtabs %}
 
 
-## Tab
+## 容器
+
+### Tab
 
 请将您的 Volantis 升级至 <u>2.1</u> 版本以上使用。
 
@@ -674,7 +540,7 @@ left, center, right
 {% endtabs %}
 
 
-## Folding
+### Folding
 
 请将您的 Volantis 升级至 <u>2.3</u> 版本以上使用。
 
@@ -802,82 +668,259 @@ hahaha
 
 {% endtabs %}
 
-## Menu
 
-请将您的 Volantis 升级至 <u>2.4</u> 版本以上使用。
+## 多媒体
 
-{% tabs menu, 3 %}
+包括图片、音频、视频。
+
+### Fancybox
+
+请将您的 Volantis 升级至 <u>2.2</u> 版本以上使用。
+
+{% tabs fancybox, 4 %}
 
 <!-- tab 语法格式 -->
 
-{% p subtitle, 容器 %}
-
-```md
-{% menu 下拉菜单, 图标 %}
-菜单内容
-{% endmenu %}
+```md example.md:
+{% fancybox 参数, 列数 %}
+![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/B18FCBB3-67FD-48CC-B4F3-457BA145F17A.jpeg)
+![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/67239FBB-E15D-4F4F-8EE8-0F1C9F3C4E7C.jpeg)
+{% endfancybox %}
 ```
 
-{% p subtitle, 菜单内容 %}
+<!-- endtab -->
 
-菜单项
+<!-- tab 参数列表 -->
 
-```md
-{% menuitem 文本, 链接, 图标 %}
+{% p subtitle, 对齐方向 %}
+
+```
+left, center, right
 ```
 
-分割线
+{% p subtitle, 缩放 %}
 
-```md
-{% menuitem hr %}
+```
+stretch
 ```
 
-子菜单
+{% p subtitle, 列数 %}
 
-```md
-{% submenu 嵌套菜单, 图标 %}
-菜单内容
-{% endsubmenu %}
-```
+逗号后面直接写列数，支持 2 ～ 8 列。设定列列数之后就是「多行多图」布局，此时图片默认左对齐。为了避免图片大小不一，建议搭配 `stretch` 来时图片放大填充。
+
 
 <!-- endtab -->
 
 <!-- tab 示例写法 -->
 
-```md
-{% menu 下拉菜单 %}
-{% menuitem 主题源码, https://github.com/xaoxuu/hexo-theme-volantis/, fas fa-file-code %}
-{% menuitem 更新日志, https://github.com/xaoxuu/hexo-theme-volantis/releases/, fas fa-clipboard-list %}
-{% menuitem hr %}
-{% submenu 有疑问？, fas fa-question-circle %}
-{% menuitem 看 FAQ, /faqs/ %}
-{% menuitem 看 本站源码, https://github.com/xaoxuu/volantis-docs/ %}
-{% menuitem 提 Issue, https://github.com/xaoxuu/hexo-theme-volantis/issues/ %}
-{% endsubmenu %}
-{% endmenu %}
+一行一个图片
+
+```md example.md:
+{% fancybox %}
+![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/41F215B9-261F-48B4-80B5-4E86E165259E.jpeg)
+{% endfancybox %}
+```
+
+一行多个图片（不换行）
+
+```md example.md:
+{% fancybox %}
+![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/B18FCBB3-67FD-48CC-B4F3-457BA145F17A.jpeg)
+![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/67239FBB-E15D-4F4F-8EE8-0F1C9F3C4E7C.jpeg)
+![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/00E0F0ED-9F1C-407A-9AA6-545649D919F4.jpeg)
+{% endfancybox %}
+```
+
+多行多个图片（每行2～8个图片）
+
+```md example.md:
+{% fancybox stretch, 4 %}
+![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/B951AE18-D431-417F-B3FE-A382403FF21B.jpeg)
+![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/landscape/AEB33F9D-7294-4CF1-B8C5-3020748A9D45.jpeg)
+![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/landscape/250662D4-5A21-4AAA-BB63-CD25CF97CFF1.jpeg)
+![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/landscape/10A0FCE5-36A1-4AD0-8CF0-019259A89E03.jpeg)
+![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/B951AE18-D431-417F-B3FE-A382403FF21B.jpeg)
+![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/landscape/AEB33F9D-7294-4CF1-B8C5-3020748A9D45.jpeg)
+![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/landscape/250662D4-5A21-4AAA-BB63-CD25CF97CFF1.jpeg)
+![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/landscape/10A0FCE5-36A1-4AD0-8CF0-019259A89E03.jpeg)
+{% endfancybox %}
 ```
 
 <!-- endtab -->
 
 <!-- tab 示例效果 -->
 
-{% menu 下拉菜单 %}
-{% menuitem 主题源码, https://github.com/xaoxuu/hexo-theme-volantis/, fas fa-file-code %}
-{% menuitem 更新日志, https://github.com/xaoxuu/hexo-theme-volantis/releases/, fas fa-clipboard-list %}
-{% menuitem hr %}
-{% submenu 有疑问？, fas fa-question-circle %}
-{% menuitem 看 FAQ, /faqs/ %}
-{% menuitem 看 本站源码, https://github.com/xaoxuu/volantis-docs/ %}
-{% menuitem 提 Issue, https://github.com/xaoxuu/hexo-theme-volantis/issues/ %}
-{% endsubmenu %}
-{% endmenu %}
+一行一个图片
+{% fancybox %}
+![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/41F215B9-261F-48B4-80B5-4E86E165259E.jpeg)
+{% endfancybox %}
+
+一行多个图片（不换行）
+{% fancybox %}
+![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/B18FCBB3-67FD-48CC-B4F3-457BA145F17A.jpeg)
+![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/67239FBB-E15D-4F4F-8EE8-0F1C9F3C4E7C.jpeg)
+![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/00E0F0ED-9F1C-407A-9AA6-545649D919F4.jpeg)
+{% endfancybox %}
+
+多行多个图片（每行2～8个图片）
+{% fancybox stretch, 4 %}
+![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/B951AE18-D431-417F-B3FE-A382403FF21B.jpeg)
+![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/landscape/AEB33F9D-7294-4CF1-B8C5-3020748A9D45.jpeg)
+![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/landscape/250662D4-5A21-4AAA-BB63-CD25CF97CFF1.jpeg)
+![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/landscape/10A0FCE5-36A1-4AD0-8CF0-019259A89E03.jpeg)
+![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/B951AE18-D431-417F-B3FE-A382403FF21B.jpeg)
+![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/landscape/AEB33F9D-7294-4CF1-B8C5-3020748A9D45.jpeg)
+![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/landscape/250662D4-5A21-4AAA-BB63-CD25CF97CFF1.jpeg)
+![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/landscape/10A0FCE5-36A1-4AD0-8CF0-019259A89E03.jpeg)
+{% endfancybox %}
+
+<!-- endtab -->
+
+{% endtabs %}
+
+### Audio
+
+请将您的 Volantis 升级至 <u>2.4</u> 版本以上使用。
+
+{% tabs audio, 3 %}
+
+<!-- tab 语法格式 -->
+
+```md example.md:
+{% audio 音频链接 %}
+```
+
+<!-- endtab -->
+
+<!-- tab 示例写法 -->
+
+```md example.md:
+{% audio https://github.com/xaoxuu/volantis-docs/releases/download/assets/Lumia1020.mp3 %}
+```
+
+<!-- endtab -->
+
+<!-- tab 示例效果 -->
+
+{% audio https://github.com/xaoxuu/volantis-docs/releases/download/assets/Lumia1020.mp3 %}
+
+<!-- endtab -->
+
+{% endtabs %}
+
+### Video
+
+请将您的 Volantis 升级至 <u>2.3</u> 版本以上使用。
+
+{% tabs video, 1 %}
+
+<!-- tab 语法格式 -->
+
+{% p subtitle, 单个视频 %}
+
+```md example.md:
+{% video 视频链接 %}
+```
+
+{% p subtitle, 多个视频 %}
+
+```md example.md:
+{% videos 对齐方向, 列数 %}
+{% video 视频链接 %}
+{% video 视频链接 %}
+{% video 视频链接 %}
+{% endvideos %}
+```
+
+
+<!-- endtab -->
+
+<!-- tab 参数列表 -->
+
+{% p subtitle, 对齐方向 %}
+
+```
+left, center, right
+```
+
+{% p subtitle, 列数 %}
+
+逗号后面直接写列数，支持 1 ～ 4 列。
+
+<!-- endtab -->
+
+<!-- tab 示例写法 -->
+
+100%宽度
+
+```md example.md:
+{% video https://github.com/xaoxuu/volantis-docs/releases/download/assets/IMG_0341.mov %}
+```
+
+50%宽度
+
+```md example.md:
+{% videos, 2 %}
+{% video https://github.com/xaoxuu/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/xaoxuu/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/xaoxuu/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/xaoxuu/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% endvideos %}
+```
+
+25%宽度
+
+```md example.md:
+{% videos, 4 %}
+{% video https://github.com/xaoxuu/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/xaoxuu/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/xaoxuu/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/xaoxuu/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/xaoxuu/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/xaoxuu/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/xaoxuu/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/xaoxuu/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% endvideos %}
+```
+
+<!-- endtab -->
+
+<!-- tab 示例效果 -->
+
+100%宽度
+
+{% video https://github.com/xaoxuu/volantis-docs/releases/download/assets/IMG_0341.mov %}
+
+50%宽度
+
+{% videos, 2 %}
+{% video https://github.com/xaoxuu/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/xaoxuu/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/xaoxuu/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/xaoxuu/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% endvideos %}
+
+25%宽度
+
+{% videos, 4 %}
+{% video https://github.com/xaoxuu/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/xaoxuu/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/xaoxuu/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/xaoxuu/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/xaoxuu/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/xaoxuu/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/xaoxuu/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/xaoxuu/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% endvideos %}
 
 <!-- endtab -->
 
 {% endtabs %}
 
 
-## 渲染公式（MathJax）
+## 公式
+
+### MathJax
 
 默认是不渲染的，如果文章内有公式，需要在 `front-matter` 中设置开启。
 
