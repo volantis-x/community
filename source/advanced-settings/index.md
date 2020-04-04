@@ -35,13 +35,13 @@ git submodule add git@github.com:xaoxuu/hexo-theme-volantis themes/volantis
 - 推荐安装图片懒加载插件 [hexo-lazyload-image](https://github.com/Troy-Yang/hexo-lazyload-image)（需同时安装 `hexo-fs` 依赖库）。
 
 
-## 优化SEO <sup class='blue'>^1.6.4</sup>
+## 优化 SEO
 
 在 front-matter 中，可以设置 `keywords`、`description`、`robots` 和 `seotitle`。其中 `seotitle` 仅仅用作网页标题，优先级高于 `title`。
 
 - 文章内部不要使用 H1 标题。
 - 通过死链检测工具检查并删除无法访问的链接。
-- 安装SEO优化插件：
+- 安装 SEO 优化插件：
   - [hexo-autonofollow](https://github.com/liuzc/hexo-autonofollow)
   - [hexo-generator-seo-friendly-sitemap](https://github.com/ludoviclefevre/hexo-generator-seo-friendly-sitemap)
 - 页面不要堆砌关键词，不要频繁更改路径。

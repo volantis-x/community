@@ -16,8 +16,8 @@ guide:
     - name: 特别感谢
       icon: fas fa-handshake
       url: contributors/
-    - name: 所有博文
-      icon: fas fa-rss
+    - name: 测试博文
+      icon: fas fa-file-alt
       url: archives/
     - name: 主题源码
       icon: fas fa-file-code
@@ -25,7 +25,7 @@ guide:
       rel: external nofollow noopener noreferrer
       target: _blank
     - name: 更新日志
-      icon: fas fa-clipboard-list
+      icon: fas fa-tags
       url: https://github.com/xaoxuu/hexo-theme-volantis/releases/
       rel: external nofollow noopener noreferrer
       target: _blank
@@ -87,3 +87,14 @@ help:
     title: 帮助
   pid: faq
   content: excerpt # excerpt, more, content
+
+news:
+  class: list
+  display: [desktop, mobile] # [desktop, mobile]
+  header:
+    icon: fas fa-rss-square
+    title: 公告
+  rows:
+    - name: 关于主题与文档的更新
+      icon: fas fa-info-circle
+      url: https://github.com/xaoxuu/hexo-theme-volantis/issues/215

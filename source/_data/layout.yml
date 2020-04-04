@@ -3,7 +3,9 @@ on_list:
   # 列表中每一篇文章的meta信息
   meta: [title, author, date, top]
   # 列表类页面的侧边栏
-  sidebar: [guide, repos, qrcode]
+  sidebar: [guide, news, repos, qrcode]
+  # read more button
+  readmore: 阅读全文 <i class="fas fa-chevron-right"></i>
 
 # 文章页面布局
 on_page:
@@ -16,7 +18,7 @@ on_page:
     header: [title, author, category, date, updated, top]
     footer: [btns]
   # 文章页面的侧边栏
-  sidebar: [guide, repos, qrcode, toc]
+  sidebar: [guide, news, repos, toc]
 
 # 文章布局，参数继承自 on_page
 on_post:
