@@ -121,14 +121,14 @@ And more text.
 
 ## Inline HTML
 
-```markdown
+```html
 <p>To reboot your computer, press <kbd>ctrl</kbd>+<kbd>alt</kbd>+<kbd>del</kbd>.</p>
 ```
 
 <p>To reboot your computer, press <kbd>ctrl</kbd>+<kbd>alt</kbd>+<kbd>del</kbd>.</p>
 
 
-```markdown
+```html
 <dl>
     <dt>Definition list</dt>
     <dd>Is something people use sometimes.</dd>

@@ -47,6 +47,23 @@ impl From<&'a str> for State {
 ]
 ```
 
+```typescript
+class MyClass {
+  public static myValue: string;
+  constructor(init: string) {
+    this.myValue = init;
+  }
+}
+import fs = require("fs");
+module MyModule {
+  export interface MyInterface extends Other {
+    myProperty: any;
+  }
+}
+declare magicNumber number;
+myArray.forEach(() => { }); // fat arrow syntax
+```
+
 ```python
 @requires_authorization
 def somefunc(param1='', param2=0):
@@ -140,11 +157,11 @@ values (2, 'D''artagnian');
 
 @protocol WorldDataSource
 @optional
-- (NSString*)worldName;
+- (NSString *)worldName;
 @required
 - (BOOL)allowsToLive;
 @end
-
+// comment
 @property (nonatomic, readonly) NSString *title;
 - (IBAction) show;
 @end
