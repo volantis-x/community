@@ -745,7 +745,7 @@ comments:
   valine:
     appId: # your appId
     appKey: # your appKey
-    js: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@2.0.2/js/valine.js
+    js: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@2.4.1.5/js/valine.js
     path: # All pages use the same path (share the same comments data)
     meta: nick,mail,link #valine comment header info
     placeholder: 快来评论吧~ # valine comment input placeholder(like: Please leave your footprints )
@@ -823,7 +823,7 @@ comments:
   valine:
     appId: # your appId
     appKey: # your appKey
-    js: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@2.0.2/js/valine.js
+    js: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@2.4.1.5/js/valine.js
     path: # All pages use the same path (share the same comments data)
     meta: nick,mail,link #valine comment header info
     placeholder: 快来评论吧~ # valine comment input placeholder(like: Please leave your footprints )
@@ -852,6 +852,23 @@ valine:
 valine:
   path: /wiki/volantis/
 ---
+```
+
+#### 使用 Volantis 定制版本
+
+默认使用的是 Volantis 定制版本，与原版的区别是：
+
+1. 禁止匿名评论，当昵称、邮箱为空的时候无法评论。
+2. 增加了若干常用表情。
+
+如果您想使用原版 Valine 评论，只需要将 `js` 地址修改为原版地址即可：
+
+```yaml blog/themes/volantis/_config.yml
+comments:
+  ...
+  valine:
+    ...
+    js: https://valine.js.org/script/Valine.min.js
 ```
 
 ### Livere
