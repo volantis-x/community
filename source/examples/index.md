@@ -55,6 +55,7 @@ links:
     - name: Linhk1606
       url: https://blog.lhkstudio.me
       avatar: https://cdn.jsdelivr.net/gh/Linhk1606/Linhk1606@V2.0.4/me.jpg
+      tags: [代码块风格自定义, 黑白配色悼念逝者]
   - group: '版本：^2.0'
     desc: 导航栏 N 级菜单
     items:
