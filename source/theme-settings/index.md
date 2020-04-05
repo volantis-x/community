@@ -61,6 +61,17 @@ style:
     effect: [shadow, blur] # [shadow, floatable, blur]
 ```
 
+### 滚动条样式
+```yaml blog/themes/volantis/_config.yml
+style:
+  ...
+  scrollbar:
+    size: 4px
+    border: 2px
+    color: '#2196f3'
+    hover: '#ff5722'
+```
+
 ### 侧边栏样式
 视觉特效参数同上，值得注意的是：卡片的 `floatable` 效果和 `blur` 效果相冲突。
 ```yaml blog/themes/volantis/_config.yml
@@ -86,6 +97,9 @@ style:
       h3: left
       h4: left
       p: justify
+    note: # style for default note: {% note text %}
+      icon: '\f054'
+      color: ''
 ```
 
 ### 布局间距
@@ -94,11 +108,11 @@ style:
 style:
   ...
   gap:
-    h2: 2.5em # Spacing above H2
-    h3: 1.5em # Spacing above H3
-    h4: 1em # Spacing above H4
-    line: 1rem # Paragraph spacing
-    inline: .5rem # Paragraph spacing within a block
+    h2: 48px # Spacing above H2 (only px unit)
+    h3: 32px # Spacing above H3 (only px unit)
+    h4: 16px # Spacing above H4 (only px unit)
+    paragraph: 1rem # Paragraph spacing between paragraphs
+    row: .5rem # Paragraph spacing between other elements
 ```
 
 ### 自定义字体
@@ -709,6 +723,19 @@ plugins:
       ...
 ```
 幻灯片背景图片显示的位置可以选择粘贴在封面上，跟随封面一起滑动，也可以选择固定作为网页背景图片。
+
+### highlight.js
+```yaml blog/themes/volantis/_config.yml
+plugins:
+  ...
+  highlightjs:
+    js: https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js
+    css: https://cdn.jsdelivr.net/npm/highlight.js@9.18.1/styles/solarized-light.css
+```
+如果需要使用 highlight.js 进行语法高亮，请将站点配置文件中的 `highlight.enable` 设置为 `false` 否则不会加载插件。您可以在 <u>94</u> 种 [语法高亮主题](https://www.jsdelivr.com/package/npm/highlight.js?path=styles) 中挑选喜爱的主题，然后替换上面的 css 链接。
+
+{% note warning, 如果您使用 highlight.js 请确保没有使用 hexo 官方的 codeblock 标签，否则会报错。 %}
+{% note bug red, 经测试，使用 highlight.js 的情况下，部分容器内的代码可能仍然会被渲染甚至报错。 %}
 
 ## APlayer
 ```yaml blog/themes/volantis/_config.yml
