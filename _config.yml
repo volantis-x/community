@@ -109,7 +109,7 @@ theme_config:
     #   site_inner: '#FFCE48'
     #   theme: '#E84D3B'
     gap:
-      block: .5rem
+      paragraph: .5rem
   cover:
     search: '搜索文档'
     features:
