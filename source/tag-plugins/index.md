@@ -37,6 +37,12 @@ mathjax: true
 
 样式参数位置可以写颜色、大小和对齐方向，多个样式参数用空格隔开。
 
+{% p subtitle, 字体 %}
+
+```
+logo, code
+```
+
 {% p subtitle, 颜色 %}
 
 ```
@@ -71,7 +77,7 @@ left, center, right
 ```md example.md:
 文档「开始」页面中的标题部分就是超大文字。
 
-{% p center large, Volantis %}
+{% p center logo large, Volantis %}
 {% p center small, A Wonderful Theme for Hexo %}
 ```
 
@@ -87,7 +93,7 @@ left, center, right
 
 文档「开始」页面中的标题部分就是超大文字。
 
-{% p center large, Volantis %}
+{% p center logo large, Volantis %}
 {% p center small, A Wonderful Theme for Hexo %}
 
 <!-- endtab -->
@@ -930,7 +936,7 @@ npm i -S hexo-tag-aplayer
 
 ### MathJax
 
-默认是不渲染的，如果文章内有公式，需要在 `front-matter` 中设置开启。
+默认是不渲染的，如果文章内有公式，需要在 front-matter 中设置开启。
 
 ```md example.md:
 ---
@@ -1056,7 +1062,7 @@ else:
 ```
 
 ### Pull Quote
-在文章中插入 `Pull quote`。
+在文章中插入 Pull quote
 ```md example.md:
 {% pullquote [class] %}
 content
@@ -1064,19 +1070,19 @@ content
 ```
 
 ### jsFiddle
-在文章中嵌入 `jsFiddle`。
+在文章中嵌入 jsFiddle
 ```md example.md:
 {% jsfiddle shorttag [tabs] [skin] [width] [height] %}
 ```
 
 ### Gist
-在文章中嵌入 `Gist`，<u>注意</u>：在国内无法加载。
+在文章中嵌入 Gist，<u>注意</u>：在国内无法加载。
 ```md example.md:
 {% gist gist_id [filename] %}
 ```
 
 ### iframe
-在文章中插入 `iframe`。
+在文章中插入 iframe
 ```md example.md:
 {% iframe url [width] [height] %}
 ```

@@ -7,7 +7,7 @@ meta:
 ---
 
 <p>
-{% span center large, Volantis %}
+{% span logo center large, Volantis %}
 {% span center small, A Wonderful Theme for Hexo %}
 </p>
 <br>
@@ -46,7 +46,7 @@ curl -s https://volantis.js.org/start | sh
 
 <!-- tab 手动安装 -->
 
-第1/3步：下载主题源码到 themes/ 文件夹
+第1/3步：下载主题源码到 `themes/` 文件夹
 ```sh
 git clone https://github.com/xaoxuu/hexo-theme-volantis themes/volantis
 ```

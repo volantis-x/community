@@ -24,13 +24,9 @@ info:
   name: Volantis # This is theme's name, not your blog's name.
   version: '2.4.1' # This is theme's version.
   docs: https://volantis.js.org/ # This is theme's URL.
-  cdn: # To use CDN, write 'use_cdn: true' in 'blog/_config.yml'.
-    css: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@2.4.1/css/style.css
-    js: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@2.4.1/js/app.js
-```
-这部分内容一般无需修改，方便您查看主题相关信息。如果您不需要修改样式，建议开启主题提供的 CDN 服务以提高加载速度。
-``` yaml blog/_config.yml
-use_cdn: true
+  cdn:
+    css:
+    js:
 ```
 
 
@@ -103,7 +99,7 @@ style:
 ```
 
 ### 布局间距
-您可以设置几种标题的布局间距 `h2/h3/h4`、段落间距 `line`、区块内部的段落间距 `inline`。
+您可以设置几种标题的布局间距 h2/h3/h4、段落间距 line、区块内部的段落间距 inline。
 ```yaml blog/themes/volantis/_config.yml
 style:
   ...
@@ -121,12 +117,20 @@ style:
 style:
   ...
   fontfamily:
-    bodyfont:
+    logofont:
+      fontfamily: '"Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial'
       name: 'Varela Round'
       url: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-fonts/VarelaRound/VarelaRound-Regular.ttf
       weight: normal
       style: normal
+    bodyfont:
+      fontfamily: 'UbuntuMono, "PingFang SC", "Microsoft YaHei", Helvetica, Arial'
+      name: 'UbuntuMono'
+      url: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-fonts/UbuntuMono/UbuntuMono-Regular.ttf
+      weight: normal
+      style: normal
     codefont:
+      fontfamily: 'Menlo, Monaco'
       name: 'Monaco'
       url: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-fonts/Monaco/Monaco.ttf
       weight: normal
@@ -830,7 +834,7 @@ clientID 和 clientSecret 的获取方法可自行搜索教程，这里仅简单
 **Homepage URL** 和 **Authorization callback URL** 都写你的网址，我的是：`https://xaoxuu.com`
 
 
-**可以通过设置 `gitalk.id` 实现多个页面共用一个评论框。**
+**可以通过设置 gitalk.id 实现多个页面共用一个评论框。**
 
 ```yaml front-matter
 ---

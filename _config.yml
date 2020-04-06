@@ -103,13 +103,6 @@ ignore:
 theme: volantis
 # 覆盖主题配置
 theme_config:
-  style:
-    # color:
-    #   site: '#E84D3B'
-    #   site_inner: '#FFCE48'
-    #   theme: '#E84D3B'
-    gap:
-      paragraph: .5rem
   cover:
     search: '搜索文档'
     features:
