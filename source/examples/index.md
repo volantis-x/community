@@ -4,13 +4,16 @@ title: 示例博客
 meta:
   header: []
 links:
-  - group: '版本：^2.4'
-    desc: 支持 Menu 标签
+  - group: '版本：^2.5'
+    desc: 新增 Group、References 组件
     items:
     - name: xaoxuu
       url: https://xaoxuu.com
       avatar: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png
       tags: [主题作者]
+  - group: '版本：^2.4'
+    desc: 新增 Menu 标签
+    items:
     - name: movny
       url: https://home.movny.com
       avatar: https://cdn.jsdelivr.net/gh/movny/cdn-assets/logo/kellogg.jpg
@@ -26,7 +29,7 @@ links:
       avatar: https://imgkr.cn-bj.ufileos.com/5ff3c7ea-3f6e-40c7-92ec-3b926c35afd7.png
       tags: [精算师考试]
   - group: '版本：^2.2'
-    desc: 支持 Note 标签
+    desc: 新增 Note 标签
     items:
     - name: Charlie
       url: https://charlie-zzy.github.io
@@ -41,7 +44,7 @@ links:
       avatar: https://ilx.info/images/author.png
       tags: [Linux, 小菜鸟]
   - group: '版本：^2.1'
-    desc: 支持 Tab 标签
+    desc: 新增 Tab 标签
     items:
     - name: 剑无道
       url: https://jianwudao.com
