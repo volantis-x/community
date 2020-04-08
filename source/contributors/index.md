@@ -17,19 +17,20 @@ music:
 **非常感谢直接提交了 PR 的朋友！**
 
 {% btns circle grid5 %}
-<a href='https://github.com/xaoxuu'><img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png'>xaoxuu</a>
-<a href='https://github.com/inkss'><img src='https://avatars2.githubusercontent.com/u/31947043?s=60&v=4'>inkss</a>
-<a href='https://github.com/CRainyDay'><img src='https://avatars2.githubusercontent.com/u/46487957?s=60&v=4'>CRainyDay</a>
-<a href='https://github.com/zhaohaihao'><img src='https://avatars1.githubusercontent.com/u/16284860?s=60&v=4'>zhaohaihao</a>
-<a href='https://github.com/MicDZ'><img src='https://avatars2.githubusercontent.com/u/34596177?s=60&v=4'>MicDZ</a>
-<a href='https://github.com/lunhui1994'><img src='https://avatars2.githubusercontent.com/u/18746902?s=60&v=4'>lunhui1994</a>
-<a href='https://github.com/ic3evi1'><img src='https://avatars0.githubusercontent.com/u/11464700?s=60&v=4'>ic3evi1</a>
-<a href='https://github.com/cofm'><img src='https://avatars2.githubusercontent.com/u/9138369?s=60&v=4'>cofm</a>
-<a href='https://github.com/WillyChen123'><img src='https://avatars2.githubusercontent.com/u/8603271?s=60&v=4'>WillyChen123</a>
-<a href='https://github.com/TRHX'><img src='https://avatars3.githubusercontent.com/u/42269246?s=60&v=4'>TRHX</a>
-<a href='https://github.com/PHIKN1GHT'><img src='https://avatars0.githubusercontent.com/u/42083023?s=60&v=4'>PHIKN1GHT</a>
-<a href='https://github.com/Linhk1606'><img src='https://avatars1.githubusercontent.com/u/50829219?s=60&v=4'>Linhk1606</a>
-<a href='https://github.com/xaoxuu/hexo-theme-volantis/graphs/contributors'><i class='fab fa-github'></i>查看全部</a>
+{% cell xaoxuu, https://github.com/xaoxuu, https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png %}
+{% cell inkss, https://github.com/inkss, https://avatars2.githubusercontent.com/u/31947043?s=60&v=4 %}
+{% cell CRainyDay, https://github.com/CRainyDay, https://avatars2.githubusercontent.com/u/46487957?s=60&v=4 %}
+{% cell zhaohaihao, https://github.com/zhaohaihao, https://avatars1.githubusercontent.com/u/16284860?s=60&v=4 %}
+{% cell MicDZ, https://github.com/MicDZ, https://avatars2.githubusercontent.com/u/34596177?s=60&v=4 %}
+{% cell lunhui1994, https://github.com/lunhui1994, https://avatars2.githubusercontent.com/u/18746902?s=60&v=4 %}
+{% cell ic3evi1, https://github.com/ic3evi1, https://avatars0.githubusercontent.com/u/11464700?s=60&v=4 %}
+{% cell cofm, https://github.com/cofm, https://avatars2.githubusercontent.com/u/9138369?s=60&v=4 %}
+{% cell WillyChen123, https://github.com/WillyChen123, https://avatars2.githubusercontent.com/u/8603271?s=60&v=4 %}
+{% cell TRHX, https://github.com/TRHX, https://avatars3.githubusercontent.com/u/42269246?s=60&v=4 %}
+{% cell PHIKN1GHT, https://github.com/PHIKN1GHT, https://avatars0.githubusercontent.com/u/42083023?s=60&v=4 %}
+{% cell MHuiG, https://github.com/MHuiG, https://avatars0.githubusercontent.com/u/38281581?s=60&v=4 %}
+{% cell Linhk1606, https://github.com/Linhk1606, https://avatars1.githubusercontent.com/u/50829219?s=60&v=4 %}
+{% cell 查看全部, https://github.com/xaoxuu/hexo-theme-volantis/graphs/contributors, fab fa-github %}
 {% endbtns %}
 
 
@@ -42,9 +43,9 @@ music:
 感谢以下网站的收录与分享，让本主题能够被更多人发现，主题就会做的越来越好~
 
 {% btns rounded grid5 %}
-<a href='https://hexo.io/themes/'><img height='48px' src='https://img.vim-cn.com/72/7e917e9b7bd3ee1cb593494610506c998eefb2.jpg'>Hexo Themes</a>
-<a href='https://valine.js.org/hexo.html#hexo-theme-volantis'><img height='48px' src='https://img.vim-cn.com/69/c9df34f04c86d32de9096a595fb5865711403c.png'>Valine</a>
-<a href='https://easyhexo.com/2-Theme-use-and-config/2-6-hexo-theme-volantis/'><img height='48px' src='https://i.loli.net/2020/03/10/vxqOKtnRYehP4ZW.png'>Easy Hexo</a>
+{% cell Hexo Themes, https://hexo.io/themes/, https://img.vim-cn.com/72/7e917e9b7bd3ee1cb593494610506c998eefb2.jpg %}
+{% cell Valine, https://valine.js.org/hexo.html#hexo-theme-volantis, https://img.vim-cn.com/69/c9df34f04c86d32de9096a595fb5865711403c.png %}
+{% cell Easy Hexo, https://easyhexo.com/2-Theme-use-and-config/2-6-hexo-theme-volantis/, https://i.loli.net/2020/03/10/vxqOKtnRYehP4ZW.png %}
 {% endbtns %}
 
 ## 转载和分享

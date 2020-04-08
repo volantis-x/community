@@ -368,7 +368,7 @@ rounded, circle
 圆形图标 + 标题 + 描述 + 图片 + 网格5列 + 居中
 
 ```md example.md:
-{% btns circle center grid4 %}
+{% btns circle center grid5 %}
 <a href='https://apps.apple.com/cn/app/heart-mate-pro-hrm-utility/id1463348922?ls=1'>
   <i class='fab fa-apple'></i>
   <b>心率管家</b>
@@ -405,7 +405,7 @@ rounded, circle
 
 
 圆形图标 + 标题 + 描述 + 图片 + 网格5列 + 居中
-{% btns circle center grid4 %}
+{% btns circle center grid5 %}
 <a href='https://apps.apple.com/cn/app/heart-mate-pro-hrm-utility/id1463348922?ls=1'>
   <i class='fab fa-apple'></i>
   <b>心率管家</b>
