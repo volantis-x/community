@@ -19,7 +19,17 @@ meta:
 | links | 友链页面 |
 | list | 列表页面 |
 
-{% note info, post 页面几乎与 page 页面相同，但是，post 页面更适用于文章，网页向下滚动时导航栏会上翻显出文章标题。 %}
+### page & post
+
+post 页面布局几乎与 page 页面相同，但是有以下细微区别：
+
+- post 文章有 title 时，向下滚动网页，导航栏会向上移出屏幕显出文章标题，而 page 不会。
+- 主题配置中的 `article_footer` 只作用于 `post`，如果 page 也要显示，可以在 front-matter 中设置
+  ```yaml
+  meta:
+    article_footer: [xxx]
+  ```
+
 
 ## front-matter
 
@@ -337,6 +347,17 @@ meta:
 meta:
   header: []
   footer: []
+---
+```
+
+## 居中标题模式
+
+如果标题居中且下方不想显示任何 meta 信息，可以这样设置：
+
+```yaml front-matter
+---
+meta:
+  header: [centertitle]
 ---
 ```
 

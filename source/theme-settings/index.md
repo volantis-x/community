@@ -620,6 +620,49 @@ wiki-hexo-theme:
 ```
 您可以创建用于展示任何链接列表的列表部件。列表的 `rows` 中的每一项支持的属性有： `name`、`url`、`icon`、`img`、`avatar`，其中 `img` 是方形图片的链接，`avatar` 是圆形图片的链接。
 
+#### 参考资料
+
+这个部件的布局继承自 list 部件，用于展示文章的参考资料。
+```yaml blog/themes/volantis/_config.yml
+references:
+  class: references # is subclass of list
+  display: [desktop, mobile] # [desktop, mobile]
+  header:
+    icon: fas fa-quote-left
+    title: 参考资料
+```
+
+在文章的 front-matter 中设置：
+```yaml front-matter
+references:
+  - name: Apple Developer Documentation
+    url: https://developer.apple.com/documentation/
+```
+
+#### 组索引
+
+这个部件的布局继承自 list 部件，用于展示文章所属的分组的文章列表。
+```yaml blog/themes/volantis/_config.yml
+group-1:
+  class: group
+  display: [desktop, mobile] # [desktop, mobile]
+  header:
+    icon: fab fa-apple
+    title: Developer
+    url: /wiki/ios/
+```
+
+在文章的 front-matter 中设置：
+```yaml front-matter
+group: group-1
+order: 16
+sidebar: [group-1, toc]
+```
+
+「group-1」卡片将会以列表的形式显示所有设置了 `group: group-1` 的文章，顺序按照 `order` 从小到大排列。
+
+{% note play, 效果见： https://xaoxuu.com/wiki/ios/ %}
+
 ### 通用网格部件
 ```yaml blog/themes/volantis/_config.yml
 feedback:

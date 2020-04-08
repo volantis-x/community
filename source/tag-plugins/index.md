@@ -52,7 +52,7 @@ red, yellow, green, cyan, blue, gray
 {% p subtitle, 大小 %}
 
 ```
-small, large, huge, ultra
+small, h4, h3, h2, h1, large, huge, ultra
 ```
 
 {% p subtitle, 对齐方向 %}
