@@ -947,6 +947,27 @@ comments:
     js: https://valine.js.org/script/Valine.min.js
 ```
 
+### MiniValine
+
+官网： [https://github.com/MiniValine/MiniValine/](https://github.com/MiniValine/MiniValine/)
+
+```yaml blog/themes/volantis/_config.yml
+comments:
+  ...
+  minivaline:
+    appId: # Your leancloud application appid
+    appKey: # Your leancloud application appkey
+    placeholder: Write a Comment # Comment box placeholder
+    adminEmailMd5: # The MD5 of Admin Email to show Admin Flag.
+    math: true # Support MathJax.
+    md: true # Support Markdown.
+    # MiniValine's display language depends on user's browser or system environment
+    # If you want everyone visiting your site to see a uniform language, you can set a force language value
+    # Available values: en  | zh-CN | (and many more)
+    # More i18n info: https://github.com/MiniValine/minivaline-i18n
+    lang:
+```
+
 ### Livere
 
 官网： [https://www.livere.com/](https://www.livere.com/)
