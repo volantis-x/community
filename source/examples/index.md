@@ -11,6 +11,9 @@ links:
       url: https://xaoxuu.com
       avatar: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png
       tags: [主题作者]
+    - name: movny
+      url: https://home.movny.com
+      avatar: https://cdn.jsdelivr.net/gh/movny/cdn-assets/logo/kellogg.jpg
   - group: '版本：^2.3'
     desc: 优化更多标签
     items:
