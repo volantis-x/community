@@ -622,7 +622,8 @@ wiki-hexo-theme:
 
 #### 参考资料
 
-这个部件的布局继承自 list 部件，用于展示文章的参考资料。
+这个部件的布局继承自 list 部件，用于展示文章的参考资料。请将您的 Volantis 升级至 <u>2.5</u> 版本以上使用。
+
 ```yaml blog/themes/volantis/_config.yml
 references:
   class: references # is subclass of list
@@ -641,7 +642,8 @@ references:
 
 #### 组索引
 
-这个部件的布局继承自 list 部件，用于展示文章所属的分组的文章列表。
+这个部件的布局继承自 list 部件，用于展示文章所属的分组的文章列表。请将您的 Volantis 升级至 <u>2.5</u> 版本以上使用。
+
 ```yaml blog/themes/volantis/_config.yml
 group-1:
   class: group

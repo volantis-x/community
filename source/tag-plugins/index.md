@@ -13,7 +13,7 @@ mathjax: true
 
 ### Span & P
 
-请将您的 Volantis 升级至 <u>2.3</u> 版本以上使用。
+请将您的 Volantis 升级至 <u>2.5</u> 版本以上使用。
 
 {% tabs span-p, 4 %}
 
