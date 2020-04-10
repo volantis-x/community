@@ -108,6 +108,8 @@ theme_config:
       effect: [blur] # [shadow, floatable, blur]
     body:
       effect: [blur] # [shadow, floatable, blur]
+    color:
+      site_footer: '#fff'
   cover:
     search: '搜索文档'
     features:
@@ -193,7 +195,7 @@ sitemap:
 lazyload:
   enable: true
   onlypost: false
-  loadingImg: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/placeholder/d570170f4f12e1ee829ca0e85a7dffeb77343a.svg
+  loadingImg: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/placeholder/c617bfd2497fcea598e621413e315c368f8d8e.svg
 
 # npm install hexo-all-minifier --save
 all_minifier: false
