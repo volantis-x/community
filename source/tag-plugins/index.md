@@ -225,6 +225,93 @@ Windows 10不是為所有人設計,而是為每個人設計
 
 {% endtabs %}
 
+
+### Checkbox & Radio
+
+请将您的 Volantis 升级至 <u>2.6</u> 版本以上使用。
+
+{% tabs btn, 4 %}
+
+<!-- tab 语法格式 -->
+
+```
+{% checkbox 样式参数（可选）, 文本（支持简单md） %}
+```
+
+<!-- endtab -->
+
+<!-- tab 参数列表 -->
+
+{% p subtitle, 颜色 %}
+
+```
+red, yellow, green, cyan, blue
+```
+
+{% p subtitle, 选中状态 %}
+
+```
+checked
+```
+
+
+<!-- endtab -->
+
+<!-- tab 示例写法 -->
+
+{% p subtitle, Checkbox %}
+
+```md example.md:
+{% checkbox 纯文本测试 %}
+{% checkbox checked, 支持简单的 [markdown](https://guides.github.com/features/mastering-markdown/) 语法 %}
+{% checkbox red, 支持自定义颜色 %}
+{% checkbox green checked, 绿色 + 默认选中 %}
+{% checkbox yellow checked, 黄色 + 默认选中 %}
+{% checkbox cyan checked, 青色 + 默认选中 %}
+{% checkbox blue checked, 蓝色 + 默认选中 %}
+```
+
+{% p subtitle, Radio %}
+
+```md example.md:
+{% radio 纯文本测试 %}
+{% radio checked, 支持简单的 [markdown](https://guides.github.com/features/mastering-markdown/) 语法 %}
+{% radio red, 支持自定义颜色 %}
+{% radio green, 绿色 %}
+{% radio yellow, 黄色 %}
+{% radio cyan, 青色 %}
+{% radio blue, 蓝色 %}
+```
+
+<!-- endtab -->
+
+<!-- tab 示例效果 -->
+
+{% p subtitle, Checkbox %}
+
+{% checkbox 纯文本测试 %}
+{% checkbox checked, 支持简单的 [markdown](https://guides.github.com/features/mastering-markdown/) 语法 %}
+{% checkbox red, 支持自定义颜色 %}
+{% checkbox green checked, 绿色 + 默认选中 %}
+{% checkbox yellow checked, 黄色 + 默认选中 %}
+{% checkbox cyan checked, 青色 + 默认选中 %}
+{% checkbox blue checked, 蓝色 + 默认选中 %}
+
+{% p subtitle, Radio %}
+
+{% radio 纯文本测试 %}
+{% radio checked, 支持简单的 [markdown](https://guides.github.com/features/mastering-markdown/) 语法 %}
+{% radio red, 支持自定义颜色 %}
+{% radio green, 绿色 %}
+{% radio yellow, 黄色 %}
+{% radio cyan, 青色 %}
+{% radio blue, 蓝色 %}
+
+<!-- endtab -->
+
+{% endtabs %}
+
+
 ## 按钮和菜单
 
 ### 基础按钮
