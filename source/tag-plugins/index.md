@@ -248,11 +248,18 @@ Windows 10不是為所有人設計,而是為每個人設計
 red, yellow, green, cyan, blue
 ```
 
+{% p subtitle, 样式 %}
+
+```
+plus, minus, times
+```
+
 {% p subtitle, 选中状态 %}
 
 ```
 checked
 ```
+
 
 
 <!-- endtab -->
@@ -269,6 +276,9 @@ checked
 {% checkbox yellow checked, 黄色 + 默认选中 %}
 {% checkbox cyan checked, 青色 + 默认选中 %}
 {% checkbox blue checked, 蓝色 + 默认选中 %}
+{% checkbox plus green checked, 增加 %}
+{% checkbox minus yellow checked, 减少 %}
+{% checkbox times red checked, 叉 %}
 ```
 
 {% p subtitle, Radio %}
@@ -296,6 +306,9 @@ checked
 {% checkbox yellow checked, 黄色 + 默认选中 %}
 {% checkbox cyan checked, 青色 + 默认选中 %}
 {% checkbox blue checked, 蓝色 + 默认选中 %}
+{% checkbox plus green checked, 增加 %}
+{% checkbox minus yellow checked, 减少 %}
+{% checkbox times red checked, 叉 %}
 
 {% p subtitle, Radio %}
 
