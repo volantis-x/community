@@ -4,7 +4,7 @@ guide:
   display: [desktop, mobile] # [desktop, mobile]
   header:
     icon: fas fa-map-signs
-    title: 文档导航
+    title: 分类导航
   fixed: true # 固定宽度
   rows:
     - name: 常见问题
@@ -94,14 +94,14 @@ news:
   class: list
   display: [desktop, mobile] # [desktop, mobile]
   header:
-    icon: fas fa-rss-square
-    title: 公告
+    icon: fas fa-exclamation-triangle
+    title: 近期公告
   rows:
     - name: 关于主题与文档的更新
       icon: fas fa-info-circle
       url: https://github.com/xaoxuu/hexo-theme-volantis/issues/215
 
-docs:
+docs-index:
   class: group
   display: [desktop, mobile] # [desktop, mobile]
   header:
