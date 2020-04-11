@@ -143,6 +143,7 @@ theme_config:
   footer:
     layout: [social, info, copyright]
   plugins:
+    comment_typing: false
     backstretch:
     #   enable: false
       position: fixed
