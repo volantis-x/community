@@ -1,6 +1,7 @@
 ---
 layout: page
 group: docs
+order: 2
 title: Theme Settings「主题配置」
 meta:
   header: [title, author, updated]

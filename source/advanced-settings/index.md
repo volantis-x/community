@@ -1,5 +1,7 @@
 ---
 layout: page
+group: docs
+order: 5
 title: Advanced Settings「进阶设定」
 meta:
   header: [title, author, updated]

@@ -4,13 +4,15 @@ title: 示例博客
 meta:
   header: []
 links:
-  - group: '版本：^2.5'
-    desc: 新增 Group、References 组件
+  - group: '版本：^2.6'
+    desc: 新增 Checkbox、Radio
     items:
     - name: xaoxuu
       url: https://xaoxuu.com
       avatar: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png
       tags: [主题作者]
+  - group: '版本：^2.5'
+    desc: 新增 Group、References 组件
   - group: '版本：^2.4'
     desc: 新增 Menu 标签
     items:

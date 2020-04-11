@@ -1,6 +1,7 @@
 ---
 layout: page
 group: docs
+order: 4
 title: Tag Plugins「标签插件」
 meta:
   header: [title, author, updated]

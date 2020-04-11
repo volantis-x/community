@@ -1,6 +1,7 @@
 ---
 layout: page
 group: docs
+order: 1
 title: Site Settings「站点配置」
 meta:
   header: [title, author, updated]

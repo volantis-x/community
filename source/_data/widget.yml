@@ -62,10 +62,12 @@ repos:
     title: 点个赞吧
     url: https://github.com/xaoxuu/
   content:
-    - '您的赞对我来说很重要，如果您喜欢本主题，希望能够给下面的项目点个赞来支持一下。'
+    - "<img style='width:20%' src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/emoji/qq/抱拳.gif'><img style='width:20%' src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/emoji/qq/抱拳.gif'><img style='width:20%' src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/emoji/qq/抱拳.gif'><img style='width:20%' src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/emoji/qq/抱拳.gif'><img style='width:20%' src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/emoji/qq/抱拳.gif'>"
+    - "您的赞对我来说很重要，如果您喜欢本主题，希望能够给下面的项目点个赞来支持一下。"
     - '[<img src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/proj/prohud/logo.png" height="50px">](https://github.com/xaoxuu/ProHUD)'
     - '[<img src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/proj/valuex/logo.png" height="50px">](https://github.com/xaoxuu/ValueX)'
     - '[<img src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/proj/inspire/logo.png" height="50px">](https://github.com/xaoxuu/Inspire)'
+
 
 # qrcode widget
 qrcode:
@@ -98,3 +100,10 @@ news:
     - name: 关于主题与文档的更新
       icon: fas fa-info-circle
       url: https://github.com/xaoxuu/hexo-theme-volantis/issues/215
+
+docs:
+  class: group
+  display: [desktop, mobile] # [desktop, mobile]
+  header:
+    icon: fas fa-list-alt
+    title: 文档索引
