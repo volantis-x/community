@@ -135,11 +135,12 @@ theme_config:
       title: '本页文档最后更新于：'
   comments:
     title: <i class='fas fa-comments'></i> 用户交流区
+    subtitle: 这里仅供用户之间进行交流，有任何疑问请前往GitHub提交Issue。在评论区进行提问将不会收到开发者的任何回复！
     valine:
-      # appId: FIKAgh6n0pUM08JXxhJHChVQ-MdYXbMMI
-      # appKey: RJGiOYFc1fBvfox4frBPpRzU
+      appId: FIKAgh6n0pUM08JXxhJHChVQ-MdYXbMMI
+      appKey: RJGiOYFc1fBvfox4frBPpRzU
       path: /
-      placeholder: 这里仅供用户之间进行交流，有任何疑问请前往GitHub提交Issue，在评论区进行反馈将不会收到开发者回复。
+      placeholder: 这里仅供用户之间进行交流，有任何疑问请前往GitHub提交Issue。在评论区进行提问将不会收到开发者的任何回复！
   footer:
     layout: [social, info, copyright]
   plugins:
@@ -152,7 +153,7 @@ theme_config:
         - https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/BBC19066-E176-47C2-9D22-48C81EE5DF6B.jpeg
         - https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/B18FCBB3-67FD-48CC-B4F3-457BA145F17A.jpeg
         - https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/67239FBB-E15D-4F4F-8EE8-0F1C9F3C4E7C.jpeg
-        # - https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/35F12181-F0E9-45BD-B134-37E4B4A660CF.jpeg
+        - https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/35F12181-F0E9-45BD-B134-37E4B4A660CF.jpeg
     aplayer:
       autoplay: true
       volume: 0.4
