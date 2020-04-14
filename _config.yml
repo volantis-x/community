@@ -142,7 +142,7 @@ theme_config:
       path: /
       placeholder: 这里仅供用户之间进行交流，有任何疑问请前往GitHub提交Issue。在评论区进行提问将不会收到开发者的任何回复！
   footer:
-    layout: [social, info, copyright]
+    layout: [aplayer, social, info, copyright]
   plugins:
     comment_typing: false
     backstretch:
