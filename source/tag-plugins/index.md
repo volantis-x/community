@@ -779,15 +779,83 @@ hahaha <span><img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/emoji/tieba
 
 包括图片、音频、视频。
 
+### Image
+
+Image 标签是一种针对单个图片应用场景的标签，支持图片描述文字和指定宽度。请将您的 Volantis 升级至 <u>2.6</u> 版本以上使用。
+
+{% tabs fancybox, 1 %}
+
+<!-- tab 语法格式 -->
+
+```
+{% image 链接, 宽度（可选）, 描述（可选） %}
+```
+
+<!-- endtab -->
+
+<!-- tab 参数列表 -->
+
+{% p subtitle, 图片宽度 %}
+
+阿拉伯数字 + px
+
+```md example:
+300px
+```
+
+{% p subtitle, 图片描述 %}
+
+纯文本，不能包含引号。
+
+
+<!-- endtab -->
+
+<!-- tab 示例写法 -->
+
+```md example.md:
+添加描述：
+
+{% image https://i.loli.net/2020/04/06/zdeQiOY9rBCjhDR.jpg, 每天下课回宿舍的路，承载了太多记忆。 %}
+
+指定宽度：
+
+{% image https://i.loli.net/2020/04/06/zdeQiOY9rBCjhDR.jpg, 300px %}
+
+指定宽度并添加描述：
+
+{% image https://i.loli.net/2020/04/06/zdeQiOY9rBCjhDR.jpg, 300px, 每天下课回宿舍的路，承载了太多记忆。 %}
+```
+
+<!-- endtab -->
+
+<!-- tab 示例效果 -->
+
+添加描述：
+
+{% image https://i.loli.net/2020/04/06/zdeQiOY9rBCjhDR.jpg, 每天下课回宿舍的路，承载了太多记忆。 %}
+
+指定宽度：
+
+{% image https://i.loli.net/2020/04/06/zdeQiOY9rBCjhDR.jpg, 300px %}
+
+指定宽度并添加描述：
+
+{% image https://i.loli.net/2020/04/06/zdeQiOY9rBCjhDR.jpg, 300px, 每天下课回宿舍的路，承载了太多记忆。 %}
+
+<!-- endtab -->
+
+{% endtabs %}
+
+
 ### Fancybox
 
-请将您的 Volantis 升级至 <u>2.2</u> 版本以上使用。
+Fancybox 标签是一种针对一组图片应用场景的标签。请将您的 Volantis 升级至 <u>2.2</u> 版本以上使用。
 
 {% tabs fancybox, 4 %}
 
 <!-- tab 语法格式 -->
 
-```md example.md:
+```md
 {% fancybox 参数, 列数 %}
 ![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/B18FCBB3-67FD-48CC-B4F3-457BA145F17A.jpeg)
 ![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/67239FBB-E15D-4F4F-8EE8-0F1C9F3C4E7C.jpeg)
