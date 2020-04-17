@@ -213,7 +213,7 @@ blog/source/_data/menu.yml
 ...
 ```
 
-### N级菜单
+### 菜单嵌套
 导航栏菜单支持嵌套，嵌套的属性名为 `rows` ，写法示例：
 ```yaml blog/source/_data/menu.yml
 ...
@@ -737,7 +737,7 @@ footer:
   hello: '[Hello World](/)'
 ```
 
-## SEO偏好设置
+## SEO
 ```yaml blog/themes/volantis/_config.yml
 seo:
   # When there are no keywords in the article's front-matter, use tags as keywords.
@@ -752,7 +752,7 @@ seo:
     tag: noindex,follow
     # robots can be written in front-matter
 ```
-SEO这部分一般不需要修改。
+这部分一般不需要修改。
 
 
 ## 插件库
