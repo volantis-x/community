@@ -11,6 +11,10 @@ links:
       url: https://xaoxuu.com
       avatar: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png
       tags: [主题作者]
+    - name: 精算后花园
+      url: https://actuarygarden.cn
+      avatar: https://imgkr.cn-bj.ufileos.com/5ff3c7ea-3f6e-40c7-92ec-3b926c35afd7.png
+      tags: [精算师考试]
   - group: '版本：^2.5'
     desc: 新增 Group、References 组件
   - group: '版本：^2.4'
@@ -26,10 +30,6 @@ links:
       url: https://mrhuanhao.cn/
       avatar: https://cdn.jsdelivr.net/gh/mrhuanhao/cdn/myimg/huanhao.jpg
       tags: [2.3主题, linux]
-    - name: 精算后花园
-      url: https://actuarygarden.cn
-      avatar: https://imgkr.cn-bj.ufileos.com/5ff3c7ea-3f6e-40c7-92ec-3b926c35afd7.png
-      tags: [精算师考试]
   - group: '版本：^2.2'
     desc: 新增 Note 标签
     items:
