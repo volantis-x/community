@@ -4,8 +4,8 @@ title: 示例博客
 meta:
   header: []
 links:
-  - group: '版本：^2.6'
-    desc: 新增 Checkbox、Radio
+  - group: '版本：^2.5～2.6'
+    desc: 新增 Group、References 组件；新增 Checkbox、Radio、Image、Video 等标签
     items:
     - name: xaoxuu
       url: https://xaoxuu.com
@@ -15,24 +15,24 @@ links:
       url: https://actuarygarden.cn
       avatar: https://imgkr.cn-bj.ufileos.com/5ff3c7ea-3f6e-40c7-92ec-3b926c35afd7.png
       tags: [精算师考试]
-  - group: '版本：^2.5'
-    desc: 新增 Group、References 组件
-  - group: '版本：^2.4'
-    desc: 新增 Menu 标签
-    items:
-    - name: movny
-      url: https://home.movny.com
-      avatar: https://cdn.jsdelivr.net/gh/movny/cdn-assets/logo/kellogg.jpg
-  - group: '版本：^2.3'
-    desc: 优化更多标签
-    items:
+    - name: SZYINK
+      url: https://inkss.cn/
+      avatar: https://img.inkss.cn/inkss_cn/static/img/favicon.png
+      tags: []
+    - name: 233213fedf
+      url: https://233213fedf.github.io
+      avatar: https://i.loli.net/2020/02/22/WbxiwCG1gDEF3Od.jpg
+      tags:
     - name: Huanhao
       url: https://mrhuanhao.cn/
       avatar: https://cdn.jsdelivr.net/gh/mrhuanhao/cdn/myimg/huanhao.jpg
       tags: [2.3主题, linux]
-  - group: '版本：^2.2'
-    desc: 新增 Note 标签
+  - group: '版本：^2.0～2.4'
+    desc: 导航栏 N 级菜单；新增 Tab、Note、Menu 标签
     items:
+    - name: movny
+      url: https://home.movny.com
+      avatar: https://cdn.jsdelivr.net/gh/movny/cdn-assets/logo/kellogg.jpg
     - name: Charlie
       url: https://charlie-zzy.github.io
       avatar: https://cdn.jsdelivr.net/gh/charlie-zzy/imgCDN/avatar.png
@@ -45,9 +45,6 @@ links:
       url: https://ilx.info
       avatar: https://ilx.info/images/author.png
       tags: [Linux, 小菜鸟]
-  - group: '版本：^2.1'
-    desc: 新增 Tab 标签
-    items:
     - name: 剑无道
       url: https://jianwudao.com
       avatar: https://cdn.jsdelivr.net/gh/HaleShaw/cdn/img/favicon_512.svg
@@ -64,18 +61,15 @@ links:
       url: https://blog.lhkstudio.me
       avatar: https://cdn.jsdelivr.net/gh/Linhk1606/Linhk1606@V2.0.4/me.jpg
       tags: [外观轻微修改, CheckBox]
-  - group: '版本：^2.0'
-    desc: 导航栏 N 级菜单
-    items:
+    - name: MicDZ's blog
+      url: https://www.micdz.cn
+      avatar: https://i.loli.net/2020/02/29/T2cijraFuM35ECO.jpg
+      tags: [OIer, C++]
     - name: CRainyDay
       url: https://crainyday.gitee.io
       avatar: https://cdn.jsdelivr.net/gh/crainyday/blog@master/avatar.png
       tags: [Java]
-    - name: YINUXY'S BLOG
-      url: https://blog.yinuxy.com
-      avatar: https://cdn.jsdelivr.net/gh/InfiniteYinux/cloud@2.42/avatar/avatar.png
-      tags: [在原主题的基础上添加了仿github日历云和标签云以及文章分类雷达图]
-  - group: '版本：^1.6'
+  - group: '版本：^1.6～1.7'
     items:
     - name: 覃浩的博客
       url: https://www.zhengyuanyuan520.com
@@ -93,16 +87,10 @@ links:
       url: https://www.cz5h.com
       avatar: https://cdn.jsdelivr.net/gh/TianZonglin/tuchuang/img/logo.jpg
       tags: [暗色, 轻微修改]
-  - group: '版本：^1.5'
-    items:
-    - name: 233213fedf
-      url: https://233213fedf.github.io
-      avatar: https://i.loli.net/2020/02/22/WbxiwCG1gDEF3Od.jpg
-      tags:
-    - name: MicDZ's blog
-      url: https://www.micdz.cn
-      avatar: https://i.loli.net/2020/02/29/T2cijraFuM35ECO.jpg
-      tags: [OIer, C++]
+    - name: YINUXY'S BLOG
+      url: https://blog.yinuxy.com
+      avatar: https://cdn.jsdelivr.net/gh/InfiniteYinux/cloud@2.42/avatar/avatar.png
+      tags: [在原主题的基础上添加了仿github日历云和标签云以及文章分类雷达图]
   - group: '上古版本'
     desc: 这是以前曾留言在 [issue#97](https://github.com/xaoxuu/hexo-theme-volantis/issues/97) 中的博主，如果您更新了版本，记得把您的卡片移动到新版本的分组中。
     items:
