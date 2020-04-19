@@ -41,8 +41,9 @@ front-matter 是文件最上方以 `---` 分隔的区域，用于指定个别文
 | 字段        | 含义         | 值类型        | 默认值 |
 | :----------- | :------------ | :------------- | :------ |
 | layout      | 布局模版     | String        | -      |
-| title       | 标题         | String        | -      |
-| seotitle       | 网页标题         | String        | page.title   |
+| title       | 页面标题         | String        | -      |
+| seo_title       | 网页标题         | String        | page.title   |
+| short_title       | 页面标题（在group列表中显示）         | String        | page.title   |
 | date        | 创建时间     | Date          | 文件创建时间 |
 | updated     | 更新日期     | Date          | 文件修改时间 |
 | permalink   | 覆盖文章网址 | String        | -      |

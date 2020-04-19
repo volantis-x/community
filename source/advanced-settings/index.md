@@ -43,7 +43,7 @@ git submodule add git@github.com:xaoxuu/hexo-theme-volantis themes/volantis
 
 ## 优化 SEO
 
-在 front-matter 中，可以设置 `keywords`、`description`、`robots` 和 `seotitle`。其中 `seotitle` 仅仅用作网页标题，优先级高于 `title`。
+在 front-matter 中，可以设置 `keywords`、`description`、`robots` 和 `seo_title`。其中 `seo_title` 仅仅用作网页标题，优先级高于 `title`。
 
 - 文章内部不要使用 H1 标题。
 
