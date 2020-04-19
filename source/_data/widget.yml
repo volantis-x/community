@@ -100,6 +100,9 @@ news:
     - name: 关于主题与文档的更新
       icon: fas fa-info-circle
       url: https://github.com/xaoxuu/hexo-theme-volantis/issues/215
+    - name: 升级小助手
+      icon: fas fa-angle-double-up
+      url: /getting-started/#升级小助手
 
 docs-index:
   class: group
