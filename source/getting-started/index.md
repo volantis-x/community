@@ -74,12 +74,13 @@ npm i -S hexo-renderer-stylus
 
 {% note 升级前请查看[更新日志](https://github.com/xaoxuu/hexo-theme-volantis/releases/) %}
 
+{% folding 2.6.3 -> 2.6.4 %}
+不需要额外处理。
+{% endfolding %}
 {% folding 2.6.2 -> 2.6.3 %}
-
 1. 全局搜索 `seotitle` 并替换为 `seo_title`。
 2. group 组件的索引规则有变，使用 group 组件的文章内，`group: group_name` 对应的组件名必须是 `group_name`。
 2. group 组件的列表名优先显示文章的 `short_title` 其次是 `title`。
-
 {% endfolding %}
 
 ## 许可协议
