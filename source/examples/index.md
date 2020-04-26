@@ -30,7 +30,7 @@ links:
       tags: [2.3主题, linux]
     - name: Colsrch
       url: https://colsrch.top
-      avatar: http://thirdqq.qlogo.cn/g?b=qq&nk=1332925715&s=3
+      avatar: https://i.loli.net/2020/04/26/YSNKVcvtwMdWzAg.jpg
       tags: [C/C++, MFC]
       desc: [愿多年以后，我可以酌一杯清酒，烂醉如泥，梦中回到我们的曾经。]
   - group: '版本：^2.0～2.4'
