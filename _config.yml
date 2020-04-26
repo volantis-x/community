@@ -115,13 +115,13 @@ theme_config:
     features:
       - name: 文档
         icon: fas fa-book
-        url: getting-started/
+        url: /v2/getting-started/
       - name: 博文
         icon: fas fa-rss
-        url: archives/
+        url: /archives/
       - name: 示例
         icon: fas fa-play-circle
-        url: examples/
+        url: /examples/
       - name: 源码
         icon: fas fa-file-code
         url: https://github.com/xaoxuu/hexo-theme-volantis/
@@ -129,7 +129,7 @@ theme_config:
         target: _blank
       - name: 鸣谢
         icon: fas fa-handshake
-        url: contributors/
+        url: /contributors/
   meta:
     updated:
       title: '本页文档最后更新于：'

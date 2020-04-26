@@ -3,6 +3,7 @@ layout: links
 title: 示例博客
 meta:
   header: []
+sidebar: [news, docs-v2, repos, toc]
 links:
   - group: '版本：^2.5～2.6'
     desc: 新增 Group、References 组件；新增 Checkbox、Radio、Image、Video 等标签

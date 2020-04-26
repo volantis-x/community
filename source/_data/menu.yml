@@ -1,25 +1,36 @@
 - name: 开始
   icon: fas fa-flag
-  url: getting-started/
+  url: /v2/getting-started/
+
+- name: 文档
+  icon: fas fa-book
   rows:
-    - name: 一键下载主题文件
-      icon: fas fa-download
-      url: https://github.com/xaoxuu/hexo-theme-volantis/archive/master.zip
-- name: 站点
-  icon: fas fa-globe-asia
-  url: site-settings/
-- name: 主题
-  icon: fas fa-palette
-  url: theme-settings/
-- name: 页面
-  icon: fas fa-file-alt
-  url: page-settings/
-- name: 写作
-  icon: fas fa-pen-alt
-  url: tag-plugins/
-- name: 进阶
-  icon: fas fa-flask
-  url: advanced-settings/
+    - name: 站点配置
+      icon: fas fa-globe-asia
+      url: /v2/site-settings/
+    - name: 主题配置
+      icon: fas fa-palette
+      url: /v2/theme-settings/
+    - name: 页面配置
+      icon: fas fa-file-alt
+      url: /v2/page-settings/
+    - name: 标签插件
+      icon: fas fa-pen-alt
+      url: /v2/tag-plugins/
+    - name: 进阶设定
+      icon: fas fa-flask
+      url: /v2/advanced-settings/
+
+- name: FAQ
+  icon: fas fa-question-circle
+  url: faqs/
+
+- name: 示例
+  icon: fas fa-play-circle
+  url: examples/
+
+
+
 - name: 更多
   icon: fas fa-ellipsis-v
   rows:
@@ -28,18 +39,10 @@
     - name: 更新日志
       url: https://github.com/xaoxuu/hexo-theme-volantis/releases/
     - name: hr
-    - name: 有疑问？
-      rows:
-        - name: 看 FAQ
-          url: faqs/
-        - name: 看 本站源码
-          url: https://github.com/xaoxuu/volantis-docs/
-        - name: 提 Issue
-          url: https://github.com/xaoxuu/hexo-theme-volantis/issues/
-    - name: hr
-    - name: 公告和测试博文
-      url: archives/
-    - name: 示例博客
-      url: examples/
     - name: 特别感谢
       url: contributors/
+    - name: 公告和测试文章
+      url: archives/
+    - name: hr
+    - name: 旧版文档 v2
+      url: /v2/getting-started/

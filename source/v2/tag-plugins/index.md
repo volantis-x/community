@@ -1,10 +1,12 @@
 ---
 layout: page
-group: docs
+group: docs-v2
 order: 4
 title: Tag Plugins「标签插件」
+short_title: 5. 标签插件
 meta:
   header: [title, author, updated]
+sidebar: [news, docs-v2, repos, toc]
 mathjax: true
 ---
 

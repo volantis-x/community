@@ -102,11 +102,11 @@ news:
       url: https://github.com/xaoxuu/hexo-theme-volantis/issues/215
     - name: 升级小助手
       icon: fas fa-angle-double-up
-      url: /getting-started/#升级小助手
+      url: /v2/getting-started/#升级小助手
 
-docs-index:
+docs-v2:
   class: group
   display: [desktop, mobile] # [desktop, mobile]
   header:
     icon: fas fa-list-alt
-    title: 文档索引
+    title: 文档 v2

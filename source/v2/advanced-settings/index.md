@@ -1,10 +1,12 @@
 ---
 layout: page
-group: docs
+group: docs-v2
 order: 5
 title: Advanced Settings「进阶设定」
+short_title: 6. 进阶设定
 meta:
   header: [title, author, updated]
+sidebar: [news, docs-v2, repos, toc]
 ---
 
 建议有一定基础知识的朋友进行尝试。

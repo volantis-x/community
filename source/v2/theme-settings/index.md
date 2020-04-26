@@ -1,10 +1,12 @@
 ---
 layout: page
-group: docs
+group: docs-v2
 order: 2
 title: Theme Settings「主题配置」
+short_title: 3. 主题配置
 meta:
   header: [title, author, updated]
+sidebar: [news, docs-v2, repos, toc]
 ---
 
 如无特殊说明，本页面的配置信息写在 <u>**主题**</u> 的 `config.yml` 文件中。
@@ -787,7 +789,7 @@ plugins:
 {% note warning, 如果您使用 highlight.js 请确保没有使用 hexo 官方的 codeblock 标签，否则会报错。 %}
 {% note bug red, 经测试，使用 highlight.js 的情况下，部分容器内的代码可能仍然会被渲染甚至报错。 %}
 
-## APlayer
+## APlayer 音乐播放器
 ```yaml blog/themes/volantis/_config.yml
 plugins:
   ...
@@ -822,17 +824,18 @@ comments:
   valine:
     appId: # your appId
     appKey: # your appKey
-    js: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@2.4.1.5/js/valine.js
+    js: https://cdn.jsdelivr.net/npm/valine@1.4/dist/Valine.min.js
     path: # All pages use the same path (share the same comments data)
-    meta: nick,mail,link #valine comment header info
+    meta: nick,mail,link # valine comment header info
+    requiredFields: ['nick','mail']
+    enableQQ: true # Unstable avatar link
     placeholder: 快来评论吧~ # valine comment input placeholder(like: Please leave your footprints )
-    avatar: mp # gravatar style https://valine.js.org/avatar
+    avatar: robohash # gravatar style https://valine.js.org/avatar
     pageSize: 10 # comment list page size
-    verify: true # valine verify code (true/false)
-    notify: true # valine mail notify (true/false)
     lang: zh-cn
     highlight: true
-    visitor: false # unavailable for now...
+    visitor: true
+    mathJax: false
   disqus:
     shortname:
   gitalk:
@@ -900,17 +903,18 @@ comments:
   valine:
     appId: # your appId
     appKey: # your appKey
-    js: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@2.4.1.5/js/valine.js
+    js: https://cdn.jsdelivr.net/npm/valine@1.4/dist/Valine.min.js
     path: # All pages use the same path (share the same comments data)
-    meta: nick,mail,link #valine comment header info
+    meta: nick,mail,link # valine comment header info
+    requiredFields: ['nick','mail']
+    enableQQ: true # Unstable avatar link
     placeholder: 快来评论吧~ # valine comment input placeholder(like: Please leave your footprints )
-    avatar: mp # gravatar style https://valine.js.org/avatar
+    avatar: robohash # gravatar style https://valine.js.org/avatar
     pageSize: 10 # comment list page size
-    verify: true # valine verify code (true/false)
-    notify: true # valine mail notify (true/false)
     lang: zh-cn
     highlight: true
-    visitor: false # unavailable for now...
+    visitor: true
+    mathJax: false
 ```
 
 其中，`placeholder` 支持在 front-matter 中设置。
@@ -929,23 +933,6 @@ valine:
 valine:
   path: /wiki/volantis/
 ---
-```
-
-#### 使用 Volantis 定制版本
-
-默认使用的是 Volantis 定制版本，与原版的区别是：
-
-1. 禁止匿名评论，当昵称、邮箱为空的时候无法评论。
-2. 增加了若干常用表情。
-
-如果您想使用原版 Valine 评论，只需要将 `js` 地址修改为原版地址即可：
-
-```yaml blog/themes/volantis/_config.yml
-comments:
-  ...
-  valine:
-    ...
-    js: https://valine.js.org/script/Valine.min.js
 ```
 
 ### MiniValine
@@ -995,7 +982,7 @@ comments:
 search:
   enable: true
   service: hexo  # hexo, google, algolia, azure, baidu
-  js: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@2.0.2/js/search.js
+  js: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@2.6.4/js/search.js
   google:
     apiKey:
     engineId:

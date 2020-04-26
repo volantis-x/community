@@ -1,10 +1,12 @@
 ---
 layout: page
-group: docs
+group: docs-v2
 order: 1
 title: Site Settings「站点配置」
+short_title: 2. 站点配置
 meta:
   header: [title, author, updated]
+sidebar: [news, docs-v2, repos, toc]
 ---
 
 如无特殊说明，本页面的配置信息写在 <u>**博客根目录**</u> 的 `_config.yml` 文件中。

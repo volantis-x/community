@@ -5,6 +5,7 @@ pid: faq
 body: [article, comments]
 meta:
   header: [title, author, updated]
+sidebar: [news, docs-v2, repos, toc]
 ---
 
 下述操作将协助您解决在使用过程中遇到的<u>任何</u>问题：

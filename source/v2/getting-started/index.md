@@ -1,10 +1,12 @@
 ---
 layout: page
-group: docs
+group: docs-v2
 order: 0
 title: Getting Started「开始使用」
+short_title: 1. 开始使用
 meta:
   header: []
+sidebar: [news, docs-v2, repos, toc]
 ---
 
 <p>
