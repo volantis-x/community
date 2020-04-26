@@ -10,7 +10,7 @@ links:
     items:
     - name: xaoxuu
       url: https://xaoxuu.com
-      avatar: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png
+      avatar: https://i.loli.net/2020/04/26/lmJ1xrQ2KR9YZiz.jpg
       tags: [主题作者]
     - name: 精算后花园
       url: https://actuarygarden.cn
@@ -26,7 +26,7 @@ links:
       tags:
     - name: Huanhao
       url: https://mrhuanhao.cn/
-      avatar: https://cdn.jsdelivr.net/gh/mrhuanhao/cdn/myimg/huanhao.jpg
+      avatar: https://i.loli.net/2020/04/26/mdP9RlE1iQS7UgX.jpg
       tags: [2.3主题, linux]
     - name: Colsrch
       url: https://colsrch.top
@@ -79,7 +79,7 @@ links:
     items:
     - name: 覃浩的博客
       url: https://www.zhengyuanyuan520.com
-      avatar: https://www.zhengyuanyuan520.cn/img/blog/avatar.jpg
+      avatar: https://i.loli.net/2020/04/26/dup1Qkt3RsOGw8K.jpg
       tags:
     - name: Throwable
       url: http://www.throwable.club
@@ -109,7 +109,7 @@ links:
       desc: [实现了ajax]
     - name: YangWC
       url: 	https://yangwc.com/
-      avatar: https://yangwc.com/image/avator.png
+      avatar: https://i.loli.net/2020/04/26/IVryJ9GnoQfB7NM.jpg
     - name: LiYanan2004
       url: 	https://liyanan2004.github.io
       avatar: https://cdn.jsdelivr.net/gh/LiYanan2004/LiYanan2004.github.io/assets/avatar.png
@@ -119,7 +119,7 @@ links:
       avatar: https://i.loli.net/2019/08/20/fEZyINzGS6PkAac.png
     - name: 孤独与诗
       url: https://createdestruction.github.io/
-      avatar: https://createdestruction.github.io/images/author.png
+      avatar: https://i.loli.net/2020/04/26/4KcxHAQf1nziqP7.png
     - name: Steven_MengのBlog
       url: https://stevenmhy.tk
       avatar: https://cdn.jsdelivr.net/gh/GaisaiYuno/imghost/20200124153036.PNG
@@ -150,7 +150,6 @@ links:
       avatar: https://www.xyhthink.com/img/head.jpg
     - name: Melody Player
       url: http://melodyplay.cn/
-      avatar: https://raw.githubusercontent.com/melodyplayer/asserts/master/photo/avatar/avatar.png
     - name: 今晚月色真美
       url: https://tangyanqiong.com/
       avatar: https://tangyanqiong.com/img/avatar.jpg
@@ -192,38 +191,15 @@ links:
 
 <br>
 
+1. 请点击上方的按钮，在 GitHub 上编辑此页。以友链的格式新增条目。
+2. 打开 [压缩图](https://www.yasuotu.com/) 将图片尺寸调整到 `192px` 后下载。
+3. 将压缩后的图片上传到 [sm.ms 图床](https://sm.ms/) 并使用此图片链接作为头像。
 
-{% tabs examples %}
-
-<!-- tab 自助添加 -->
-
-请点击上方的按钮，在 GitHub 上编辑此页。新增内容格式即友链的格式，要求图片需是 `HTTPS` 的。
 ```md 举个栗子
 - name: xaoxuu
   url: https://xaoxuu.com
-  avatar: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png
+  avatar: https://i.loli.net/2020/04/26/lmJ1xrQ2KR9YZiz.jpg
   tags: [主题作者]
 ```
-
-<!-- endtab -->
-
-<!-- tab 辅助工具 -->
-
-{% btns rounded grid5 %}
-<a href='https://www.yasuotu.com/'>
-  <i class='fas fa-link'></i>
-  <b>yasuotu.com</b>
-  <p>压缩图</p>
-</a>
-<a href='https://sm.ms/'>
-  <i class='fas fa-link'></i>
-  <b>sm.ms</b>
-  <p>HTTPS 图床</p>
-</a>
-{% endbtns %}
-
-<!-- endtab -->
-
-{% endtabs %}
 
 {% note success, 本站使用了持续集成，在您提交的更改通过审核并合并代码的几分钟后再刷新网页即生效。 %}
