@@ -19,6 +19,20 @@ Volantis，一个高度模块化和可定制化、功能相对完善的 Hexo 博
 
 这些是使用了本主题的博客： {% btn 示例博客, /examples/, fas fa-play-circle %}
 
+## 能力要求
+
+自建博客需要一定的相关知识，在开始前，请务必确保：
+
+{% checkbox checked, 已掌握 markdown 语法 %}
+{% checkbox checked, 已阅读 Hexo 官方文档 %}
+{% checkbox checked, 会使用终端（命令行），会使用 git  %}
+{% checkbox red checked, 会阅读文档、搜索文档 %}
+
+为了更好地使用，还建议掌握以下知识：
+
+{% checkbox checked, 规范地使用 GitHub Issues（解决文档中没有的问题） %}
+{% checkbox checked, GitHub Fork、Pull Request 操作（使主题保持更新） %}
+
 ## 环境要求
 
 如果您从旧版本更新或着其它主题迁移，请确保环境版本不要太低，否则会产生兼容性问题。
