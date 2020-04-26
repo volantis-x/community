@@ -28,6 +28,11 @@ links:
       url: https://mrhuanhao.cn/
       avatar: https://cdn.jsdelivr.net/gh/mrhuanhao/cdn/myimg/huanhao.jpg
       tags: [2.3主题, linux]
+    - name: Colsrch
+      url: https://colsrch.top
+      avatar: http://thirdqq.qlogo.cn/g?b=qq&nk=1332925715&s=3
+      tags: [C/C++, MFC]
+      desc: [愿多年以后，我可以酌一杯清酒，烂醉如泥，梦中回到我们的曾经。]
   - group: '版本：^2.0～2.4'
     desc: 导航栏 N 级菜单；新增 Tab、Note、Menu 标签
     items:
