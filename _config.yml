@@ -158,7 +158,7 @@ theme_config:
     aplayer:
       autoplay: true
       volume: 0.4
-      # order: random
+      order: random
       # id: 4917530132 # vol red
       # id: 4917524698 # vol blue
       id: 76244489 # vol white
