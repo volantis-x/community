@@ -607,7 +607,7 @@ rounded, circle
 
 ### Tab
 
-请将您的 Volantis 升级至 <u>2.1</u> 版本以上使用。
+此插件移植自 [NexT #tabs](https://theme-next.org/docs/tag-plugins/tabs) 。请将您的 Volantis 升级至 <u>2.1</u> 版本以上使用。
 
 {% tabs tab-id %}
 
