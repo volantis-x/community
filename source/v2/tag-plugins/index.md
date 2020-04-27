@@ -372,7 +372,7 @@ regular 按钮适合独立于段落之外：
 
 large 按钮更具有强调作用，建议搭配 center 使用：
 
-{% btn center large, 开始使用, https://volantis.js.org/getting-started/, fas fa-download %}
+{% btn center large, 开始使用, https://volantis.js.org/v2/getting-started/, fas fa-download %}
 ```
 
 <!-- endtab -->
@@ -387,7 +387,7 @@ regular 按钮适合独立于段落之外：
 
 large 按钮更具有强调作用，建议搭配 center 使用：
 
-{% btn center large, 开始使用, https://volantis.js.org/getting-started/, fas fa-download %}
+{% btn center large, 开始使用, https://volantis.js.org/v2/getting-started/, fas fa-download %}
 
 <!-- endtab -->
 
