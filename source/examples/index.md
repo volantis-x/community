@@ -33,6 +33,11 @@ links:
       avatar: https://i.loli.net/2020/04/26/YSNKVcvtwMdWzAg.jpg
       tags: [C/C++, MFC]
       desc: [愿多年以后，我可以酌一杯清酒，烂醉如泥，梦中回到我们的曾经。]
+    - name: Flexiston
+      url: https://www.flexiston.com
+      avatar: https://i.loli.net/2020/04/28/WOHp1vPcQoDB2YJ.png
+      tags: []
+      desc: [长风破浪会有时, 直挂云帆济沧海]
   - group: '版本：^2.0～2.4'
     desc: 导航栏 N 级菜单；新增 Tab、Note、Menu 标签
     items:
