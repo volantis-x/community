@@ -38,6 +38,10 @@ links:
       avatar: https://i.loli.net/2020/04/28/WOHp1vPcQoDB2YJ.png
       tags: []
       desc: [长风破浪会有时, 直挂云帆济沧海]
+    - name: Chrisyy
+      url: https://blog.chrisyy.top
+      avatar: https://i.loli.net/2020/04/02/uPRxC6fvsU4dlcb.jpg
+      tags: [ctf, math]
   - group: '版本：^2.0～2.4'
     desc: 导航栏 N 级菜单；新增 Tab、Note、Menu 标签
     items:
