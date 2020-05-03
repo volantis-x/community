@@ -42,6 +42,10 @@ links:
       url: https://blog.chrisyy.top
       avatar: https://i.loli.net/2020/04/02/uPRxC6fvsU4dlcb.jpg
       tags: [ctf, math]
+    - name: 马可飞行屋
+      url: https://ysplanet.github.io
+      avatar: https://i.loli.net/2020/05/03/g2hbSKA5plHwf1O.png
+      tags: [记录分享]
   - group: '版本：^2.0～2.4'
     desc: 导航栏 N 级菜单；新增 Tab、Note、Menu 标签
     items:
