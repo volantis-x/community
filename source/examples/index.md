@@ -42,6 +42,10 @@ links:
       url: https://blog.chrisyy.top
       avatar: https://i.loli.net/2020/04/02/uPRxC6fvsU4dlcb.jpg
       tags: [ctf, math]
+    - name: 杂谈小站
+      url: https://www.blublu.site/
+      avatar: https://i.loli.net/2020/05/04/pqAuiFOX8MYJxZ4.jpg
+      tags: [data]
   - group: '版本：^2.0～2.4'
     desc: 导航栏 N 级菜单；新增 Tab、Note、Menu 标签
     items:
