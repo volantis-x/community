@@ -46,6 +46,10 @@ links:
       url: https://www.blublu.site/
       avatar: https://i.loli.net/2020/05/04/pqAuiFOX8MYJxZ4.jpg
       tags: [data]
+    - name: Jitwxs
+      url: https://www.jitwxs.cn/
+      avatar: https://i.loli.net/2020/05/05/Im1rj3XAUzGnOx2.jpg
+      tags: [Java, Web]
   - group: '版本：^2.0～2.4'
     desc: 导航栏 N 级菜单；新增 Tab、Note、Menu 标签
     items:
