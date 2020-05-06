@@ -20,14 +20,14 @@ music:
 {% btns circle grid5 %}
 {% cell xaoxuu, https://github.com/xaoxuu, https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png %}
 {% cell inkss, https://github.com/inkss, https://avatars2.githubusercontent.com/u/31947043?s=60&v=4 %}
-{% cell CRainyDay, https://github.com/CRainyDay, https://avatars2.githubusercontent.com/u/46487957?s=60&v=4 %}
 {% cell MHuiG, https://github.com/MHuiG, https://avatars0.githubusercontent.com/u/38281581?s=60&v=4 %}
+{% cell CRainyDay, https://github.com/CRainyDay, https://avatars2.githubusercontent.com/u/46487957?s=60&v=4 %}
+{% cell ericclose, https://github.com/ericclose, https://avatars1.githubusercontent.com/u/34526560?s=60&v=4 %}
 {% cell zhaohaihao, https://github.com/zhaohaihao, https://avatars1.githubusercontent.com/u/16284860?s=60&v=4 %}
 {% cell TRHX, https://github.com/TRHX, https://avatars3.githubusercontent.com/u/42269246?s=60&v=4 %}
+{% cell Linhk1606, https://github.com/Linhk1606, https://avatars1.githubusercontent.com/u/50829219?s=60&v=4 %}
 {% cell PHIKN1GHT, https://github.com/PHIKN1GHT, https://avatars0.githubusercontent.com/u/42083023?s=60&v=4 %}
 {% cell ic3evi1, https://github.com/ic3evi1, https://avatars0.githubusercontent.com/u/11464700?s=60&v=4 %}
-{% cell ericclose, https://github.com/ericclose, https://avatars1.githubusercontent.com/u/34526560?s=60&v=4 %}
-{% cell Linhk1606, https://github.com/Linhk1606, https://avatars1.githubusercontent.com/u/50829219?s=60&v=4 %}
 {% cell cofm, https://github.com/cofm, https://avatars2.githubusercontent.com/u/9138369?s=60&v=4 %}
 {% cell MicDZ, https://github.com/MicDZ, https://avatars2.githubusercontent.com/u/34596177?s=60&v=4 %}
 {% cell lunhui1994, https://github.com/lunhui1994, https://avatars2.githubusercontent.com/u/18746902?s=60&v=4 %}
@@ -37,7 +37,15 @@ music:
 
 
 **同样感谢那些在评论和 Issue 中互相帮助的网友~**
-如果你有一个好点子或者解决了我这里没有解决的问题，欢迎去 [GitHub](https://github.com/xaoxuu/hexo-theme-volantis/) 贡献一下代码👏。
+如果您有一个好点子或者解决了我这里没有解决的问题，欢迎去 [GitHub](https://github.com/xaoxuu/hexo-theme-volantis/) 贡献一下代码。👏
+
+## 完善文档
+
+如果您发现文档中有错误，或者遗漏内容，欢迎补充和纠正。👏
+
+{% btns circle grid5 %}
+{% cell 文档源码, https://github.com/xaoxuu/volantis-docs/, fab fa-github %}
+{% endbtns %}
 
 
 ## 站点收录
