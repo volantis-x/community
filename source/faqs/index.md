@@ -153,8 +153,8 @@ root: /
 
 [Hexo官方文档](https://hexo.io) | [Valine官方文档](https://valine.js.org)
 
-请一定要阅读官方文档！
+<img class='inline' src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/emoji/aru/161.png">请一定要阅读官方文档！
 
-<img src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/emoji/aru/161.png" style="width:100%">
+<img class='inline' src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/emoji/aru/161.png" style="width:100%">
 
 {% endfolding %}
