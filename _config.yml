@@ -140,6 +140,7 @@ theme_config:
       appId: FIKAgh6n0pUM08JXxhJHChVQ-MdYXbMMI
       appKey: RJGiOYFc1fBvfox4frBPpRzU
       meta: [nick, mail]
+      requiredFields: ['nick']
       path: /
       placeholder: 这里仅供用户之间进行交流，有任何疑问请前往GitHub提交Issue。在评论区进行提问将不会收到开发者的任何回复！
   footer:
