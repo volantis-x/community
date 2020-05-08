@@ -2,7 +2,7 @@
 layout: page
 group: docs-v2
 order: 3
-title: Page Settings「页面配置」
+title: 页面配置
 short_title: 4. 页面配置
 meta:
   header: [title, author, updated]
@@ -397,9 +397,9 @@ meta:
   footer: [btns]
 btns:
   repo: https://github.com/xaoxuu/hexo-theme-volantis
-  bug: https://github.com/xaoxuu/hexo-theme-volantis/issues/new?assignees=&labels=BUG&template=bug-report.md
-  doubt: https://github.com/xaoxuu/hexo-theme-volantis/issues/new?labels=疑问&template=question-report.md
-  idea: https://github.com/xaoxuu/hexo-theme-volantis/issues/new?assignees=&labels=建议&template=feature-request.md
+  bug: https://github.com/xaoxuu/hexo-theme-volantis/issues/
+  doubt: https://github.com/xaoxuu/hexo-theme-volantis/issues/
+  idea: https://github.com/xaoxuu/hexo-theme-volantis/issues/
 ---
 ```
 
@@ -481,3 +481,5 @@ body: [article]
 body: [comments]
 ---
 ```
+
+<br><br>{% btn large center, 向开发者反馈问题, https://github.com/xaoxuu/hexo-theme-volantis/issues/ , fas fa-paper-plane %}

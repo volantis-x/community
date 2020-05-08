@@ -2,7 +2,7 @@
 layout: page
 group: docs-v2
 order: 5
-title: Advanced Settings「进阶设定」
+title: 进阶设定
 short_title: 6. 进阶设定
 meta:
   header: [title, author, updated]
@@ -147,3 +147,5 @@ google_analytics_key: Google Analytics Key
 详见 [@TRHX](https://www.itrhx.com) 的这篇博客：[《Hexo 博客主题个性化》](https://www.itrhx.com/2018/08/27/A04-Hexo-blog-topic-personalization/)
 
 内含卡片半透明、增加卡通人物、自定义鼠标样式、鼠标特效、烟花特效、彩色滚动字体、网站运行时间、动态浏览器标题、雪花飘落特效等多种详细教程。
+
+<br><br>{% btn large center, 向开发者反馈问题, https://github.com/xaoxuu/hexo-theme-volantis/issues/ , fas fa-paper-plane %}

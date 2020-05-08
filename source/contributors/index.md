@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Contributors「鸣谢」
+title: 特别感谢
 meta:
   header: [title, author, updated]
 sidebar: [news, docs-v2, repos, toc]

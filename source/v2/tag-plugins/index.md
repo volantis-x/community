@@ -2,7 +2,7 @@
 layout: page
 group: docs-v2
 order: 4
-title: Tag Plugins「标签插件」
+title: 标签插件
 short_title: 5. 标签插件
 meta:
   header: [title, author, updated]
@@ -1324,3 +1324,5 @@ content
 在文章中使用 `<!-- more -->`，那么 `<!-- more -->` 之前的文字将会被视为摘要。首页中将只出现这部分文字，同时这部分文字也会出现在正文之中。
 
 {% note link, 更多请见Hexo官方文档：[#标签插件](https://hexo.io/zh-cn/docs/tag-plugins) %}
+
+<br><br>{% btn large center, 向开发者反馈问题, https://github.com/xaoxuu/hexo-theme-volantis/issues/ , fas fa-paper-plane %}

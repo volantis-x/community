@@ -2,7 +2,7 @@
 layout: page
 group: docs-v2
 order: 1
-title: Site Settings「站点配置」
+title: 站点配置
 short_title: 2. 站点配置
 meta:
   header: [title, author, updated]
@@ -75,3 +75,5 @@ import:
 ## 更多配置
 
 更多请见 Hexo 官方文档：[#Hexo配置](https://hexo.io/zh-cn/docs/configuration)
+
+<br><br>{% btn large center, 向开发者反馈问题, https://github.com/xaoxuu/hexo-theme-volantis/issues/ , fas fa-paper-plane %}

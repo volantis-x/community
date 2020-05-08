@@ -21,7 +21,7 @@
       icon: fas fa-flask
       url: /v2/advanced-settings/
 
-- name: FAQ
+- name: 帮助
   icon: fas fa-question-circle
   url: faqs/
 
@@ -34,8 +34,11 @@
 - name: 更多
   icon: fas fa-ellipsis-v
   rows:
+    - name: 本站源码
+      url: https://github.com/xaoxuu/volantis-docs/
     - name: 主题源码
       url: https://github.com/xaoxuu/hexo-theme-volantis/
+    - name: hr
     - name: 更新日志
       url: https://github.com/xaoxuu/hexo-theme-volantis/releases/
     - name: hr
