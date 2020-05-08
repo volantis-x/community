@@ -90,7 +90,7 @@ npm i -S hexo-renderer-stylus
 
 升级前请查看 [更新日志](https://github.com/xaoxuu/hexo-theme-volantis/releases/)
 
-{% folding open green, 2.6.3 -> 2.6.5 %}
+{% folding open green, 2.6.3 -> 2.6.6 %}
 不需要额外处理。
 {% endfolding %}
 {% folding open yellow, 2.6.2 -> 2.6.3 %}
