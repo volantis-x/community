@@ -43,7 +43,7 @@ links:
       avatar: https://i.loli.net/2020/04/02/uPRxC6fvsU4dlcb.jpg
       tags: [ctf, math]
     - name: 杂谈小站
-      url: https://www.blublu.site/
+      url: https://www.blublu.site/?utm_source=volantis&utm_medium=bloglink
       avatar: https://i.loli.net/2020/05/04/pqAuiFOX8MYJxZ4.jpg
       tags: [data]
     - name: Jitwxs
