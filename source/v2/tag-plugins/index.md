@@ -1116,7 +1116,7 @@ date: 2020-02-23
 mathjax: true # false: 不渲染, true: 渲染, internal: 只在文章内部渲染，文章列表中不渲染
 ---
 
-$t+1=2$
+$$t+1=2$$
 
 $$
 \mbox{积累因子}=\begin{cases}
@@ -1140,7 +1140,7 @@ $$
 
 {% folding 示例效果 %}
 
-$t+1=2$
+$$t+1=2$$
 
 $$
 \mbox{积累因子}=\begin{cases}
