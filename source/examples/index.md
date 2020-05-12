@@ -50,6 +50,10 @@ links:
       url: https://www.jitwxs.cn/
       avatar: https://i.loli.net/2020/05/05/Im1rj3XAUzGnOx2.jpg
       tags: [Java, Web]
+    - name: 淘淘鲁
+      url: https://totoro.tech
+      avatar: https://totoro.tech/images/author.png
+      tags: [Linux, 小菜鸟]
   - group: '版本：^2.0～2.4'
     desc: 导航栏 N 级菜单；新增 Tab、Note、Menu 标签
     items:
@@ -64,10 +68,6 @@ links:
       url: https://gyl-coder.top
       avatar: https://cdn.jsdelivr.net/gh/gyl-coder/gyl-coder.github.com@v1.0.0/img/touxiang.jpg
       tags: [Java, 简介，自定义]
-    - name: Gmix
-      url: https://ilx.info
-      avatar: https://ilx.info/images/author.png
-      tags: [Linux, 小菜鸟]
     - name: 剑无道
       url: https://jianwudao.com
       avatar: https://cdn.jsdelivr.net/gh/HaleShaw/cdn/img/favicon_512.svg
