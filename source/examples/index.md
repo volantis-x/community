@@ -35,8 +35,8 @@ links:
       desc: [愿多年以后，我可以酌一杯清酒，烂醉如泥，梦中回到我们的曾经。]
     - name: Flexiston
       url: https://www.flexiston.com
-      avatar: https://i.loli.net/2020/04/28/WOHp1vPcQoDB2YJ.png
-      tags: []
+      avatar: https://i.loli.net/2020/05/13/2hwC84rbRyO3c1P.png
+      tags: [笔记]
       desc: [长风破浪会有时, 直挂云帆济沧海]
     - name: Chrisyy
       url: https://blog.chrisyy.top
