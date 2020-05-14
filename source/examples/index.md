@@ -58,6 +58,10 @@ links:
       url: https://hp-l.github.io/
       avatar: https://i.loli.net/2020/05/13/B6ufcSPwKjxv124.jpg
       tags: [知识改变年薪，文化改变命运]
+    - name: Alan
+      url: https://alanwang.site/
+      avatar: https://i.loli.net/2020/05/14/lLrMfaQ9GOnUsAV.png
+      tags: [前端小白, 记录改变]
   - group: '版本：^2.0～2.4'
     desc: 导航栏 N 级菜单；新增 Tab、Note、Menu 标签
     items:
