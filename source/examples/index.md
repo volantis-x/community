@@ -58,12 +58,13 @@ links:
       url: https://hp-l.github.io/
       avatar: https://i.loli.net/2020/05/13/B6ufcSPwKjxv124.jpg
       tags: [知识改变年薪，文化改变命运]
+    - name: movny
+      url: https://incite.js.org
+      avatar: https://cdn.jsdelivr.net/gh/movny/cdn-assets/logo/kellogg.jpg
+      desc: [Code the mind, Incite the future.]
   - group: '版本：^2.0～2.4'
     desc: 导航栏 N 级菜单；新增 Tab、Note、Menu 标签
     items:
-    - name: movny
-      url: https://home.movny.com
-      avatar: https://cdn.jsdelivr.net/gh/movny/cdn-assets/logo/kellogg.jpg
     - name: Charlie
       url: https://charlie-zzy.github.io
       avatar: https://cdn.jsdelivr.net/gh/charlie-zzy/imgCDN/avatar.png
