@@ -62,6 +62,10 @@ links:
       url: https://incite.js.org
       avatar: https://cdn.jsdelivr.net/gh/movny/cdn-assets/logo/kellogg.jpg
       desc: [Code the mind, Incite the future.]
+    - name: Alan
+      url: https://alanwang.site/
+      avatar: https://i.loli.net/2020/05/14/lLrMfaQ9GOnUsAV.png
+      tags: [前端小白, 记录改变]
   - group: '版本：^2.0～2.4'
     desc: 导航栏 N 级菜单；新增 Tab、Note、Menu 标签
     items:
