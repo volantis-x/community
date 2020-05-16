@@ -1105,7 +1105,7 @@ npm i -S hexo-tag-aplayer
 
 ## 公式
 
-### MathJax
+### MathJax公式
 
 默认是不渲染的，如果文章内有公式，需要在 front-matter 中设置开启。
 
