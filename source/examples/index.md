@@ -12,6 +12,10 @@ links:
       url: https://xaoxuu.com
       avatar: https://i.loli.net/2020/04/26/lmJ1xrQ2KR9YZiz.jpg
       tags: [主题作者]
+    - name: Frieza
+      url: https://wongqingbin.github.io
+      avatar: https://i.loli.net/2020/05/17/P597ZQdSArztBCx.jpg
+      tags: [测试开发, python]
     - name: 精算后花园
       url: https://actuarygarden.cn
       avatar: https://imgkr.cn-bj.ufileos.com/5ff3c7ea-3f6e-40c7-92ec-3b926c35afd7.png
