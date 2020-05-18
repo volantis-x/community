@@ -70,12 +70,13 @@ links:
       url: https://hutaoren.cn
       avatar: https://cdn.jsdelivr.net/gh/D0ggy/MarkDownPhoto@master/hexo/me/image192_192.jpg
       tags: [php, java]
+    - name: movny
+      url: https://incite.js.org
+      avatar: https://cdn.jsdelivr.net/gh/movny/cdn-assets/logo/kellogg.jpg
+      desc: [Code the mind, Incite the future.]
   - group: '版本：^2.0～2.4'
     desc: 导航栏 N 级菜单；新增 Tab、Note、Menu 标签
     items:
-    - name: movny
-      url: https://home.movny.com
-      avatar: https://cdn.jsdelivr.net/gh/movny/cdn-assets/logo/kellogg.jpg
     - name: Charlie
       url: https://charlie-zzy.github.io
       avatar: https://cdn.jsdelivr.net/gh/charlie-zzy/imgCDN/avatar.png
