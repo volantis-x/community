@@ -66,6 +66,10 @@ links:
       url: https://alanwang.site/
       avatar: https://i.loli.net/2020/05/14/lLrMfaQ9GOnUsAV.png
       tags: [前端小白, 记录改变]
+    - name: 赵泽仁
+      url: https://hutaoren.cn
+      avatar: https://cdn.jsdelivr.net/gh/D0ggy/MarkDownPhoto@master/hexo/me/image192_192.jpg
+      tags: [php, java]
   - group: '版本：^2.0～2.4'
     desc: 导航栏 N 级菜单；新增 Tab、Note、Menu 标签
     items:
