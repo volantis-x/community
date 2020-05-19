@@ -70,6 +70,10 @@ links:
       url: https://hutaoren.cn
       avatar: https://cdn.jsdelivr.net/gh/D0ggy/MarkDownPhoto@master/hexo/me/image192_192.jpg
       tags: [php, java]
+    - name: 尼采般地抒情
+      url: https://wztlink1013.com
+      avatar: https://cdn.jsdelivr.net/gh/wztlink1013/figure/blogbase/touxiang.jpg
+      tags: [总结技术，记录生活]
   - group: '版本：^2.0～2.4'
     desc: 导航栏 N 级菜单；新增 Tab、Note、Menu 标签
     items:
