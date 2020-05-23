@@ -74,6 +74,10 @@ links:
       url: https://wztlink1013.com
       avatar: https://cdn.jsdelivr.net/gh/wztlink1013/figure/blogbase/touxiang.jpg
       tags: [总结技术，记录生活]
+    - name: 杜老师说
+      url: https://dusays.com
+      avatar: https://cdn.dusays.com/avatar.png
+      tags: [分享技术]
   - group: '版本：^2.0～2.4'
     desc: 导航栏 N 级菜单；新增 Tab、Note、Menu 标签
     items:
