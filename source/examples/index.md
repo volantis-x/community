@@ -78,6 +78,10 @@ links:
       url: https://dusays.com
       avatar: https://cdn.dusays.com/avatar.png
       tags: [分享技术]
+    - name: Throwable
+      url: http://www.throwable.club
+      avatar: https://public-1256189093.cos.ap-guangzhou.myqcloud.com/static/doge_avatar.jpg
+      tags: [Chives, Java]
   - group: '版本：^2.0～2.4'
     desc: 导航栏 N 级菜单；新增 Tab、Note、Menu 标签
     items:
@@ -122,10 +126,6 @@ links:
       url: https://www.zhengyuanyuan520.com
       avatar: https://i.loli.net/2020/04/26/dup1Qkt3RsOGw8K.jpg
       tags:
-    - name: Throwable
-      url: http://www.throwable.club
-      avatar: https://public-1256189093.cos.ap-guangzhou.myqcloud.com/static/doge_avatar.jpg
-      tags: [Chives, Java]
     - name: ChrAlpha 的幻想乡
       url: https://chralpha.com
       avatar: https://cdn.jsdelivr.net/npm/chrdnx@1.0.9/img/head-found.png
