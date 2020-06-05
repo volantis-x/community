@@ -82,6 +82,10 @@ links:
       url: http://www.throwable.club
       avatar: https://public-1256189093.cos.ap-guangzhou.myqcloud.com/static/doge_avatar.jpg
       tags: [Chives, Java]
+    - name: BFDZ
+      url: https://www.bfdz.ink/
+      avatar: https://www.bfdz.ink/favicon.png
+      tags: [Linux,BT]      
   - group: '版本：^2.0～2.4'
     desc: 导航栏 N 级菜单；新增 Tab、Note、Menu 标签
     items:
@@ -206,9 +210,6 @@ links:
     - name: Candy Boy
       url: http://www.candysky.top/
       avatar: https://i.loli.net/2020/03/18/RMwQiItbyjd7fvK.png
-    - name: BFDZ
-      url: https://www.bfdz.ink/
-      avatar: https://www.bfdz.ink/favicon.ico
     - name: Shan san
       url: https://shansan.top/
       avatar: https://cdn.jsdelivr.net/gh/ssmath/images-assets-cdn/try20200311205451.jpg
