@@ -41,7 +41,7 @@ links:
       url: https://www.flexiston.com
       avatar: https://i.loli.net/2020/05/13/2hwC84rbRyO3c1P.png
       tags: [笔记]
-      desc: [长风破浪会有时, 直挂云帆济沧海]
+      desc: [立即行动吧，未来要自己争取]
     - name: Chrisyy
       url: https://blog.chrisyy.top
       avatar: https://i.loli.net/2020/04/02/uPRxC6fvsU4dlcb.jpg
