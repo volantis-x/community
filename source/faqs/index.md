@@ -68,7 +68,7 @@ root: /
 
 {% folding open, 教程与指南 %}
 
-[Hexo官方文档](https://hexo.io) | [Valine官方文档](https://valine.js.org)
+[Hexo官方文档](https://hexo.io) | [Valine官方文档](https://valine.js.org) | [Volantis Gitter交流群](https://gitter.im/hexo-theme-volantis/community?utm_source=share-link&utm_medium=link&utm_campaign=share-link)
 
 <img class='inline' src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/emoji/aru/161.png">请一定要阅读官方文档！
 
