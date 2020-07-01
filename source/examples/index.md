@@ -90,6 +90,10 @@ links:
       url: https://azusemisa.top/
       avatar: https://cdn.jsdelivr.net/gh/xiao-lin52/cdn-assets/images/avatar.webp
       tags: [OIer, C++]      
+    - name: 四叶草🍀️
+      url: https://www.fkxxyz.com
+      avatar: https://www.fkxxyz.com/logo/192x192.png
+      tags: [archlinux, python]
   - group: '版本：^2.0～2.4'
     desc: 导航栏 N 级菜单；新增 Tab、Note、Menu 标签
     items:
