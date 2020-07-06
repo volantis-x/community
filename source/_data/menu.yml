@@ -1,25 +1,25 @@
 - name: 开始
   icon: fas fa-flag
-  url: /v2/getting-started/
+  url: /v3/getting-started/
 
 - name: 文档
   icon: fas fa-book
   rows:
     - name: 站点配置
       icon: fas fa-globe-asia
-      url: /v2/site-settings/
+      url: /v3/site-settings/
     - name: 主题配置
       icon: fas fa-palette
-      url: /v2/theme-settings/
+      url: /v3/theme-settings/
     - name: 页面配置
       icon: fas fa-file-alt
-      url: /v2/page-settings/
+      url: /v3/page-settings/
     - name: 标签插件
       icon: fas fa-pen-alt
-      url: /v2/tag-plugins/
+      url: /v3/tag-plugins/
     - name: 进阶设定
       icon: fas fa-flask
-      url: /v2/advanced-settings/
+      url: /v3/advanced-settings/
 
 - name: 帮助
   icon: fas fa-question-circle
@@ -29,6 +29,10 @@
   icon: fas fa-play-circle
   url: examples/
 
+
+- name: 鸣谢
+  icon: fas fa-handshake
+  url: contributors/
 
 
 - name: 更多
@@ -41,10 +45,7 @@
     - name: hr
     - name: 更新日志
       url: https://github.com/theme-volantis/hexo-theme-volantis/releases/
-    - name: hr
-    - name: 特别感谢
-      url: contributors/
-    - name: 公告和测试文章
+    - name: 公告和测试
       url: archives/
     - name: hr
     - name: 旧版文档 v2

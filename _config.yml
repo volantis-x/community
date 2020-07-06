@@ -115,7 +115,7 @@ theme_config:
     features:
       - name: 文档
         icon: fas fa-book
-        url: /v2/getting-started/
+        url: /v3/getting-started/
       - name: 博文
         icon: fas fa-rss
         url: /archives/

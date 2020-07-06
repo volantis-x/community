@@ -80,11 +80,18 @@ news:
       url: https://github.com/theme-volantis/hexo-theme-volantis/issues/215
     - name: 升级小助手
       icon: fas fa-angle-double-up
-      url: /v2/getting-started/#升级小助手
+      url: /v3/getting-started/#升级小助手
 
 docs-v2:
   class: group
   display: [desktop, mobile] # [desktop, mobile]
   header:
     icon: fas fa-list-alt
-    title: 文档 v2
+    title: 文档 V2
+
+docs-v3:
+  class: group
+  display: [desktop, mobile] # [desktop, mobile]
+  header:
+    icon: fas fa-list-alt
+    title: 文档 V3

@@ -1,16 +1,16 @@
 ---
 layout: page
-group: docs-v2
-order: 0
+group: docs-v3
+order: 1
 title: 开始使用
 short_title: 1. 开始使用
 meta:
   header: []
-sidebar: [news, docs-v2, repos, toc]
+sidebar: [news, docs-v3, repos, toc]
 ---
 
 <p>
-{% span logo center large, Volantis 2 %}
+{% span logo center large, Volantis 3 %}
 {% span center small, A Wonderful Theme for Hexo %}
 </p>
 <br>
@@ -48,7 +48,7 @@ npm: 6.13
 
 {% tabs install, 2 %}
 
-<!-- tab 脚本自动安装 -->
+<!-- tab 脚本自动安装（Mac） -->
 
 在博客路径打开终端，下载安装并应用主题：
 ```sh
@@ -56,7 +56,13 @@ curl -s https://volantis.js.org/start | sh
 ```
 如果您还没有博客，执行这行命令将会自动检测并安装所需环境，初始化博客，然后下载安装并应用主题。
 
-{% note link blue, 脚本更多使用方法：[#hexo.sh](https://xaoxuu.com/wiki/hexo.sh/) %}
+{% noteblock link blue %}
+
+这个脚本是为 Mac 写的，不清楚 Linux 能不能使用，但 Windows 是一定不能用的。
+
+脚本详细使用方法：[#hexo.sh](https://xaoxuu.com/wiki/hexo.sh/)
+
+{% endnoteblock %}
 
 <!-- endtab -->
 
@@ -89,10 +95,24 @@ npm i -S hexo-renderer-stylus
 
 升级前请查看 [更新日志](https://github.com/theme-volantis/hexo-theme-volantis/releases/)
 
-{% folding open green, 2.6.3 -> 2.6.6 %}
+{% folding open red, 2.6.6 -> 3.0 %}
+
+{% p bold red, 必要修改 %}
+
+1. 如果有 `hexo-lazyload-image` 插件，需要删除并重新安装最新版本，设置 `lazyload.isSPA: true`。
+2. 2.x 版本的 css 和 js 不适用于 3.x 版本，如果使用了 `use_cdn: true` 则需要删除。
+
+
+{% p bold yellow, 建议修改 %}
+
+1. 如果使用了 `hexo-offline` 插件，建议卸载，3.0 版本默认开启了 pjax 服务。
+
+{% endfolding %}
+
+{% folding green, 2.6.3 -> 2.6.6 %}
 不需要额外处理。
 {% endfolding %}
-{% folding open yellow, 2.6.2 -> 2.6.3 %}
+{% folding yellow, 2.6.2 -> 2.6.3 %}
 1. 全局搜索 `seotitle` 并替换为 `seo_title`。
 2. group 组件的索引规则有变，使用 group 组件的文章内，`group: group_name` 对应的组件名必须是 `group_name`。
 2. group 组件的列表名优先显示文章的 `short_title` 其次是 `title`。
