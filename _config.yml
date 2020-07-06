@@ -124,7 +124,7 @@ theme_config:
         url: /examples/
       - name: 源码
         icon: fas fa-file-code
-        url: https://github.com/xaoxuu/hexo-theme-volantis/
+        url: https://github.com/theme-volantis/hexo-theme-volantis/
         rel: external nofollow noopener noreferrer
         target: _blank
       - name: 鸣谢

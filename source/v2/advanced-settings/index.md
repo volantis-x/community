@@ -14,7 +14,7 @@ sidebar: [news, docs-v2, repos, toc]
 {% folding yellow open, 将主题添加为子模块 %}
 
 ```sh
-git submodule add git@github.com:xaoxuu/hexo-theme-volantis themes/volantis
+git submodule add git@github.com:theme-volantis/hexo-theme-volantis themes/volantis
 ```
 {% endfolding %}
 
@@ -148,4 +148,4 @@ google_analytics_key: Google Analytics Key
 
 内含卡片半透明、增加卡通人物、自定义鼠标样式、鼠标特效、烟花特效、彩色滚动字体、网站运行时间、动态浏览器标题、雪花飘落特效等多种详细教程。
 
-<br><br>{% btn large center, 向开发者反馈问题, https://github.com/xaoxuu/hexo-theme-volantis/issues/ , fas fa-paper-plane %}
+<br><br>{% btn large center, 向开发者反馈问题, https://github.com/theme-volantis/hexo-theme-volantis/issues/ , fas fa-paper-plane %}

@@ -223,9 +223,9 @@ blog/source/_data/menu.yml
   icon: fas fa-ellipsis-v
   rows:
     - name: 主题源码
-      url: https://github.com/xaoxuu/hexo-theme-volantis/
+      url: https://github.com/theme-volantis/hexo-theme-volantis/
     - name: 更新日志
-      url: https://github.com/xaoxuu/hexo-theme-volantis/releases/
+      url: https://github.com/theme-volantis/hexo-theme-volantis/releases/
     - name: hr
     - name: 有疑问？
       rows:
@@ -234,7 +234,7 @@ blog/source/_data/menu.yml
         - name: 看 本站源码
           url: https://github.com/xaoxuu/volantis-docs/
         - name: 提 Issue
-          url: https://github.com/xaoxuu/hexo-theme-volantis/issues/
+          url: https://github.com/theme-volantis/hexo-theme-volantis/issues/
     - name: hr
     - name: 公告和测试博文
       url: archives/
@@ -676,18 +676,18 @@ feedback:
   header:
     icon: fas fa-headset
     title: 联系开发者
-    url: https://github.com/xaoxuu/hexo-theme-volantis
+    url: https://github.com/theme-volantis/hexo-theme-volantis
   fixed: true # 固定宽度
   rows:
     - name: 反馈BUG
       icon: fas fa-bug
-      url: https://github.com/xaoxuu/hexo-theme-volantis/issues/
+      url: https://github.com/theme-volantis/hexo-theme-volantis/issues/
     - name: 疑问求助
       icon: fas fa-question-circle
-      url: https://github.com/xaoxuu/hexo-theme-volantis/issues/
+      url: https://github.com/theme-volantis/hexo-theme-volantis/issues/
     - name: 提个建议
       icon: fas fa-lightbulb
-      url: https://github.com/xaoxuu/hexo-theme-volantis/issues/
+      url: https://github.com/theme-volantis/hexo-theme-volantis/issues/
 ```
 您可以创建用于展示任何链接列表的网格部件。网格默认根据文字长度自动确定每一个格子的宽度，如果文字长短不一，建议通过设置 `fixed: true` 来固定宽度，此时文字过长的格子中的文字会换行显示。
 
@@ -1002,4 +1002,4 @@ search:
 npm i -S hexo-generator-search hexo-generator-json-content
 ```
 
-<br><br>{% btn large center, 向开发者反馈问题, https://github.com/xaoxuu/hexo-theme-volantis/issues/ , fas fa-paper-plane %}
+<br><br>{% btn large center, 向开发者反馈问题, https://github.com/theme-volantis/hexo-theme-volantis/issues/ , fas fa-paper-plane %}

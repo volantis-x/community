@@ -155,7 +155,7 @@ links:
       avatar: https://cdn.jsdelivr.net/gh/InfiniteYinux/cloud@2.42/avatar/avatar.png
       tags: [在原主题的基础上添加了仿github日历云和标签云以及文章分类雷达图]
   - group: '上古版本'
-    desc: 这是以前曾留言在 [issue#97](https://github.com/xaoxuu/hexo-theme-volantis/issues/97) 中的博主，如果您更新了版本，记得把您的卡片移动到新版本的分组中。
+    desc: 这是以前曾留言在 [issue#97](https://github.com/theme-volantis/hexo-theme-volantis/issues/97) 中的博主，如果您更新了版本，记得把您的卡片移动到新版本的分组中。
     items:
     - name: 搅拌糖
       url: https://writeblog.github.io/

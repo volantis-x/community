@@ -157,7 +157,7 @@ And more text.
 
 [I'm a reference-style link][Arbitrary case-insensitive reference text]
 
-[I'm a relative reference to a repository file](https://cdn.jsdelivr.net/gh/xaoxuu/hexo-theme-volantis/LICENSE)
+[I'm a relative reference to a repository file](https://cdn.jsdelivr.net/gh/theme-volantis/hexo-theme-volantis/LICENSE)
 
 [You can use numbers for reference-style link definitions][1]
 
@@ -176,7 +176,7 @@ Some text to show that the reference links can follow later.
 
 [I'm a reference-style link][Arbitrary case-insensitive reference text]
 
-[I'm a relative reference to a repository file](https://cdn.jsdelivr.net/gh/xaoxuu/hexo-theme-volantis/LICENSE)
+[I'm a relative reference to a repository file](https://cdn.jsdelivr.net/gh/theme-volantis/hexo-theme-volantis/LICENSE)
 
 [You can use numbers for reference-style link definitions][1]
 

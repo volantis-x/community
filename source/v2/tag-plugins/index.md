@@ -572,13 +572,13 @@ rounded, circle
 
 ```md
 {% menu 下拉菜单 %}
-{% menuitem 主题源码, https://github.com/xaoxuu/hexo-theme-volantis/, fas fa-file-code %}
-{% menuitem 更新日志, https://github.com/xaoxuu/hexo-theme-volantis/releases/, fas fa-clipboard-list %}
+{% menuitem 主题源码, https://github.com/theme-volantis/hexo-theme-volantis/, fas fa-file-code %}
+{% menuitem 更新日志, https://github.com/theme-volantis/hexo-theme-volantis/releases/, fas fa-clipboard-list %}
 {% menuitem hr %}
 {% submenu 有疑问？, fas fa-question-circle %}
 {% menuitem 看 FAQ, /faqs/ %}
 {% menuitem 看 本站源码, https://github.com/xaoxuu/volantis-docs/ %}
-{% menuitem 提 Issue, https://github.com/xaoxuu/hexo-theme-volantis/issues/ %}
+{% menuitem 提 Issue, https://github.com/theme-volantis/hexo-theme-volantis/issues/ %}
 {% endsubmenu %}
 {% endmenu %}
 ```
@@ -588,13 +588,13 @@ rounded, circle
 <!-- tab 示例效果 -->
 
 {% menu 下拉菜单 %}
-{% menuitem 主题源码, https://github.com/xaoxuu/hexo-theme-volantis/, fas fa-file-code %}
-{% menuitem 更新日志, https://github.com/xaoxuu/hexo-theme-volantis/releases/, fas fa-clipboard-list %}
+{% menuitem 主题源码, https://github.com/theme-volantis/hexo-theme-volantis/, fas fa-file-code %}
+{% menuitem 更新日志, https://github.com/theme-volantis/hexo-theme-volantis/releases/, fas fa-clipboard-list %}
 {% menuitem hr %}
 {% submenu 有疑问？, fas fa-question-circle %}
 {% menuitem 看 FAQ, /faqs/ %}
 {% menuitem 看 本站源码, https://github.com/xaoxuu/volantis-docs/ %}
-{% menuitem 提 Issue, https://github.com/xaoxuu/hexo-theme-volantis/issues/ %}
+{% menuitem 提 Issue, https://github.com/theme-volantis/hexo-theme-volantis/issues/ %}
 {% endsubmenu %}
 {% endmenu %}
 
@@ -1325,4 +1325,4 @@ content
 
 {% note link, 更多请见Hexo官方文档：[#标签插件](https://hexo.io/zh-cn/docs/tag-plugins) %}
 
-<br><br>{% btn large center, 向开发者反馈问题, https://github.com/xaoxuu/hexo-theme-volantis/issues/ , fas fa-paper-plane %}
+<br><br>{% btn large center, 向开发者反馈问题, https://github.com/theme-volantis/hexo-theme-volantis/issues/ , fas fa-paper-plane %}

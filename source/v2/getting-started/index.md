@@ -64,7 +64,7 @@ curl -s https://volantis.js.org/start | sh
 
 第1/3步：下载主题源码到 `themes/` 文件夹
 ```sh
-git clone https://github.com/xaoxuu/hexo-theme-volantis themes/volantis
+git clone https://github.com/theme-volantis/hexo-theme-volantis themes/volantis
 ```
 
 第2/3步：修改站点配置文件
@@ -87,7 +87,7 @@ npm i -S hexo-renderer-stylus
 
 ## 升级小助手
 
-升级前请查看 [更新日志](https://github.com/xaoxuu/hexo-theme-volantis/releases/)
+升级前请查看 [更新日志](https://github.com/theme-volantis/hexo-theme-volantis/releases/)
 
 {% folding open green, 2.6.3 -> 2.6.6 %}
 不需要额外处理。
@@ -100,7 +100,7 @@ npm i -S hexo-renderer-stylus
 
 ## 许可协议
 
-本主题采用 [MIT开源许可协议](https://cdn.jsdelivr.net/gh/xaoxuu/hexo-theme-volantis/LICENSE) ，永久无限制免费使用。
+本主题采用 [MIT开源许可协议](https://cdn.jsdelivr.net/gh/theme-volantis/hexo-theme-volantis/LICENSE) ，永久无限制免费使用。
 
 {% noteblock quote %}
 **MIT开源许可协议**
@@ -110,4 +110,4 @@ npm i -S hexo-renderer-stylus
 在软件和软件的所有副本中都必须包含版权声明和许可声明。
 {% endnoteblock %}
 
-<br><br>{% btn large center, 向开发者反馈问题, https://github.com/xaoxuu/hexo-theme-volantis/issues/ , fas fa-paper-plane %}
+<br><br>{% btn large center, 向开发者反馈问题, https://github.com/theme-volantis/hexo-theme-volantis/issues/ , fas fa-paper-plane %}

@@ -32,12 +32,12 @@ music:
 {% cell MicDZ, https://github.com/MicDZ, https://avatars2.githubusercontent.com/u/34596177?s=60&v=4 %}
 {% cell lunhui1994, https://github.com/lunhui1994, https://avatars2.githubusercontent.com/u/18746902?s=60&v=4 %}
 {% cell WillyChen123, https://github.com/WillyChen123, https://avatars2.githubusercontent.com/u/8603271?s=60&v=4 %}
-{% cell 查看全部, https://github.com/xaoxuu/hexo-theme-volantis/graphs/contributors?type=a, fab fa-github %}
+{% cell 查看全部, https://github.com/theme-volantis/hexo-theme-volantis/graphs/contributors?type=a, fab fa-github %}
 {% endbtns %}
 
 
 **同样感谢那些在评论和 Issue 中互相帮助的网友~**
-如果您有一个好点子或者解决了我这里没有解决的问题，欢迎去 [GitHub](https://github.com/xaoxuu/hexo-theme-volantis/) 贡献一下代码。👏
+如果您有一个好点子或者解决了我这里没有解决的问题，欢迎去 [GitHub](https://github.com/theme-volantis/hexo-theme-volantis/) 贡献一下代码。👏
 
 ## 完善文档
 

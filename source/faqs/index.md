@@ -12,7 +12,7 @@ sidebar: [news, docs-v2, repos, toc]
 
 {% note warning yellow, Hexo 官方的单元测试项目： [https://github.com/hexojs/hexo-theme-unit-test](https://github.com/hexojs/hexo-theme-unit-test) %}
 
-<br>{% btn large center, 向开发者反馈问题, https://github.com/xaoxuu/hexo-theme-volantis/issues/ , fas fa-paper-plane %}
+<br>{% btn large center, 向开发者反馈问题, https://github.com/theme-volantis/hexo-theme-volantis/issues/ , fas fa-paper-plane %}
 
 <!-- more -->
 

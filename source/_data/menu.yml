@@ -37,10 +37,10 @@
     - name: 本站源码
       url: https://github.com/xaoxuu/volantis-docs/
     - name: 主题源码
-      url: https://github.com/xaoxuu/hexo-theme-volantis/
+      url: https://github.com/theme-volantis/hexo-theme-volantis/
     - name: hr
     - name: 更新日志
-      url: https://github.com/xaoxuu/hexo-theme-volantis/releases/
+      url: https://github.com/theme-volantis/hexo-theme-volantis/releases/
     - name: hr
     - name: 特别感谢
       url: contributors/
