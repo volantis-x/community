@@ -1,7 +1,7 @@
 ---
 layout: page
 group: docs-v2
-order: 4
+order: 5
 title: 标签插件
 short_title: 5. 标签插件
 meta:

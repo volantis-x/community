@@ -1,12 +1,12 @@
 ---
 layout: page
-group: docs-v3
+group: docs-latest
 order: 5
 title: 标签插件
 short_title: 5. 标签插件
 meta:
   header: [title, author, updated]
-sidebar: [news, docs-v3, repos, toc]
+sidebar: [news, docs-latest, repos, toc]
 mathjax: true
 ---
 

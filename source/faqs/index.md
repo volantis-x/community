@@ -5,7 +5,7 @@ pid: faq
 body: [article, comments]
 meta:
   header: [title, author, updated]
-sidebar: [news, docs-v2, repos, toc]
+sidebar: [news, docs-latest, repos, toc]
 ---
 
 通常来说，一个全新的工程全部使用默认配置是<green>正常</green>没有故障的。如果无法使用或者效果与示例有较大区别，可以使用 Hexo 官方提供的用于单元测试的博客应用本主题查看样式是否正常，对比 `_config.yml` 文件排查问题。

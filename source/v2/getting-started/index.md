@@ -1,7 +1,7 @@
 ---
 layout: page
 group: docs-v2
-order: 0
+order: 1
 title: 开始使用
 short_title: 1. 开始使用
 meta:

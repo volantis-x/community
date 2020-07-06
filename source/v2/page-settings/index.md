@@ -1,7 +1,7 @@
 ---
 layout: page
 group: docs-v2
-order: 3
+order: 4
 title: 页面配置
 short_title: 4. 页面配置
 meta:

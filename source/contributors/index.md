@@ -3,7 +3,7 @@ layout: page
 title: 特别感谢
 meta:
   header: [title, author, updated]
-sidebar: [news, docs-v2, repos, toc]
+sidebar: [news, docs-latest, repos, toc]
 music:
   server: netease   # netease, tencent, kugou, xiami, baidu
   type: song        # song, playlist, album, search, artist

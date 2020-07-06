@@ -1,12 +1,12 @@
 ---
 layout: page
-group: docs-v3
+group: docs-latest
 order: 1
 title: 开始使用
 short_title: 1. 开始使用
 meta:
   header: []
-sidebar: [news, docs-v3, repos, toc]
+sidebar: [news, docs-latest, repos, toc]
 ---
 
 <p>

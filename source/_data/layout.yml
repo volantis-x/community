@@ -3,7 +3,7 @@ on_list:
   # 列表中每一篇文章的meta信息
   meta: [title, author, date, top]
   # 列表类页面的侧边栏
-  sidebar: [news, docs-v2, repos, qrcode]
+  sidebar: [news, docs-latest, repos, qrcode]
   # read more button
   readmore: 阅读全文 <i class="fas fa-chevron-right"></i>
 

@@ -1,12 +1,12 @@
 ---
 layout: page
-group: docs-v3
+group: docs-latest
 order: 6
 title: 进阶设定
 short_title: 6. 进阶设定
 meta:
   header: [title, author, updated]
-sidebar: [news, docs-v3, repos, toc]
+sidebar: [news, docs-latest, repos, toc]
 ---
 
 建议有一定基础知识的朋友进行尝试。

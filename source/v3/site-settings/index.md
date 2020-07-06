@@ -1,12 +1,12 @@
 ---
 layout: page
-group: docs-v3
+group: docs-latest
 order: 2
 title: 站点配置
 short_title: 2. 站点配置
 meta:
   header: [title, author, updated]
-sidebar: [news, docs-v3, repos, toc]
+sidebar: [news, docs-latest, repos, toc]
 ---
 
 如无特殊说明，本页面的配置信息写在 <u>**博客根目录**</u> 的 `_config.yml` 文件中。

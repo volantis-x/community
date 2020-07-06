@@ -1,7 +1,7 @@
 ---
 layout: page
 group: docs-v2
-order: 5
+order: 6
 title: 进阶设定
 short_title: 6. 进阶设定
 meta:

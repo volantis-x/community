@@ -89,7 +89,7 @@ docs-v2:
     icon: fas fa-list-alt
     title: 文档 V2
 
-docs-v3:
+docs-latest:
   class: group
   display: [desktop, mobile] # [desktop, mobile]
   header:
