@@ -39,7 +39,7 @@
   icon: fas fa-ellipsis-v
   rows:
     - name: 本站源码
-      url: https://github.com/xaoxuu/volantis-docs/
+      url: https://github.com/theme-volantis/volantis-docs/
     - name: 主题源码
       url: https://github.com/theme-volantis/hexo-theme-volantis/
     - name: hr

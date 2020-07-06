@@ -241,7 +241,7 @@ links:
 
 <br><br>
 
-{% btn large center, 编辑此页, https://github.com/xaoxuu/volantis-docs/blob/master/source/examples/index.md, fas fa-edit %}
+{% btn large center, 编辑此页, https://github.com/theme-volantis/volantis-docs/blob/master/source/examples/index.md, fas fa-edit %}
 
 <br>
 

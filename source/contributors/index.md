@@ -46,7 +46,7 @@ music:
 如果您发现文档中有错误，或者遗漏内容，欢迎补充和纠正。👏
 
 {% btns circle grid5 %}
-{% cell 文档源码, https://github.com/xaoxuu/volantis-docs/, fab fa-github %}
+{% cell 文档源码, https://github.com/theme-volantis/volantis-docs/, fab fa-github %}
 {% endbtns %}
 
 

@@ -16,7 +16,7 @@ sidebar: [news, docs-latest, repos, toc]
 
 所有需要写在主题配置文件中的配置都可以写在站点配置文件的 `theme_config:` 中
 详见 Hexo 官方文档 [#覆盖主题配置](https://hexo.io/zh-cn/docs/configuration#%E8%A6%86%E7%9B%96%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE)
-也可以直接查看本站源码中站点配置文件的写法：[_config.yml](https://github.com/xaoxuu/volantis-docs/blob/master/_config.yml)
+也可以直接查看本站源码中站点配置文件的写法：[_config.yml](https://github.com/theme-volantis/volantis-docs/blob/master/_config.yml)
 
 {% endnoteblock %}
 
@@ -232,7 +232,7 @@ blog/source/_data/menu.yml
         - name: 看 FAQ
           url: faqs/
         - name: 看 本站源码
-          url: https://github.com/xaoxuu/volantis-docs/
+          url: https://github.com/theme-volantis/volantis-docs/
         - name: 提 Issue
           url: https://github.com/theme-volantis/hexo-theme-volantis/issues/
     - name: hr
@@ -706,7 +706,7 @@ test:
 ```
 blog/source/_data/widget.yml
 ```
-文件内容示例：[widget.yml](https://github.com/xaoxuu/volantis-docs/blob/master/source/_data/widget.yml)
+文件内容示例：[widget.yml](https://github.com/theme-volantis/volantis-docs/blob/master/source/_data/widget.yml)
 
 
 
