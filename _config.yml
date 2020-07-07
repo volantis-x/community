@@ -107,7 +107,7 @@ theme_config:
     sidebar:
       effect: [blur] # [shadow, floatable, blur]
     body:
-      effect: [blur] # [shadow, floatable, blur]
+      effect: [] # [shadow, floatable, blur]
     color:
       site_footer: '#fff'
   cover:
