@@ -785,7 +785,7 @@ hahaha <span><img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/emoji/tieba
 
 Image 标签是一种针对单个图片应用场景的标签，支持图片描述文字和指定宽度。请将您的 Volantis 升级至 <u>2.6</u> 版本以上使用。
 
-{% tabs fancybox, 1 %}
+{% tabs image, 1 %}
 
 <!-- tab 语法格式 -->
 
@@ -849,19 +849,19 @@ Image 标签是一种针对单个图片应用场景的标签，支持图片描�
 {% endtabs %}
 
 
-### Fancybox
+### Gallery
 
-Fancybox 标签是一种针对一组图片应用场景的标签。请将您的 Volantis 升级至 <u>2.2</u> 版本以上使用。
+Gallery 标签是一种针对一组图片应用场景的标签。请将您的 Volantis 升级至 <u>3.0</u> 版本以上使用。
 
-{% tabs fancybox, 4 %}
+{% tabs gallery, 4 %}
 
 <!-- tab 语法格式 -->
 
 ```md
-{% fancybox 参数, 列数 %}
+{% gallery 参数, 列数 %}
 ![图片描述](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/B18FCBB3-67FD-48CC-B4F3-457BA145F17A.jpeg)
 ![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/67239FBB-E15D-4F4F-8EE8-0F1C9F3C4E7C.jpeg)
-{% endfancybox %}
+{% endgallery %}
 ```
 
 <!-- endtab -->
@@ -892,25 +892,25 @@ stretch
 一行一个图片
 
 ```md example.md:
-{% fancybox %}
+{% gallery %}
 ![图片描述](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/41F215B9-261F-48B4-80B5-4E86E165259E.jpeg)
-{% endfancybox %}
+{% endgallery %}
 ```
 
 一行多个图片（不换行）
 
 ```md example.md:
-{% fancybox %}
+{% gallery %}
 ![图片描述](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/B18FCBB3-67FD-48CC-B4F3-457BA145F17A.jpeg)
 ![图片描述](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/67239FBB-E15D-4F4F-8EE8-0F1C9F3C4E7C.jpeg)
 ![图片描述](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/00E0F0ED-9F1C-407A-9AA6-545649D919F4.jpeg)
-{% endfancybox %}
+{% endgallery %}
 ```
 
 多行多个图片（每行2～8个图片）
 
 ```md example.md:
-{% fancybox stretch, 4 %}
+{% gallery stretch, 4 %}
 ![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/B951AE18-D431-417F-B3FE-A382403FF21B.jpeg)
 ![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/landscape/AEB33F9D-7294-4CF1-B8C5-3020748A9D45.jpeg)
 ![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/landscape/250662D4-5A21-4AAA-BB63-CD25CF97CFF1.jpeg)
@@ -919,7 +919,7 @@ stretch
 ![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/landscape/AEB33F9D-7294-4CF1-B8C5-3020748A9D45.jpeg)
 ![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/landscape/250662D4-5A21-4AAA-BB63-CD25CF97CFF1.jpeg)
 ![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/landscape/10A0FCE5-36A1-4AD0-8CF0-019259A89E03.jpeg)
-{% endfancybox %}
+{% endgallery %}
 ```
 
 <!-- endtab -->
@@ -927,19 +927,19 @@ stretch
 <!-- tab 示例效果 -->
 
 一行一个图片
-{% fancybox %}
+{% gallery %}
 ![图片描述](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/41F215B9-261F-48B4-80B5-4E86E165259E.jpeg)
-{% endfancybox %}
+{% endgallery %}
 
 一行多个图片（不换行）
-{% fancybox %}
+{% gallery %}
 ![图片描述](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/B18FCBB3-67FD-48CC-B4F3-457BA145F17A.jpeg)
 ![图片描述](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/67239FBB-E15D-4F4F-8EE8-0F1C9F3C4E7C.jpeg)
 ![图片描述](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/00E0F0ED-9F1C-407A-9AA6-545649D919F4.jpeg)
-{% endfancybox %}
+{% endgallery %}
 
 多行多个图片（每行2～8个图片）
-{% fancybox stretch, 4 %}
+{% gallery stretch, 4 %}
 ![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/B951AE18-D431-417F-B3FE-A382403FF21B.jpeg)
 ![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/landscape/AEB33F9D-7294-4CF1-B8C5-3020748A9D45.jpeg)
 ![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/landscape/250662D4-5A21-4AAA-BB63-CD25CF97CFF1.jpeg)
@@ -948,7 +948,7 @@ stretch
 ![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/landscape/AEB33F9D-7294-4CF1-B8C5-3020748A9D45.jpeg)
 ![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/landscape/250662D4-5A21-4AAA-BB63-CD25CF97CFF1.jpeg)
 ![](https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/landscape/10A0FCE5-36A1-4AD0-8CF0-019259A89E03.jpeg)
-{% endfancybox %}
+{% endgallery %}
 
 <!-- endtab -->
 
