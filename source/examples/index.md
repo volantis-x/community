@@ -102,6 +102,11 @@ links:
       url: https://www.aikang.me
       avatar: https://i.loli.net/2020/07/05/GsQ2dLqZguO9JB7.jpg
       tags: [伪全栈]
+    - name: 风也雨忆笙
+      url: https://blog.kaygb.com/
+      avatar: https://cdn.jsdelivr.net/gh/kaygb/blog-images/static_image/kaygb-logo/tx_compressed.jpg
+      tags: [web,php]
+      desc: [努力努力再努力！]
   - group: '版本：^2.0～2.4'
     desc: 导航栏 N 级菜单；新增 Tab、Note、Menu 标签
     items:
