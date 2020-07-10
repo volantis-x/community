@@ -10,7 +10,7 @@ sidebar: [news, docs-v2, repos, toc]
 ---
 
 <p>
-{% span logo center large, Volantis <sup>2</sup> %}
+{% span logo center large, <sup>&ensp;</sup>Volantis<sup>2</sup> %}
 {% span center small, A Wonderful Theme for Hexo %}
 </p>
 <br>
