@@ -14,7 +14,7 @@ sidebar: [news, docs-v2, repos, toc]
 {% folding yellow open, 将主题添加为子模块 %}
 
 ```sh
-git submodule add git@github.com:theme-volantis/hexo-theme-volantis themes/volantis
+git submodule add https://github.com/volantis-x/hexo-theme-volantis themes/volantis
 ```
 {% endfolding %}
 
