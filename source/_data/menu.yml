@@ -30,8 +30,8 @@
   url: examples/
 
 
-- name: 鸣谢
-  icon: fas fa-handshake
+- name: 参与项目
+  icon: fas fa-fan fa-spin
   url: contributors/
 
 
