@@ -396,10 +396,10 @@ icons: [fas fa-fire red, fas fa-star green]
 meta:
   footer: [btns]
 btns:
-  repo: https://github.com/theme-volantis/hexo-theme-volantis
-  bug: https://github.com/theme-volantis/hexo-theme-volantis/issues/
-  doubt: https://github.com/theme-volantis/hexo-theme-volantis/issues/
-  idea: https://github.com/theme-volantis/hexo-theme-volantis/issues/
+  repo: https://github.com/volantis-x/hexo-theme-volantis
+  bug: https://github.com/volantis-x/hexo-theme-volantis/issues/
+  doubt: https://github.com/volantis-x/hexo-theme-volantis/issues/
+  idea: https://github.com/volantis-x/hexo-theme-volantis/issues/
 ---
 ```
 
@@ -482,4 +482,4 @@ body: [comments]
 ---
 ```
 
-<br><br>{% btn large center, 向开发者反馈问题, https://github.com/theme-volantis/hexo-theme-volantis/issues/ , fas fa-paper-plane %}
+<br><br>{% btn large center, 向开发者反馈问题, https://github.com/volantis-x/hexo-theme-volantis/issues/ , fas fa-paper-plane %}

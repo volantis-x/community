@@ -16,7 +16,7 @@ sidebar: [news, docs-v2, repos, toc]
 
 所有需要写在主题配置文件中的配置都可以写在站点配置文件的 `theme_config:` 中
 详见 Hexo 官方文档 [#覆盖主题配置](https://hexo.io/zh-cn/docs/configuration#%E8%A6%86%E7%9B%96%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE)
-也可以直接查看本站源码中站点配置文件的写法：[_config.yml](https://github.com/theme-volantis/volantis-docs/blob/master/_config.yml)
+也可以直接查看本站源码中站点配置文件的写法：[_config.yml](https://github.com/volantis-x/volantis-docs/blob/master/_config.yml)
 
 {% endnoteblock %}
 
@@ -223,18 +223,18 @@ blog/source/_data/menu.yml
   icon: fas fa-ellipsis-v
   rows:
     - name: 主题源码
-      url: https://github.com/theme-volantis/hexo-theme-volantis/
+      url: https://github.com/volantis-x/hexo-theme-volantis/
     - name: 更新日志
-      url: https://github.com/theme-volantis/hexo-theme-volantis/releases/
+      url: https://github.com/volantis-x/hexo-theme-volantis/releases/
     - name: hr
     - name: 有疑问？
       rows:
         - name: 看 FAQ
           url: faqs/
         - name: 看 本站源码
-          url: https://github.com/theme-volantis/volantis-docs/
+          url: https://github.com/volantis-x/volantis-docs/
         - name: 提 Issue
-          url: https://github.com/theme-volantis/hexo-theme-volantis/issues/
+          url: https://github.com/volantis-x/hexo-theme-volantis/issues/
     - name: hr
     - name: 公告和测试博文
       url: archives/
@@ -676,18 +676,18 @@ feedback:
   header:
     icon: fas fa-headset
     title: 联系开发者
-    url: https://github.com/theme-volantis/hexo-theme-volantis
+    url: https://github.com/volantis-x/hexo-theme-volantis
   fixed: true # 固定宽度
   rows:
     - name: 反馈BUG
       icon: fas fa-bug
-      url: https://github.com/theme-volantis/hexo-theme-volantis/issues/
+      url: https://github.com/volantis-x/hexo-theme-volantis/issues/
     - name: 疑问求助
       icon: fas fa-question-circle
-      url: https://github.com/theme-volantis/hexo-theme-volantis/issues/
+      url: https://github.com/volantis-x/hexo-theme-volantis/issues/
     - name: 提个建议
       icon: fas fa-lightbulb
-      url: https://github.com/theme-volantis/hexo-theme-volantis/issues/
+      url: https://github.com/volantis-x/hexo-theme-volantis/issues/
 ```
 您可以创建用于展示任何链接列表的网格部件。网格默认根据文字长度自动确定每一个格子的宽度，如果文字长短不一，建议通过设置 `fixed: true` 来固定宽度，此时文字过长的格子中的文字会换行显示。
 
@@ -706,7 +706,7 @@ test:
 ```
 blog/source/_data/widget.yml
 ```
-文件内容示例：[widget.yml](https://github.com/theme-volantis/volantis-docs/blob/master/source/_data/widget.yml)
+文件内容示例：[widget.yml](https://github.com/volantis-x/volantis-docs/blob/master/source/_data/widget.yml)
 
 
 
@@ -1002,4 +1002,4 @@ search:
 npm i -S hexo-generator-search hexo-generator-json-content
 ```
 
-<br><br>{% btn large center, 向开发者反馈问题, https://github.com/theme-volantis/hexo-theme-volantis/issues/ , fas fa-paper-plane %}
+<br><br>{% btn large center, 向开发者反馈问题, https://github.com/volantis-x/hexo-theme-volantis/issues/ , fas fa-paper-plane %}

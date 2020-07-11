@@ -70,7 +70,7 @@ curl -s https://volantis.js.org/start | sh
 
 第1/3步：下载主题源码到 `themes/` 文件夹
 ```sh
-git clone https://github.com/theme-volantis/hexo-theme-volantis themes/volantis
+git clone https://github.com/volantis-x/hexo-theme-volantis themes/volantis
 ```
 
 第2/3步：修改站点配置文件
@@ -93,7 +93,7 @@ npm i -S hexo-renderer-stylus
 
 ## 升级小助手
 
-升级前请查看 [更新日志](https://github.com/theme-volantis/hexo-theme-volantis/releases/)
+升级前请查看 [更新日志](https://github.com/volantis-x/hexo-theme-volantis/releases/)
 
 {% folding open red, 2.6.6 -> 3.0 %}
 
@@ -130,4 +130,4 @@ npm i -S hexo-renderer-stylus
 在软件和软件的所有副本中都必须包含版权声明和许可声明。
 {% endnoteblock %}
 
-<br><br>{% btn large center, 向开发者反馈问题, https://github.com/theme-volantis/hexo-theme-volantis/issues/ , fas fa-paper-plane %}
+<br><br>{% btn large center, 向开发者反馈问题, https://github.com/volantis-x/hexo-theme-volantis/issues/ , fas fa-paper-plane %}

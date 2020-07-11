@@ -21,12 +21,12 @@ guide:
       url: archives/
     - name: 主题源码
       icon: fas fa-file-code
-      url: https://github.com/theme-volantis/hexo-theme-volantis/
+      url: https://github.com/volantis-x/hexo-theme-volantis/
       rel: external nofollow noopener noreferrer
       target: _blank
     - name: 更新日志
       icon: fas fa-tags
-      url: https://github.com/theme-volantis/hexo-theme-volantis/releases/
+      url: https://github.com/volantis-x/hexo-theme-volantis/releases/
       rel: external nofollow noopener noreferrer
       target: _blank
 
@@ -77,7 +77,7 @@ news:
   rows:
     - name: 关于主题与文档的更新
       icon: fas fa-info-circle
-      url: https://github.com/theme-volantis/hexo-theme-volantis/issues/215
+      url: https://github.com/volantis-x/hexo-theme-volantis/issues/215
     - name: 升级小助手
       icon: fas fa-angle-double-up
       url: /v3/getting-started/#升级小助手

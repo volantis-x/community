@@ -572,13 +572,13 @@ rounded, circle
 
 ```md
 {% menu 下拉菜单 %}
-{% menuitem 主题源码, https://github.com/theme-volantis/hexo-theme-volantis/, fas fa-file-code %}
-{% menuitem 更新日志, https://github.com/theme-volantis/hexo-theme-volantis/releases/, fas fa-clipboard-list %}
+{% menuitem 主题源码, https://github.com/volantis-x/hexo-theme-volantis/, fas fa-file-code %}
+{% menuitem 更新日志, https://github.com/volantis-x/hexo-theme-volantis/releases/, fas fa-clipboard-list %}
 {% menuitem hr %}
 {% submenu 有疑问？, fas fa-question-circle %}
 {% menuitem 看 FAQ, /faqs/ %}
-{% menuitem 看 本站源码, https://github.com/theme-volantis/volantis-docs/ %}
-{% menuitem 提 Issue, https://github.com/theme-volantis/hexo-theme-volantis/issues/ %}
+{% menuitem 看 本站源码, https://github.com/volantis-x/volantis-docs/ %}
+{% menuitem 提 Issue, https://github.com/volantis-x/hexo-theme-volantis/issues/ %}
 {% endsubmenu %}
 {% endmenu %}
 ```
@@ -588,13 +588,13 @@ rounded, circle
 <!-- tab 示例效果 -->
 
 {% menu 下拉菜单 %}
-{% menuitem 主题源码, https://github.com/theme-volantis/hexo-theme-volantis/, fas fa-file-code %}
-{% menuitem 更新日志, https://github.com/theme-volantis/hexo-theme-volantis/releases/, fas fa-clipboard-list %}
+{% menuitem 主题源码, https://github.com/volantis-x/hexo-theme-volantis/, fas fa-file-code %}
+{% menuitem 更新日志, https://github.com/volantis-x/hexo-theme-volantis/releases/, fas fa-clipboard-list %}
 {% menuitem hr %}
 {% submenu 有疑问？, fas fa-question-circle %}
 {% menuitem 看 FAQ, /faqs/ %}
-{% menuitem 看 本站源码, https://github.com/theme-volantis/volantis-docs/ %}
-{% menuitem 提 Issue, https://github.com/theme-volantis/hexo-theme-volantis/issues/ %}
+{% menuitem 看 本站源码, https://github.com/volantis-x/volantis-docs/ %}
+{% menuitem 提 Issue, https://github.com/volantis-x/hexo-theme-volantis/issues/ %}
 {% endsubmenu %}
 {% endmenu %}
 
@@ -971,14 +971,14 @@ stretch
 <!-- tab 示例写法 -->
 
 ```md example.md:
-{% audio https://github.com/theme-volantis/volantis-docs/releases/download/assets/Lumia1020.mp3 %}
+{% audio https://github.com/volantis-x/volantis-docs/releases/download/assets/Lumia1020.mp3 %}
 ```
 
 <!-- endtab -->
 
 <!-- tab 示例效果 -->
 
-{% audio https://github.com/theme-volantis/volantis-docs/releases/download/assets/Lumia1020.mp3 %}
+{% audio https://github.com/volantis-x/volantis-docs/releases/download/assets/Lumia1020.mp3 %}
 
 <!-- endtab -->
 
@@ -1030,17 +1030,17 @@ left, center, right
 100%宽度
 
 ```md example.md:
-{% video https://github.com/theme-volantis/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
 ```
 
 50%宽度
 
 ```md example.md:
 {% videos, 2 %}
-{% video https://github.com/theme-volantis/volantis-docs/releases/download/assets/IMG_0341.mov %}
-{% video https://github.com/theme-volantis/volantis-docs/releases/download/assets/IMG_0341.mov %}
-{% video https://github.com/theme-volantis/volantis-docs/releases/download/assets/IMG_0341.mov %}
-{% video https://github.com/theme-volantis/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
 {% endvideos %}
 ```
 
@@ -1048,14 +1048,14 @@ left, center, right
 
 ```md example.md:
 {% videos, 4 %}
-{% video https://github.com/theme-volantis/volantis-docs/releases/download/assets/IMG_0341.mov %}
-{% video https://github.com/theme-volantis/volantis-docs/releases/download/assets/IMG_0341.mov %}
-{% video https://github.com/theme-volantis/volantis-docs/releases/download/assets/IMG_0341.mov %}
-{% video https://github.com/theme-volantis/volantis-docs/releases/download/assets/IMG_0341.mov %}
-{% video https://github.com/theme-volantis/volantis-docs/releases/download/assets/IMG_0341.mov %}
-{% video https://github.com/theme-volantis/volantis-docs/releases/download/assets/IMG_0341.mov %}
-{% video https://github.com/theme-volantis/volantis-docs/releases/download/assets/IMG_0341.mov %}
-{% video https://github.com/theme-volantis/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
 {% endvideos %}
 ```
 
@@ -1065,28 +1065,28 @@ left, center, right
 
 100%宽度
 
-{% video https://github.com/theme-volantis/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
 
 50%宽度
 
 {% videos, 2 %}
-{% video https://github.com/theme-volantis/volantis-docs/releases/download/assets/IMG_0341.mov %}
-{% video https://github.com/theme-volantis/volantis-docs/releases/download/assets/IMG_0341.mov %}
-{% video https://github.com/theme-volantis/volantis-docs/releases/download/assets/IMG_0341.mov %}
-{% video https://github.com/theme-volantis/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
 {% endvideos %}
 
 25%宽度
 
 {% videos, 4 %}
-{% video https://github.com/theme-volantis/volantis-docs/releases/download/assets/IMG_0341.mov %}
-{% video https://github.com/theme-volantis/volantis-docs/releases/download/assets/IMG_0341.mov %}
-{% video https://github.com/theme-volantis/volantis-docs/releases/download/assets/IMG_0341.mov %}
-{% video https://github.com/theme-volantis/volantis-docs/releases/download/assets/IMG_0341.mov %}
-{% video https://github.com/theme-volantis/volantis-docs/releases/download/assets/IMG_0341.mov %}
-{% video https://github.com/theme-volantis/volantis-docs/releases/download/assets/IMG_0341.mov %}
-{% video https://github.com/theme-volantis/volantis-docs/releases/download/assets/IMG_0341.mov %}
-{% video https://github.com/theme-volantis/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
 {% endvideos %}
 
 <!-- endtab -->
@@ -1325,4 +1325,4 @@ content
 
 {% note link, 更多请见Hexo官方文档：[#标签插件](https://hexo.io/zh-cn/docs/tag-plugins) %}
 
-<br><br>{% btn large center, 向开发者反馈问题, https://github.com/theme-volantis/hexo-theme-volantis/issues/ , fas fa-paper-plane %}
+<br><br>{% btn large center, 向开发者反馈问题, https://github.com/volantis-x/hexo-theme-volantis/issues/ , fas fa-paper-plane %}
