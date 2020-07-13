@@ -107,6 +107,11 @@ links:
       avatar: https://cdn.jsdelivr.net/gh/kaygb/blog-images/static_image/kaygb-logo/tx_compressed.jpg
       tags: [web,php]
       desc: [努力努力再努力！]
+    - name: 辣个人の小窝
+      url: https://www.xyp9x.com/
+      avatar: https://cdn.jsdelivr.net/gh/badcoroner/wallpaperCollection/headPic.png
+      tags: [Java,后端]
+      desc: [心怀猛虎，细嗅蔷薇]
   - group: '版本：^2.0～2.4'
     desc: 导航栏 N 级菜单；新增 Tab、Note、Menu 标签
     items:
