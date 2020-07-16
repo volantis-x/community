@@ -37,11 +37,6 @@ links:
       avatar: https://i.loli.net/2020/04/26/YSNKVcvtwMdWzAg.jpg
       tags: [C/C++, MFC]
       desc: [愿多年以后，我可以酌一杯清酒，烂醉如泥，梦中回到我们的曾经。]
-    - name: Flexiston
-      url: https://www.flexiston.com
-      avatar: https://i.loli.net/2020/05/13/2hwC84rbRyO3c1P.png
-      tags: [笔记]
-      desc: [立即行动吧，未来要自己争取]
     - name: Chrisyy
       url: https://blog.chrisyy.top
       avatar: https://i.loli.net/2020/04/02/uPRxC6fvsU4dlcb.jpg
