@@ -101,7 +101,7 @@ npm i -S hexo-renderer-stylus
 
 1. 如果有 `hexo-lazyload-image` 插件，需要删除并重新安装最新版本，设置 `lazyload.isSPA: true`。
 2. 2.x 版本的 css 和 js 不适用于 3.x 版本，如果使用了 `use_cdn: true` 则需要删除。
-3. 2.x 版本的 fancybox 标签不适用于 3.x 版本，如果使用了 fancybox 标签请将其改为 gallery。
+3. 2.x 版本的 fancybox 标签在 3.x 版本中被重命名为 gallery 。
 
 
 {% p bold yellow, 建议修改 %}
