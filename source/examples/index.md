@@ -12,10 +12,10 @@ links:
       url: https://xaoxuu.com
       avatar: https://i.loli.net/2020/04/26/lmJ1xrQ2KR9YZiz.jpg
       tags: [主题作者]
-    - name: SZYINK
+    - name: 枋柚梓
       url: https://inkss.cn/
-      avatar: https://img.inkss.cn/inkss_cn/static/img/favicon.png
-      tags: []
+      avatar: https://avatars2.githubusercontent.com/u/31947043?s=60&v=4
+      tags: [此处没有标签]
     - name: Colsrch
       url: https://colsrch.top
       avatar: https://i.loli.net/2020/04/26/YSNKVcvtwMdWzAg.jpg
