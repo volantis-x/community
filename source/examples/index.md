@@ -5,33 +5,17 @@ meta:
   header: []
 sidebar: [news, docs-latest, repos, toc]
 links:
-  - group: '版本：^2.5～2.6'
-    desc: 新增 Group、References 组件；新增 Checkbox、Radio、Image、Video 等标签
+  - group: '版本：^3.0'
+    desc: 支持Pjax，支持Artitalk
     items:
     - name: xaoxuu
       url: https://xaoxuu.com
       avatar: https://i.loli.net/2020/04/26/lmJ1xrQ2KR9YZiz.jpg
       tags: [主题作者]
-    - name: Frieza
-      url: https://wongqingbin.github.io
-      avatar: https://i.loli.net/2020/05/17/P597ZQdSArztBCx.jpg
-      tags: [测试开发, python]
-    - name: 精算后花园
-      url: https://actuarygarden.cn
-      avatar: https://imgkr.cn-bj.ufileos.com/5ff3c7ea-3f6e-40c7-92ec-3b926c35afd7.png
-      tags: [精算师考试]
     - name: SZYINK
       url: https://inkss.cn/
       avatar: https://img.inkss.cn/inkss_cn/static/img/favicon.png
       tags: []
-    - name: 233213fedf
-      url: https://233213fedf.github.io
-      avatar: https://i.loli.net/2020/02/22/WbxiwCG1gDEF3Od.jpg
-      tags:
-    - name: Huanhao
-      url: https://mrhuanhao.cn/
-      avatar: https://i.loli.net/2020/04/26/mdP9RlE1iQS7UgX.jpg
-      tags: [2.3主题, linux]
     - name: Colsrch
       url: https://colsrch.top
       avatar: https://i.loli.net/2020/04/26/YSNKVcvtwMdWzAg.jpg
@@ -41,6 +25,33 @@ links:
       url: https://blog.chrisyy.top
       avatar: https://i.loli.net/2020/04/02/uPRxC6fvsU4dlcb.jpg
       tags: [ctf, math]
+    - name: 杜老师说
+      url: https://dusays.com
+      avatar: https://cdn.dusays.com/avatar.png
+      tags: [分享技术]
+    - name: qinxs
+      url: https://qinxs.github.io
+      avatar: https://cdn.jsdelivr.net/gh/qinxs/cdn-assets/img/avatar.png
+      tags: [技术总结, 各种折腾]
+  - group: '版本：^2.5～2.6'
+    desc: 新增 Group、References 组件；新增 Checkbox、Radio、Image、Video 等标签
+    items:
+    - name: Frieza
+      url: https://wongqingbin.github.io
+      avatar: https://i.loli.net/2020/05/17/P597ZQdSArztBCx.jpg
+      tags: [测试开发, python]
+    - name: 精算后花园
+      url: https://actuarygarden.cn
+      avatar: https://imgkr.cn-bj.ufileos.com/5ff3c7ea-3f6e-40c7-92ec-3b926c35afd7.png
+      tags: [精算师考试]
+    - name: 233213fedf
+      url: https://233213fedf.github.io
+      avatar: https://i.loli.net/2020/02/22/WbxiwCG1gDEF3Od.jpg
+      tags:
+    - name: Huanhao
+      url: https://mrhuanhao.cn/
+      avatar: https://i.loli.net/2020/04/26/mdP9RlE1iQS7UgX.jpg
+      tags: [2.3主题, linux]
     - name: 杂谈小站
       url: https://www.blublu.site/?utm_source=volantis&utm_medium=bloglink
       avatar: https://i.loli.net/2020/05/04/pqAuiFOX8MYJxZ4.jpg
@@ -49,14 +60,6 @@ links:
       url: https://www.jitwxs.cn/
       avatar: https://i.loli.net/2020/05/05/Im1rj3XAUzGnOx2.jpg
       tags: [Java, Web]
-    - name: 淘淘鲁
-      url: https://totoro.tech
-      avatar: https://totoro.tech/images/author.png
-      tags: [Linux, 小菜鸟]
-    - name: 空间不空
-      url: https://hp-l.github.io/
-      avatar: https://i.loli.net/2020/05/13/B6ufcSPwKjxv124.jpg
-      tags: [知识改变年薪，文化改变命运]
     - name: Alan
       url: https://alanwang.site/
       avatar: https://i.loli.net/2020/05/14/lLrMfaQ9GOnUsAV.png
@@ -69,10 +72,6 @@ links:
       url: https://wztlink1013.com
       avatar: https://cdn.jsdelivr.net/gh/wztlink1013/figure/blogbase/touxiang.jpg
       tags: [总结技术，记录生活]
-    - name: 杜老师说
-      url: https://dusays.com
-      avatar: https://cdn.dusays.com/avatar.png
-      tags: [分享技术]
     - name: Throwable
       url: http://www.throwable.club
       avatar: https://public-1256189093.cos.ap-guangzhou.myqcloud.com/static/doge_avatar.jpg
@@ -89,10 +88,6 @@ links:
       url: https://www.fkxxyz.com
       avatar: https://www.fkxxyz.com/logo/192x192.png
       tags: [archlinux, python]
-    - name: qinxs
-      url: https://qinxs.github.io
-      avatar: https://cdn.jsdelivr.net/gh/qinxs/cdn-assets/img/avatar.png
-      tags: [技术总结, 各种折腾]
     - name: Boo
       url: https://www.aikang.me
       avatar: https://i.loli.net/2020/07/05/GsQ2dLqZguO9JB7.jpg
