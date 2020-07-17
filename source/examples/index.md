@@ -5,8 +5,8 @@ meta:
   header: []
 sidebar: [news, docs-latest, repos, toc]
 links:
-  - group: '版本：^3.0'
-    desc: 支持Pjax，支持Artitalk
+  - group: '版本：^3.0 <sup><code>beta</code></sup>'
+    desc: 支持 Pjax 和 Artitalk
     items:
     - name: xaoxuu
       url: https://xaoxuu.com

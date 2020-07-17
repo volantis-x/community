@@ -16,24 +16,6 @@ sidebar: [news, docs-latest, repos, toc]
 
 <!-- more -->
 
-## 如何利用各种沟通渠道
-
-{% p bold green, 正式渠道 %}
-
-- [Issue](https://github.com/volantis-x/hexo-theme-volantis/issues/) ，和开发者沟通的唯一渠道，用于跟进和解决问题
-
-{% p bold yellow, 其次 %}
-
-- [论坛](https://github.com/volantis-x/forum/issues/)： 慢，相对正式，方便检索，可以给其他用户参考
-- QQ群： 1078948746 快，易于沟通
-- 微信群： 暂无
-- 邮箱： 不推荐，仅适用于没有 GitHub 也没有 QQ 的用户，速度慢，不利于检索，无法给其他用户参考
-
-{% p bold red, 佛系 %}
-
-- 留言……
-
-
 ## 如何更新主题
 
 使用主题的时候，尽量 fork 主题到自己的 GitHub，然后进行修改并使用。这样做的好处是：当主题进行重要更新的时候可以根据需要拉取合并代码，使自己 DIY 的主题能够通过更新获取 BUG 修复或者新特性。
