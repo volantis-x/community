@@ -52,11 +52,6 @@ links:
       url: https://mrhuanhao.cn/
       avatar: https://i.loli.net/2020/04/26/mdP9RlE1iQS7UgX.jpg
       tags: [2.3主题, linux]
-    - name: Flexiston
-      url: https://www.flexiston.com
-      avatar: https://i.loli.net/2020/05/13/2hwC84rbRyO3c1P.png
-      tags: [笔记]
-      desc: [立即行动吧，未来要自己争取]
     - name: 杂谈小站
       url: https://www.blublu.site/?utm_source=volantis&utm_medium=bloglink
       avatar: https://i.loli.net/2020/05/04/pqAuiFOX8MYJxZ4.jpg
@@ -107,6 +102,9 @@ links:
       avatar: https://cdn.jsdelivr.net/gh/badcoroner/wallpaperCollection/headPic.png
       tags: [Java,后端]
       desc: [心怀猛虎，细嗅蔷薇]
+    - name: BooLo
+      url: http://www.boolo.top
+      avatar: https://i.loli.net/2020/07/16/X3VR2dpk8zZvSGo.png
   - group: '版本：^2.0～2.4'
     desc: 导航栏 N 级菜单；新增 Tab、Note、Menu 标签
     items:
