@@ -73,6 +73,12 @@ curl -s https://volantis.js.org/start | sh
 git clone https://github.com/volantis-x/hexo-theme-volantis themes/volantis
 ```
 
+也可使用下方git地址
+
+``` sh
+git clone https://e.coding.net/jxsfgz-cat/volantis/volantis.git themes/volantis
+```
+
 第2/3步：修改站点配置文件
 ```yaml blog/_config.yml
 theme: volantis
