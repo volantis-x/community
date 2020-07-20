@@ -30,7 +30,7 @@ links:
       avatar: https://cdn.dusays.com/avatar.png
       tags: [分享技术]
     - name: qinxs
-      url: https://qinxs.github.io
+      url: https://7bxing.com/
       avatar: https://cdn.jsdelivr.net/gh/qinxs/cdn-assets/img/avatar.png
       tags: [技术总结, 各种折腾]
   - group: '版本：^2.5～2.6'
