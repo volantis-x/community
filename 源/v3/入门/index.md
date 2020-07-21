@@ -73,7 +73,7 @@ curl -s https://volantis.js.org/start | sh
 git clone https://github.com/volantis-x/hexo-theme-volantis themes/volantis
 ```
 
-也可使用下方git地址
+也可使用国内镜像：
 
 ``` sh
 git clone https://e.coding.net/volantis/volantis/volantis.git themes/volantis
