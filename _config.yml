@@ -111,7 +111,6 @@ theme_config:
     color:
       site_footer: '#fff'
   cover:
-    search: '搜索文档'
     features:
       - name: 文档
         icon: fas fa-book
