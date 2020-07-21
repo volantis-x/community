@@ -71,6 +71,9 @@ curl -s https://volantis.js.org/start | sh
 第1/3步：下载主题源码到 `themes/` 文件夹
 ```sh
 git clone https://github.com/volantis-x/hexo-theme-volantis themes/volantis
+
+# 或者使用国内镜像
+git clone https://e.coding.net/volantis/volantis/volantis.git themes/volantis
 ```
 
 第2/3步：修改站点配置文件
