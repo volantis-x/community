@@ -1,6 +1,7 @@
 ---
 layout: links
 title: 示例博客
+cover: true
 meta:
   header: []
 sidebar: [news, docs-latest, repos, toc]

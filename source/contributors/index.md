@@ -1,6 +1,7 @@
 ---
 layout: page
 title: 如何参与项目
+cover: true
 meta:
   header: [title, author, updated]
 sidebar: [news, docs-latest, repos]

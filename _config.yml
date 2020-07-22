@@ -115,19 +115,14 @@ theme_config:
       - name: 文档
         icon: fas fa-book
         url: /v3/getting-started/
-      - name: 博文
-        icon: fas fa-rss
-        url: /archives/
+      - name: 帮助
+        icon: fas fa-question-circle
+        url: faqs/
       - name: 示例
         icon: fas fa-play-circle
         url: /examples/
-      - name: 源码
-        icon: fas fa-file-code
-        url: https://github.com/volantis-x/hexo-theme-volantis/
-        rel: external nofollow noopener noreferrer
-        target: _blank
-      - name: 鸣谢
-        icon: fas fa-handshake
+      - name: 社区
+        icon: fas fa-fan fa-spin
         url: /contributors/
   meta:
     updated:

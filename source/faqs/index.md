@@ -3,6 +3,7 @@ layout: page
 title: 常见问题
 pid: faq
 body: [article, comments]
+cover: true
 meta:
   header: [title, author, updated]
 sidebar: [news, docs-latest, repos, toc]
