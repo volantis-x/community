@@ -108,17 +108,17 @@ theme_config:
       effect: [] # [shadow, floatable, blur]
     body:
       effect: [] # [shadow, floatable, blur]
-    color:
-      site: '#21232F' # Website background color
-      site_inner: '#fff' # Text color inside the website background
-      site_footer: '#666' # Footer text color inside the website background
-      card: '#444' # Card background color
-      text: '#fff' # The color of the text on the card.
-      inner: '#333' # Text color inside the button
-      block: '#555' # Block color
-      inlinecode: '#555' # Inline code color
-      codeblock: '#555' # Codeblock color
-      p: '#ccc' #
+    # color:
+    #   site: '#21232F' # Website background color
+    #   site_inner: '#fff' # Text color inside the website background
+    #   site_footer: '#fff' # Footer text color inside the website background
+    #   card: '#333' # Card background color
+    #   text: '#fff' # The color of the text on the card.
+    #   inner: '#333' # Text color inside the button
+    #   block: '#555' # Block color
+    #   inlinecode: '#555' # Inline code color
+    #   codeblock: '#555' # Codeblock color
+    #   p: '#ccc' #
   cover:
     features:
       - name: 文档
@@ -149,15 +149,15 @@ theme_config:
     layout: [aplayer, social, info, copyright]
   plugins:
     comment_typing: false
-    backstretch:
-    #   enable: false
-      # position: fixed
-      images:               # For personal use only. At your own risk if used for commercial purposes !!!
-        - https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/41F215B9-261F-48B4-80B5-4E86E165259E.jpeg
-        # - https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/BBC19066-E176-47C2-9D22-48C81EE5DF6B.jpeg
-        # - https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/B18FCBB3-67FD-48CC-B4F3-457BA145F17A.jpeg
-        # - https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/67239FBB-E15D-4F4F-8EE8-0F1C9F3C4E7C.jpeg
-        # - https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/35F12181-F0E9-45BD-B134-37E4B4A660CF.jpeg
+    # backstretch:
+    # #   enable: false
+    #   # position: fixed
+    #   images:               # For personal use only. At your own risk if used for commercial purposes !!!
+    #     - https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/41F215B9-261F-48B4-80B5-4E86E165259E.jpeg
+    #     # - https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/BBC19066-E176-47C2-9D22-48C81EE5DF6B.jpeg
+    #     # - https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/B18FCBB3-67FD-48CC-B4F3-457BA145F17A.jpeg
+    #     # - https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/67239FBB-E15D-4F4F-8EE8-0F1C9F3C4E7C.jpeg
+    #     # - https://cdn.jsdelivr.net/gh/xaoxuu/cdn-wallpaper/abstract/35F12181-F0E9-45BD-B134-37E4B4A660CF.jpeg
     aplayer:
       autoplay: true
       volume: 0.4
