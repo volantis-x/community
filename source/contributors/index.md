@@ -24,7 +24,7 @@ pin: true
 {% note success, 本站使用了持续集成，以上轻量级的工作仅仅使用浏览器就可以完成。 %}
 
 <br>
-{% btn large center, 加入团队, https://github.com/volantis-x/forum/issues/ , fas fa-plus %}
+{% btn large center, 申请加入团队, https://github.com/volantis-x/forum/issues/5 , fas fa-plus %}
 
 
 <!-- more -->
