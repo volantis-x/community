@@ -122,15 +122,19 @@ theme_config:
   cover:
     features:
       - name: 文档
+        # img: https://i.loli.net/2020/07/24/GaeXvVAdtJkCYT3.png
         icon: fas fa-book
         url: /v3/getting-started/
       - name: 帮助
+        # img: https://i.loli.net/2020/07/24/cxRslyWzk2OTP9r.png
         icon: fas fa-question-circle
         url: faqs/
       - name: 示例
+        # img: https://i.loli.net/2020/07/24/9kHJZNA8m4RBxhp.png
         icon: fas fa-play-circle
         url: /examples/
       - name: 社区
+        # img: https://i.loli.net/2020/07/24/skczZ1VdMGRbTLi.png
         icon: fas fa-fan fa-spin
         url: /contributors/
   meta:
