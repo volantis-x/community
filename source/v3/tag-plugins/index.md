@@ -327,6 +327,102 @@ checked
 
 {% endtabs %}
 
+### Timeline
+
+请将您的 Volantis 升级至 <u>3.0</u> 版本以上使用。
+
+{% tabs timeline, 3 %}
+
+<!-- tab 语法格式 -->
+
+```
+{% timeline 时间线标题 %}
+
+{% timenode 时间节点（标题） %}
+
+正文内容
+
+{% endtimenode %}
+
+{% timenode 时间节点（标题） %}
+
+正文内容
+
+{% endtimenode %}
+
+{% endtimeline %}
+```
+
+<!-- endtab -->
+
+<!-- tab 示例写法 -->
+
+```md example.md:
+{% timeline 升级小助手 %}
+
+{% timenode 2020-07-24 [2.6.6 -> 3.0](https://github.com/volantis-x/hexo-theme-volantis/releases) %}
+
+1. 如果有 `hexo-lazyload-image` 插件，需要删除并重新安装最新版本，设置 `lazyload.isSPA: true`。
+2. 2.x 版本的 css 和 js 不适用于 3.x 版本，如果使用了 `use_cdn: true` 则需要删除。
+3. 2.x 版本的 fancybox 标签在 3.x 版本中被重命名为 gallery 。
+4. 2.x 版本的置顶 `top: true` 改为了 `pin: true`，并且同样适用于 `layout: page` 的页面。
+5. 如果使用了 `hexo-offline` 插件，建议卸载，3.0 版本默认开启了 pjax 服务。
+
+{% endtimenode %}
+
+{% timenode 2020-07-24 [2.6.3 -> 2.6.6](https://github.com/volantis-x/hexo-theme-volantis/releases/tag/2.6.6) %}
+
+不需要额外处理。
+
+{% endtimenode %}
+
+{% timenode 2020-07-24 [2.6.2 -> 2.6.3](https://github.com/volantis-x/hexo-theme-volantis/releases/tag/2.6.3) %}
+
+1. 全局搜索 `seotitle` 并替换为 `seo_title`。
+2. group 组件的索引规则有变，使用 group 组件的文章内，`group: group_name` 对应的组件名必须是 `group_name`。
+2. group 组件的列表名优先显示文章的 `short_title` 其次是 `title`。
+
+{% endtimenode %}
+
+{% endtimeline %}
+```
+
+<!-- endtab -->
+
+<!-- tab 示例效果 -->
+
+{% timeline 升级小助手 %}
+
+{% timenode 2020-07-24 [2.6.6 -> 3.0](https://github.com/volantis-x/hexo-theme-volantis/releases) %}
+
+1. 如果有 `hexo-lazyload-image` 插件，需要删除并重新安装最新版本，设置 `lazyload.isSPA: true`。
+2. 2.x 版本的 css 和 js 不适用于 3.x 版本，如果使用了 `use_cdn: true` 则需要删除。
+3. 2.x 版本的 fancybox 标签在 3.x 版本中被重命名为 gallery 。
+4. 2.x 版本的置顶 `top: true` 改为了 `pin: true`，并且同样适用于 `layout: page` 的页面。
+5. 如果使用了 `hexo-offline` 插件，建议卸载，3.0 版本默认开启了 pjax 服务。
+
+{% endtimenode %}
+
+{% timenode 2020-07-24 [2.6.3 -> 2.6.6](https://github.com/volantis-x/hexo-theme-volantis/releases/tag/2.6.6) %}
+
+不需要额外处理。
+
+{% endtimenode %}
+
+{% timenode 2020-07-24 [2.6.2 -> 2.6.3](https://github.com/volantis-x/hexo-theme-volantis/releases/tag/2.6.3) %}
+
+1. 全局搜索 `seotitle` 并替换为 `seo_title`。
+2. group 组件的索引规则有变，使用 group 组件的文章内，`group: group_name` 对应的组件名必须是 `group_name`。
+2. group 组件的列表名优先显示文章的 `short_title` 其次是 `title`。
+
+{% endtimenode %}
+
+{% endtimeline %}
+
+<!-- endtab -->
+
+{% endtabs %}
+
 
 ## 按钮和菜单
 

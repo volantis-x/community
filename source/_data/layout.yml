@@ -16,7 +16,7 @@ on_page:
   # 如果tags放置在meta.header中，那么在post列表中不显示（因为卡片下方已经有了）
   meta:
     header: [title, author, category, date, updated, top]
-    footer: [btns]
+    footer: [btns, share]
   # 文章页面的侧边栏
   sidebar: [news, repos, toc]
 
