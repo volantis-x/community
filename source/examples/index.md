@@ -35,7 +35,7 @@ links:
       avatar: https://cdn.jsdelivr.net/gh/qinxs/cdn-assets/img/avatar.png
       tags: [技术总结, 各种折腾]
     - name: BooLo
-      url: http://www.boolo.top
+      url: https://www.boolo.top
       avatar: https://cdn.jsdelivr.net/gh/BooLo/cdn-assets/avatar/avatar.jpg
       tags: [莫得标签]
       desc: [记录成长，向未来奔跑]
