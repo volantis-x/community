@@ -34,6 +34,11 @@ links:
       url: https://7bxing.com/
       avatar: https://cdn.jsdelivr.net/gh/qinxs/cdn-assets/img/avatar.png
       tags: [技术总结, 各种折腾]
+    - name: BooLo
+      url: http://www.boolo.top
+      avatar: https://cdn.jsdelivr.net/gh/BooLo/cdn-assets/avatar/avatar.jpg
+      tags: [莫得标签]
+      desc: [记录成长，向未来奔跑]
   - group: '版本：^2.5～2.6'
     desc: 新增 Group、References 组件；新增 Checkbox、Radio、Image、Video 等标签
     items:
@@ -103,9 +108,6 @@ links:
       avatar: https://cdn.jsdelivr.net/gh/badcoroner/wallpaperCollection/headPic.png
       tags: [Java,后端]
       desc: [心怀猛虎，细嗅蔷薇]
-    - name: BooLo
-      url: http://www.boolo.top
-      avatar: https://i.loli.net/2020/07/16/X3VR2dpk8zZvSGo.png
   - group: '版本：^2.0～2.4'
     desc: 导航栏 N 级菜单；新增 Tab、Note、Menu 标签
     items:
