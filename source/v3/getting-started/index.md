@@ -69,7 +69,7 @@ curl -s https://volantis.js.org/start | sh
 
 <!-- tab 手动安装 -->
 
-第1/3步：下载主题源码到 `themes/` 文件夹
+第 1/3 步：下载主题源码到 `themes/` 文件夹
 ```sh
 git clone https://github.com/volantis-x/hexo-theme-volantis themes/volantis
 
@@ -77,12 +77,12 @@ git clone https://github.com/volantis-x/hexo-theme-volantis themes/volantis
 git clone https://e.coding.net/volantis/volantis/volantis.git themes/volantis
 ```
 
-第2/3步：修改站点配置文件
+第 2/3 步：修改站点配置文件
 ```yaml blog/_config.yml
 theme: volantis
 ```
 
-第3/3步：检查并安装依赖
+第 3/3 步：检查并安装依赖
 
 ```sh 安装 Hexo 搜索的依赖包：
 npm i -S hexo-generator-search hexo-generator-json-content
@@ -129,7 +129,7 @@ npm i -S hexo-renderer-stylus
 
 本主题采用 [MIT开源许可协议](https://cdn.jsdelivr.net/gh/theme-volantis/hexo-theme-volantis/LICENSE) ，永久无限制免费使用。
 
-{% noteblock quote %}
+{% noteblock quote theme %}
 **MIT开源许可协议**
 
 被授权人有权利使用、复制、修改、合并、出版发行、散布、再授权及贩售软件及软件的副本。
