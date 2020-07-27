@@ -43,6 +43,10 @@ links:
       url: https://blog.lhkstudio.me
       avatar: https://cdn.jsdelivr.net/gh/Linhk1606/blog-cdn@0.0.6.5/img/avatar.webp
       tags: [外观定制版~]
+    - name: Xu’s Blog
+      url: https://hasaik.com
+      avatar: https://hasaik.com/images/avatar.jpg
+      tags: [Java, 前端]
   - group: '版本：^2.5～2.6'
     desc: 新增 Group、References 组件；新增 Checkbox、Radio、Image、Video 等标签
     items:
