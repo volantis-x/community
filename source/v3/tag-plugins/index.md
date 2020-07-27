@@ -14,6 +14,106 @@ mathjax: true
 
 ## 文本和段落
 
+### 行内小标签
+
+请将您的 Volantis 升级至 <u>3.0</u> 版本以上使用。
+
+{% tabs kbd-psw, 3 %}
+
+<!-- tab 语法格式 -->
+
+{% p subtitle, 带下划线的文本 %}
+
+```md
+{% u 带下划线的文本 %}
+```
+
+{% p subtitle, 带着重号的文本 %}
+
+```md
+{% emp 带着重号的文本 %}
+```
+
+{% p subtitle, 带删除线的文本 %}
+
+```md
+{% del 带删除线的文本 %}
+```
+
+{% p subtitle, 键盘样式的文本 %}
+
+```md
+{% kbd 键盘样式的文本 %}
+```
+
+{% p subtitle, 密码样式的文本 %}
+
+```md
+{% psw 密码样式的文本 %}
+```
+
+<!-- endtab -->
+
+<!-- tab 示例写法 -->
+
+{% p subtitle, 带下划线的文本 %}
+
+```md example.md:
+带 {% u 下划线 %} 的文本
+```
+
+{% p subtitle, 带着重号的文本 %}
+
+```md example.md:
+带 {% emp 着重号 %} 的文本
+```
+
+{% p subtitle, 带删除线的文本 %}
+
+```md example.md:
+带 {% del 删除线 %} 的文本
+```
+
+{% p subtitle, 键盘样式的文本 %}
+
+```md example.md:
+收藏页面：{% kbd command %} + {% kbd D %}
+```
+
+{% p subtitle, 密码样式的文本 %}
+
+```md example.md:
+验证码：{% psw 这里没有验证码 %}
+```
+
+<!-- endtab -->
+
+<!-- tab 示例效果 -->
+
+{% p subtitle, 带下划线的文本 %}
+
+带 {% u 下划线 %} 的文本
+
+{% p subtitle, 带着重号的文本 %}
+
+带 {% emp 着重号 %} 的文本
+
+{% p subtitle, 带删除线的文本 %}
+
+带 {% del 删除线 %} 的文本
+
+{% p subtitle, 键盘样式的文本 %}
+
+收藏页面：{% kbd command %} + {% kbd D %}
+
+{% p subtitle, 密码样式的文本 %}
+
+验证码：{% psw 这里没有验证码 %}
+
+<!-- endtab -->
+
+{% endtabs %}
+
 ### Span & P
 
 请将您的 Volantis 升级至 <u>2.5</u> 版本以上使用。
