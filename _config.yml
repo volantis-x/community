@@ -170,7 +170,8 @@ theme_config:
       # id: 4917524698 # vol blue
       # id: 76244489 # vol white
       id: 5135845906 # for Volantis 3.0
-
+    darkmodejs:
+      compatible: true
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
