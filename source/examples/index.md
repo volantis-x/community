@@ -39,6 +39,10 @@ links:
       avatar: https://cdn.jsdelivr.net/gh/BooLo/cdn-assets/avatar/avatar.jpg
       tags: [莫得标签]
       desc: [记录成长，向未来奔跑]
+    - name: Linhk1606
+      url: https://blog.lhkstudio.me
+      avatar: https://cdn.jsdelivr.net/gh/Linhk1606/blog-cdn@0.0.6.5/img/avatar.webp
+      tags: [外观定制版~]
   - group: '版本：^2.5～2.6'
     desc: 新增 Group、References 组件；新增 Checkbox、Radio、Image、Video 等标签
     items:
@@ -134,10 +138,6 @@ links:
       url: https://sublimerui.top
       avatar: https://cdn.jsdelivr.net/gh/cwxyr/mycdn@master/favicon_new.ico
       tags: [Python, Web]
-    - name: Linhk1606
-      url: https://blog.lhkstudio.me
-      avatar: https://cdn.jsdelivr.net/gh/Linhk1606/Linhk1606@V2.0.4/me.jpg
-      tags: [外观轻微修改, CheckBox]
     - name: MicDZ's blog
       url: https://www.micdz.cn
       avatar: https://i.loli.net/2020/02/29/T2cijraFuM35ECO.jpg
