@@ -839,8 +839,8 @@ comments:
   service: valine
   ...
   valine:
-    appId: dogUA2FSKGTo029M1SEwGROT-MdYXbMMI # your appId
-    appKey: u0NdtQ8nvHoMdJPSYqm1LRxE # your appKey
+    appId: # your appId
+    appKey: # your appKey
     js: https://cdn.jsdelivr.net/npm/valine@1.4/dist/Valine.min.js
     ... 可选配置项详见源码
 ```
