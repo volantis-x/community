@@ -138,6 +138,10 @@ theme_config:
     #     icon: fas fa-fan fa-spin
     #     url: /contributors/
   meta:
+    author:
+      avatar: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png
+      name: Mr. X
+      url: https://xaoxuu.com
     updated:
       title: '本页文档最后更新于：'
   comments:
