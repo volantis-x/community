@@ -83,9 +83,9 @@ links:
       avatar: https://cdn.jsdelivr.net/gh/D0ggy/MarkDownPhoto@master/hexo/me/image192_192.jpg
       tags: [php, java]
     - name: 尼采般地抒情
-      url: https://wztlink1013.com
+      url: https://blog.wztlink1013.com
       avatar: https://cdn.jsdelivr.net/gh/wztlink1013/figure/blogbase/touxiang.jpg
-      tags: [总结技术，记录生活]
+      tags: [总结技术,记录生活]
     - name: Throwable
       url: http://www.throwable.club
       avatar: https://public-1256189093.cos.ap-guangzhou.myqcloud.com/static/doge_avatar.jpg
