@@ -76,6 +76,7 @@ import:
 
 ## 更多配置
 
-更多请见 Hexo 官方文档：[#Hexo配置](https://hexo.io/zh-cn/docs/configuration)
+更多请见 Hexo 官方文档：
+{% link Hexo 配置, https://hexo.io/zh-cn/docs/configuration, https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/logo/hexo.jpg %}
 
 <br><br>{% btn large center, 向开发者反馈问题, https://github.com/volantis-x/hexo-theme-volantis/issues/ , fas fa-paper-plane %}

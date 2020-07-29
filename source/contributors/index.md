@@ -83,7 +83,7 @@ pin: true
 感谢以下网站的收录与分享，让本主题能够被更多人发现，主题就会做的越来越好~
 
 {% btns rounded grid5 %}
-{% cell Hexo Themes, https://hexo.io/themes/, https://img.vim-cn.com/72/7e917e9b7bd3ee1cb593494610506c998eefb2.jpg %}
+{% cell Hexo Themes, https://hexo.io/themes/, https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/logo/hexo.jpg %}
 {% cell Valine, https://valine.js.org/hexo.html#hexo-theme-volantis, https://img.vim-cn.com/69/c9df34f04c86d32de9096a595fb5865711403c.png %}
 {% cell Easy Hexo, https://easyhexo.com/2-Theme-use-and-config/2-6-hexo-theme-volantis/, https://i.loli.net/2020/03/10/vxqOKtnRYehP4ZW.png %}
 {% endbtns %}

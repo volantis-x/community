@@ -14,8 +14,9 @@ sidebar: [news, docs-latest, repos, toc]
 {% noteblock idea green %}
 **实用小技巧**
 
-所有需要写在主题配置文件中的配置都可以写在站点配置文件的 `theme_config:` 中
-详见 Hexo 官方文档 [#覆盖主题配置](https://hexo.io/zh-cn/docs/configuration#%E8%A6%86%E7%9B%96%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE)
+所有需要写在主题配置文件中的配置都可以写在站点配置文件的 `theme_config:` 中，详见 Hexo 官方文档：
+{% link 覆盖主题配置, https://hexo.io/zh-cn/docs/configuration#%E8%A6%86%E7%9B%96%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE, https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/logo/hexo.jpg %}
+
 也可以直接查看本站源码中站点配置文件的写法：[_config.yml](https://github.com/volantis-x/volantis-docs/blob/master/_config.yml)
 
 {% endnoteblock %}
@@ -254,9 +255,6 @@ blog/source/_data/menu.yml
     - name: 心率管家 App 的设计与开发
       url: blog/2019-07-23-heartmate/
 ```
-
-{% note play, 这个示例的实际效果： https://xaoxuu.com %}
-
 
 ### 播放器
 在子菜单中，新增一个 `icon: fas fa-compact-disc` 的“菜单”就会被渲染成一个 APlayer 播放器。
@@ -652,8 +650,6 @@ sidebar: [group-1, toc]
 ```
 
 「group-1」卡片将会以列表的形式显示所有设置了 `group: group-1` 的文章，顺序按照 `order` 从小到大排列。
-
-{% note play, 效果见： https://xaoxuu.com/wiki/ios/ %}
 
 ### 通用网格部件
 ```yaml blog/themes/volantis/_config.yml

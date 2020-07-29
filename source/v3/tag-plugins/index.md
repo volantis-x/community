@@ -560,14 +560,14 @@ checked
 <!-- tab 示例写法 -->
 
 ```md example.md:
-{% link 如何参与项目, http://localhost:4000/contributors/, https://i.loli.net/2020/07/22/Xw9pZTkyhSPOY8M.png %}
+{% link 如何参与项目, http://localhost:4000/contributors/, https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-NavBar@3x.png %}
 ```
 
 <!-- endtab -->
 
 <!-- tab 示例效果 -->
 
-{% link 如何参与项目, http://localhost:4000/contributors/, https://i.loli.net/2020/07/22/Xw9pZTkyhSPOY8M.png %}
+{% link 如何参与项目, http://localhost:4000/contributors/, https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-NavBar@3x.png %}
 
 <!-- endtab -->
 
@@ -1390,7 +1390,7 @@ left, center, right
 npm i -S hexo-tag-aplayer
 ```
 
-{% note link, 官方文档： [hexo-tag-aplayer](https://github.com/MoePlayer/hexo-tag-aplayer) %}
+{% link hexo-tag-aplayer, https://github.com/MoePlayer/hexo-tag-aplayer %}
 
 ## 公式
 
@@ -1451,7 +1451,12 @@ $$
 
 {% endfolding %}
 
-{% note link, 如果公式仍无法正确渲染可以阅读 [@MicDZ](https://www.micdz.cn) 的这篇文章：[《在material-x上使用KaTeX》](https://www.micdz.cn/article/katex-on-volantis/)。 %}
+{% noteblock link %}
+
+如果公式仍无法正确渲染可以阅读 [@MicDZ](https://www.micdz.cn) 的这篇文章：
+{% link 在Material-X上使用KaTeX, https://www.micdz.cn/article/katex-on-volantis/, https://www.micdz.cn/img/h.jpeg %}
+
+{% endnoteblock %}
 
 ## Hexo 标签
 
@@ -1610,8 +1615,8 @@ content
 
 ### 文章摘要和截断
 
-在文章中使用 `<!-- more -->`，那么 `<!-- more -->` 之前的文字将会被视为摘要。首页中将只出现这部分文字，同时这部分文字也会出现在正文之中。
+在文章中使用 `<!-- more -->`，那么 `<!-- more -->` 之前的文字将会被视为摘要。首页中将只出现这部分文字，同时这部分文字也会出现在正文之中。详见 Hexo 官方文档：
 
-{% note link, 更多请见Hexo官方文档：[#标签插件](https://hexo.io/zh-cn/docs/tag-plugins) %}
+{% link 标签插件, https://hexo.io/zh-cn/docs/tag-plugins, https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/logo/hexo.jpg %}
 
 <br><br>{% btn large center, 向开发者反馈问题, https://github.com/volantis-x/hexo-theme-volantis/issues/ , fas fa-paper-plane %}
