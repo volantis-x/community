@@ -34,6 +34,12 @@ mathjax: true
 {% emp 带着重号的文本 %}
 ```
 
+{% p subtitle, 带波浪线的文本 %}
+
+```md
+{% wavy 波浪线 %}
+```
+
 {% p subtitle, 带删除线的文本 %}
 
 ```md
@@ -68,6 +74,12 @@ mathjax: true
 带 {% emp 着重号 %} 的文本
 ```
 
+{% p subtitle, 带波浪线的文本 %}
+
+```md example.md:
+带 {% wavy 波浪线 %} 的文本
+```
+
 {% p subtitle, 带删除线的文本 %}
 
 ```md example.md:
@@ -97,6 +109,10 @@ mathjax: true
 {% p subtitle, 带着重号的文本 %}
 
 带 {% emp 着重号 %} 的文本
+
+{% p subtitle, 带波浪线的文本 %}
+
+带 {% wavy 波浪线 %} 的文本
 
 {% p subtitle, 带删除线的文本 %}
 
@@ -524,7 +540,38 @@ checked
 {% endtabs %}
 
 
-## 按钮和菜单
+## 链接按钮和菜单
+
+### Link
+
+
+请将您的 Volantis 升级至 <u>3.0</u> 版本以上使用。
+
+{% tabs link, 3 %}
+
+<!-- tab 语法格式 -->
+
+```
+{% link 标题, 链接, 图片 %}
+```
+
+<!-- endtab -->
+
+<!-- tab 示例写法 -->
+
+```md example.md:
+{% link 如何参与项目, http://localhost:4000/contributors/, https://i.loli.net/2020/07/22/Xw9pZTkyhSPOY8M.png %}
+```
+
+<!-- endtab -->
+
+<!-- tab 示例效果 -->
+
+{% link 如何参与项目, http://localhost:4000/contributors/, https://i.loli.net/2020/07/22/Xw9pZTkyhSPOY8M.png %}
+
+<!-- endtab -->
+
+{% endtabs %}
 
 ### 基础按钮
 
@@ -726,7 +773,7 @@ rounded, circle
 
 ### Menu
 
-请将您的 Volantis 升级至 <u>2.4</u> 版本以上使用。
+请将您的 Volantis 升级至 <u>3.0</u> 版本以上使用。
 
 {% tabs menu, 3 %}
 
@@ -735,7 +782,7 @@ rounded, circle
 {% p subtitle, 容器 %}
 
 ```md
-{% menu 下拉菜单, 图标 %}
+{% menu 前缀（可省略）, 标题, 后缀（可省略） %}
 菜单内容
 {% endmenu %}
 ```
@@ -766,6 +813,8 @@ rounded, circle
 
 <!-- tab 示例写法 -->
 
+{% p subtitle, 示例1 %}
+
 ```md
 {% menu 下拉菜单 %}
 {% menuitem 主题源码, https://github.com/volantis-x/hexo-theme-volantis/, fas fa-file-code %}
@@ -779,11 +828,55 @@ rounded, circle
 {% endmenu %}
 ```
 
+{% p subtitle, 示例2 %}
+
+```md
+{% menu 这个是, 下拉菜单 %}
+（同上）
+{% endmenu %}
+```
+
+{% p subtitle, 示例3 %}
+
+```md
+{% menu 这个是, 下拉菜单, 的示例效果。 %}
+（同上）
+{% endmenu %}
+```
+
 <!-- endtab -->
 
 <!-- tab 示例效果 -->
 
+{% p subtitle, 示例1 %}
+
 {% menu 下拉菜单 %}
+{% menuitem 主题源码, https://github.com/volantis-x/hexo-theme-volantis/, fas fa-file-code %}
+{% menuitem 更新日志, https://github.com/volantis-x/hexo-theme-volantis/releases/, fas fa-clipboard-list %}
+{% menuitem hr %}
+{% submenu 有疑问？, fas fa-question-circle %}
+{% menuitem 看 FAQ, /faqs/ %}
+{% menuitem 看 本站源码, https://github.com/volantis-x/volantis-docs/ %}
+{% menuitem 提 Issue, https://github.com/volantis-x/hexo-theme-volantis/issues/ %}
+{% endsubmenu %}
+{% endmenu %}
+
+{% p subtitle, 示例2 %}
+
+{% menu 这个是, 下拉菜单 %}
+{% menuitem 主题源码, https://github.com/volantis-x/hexo-theme-volantis/, fas fa-file-code %}
+{% menuitem 更新日志, https://github.com/volantis-x/hexo-theme-volantis/releases/, fas fa-clipboard-list %}
+{% menuitem hr %}
+{% submenu 有疑问？, fas fa-question-circle %}
+{% menuitem 看 FAQ, /faqs/ %}
+{% menuitem 看 本站源码, https://github.com/volantis-x/volantis-docs/ %}
+{% menuitem 提 Issue, https://github.com/volantis-x/hexo-theme-volantis/issues/ %}
+{% endsubmenu %}
+{% endmenu %}
+
+{% p subtitle, 示例3 %}
+
+{% menu 这个是, 下拉菜单, 的示例效果。 %}
 {% menuitem 主题源码, https://github.com/volantis-x/hexo-theme-volantis/, fas fa-file-code %}
 {% menuitem 更新日志, https://github.com/volantis-x/hexo-theme-volantis/releases/, fas fa-clipboard-list %}
 {% menuitem hr %}
