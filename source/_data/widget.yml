@@ -40,7 +40,7 @@ repos:
     title: 点个赞吧
     url: https://github.com/xaoxuu/
   content:
-    - "<img style='width:20%' src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/emoji/qq/抱拳.gif'><img style='width:20%' src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/emoji/qq/抱拳.gif'><img style='width:20%' src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/emoji/qq/抱拳.gif'><img style='width:20%' src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/emoji/qq/抱拳.gif'><img style='width:20%' src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/emoji/qq/抱拳.gif'>"
+    - "<img style='width:20%' src='https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/qq/抱拳.gif'><img style='width:20%' src='https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/qq/抱拳.gif'><img style='width:20%' src='https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/qq/抱拳.gif'><img style='width:20%' src='https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/qq/抱拳.gif'><img style='width:20%' src='https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/qq/抱拳.gif'>"
     - "您的赞对我来说很重要，如果您喜欢本主题，希望能够给下面的项目点个赞来支持一下。"
     - '[<img src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/proj/prohud/logo.png" height="50px">](https://github.com/xaoxuu/ProHUD)'
     - '[<img src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/proj/valuex/logo.png" height="50px">](https://github.com/xaoxuu/ValueX)'
@@ -57,7 +57,7 @@ qrcode:
   height: #64px  # Automatic height if not set
   fancybox: #true
   images:
-    - https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/qrcode/wiki_volantis.png
+    - https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/qrcode/github@volantis.png
 
 help:
   class: page

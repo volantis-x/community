@@ -73,6 +73,6 @@ root: /
 
 请一定要阅读官方文档！
 
-{% image https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/emoji/aru/161.png, 800px %}
+{% image https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/aru/161.png, 800px %}
 
 {% endfolding %}

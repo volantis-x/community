@@ -343,13 +343,13 @@ meta:
   # 分享
   share:
     - id: qq
-      img: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/logo/128/qq.png
+      img: https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png
     - id: qzone
-      img: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/logo/128/qzone.png
+      img: https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png
     - id: weibo
-      img: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/logo/128/weibo.png
+      img: https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png
     # - id: qrcode # 当id为qrcode时需要安装插件  npm i -S hexo-helper-qrcode
-    #   img: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/logo/128/wechat.png
+    #   img: https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/wechat.png
   # 链接
   btns:
     edit:
@@ -463,8 +463,8 @@ widget:
     height: 64px  # Automatic height if not set
     fancybox: true
     images:
-      - https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/qrcode/wiki_volantis.png
-      - https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/qrcode/wiki_volantis.png
+      - https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/qrcode/github@volantis.png
+      - https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/qrcode/github@volantis.png
   # You can add your own widget here or 'blog/source/_data/widget.yml'
   # class: text, list, grid, qrcode, page, ... see more at https://volantis.js.org/
 ```
@@ -571,8 +571,8 @@ donate:
   height: 64px  # Automatic height if not set
   fancybox: true
   images:
-    - https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/qrcode/wiki_volantis.png
-    - https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/qrcode/wiki_volantis.png
+    - https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/qrcode/github@volantis.png
+    - https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/qrcode/github@volantis.png
 ```
 您可以放置在文章页脚用于展示打赏图片，也可以放置在侧边栏。
 
