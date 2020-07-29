@@ -20,19 +20,6 @@ sidebar: [news, docs-latest, repos, toc]
 
 {% endnoteblock %}
 
-
-## 主题基本信息
-```yaml blog/themes/volantis/_config.yml
-info:
-  name: Volantis # This is theme's name, not your blog's name.
-  version: '2.4.1' # This is theme's version.
-  docs: https://volantis.js.org/ # This is theme's URL.
-  cdn:
-    css:
-    js:
-```
-
-
 ## 主题样式
 
 您可以在主题配置文件中设定一些简单的样式，在开始前，确保没有使用 CDN 服务，否则修改不会生效。
