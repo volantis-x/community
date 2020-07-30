@@ -131,14 +131,23 @@ theme_config:
   comments:
     title: <i class='fas fa-comments'></i> 用户交流区
     subtitle: 这里仅供用户之间进行交流，有任何疑问请前往GitHub提交Issue。在评论区进行提问将不会收到开发者的任何回复！
-    service: valine
-    valine:
+    service: minivaline
+    minivaline:
       appId: FIKAgh6n0pUM08JXxhJHChVQ-MdYXbMMI
       appKey: RJGiOYFc1fBvfox4frBPpRzU
-      requiredFields: ['nick']
       path: /
       placeholder: 这里仅供用户之间进行交流，有任何疑问请前往GitHub提交Issue。在评论区进行提问将不会收到开发者的任何回复！
-
+      master:
+        - adb7d1cd192658a55c0ad22a3309cecf #xaoxuu
+        - b5bd5d836c7a0091aa8473e79ed4c25e #Linhk1606
+        - 3ce1e6c77b4910f1871106cb30dc62b0 #枋柚梓
+        - e468a3ac39cc3219731e39defd549f50 #枋柚梓
+        - ad39e755b60641e3e154c8c326fb6de7 #枋柚梓
+        - f124d445ddbf3a3e2ae949126da43253 #枋柚梓
+        - de8a7aa53d07e6b6bceb45c64027763d #MHuiG
+        - cfce8dc43725cc14ffcd9fb4892d5bfc #Flexiston
+        - ace17cd3a53d0e8567d389fc7004ed9d #Flexiston
+      friends:
   footer:
     layout: [aplayer, social, info, copyright]
 
