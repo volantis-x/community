@@ -69,7 +69,7 @@ root: /
 
 {% folding open, 教程与指南 %}
 
-[Hexo 官方文档](https://hexo.io) | [Valine 官方文档](https://valine.js.org) | [Volantis Gitter 交流群](https://gitter.im/hexo-theme-volantis/community?utm_source=share-link&utm_medium=link&utm_campaign=share-link)
+[Hexo 官方文档](https://hexo.io) | [Valine 官方文档](https://valine.js.org)
 
 请一定要阅读官方文档！
 
