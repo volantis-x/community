@@ -24,7 +24,8 @@ jobs:
           ${{ runner.os }}-node-
     - name: Install Dependencies # step3 name
       if: steps.cache.outputs.cache-hit != 'true' # 如果变量 cache-hit 不等于 true
-      run: npm install # 安装 node modules 相关依赖
+      #run: npm install # 安装 node modules 相关依赖
+      run: rm -rf node_modules && npm install --force
 
     # Deploy hexo blog website.
     - name: Deploy # step4
