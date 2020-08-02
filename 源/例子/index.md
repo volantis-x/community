@@ -47,6 +47,10 @@ links:
       url: https://hasaik.com
       avatar: https://hasaik.com/images/avatar.jpg
       tags: [Java, 前端]
+    - name: 阳光派Plus
+      url: https://www.zyoushuo.cn/
+      avatar: https://cdn.jsdelivr.net/gh/zyoushuo/Blog/images/photo.jpg
+      desc: [聪明的妖怪已经录下了唐僧的紧箍咒]
   - group: '版本：^2.5～2.6'
     desc: 新增 Group、References 组件；新增 Checkbox、Radio、Image、Video 等标签
     items:
