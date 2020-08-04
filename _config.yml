@@ -137,6 +137,10 @@ theme_config:
       appKey: RJGiOYFc1fBvfox4frBPpRzU
       path: /
       placeholder: 这里仅供用户之间进行交流，有任何疑问请前往GitHub提交Issue。在评论区进行提问将不会收到开发者的任何回复！
+      tagMeta:
+        - 管理员
+        - 小伙伴
+        - ''
       master:
         - adb7d1cd192658a55c0ad22a3309cecf #xaoxuu
         - b5bd5d836c7a0091aa8473e79ed4c25e #Linhk1606
