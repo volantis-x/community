@@ -129,8 +129,8 @@ theme_config:
       title: '本页文档最后更新于：'
 
   comments:
-    title: <i class='fas fa-comments'></i> 用户交流区
-    subtitle: 这里仅供用户之间进行交流，有任何疑问请前往GitHub提交Issue。在评论区进行提问将不会收到开发者的任何回复！
+    title: #<i class='fas fa-comments'></i> 用户交流区
+    subtitle: #这里仅供用户之间进行交流，有任何疑问请前往GitHub提交Issue。在评论区进行提问将不会收到开发者的任何回复！
     service: disqus
     disqus:
       shortname: volantis
