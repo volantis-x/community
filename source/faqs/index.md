@@ -65,6 +65,25 @@ url: https://xaoxuu.com
 root: /
 ```
 
+## Issues
+
+{% raw %}
+<div class='git-issue'></div>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.5/dist/jquery.min.js"></script>
+<script>
+$.get("https://api.github.com/repos/volantis-x/hexo-theme-volantis/issues",function(data,status){
+    console.log(data, status);
+    if (data.length > 0) {
+      $('.git-issue').append('<ul>');
+      for (i = 0; i < data.length; i++) {
+        $('.git-issue').append('<li><a target="_blank" rel="external nofollow noopener noreferrer" href=' + data[i].html_url + '>#' + data[i].number + ' ' + data[i].title + '</a></li>');
+      }
+      $('.git-issue').append('</ul>');
+    }
+});
+</script>
+{% endraw %}
+
 <br><br>
 
 {% folding open, 教程与指南 %}
