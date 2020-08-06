@@ -158,21 +158,21 @@ autoprefixer:
   - '*.min.css'
 
 # offline config passed to sw-precache.
-offline:
-  maximumFileSizeToCacheInBytes: 10485760
-  staticFileGlobs:
-    - public/**/*.{js,html,css,png,jpg,gif,svg,eot,ttf,woff,woff2}
-  stripPrefix: public
-  verbose: true
-  runtimeCaching:
-    - urlPattern: /*
-      handler: cacheFirst
-      options:
-        origin: cdn.jsdelivr.net
-    - urlPattern: /*
-      handler: cacheFirst
-      options:
-        origin: cdnjs.cloudflare.com
+#offline:
+#  maximumFileSizeToCacheInBytes: 10485760
+#  staticFileGlobs:
+#    - public/**/*.{js,html,css,png,jpg,gif,svg,eot,ttf,woff,woff2}
+#  stripPrefix: public
+#  verbose: true
+#  runtimeCaching:
+#    - urlPattern: /*
+#      handler: cacheFirst
+#      options:
+#        origin: cdn.jsdelivr.net
+#    - urlPattern: /*
+#      handler: cacheFirst
+#      options:
+#        origin: cdnjs.cloudflare.com
 
 marked:
   gfm: true
