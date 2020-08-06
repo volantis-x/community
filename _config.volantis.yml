@@ -24,14 +24,11 @@ meta:
     title: '本页文档最后更新于：'
 
 comments:
-  title: <i class='fas fa-comments'></i> 用户交流区
-  subtitle: 这里仅供用户之间进行交流，有任何疑问请前往GitHub提交Issue。在评论区进行提问将不会收到开发者的任何回复！
-  valine:
-    appId: FIKAgh6n0pUM08JXxhJHChVQ-MdYXbMMI
-    appKey: RJGiOYFc1fBvfox4frBPpRzU
-    requiredFields: ['nick']
-    path: /
-    placeholder: 这里仅供用户之间进行交流，有任何疑问请前往GitHub提交Issue。在评论区进行提问将不会收到开发者的任何回复！
+  title: #<i class='fas fa-comments'></i> 用户交流区
+  subtitle: #这里仅供用户之间进行交流，有任何疑问请前往GitHub提交Issue。在评论区进行提问将不会收到开发者的任何回复！
+  service: disqus
+  disqus:
+    shortname: volantis
 
 footer:
   layout: [aplayer, social, info, copyright]
@@ -54,6 +51,7 @@ plugins:
     # id: 4917530132 # vol red
     # id: 4917524698 # vol blue
     # id: 76244489 # vol white
-    id: 5135845906 # for Volantis 3.0
+    # id: 5135845906 # for Volantis 3.0
+    id: 5062959861 # TOP 30
   darkmodejs:
     compatible: true

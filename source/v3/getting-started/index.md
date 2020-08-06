@@ -12,7 +12,7 @@ sidebar: [news, docs-latest, repos, toc]
 
 <p>
 {% span logo center large, <sup>&ensp;</sup>Volantis<sup>3</sup> %}
-{% span center small, A Wonderful Theme for Hexo %}
+{% span center small, A Wonderful Theme for Hexo 5 %}
 </p>
 <br>
 
@@ -39,10 +39,10 @@ Volantis，一个高度模块化和可定制化、功能相对完善的 Hexo 博
 如果您从旧版本更新或着其它主题迁移，请确保环境版本不要太低，否则会产生兼容性问题。
 
 ```yaml
-Hexo: 4.2
-hexo-cli: 3.1
-node.js: 12.16 # LTS版
-npm: 6.13
+Hexo: 4.2 ~ 5.0
+hexo-cli: 3.1 ~ 4.1
+node.js: 12.16 ~ # LTS版
+npm: 6.13 ~
 ```
 
 ## 下载与安装

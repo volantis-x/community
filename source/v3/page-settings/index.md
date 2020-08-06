@@ -48,7 +48,7 @@ front-matter 是文件最上方以 `---` 分隔的区域，用于指定个别文
 | short_title       | 页面标题（在group列表中显示）         | String        | page.title   |
 | date        | 创建时间     | Date          | 文件创建时间 |
 | updated     | 更新日期     | Date          | 文件修改时间 |
-| permalink   | 覆盖文章网址 | String        | -      |
+| link   | 外部文章网址 | String        | -      |
 | music       | 内部音乐控件 | [Object] | -      |
 | robots    | robots   | String        | -      |
 | keywords    | 页面关键词   | String        | -      |
@@ -417,7 +417,7 @@ cover: true
 
 ## 引入外部文章
 
-利用 `permalink`，搭配自定义的文章作者信息，你可以在文章列表中显示外部文章或者网址，例如：
+利用 `link`，搭配自定义的文章作者信息，你可以在文章列表中显示外部文章或者网址，例如：
 
 ```yaml front-matter
 ---
@@ -431,7 +431,7 @@ author:
   name: xaoxuu
   avatar: https://cdn.jsdelivr.net/gh/xaoxuu/assets@master/avatar/avatar.png
   url: https://xaoxuu.com
-permalink: https://xaoxuu.com/blog/2017-07-05-hexo-blog/
+link: https://xaoxuu.com/blog/2017-07-05-hexo-blog/
 ---
 
 ![](https://img.vim-cn.com/d9/a9af7dc49fc0af8ca3e6dd2450a2f7095a87db.png)
