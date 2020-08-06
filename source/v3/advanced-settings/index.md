@@ -43,7 +43,7 @@ git submodule add https://github.com/volantis-x/hexo-theme-volantis.git themes/v
 
 - 访问具有动态特效背景（如雪花、粒子等）的网站时，手机很快会发烫变卡，笔记本很快会风扇狂转并且浏览器提示建议关闭此页面。如果你希望网站有好的使用体验请尽量不要安装这类插件。
 
-<!-
+<!--
 - 强烈推荐安装 [hexo-offline](https://github.com/JLHwung/hexo-offline) 插件，初次加载速度不变，后期切换页面和刷新网页速度越来越快。
 -->
 
