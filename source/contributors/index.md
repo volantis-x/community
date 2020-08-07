@@ -97,21 +97,26 @@ pin: true
 | 评论区 | 留言 | 可以测试、灌水、推广自己的博客。 |
 
 {% raw %}
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.5/dist/jquery.min.js"></script>
 <script>
-$.get("https://api.github.com/repos/volantis-x/hexo-theme-volantis/contributors",function(data, status) {
-  if (data.length > 29) {
-    data.length = 29;
-  }
-  if (data.length > 0) {
-    for (i = 0; i < data.length; i++) {
-      let imgTag = '<img src="' + data[i].avatar_url + '>';
-      let aTag = '<a class="button" target="_blank" rel="external nofollow noopener noreferrer" href="' + data[i].html_url + '">' + '<img src="' + data[i].avatar_url + '">' + data[i].login + '</a>';
-      $('.contributors').append(aTag);
+function loadContributors() {
+  $.get("https://api.github.com/repos/volantis-x/hexo-theme-volantis/contributors",function(data, status) {
+    if (data.length > 29) {
+      data.length = 29;
     }
-  }
-  $('.contributors').append('<a class="button" target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/hexo-theme-volantis/graphs/contributors?type=a"><i class="fab fa-github"></i>查看全部</a>');
-  $('.contributors .loading').remove();
+    if (data.length > 0) {
+      for (i = 0; i < data.length; i++) {
+        let imgTag = '<img src="' + data[i].avatar_url + '>';
+        let aTag = '<a class="button" target="_blank" rel="external nofollow noopener noreferrer" href="' + data[i].html_url + '">' + '<img src="' + data[i].avatar_url + '">' + data[i].login + '</a>';
+        $('.contributors').append(aTag);
+      }
+    }
+    $('.contributors').append('<a class="button" target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/hexo-theme-volantis/graphs/contributors?type=a"><i class="fab fa-github"></i>查看全部</a>');
+    $('.contributors .loading').remove();
+  });
+}
+document.addEventListener('DOMContentLoaded', function () {
+  loadContributors();
 });
+loadContributors();
 </script>
 {% endraw %}
