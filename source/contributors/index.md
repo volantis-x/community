@@ -39,7 +39,18 @@ pin: true
 
 {% p subtitle, 非常感谢直接提交了 PR 的朋友！ %}
 
-<div class="btns circle grid5 contributors"><div class="loading"><i class="fa fa-cog fa-2x fa-spin"></i></div></div>
+{% btns circle grid5 %}
+{% cell xaoxuu, https://github.com/xaoxuu, https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png %}
+{% cell inkss, https://github.com/inkss, https://avatars2.githubusercontent.com/u/31947043?s=60&v=4 %}
+{% cell MHuiG, https://github.com/MHuiG, https://avatars0.githubusercontent.com/u/38281581?s=60&v=4 %}
+{% cell Drew233, https://github.com/Drew233, https://avatars0.githubusercontent.com/u/47592224?s=60&v=4 %}
+{% cell Linhk1606, https://github.com/Linhk1606, https://avatars1.githubusercontent.com/u/50829219?s=60&v=4 %}
+{% cell ericclose, https://github.com/ericclose, https://avatars1.githubusercontent.com/u/34526560?s=60&v=4 %}
+{% cell CRainyDay, https://github.com/CRainyDay, https://avatars2.githubusercontent.com/u/46487957?s=60&v=4 %}
+{% cell Flexiston, https://github.com/Flexiston, https://avatars0.githubusercontent.com/u/62386802?s=60&v=4 %}
+{% cell Colsrch, https://github.com/Colsrch, https://avatars0.githubusercontent.com/u/58458181?v=4 %}
+{% cell 查看全部, https://github.com/volantis-x/hexo-theme-volantis/graphs/contributors, fab fa-github %}
+{% endbtns %}
 
 {% p subtitle, 同样感谢那些在评论和 Issue 中互相帮助的网友~ %}
 
@@ -95,28 +106,3 @@ pin: true
 | 渠道 | 方式 | 用途 |
 | :-- | :-- | :-- |
 | 评论区 | 留言 | 可以测试、灌水、推广自己的博客。 |
-
-{% raw %}
-<script>
-function loadContributors() {
-  $.get("https://api.github.com/repos/volantis-x/hexo-theme-volantis/contributors",function(data, status) {
-    if (data.length > 29) {
-      data.length = 29;
-    }
-    if (data.length > 0) {
-      for (i = 0; i < data.length; i++) {
-        let imgTag = '<img src="' + data[i].avatar_url + '>';
-        let aTag = '<a class="button" target="_blank" rel="external nofollow noopener noreferrer" href="' + data[i].html_url + '">' + '<img src="' + data[i].avatar_url + '">' + data[i].login + '</a>';
-        $('.contributors').append(aTag);
-      }
-    }
-    $('.contributors').append('<a class="button" target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/volantis-x/hexo-theme-volantis/graphs/contributors?type=a"><i class="fab fa-github"></i>查看全部</a>');
-    $('.contributors .loading').remove();
-  });
-}
-document.addEventListener('DOMContentLoaded', function () {
-  loadContributors();
-});
-loadContributors();
-</script>
-{% endraw %}
