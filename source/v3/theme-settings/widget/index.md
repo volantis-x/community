@@ -1,9 +1,9 @@
 ---
 layout: page
-title: 卡片式组件库
+title: 卡片式组件
 group: docs-latest
 order: 307
-short_title: 3-7 卡片式组件库
+short_title: 3-7 卡片式组件
 meta:
   header: [centertitle]
 sidebar: [docs-latest, toc, repos]

@@ -21,9 +21,9 @@
           url: /v3/theme-settings/cover/
         - name: 设置默认布局
           url: /v3/theme-settings/layout/
-        - name: 文章元数据组件库
+        - name: 元数据组件
           url: /v3/theme-settings/meta/
-        - name: 卡片式组件库
+        - name: 卡片式组件
           url: /v3/theme-settings/widget/
         - name: 选择评论系统
           url: /v3/theme-settings/comments/

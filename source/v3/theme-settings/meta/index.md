@@ -1,9 +1,9 @@
 ---
 layout: page
-title: 文章元数据组件库
+title: 元数据组件
 group: docs-latest
 order: 306
-short_title: 3-6 文章元数据组件库
+short_title: 3-6 元数据组件
 meta:
   header: [centertitle]
 sidebar: [docs-latest, toc, repos]

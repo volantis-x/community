@@ -94,4 +94,4 @@ docs-latest:
   display: [desktop, mobile] # [desktop, mobile]
   header:
     icon: fas fa-book-open
-    title: Volantis Docs V3
+    title: Volantis V3
