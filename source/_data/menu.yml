@@ -10,10 +10,38 @@
       url: /v3/site-settings/
     - name: 主题配置
       icon: fas fa-palette
-      url: /v3/theme-settings/
+      rows:
+        - name: 自定义主题外观
+          url: /v3/theme-settings/style/
+        - name: 设置网站导航栏
+          url: /v3/theme-settings/navbar/
+        - name: 设置网站页脚
+          url: /v3/theme-settings/footer/
+        - name: 网站与文章封面
+          url: /v3/theme-settings/cover/
+        - name: 设置默认布局
+          url: /v3/theme-settings/layout/
+        - name: 文章元数据组件库
+          url: /v3/theme-settings/meta/
+        - name: 卡片式组件库
+          url: /v3/theme-settings/widget/
+        - name: 选择评论系统
+          url: /v3/theme-settings/comments/
+        - name: 站内搜索
+          url: /v3/theme-settings/search/
+        - name: 第三方插件
+          url: /v3/theme-settings/plugins/
+        - name: 默认的 SEO 配置
+          url: /v3/theme-settings/seo/
     - name: 页面配置
       icon: fas fa-file-alt
-      url: /v3/page-settings/
+      rows:
+        - name: 页面布局模板
+          url: /v3/page-settings/layout/
+        - name: front-matter
+          url: /v3/page-settings/front-matter/
+        - name: 页面自定义布局
+          url: /v3/page-settings/body/
     - name: 标签插件
       icon: fas fa-pen-alt
       url: /v3/tag-plugins/
