@@ -1,8 +1,8 @@
 style:
   sidebar:
-    effect: [shadow, floatable] # [shadow, floatable, blur]
+    effect: [shadow] # [shadow, floatable, blur]
   body:
-    effect: [shadow, floatable] # [shadow, floatable, blur]
+    effect: [shadow] # [shadow, floatable, blur]
   # color:
   #   site: '#21232F' # Website background color
   #   site_inner: '#fff' # Text color inside the website background

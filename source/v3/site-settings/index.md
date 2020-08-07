@@ -1,15 +1,13 @@
 ---
 layout: page
 group: docs-latest
-order: 2
-title: 站点配置
-short_title: 2. 站点配置
+order: 200
+title: 配置站点信息
+short_title: 2-1 配置站点信息
 meta:
-  header: [title, author, updated]
-sidebar: [news, docs-latest, repos, toc]
+  header: [centertitle]
+sidebar: [docs-latest, toc, repos]
 ---
-
-如无特殊说明，本页面的配置信息写在 <u>**博客根目录**</u> 的 `_config.yml` 文件中。
 
 ## 网站标题
 
@@ -73,6 +71,18 @@ import:
     - <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/favicon.ico">
   script:
 ```
+
+## 多语言设置
+
+```yaml blog/_config.yml
+language:
+- zh-CN
+- en
+- zh-HK
+- zh-TW
+```
+
+对应的翻译文件路径： `themes/volantis/languages/`
 
 ## 更多配置
 

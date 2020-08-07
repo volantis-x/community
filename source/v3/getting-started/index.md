@@ -1,13 +1,13 @@
 ---
 layout: page
 group: docs-latest
-order: 1
-title: 开始使用
-short_title: 1. 开始使用
+order: 100
+title: 安装与版本更新
+short_title: 1-1 安装与版本更新
 cover: true
 meta:
   header: []
-sidebar: [news, docs-latest, repos, toc]
+sidebar: [docs-latest, toc, repos]
 ---
 
 <p>
@@ -20,23 +20,31 @@ Volantis，一个高度模块化和可定制化、功能相对完善的 Hexo 博
 
 这些是使用了本主题的博客： {% btn 示例博客, /examples/, fas fa-play-circle %}
 
-## 能力要求
+## 能力要求 {% span red, !!! %}
 
-自建博客需要一定的相关知识，在开始前，请务必确保：
+自建博客需要一定的相关知识，在开始前，请{% u 务必 %}确保：
 
 {% checkbox checked, 已掌握 markdown 语法 %}
 {% checkbox checked, 已阅读 Hexo 官方文档 %}
 {% checkbox checked, 会使用终端（命令行），会使用 git  %}
 {% checkbox red checked, 会阅读文档、搜索文档 %}
 
+<br>
+
 为了更好地使用，还建议掌握以下知识：
 
+{% checkbox checked, 会阅读源码，知道本站源码在哪里，会参照源码仿写、对比差异 %}
 {% checkbox checked, 规范地使用 GitHub Issues（解决文档中没有的问题） %}
-{% checkbox checked, GitHub Fork、Pull Request 操作（使主题保持更新） %}
+{% checkbox checked, GitHub Fork、Pull Request 操作（使主题保持最新） %}
 
 ## 环境要求
 
 如果您从旧版本更新或着其它主题迁移，请确保环境版本不要太低，否则会产生兼容性问题。
+
+
+{% tabs install, 3 %}
+
+<!-- tab Linux -->
 
 ```yaml
 Hexo: 4.2 ~ 5.0
@@ -45,11 +53,45 @@ node.js: 12.16 ~ # LTS版
 npm: 6.13 ~
 ```
 
+<!-- endtab -->
+
+<!-- tab Mac -->
+
+```yaml
+Hexo: 4.2 ~ 5.0
+hexo-cli: 3.1 ~ 4.1
+node.js: 12.16 ~ # LTS版
+npm: 6.13 ~
+```
+
+使用脚本无要求。
+
+<!-- endtab -->
+
+<!-- tab Windows -->
+
+```yaml
+Hexo: 4.2 ~ 5.0
+hexo-cli: 3.1 ~ 4.1
+node.js: 12.16 ~ # LTS版
+npm: 6.13 ~
+```
+
+<!-- endtab -->
+
+{% endtabs %}
+
 ## 下载与安装
 
-{% tabs install, 2 %}
+{% tabs install, 4 %}
 
-<!-- tab 脚本自动安装（Mac） -->
+<!-- tab Linux -->
+
+..
+
+<!-- endtab -->
+
+<!-- tab Mac -->
 
 在博客路径打开终端，下载安装并应用主题：
 ```sh
@@ -59,11 +101,15 @@ curl -s https://volantis.js.org/start | sh
 
 {% noteblock link blue %}
 
-这个脚本是为 Mac 写的，不清楚 Linux 能不能使用，但 Windows 是一定不能用的。
-
 脚本详细使用方法：[#hexo.sh](https://xaoxuu.com/wiki/hexo.sh/)
 
 {% endnoteblock %}
+
+<!-- endtab -->
+
+<!-- tab Windows -->
+
+..
 
 <!-- endtab -->
 
@@ -95,11 +141,13 @@ npm i -S hexo-renderer-stylus
 
 {% endtabs %}
 
-## 升级小助手
+## 版本更新
+
+请对照 [更新日志](https://github.com/volantis-x/hexo-theme-volantis/releases) 进行更新。
 
 {% timeline %}
 
-{% timenode 2020-07-24 [2.6.6 -> 3.0](https://github.com/volantis-x/hexo-theme-volantis/releases) %}
+{% timenode 2020-07-24 [2.6.6 -> 3.0](https://github.com/volantis-x/hexo-theme-volantis/releases/tag/3.0) %}
 
 1. 如果有 `hexo-lazyload-image` 插件，需要删除并重新安装最新版本，设置 `lazyload.isSPA: true`。
 2. 2.x 版本的 css 和 js 不适用于 3.x 版本，如果使用了 `use_cdn: true` 则需要删除。

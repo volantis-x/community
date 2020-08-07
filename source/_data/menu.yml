@@ -45,7 +45,7 @@
     - name: hr
     - name: 更新日志
       url: https://github.com/volantis-x/hexo-theme-volantis/releases/
-    - name: 公告和测试
+    - name: 博客
       url: archives/
     - name: hr
     - name: 旧版文档 v2

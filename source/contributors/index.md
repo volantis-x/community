@@ -1,10 +1,10 @@
 ---
 layout: page
-title: 如何参与项目
+title: 加入社区与团队
 cover: true
 meta:
   header: [title, author, updated]
-sidebar: [news, docs-latest, repos]
+sidebar: [docs-latest, repos]
 music:
   server: netease   # netease, tencent, kugou, xiami, baidu
   type: song        # song, playlist, album, search, artist
@@ -33,10 +33,6 @@ pin: true
 
 ## 感谢项目贡献者
 
-{% tabs join, 1 %}
-
-<!-- tab 提交 PR -->
-
 {% p subtitle, 非常感谢直接提交了 PR 的朋友！ %}
 
 {% btns circle grid5 %}
@@ -54,13 +50,9 @@ pin: true
 
 {% p subtitle, 同样感谢那些在评论和 Issue 中互相帮助的网友~ %}
 
-如果您有一个好点子或者解决了我这里没有解决的问题，欢迎去 [GitHub](https://github.com/volantis-x/hexo-theme-volantis/) 贡献一下代码。👏
+如果您有一个好点子或者解决了这里没有解决的问题，欢迎去 [GitHub](https://github.com/volantis-x/hexo-theme-volantis/) 贡献一下代码。👏
 
-
-<!-- endtab -->
-
-<!-- tab 维护文档 -->
-
+## 维护官方文档
 
 如果您发现文档中有错误，或者遗漏内容，欢迎补充和纠正。👏
 
@@ -68,9 +60,7 @@ pin: true
 {% cell 文档源码, https://github.com/volantis-x/volantis-docs/, fab fa-github %}
 {% endbtns %}
 
-<!-- endtab -->
-
-<!-- tab 站点收录 -->
+## 收录网站
 
 感谢以下网站的收录与分享，让本主题能够被更多人发现，主题就会做的越来越好~
 
@@ -80,12 +70,30 @@ pin: true
 {% cell Easy Hexo, https://easyhexo.com/2-Theme-use-and-config/2-6-hexo-theme-volantis/, https://i.loli.net/2020/03/10/vxqOKtnRYehP4ZW.png %}
 {% endbtns %}
 
-<!-- endtab -->
+## 分享文章
 
-{% endtabs %}
+如果您有与 Volantis 使用相关的原创文章，可以转载到 Volantis 官网，示例如下：
 
+```md _posts/blogs/2020-05-17-pjax.md
+---
+title: Volantis 主题部署 Pjax
+date: 2020-05-17
+updated: 2020-08-07
+author:
+  name: 枋柚梓
+  avatar: https://cdn.jsdelivr.net/gh/inkss/common@1.4.2/hexo/img/static/avatar.jpg
+  url: https://inkss.cn
+link: https://inkss.cn/article/other/76993423.html
+description: 本篇文章记录了我对 Volantis 主题做 Pjax 兼容的种种，大抵算是种记录吧~
+---
+```
 
-## 如何参与互动
+要求：
+
+1. 文章存放在 `_posts/blogs/` 目录中，且文件名格式为 `年-月-日-文章主题`。
+2. 必须是原创文章，摘要部分不要太长。
+
+## 可供交流的渠道
 
 {% p subtitle, 解决问题 %}
 

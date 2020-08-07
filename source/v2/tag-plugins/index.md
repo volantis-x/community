@@ -6,7 +6,7 @@ title: 标签插件
 short_title: 5. 标签插件
 meta:
   header: [title, author, updated]
-sidebar: [news, docs-v2, repos, toc]
+sidebar: [docs-v2, repos, toc]
 mathjax: true
 ---
 

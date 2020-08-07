@@ -6,7 +6,7 @@ title: 页面配置
 short_title: 4. 页面配置
 meta:
   header: [title, author, updated]
-sidebar: [news, docs-v2, repos, toc]
+sidebar: [docs-v2, repos, toc]
 ---
 
 如无特殊说明，本页面的配置信息写在 <u>**页面**</u> 文件的 `front-matter` 中。

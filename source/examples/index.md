@@ -4,7 +4,7 @@ title: 示例博客
 cover: true
 meta:
   header: []
-sidebar: [news, docs-latest, repos, toc]
+sidebar: [docs-latest, toc, repos]
 links:
   - group: '版本：^3.0 <sup><code>beta</code></sup>'
     desc: 支持 Pjax 和 Artitalk

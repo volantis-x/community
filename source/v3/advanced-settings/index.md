@@ -1,15 +1,25 @@
 ---
 layout: page
 group: docs-latest
-order: 6
+order: 601
 title: 进阶设定
-short_title: 6. 进阶设定
+short_title: 6-1 进阶设定
 meta:
-  header: [title, author, updated]
-sidebar: [news, docs-latest, repos, toc]
+  header: [centertitle]
+sidebar: [docs-latest, toc, repos]
 ---
 
-建议有一定基础知识的朋友进行尝试。
+## 使用数据文件
+
+目前支持的数据文件有：
+
+```
+source/_data/layout.yml
+source/_data/menu.yml
+source/_data/widget.yml
+```
+
+## 设置子模块
 
 {% folding yellow open, 将主题添加为子模块 %}
 

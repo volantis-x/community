@@ -93,5 +93,5 @@ docs-latest:
   class: group
   display: [desktop, mobile] # [desktop, mobile]
   header:
-    icon: fas fa-list-alt
-    title: 文档 V3
+    icon: fas fa-book-open
+    title: Volantis Docs V3
