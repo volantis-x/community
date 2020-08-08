@@ -1,9 +1,12 @@
 style:
+  font_smoothing: true
   sidebar:
     effect: [shadow] # [shadow, floatable, blur]
   body:
     effect: [shadow] # [shadow, floatable, blur]
-  # color:
+  color:
+    text: '#333'
+    p: '#333'
   #   site: '#21232F' # Website background color
   #   site_inner: '#fff' # Text color inside the website background
   #   site_footer: '#fff' # Footer text color inside the website background
