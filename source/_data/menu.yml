@@ -1,15 +1,15 @@
 - name: 开始
-  icon: fas fa-flag
+  icon: fas fa-flag faa-tada
   url: /v3/getting-started/
 
 - name: 文档
-  icon: fas fa-book
+  icon: fas fa-book faa-tada
   rows:
     - name: 站点配置
-      icon: fas fa-globe-asia
+      icon: fas fa-globe-asia faa-shake
       url: /v3/site-settings/
     - name: 主题配置
-      icon: fas fa-palette
+      icon: fas fa-palette faa-shake
       rows:
         - name: 自定义主题外观
           url: /v3/theme-settings/style/
@@ -34,7 +34,7 @@
         - name: 默认的 SEO 配置
           url: /v3/theme-settings/seo/
     - name: 页面配置
-      icon: fas fa-file-alt
+      icon: fas fa-file-alt faa-shake
       rows:
         - name: 页面布局模板
           url: /v3/page-settings/layout/
@@ -43,18 +43,18 @@
         - name: 页面自定义布局
           url: /v3/page-settings/body/
     - name: 标签插件
-      icon: fas fa-pen-alt
+      icon: fas fa-pen-alt faa-shake
       url: /v3/tag-plugins/
     - name: 进阶设定
-      icon: fas fa-flask
+      icon: fas fa-flask faa-shake
       url: /v3/advanced-settings/
 
 - name: 帮助
-  icon: fas fa-question-circle
+  icon: fas fa-question-circle faa-tada
   url: faqs/
 
 - name: 示例
-  icon: fas fa-play-circle
+  icon: fas fa-play-circle faa-tada
   url: examples/
 
 
