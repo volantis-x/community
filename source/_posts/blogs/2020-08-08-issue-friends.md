@@ -1,5 +1,5 @@
 ---
-title: 从Issue中加载友链
+title: 从 Issue 中加载友链
 date: 2020-08-08
 updated: 2020-08-08
 author:
@@ -15,19 +15,15 @@ GitHub API 频繁失效， Gitee API 挺稳定的，下面是从 [Gitee Issues](
 {% raw %}
 <script>
 function loadFriends() {
-  $.get("https://gitee.com/api/v5/repos/xaoxuu/friends/issues?state=open&sort=created&direction=desc&page=1&per_page=20",function(data, status) {
-    if (data.length > 29) {
-      data.length = 29;
-    }
+  $.get("https://gitee.com/api/v5/repos/xaoxuu/friends/issues?state=open&sort=created&direction=desc&page=1&per_page=100",function(data, status) {
     if (data.length > 0) {
-      console.log(data);
       for (i = 0; i < data.length; i++) {
         let imgTag = '<img src="' + data[i].avatar_url + '>';
         let aTag = '<a class="button" target="_blank" rel="external nofollow noopener noreferrer" href="' + data[i].body + '">' + '<img no-lazy src="' + data[i].user.avatar_url + '">' + data[i].title + '</a>';
-        $('.friends').append(aTag);
+        $('.btns.friends').append(aTag);
       }
     }
-    $('.friends .loading').remove();
+    $('.btns.friends .loading').remove();
   });
 }
 document.addEventListener('DOMContentLoaded', function () {
