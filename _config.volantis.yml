@@ -14,7 +14,9 @@ style:
   #   inlinecode: '#555' # Inline code color
   #   codeblock: '#555' # Codeblock color
   #   p: '#ccc' #
-
+  fontfamily:
+    note-tag:
+      fontfamily: 'Font Awesome 5 Pro'
 meta:
   author:
     avatar: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png
@@ -37,6 +39,7 @@ footer:
   copyright: '[Copyright © 2017-2020 Volantis Team](/)'
 
 plugins:
+  fontawesome: https://cdn.jsdelivr.net/gh/volantis-x/cdn-fontawesome-pro@master/css/all.min.css
   comment_typing: false
   busuanzi: false
   backstretch:
