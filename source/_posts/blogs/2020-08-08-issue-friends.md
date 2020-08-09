@@ -15,7 +15,7 @@ GitHub API 频繁失效， Gitee API 挺稳定的，下面是从 [Gitee Issues](
 {% raw %}
 <script>
 function loadFriends() {
-  $.get("https://gitee.com/api/v5/repos/xaoxuu/friends/issues?state=open&sort=updated&direction=desc&page=1&per_page=100",function(data, status) {
+  $.get("https://gitee.com/api/v5/repos/xaoxuu/friends/issues?state=open&labels=active&sort=updated&direction=desc&page=1&per_page=100",function(data, status) {
     if (data.length > 0) {
       for (i = 0; i < data.length; i++) {
         let imgTag = '<img src="' + data[i].avatar_url + '>';

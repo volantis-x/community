@@ -15,7 +15,7 @@ GitHub API 频繁失效， Gitee API 挺稳定的，下面是从 [Gitee Issues](
 {% raw %}
 <script>
 function loadTimeline() {
-  $.get("https://gitee.com/api/v5/repos/xaoxuu/timeline/issues?state=open&sort=created&direction=desc&page=1&per_page=50",function(data, status) {
+  $.get("https://gitee.com/api/v5/repos/xaoxuu/timeline/issues?state=open&labels=active&sort=created&direction=desc&page=1&per_page=50",function(data, status) {
     if (data.length > 0) {
       for (i = 0; i < data.length; i++) {
         let a = '&nbsp;&nbsp;<a class="comments" target="_blank" href="' + data[i].html_url + '"><i class="fa fa-comment-dots fa-fw"></i>' + data[i].comments + '</a>';
