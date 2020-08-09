@@ -989,4 +989,4 @@ search:
 npm i -S hexo-generator-search hexo-generator-json-content
 ```
 
-<br><br>{% btn large center, 向开发者反馈问题, https://github.com/volantis-x/hexo-theme-volantis/issues/ , fas fa-paper-plane %}
+<br><br>{% btn solid large center, 向开发者反馈问题, https://github.com/volantis-x/hexo-theme-volantis/issues/ , fas fa-paper-plane %}

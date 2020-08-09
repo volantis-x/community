@@ -22,7 +22,7 @@ Volantis，一个高度模块化和可定制化、功能相对完善的 Hexo 博
 
 ## 能力要求 {% span red, !!! %}
 
-自建博客需要一定的相关知识，在开始前，请{% u 务必 %}确保：
+自建博客需要一定的相关知识，在开始前，请{% emp 务必 %}确保：
 
 {% checkbox checked, 已掌握 markdown 语法 %}
 {% checkbox checked, 已阅读 Hexo 官方文档 %}
@@ -41,133 +41,112 @@ Volantis，一个高度模块化和可定制化、功能相对完善的 Hexo 博
 
 如果您从旧版本更新或着其它主题迁移，请确保环境版本不要太低，否则会产生兼容性问题。
 
-
-{% tabs install, 3 %}
-
-<!-- tab Linux -->
-
 ```yaml
-Hexo: 4.2 ~ 5.0
-hexo-cli: 3.1 ~ 4.1
-node.js: 12.16 ~ # LTS版
-npm: 6.13 ~
+Hexo: 4.2 ~ 5.x
+hexo-cli: 3.1 ~ 4.x
+node.js: 12.16 ~ latest # 推荐使用 LTS 版
+npm: 6.13 ~ latest
 ```
-
-<!-- endtab -->
-
-<!-- tab Mac -->
-
-```yaml
-Hexo: 4.2 ~ 5.0
-hexo-cli: 3.1 ~ 4.1
-node.js: 12.16 ~ # LTS版
-npm: 6.13 ~
-```
-
-使用脚本无要求。
-
-<!-- endtab -->
-
-<!-- tab Windows -->
-
-```yaml
-Hexo: 4.2 ~ 5.0
-hexo-cli: 3.1 ~ 4.1
-node.js: 12.16 ~ # LTS版
-npm: 6.13 ~
-```
-
-<!-- endtab -->
-
-{% endtabs %}
 
 ## 下载与安装
 
-{% tabs install, 4 %}
+{% tabs install, 1 %}
 
-<!-- tab Linux -->
+<!-- tab 全新博客安装 -->
 
-..
-
-<!-- endtab -->
-
-<!-- tab Mac -->
-
-在博客路径打开终端，下载安装并应用主题：
-```sh
-curl -s https://volantis.js.org/start | sh
+第 1/2 步：
+```bash terminal:
+npm i hexo-theme-volantis
 ```
-如果您还没有博客，执行这行命令将会自动检测并安装所需环境，初始化博客，然后下载安装并应用主题。
-
-{% noteblock link blue %}
-
-脚本详细使用方法：[#hexo.sh](https://xaoxuu.com/wiki/hexo.sh/)
-
-{% endnoteblock %}
-
-<!-- endtab -->
-
-<!-- tab Windows -->
-
-..
-
-<!-- endtab -->
-
-<!-- tab 手动安装 -->
-
-第 1/3 步：下载主题源码到 `themes/` 文件夹
-```sh
-git clone https://github.com/volantis-x/hexo-theme-volantis themes/volantis
-
-# 或者使用国内镜像
-git clone https://e.coding.net/volantis/volantis/volantis.git themes/volantis
-```
-
-第 2/3 步：修改站点配置文件
+第 2/2 步：
 ```yaml blog/_config.yml
 theme: volantis
 ```
 
-第 3/3 步：检查并安装依赖
+{% folding, 如果您是 Mac 用户，可以使用脚本完成全部流程 %}
 
-```sh 安装 Hexo 搜索的依赖包：
-npm i -S hexo-generator-search hexo-generator-json-content
+在博客路径打开终端，下载安装并应用主题：
+
+```sh
+curl -s https://volantis.js.org/start | sh
 ```
-```sh 安装 stylus 渲染器：
-npm i -S hexo-renderer-stylus
+
+这行命令将会自动检测并安装所需环境，初始化博客，然后下载安装并应用主题。
+脚本详细使用方法：[#hexo.sh](https://xaoxuu.com/wiki/hexo.sh/)
+
+{% endfolding %}
+
+<!-- endtab -->
+
+<!-- tab 由其它主题迁移 -->
+
+{% timenode 第 1/3 步：下载主题 %}
+
+如果您已经升级到 Hexo 5.x 可以直接使用 `npm` 命令安装：
+
 ```
+npm i hexo-theme-volantis
+```
+
+对于旧版本，需要下载主题源码到 `themes/` 文件夹：
+
+```
+git clone https://github.com/volantis-x/hexo-theme-volantis themes/volantis
+```
+
+如果您无法访问 GitHub 可以使用国内镜像源：
+
+```
+git clone https://e.coding.net/volantis/volantis/volantis.git themes/volantis
+```
+
+{% endtimenode %}
+
+{% timenode 第 2/3 步：修改站点配置文件 %}
+
+在 `blog/_config.yml` 文件中找到并修改：
+
+```
+theme: volantis
+```
+
+{% endtimenode %}
+
+{% timenode 第 3/3 步：检查并安装依赖 %}
+
+安装 Hexo 搜索的依赖包：
+
+```
+npm i hexo-generator-search hexo-generator-json-content
+```
+
+安装 stylus 渲染器：
+
+```
+npm i hexo-renderer-stylus
+```
+
+{% endtimenode %}
 
 <!-- endtab -->
 
 {% endtabs %}
 
+
 ## 版本更新
 
-请对照 [更新日志](https://github.com/volantis-x/hexo-theme-volantis/releases) 进行更新。
+请对照 {% btn, 更新日志, https://github.com/volantis-x/hexo-theme-volantis/releases %} 进行更新，下面是更新之后需要注意的事项：
 
 {% timeline %}
 
-{% timenode 2020-07-24 [2.6.6 -> 3.0](https://github.com/volantis-x/hexo-theme-volantis/releases/tag/3.0) %}
+{% timenode 2020-08-09 [2.6.6 -> 3.0](https://github.com/volantis-x/hexo-theme-volantis/releases/tag/3.0) %}
 
-1. 如果有 `hexo-lazyload-image` 插件，需要删除并重新安装最新版本，设置 `lazyload.isSPA: true`。
+1. 如果有 `hexo-lazyload-image` 插件，需要重新安装最新版本并增加设置 `lazyload.isSPA: true` 。
 2. 2.x 版本的 css 和 js 不适用于 3.x 版本，如果使用了 `use_cdn: true` 则需要删除。
-3. 2.x 版本的 fancybox 标签在 3.x 版本中被重命名为 gallery 。
-4. 2.x 版本的置顶 `top: true` 改为了 `pin: true`，并且同样适用于 `layout: page` 的页面。
-5. 如果使用了 `hexo-offline` 插件，建议卸载，3.0 版本默认开启了 pjax 服务。
-
-{% endtimenode %}
-
-{% timenode 2020-05-15 [2.6.3 -> 2.6.6](https://github.com/volantis-x/hexo-theme-volantis/releases/tag/2.6.6) %}
-
-不需要额外处理。
-
-{% endtimenode %}
-
-{% timenode 2020-04-20 [2.6.2 -> 2.6.3](https://github.com/volantis-x/hexo-theme-volantis/releases/tag/2.6.3) %}
-
-1. 全局搜索 `seotitle` 并替换为 `seo_title`。
-2. group 组件的索引规则有变，使用 group 组件的文章内，`group: group_name` 对应的组件名必须是 `group_name`。
-2. group 组件的列表名优先显示文章的 `short_title` 其次是 `title`。
+3. 2.x 版本的 `fancybox` 标签在 3.x 版本中被重命名为 `gallery` 。
+4. 2.x 版本的置顶 `top: true` 改为了 `pin: true` 并且同样适用于 `layout: page` 的页面。
+5. 如果使用了 `hexo-offline` 插件，建议卸载，3.0 版本使用了 pjax 服务。
+6. 欢迎补充
 
 {% endtimenode %}
 
@@ -185,4 +164,4 @@ npm i -S hexo-renderer-stylus
 在软件和软件的所有副本中都必须包含版权声明和许可声明。
 {% endnoteblock %}
 
-<br><br>{% btn large center, 向开发者反馈问题, https://github.com/volantis-x/hexo-theme-volantis/issues/ , fas fa-paper-plane %}
+<br><br>{% btn solid large center, 向开发者反馈问题, https://github.com/volantis-x/hexo-theme-volantis/issues/ , fas fa-paper-plane %}

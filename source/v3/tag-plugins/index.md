@@ -626,15 +626,29 @@ large 按钮更具有强调作用，建议搭配 center 使用：
 
 <!-- tab 示例效果 -->
 
+{% p subtitle, 行内按钮 %}
+
 不设置任何参数的 {% btn 按钮, / %} 适合融入段落中。
 
-regular 按钮适合独立于段落之外：
+{% p subtitle, regular 风格按钮 %}
 
-{% btn regular, 示例博客, https://xaoxuu.com, fas fa-play-circle %}
+{% btn regular, 示例博客, /, fas fa-rss %} {% btn regular, 示例博客, , fas fa-rss %}
 
-large 按钮更具有强调作用，建议搭配 center 使用：
+{% btn regular large, 示例博客, /, fas fa-rss %} {% btn regular large, 示例博客, , fas fa-rss %}
+
+居中：
 
 {% btn center large, 开始使用, https://volantis.js.org/v3/getting-started/, fas fa-download %}
+
+{% p subtitle, solid 风格按钮 %}
+
+{% btn solid, 示例博客, /, fas fa-rss %} {% btn solid, 示例博客, , fas fa-rss %}
+
+{% btn solid large, 示例博客, /, fas fa-rss %} {% btn solid large, 示例博客, , fas fa-rss %}
+
+居中：
+
+{% btn solid center large, 开始使用, https://volantis.js.org/v3/getting-started/, fas fa-download %}
 
 <!-- endtab -->
 
@@ -1551,4 +1565,4 @@ content
 ```
 {% endfolding %}
 
-<br><br>{% btn large center, 向开发者反馈问题, https://github.com/volantis-x/hexo-theme-volantis/issues/ , fas fa-paper-plane %}
+<br><br>{% btn solid large center, 向开发者反馈问题, https://github.com/volantis-x/hexo-theme-volantis/issues/ , fas fa-paper-plane %}

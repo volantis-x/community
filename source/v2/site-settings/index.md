@@ -78,4 +78,4 @@ import:
 
 更多请见 Hexo 官方文档：[#Hexo配置](https://hexo.io/zh-cn/docs/configuration)
 
-<br><br>{% btn large center, 向开发者反馈问题, https://github.com/volantis-x/hexo-theme-volantis/issues/ , fas fa-paper-plane %}
+<br><br>{% btn solid large center, 向开发者反馈问题, https://github.com/volantis-x/hexo-theme-volantis/issues/ , fas fa-paper-plane %}

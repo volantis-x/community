@@ -1325,4 +1325,4 @@ content
 
 {% note link, 更多请见Hexo官方文档：[#标签插件](https://hexo.io/zh-cn/docs/tag-plugins) %}
 
-<br><br>{% btn large center, 向开发者反馈问题, https://github.com/volantis-x/hexo-theme-volantis/issues/ , fas fa-paper-plane %}
+<br><br>{% btn solid large center, 向开发者反馈问题, https://github.com/volantis-x/hexo-theme-volantis/issues/ , fas fa-paper-plane %}
