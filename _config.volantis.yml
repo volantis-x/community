@@ -38,7 +38,7 @@ comments:
 
 footer:
   layout: [aplayer, social, siteinfo, copyright]
-  siteinfo: 本站使用 [Volantis](/) 作为主题，您可以在 GitHub 找到[本站源码](https://github.com/volantis-x/volantis-docs/)
+  siteinfo: 本站使用 [Volantis](https://github.com/volantis-x/hexo-theme-volantis/) 作为主题，您可以在 GitHub 找到[本站源码](https://github.com/volantis-x/volantis-docs/)
   copyright: '[Copyright © 2017-2020 Volantis Team](https://github.com/volantis-x/)'
 
 plugins:
