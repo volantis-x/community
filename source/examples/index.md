@@ -55,6 +55,10 @@ links:
       url: https://blog.tedgao.com
       avatar: https://pic.downk.cc/item/5f11677114195aa59407cf1f.jpg
       desc: [没事做着玩]
+    - name: 冷暖自然
+      url: https://yzweb.gitee.io/
+      avatar: https://i.loli.net/2020/08/10/1gQWoiIP6SYVej4.jpg
+      tags: [Java]
   - group: '版本：^2.5～2.6'
     desc: 新增 Group、References 组件；新增 Checkbox、Radio、Image、Video 等标签
     items:
