@@ -82,7 +82,7 @@ curl -s https://volantis.js.org/start | sh
 
 {% timenode 第 1/3 步：下载主题 %}
 
-如果您已经升级到 Hexo 5.x 可以直接使用 `npm` 命令安装：
+如果您已经升级到 Hexo 5.0.2 及以上 可以直接使用 `npm` 命令安装：
 
 ```
 npm i hexo-theme-volantis
