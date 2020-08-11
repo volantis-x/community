@@ -3,10 +3,10 @@
   "version": "0.0.0",
   "private": true,
   "hexo": {
-    "version": "5.0.0"
+    "version": "5.0.2"
   },
   "dependencies": {
-    "hexo": "^5.0.0",
+    "hexo": "^5.0.2",
     "hexo-all-minifier": "^0.5.3",
     "hexo-autonofollow": "^1.0.1",
     "hexo-autoprefixer": "^1.0.0",
