@@ -63,9 +63,12 @@ function loadVersion(version) {
       $('div.examples .group.' + version).append('<div class="btns circle grid5"></div>');
       for (i = 0; i < data.length; i++) {
         // find label name
-        for (j = 0; j < data[i].labels.length; j++) {
-          if (data[i].labels[j].name == version) {
-            $('div.examples .group.' + version + ' .btns').before('<h2>' + data[i].labels[j].description + '</h2>');
+        if ($('div.examples .group.' + version + ' h2').length == 0) {
+          for (j = 0; j < data[i].labels.length; j++) {
+            if (data[i].labels[j].name == version) {
+              $('div.examples .group.' + version + ' .btns').before('<h2>' + data[i].labels[j].description + '</h2>');
+              break;
+            }
           }
         }
 
