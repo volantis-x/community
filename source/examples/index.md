@@ -5,252 +5,7 @@ cover: true
 meta:
   header: []
 sidebar: [docs-latest, toc, repos]
-links:
-  - group: '版本：^3.0 <sup><code>beta</code></sup>'
-    desc: 支持 Pjax 和 Artitalk
-    items:
-    - name: xaoxuu
-      url: https://xaoxuu.com
-      avatar: https://i.loli.net/2020/04/26/lmJ1xrQ2KR9YZiz.jpg
-      tags: [主题作者]
-    - name: 枋柚梓
-      url: https://inkss.cn/
-      avatar: https://avatars2.githubusercontent.com/u/31947043?s=60&v=4
-      tags: [标签离家出走了]
-    - name: Colsrch
-      url: https://colsrch.top
-      avatar: https://i.loli.net/2020/04/26/YSNKVcvtwMdWzAg.jpg
-      tags: [C/C++, MFC]
-      desc: [愿多年以后，我可以酌一杯清酒，烂醉如泥，梦中回到我们的曾经。]
-    - name: Chrisyy
-      url: https://blog.chrisyy.top
-      avatar: https://i.loli.net/2020/04/02/uPRxC6fvsU4dlcb.jpg
-      tags: [ctf, math]
-    - name: 杜老师说
-      url: https://dusays.com
-      avatar: https://cdn.dusays.com/avatar.png
-      tags: [分享技术]
-    - name: qinxs
-      url: https://7bxing.com/
-      avatar: https://cdn.jsdelivr.net/gh/qinxs/cdn-assets/img/avatar.png
-      tags: [技术总结, 各种折腾]
-    - name: BooLo
-      url: https://www.boolo.top
-      avatar: https://cdn.jsdelivr.net/gh/BooLo/cdn-assets/avatar/avatar.jpg
-      tags: [莫得标签]
-      desc: [记录成长，向未来奔跑]
-    - name: Linhk1606
-      url: https://blog.lhkstudio.me
-      avatar: https://cdn.jsdelivr.net/gh/Linhk1606/blog-cdn@0.0.6.5/img/avatar.webp
-      tags: [外观定制版~]
-    - name: Xu’s Blog
-      url: https://hasaik.com
-      avatar: https://hasaik.com/images/avatar.jpg
-      tags: [Java, 前端]
-    - name: 阳光派Plus
-      url: https://www.zyoushuo.cn/
-      avatar: https://cdn.jsdelivr.net/gh/zyoushuo/Blog/images/photo.jpg
-      desc: [聪明的妖怪已经录下了唐僧的紧箍咒]
-    - name: Ted.Gao
-      url: https://blog.tedgao.com
-      avatar: https://pic.downk.cc/item/5f11677114195aa59407cf1f.jpg
-      desc: [没事做着玩]
-    - name: 冷暖自然
-      url: https://yzweb.gitee.io/
-      avatar: https://i.loli.net/2020/08/10/1gQWoiIP6SYVej4.jpg
-      tags: [Java]
-  - group: '版本：^2.5～2.6'
-    desc: 新增 Group、References 组件；新增 Checkbox、Radio、Image、Video 等标签
-    items:
-    - name: Frieza
-      url: https://wongqingbin.github.io
-      avatar: https://i.loli.net/2020/05/17/P597ZQdSArztBCx.jpg
-      tags: [测试开发, python]
-    - name: 精算后花园
-      url: https://actuarygarden.cn
-      avatar: https://imgkr.cn-bj.ufileos.com/5ff3c7ea-3f6e-40c7-92ec-3b926c35afd7.png
-      tags: [精算师考试]
-    - name: 233213fedf
-      url: https://233213fedf.github.io
-      avatar: https://i.loli.net/2020/02/22/WbxiwCG1gDEF3Od.jpg
-      tags:
-    - name: Huanhao
-      url: https://mrhuanhao.cn/
-      avatar: https://i.loli.net/2020/04/26/mdP9RlE1iQS7UgX.jpg
-      tags: [2.3主题, linux]
-    - name: 杂谈小站
-      url: https://www.blublu.site/?utm_source=volantis&utm_medium=bloglink
-      avatar: https://i.loli.net/2020/05/04/pqAuiFOX8MYJxZ4.jpg
-      tags: [data]
-    - name: Jitwxs
-      url: https://www.jitwxs.cn/
-      avatar: https://i.loli.net/2020/05/05/Im1rj3XAUzGnOx2.jpg
-      tags: [Java, Web]
-    - name: Alan
-      url: https://alanwang.site/
-      avatar: https://i.loli.net/2020/05/14/lLrMfaQ9GOnUsAV.png
-      tags: [前端小白, 记录改变]
-    - name: 赵泽仁
-      url: https://hutaoren.cn
-      avatar: https://cdn.jsdelivr.net/gh/D0ggy/MarkDownPhoto@master/hexo/me/image192_192.jpg
-      tags: [php, java]
-    - name: 尼采般地抒情
-      url: https://blog.wztlink1013.com
-      avatar: https://cdn.jsdelivr.net/gh/wztlink1013/figure/blogbase/touxiang.jpg
-      tags: [总结技术,记录生活]
-    - name: Throwable
-      url: http://www.throwable.club
-      avatar: https://public-1256189093.cos.ap-guangzhou.myqcloud.com/static/doge_avatar.jpg
-      tags: [Chives, Java]
-    - name: BFDZ
-      url: https://www.bfdz.ink/
-      avatar: https://www.bfdz.ink/favicon.png
-      tags: [Linux,BT]      
-    - name: AzuSemisa
-      url: https://azusemisa.top/
-      avatar: https://cdn.jsdelivr.net/gh/xiao-lin52/cdn-assets/images/avatar.webp
-      tags: [OIer, C++]      
-    - name: 四叶草🍀️
-      url: https://www.fkxxyz.com
-      avatar: https://www.fkxxyz.com/logo/192x192.png
-      tags: [archlinux, python]
-    - name: Boo
-      url: https://www.aikang.me
-      avatar: https://i.loli.net/2020/07/05/GsQ2dLqZguO9JB7.jpg
-      tags: [伪全栈]
-    - name: 风也雨忆笙
-      url: https://blog.kaygb.com/
-      avatar: https://cdn.jsdelivr.net/gh/kaygb/blog-images/static_image/kaygb-logo/tx_compressed.jpg
-      tags: [web,php]
-      desc: [努力努力再努力！]
-    - name: 辣个人の小窝
-      url: https://www.xyp9x.com/
-      avatar: https://cdn.jsdelivr.net/gh/badcoroner/wallpaperCollection/headPic.png
-      tags: [Java,后端]
-      desc: [心怀猛虎，细嗅蔷薇]
-  - group: '版本：^2.0～2.4'
-    desc: 导航栏 N 级菜单；新增 Tab、Note、Menu 标签
-    items:
-    - name: movny
-      url: https://home.movny.com
-      avatar: https://cdn.jsdelivr.net/gh/movny/cdn-assets/logo/kellogg.jpg
-    - name: Charlie
-      url: https://charlie-zzy.github.io
-      avatar: https://cdn.jsdelivr.net/gh/charlie-zzy/imgCDN/avatar.png
-      tags: [暗色]
-    - name: Yanliang
-      url: https://gyl-coder.top
-      avatar: https://cdn.jsdelivr.net/gh/gyl-coder/gyl-coder.github.com@v1.0.0/img/touxiang.jpg
-      tags: [Java, 简介，自定义]
-    - name: 剑无道
-      url: https://jianwudao.com
-      avatar: https://cdn.jsdelivr.net/gh/HaleShaw/cdn/img/favicon_512.svg
-      tags: [Java, C#, JavaScript]
-    - name: Chemlez
-      url: https://liizhi.cn
-      avatar: https://s1.ax1x.com/2020/03/13/8mvbCj.jpg
-      tags: [Java, NLP, Python]
-    - name: 果子小酱
-      url: https://sublimerui.top
-      avatar: https://cdn.jsdelivr.net/gh/cwxyr/mycdn@master/favicon_new.ico
-      tags: [Python, Web]
-    - name: MicDZ's blog
-      url: https://www.micdz.cn
-      avatar: https://i.loli.net/2020/02/29/T2cijraFuM35ECO.jpg
-      tags: [OIer, C++]
-    - name: CRainyDay
-      url: https://crainyday.gitee.io
-      avatar: https://cdn.jsdelivr.net/gh/crainyday/blog@master/avatar.png
-      tags: [Java]
-  - group: '版本：^1.6～1.7'
-    items:
-    - name: 覃浩的博客
-      url: https://www.zhengyuanyuan520.com
-      avatar: https://i.loli.net/2020/04/26/dup1Qkt3RsOGw8K.jpg
-      tags:
-    - name: ChrAlpha 的幻想乡
-      url: https://chralpha.com
-      avatar: https://cdn.jsdelivr.net/npm/chrdnx@1.0.9/img/head-found.png
-      tags: [简洁, 定制]
-    - name: 胖五
-      url: https://www.cz5h.com
-      avatar: https://cdn.jsdelivr.net/gh/TianZonglin/tuchuang/img/logo.jpg
-      tags: [暗色, 轻微修改]
-    - name: YINUXY'S BLOG
-      url: https://blog.yinuxy.com
-      avatar: https://cdn.jsdelivr.net/gh/InfiniteYinux/cloud@2.42/avatar/avatar.png
-      tags: [在原主题的基础上添加了仿github日历云和标签云以及文章分类雷达图]
-  - group: '上古版本'
-    desc: 这是以前曾留言在 [issue#97](https://github.com/volantis-x/hexo-theme-volantis/issues/97) 中的博主，如果您更新了版本，记得把您的卡片移动到新版本的分组中。
-    items:
-    - name: 搅拌糖
-      url: https://writeblog.github.io/
-      avatar: https://i.loli.net/2020/03/18/J2Ss8hQfdn9ma6c.jpg
-    - name: YuGao's Blog
-      url: https://sxyugao.top/
-      avatar: https://cdn.jsdelivr.net/gh/sxyugao/Website@master/images/avatar.png
-      desc: [实现了ajax]
-    - name: YangWC
-      url: 	https://yangwc.com/
-      avatar: https://i.loli.net/2020/04/26/IVryJ9GnoQfB7NM.jpg
-    - name: LiYanan2004
-      url: 	https://liyanan2004.github.io
-      avatar: https://cdn.jsdelivr.net/gh/LiYanan2004/LiYanan2004.github.io/assets/avatar.png
-      desc: [可切换主题]
-    - name: 泠泫凝
-      url: https://arlxn.xyz/
-      avatar: https://i.loli.net/2019/08/20/fEZyINzGS6PkAac.png
-    - name: 孤独与诗
-      url: https://createdestruction.github.io/
-      avatar: https://i.loli.net/2020/04/26/4KcxHAQf1nziqP7.png
-    - name: Steven_MengのBlog
-      url: https://stevenmhy.tk
-      avatar: https://cdn.jsdelivr.net/gh/GaisaiYuno/imghost/20200124153036.PNG
-    - name: Mark's blog
-      url: https://mark-thinkpad.gitee.io/
-      avatar: https://img.vim-cn.com/e5/755adedff8463a344e0870b440b718d4f4fa93.jpg
-    - name: 大涛子客栈
-      url: https://istaotao.com/
-      avatar: https://i.loli.net/2020/03/17/EkVA6H2PJeXBGrY.png
-      desc: [无侧边栏]
-    - name: TRHX
-      url: https://www.itrhx.com/
-      avatar: https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@3.1.0/images/trhx.png
-    - name: ZYMIN
-      url: https://zymin.cn/
-      avatar: https://zymin.cn/img/avatar.png
-    - name: 预见未来
-      url: https://lijunkui.netlify.com/
-      avatar: https://lijunkui.netlify.com/images/sky.png
-    - name: wxwoo's blog
-      url: https://wxwoo.top/
-      avatar:
-    - name: WiyeeLu
-      url: https://wiyeelu.github.io/
-      avatar: https://res.cloudinary.com/wiyeely/image/upload/v1553152177/22922331760_97592547a8_z.jpg
-    - name: xyhthink
-      url: https://www.xyhthink.com/
-      avatar: https://www.xyhthink.com/img/head.jpg
-    - name: Melody Player
-      url: http://melodyplay.cn/
-    - name: 今晚月色真美
-      url: https://tangyanqiong.com/
-      avatar: https://tangyanqiong.com/img/avatar.jpg
-    - name: 172173
-      url: https://www.172173.com/
-      avatar: https://res.cloudinary.com/www-172173-com/image/upload/v1565838363/IMG_1014_ctdjly.jpg
-    - name: IntPtr.Zero
-      url: https://intptrzero.github.io/
-      avatar: https://intptrzero.github.io/images/logo.png
-    - name: 海露-XShell.CN
-      url: https://www.xshell.cn/
-      avatar: https://cdn.jsdelivr.net/gh/hailou/Figurebed/img/201912/20191226152805.jpg
-    - name: Candy Boy
-      url: http://www.candysky.top/
-      avatar: https://i.loli.net/2020/03/18/RMwQiItbyjd7fvK.png
-    - name: Shan san
-      url: https://shansan.top/
-      avatar: https://cdn.jsdelivr.net/gh/ssmath/images-assets-cdn/try20200311205451.jpg
+
 ---
 
 <center>
@@ -261,25 +16,112 @@ links:
 </center>
 <br>
 
-这些是一部分使用了「Volantis」主题的博客，由博主自助添加。如果你也使用了「Volantis」，希望在这里推广自己的博客，可以按照本页下方提供的格式自行添加。
+## 团队成员
+
+{% btns circle grid5 %}
+{% cell xaoxuu, https://xaoxuu.com, https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png %}
+{% cell inkss, https://inkss.cn, https://cdn.jsdelivr.net/gh/inkss/common@master/static/web/avatar.jpg %}
+{% cell MHuiG, https://blog.mhuig.top/, https://cdn.jsdelivr.net/gh/MHuiG/imgbed@master/data/p.png %}
+{% cell Colsrch, https://colsrch.top, https://cdn.jsdelivr.net/gh/Colsrch/images/Colsrch/avatar.jpg %}
+{% cell Linhk1606, https://linhk1606.github.io, https://i.loli.net/2020/02/09/PN7I5RJfFtA93r2.png %}
+{% endbtns %}
+
+<br>
+<div class="examples"></div>
+<br>
+
 
 <!-- more -->
 
 <br><br>
 
-{% btn large center, 编辑此页, https://github.com/volantis-x/volantis-docs/blob/master/source/examples/index.md, fas fa-edit %}
+{% timeline 如何添加自己的博客 %}
+{% timenode 第一步：优化自己的头像链接 %}
+打开 [压缩图](https://www.yasuotu.com/) 上传自己的头像，将图片尺寸调整到 `192px` 后下载。
+{% endtimenode %}
+{% timenode 第二步：上传到稳定快速的图床 %}
+例如：将压缩后的图片上传到 [sm.ms 图床](https://sm.ms/) 并使用此图片链接作为头像。
+{% endtimenode %}
+{% timenode 第三步：新建 [Issue](https://github.com/volantis-x/examples/issues/) 并按照格式填写 %}
+标题填完整链接，内容可以根据需要选填：
+{% image https://i.loli.net/2020/08/11/2uXQ4e9VPpD7R3q.jpg, 500px %}
+{% endtimenode %}
+{% timenode 第四步：管理员审核 %}
+待管理员审核通过，添加了 `active` 标签后，回来刷新即可生效。
+{% endtimenode %}
+{% endtimeline %}
 
-<br>
 
-1. 请点击上方的按钮，在 GitHub 上编辑此页。以友链的格式新增条目。
-2. 打开 [压缩图](https://www.yasuotu.com/) 将图片尺寸调整到 `192px` 后下载。
-3. 将压缩后的图片上传到 [sm.ms 图床](https://sm.ms/) 并使用此图片链接作为头像。
+{% raw %}
+<script>
+function loadVersion(version) {
+  $('div.examples').append('<div class="group ' + version + '"></div>');
+  $('div.examples .group.' + version).append('<div class="loading"><i class="fa fa-cog fa-2x fa-spin"></i></div></div>');
 
-```md 举个栗子
-- name: xaoxuu
-  url: https://xaoxuu.com
-  avatar: https://i.loli.net/2020/04/26/lmJ1xrQ2KR9YZiz.jpg
-  tags: [主题作者]
-```
+  $.get("https://api.github.com/repos/volantis-x/examples/issues?sort=updated&state=open&page=1&per_page=100&labels=active," + version, function(data, status) {
+    if (data.length > 0) {
+      $('div.examples .group.' + version).append('<div class="btns circle grid5"></div>');
+      for (i = 0; i < data.length; i++) {
+        // find label name
+        for (j = 0; j < data[i].labels.length; j++) {
+          if (data[i].labels[j].name == version) {
+            $('div.examples .group.' + version + ' .btns').before('<h2>' + data[i].labels[j].description + '</h2>');
+          }
+        }
 
-{% note success, 本站使用了持续集成，在您提交的更改通过审核并合并代码的几分钟后再刷新网页即生效。 %}
+        // get name
+        let name = data[i].body.match(/name:[^\n]*\n/);
+        if (name && name.length > 0) {
+          name = name[0].replace(/(name:[\s]*|[\r\n]*)/g,'');
+        }
+
+        // get avatar
+        let avatar = data[i].body.match(/avatar:[^\n]*\n/);
+        if (avatar && avatar.length > 0) {
+          avatar = avatar[0].replace(/(avatar:[\s]*|[\r\n]*)/g,'');
+        }
+
+        // get tags
+        let tags = data[i].body.match(/tags:[^\n]*\n/);
+        if (tags && tags.length > 0) {
+          tags = tags[0].replace(/(tags:[\s]*|[\r\n]*)/g,'');
+          tags = tags.replace(/(\[|\])*/g,'').replace(/,\ */g,',');
+          tags = tags.split(',');
+          tags = "#" + tags.join(" #");
+        }
+
+        // get desc
+        let desc = data[i].body.match(/desc:[^\n]*\n/);
+        if (desc && desc.length > 0) {
+          desc = desc[0].replace(/(desc:[\s]*|[\r\n]*)/g,'');
+          desc = 'title = "' + desc + '"';
+        } else {
+          desc = '';
+        }
+
+        let imgTag = '';
+        if (avatar.length > 0) {
+          imgTag = '<img no-lazy src="' + avatar + '">';
+        } else {
+          imgTag = '<img src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/placeholder/c617bfd2497fcea598e621413e315c368f8d8e.svg">';
+        }
+        let tagsTag = '<p>' + tags + '</p>';
+        let aTag = '<a class="button" target="_blank"' + desc + 'href="' + data[i].title + '">' + imgTag + name + tagsTag + '</a>';
+        $('div.examples .group.' + version + ' .btns').append(aTag);
+      }
+    }
+    $('div.examples .group.' + version + ' .loading').remove();
+  });
+
+}
+function loadExamples() {
+  loadVersion('latest');
+  loadVersion('v2');
+  //loadVersion('v1');
+}
+document.addEventListener('DOMContentLoaded', function () {
+  loadExamples();
+});
+loadExamples();
+</script>
+{% endraw %}
