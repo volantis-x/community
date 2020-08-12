@@ -35,21 +35,32 @@ sidebar: [docs-latest, toc, repos]
 
 <br><br>
 
-{% timeline 如何添加自己的博客 %}
-{% timenode 第一步：优化自己的头像链接 %}
-打开 [压缩图](https://www.yasuotu.com/) 上传自己的头像，将图片尺寸调整到 `192px` 后下载。
-{% endtimenode %}
-{% timenode 第二步：上传到稳定快速的图床 %}
-例如：将压缩后的图片上传到 [sm.ms 图床](https://sm.ms/) 并使用此图片链接作为头像。
-{% endtimenode %}
-{% timenode 第三步：新建 [Issue](https://github.com/volantis-x/examples/issues/) 并按照格式填写 %}
+{% timeline 如何添加自己的博客链接 %}
+
+{% timenode 第一步：新建 [Issue](https://github.com/volantis-x/examples/issues/) 并按照格式填写 %}
+
 标题填完整链接，内容可以根据需要选填：
+
 {% image https://i.loli.net/2020/08/11/2uXQ4e9VPpD7R3q.jpg, 500px %}
+
+为了提高图片加载速度，建议优化头像：
+1. 打开 [压缩图](https://www.yasuotu.com/) 上传自己的头像，将图片尺寸调整到 `192px` 后下载。
+2. 将压缩后的图片上传到 [sm.ms 图床](https://sm.ms/) 并使用此图片链接作为头像。
+
 {% endtimenode %}
-{% timenode 第四步：管理员审核 %}
+
+{% timenode 第二步：等待管理员审核 %}
+
 待管理员审核通过，添加了 `active` 标签后，回来刷新即可生效。
+
 {% endtimenode %}
+
 {% endtimeline %}
+
+{% p h2, 如何更新自己的博客链接 %}
+
+- 如果是自己创建的 issue ，可以自己修改。
+- 如果是管理员创建的，请自己重新创建一份，然后让管理员删掉旧的。
 
 
 {% raw %}
