@@ -65,38 +65,68 @@ sidebar: [docs-latest, toc, repos]
 
 {% raw %}
 <script>
-function loadVersion(version) {
-  $('div.examples').append('<div class="group ' + version + '"></div>');
-  $('div.examples .group.' + version).append('<div class="loading"><i class="fa fa-cog fa-2x fa-spin"></i></div></div>');
-
-  $.get("https://api.github.com/repos/volantis-x/examples/issues?sort=updated&state=open&page=1&per_page=100&labels=active," + version, function(data, status) {
-    if (data.length > 0) {
-      $('div.examples .group.' + version).append('<div class="btns circle grid5"></div>');
-      for (i = 0; i < data.length; i++) {
-        // find label name
-        if ($('div.examples .group.' + version + ' h2').length == 0) {
-          for (j = 0; j < data[i].labels.length; j++) {
-            if (data[i].labels[j].name == version) {
-              $('div.examples .group.' + version + ' .btns').before('<h2>' + data[i].labels[j].description + '</h2>');
-              break;
+let issue_cfg = new Object();
+issue_cfg.group = ['latest', 'v3', 'v2', 'v1', 'v0'];
+issue_cfg.repo = 'https://api.github.com/repos/volantis-x/examples/issues?sort=updated&state=open&page=1&per_page=100&labels=active';
+function parseData(data) {
+  let groups = new Object();
+  if (data.length > 0) {
+    for (i = 0; i < data.length; i++) {
+      let issue = data[i];
+      let lbs = issue.labels;
+      if (lbs.length > 0) {
+        for (j = 0; j < lbs.length; j++) {
+          let lb = lbs[j].name;
+          if (issue_cfg.group.includes(lb)) {
+            let obj = groups[lb];
+            if (obj == undefined) {
+              obj = new Object();
+              obj.name = lbs[j].description;
+              obj.items = [issue];
+              groups[lb] = obj;
+            } else {
+              obj.items.push(issue);
+              groups[lb] = obj;
             }
           }
         }
+      }
+    }
+  }
+  return groups;
+}
+function loadExamples() {
 
+  $('div.examples').append('<div class="loading"><i class="fa fa-cog fa-2x fa-spin"></i><p>正在加载...</p></div>');
+
+  $.get(issue_cfg.repo, function(data, status) {
+    let dt = parseData(data);
+    console.log(status);
+    $('div.examples .loading').remove();
+    for (i = 0; i < issue_cfg.group.length; i++) {
+      let lb = issue_cfg.group[i];
+      let groupData = dt[lb];
+      if (groupData == undefined) {
+        continue;
+      }
+      $('div.examples').append('<h2>' + groupData.name + '</h2>');
+      $('div.examples').append('<div class="btns circle grid5 ' + lb + '"></div>');
+      // layout items
+      for (j = 0; j < groupData.items.length; j++) {
+        let issue = groupData.items[j];
         // get name
-        let name = data[i].body.match(/name:[^\n]*\n/);
+        let name = issue.body.match(/name:[^\n]*\n/);
         if (name && name.length > 0) {
           name = name[0].replace(/(name:[\s]*|[\r\n]*)/g,'');
         }
-
         // get avatar
-        let avatar = data[i].body.match(/avatar:[^\n]*\n/);
+        let avatar = issue.body.match(/avatar:[^\n]*\n/);
         if (avatar && avatar.length > 0) {
           avatar = avatar[0].replace(/(avatar:[\s]*|[\r\n]*)/g,'');
         }
 
         // get tags
-        let tags = data[i].body.match(/tags:[^\n]*\n/);
+        let tags = issue.body.match(/tags:[^\n]*\n/);
         if (tags && tags.length > 0) {
           tags = tags[0].replace(/(tags:[\s]*|[\r\n]*)/g,'');
           tags = tags.replace(/(\[|\])*/g,'').replace(/,\ */g,',');
@@ -105,7 +135,7 @@ function loadVersion(version) {
         }
 
         // get desc
-        let desc = data[i].body.match(/desc:[^\n]*\n/);
+        let desc = issue.body.match(/desc:[^\n]*\n/);
         if (desc && desc.length > 0) {
           desc = desc[0].replace(/(desc:[\s]*|[\r\n]*)/g,'');
           desc = 'title = "' + desc + '"';
@@ -120,19 +150,13 @@ function loadVersion(version) {
           imgTag = '<img src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/placeholder/c617bfd2497fcea598e621413e315c368f8d8e.svg">';
         }
         let tagsTag = '<p>' + tags + '</p>';
-        let aTag = '<a class="button" target="_blank"' + desc + 'href="' + data[i].title + '">' + imgTag + name + tagsTag + '</a>';
-        $('div.examples .group.' + version + ' .btns').append(aTag);
+        let aTag = '<a class="button" target="_blank"' + desc + 'href="' + issue.title + '">' + imgTag + name + tagsTag + '</a>';
+        $('div.examples .btns.' + lb).append(aTag);
       }
     }
-    $('div.examples .group.' + version + ' .loading').remove();
   });
+}
 
-}
-function loadExamples() {
-  loadVersion('latest');
-  loadVersion('v2');
-  //loadVersion('v1');
-}
 document.addEventListener('DOMContentLoaded', function () {
   loadExamples();
 });
