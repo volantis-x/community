@@ -67,7 +67,7 @@ sidebar: [docs-latest, toc, repos]
 <script>
 let issue_cfg = new Object();
 issue_cfg.group = ['latest', 'v3', 'v2', 'v1', 'v0'];
-issue_cfg.repo = 'https://api.github.com/repos/volantis-x/examples/issues?sort=updated&state=open&page=1&per_page=100&labels=active';
+issue_cfg.repo = 'https://api.github.com/repos/volantis-x/examples/issues?sort=updated&state=open&page=1&per_page=100';
 function parseData(data) {
   let groups = new Object();
   if (data.length > 0) {
