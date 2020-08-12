@@ -52,7 +52,7 @@ npm: 6.13
 
 在博客路径打开终端，下载安装并应用主题：
 ```sh
-curl -s https://volantis.js.org/start | sh
+curl -s https://volantis.js.org/start | bash
 ```
 如果您还没有博客，执行这行命令将会自动检测并安装所需环境，初始化博客，然后下载安装并应用主题。
 
