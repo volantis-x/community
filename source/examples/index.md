@@ -37,11 +37,11 @@ sidebar: [docs-latest, toc, repos]
 
 {% timeline 如何添加自己的博客链接 %}
 
-{% timenode 第一步：新建 [Issue](https://github.com/volantis-x/examples/issues/) 并按照格式填写 %}
+{% timenode 第一步：新建 [Issue](https://github.com/volantis-x/examples/issues/) 按照格式填写并提交 %}
 
 标题填完整链接，内容可以根据需要选填：
 
-{% image https://i.loli.net/2020/08/11/2uXQ4e9VPpD7R3q.jpg, 500px %}
+{% image https://i.loli.net/2020/08/11/2uXQ4e9VPpD7R3q.jpg, 400px %}
 
 为了提高图片加载速度，建议优化头像：
 1. 打开 [压缩图](https://www.yasuotu.com/) 上传自己的头像，将图片尺寸调整到 `192px` 后下载。
@@ -49,9 +49,9 @@ sidebar: [docs-latest, toc, repos]
 
 {% endtimenode %}
 
-{% timenode 第二步：等待管理员审核 %}
+{% timenode 第二步：刷新 %}
 
-待管理员审核通过，添加了 `active` 标签后，回来刷新即可生效。
+回来刷新即可生效。
 
 {% endtimenode %}
 
@@ -97,7 +97,7 @@ function parseData(data) {
 }
 function loadExamples() {
 
-  $('div.examples').append('<div class="loading"><i class="fa fa-cog fa-2x fa-spin"></i><p>正在加载...</p></div>');
+  $('div.examples').append('<div class="loading"><i class="fa fa-cog fa-2x fa-spin"></i><p>正在加载</p></div>');
 
   $.get(issue_cfg.repo, function(data, status) {
     let dt = parseData(data);
