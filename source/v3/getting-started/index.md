@@ -54,20 +54,31 @@ npm: 6.13 ~ latest
 
 <!-- tab 全新博客安装 -->
 
-第 1/2 步：
-```bash terminal:
-npm i hexo-theme-volantis
+{% timenode 第 1/2 步：修改站点配置文件 %}
+
+在 `blog/_config.yml` 文件中找到并修改：
+
 ```
-第 2/2 步：
-```yaml blog/_config.yml
 theme: volantis
 ```
+
+{% endtimenode %}
+
+{% timenode 第 2/2 步：下载主题 %}
+
+在终端中输入：
+
+```
+npm i hexo-theme-volantis
+```
+
+{% endtimenode %}
 
 {% folding, 如果您是 Mac 用户，可以使用脚本完成全部流程 %}
 
 在博客路径打开终端，下载安装并应用主题：
 
-```sh
+```
 curl -s https://volantis.js.org/start | bash
 ```
 
@@ -78,11 +89,21 @@ curl -s https://volantis.js.org/start | bash
 
 <!-- endtab -->
 
-<!-- tab 由其它主题迁移 -->
+<!-- tab 从其它主题迁移 -->
 
-{% timenode 第 1/3 步：下载主题 %}
+{% timenode 第 1/3 步：修改站点配置文件 %}
 
-如果您已经升级到 Hexo 5.0.2 及以上 可以直接使用 `npm` 命令安装：
+在 `blog/_config.yml` 文件中找到并修改：
+
+```
+theme: volantis
+```
+
+{% endtimenode %}
+
+{% timenode 第 2/3 步：下载主题 %}
+
+如果您已经升级到 `Hexo 5.0.2` 及以上，可以直接使用 `npm` 命令安装：
 
 ```
 npm i hexo-theme-volantis
@@ -102,16 +123,6 @@ git clone https://e.coding.net/volantis/volantis/volantis.git themes/volantis
 
 {% endtimenode %}
 
-{% timenode 第 2/3 步：修改站点配置文件 %}
-
-在 `blog/_config.yml` 文件中找到并修改：
-
-```
-theme: volantis
-```
-
-{% endtimenode %}
-
 {% timenode 第 3/3 步：检查并安装依赖 %}
 
 安装 Hexo 搜索的依赖包：
@@ -120,7 +131,7 @@ theme: volantis
 npm i hexo-generator-search hexo-generator-json-content
 ```
 
-安装 stylus 渲染器：
+安装 Stylus 渲染器：
 
 ```
 npm i hexo-renderer-stylus
