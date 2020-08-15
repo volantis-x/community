@@ -99,7 +99,7 @@ links:
       avatar: https://cdn.jsdelivr.net/gh/qinxs/cdn-assets/img/avatar.png
       tags: [技术总结, 各种折腾]
     - name: Boo
-      url: https://www.aikang.me
+      url: https://www.0x2BeAce.com
       avatar: https://i.loli.net/2020/07/05/GsQ2dLqZguO9JB7.jpg
       tags: [伪全栈]
   - group: '版本：^2.0～2.4'
