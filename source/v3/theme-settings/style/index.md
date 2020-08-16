@@ -19,6 +19,31 @@ style:
 
 网页所呈现的内容的最大宽度，即 body 和 sidebar 的宽度之和。
 
+## 抗锯齿
+
+```yaml blog/_config.volantis.yml
+style:
+  ...
+  font_smoothing: true # font-smoothing for webkit
+```
+
+## 自定义光标样式
+
+```yaml blog/_config.volantis.yml
+style:
+  ...
+  cursor:
+    enable: true
+    text: https://cdn.jsdelivr.net/gh/inkss/common@master/cursor/text.png
+    pointer: https://cdn.jsdelivr.net/gh/inkss/common@master/cursor/pointer.png
+    default: https://cdn.jsdelivr.net/gh/inkss/common@master/cursor/left_ptr.png
+    not-allowed: https://cdn.jsdelivr.net/gh/inkss/common@master/cursor/circle.png
+    zoom-out: https://cdn.jsdelivr.net/gh/inkss/common@master/cursor/zoom-out.png
+    zoom-in: https://cdn.jsdelivr.net/gh/inkss/common@master/cursor/zoom-in.png
+    grab: https://cdn.jsdelivr.net/gh/inkss/common@master/cursor/openhand.png
+```
+
+
 ## 导航栏样式
 
 您可以设置导航栏的高度以及视觉特效，视觉特效目前可选的有：
@@ -119,7 +144,7 @@ style:
       style: normal
 ```
 
-## 颜色样式
+## 自定义颜色
 
 ```yaml blog/_config.volantis.yml
 style:
