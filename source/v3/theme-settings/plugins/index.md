@@ -67,3 +67,26 @@ plugins:
 ```
 
 {% note warning, APlayer播放器只可以在中国大陆地区使用。相关文档： [APlayer](https://aplayer.js.org/) | [MetingJS](https://github.com/metowolf/MetingJS) %}
+
+## Artitalk
+```yaml blog/themes/volantis/_config.yml
+plugins:
+  ...
+  # Artitalk https://artitalk.js.org
+  # 配置过程请参考：https://artitalk.js.org/doc.html
+  # 除appID和appKEY外均为选填项
+  Artitalk:
+    enable: false # true为开启，false为关闭
+    appID: ogP8qj3veMh0LFpFWMPOyF0X-MdYXbMMI # your appID
+    appKEY: nHXLd3N3Jgh460t2iRQKWAtr # your appKEY
+    # severurl:  #leancloud绑定的安全域名，使用国际版的话不需要填写
+    # slanguage: # 语言设置，zh为汉语，en为英语，es为西班牙语。默认为汉语
+    # per: #每页说说的显示数量
+    # placeholder1: #在编辑说说的输入框中的占位符
+    # placeholder2: #自定义头像url的输入框的占位符
+    # lazy: #加载动画的开关，1为开，0为关，默认为开
+    # bgimg: #说说输入框背景图片url
+    # color1: #说说背景颜色1&按钮颜色1
+    # color2: #说说背景颜色2&按钮颜色2
+    # color3: #说说字体颜色
+```

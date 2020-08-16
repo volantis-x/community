@@ -137,3 +137,38 @@ style:
     codeblock: '#555' # Codeblock color
     p: '#ccc' # Paragraph color
 ```
+
+## 自定义右键菜单
+
+```yaml blog/themes/volantis/_config.yml
+rightmenu:
+  enable: true
+  # hr: 分割线, music: 音乐控制器
+  layout: [home, help, examples, contributors, hr, source_docs, source_theme, hr, print, hr, music]
+  # 可选功能项
+  print:
+    name: 打印页面
+    icon: fa fa-print
+    onclick: document.execCommand('print')
+  # 自定义菜单的格式如下
+  help:
+    name: 常见问题
+    icon: fa fa-question
+    url: https://volantis.js.org/faqs/
+  examples:
+    name: 示例博客
+    icon: fa fa-rss
+    url: https://volantis.js.org/examples/
+  contributors:
+    name: 加入社区
+    icon: fa fa-fan fa-spin
+    url: https://volantis.js.org/contributors/
+  source_docs:
+    name: 本站源码
+    icon: fa fa-code-branch
+    url: https://github.com/volantis-x/volantis-docs/
+  source_theme:
+    name: 主题源码
+    icon: fa fa-code-branch
+    url: https://github.com/volantis-x/hexo-theme-volantis/
+```

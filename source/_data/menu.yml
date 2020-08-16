@@ -44,7 +44,17 @@
           url: /v3/page-settings/body/
     - name: 标签插件
       icon: fas fa-pen-alt faa-shake
-      url: /v3/tag-plugins/
+      rows:
+        - name: 文本和段落标签
+          url: /v3/tag-plugins/text/
+        - name: 链接、按钮和菜单标签
+          url: /v3/tag-plugins/link/
+        - name: 容器类标签
+          url: /v3/tag-plugins/container/
+        - name: 多媒体标签
+          url: /v3/tag-plugins/media/
+        - name: Hexo 内置标签
+          url: /v3/tag-plugins/hexo/
     - name: 进阶设定
       icon: fas fa-flask faa-shake
       url: /v3/advanced-settings/

@@ -163,10 +163,31 @@ link: https://xaoxuu.com/blog/2017-07-05-hexo-blog/
 
 ```
 
+## 置顶
+
+对于任何文章或者页面，设置 `pin: true` 即可置顶在首页。
+
+```yaml front-matter
+---
+pin: true
+---
+```
+
+这会导致一个小问题：首页 post 卡片数量多于设定值，如果有强迫症希望每一个分页数量一致，可以安装插件来实现，详见：[#421](https://github.com/volantis-x/hexo-theme-volantis/issues/421)
+
+## 不归档
+
+存放在 `_posts` 文件夹下的文章一般都会出现在归档页，如果某篇文章不希望出现在归档页面：
+
+```yaml front-matter
+---
+archive: false
+---
+```
 
 ## 公式
 
-### MathJax公式
+### MathJax
 
 默认是不渲染的，如果文章内有公式，需要在 front-matter 中设置开启。
 

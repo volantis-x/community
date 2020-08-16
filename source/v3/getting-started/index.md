@@ -150,7 +150,7 @@ npm i hexo-renderer-stylus
 
 {% timeline %}
 
-{% timenode 2020-08-09 [2.6.6 -> 3.0](https://github.com/volantis-x/hexo-theme-volantis/releases/tag/3.0) %}
+{% timenode 2020-08-09 [2.6.6 -> 3.0.0](https://github.com/volantis-x/hexo-theme-volantis/releases/tag/3.0.0) %}
 
 1. 如果有 `hexo-lazyload-image` 插件，需要重新安装最新版本并增加设置 `lazyload.isSPA: true` 。
 2. 2.x 版本的 css 和 js 不适用于 3.x 版本，如果使用了 `use_cdn: true` 则需要删除。
