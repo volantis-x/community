@@ -2,8 +2,8 @@
 layout: page
 title: 设置网站导航栏
 group: docs-latest
-order: 302
-short_title: 3-2 设置网站导航栏
+order: 303
+short_title: 3-3 设置网站导航栏
 meta:
   header: [centertitle]
 sidebar: [docs-latest, toc, repos]
@@ -12,7 +12,7 @@ sidebar: [docs-latest, toc, repos]
 ## 导航栏配置
 
 导航栏分为 logo、menu、search 三个区域设置，其中 logo 区域如果设置了图片，则不能显示图标和标题， menu 区域的设置可以写在一个单独的文件中。
-```yaml blog/themes/volantis/_config.yml
+```yaml blog/_config.volantis.yml
 navbar:
   logo: # choose [img] or [icon + title]
     img:

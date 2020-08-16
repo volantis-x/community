@@ -9,16 +9,6 @@ meta:
 sidebar: [docs-latest, toc, repos]
 ---
 
-## 使用数据文件
-
-目前支持的数据文件有：
-
-```
-source/_data/layout.yml
-source/_data/menu.yml
-source/_data/widget.yml
-```
-
 ## 设置子模块
 
 {% folding yellow open, 将主题添加为子模块 %}
@@ -62,6 +52,21 @@ git submodule add https://github.com/volantis-x/hexo-theme-volantis.git themes/v
 
 ## 优化 SEO
 
+```yaml blog/_config.volantis.yml
+seo:
+  # When there are no keywords in the article's front-matter, use tags as keywords.
+  use_tags_as_keywords: true
+  # When there is no description in the article's front-matter, use excerpt as the description.
+  use_excerpt_as_description: true
+  robots:
+    home_first_page: index,follow
+    home_other_pages: noindex,follow
+    archive: noindex,follow
+    category: noindex,follow
+    tag: noindex,follow
+    # robots can be written in front-matter
+```
+
 在 front-matter 中，可以设置 `keywords`、`description`、`robots` 和 `seo_title`。其中 `seo_title` 仅仅用作网页标题，优先级高于 `title`。
 
 - 文章内部不要使用 H1 标题。
@@ -100,7 +105,7 @@ npm i -S hexo-related-popular-posts
 ```
 
 2. 在需要显示的位置添加 `related_posts` 例如放在侧边栏：
-```yaml blog/themes/volantis/_config.yml
+```yaml blog/_config.volantis.yml
 layout:
   on_page:
     sidebar: [related_posts]
@@ -120,14 +125,14 @@ layout:
 npm i --save hexo-wordcount
 ```
 2. 修改配置文件，将 `wordcount` 插件打开
-```yaml blog/themes/volantis/_config.yml
+```yaml blog/_config.volantis.yml
 plugins:
   ...
   # 文章字数统计、阅读时长，开启需要安装插件: npm i --save hexo-wordcount
   wordcount: true
 ```
 3. 然后修改配置文件，将 `wordcount` 写入需要显示的 meta 位置：
-```yaml blog/themes/volantis/_config.yml
+```yaml blog/_config.volantis.yml
 # 布局
 layout:
   on_list:

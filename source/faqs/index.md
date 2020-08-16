@@ -43,7 +43,7 @@ sidebar: [docs-latest, toc, repos]
 
 ## 主题配置修改没有生效
 
-请确认文档中要求修改的是博客主目录的配置文件 `blog/_config.yml` 还是主题的配置文件 `blog/themes/volantis/_config.yml`。
+请确认文档中要求修改的是博客主目录的配置文件 `blog/_config.yml` 还是主题的配置文件 `blog/_config.volantis.yml`。
 
 ## 主题样式修改没有生效
 

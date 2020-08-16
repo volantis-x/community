@@ -6,11 +6,17 @@
   icon: fas fa-book faa-tada
   rows:
     - name: 站点配置
-      icon: fas fa-globe-asia faa-shake
-      url: /v3/site-settings/
-    - name: 主题配置
-      icon: fas fa-palette faa-shake
       rows:
+        - name: 主题配置文件
+          url: /v3/site-settings/configuration/
+        - name: 使用数据文件
+          url: /v3/site-settings/data-files/
+        - name: 导入外部文件
+          url: /v3/site-settings/import/
+    - name: 主题配置
+      rows:
+        - name: 主题配置文件
+          url: /v3/theme-settings/configuration/
         - name: 自定义主题外观
           url: /v3/theme-settings/style/
         - name: 设置网站导航栏
@@ -31,10 +37,7 @@
           url: /v3/theme-settings/search/
         - name: 第三方插件
           url: /v3/theme-settings/plugins/
-        - name: 默认的 SEO 配置
-          url: /v3/theme-settings/seo/
     - name: 页面配置
-      icon: fas fa-file-alt faa-shake
       rows:
         - name: 页面布局模板
           url: /v3/page-settings/layout/
@@ -42,8 +45,9 @@
           url: /v3/page-settings/front-matter/
         - name: 页面自定义布局
           url: /v3/page-settings/body/
+        - name: 渲染公式
+          url: /v3/page-settings/math/
     - name: 标签插件
-      icon: fas fa-pen-alt faa-shake
       rows:
         - name: 文本和段落标签
           url: /v3/tag-plugins/text/
@@ -56,7 +60,6 @@
         - name: Hexo 内置标签
           url: /v3/tag-plugins/hexo/
     - name: 进阶设定
-      icon: fas fa-flask faa-shake
       url: /v3/advanced-settings/
 
 - name: 帮助

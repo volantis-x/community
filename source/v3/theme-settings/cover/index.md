@@ -2,8 +2,8 @@
 layout: page
 title: 网站与文章封面
 group: docs-latest
-order: 304
-short_title: 3-4 网站与文章封面
+order: 305
+short_title: 3-5 网站与文章封面
 meta:
   header: [centertitle]
 sidebar: [docs-latest, toc, repos]
@@ -11,7 +11,7 @@ sidebar: [docs-latest, toc, repos]
 
 ## 封面方案
 
-```yaml blog/themes/volantis/_config.yml
+```yaml blog/_config.volantis.yml
 cover:
   scheme: docs # docs, blog
   ...
@@ -21,7 +21,7 @@ cover:
 
 ## 封面布局
 
-```yaml blog/themes/volantis/_config.yml
+```yaml blog/_config.volantis.yml
 cover:
   ...
   layout: dock # search (搜索), dock (坞), featured (精选), focus (焦点)
@@ -31,7 +31,7 @@ cover:
 
 ## 默认显示设置
 
-```yaml blog/themes/volantis/_config.yml
+```yaml blog/_config.volantis.yml
 cover:
   ...
   display:

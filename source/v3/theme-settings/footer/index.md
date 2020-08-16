@@ -2,15 +2,15 @@
 layout: page
 title: 设置网站页脚
 group: docs-latest
-order: 303
-short_title: 3-3 设置网站页脚
+order: 304
+short_title: 3-4 设置网站页脚
 meta:
   header: [centertitle]
 sidebar: [docs-latest, toc, repos]
 ---
 
 您通过 `layout` 可以自由布局网站页脚内容 `aplayer`, `social`, `license`, `info`, `copyright`。
-```yaml blog/themes/volantis/_config.yml
+```yaml blog/_config.volantis.yml
 footer:
   # layout of footer: [aplayer, social, license, info, copyright]
   layout: [aplayer, social, license, info, copyright]
@@ -28,7 +28,7 @@ footer:
   br: '<br>'
 ```
 其中，`aplayer` 需要在插件部分设置中启用。您可以新增文字属性，用于展示其它文字信息，例如：
-```yaml blog/themes/volantis/_config.yml
+```yaml blog/_config.volantis.yml
 footer:
   layout: [..., br, hello, ...]
   ...

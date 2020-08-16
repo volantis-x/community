@@ -2,8 +2,8 @@
 layout: page
 title: 自定义主题外观
 group: docs-latest
-order: 301
-short_title: 3-1 自定义主题外观
+order: 302
+short_title: 3-2 自定义主题外观
 meta:
   header: [centertitle]
 sidebar: [docs-latest, toc, repos]
@@ -11,7 +11,7 @@ sidebar: [docs-latest, toc, repos]
 
 ## 最大布局宽度
 
-```yaml blog/themes/volantis/_config.yml
+```yaml blog/_config.volantis.yml
 style:
   ...
   max_width: 1080px # Sum of body width and sidebar width
@@ -26,7 +26,7 @@ style:
 - **floatable**：当鼠标移动到容器内时，呈现出浮起来的效果。
 - **blur**：背景模糊效果（毛玻璃），当浏览器不支持时显示为不透明。
 
-```yaml blog/themes/volantis/_config.yml
+```yaml blog/_config.volantis.yml
 style:
   ...
   navbar:
@@ -36,7 +36,7 @@ style:
 
 ## 滚动条样式
 
-```yaml blog/themes/volantis/_config.yml
+```yaml blog/_config.volantis.yml
 style:
   ...
   scrollbar:
@@ -49,7 +49,7 @@ style:
 ## 侧边栏样式
 
 视觉特效参数同上，值得注意的是：卡片的 `floatable` 效果和 `blur` 效果相冲突。
-```yaml blog/themes/volantis/_config.yml
+```yaml blog/_config.volantis.yml
 style:
   ...
   sidebar:
@@ -59,7 +59,7 @@ style:
 ## 正文区域样式
 
 视觉特效参数同上，值得注意的是：卡片的 `floatable` 效果和 `blur` 效果相冲突。您可以在 `language: true` 这里设置代码块显示语言名称。`text_align` 可以设置 h1/h2/h3/h4/p 的文字对齐方向。
-```yaml blog/themes/volantis/_config.yml
+```yaml blog/_config.volantis.yml
 style:
   ...
   body:
@@ -81,7 +81,7 @@ style:
 ## 布局间距
 
 您可以设置几种标题的布局间距 h2/h3/h4、段落间距 line、区块内部的段落间距 inline。
-```yaml blog/themes/volantis/_config.yml
+```yaml blog/_config.volantis.yml
 style:
   ...
   gap:
@@ -95,7 +95,7 @@ style:
 ## 自定义字体
 
 您可以自定义正文和代码字体。
-```yaml blog/themes/volantis/_config.yml
+```yaml blog/_config.volantis.yml
 style:
   ...
   fontfamily:
@@ -121,7 +121,7 @@ style:
 
 ## 颜色样式
 
-```yaml blog/themes/volantis/_config.yml
+```yaml blog/_config.volantis.yml
 style:
   ...
   color:
@@ -140,7 +140,7 @@ style:
 
 ## 自定义右键菜单
 
-```yaml blog/themes/volantis/_config.yml
+```yaml blog/_config.volantis.yml
 rightmenu:
   enable: true
   # hr: 分割线, music: 音乐控制器

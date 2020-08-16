@@ -2,8 +2,8 @@
 layout: page
 title: 选择评论系统
 group: docs-latest
-order: 308
-short_title: 3-8 选择评论系统
+order: 309
+short_title: 3-9 选择评论系统
 meta:
   header: [centertitle]
 sidebar: [docs-latest, toc, repos]
@@ -11,7 +11,7 @@ sidebar: [docs-latest, toc, repos]
 
 目前支持的评论系统有： Valine, MiniValine, Disqus, Gitalk, Vssue, Livere, Isso, Hashover
 
-```yaml blog/themes/volantis/_config.yml
+```yaml blog/_config.volantis.yml
 comments:
   title: <i class='fas fa-comments'></i> 评论
   subtitle:
@@ -25,7 +25,7 @@ comments:
 <i class='fas fa-comment-dots fa-fw'></i> 一款快速、简洁且高效的无后端评论系统
 <i class='fas fa-globe fa-fw'></i> [https://valine.js.org](https://valine.js.org)
 
-```yaml blog/themes/volantis/_config.yml
+```yaml blog/_config.volantis.yml
 comments:
   ...
   service: valine
@@ -62,7 +62,7 @@ valine:
 <i class='fas fa-comment-dots fa-fw'></i> 一款快速、简洁且高效的无后端评论系统
 <i class='fas fa-globe fa-fw'></i> [https://github.com/MiniValine/MiniValine/](https://github.com/MiniValine/MiniValine/)
 
-```yaml blog/themes/volantis/_config.yml
+```yaml blog/_config.volantis.yml
 comments:
   ...
   service: minivaline
@@ -80,7 +80,7 @@ comments:
 <i class='fas fa-comment-dots fa-fw'></i> Vue 驱动的、基于 Issue 的评论插件
 <i class='fas fa-globe fa-fw'></i> [https://vssue.js.org/zh/](https://vssue.js.org/zh/)
 
-```yaml blog/themes/volantis/_config.yml
+```yaml blog/_config.volantis.yml
 comments:
   ...
   service: vssue
@@ -99,7 +99,7 @@ comments:
 <i class='fas fa-comment-dots fa-fw'></i> A modern comment component based on Github Issue and Preact.
 <i class='fas fa-globe fa-fw'></i> [https://gitalk.github.io/](https://gitalk.github.io/)
 
-```yaml blog/themes/volantis/_config.yml
+```yaml blog/_config.volantis.yml
 comments:
   ...
   service: gitalk
@@ -136,7 +136,7 @@ gitalk:
 <i class='fas fa-comment-dots fa-fw'></i> Disqus - The #1 way to build an audience on your website.
 <i class='fas fa-globe fa-fw'></i> [https://disqus.com/](https://disqus.com/)
 
-```yaml blog/themes/volantis/_config.yml
+```yaml blog/_config.volantis.yml
 comments:
   ...
   service: disqus
@@ -152,7 +152,7 @@ comments:
 <i class='fas fa-comment-dots fa-fw'></i> Communication makes better world.
 <i class='fas fa-globe fa-fw'></i> [https://www.livere.com/](https://www.livere.com/)
 
-```yaml blog/themes/volantis/_config.yml
+```yaml blog/_config.volantis.yml
 comments:
   ...
   service: livere
@@ -176,7 +176,7 @@ comments:
 <i class='fas fa-comment-dots fa-fw'></i> A commenting server similar to Disqus.
 <i class='fas fa-globe fa-fw'></i> [https://posativ.org/isso/](https://posativ.org/isso/)
 
-```yaml blog/themes/volantis/_config.yml
+```yaml blog/_config.volantis.yml
 comments:
   ...
   service: isso
@@ -194,7 +194,7 @@ comments:
 <i class='fas fa-comment-dots fa-fw'></i> A free and open source PHP comment system designed to allow completely anonymous comments and easy theming.
 <i class='fas fa-globe fa-fw'></i> [https://www.barkdull.org/software/hashover](https://www.barkdull.org/software/hashover)
 
-```yaml blog/themes/volantis/_config.yml
+```yaml blog/_config.volantis.yml
 comments:
   ...
   service: hashover

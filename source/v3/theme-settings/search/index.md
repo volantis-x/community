@@ -2,14 +2,14 @@
 layout: page
 title: 站内搜索
 group: docs-latest
-order: 309
-short_title: 3-9 站内搜索
+order: 310
+short_title: 3-10 站内搜索
 meta:
   header: [centertitle]
 sidebar: [docs-latest, toc, repos]
 ---
 
-```yaml blog/themes/volantis/_config.yml
+```yaml blog/_config.volantis.yml
 search:
   enable: true
   service: hexo  # hexo, google, algolia, azure, baidu

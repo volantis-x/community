@@ -2,8 +2,8 @@
 layout: page
 title: 卡片式组件
 group: docs-latest
-order: 307
-short_title: 3-7 卡片式组件
+order: 308
+short_title: 3-8 卡片式组件
 meta:
   header: [centertitle]
 sidebar: [docs-latest, toc, repos]
@@ -13,7 +13,7 @@ sidebar: [docs-latest, toc, repos]
 
 {% folding 查看所有相关配置 %}
 
-```yaml blog/themes/volantis/_config.yml
+```yaml blog/_config.volantis.yml
 widget:
   # The following can be written in `blog/source/_data/widget.yml`
   # ---------------------------------------
@@ -103,7 +103,7 @@ widget:
 ```
 
 ## 博主信息部件
-```yaml blog/themes/volantis/_config.yml
+```yaml blog/_config.volantis.yml
 blogger:
   class: blogger
   display: [desktop] # [desktop, mobile]
@@ -116,7 +116,7 @@ blogger:
 其中，今日诗词 `jinrishici` 如果设置为一个字符串，这个字符串会变成占位文字，加载失败时显示。如果不需要，就请设置为 `jinrishici: false`。`social` 的具体内容请在网站页脚部分设置。
 
 ## 文章目录部件
-```yaml blog/themes/volantis/_config.yml
+```yaml blog/_config.volantis.yml
 toc:
   class: toc
   display: [desktop, mobile] # [desktop, mobile]
@@ -130,7 +130,7 @@ toc:
 这个部件只能放置在侧边栏，并且在文章中有效。在移动设备中预览时，手指向上滑动时，导航栏右边会出现 TOC 按钮，点击即可展开 TOC 部件。如果您需要显示章节序号，请设置 `list_number`。 `min_depth` 和 `max_depth` 代表 TOC 支持的标题层级，最大范围是2～6。
 
 ## 文章分类部件
-```yaml blog/themes/volantis/_config.yml
+```yaml blog/_config.volantis.yml
 category:
   class: category
   display: [desktop] # [desktop, mobile]
@@ -142,7 +142,7 @@ category:
 这个部件可以直接显示所有文章分类，如果您希望有一个独立的页面来展示，需要自己创建一个文件，具体操作在「页面」部分文档中。
 
 ## 标签云部件
-```yaml blog/themes/volantis/_config.yml
+```yaml blog/_config.volantis.yml
 tagcloud:
   class: tagcloud
   display: [desktop] # [desktop, mobile]
@@ -159,7 +159,7 @@ tagcloud:
 这个部件可以直接显示所有文章的标签，如果您希望有一个独立的页面来展示，需要自己创建一个文件，具体操作在「页面」部分文档中。
 
 ## 相关文章部件
-```yaml blog/themes/volantis/_config.yml
+```yaml blog/_config.volantis.yml
 related_posts:
   class: related_posts # npm i -S hexo-related-popular-posts
   display: [desktop, mobile] # [desktop, mobile]
@@ -175,7 +175,7 @@ npm i -S hexo-related-popular-posts
 {% note warning, 值得注意的是，开启了这个功能之后，每次修改文章内容包括 `front-matter` 之后，都需要重新 `hexo s`。 %}
 
 ## 文章版权部件
-```yaml blog/themes/volantis/_config.yml
+```yaml blog/_config.volantis.yml
 copyright:
   class: copyright
   display: [desktop, mobile] # [desktop, mobile]
@@ -188,7 +188,7 @@ copyright:
 这个部件<u>只可以</u>放置在文章页脚。
 
 ## 二维码部件
-```yaml blog/themes/volantis/_config.yml
+```yaml blog/_config.volantis.yml
 donate:
   class: qrcode
   display: [desktop, mobile] # [desktop, mobile]
@@ -201,7 +201,7 @@ donate:
 您可以放置在文章页脚用于展示打赏图片，也可以放置在侧边栏。
 
 ## 通用文本部件
-```yaml blog/themes/volantis/_config.yml
+```yaml blog/_config.volantis.yml
 repos:
   class: text
   display: [desktop] # [desktop, mobile]
@@ -218,7 +218,7 @@ repos:
 您可以创建用于展示任何文本内容的文本部件。
 
 ## 通用列表部件
-```yaml blog/themes/volantis/_config.yml
+```yaml blog/_config.volantis.yml
 wiki-hexo-theme:
   class: list
   display: [desktop, mobile] # [desktop, mobile]
@@ -238,7 +238,7 @@ wiki-hexo-theme:
 
 这个部件的布局继承自 list 部件，用于展示文章的参考资料。请将您的 Volantis 升级至 <u>2.5</u> 版本以上使用。
 
-```yaml blog/themes/volantis/_config.yml
+```yaml blog/_config.volantis.yml
 references:
   class: references # is subclass of list
   display: [desktop, mobile] # [desktop, mobile]
@@ -258,7 +258,7 @@ references:
 
 这个部件的布局继承自 list 部件，用于展示文章所属的分组的文章列表。请将您的 Volantis 升级至 <u>2.5</u> 版本以上使用。
 
-```yaml blog/themes/volantis/_config.yml
+```yaml blog/_config.volantis.yml
 group-1:
   class: group
   display: [desktop, mobile] # [desktop, mobile]
@@ -278,7 +278,7 @@ sidebar: [group-1, toc]
 「group-1」卡片将会以列表的形式显示所有设置了 `group: group-1` 的文章，顺序按照 `order` 从小到大排列。
 
 ## 通用网格部件
-```yaml blog/themes/volantis/_config.yml
+```yaml blog/_config.volantis.yml
 feedback:
   class: grid
   display: [desktop, mobile]
@@ -301,7 +301,7 @@ feedback:
 您可以创建用于展示任何链接列表的网格部件。网格默认根据文字长度自动确定每一个格子的宽度，如果文字长短不一，建议通过设置 `fixed: true` 来固定宽度，此时文字过长的格子中的文字会换行显示。
 
 ## 通用页面部件
-```yaml blog/themes/volantis/_config.yml
+```yaml blog/_config.volantis.yml
 test:
   class: page
   display: [desktop, mobile]

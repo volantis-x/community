@@ -2,8 +2,8 @@
 layout: page
 group: docs-latest
 order: 202
-title: 数据文件
-short_title: 2-2 数据文件
+title: 使用数据文件
+short_title: 2-2 使用数据文件
 meta:
   header: [centertitle]
 sidebar: [docs-latest, toc, repos]
