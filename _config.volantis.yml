@@ -20,6 +20,10 @@ style:
   fontfamily:
     note-tag:
       fontfamily: 'Font Awesome 5 Pro'
+
+cover:
+  scheme: docs # docs, blog
+
 meta:
   author:
     avatar: https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/apple-touch-icon.png
