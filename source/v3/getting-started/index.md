@@ -175,4 +175,4 @@ npm i hexo-renderer-stylus
 在软件和软件的所有副本中都必须包含版权声明和许可声明。
 {% endnoteblock %}
 
-<br><br>{% btn solid large center, 向开发者反馈问题, https://github.com/volantis-x/hexo-theme-volantis/issues/ , fas fa-paper-plane %}
+
