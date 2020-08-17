@@ -18,7 +18,7 @@ style:
   #   codeblock: '#555' # Codeblock color
   #   p: '#ccc' #
   fontfamily:
-    note-tag:
+    iconfont:
       fontfamily: 'Font Awesome 5 Pro'
 
 cover:
