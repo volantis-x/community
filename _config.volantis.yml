@@ -23,6 +23,7 @@ style:
 
 cover:
   scheme: docs # docs, blog
+  layout: featured
 
 meta:
   author:
