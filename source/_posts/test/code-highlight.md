@@ -3,6 +3,8 @@ title: Code Highlight Style test
 date: 2019-07-25 16:43:00
 tags:
 robots: noindex,nofollow
+sidebar: []
+cover: https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/054.jpg
 ---
 
 Make sure all the code blocks highlighted correctly. All the code samples are come from the demo of https://highlightjs.org
