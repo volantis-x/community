@@ -135,7 +135,7 @@ sitemap:
   tag: false
   category: false
 
-# 图片懒加载  # hexo-lazyload-image    hexo-fs
+# 图片懒加载
 lazyload:
   enable: true
   onlypost: false
