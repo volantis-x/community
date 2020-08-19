@@ -22,8 +22,8 @@ style:
       fontfamily: 'Font Awesome 5 Pro'
 
 cover:
-  scheme: docs # docs, blog
-  layout: featured
+  use_for: docs # docs, blog
+  scheme: featured
 
 
 article:
