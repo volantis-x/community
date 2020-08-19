@@ -4,8 +4,12 @@ tags:
   - Foo
   - Bar
 robots: noindex,nofollow
-meta:
-  header_img: https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/054.jpg
+headimg: https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/054.jpg
+music:
+  server: netease   # netease, tencent, kugou, xiami, baidu
+  type: song        # song, playlist, album, search, artist
+  id: 41630480      # song id / playlist id / album id / search keyword
+  autoplay: true
 ---
 
 This post is originated from [here](https://gist.github.com/apackeer/4159268) and is used for testing markdown style. This post contains nearly every markdown usage. Make sure all the markdown elements below show up correctly.

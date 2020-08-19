@@ -5,6 +5,11 @@ tags:
 robots: noindex,nofollow
 sidebar: []
 cover: https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/054.jpg
+music:
+  server: netease   # netease, tencent, kugou, xiami, baidu
+  type: song        # song, playlist, album, search, artist
+  id: 41630480      # song id / playlist id / album id / search keyword
+  autoplay: true
 ---
 
 Make sure all the code blocks highlighted correctly. All the code samples are come from the demo of https://highlightjs.org
