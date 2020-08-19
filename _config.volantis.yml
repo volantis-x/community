@@ -25,6 +25,20 @@ cover:
   scheme: docs # docs, blog
   layout: featured
 
+
+article:
+  preview:
+    scheme: landscape # landscape
+    # pin icon for post
+    pin_icon: # https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f4cc.svg
+    # auto generate title if not exist
+    auto_title: false # false, true
+    # auto generate excerpt if not exist
+    auto_excerpt: false # false, true
+    # show readmore button
+    readmore: auto # auto, always
+  # 文章详情页面的文章卡片本体布局方案
+
 meta:
   author:
     avatar: https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/apple-touch-icon.png
@@ -42,7 +56,7 @@ comments:
     shortname: volantis
 
 footer:
-  layout: [aplayer, social, source, copyright]
+  layout: [aplayer, social, source, analytics, copyright]
   copyright: '[Copyright © 2017-2020 Volantis Team](https://github.com/volantis-x/)'
 
 plugins:
