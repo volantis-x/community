@@ -87,11 +87,11 @@ docs-v2:
   display: [desktop, mobile] # [desktop, mobile]
   header:
     icon: fas fa-list-alt
-    title: 文档 V2
+    title: 文档导航 v2
 
 docs-latest:
   class: group
   display: [desktop, mobile] # [desktop, mobile]
   header:
     icon: fas fa-book-open
-    title: Volantis V3
+    title: 文档导航 v3.1
