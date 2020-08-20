@@ -9,6 +9,44 @@ meta:
 sidebar: [docs-latest, toc, repos]
 ---
 
+
+## 使用数据文件
+
+有时您可能需要在主题中使用某些资料，而这些资料并不在文章内，并且是需要重复使用的，那么您可以考虑使用 Hexo 3.0 新增的「数据文件」功能。此功能会载入 `source/_data` 内的 YAML 或 JSON 文件，如此一来您便能在网站中复用这些文件了。
+
+举例来说，在 `source/_data` 文件夹中新建 `menu.yml` 文件：
+
+```yaml
+Home: /
+Gallery: /gallery/
+Archives: /archives/
+```
+
+您就能在模板中使用这些资料：
+
+```
+<% for (var link in site.data.menu) { %>
+  <a href="<%= site.data.menu[link] %>"> <%= link %> </a>
+<% } %>
+```
+
+渲染结果如下 :
+
+```
+<a href="/"> Home </a>
+<a href="/gallery/"> Gallery </a>
+<a href="/archives/"> Archives </a>
+```
+
+### Volantis 的数据文件
+
+```yaml
+source/_data/layout.yml
+source/_data/menu.yml
+source/_data/widget.yml
+```
+
+
 ## 设置子模块
 
 {% folding yellow open, 将主题添加为子模块 %}
@@ -168,5 +206,3 @@ google_analytics_key: Google Analytics Key
 {% link Hexo 博客主题个性化, https://www.itrhx.com/2018/08/27/A04-Hexo-blog-topic-personalization/ %}
 
 内含卡片半透明、增加卡通人物、自定义鼠标样式、鼠标特效、烟花特效、彩色滚动字体、网站运行时间、动态浏览器标题、雪花飘落特效等多种详细教程。
-
-

@@ -95,7 +95,7 @@ large 按钮更具有强调作用，建议搭配 center 使用：
 
 不设置任何参数的 {% btn 按钮, / %} 适合融入段落中。
 
-{% p subtitle, regular 风格按钮 %}
+{% p subtitle, 空心按钮 %}
 
 {% btn regular, 示例博客, /, fas fa-rss %} {% btn regular, 示例博客, , fas fa-rss %}
 
@@ -105,7 +105,7 @@ large 按钮更具有强调作用，建议搭配 center 使用：
 
 {% btn center large, 开始使用, https://volantis.js.org/v3/getting-started/, fas fa-download %}
 
-{% p subtitle, solid 风格按钮 %}
+{% p subtitle, 实心按钮 %}
 
 {% btn solid, 示例博客, /, fas fa-rss %} {% btn solid, 示例博客, , fas fa-rss %}
 

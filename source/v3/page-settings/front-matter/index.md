@@ -33,7 +33,7 @@ front-matter 是文件最上方以 `---` 分隔的区域，用于指定个别文
 | mathjax           | 是否渲染公式 | Bool, String  | false  |
 | thumbnail           | 缩略图 | String | false  |
 | icons           | 图标 | Array | []  |
-| pin           | 是否置顶 | Bool, String  | false  |
+| pin           | 是否置顶 | Bool  | false  |
 
 `layout:post` 时特有的字段：
 
@@ -66,11 +66,6 @@ music
 在 front-matter 中设置以下值：
 ```yaml front-matter
 pin: true
-```
-
-如果想自定义置顶标签的文字，可以直接设置为字符串，例如：
-```yaml front-matter
-pin: 近期更新
 ```
 
 ### 文章分类

@@ -7,12 +7,8 @@
   rows:
     - name: 站点配置
       rows:
-        - name: 主题配置文件
+        - name: 站点配置文件
           url: /v3/site-settings/configuration/
-        - name: 使用数据文件
-          url: /v3/site-settings/data-files/
-        - name: 导入外部文件
-          url: /v3/site-settings/import/
     - name: 主题配置
       rows:
         - name: 主题配置文件
@@ -60,7 +56,9 @@
         - name: Hexo 内置标签
           url: /v3/tag-plugins/hexo/
     - name: 进阶设定
-      url: /v3/advanced-settings/
+      rows:
+        - name: 进阶设定
+          url: /v3/advanced-settings/
 
 - name: 帮助
   icon: fas fa-question-circle faa-tada
