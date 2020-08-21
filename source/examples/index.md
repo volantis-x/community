@@ -1,5 +1,4 @@
 ---
-layout: links
 title: 示例博客
 cover: true
 meta:
@@ -18,16 +17,25 @@ sidebar: [docs-latest, toc, repos]
 
 ## 团队成员
 
-{% btns circle grid5 %}
-{% cell xaoxuu, https://xaoxuu.com, https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png %}
-{% cell inkss, https://inkss.cn, https://cdn.jsdelivr.net/gh/inkss/common@master/static/web/avatar.jpg %}
-{% cell MHuiG, https://blog.mhuig.top/, https://cdn.jsdelivr.net/gh/MHuiG/imgbed@master/data/p.png %}
-{% cell Colsrch, https://colsrch.top, https://cdn.jsdelivr.net/gh/Colsrch/images/Colsrch/avatar.jpg %}
-{% cell Linhk1606, https://linhk1606.github.io, https://i.loli.net/2020/02/09/PN7I5RJfFtA93r2.png %}
-{% endbtns %}
+{% sitegroup %}
+
+{% site https://xaoxuu.com, https://i.loli.net/2020/08/21/VuSwWZ1xAeUHEBC.jpg, xaoxuu, 简约风格 %}
+
+{% site https://inkss.cn, https://i.loli.net/2020/08/21/Vzbu3i8fXs6Nh5Y.jpg, inkss,  %}
+
+{% site https://blog.mhuig.top, https://i.loli.net/2020/08/21/lF7awfkDuV4eG9t.jpg, MHuiG,  %}
+
+{% site https://colsrch.top, https://i.loli.net/2020/08/21/wU7tFN9gEucSHIA.jpg, Colsrch,  %}
+
+{% site https://linhk1606.github.io, https://i.loli.net/2020/08/21/xvu9gfJQO2CpbiA.jpg, Linhk1606,  %}
+
+{% endsitegroup %}
+
 
 <br>
-<div class="examples"></div>
+
+<div class="examples"><div class="loading"><i class="fa fa-cog fa-2x fa-spin"></i><p>正在加载</p></div></div>
+
 <br>
 
 
@@ -96,12 +104,8 @@ function parseData(data) {
   return groups;
 }
 function loadExamples() {
-
-  $('div.examples').append('<div class="loading"><i class="fa fa-cog fa-2x fa-spin"></i><p>正在加载</p></div>');
-
   $.get(issue_cfg.repo, function(data, status) {
     let dt = parseData(data);
-    console.log(status);
     $('div.examples .loading').remove();
     for (i = 0; i < issue_cfg.group.length; i++) {
       let lb = issue_cfg.group[i];
@@ -110,48 +114,35 @@ function loadExamples() {
         continue;
       }
       $('div.examples').append('<h2>' + groupData.name + '</h2>');
-      $('div.examples').append('<div class="btns circle grid5 ' + lb + '"></div>');
+      $('div.examples').append('<div class="site-card-group ' + lb + '"></div>');
       // layout items
       for (j = 0; j < groupData.items.length; j++) {
         let issue = groupData.items[j];
-        // get name
-        let name = issue.body.match(/name:[^\n]*\n/);
-        if (name && name.length > 0) {
-          name = name[0].replace(/(name:[\s]*|[\r\n]*)/g,'');
+        // get title
+        let title = issue.body.match(/title:[^\n]*\n/);
+        if (title && title.length > 0) {
+          title = title[0].replace(/(title:[\s]*|[\r\n]*)/g,'');
         }
-        // get avatar
-        let avatar = issue.body.match(/avatar:[^\n]*\n/);
-        if (avatar && avatar.length > 0) {
-          avatar = avatar[0].replace(/(avatar:[\s]*|[\r\n]*)/g,'');
+        // get screenshot
+        let screenshot = issue.body.match(/screenshot:[^\n]*\n/);
+        if (screenshot && screenshot.length > 0) {
+          screenshot = screenshot[0].replace(/(screenshot:[\s]*|[\r\n]*)/g,'');
         }
-
-        // get tags
-        let tags = issue.body.match(/tags:[^\n]*\n/);
-        if (tags && tags.length > 0) {
-          tags = tags[0].replace(/(tags:[\s]*|[\r\n]*)/g,'');
-          tags = tags.replace(/(\[|\])*/g,'').replace(/,\ */g,',');
-          tags = tags.split(',');
-          tags = "#" + tags.join(" #");
-        }
-
         // get desc
-        let desc = issue.body.match(/desc:[^\n]*\n/);
+        let desc = issue.body.match(/description:[^\n]*\n/);
         if (desc && desc.length > 0) {
-          desc = desc[0].replace(/(desc:[\s]*|[\r\n]*)/g,'');
-          desc = 'title = "' + desc + '"';
-        } else {
-          desc = '';
+          desc = desc[0].replace(/(description:[\s]*|[\r\n]*)/g,'');
         }
 
         let imgTag = '';
-        if (avatar.length > 0) {
-          imgTag = '<img no-lazy src="' + avatar + '">';
+        if (screenshot.length > 0) {
+          imgTag = '<div class="img"><img no-lazy src="' + screenshot + '"></div>';
         } else {
-          imgTag = '<img src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/placeholder/c617bfd2497fcea598e621413e315c368f8d8e.svg">';
+          imgTag = '<div class="img"><img no-lazy src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/placeholder/c617bfd2497fcea598e621413e315c368f8d8e.svg"></div>';
         }
-        let tagsTag = '<p>' + tags + '</p>';
-        let aTag = '<a class="button" target="_blank"' + desc + 'href="' + issue.title + '">' + imgTag + name + tagsTag + '</a>';
-        $('div.examples .btns.' + lb).append(aTag);
+        let infoTag = "<div class='info'><span class='title'>" + title + "</span></div><span class='desc'>" + desc + "</span>";
+        let cardTag = "<div class='site-card'><a target='_blank' href='" + issue.title + "'>" + imgTag + infoTag + "</a></div>";
+        $('div.examples .site-card-group.' + lb).append(cardTag);
       }
     }
   });
