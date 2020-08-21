@@ -49,11 +49,15 @@ sidebar: [docs-latest, toc, repos]
 
 标题填完整链接，内容可以根据需要选填：
 
-{% image https://i.loli.net/2020/08/11/2uXQ4e9VPpD7R3q.jpg, 450px %}
+```yaml
+title: 网站标题
+screenshot: 截图链接
+description: 网站摘要
+```
 
-为了提高图片加载速度，建议优化头像：
-1. 打开 [压缩图](https://www.yasuotu.com/) 上传自己的头像，将图片尺寸调整到 `192px` 后下载。
-2. 将压缩后的图片上传到 [sm.ms 图床](https://sm.ms/) 并使用此图片链接作为头像。
+为了提高图片加载速度，建议优化图片尺寸：
+1. 打开 [压缩图](https://www.yasuotu.com/) 上传自己的截图，将图片的高度调整到 `360px` 后下载。
+2. 将压缩后的图片上传到 [sm.ms 图床](https://sm.ms/) 并使用此图片链接作为截图链接。
 
 {% endtimenode %}
 
@@ -138,7 +142,7 @@ function loadExamples() {
         if (screenshot.length > 0) {
           imgTag = '<div class="img"><img no-lazy src="' + screenshot + '"></div>';
         } else {
-          imgTag = '<div class="img"><img no-lazy src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/placeholder/c617bfd2497fcea598e621413e315c368f8d8e.svg"></div>';
+          imgTag = '<div class="img"><img no-lazy src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/052.jpg"></div>';
         }
         let infoTag = "<div class='info'><span class='title'>" + title + "</span></div><span class='desc'>" + desc + "</span>";
         let cardTag = "<div class='site-card'><a target='_blank' href='" + issue.title + "'>" + imgTag + infoTag + "</a></div>";
