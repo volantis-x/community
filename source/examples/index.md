@@ -27,7 +27,7 @@ sidebar: [docs-latest, toc, repos]
 
 {% site https://colsrch.top, https://i.loli.net/2020/08/21/wU7tFN9gEucSHIA.jpg, Colsrch,  %}
 
-{% site https://linhk1606.github.io, https://i.loli.net/2020/08/21/xvu9gfJQO2CpbiA.jpg, Linhk1606,  %}
+{% site https://blog.lhkstudio.me, https://i.loli.net/2020/08/21/3PmGLCKicnfow1x.png, Linhk1606, 完整的亮/暗色模式切换 %}
 
 {% endsitegroup %}
 
