@@ -15,7 +15,7 @@ sidebar: [docs-latest, toc, repos]
 </center>
 <br>
 
-## 团队成员
+## 团队成员的博客
 
 {% sitegroup %}
 
@@ -78,7 +78,7 @@ description: 网站摘要
 {% raw %}
 <script>
 let issue_cfg = new Object();
-issue_cfg.group = ['latest', 'v3', 'v2', 'v1', 'v0'];
+issue_cfg.group = ['latest', 'v6', 'v5', 'v4', 'v3', 'v2', 'v1', 'v0'];
 issue_cfg.repo = 'https://api.github.com/repos/volantis-x/examples/issues?sort=updated&state=open&page=1&per_page=100';
 function parseData(data) {
   let groups = new Object();
