@@ -23,7 +23,7 @@ sidebar: [docs-latest, toc, repos]
 
 {% site https://inkss.cn, https://i.loli.net/2020/08/21/Vzbu3i8fXs6Nh5Y.jpg, inkss,  %}
 
-{% site https://blog.mhuig.top, https://i.loli.net/2020/08/21/lF7awfkDuV4eG9t.jpg, MHuiG,  %}
+{% site https://blog.mhuig.top, https://i.loli.net/2020/08/22/d24zpPlhLYWX6D1.png, MHuiG,  %}
 
 {% site https://colsrch.top, https://i.loli.net/2020/08/22/dFRWXm52OVu8qfK.png, Colsrch,  %}
 
