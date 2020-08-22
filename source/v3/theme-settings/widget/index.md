@@ -1,12 +1,12 @@
 ---
 layout: page
 title: 卡片式组件
-group: docs-latest
+group: docs-v3
 order: 308
 short_title: 3-8 卡片式组件
 meta:
   header: [centertitle]
-sidebar: [docs-latest, toc, repos]
+sidebar: [docs-v3, toc, repos]
 ---
 
 <u>widget</u> 即小部件，大部分小部件都可以放置在侧边栏，一部分已经为正文区域显示做了优化，还有一部分只可以放置在文章页脚部分。与 meta 库不同的是：除了现有的 widget ，您可以很轻易地创建自己的 widget ，然后放在需要的地方。此外，您还可以将 widget 写在单独的文件中。

@@ -1,12 +1,12 @@
 ---
 layout: page
 title: front-matter
-group: docs-latest
+group: docs-v3
 order: 402
 short_title: 4-2 front-matter
 meta:
   header: [centertitle]
-sidebar: [docs-latest, toc, repos]
+sidebar: [docs-v3, toc, repos]
 ---
 
 ## front-matter

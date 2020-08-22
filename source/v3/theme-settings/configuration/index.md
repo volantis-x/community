@@ -1,12 +1,12 @@
 ---
 layout: page
-group: docs-latest
+group: docs-v3
 order: 301
 title: 主题配置文件
 short_title: 3-1 主题配置文件
 meta:
   header: [centertitle]
-sidebar: [docs-latest, toc, repos]
+sidebar: [docs-v3, toc, repos]
 ---
 
 ## 使用代替主题配置文件

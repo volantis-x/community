@@ -1,12 +1,12 @@
 ---
 layout: page
-group: docs-latest
+group: docs-v3
 order: 601
 title: 进阶设定
 short_title: 6-1 进阶设定
 meta:
   header: [centertitle]
-sidebar: [docs-latest, toc, repos]
+sidebar: [docs-v3, toc, repos]
 ---
 
 

@@ -1,12 +1,12 @@
 ---
 layout: page
 title: 设置网站导航栏
-group: docs-latest
+group: docs-v3
 order: 303
 short_title: 3-3 设置网站导航栏
 meta:
   header: [centertitle]
-sidebar: [docs-latest, toc, repos]
+sidebar: [docs-v3, toc, repos]
 ---
 
 ## 导航栏配置

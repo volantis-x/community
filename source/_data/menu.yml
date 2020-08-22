@@ -1,6 +1,6 @@
 - name: 开始
   icon: fas fa-flag faa-tada
-  url: /v3/getting-started/
+  url: /v4/getting-started/
 
 - name: 文档
   icon: fas fa-book faa-tada
@@ -8,57 +8,57 @@
     - name: 站点配置
       rows:
         - name: 站点配置文件
-          url: /v3/site-settings/configuration/
+          url: /v4/site-settings/configuration/
     - name: 主题配置
       rows:
         - name: 主题配置文件
-          url: /v3/theme-settings/configuration/
+          url: /v4/theme-settings/configuration/
         - name: 自定义主题外观
-          url: /v3/theme-settings/style/
+          url: /v4/theme-settings/style/
         - name: 设置网站导航栏
-          url: /v3/theme-settings/navbar/
+          url: /v4/theme-settings/navbar/
         - name: 设置网站页脚
-          url: /v3/theme-settings/footer/
+          url: /v4/theme-settings/footer/
         - name: 网站与文章封面
-          url: /v3/theme-settings/cover/
+          url: /v4/theme-settings/cover/
         - name: 设置默认布局
-          url: /v3/theme-settings/layout/
+          url: /v4/theme-settings/layout/
         - name: 元数据组件
-          url: /v3/theme-settings/meta/
+          url: /v4/theme-settings/meta/
         - name: 卡片式组件
-          url: /v3/theme-settings/widget/
+          url: /v4/theme-settings/widget/
         - name: 选择评论系统
-          url: /v3/theme-settings/comments/
+          url: /v4/theme-settings/comments/
         - name: 站内搜索
-          url: /v3/theme-settings/search/
+          url: /v4/theme-settings/search/
         - name: 第三方插件
-          url: /v3/theme-settings/plugins/
+          url: /v4/theme-settings/plugins/
     - name: 页面配置
       rows:
         - name: 页面布局模板
-          url: /v3/page-settings/layout/
+          url: /v4/page-settings/layout/
         - name: front-matter
-          url: /v3/page-settings/front-matter/
+          url: /v4/page-settings/front-matter/
         - name: 页面自定义布局
-          url: /v3/page-settings/body/
+          url: /v4/page-settings/body/
         - name: 渲染公式
-          url: /v3/page-settings/math/
+          url: /v4/page-settings/math/
     - name: 标签插件
       rows:
         - name: 文本和段落标签
-          url: /v3/tag-plugins/text/
+          url: /v4/tag-plugins/text/
         - name: 链接、按钮和菜单标签
-          url: /v3/tag-plugins/link/
+          url: /v4/tag-plugins/link/
         - name: 容器类标签
-          url: /v3/tag-plugins/container/
+          url: /v4/tag-plugins/container/
         - name: 多媒体标签
-          url: /v3/tag-plugins/media/
+          url: /v4/tag-plugins/media/
         - name: Hexo 内置标签
-          url: /v3/tag-plugins/hexo/
+          url: /v4/tag-plugins/hexo/
     - name: 进阶设定
       rows:
         - name: 进阶设定
-          url: /v3/advanced-settings/
+          url: /v4/advanced-settings/
 
 - name: 帮助
   icon: fas fa-question-circle faa-tada
@@ -87,5 +87,7 @@
     - name: 博客文章
       url: archives/
     - name: hr
+    - name: 旧版文档 v3
+      url: /v3/getting-started/
     - name: 旧版文档 v2
       url: /v2/getting-started/

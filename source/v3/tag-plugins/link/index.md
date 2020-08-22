@@ -1,12 +1,12 @@
 ---
 layout: page
-group: docs-latest
+group: docs-v3
 order: 502
 title: 链接、按钮和菜单标签
 short_title: 5-2 链接、按钮和菜单标签
 meta:
   header: [centertitle]
-sidebar: [docs-latest, toc, repos]
+sidebar: [docs-v3, toc, repos]
 mathjax: true
 ---
 
@@ -41,54 +41,6 @@ mathjax: true
 <!-- endtab -->
 
 {% endtabs %}
-
-
-
-## 网站卡片
-
-请将您的 Volantis 升级至 <u>3.1</u> 版本以上使用。
-
-{% tabs site-card, 3 %}
-
-<!-- tab 语法格式 -->
-
-```
-{% sitegroup %}
-{% site 链接, 截图链接, 标题, 描述（可选） %}
-{% site 链接, 截图链接, 标题, 描述（可选） %}
-{% endsitegroup %}
-```
-
-<!-- endtab -->
-
-<!-- tab 示例写法 -->
-
-```md example.md:
-{% sitegroup %}
-{% site https://xaoxuu.com, https://i.loli.net/2020/08/21/VuSwWZ1xAeUHEBC.jpg, 网站标题, 这是一段关于这个网站的描述文字 %}
-{% site https://inkss.cn, https://i.loli.net/2020/08/21/Vzbu3i8fXs6Nh5Y.jpg, 网站标题, 这是一段关于这个网站的描述文字 %}
-{% site https://blog.mhuig.top, https://i.loli.net/2020/08/21/lF7awfkDuV4eG9t.jpg, 网站标题, 这是一段关于这个网站的描述文字 %}
-{% site https://colsrch.top, https://i.loli.net/2020/08/21/wU7tFN9gEucSHIA.jpg, 网站标题, 这是一段关于这个网站的描述文字 %}
-{% site https://linhk1606.github.io, https://i.loli.net/2020/08/21/xvu9gfJQO2CpbiA.jpg, 网站标题, 这是一段关于这个网站的描述文字 %}
-{% endsitegroup %}
-```
-
-<!-- endtab -->
-
-<!-- tab 示例效果 -->
-
-{% sitegroup %}
-{% site https://xaoxuu.com, https://i.loli.net/2020/08/21/VuSwWZ1xAeUHEBC.jpg, 网站标题, 这是一段关于这个网站的描述文字 %}
-{% site https://inkss.cn, https://i.loli.net/2020/08/21/Vzbu3i8fXs6Nh5Y.jpg, 网站标题, 这是一段关于这个网站的描述文字 %}
-{% site https://blog.mhuig.top, https://i.loli.net/2020/08/21/lF7awfkDuV4eG9t.jpg, 网站标题, 这是一段关于这个网站的描述文字 %}
-{% site https://colsrch.top, https://i.loli.net/2020/08/21/wU7tFN9gEucSHIA.jpg, 网站标题, 这是一段关于这个网站的描述文字 %}
-{% site https://linhk1606.github.io, https://i.loli.net/2020/08/21/xvu9gfJQO2CpbiA.jpg, 网站标题, 这是一段关于这个网站的描述文字 %}
-{% endsitegroup %}
-
-<!-- endtab -->
-
-{% endtabs %}
-
 
 
 ## 基础按钮
@@ -422,5 +374,3 @@ rounded, circle
 <!-- endtab -->
 
 {% endtabs %}
-
-

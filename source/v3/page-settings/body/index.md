@@ -1,12 +1,12 @@
 ---
 layout: page
 title: 页面自定义布局
-group: docs-latest
+group: docs-v3
 order: 403
 short_title: 4-3 页面自定义布局
 meta:
   header: [centertitle]
-sidebar: [docs-latest, toc, repos]
+sidebar: [docs-v3, toc, repos]
 ---
 
 ## 正文布局

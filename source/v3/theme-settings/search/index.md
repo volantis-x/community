@@ -1,12 +1,12 @@
 ---
 layout: page
 title: 站内搜索
-group: docs-latest
+group: docs-v3
 order: 310
 short_title: 3-10 站内搜索
 meta:
   header: [centertitle]
-sidebar: [docs-latest, toc, repos]
+sidebar: [docs-v3, toc, repos]
 ---
 
 ```yaml blog/_config.volantis.yml

@@ -1,12 +1,12 @@
 ---
 layout: page
 title: 自定义主题外观
-group: docs-latest
+group: docs-v3
 order: 302
 short_title: 3-2 自定义主题外观
 meta:
   header: [centertitle]
-sidebar: [docs-latest, toc, repos]
+sidebar: [docs-v3, toc, repos]
 ---
 
 ## 最大布局宽度

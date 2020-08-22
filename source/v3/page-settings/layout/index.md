@@ -1,12 +1,12 @@
 ---
 layout: page
 title: 页面布局模板
-group: docs-latest
+group: docs-v3
 order: 401
 short_title: 4-1 页面布局模板
 meta:
   header: [centertitle]
-sidebar: [docs-latest, toc, repos]
+sidebar: [docs-v3, toc, repos]
 ---
 
 ## 布局模板

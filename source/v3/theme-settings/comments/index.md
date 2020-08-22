@@ -1,12 +1,12 @@
 ---
 layout: page
 title: 选择评论系统
-group: docs-latest
+group: docs-v3
 order: 309
 short_title: 3-9 选择评论系统
 meta:
   header: [centertitle]
-sidebar: [docs-latest, toc, repos]
+sidebar: [docs-v3, toc, repos]
 ---
 
 目前支持的评论系统有： Valine, MiniValine, Disqus, Gitalk, Vssue, Livere, Isso, Hashover

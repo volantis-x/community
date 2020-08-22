@@ -1,12 +1,12 @@
 ---
 layout: page
-group: docs-latest
+group: docs-v3
 order: 504
 title: 多媒体标签
 short_title: 5-4 多媒体标签
 meta:
   header: [centertitle]
-sidebar: [docs-latest, toc, repos]
+sidebar: [docs-v3, toc, repos]
 mathjax: true
 ---
 

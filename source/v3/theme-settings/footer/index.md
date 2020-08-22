@@ -1,12 +1,12 @@
 ---
 layout: page
 title: 设置网站页脚
-group: docs-latest
+group: docs-v3
 order: 304
 short_title: 3-4 设置网站页脚
 meta:
   header: [centertitle]
-sidebar: [docs-latest, toc, repos]
+sidebar: [docs-v3, toc, repos]
 ---
 
 您通过 `layout` 可以自由布局网站页脚内容 `aplayer`, `social`, `license`, `info`, `copyright`。

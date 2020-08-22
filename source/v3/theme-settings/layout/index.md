@@ -1,12 +1,12 @@
 ---
 layout: page
 title: 设置默认布局
-group: docs-latest
+group: docs-v3
 order: 306
 short_title: 3-6 设置默认布局
 meta:
   header: [centertitle]
-sidebar: [docs-latest, toc, repos]
+sidebar: [docs-v3, toc, repos]
 ---
 
 您可以自由决定每个页面是否显示侧边栏，侧边栏显示什么小部件，正文区域显示什么卡片，文章卡片显示什么 meta 信息。

@@ -1,12 +1,12 @@
 ---
 layout: page
 title: 网站与文章封面
-group: docs-latest
+group: docs-v3
 order: 305
 short_title: 3-5 网站与文章封面
 meta:
   header: [centertitle]
-sidebar: [docs-latest, toc, repos]
+sidebar: [docs-v3, toc, repos]
 ---
 
 ## 封面方案

@@ -1,12 +1,12 @@
 ---
 layout: page
 title: 第三方插件
-group: docs-latest
+group: docs-v3
 order: 311
 short_title: 3-11 第三方插件
 meta:
   header: [centertitle]
-sidebar: [docs-latest, toc, repos]
+sidebar: [docs-v3, toc, repos]
 ---
 
 

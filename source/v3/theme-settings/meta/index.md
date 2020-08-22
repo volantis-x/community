@@ -1,12 +1,12 @@
 ---
 layout: page
 title: 元数据组件
-group: docs-latest
+group: docs-v3
 order: 307
 short_title: 3-7 元数据组件
 meta:
   header: [centertitle]
-sidebar: [docs-latest, toc, repos]
+sidebar: [docs-v3, toc, repos]
 ---
 
 <u>meta</u> 即文章的元数据，描述文章的作者、发布时间、更新时间等等信息，Volantis 不替您决定，显示什么图标、如何描述都可以自定义。

@@ -1,12 +1,12 @@
 ---
 layout: page
-group: docs-latest
+group: docs-v3
 order: 501
 title: 文本和段落标签
 short_title: 5-1 文本和段落标签
 meta:
   header: [centertitle]
-sidebar: [docs-latest, toc, repos]
+sidebar: [docs-v3, toc, repos]
 mathjax: true
 ---
 

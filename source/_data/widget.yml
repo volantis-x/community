@@ -89,9 +89,16 @@ docs-v2:
     icon: fas fa-list-alt
     title: 文档导航 v2
 
+docs-v3:
+  class: group
+  display: [desktop, mobile] # [desktop, mobile]
+  header:
+    icon: fas fa-list-alt
+    title: 文档导航 v3
+
 docs-latest:
   class: group
   display: [desktop, mobile] # [desktop, mobile]
   header:
     icon: fas fa-book-open
-    title: 文档导航 v3.1
+    title: 文档导航 v4.0

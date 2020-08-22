@@ -1,13 +1,13 @@
 ---
 layout: page
-group: docs-latest
+group: docs-v3
 order: 100
 title: 安装与版本更新
 short_title: 1-1 安装与版本更新
 cover: true
 meta:
   header: []
-sidebar: [docs-latest, toc, repos]
+sidebar: [docs-v3, toc, repos]
 ---
 
 <p>

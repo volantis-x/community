@@ -1,12 +1,12 @@
 ---
 layout: page
-group: docs-latest
+group: docs-v3
 order: 505
 title: Hexo 内置标签
 short_title: 5-5 Hexo 内置标签
 meta:
   header: [centertitle]
-sidebar: [docs-latest, toc, repos]
+sidebar: [docs-v3, toc, repos]
 mathjax: true
 ---
 
