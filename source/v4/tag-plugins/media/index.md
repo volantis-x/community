@@ -20,7 +20,7 @@ Inlineimage 标签是一种行内图片标签，可以用来在一段话中间�
 <!-- tab 语法格式 -->
 
 ```
-这是一段话 {% inlineimage 链接, 高度（可选） %} 这是一段话。
+这是一段话 {% inlineimage 链接, height=高度（可选） %} 这是一段话。
 ```
 
 <!-- endtab -->
@@ -32,7 +32,7 @@ Inlineimage 标签是一种行内图片标签，可以用来在一段话中间�
 阿拉伯数字 + px
 
 ```md example:
-20px
+height=20px
 ```
 
 <!-- endtab -->
@@ -42,7 +42,7 @@ Inlineimage 标签是一种行内图片标签，可以用来在一段话中间�
 ```md example.md:
 这是 {% inlineimage https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/aru-l/0000.gif %} 一段话。
 
-这又是 {% inlineimage https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/aru-l/5150.gif, 40px %} 一段话。
+这又是 {% inlineimage https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/aru-l/5150.gif, height=40px %} 一段话。
 ```
 
 <!-- endtab -->
@@ -51,7 +51,7 @@ Inlineimage 标签是一种行内图片标签，可以用来在一段话中间�
 
 这是 {% inlineimage https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/aru-l/0000.gif %} 一段话。
 
-这又是 {% inlineimage https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/aru-l/5150.gif, 40px %} 一段话。
+这又是 {% inlineimage https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/aru-l/5150.gif, height=40px %} 一段话。
 
 <!-- endtab -->
 
@@ -61,32 +61,37 @@ Inlineimage 标签是一种行内图片标签，可以用来在一段话中间�
 
 ## Image
 
-Image 标签是一种针对单个图片应用场景的标签，支持图片描述文字和指定宽度。请将您的 Volantis 升级至 <u>2.6</u> 版本以上使用。
+Image 标签是一种针对单个图片应用场景的标签，支持图片描述文字和指定宽度。请将您的 Volantis 升级至 <u>4.0</u> 版本以上使用。
 
 {% tabs image, 4 %}
 
 <!-- tab 语法格式 -->
 
 ```
-{% image 链接, 宽度（可选）, 描述（可选） %}
+{% image 链接, width=宽度（可选）, alt=描述（可选） %}
 ```
 
 <!-- endtab -->
 
 <!-- tab 参数列表 -->
 
-{% p subtitle, 图片宽度 %}
-
-阿拉伯数字 + px
+{% p subtitle, 图片宽高度 %}
 
 ```md example:
-300px
+width=300px, height=32px
 ```
 
 {% p subtitle, 图片描述 %}
 
-纯文本，不能包含引号。
+```md example:
+alt=图片描述
+```
 
+{% p subtitle, 占位背景色 %}
+
+```md example:
+bg=#f2f2f2
+```
 
 <!-- endtab -->
 
@@ -95,15 +100,19 @@ Image 标签是一种针对单个图片应用场景的标签，支持图片描�
 ```md example.md:
 添加描述：
 
-{% image https://i.loli.net/2020/04/06/zdeQiOY9rBCjhDR.jpg, 每天下课回宿舍的路，承载了太多记忆。 %}
+{% image https://i.loli.net/2020/04/06/zdeQiOY9rBCjhDR.jpg, alt=每天下课回宿舍的路，承载了太多记忆。 %}
 
 指定宽度：
 
-{% image https://i.loli.net/2020/04/06/zdeQiOY9rBCjhDR.jpg, 300px %}
+{% image https://i.loli.net/2020/04/06/zdeQiOY9rBCjhDR.jpg, width=300px %}
 
 指定宽度并添加描述：
 
-{% image https://i.loli.net/2020/04/06/zdeQiOY9rBCjhDR.jpg, 300px, 每天下课回宿舍的路，承载了太多记忆。 %}
+{% image https://i.loli.net/2020/04/06/zdeQiOY9rBCjhDR.jpg, width=300px, alt=每天下课回宿舍的路，承载了太多记忆。 %}
+
+设置占位背景色：
+
+{% image https://i.loli.net/2020/04/06/zdeQiOY9rBCjhDR.jpg, width=414px, bg=#1D0C04, alt=优化不同宽度浏览的观感 %}
 ```
 
 <!-- endtab -->
@@ -112,15 +121,20 @@ Image 标签是一种针对单个图片应用场景的标签，支持图片描�
 
 添加描述：
 
-{% image https://i.loli.net/2020/04/06/zdeQiOY9rBCjhDR.jpg, 每天下课回宿舍的路，承载了太多记忆。 %}
+{% image https://i.loli.net/2020/04/06/zdeQiOY9rBCjhDR.jpg, alt=每天下课回宿舍的路，承载了太多记忆。 %}
 
 指定宽度：
 
-{% image https://i.loli.net/2020/04/06/zdeQiOY9rBCjhDR.jpg, 300px %}
+{% image https://i.loli.net/2020/04/06/zdeQiOY9rBCjhDR.jpg, width=300px %}
 
 指定宽度并添加描述：
 
-{% image https://i.loli.net/2020/04/06/zdeQiOY9rBCjhDR.jpg, 300px, 每天下课回宿舍的路，承载了太多记忆。 %}
+{% image https://i.loli.net/2020/04/06/zdeQiOY9rBCjhDR.jpg, width=300px, alt=每天下课回宿舍的路，承载了太多记忆。 %}
+
+设置占位背景色：
+
+{% image https://i.loli.net/2020/04/06/zdeQiOY9rBCjhDR.jpg, width=414px, bg=#1D0C04, alt=优化不同宽度浏览的观感 %}
+
 
 <!-- endtab -->
 

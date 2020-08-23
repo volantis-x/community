@@ -31,7 +31,7 @@ pin: true
 
 根据不同职责拥有不同的权限，如文档维护团队可以审核 PR 并直接修改文档内容。
 
-{% image https://upimage.alexhchu.com/2020/08/09/22ec83d3de717.png, 300px, 在 GitHub 页面可以看到团队成员 %}
+{% image https://upimage.alexhchu.com/2020/08/09/22ec83d3de717.png, width=300px, alt=在 GitHub 页面可以看到团队成员 %}
 
 
 <!-- more -->

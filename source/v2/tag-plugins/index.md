@@ -790,7 +790,7 @@ Image 标签是一种针对单个图片应用场景的标签，支持图片描�
 <!-- tab 语法格式 -->
 
 ```
-{% image 链接, 宽度（可选）, 描述（可选） %}
+{% image 链接, width=宽度（可选）, alt=描述（可选） %}
 ```
 
 <!-- endtab -->
@@ -802,7 +802,7 @@ Image 标签是一种针对单个图片应用场景的标签，支持图片描�
 阿拉伯数字 + px
 
 ```md example:
-300px
+width=300px
 ```
 
 {% p subtitle, 图片描述 %}
@@ -817,15 +817,15 @@ Image 标签是一种针对单个图片应用场景的标签，支持图片描�
 ```md example.md:
 添加描述：
 
-{% image https://i.loli.net/2020/04/06/zdeQiOY9rBCjhDR.jpg, 每天下课回宿舍的路，承载了太多记忆。 %}
+{% image https://i.loli.net/2020/04/06/zdeQiOY9rBCjhDR.jpg, alt=每天下课回宿舍的路，承载了太多记忆。 %}
 
 指定宽度：
 
-{% image https://i.loli.net/2020/04/06/zdeQiOY9rBCjhDR.jpg, 300px %}
+{% image https://i.loli.net/2020/04/06/zdeQiOY9rBCjhDR.jpg, width=300px %}
 
 指定宽度并添加描述：
 
-{% image https://i.loli.net/2020/04/06/zdeQiOY9rBCjhDR.jpg, 300px, 每天下课回宿舍的路，承载了太多记忆。 %}
+{% image https://i.loli.net/2020/04/06/zdeQiOY9rBCjhDR.jpg, width=300px, alt=每天下课回宿舍的路，承载了太多记忆。 %}
 ```
 
 <!-- endtab -->
@@ -834,15 +834,15 @@ Image 标签是一种针对单个图片应用场景的标签，支持图片描�
 
 添加描述：
 
-{% image https://i.loli.net/2020/04/06/zdeQiOY9rBCjhDR.jpg, 每天下课回宿舍的路，承载了太多记忆。 %}
+{% image https://i.loli.net/2020/04/06/zdeQiOY9rBCjhDR.jpg, alt=每天下课回宿舍的路，承载了太多记忆。 %}
 
 指定宽度：
 
-{% image https://i.loli.net/2020/04/06/zdeQiOY9rBCjhDR.jpg, 300px %}
+{% image https://i.loli.net/2020/04/06/zdeQiOY9rBCjhDR.jpg, width=300px %}
 
 指定宽度并添加描述：
 
-{% image https://i.loli.net/2020/04/06/zdeQiOY9rBCjhDR.jpg, 300px, 每天下课回宿舍的路，承载了太多记忆。 %}
+{% image https://i.loli.net/2020/04/06/zdeQiOY9rBCjhDR.jpg, width=300px, alt=每天下课回宿舍的路，承载了太多记忆。 %}
 
 <!-- endtab -->
 
@@ -1324,5 +1324,3 @@ content
 在文章中使用 `<!-- more -->`，那么 `<!-- more -->` 之前的文字将会被视为摘要。首页中将只出现这部分文字，同时这部分文字也会出现在正文之中。
 
 {% note link, 更多请见Hexo官方文档：[#标签插件](https://hexo.io/zh-cn/docs/tag-plugins) %}
-
-

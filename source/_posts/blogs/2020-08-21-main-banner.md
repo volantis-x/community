@@ -1,5 +1,5 @@
 ---
-title: 给Hexo Volantis主题添加图片轮播功能
+title: 给 Hexo Volantis 主题添加图片轮播功能
 date: 2020-08-21
 updated: 2020-08-22
 author:
@@ -7,7 +7,7 @@ author:
   avatar: https://cdn.jsdelivr.net/gh/heson525/pic@master/pic/avatar03.png
   utl: https://www.heson10.com
 link: https://www.heson10.com/posts/19736.html
-description: 很多网站首页都会有图片轮播效果，给网站的首页加上图片轮播的效果，可以很好的起到广告的作用也可以起到推荐优秀内容的作用。来吧，下面是给Volantis主题加上首页图片轮播的效果。
+description: 很多网站首页都会有图片轮播效果，给网站的首页加上图片轮播的效果，可以很好的起到广告的作用也可以起到推荐优秀内容的作用。来吧，下面是给 Volantis 主题加上首页图片轮播的效果。
 
 ---
 
@@ -36,7 +36,7 @@ description: 很多网站首页都会有图片轮播效果，给网站的首页�
 我已经上传到网盘：
 
 ```shell
-链接：https://pan.baidu.com/s/1D0ytw6w33uRCyXDX-4ubPA 
+链接：https://pan.baidu.com/s/1D0ytw6w33uRCyXDX-4ubPA
 提取码：q4hg
 ```
 
@@ -109,24 +109,24 @@ if hexo-config('plugins.main_banner.enable')
   img
    border-radius: 8px;
   height:100%
-  @media screen and (max-width: 800px) 
+  @media screen and (max-width: 800px)
    width:100%
    height:40vw
-   float:left 
+   float:left
 
 .hot_post
   width:33%
   height:100%
   float:left
   padding:0 0px 0 1vw
-  @media screen and (max-width: 800px) 
+  @media screen and (max-width: 800px)
    width:100%
    height:50vw
    float:left
    margin-top:1vw
    padding:0
   .forpadding
-    padding-top:0.5vw 
+    padding-top:0.5vw
   .index-banner
     position: relative;
     height:50%
@@ -137,13 +137,13 @@ if hexo-config('plugins.main_banner.enable')
   height:20vw
   max-height:400px
   margin-top:20px;
-  @media screen and (max-width: 800px) 
+  @media screen and (max-width: 800px)
     width:100%
 	height:65vw
-  @media screen and (max-width: $device-2k) 
+  @media screen and (max-width: $device-2k)
     width:100%
 	height:25vw
-   
+
 .banners
   width: 100%;
   height: 100%;
@@ -151,18 +151,18 @@ if hexo-config('plugins.main_banner.enable')
   position: relative;
   overflow: hidden;
   background-color: rgba(200,200,200,0.5)
-  @media screen and (max-width: 600px) 
+  @media screen and (max-width: 600px)
     width:100%
     height:40vw
     float:left
 
-.hot_post img 
+.hot_post img
 {
    height:100%
    border-radius:8px
 
 }
-	  
+
 .banners:hover .click_left
 {
 	display: block;
@@ -452,8 +452,3 @@ loads();
 ### 最终效果
 
 ![lunboxiaoguo](https://picup.heson10.com/img/lunboxiaoguo.png)
-
-
-
-
-
