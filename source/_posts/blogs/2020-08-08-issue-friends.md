@@ -29,6 +29,8 @@ function loadFriends() {
 document.addEventListener('DOMContentLoaded', function () {
   loadFriends();
 });
+window.onload = function () {
 loadFriends();
+}
 </script>
 {% endraw %}

@@ -140,7 +140,7 @@ function loadExamples() {
 
         let imgTag = '';
         if (screenshot.length > 0) {
-          imgTag = '<div class="img"><img no-lazy src="' + screenshot + '"></div>';
+          imgTag = '<div class="img"><img no-lazy src="' + screenshot + '" onerror="javascript:this.src=\'https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/052.jpg\';"></div>';
         } else {
           imgTag = '<div class="img"><img no-lazy src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/052.jpg"></div>';
         }
@@ -155,6 +155,8 @@ function loadExamples() {
 document.addEventListener('DOMContentLoaded', function () {
   loadExamples();
 });
+window.onload = function () {
 loadExamples();
+}
 </script>
 {% endraw %}
