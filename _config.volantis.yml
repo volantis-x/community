@@ -73,6 +73,7 @@ plugins:
       - https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/033.jpg
       - https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/052.jpg
   aplayer:
+    enable: false
     autoplay: true
     volume: 0.4
     order: random
