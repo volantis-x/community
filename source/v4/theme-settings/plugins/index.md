@@ -4,8 +4,6 @@ title: 第三方插件
 group: docs-latest
 order: 311
 short_title: 3-11 第三方插件
-meta:
-  header: [centertitle]
 sidebar: [docs-latest, toc, repos]
 ---
 

@@ -4,8 +4,6 @@ group: docs-latest
 order: 201
 title: 站点配置文件
 short_title: 2-1 站点配置文件
-meta:
-  header: [centertitle]
 sidebar: [docs-latest, toc, repos]
 ---
 

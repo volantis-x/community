@@ -4,8 +4,6 @@ title: 渲染公式
 group: docs-latest
 order: 404
 short_title: 4-4 渲染公式
-meta:
-  header: [centertitle]
 sidebar: [docs-latest, toc, repos]
 ---
 

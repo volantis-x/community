@@ -4,8 +4,6 @@ group: docs-latest
 order: 501
 title: 文本和段落标签
 short_title: 5-1 文本和段落标签
-meta:
-  header: [centertitle]
 sidebar: [docs-latest, toc, repos]
 mathjax: true
 ---

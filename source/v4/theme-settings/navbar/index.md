@@ -4,8 +4,6 @@ title: 设置网站导航栏
 group: docs-latest
 order: 303
 short_title: 3-3 设置网站导航栏
-meta:
-  header: [centertitle]
 sidebar: [docs-latest, toc, repos]
 ---
 

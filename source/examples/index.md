@@ -18,17 +18,11 @@ sidebar: [docs-latest, toc, repos]
 ## 团队成员的博客
 
 {% sitegroup %}
-
-{% site https://xaoxuu.com, https://i.loli.net/2020/08/21/VuSwWZ1xAeUHEBC.jpg, xaoxuu, 简约风格 %}
-
-{% site https://inkss.cn, https://i.loli.net/2020/08/21/Vzbu3i8fXs6Nh5Y.jpg, inkss,  %}
-
-{% site https://blog.mhuig.top, https://i.loli.net/2020/08/22/d24zpPlhLYWX6D1.png, MHuiG,  %}
-
-{% site https://colsrch.top, https://i.loli.net/2020/08/22/dFRWXm52OVu8qfK.png, Colsrch,  %}
-
-{% site https://blog.lhkstudio.me, https://i.loli.net/2020/08/21/3PmGLCKicnfow1x.png, Linhk1606 %}
-
+{% site xaoxuu, url=https://xaoxuu.com, screenshot=https://i.loli.net/2020/08/21/VuSwWZ1xAeUHEBC.jpg, avatar=https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png, description=简约风格 %}
+{% site inkss, url=https://inkss.cn, screenshot=https://i.loli.net/2020/08/21/Vzbu3i8fXs6Nh5Y.jpg, avatar=https://cdn.jsdelivr.net/gh/inkss/common@master/static/web/avatar.jpg, description=这是一段关于这个网站的描述文字 %}
+{% site MHuiG, url=https://blog.mhuig.top, screenshot=https://i.loli.net/2020/08/22/d24zpPlhLYWX6D1.png, avatar=https://cdn.jsdelivr.net/gh/MHuiG/imgbed@master/data/p.png, description=这是一段关于这个网站的描述文字 %}
+{% site Colsrch, url=https://colsrch.top, screenshot=https://i.loli.net/2020/08/22/dFRWXm52OVu8qfK.png, avatar=https://cdn.jsdelivr.net/gh/Colsrch/images/Colsrch/avatar.jpg, description=这是一段关于这个网站的描述文字 %}
+{% site Linhk1606, url=https://linhk1606.github.io, screenshot=https://i.loli.net/2020/08/21/3PmGLCKicnfow1x.png, avatar=https://i.loli.net/2020/02/09/PN7I5RJfFtA93r2.png, description=这是一段关于这个网站的描述文字 %}
 {% endsitegroup %}
 
 
@@ -132,6 +126,11 @@ function loadExamples() {
         if (screenshot && screenshot.length > 0) {
           screenshot = screenshot[0].replace(/(screenshot:[\s]*|[\r\n]*)/g,'');
         }
+        // get avatar
+        let avatar = issue.body.match(/avatar:[^\n]*\n/);
+        if (avatar && avatar.length > 0) {
+          avatar = avatar[0].replace(/(avatar:[\s]*|[\r\n]*)/g,'');
+        }
         // get desc
         let desc = issue.body.match(/description:[^\n]*\n/);
         if (desc && desc.length > 0) {
@@ -140,12 +139,16 @@ function loadExamples() {
 
         let imgTag = '';
         if (screenshot.length > 0) {
-          imgTag = '<div class="img"><img no-lazy src="' + screenshot + '" onerror="javascript:this.src=\'https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/052.jpg\';"></div>';
+          imgTag = '<div class="img"><img no-lazy src="' + screenshot + '" onerror="javascript:this.src=\'https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/052.jpg\';"/></div>';
         } else {
-          imgTag = '<div class="img"><img no-lazy src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/052.jpg"></div>';
+          imgTag = '<div class="img"><img no-lazy src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/052.jpg"/></div>';
         }
-        let infoTag = "<div class='info'><span class='title'>" + title + "</span></div><span class='desc'>" + desc + "</span>";
-        let cardTag = "<div class='site-card'><a target='_blank' href='" + issue.title + "'>" + imgTag + infoTag + "</a></div>";
+        let infoTag = '<div class="info">';
+        if (avatar && avatar.length > 0) {
+          infoTag += '<img no-lazy src="' + avatar + '" onerror="javascript:this.src=\'https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/052.jpg\';"/>';
+        }
+        infoTag += '<span class="title">' + title + '</span><span class="desc">' + desc + '</span></div>';
+        let cardTag = "<a class='site-card' target='_blank' href='" + issue.title + "'>" + imgTag + infoTag + "</a>";
         $('div.examples .site-card-group.' + lb).append(cardTag);
       }
     }

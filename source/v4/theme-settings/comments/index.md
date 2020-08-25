@@ -4,8 +4,6 @@ title: 选择评论系统
 group: docs-latest
 order: 309
 short_title: 3-9 选择评论系统
-meta:
-  header: [centertitle]
 sidebar: [docs-latest, toc, repos]
 ---
 

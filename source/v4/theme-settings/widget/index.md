@@ -4,8 +4,6 @@ title: 卡片式组件
 group: docs-latest
 order: 308
 short_title: 3-8 卡片式组件
-meta:
-  header: [centertitle]
 sidebar: [docs-latest, toc, repos]
 ---
 

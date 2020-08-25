@@ -4,8 +4,6 @@ group: docs-latest
 order: 601
 title: 进阶设定
 short_title: 6-1 进阶设定
-meta:
-  header: [centertitle]
 sidebar: [docs-latest, toc, repos]
 ---
 

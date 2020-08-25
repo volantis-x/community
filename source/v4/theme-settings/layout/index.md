@@ -4,8 +4,6 @@ title: 设置默认布局
 group: docs-latest
 order: 306
 short_title: 3-6 设置默认布局
-meta:
-  header: [centertitle]
 sidebar: [docs-latest, toc, repos]
 ---
 

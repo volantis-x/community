@@ -4,8 +4,6 @@ title: 页面自定义布局
 group: docs-latest
 order: 403
 short_title: 4-3 页面自定义布局
-meta:
-  header: [centertitle]
 sidebar: [docs-latest, toc, repos]
 ---
 

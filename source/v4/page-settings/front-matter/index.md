@@ -4,8 +4,6 @@ title: front-matter
 group: docs-latest
 order: 402
 short_title: 4-2 front-matter
-meta:
-  header: [centertitle]
 sidebar: [docs-latest, toc, repos]
 ---
 

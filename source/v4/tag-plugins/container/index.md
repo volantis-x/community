@@ -4,8 +4,6 @@ group: docs-latest
 order: 503
 title: 容器类标签
 short_title: 5-3 容器类标签
-meta:
-  header: [centertitle]
 sidebar: [docs-latest, toc, repos]
 mathjax: true
 ---

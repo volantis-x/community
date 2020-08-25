@@ -4,8 +4,6 @@ group: docs-latest
 order: 502
 title: 链接、按钮和菜单标签
 short_title: 5-2 链接、按钮和菜单标签
-meta:
-  header: [centertitle]
 sidebar: [docs-latest, toc, repos]
 mathjax: true
 ---
@@ -54,8 +52,8 @@ mathjax: true
 
 ```
 {% sitegroup %}
-{% site 链接, 截图链接, 标题, 描述（可选） %}
-{% site 链接, 截图链接, 标题, 描述（可选） %}
+{% site 标题, url=链接, screenshot=截图链接, avatar=头像链接（可选）, description=描述（可选） %}
+{% site 标题, url=链接, screenshot=截图链接, avatar=头像链接（可选）, description=描述（可选） %}
 {% endsitegroup %}
 ```
 
@@ -65,11 +63,11 @@ mathjax: true
 
 ```md example.md:
 {% sitegroup %}
-{% site https://xaoxuu.com, https://i.loli.net/2020/08/21/VuSwWZ1xAeUHEBC.jpg, 网站标题, 这是一段关于这个网站的描述文字 %}
-{% site https://inkss.cn, https://i.loli.net/2020/08/21/Vzbu3i8fXs6Nh5Y.jpg, 网站标题, 这是一段关于这个网站的描述文字 %}
-{% site https://blog.mhuig.top, https://i.loli.net/2020/08/21/lF7awfkDuV4eG9t.jpg, 网站标题, 这是一段关于这个网站的描述文字 %}
-{% site https://colsrch.top, https://i.loli.net/2020/08/21/wU7tFN9gEucSHIA.jpg, 网站标题, 这是一段关于这个网站的描述文字 %}
-{% site https://linhk1606.github.io, https://i.loli.net/2020/08/21/xvu9gfJQO2CpbiA.jpg, 网站标题, 这是一段关于这个网站的描述文字 %}
+{% site 网站标题, url=https://xaoxuu.com, screenshot=https://i.loli.net/2020/08/21/VuSwWZ1xAeUHEBC.jpg, avatar=https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png, description=这是一段关于这个网站的描述文字 %}
+{% site 网站标题, url=https://inkss.cn, screenshot=https://i.loli.net/2020/08/21/Vzbu3i8fXs6Nh5Y.jpg, avatar=https://cdn.jsdelivr.net/gh/inkss/common@master/static/web/avatar.jpg, description=这是一段关于这个网站的描述文字 %}
+{% site 网站标题, url=https://blog.mhuig.top, screenshot=https://i.loli.net/2020/08/21/lF7awfkDuV4eG9t.jpg, avatar=https://cdn.jsdelivr.net/gh/MHuiG/imgbed@master/data/p.png, description=这是一段关于这个网站的描述文字 %}
+{% site 网站标题, url=https://colsrch.top, screenshot=https://i.loli.net/2020/08/21/wU7tFN9gEucSHIA.jpg, avatar=https://cdn.jsdelivr.net/gh/Colsrch/images/Colsrch/avatar.jpg, description=这是一段关于这个网站的描述文字 %}
+{% site 网站标题, url=https://linhk1606.github.io, screenshot=https://i.loli.net/2020/08/21/xvu9gfJQO2CpbiA.jpg, avatar=https://i.loli.net/2020/02/09/PN7I5RJfFtA93r2.png, description=这是一段关于这个网站的描述文字 %}
 {% endsitegroup %}
 ```
 
@@ -78,11 +76,11 @@ mathjax: true
 <!-- tab 示例效果 -->
 
 {% sitegroup %}
-{% site https://xaoxuu.com, https://i.loli.net/2020/08/21/VuSwWZ1xAeUHEBC.jpg, 网站标题, 这是一段关于这个网站的描述文字 %}
-{% site https://inkss.cn, https://i.loli.net/2020/08/21/Vzbu3i8fXs6Nh5Y.jpg, 网站标题, 这是一段关于这个网站的描述文字 %}
-{% site https://blog.mhuig.top, https://i.loli.net/2020/08/21/lF7awfkDuV4eG9t.jpg, 网站标题, 这是一段关于这个网站的描述文字 %}
-{% site https://colsrch.top, https://i.loli.net/2020/08/21/wU7tFN9gEucSHIA.jpg, 网站标题, 这是一段关于这个网站的描述文字 %}
-{% site https://linhk1606.github.io, https://i.loli.net/2020/08/21/xvu9gfJQO2CpbiA.jpg, 网站标题, 这是一段关于这个网站的描述文字 %}
+{% site 网站标题, url=https://xaoxuu.com, screenshot=https://i.loli.net/2020/08/21/VuSwWZ1xAeUHEBC.jpg, avatar=https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png, description=这是一段关于这个网站的描述文字 %}
+{% site 网站标题, url=https://inkss.cn, screenshot=https://i.loli.net/2020/08/21/Vzbu3i8fXs6Nh5Y.jpg, avatar=https://cdn.jsdelivr.net/gh/inkss/common@master/static/web/avatar.jpg, description=这是一段关于这个网站的描述文字 %}
+{% site 网站标题, url=https://blog.mhuig.top, screenshot=https://i.loli.net/2020/08/21/lF7awfkDuV4eG9t.jpg, avatar=https://cdn.jsdelivr.net/gh/MHuiG/imgbed@master/data/p.png, description=这是一段关于这个网站的描述文字 %}
+{% site 网站标题, url=https://colsrch.top, screenshot=https://i.loli.net/2020/08/21/wU7tFN9gEucSHIA.jpg, avatar=https://cdn.jsdelivr.net/gh/Colsrch/images/Colsrch/avatar.jpg, description=这是一段关于这个网站的描述文字 %}
+{% site 网站标题, url=https://linhk1606.github.io, screenshot=https://i.loli.net/2020/08/21/xvu9gfJQO2CpbiA.jpg, avatar=https://i.loli.net/2020/02/09/PN7I5RJfFtA93r2.png, description=这是一段关于这个网站的描述文字 %}
 {% endsitegroup %}
 
 <!-- endtab -->

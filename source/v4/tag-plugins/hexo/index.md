@@ -4,8 +4,6 @@ group: docs-latest
 order: 505
 title: Hexo 内置标签
 short_title: 5-5 Hexo 内置标签
-meta:
-  header: [centertitle]
 sidebar: [docs-latest, toc, repos]
 mathjax: true
 ---
@@ -169,5 +167,3 @@ content
 引用这篇文章：{% post_link news/2020-02-22 %}
 ```
 {% endfolding %}
-
-

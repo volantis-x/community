@@ -4,8 +4,6 @@ title: 元数据组件
 group: docs-latest
 order: 307
 short_title: 3-7 元数据组件
-meta:
-  header: [centertitle]
 sidebar: [docs-latest, toc, repos]
 ---
 

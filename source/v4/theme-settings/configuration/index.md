@@ -4,8 +4,6 @@ group: docs-latest
 order: 301
 title: 主题配置文件
 short_title: 3-1 主题配置文件
-meta:
-  header: [centertitle]
 sidebar: [docs-latest, toc, repos]
 ---
 

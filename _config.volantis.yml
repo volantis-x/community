@@ -2,11 +2,11 @@
 navbar:
   menu:
     - name: 开始
-      icon: fas fa-flag faa-tada
+      icon: fad fa-flag faa-tada
       url: /v4/getting-started/
 
     - name: 文档
-      icon: fas fa-book faa-tada
+      icon: fad fa-book faa-tada
       rows:
         - name: 站点配置
           rows:
@@ -64,21 +64,21 @@ navbar:
               url: /v4/advanced-settings/
 
     - name: 帮助
-      icon: fas fa-question-circle faa-tada
+      icon: fad fa-question-circle faa-tada
       url: faqs/
 
     - name: 示例
-      icon: fas fa-play-circle faa-tada
+      icon: fad fa-play-circle faa-tada
       url: examples/
 
 
     - name: 社区
-      icon: fas fa-fan fa-spin
+      icon: fad fa-fan fa-spin
       url: contributors/
 
 
     - name: 更多
-      icon: fas fa-ellipsis-v
+      icon: fad fa-ellipsis-v
       rows:
         - name: 本站源码
           url: https://github.com/volantis-x/volantis-docs/
@@ -241,21 +241,21 @@ sidebar:
       class: group
       display: [desktop, mobile] # [desktop, mobile]
       header:
-        icon: fas fa-list-alt
+        icon: fad fa-list-alt
         title: 文档导航 v2
 
     docs-v3:
       class: group
       display: [desktop, mobile] # [desktop, mobile]
       header:
-        icon: fas fa-list-alt
+        icon: fad fa-list-alt
         title: 文档导航 v3
 
     docs-latest:
       class: group
       display: [desktop, mobile] # [desktop, mobile]
       header:
-        icon: fas fa-book-open
+        icon: fad fa-book
         title: 文档导航 v4.0
 
 
@@ -263,6 +263,11 @@ sidebar:
 site_footer:
   layout: [aplayer, social, source, analytics, copyright]
   copyright: '[Copyright © 2017-2020 Volantis Team](https://github.com/volantis-x/)'
+
+tag_plugins:
+  # {% note text %}
+  note: # style for default note:
+    iconfont: 'Font Awesome 5 Pro'
 
 plugins:
   fontawesome: https://cdn.jsdelivr.net/gh/volantis-x/cdn-fontawesome-pro@master/css/all.min.css

@@ -4,8 +4,6 @@ group: docs-latest
 order: 504
 title: 多媒体标签
 short_title: 5-4 多媒体标签
-meta:
-  header: [centertitle]
 sidebar: [docs-latest, toc, repos]
 mathjax: true
 ---
