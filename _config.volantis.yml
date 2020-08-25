@@ -1,26 +1,99 @@
-style:
-  font_smoothing: true
-  sidebar:
-    effect: [shadow] # [shadow, floatable, blur]
-  body:
-    effect: [shadow] # [shadow, floatable, blur]
-  color:
-    text: '#333'
-    p: '#333'
-  #   site: '#21232F' # Website background color
-  #   site_inner: '#fff' # Text color inside the website background
-  #   site_footer: '#fff' # Footer text color inside the website background
-  #   card: '#333' # Card background color
-  #   text: '#fff' # The color of the text on the card.
-  #   inner: '#333' # Text color inside the button
-  #   block: '#555' # Block color
-  #   inlinecode: '#555' # Inline code color
-  #   codeblock: '#555' # Codeblock color
-  #   p: '#ccc' #
-  fontfamily:
-    iconfont:
-      fontfamily: 'Font Awesome 5 Pro'
 
+navbar:
+  menu:
+    - name: 开始
+      icon: fas fa-flag faa-tada
+      url: /v4/getting-started/
+
+    - name: 文档
+      icon: fas fa-book faa-tada
+      rows:
+        - name: 站点配置
+          rows:
+            - name: 站点配置文件
+              url: /v4/site-settings/configuration/
+        - name: 主题配置
+          rows:
+            - name: 主题配置文件
+              url: /v4/theme-settings/configuration/
+            - name: 自定义主题外观
+              url: /v4/theme-settings/style/
+            - name: 设置网站导航栏
+              url: /v4/theme-settings/navbar/
+            - name: 设置网站页脚
+              url: /v4/theme-settings/footer/
+            - name: 网站与文章封面
+              url: /v4/theme-settings/cover/
+            - name: 设置默认布局
+              url: /v4/theme-settings/layout/
+            - name: 元数据组件
+              url: /v4/theme-settings/meta/
+            - name: 卡片式组件
+              url: /v4/theme-settings/widget/
+            - name: 选择评论系统
+              url: /v4/theme-settings/comments/
+            - name: 站内搜索
+              url: /v4/theme-settings/search/
+            - name: 第三方插件
+              url: /v4/theme-settings/plugins/
+        - name: 页面配置
+          rows:
+            - name: 页面布局模板
+              url: /v4/page-settings/layout/
+            - name: front-matter
+              url: /v4/page-settings/front-matter/
+            - name: 页面自定义布局
+              url: /v4/page-settings/body/
+            - name: 渲染公式
+              url: /v4/page-settings/math/
+        - name: 标签插件
+          rows:
+            - name: 文本和段落标签
+              url: /v4/tag-plugins/text/
+            - name: 链接、按钮和菜单标签
+              url: /v4/tag-plugins/link/
+            - name: 容器类标签
+              url: /v4/tag-plugins/container/
+            - name: 多媒体标签
+              url: /v4/tag-plugins/media/
+            - name: Hexo 内置标签
+              url: /v4/tag-plugins/hexo/
+        - name: 进阶设定
+          rows:
+            - name: 进阶设定
+              url: /v4/advanced-settings/
+
+    - name: 帮助
+      icon: fas fa-question-circle faa-tada
+      url: faqs/
+
+    - name: 示例
+      icon: fas fa-play-circle faa-tada
+      url: examples/
+
+
+    - name: 社区
+      icon: fas fa-fan fa-spin
+      url: contributors/
+
+
+    - name: 更多
+      icon: fas fa-ellipsis-v
+      rows:
+        - name: 本站源码
+          url: https://github.com/volantis-x/volantis-docs/
+        - name: 主题源码
+          url: https://github.com/volantis-x/hexo-theme-volantis/
+        - name: hr
+        - name: 更新日志
+          url: https://github.com/volantis-x/hexo-theme-volantis/releases/
+        - name: 博客文章
+          url: archives/
+        - name: hr
+        - name: 旧版文档 v3
+          url: /v3/getting-started/
+        - name: 旧版文档 v2
+          url: /v2/getting-started/
 
 
 cover:
@@ -57,15 +130,15 @@ article:
     auto_excerpt: false # false, true
     # show readmore button
     readmore: auto # auto, always
-  # 文章详情页面的文章卡片本体布局方案
+  body:
+    meta_library:
+      author:
+        avatar: https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/apple-touch-icon.png
+        name: Volantis Team
+        url: https://github.com/volantis-x/
+      updated:
+        title: '本页文档最后更新于：'
 
-meta:
-  author:
-    avatar: https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/apple-touch-icon.png
-    name: Volantis Team
-    url: https://github.com/volantis-x/
-  updated:
-    title: '本页文档最后更新于：'
 
 comments:
   title: #<i class='fas fa-comments'></i> 用户交流区
@@ -75,7 +148,119 @@ comments:
   disqus:
     shortname: volantis
 
-footer:
+
+sidebar:
+  for_page: [docs-latest]
+  for_post: [toc]
+  widget_library:
+    # 文档导航
+    guide:
+      class: grid
+      display: [desktop, mobile] # [desktop, mobile]
+      header:
+        icon: fas fa-map-signs
+        title: 分类导航
+      fixed: true # 固定宽度
+      rows:
+        - name: 常见问题
+          icon: fas fa-question-circle
+          url: faqs/
+        - name: 示例博客
+          icon: fas fa-play-circle
+          url: examples/
+        - name: 特别感谢
+          icon: fas fa-handshake
+          url: contributors/
+        - name: 测试博文
+          icon: fas fa-file-alt
+          url: archives/
+        - name: 主题源码
+          icon: fas fa-file-code
+          url: https://github.com/volantis-x/hexo-theme-volantis/
+          rel: external nofollow noopener noreferrer
+          target: _blank
+        - name: 更新日志
+          icon: fas fa-tags
+          url: https://github.com/volantis-x/hexo-theme-volantis/releases/
+          rel: external nofollow noopener noreferrer
+          target: _blank
+
+
+    # 项目仓库
+    repos:
+      class: text
+      display: [desktop] # [desktop, mobile]
+      header:
+        icon: fab fa-github
+        title: 点个赞吧
+        url: https://github.com/xaoxuu/
+      content:
+        - "<img style='width:20%' src='https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/qq/抱拳.gif'><img style='width:20%' src='https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/qq/抱拳.gif'><img style='width:20%' src='https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/qq/抱拳.gif'><img style='width:20%' src='https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/qq/抱拳.gif'><img style='width:20%' src='https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/qq/抱拳.gif'>"
+        - "您的赞对我来说很重要，如果您喜欢本主题，希望能够给下面的项目点个赞来支持一下。"
+        - '[<img src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/proj/prohud/logo.png" height="50px">](https://github.com/xaoxuu/ProHUD)'
+        - '[<img src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/proj/valuex/logo.png" height="50px">](https://github.com/xaoxuu/ValueX)'
+        - '[<img src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/proj/inspire/logo.png" height="50px">](https://github.com/xaoxuu/Inspire)'
+
+
+    # qrcode widget
+    qrcode:
+      class: qrcode
+      display: [desktop] # [desktop, mobile]
+      header:
+        icon: fas fa-mobile
+        title: 手机观看
+      height: #64px  # Automatic height if not set
+      fancybox: #true
+      images:
+        - https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/qrcode/github@volantis.png
+
+    help:
+      class: page
+      display: [desktop, mobile]
+      header:
+        icon: fas fa-headset
+        title: 帮助
+      pid: faq
+      content: excerpt # excerpt, more, content
+
+    news:
+      class: list
+      display: [desktop, mobile] # [desktop, mobile]
+      header:
+        icon: fas fa-exclamation-triangle
+        title: 近期公告
+      rows:
+        - name: 关于主题与文档的更新
+          icon: fas fa-info-circle
+          url: https://github.com/volantis-x/hexo-theme-volantis/issues/215
+        - name: 升级小助手
+          icon: fas fa-angle-double-up
+          url: /v3/getting-started/#升级小助手
+
+    docs-v2:
+      class: group
+      display: [desktop, mobile] # [desktop, mobile]
+      header:
+        icon: fas fa-list-alt
+        title: 文档导航 v2
+
+    docs-v3:
+      class: group
+      display: [desktop, mobile] # [desktop, mobile]
+      header:
+        icon: fas fa-list-alt
+        title: 文档导航 v3
+
+    docs-latest:
+      class: group
+      display: [desktop, mobile] # [desktop, mobile]
+      header:
+        icon: fas fa-book-open
+        title: 文档导航 v4.0
+
+
+
+site_footer:
   layout: [aplayer, social, source, analytics, copyright]
   copyright: '[Copyright © 2017-2020 Volantis Team](https://github.com/volantis-x/)'
 
@@ -109,3 +294,26 @@ analytics:
     app_id: GCYDRKI6XRkyC7EuEhJv90ia-MdYXbMMI
     app_key: 4xKBXGBj6BgecU62vff5rJHs
     custom_api_server: # 一般不需要写，除非自定义了 API Server
+
+style:
+  font_smoothing: true
+  sidebar:
+    effect: [shadow] # [shadow, floatable, blur]
+  body:
+    effect: [shadow] # [shadow, floatable, blur]
+  color:
+    text: '#333'
+    p: '#333'
+  #   site: '#21232F' # Website background color
+  #   site_inner: '#fff' # Text color inside the website background
+  #   site_footer: '#fff' # Footer text color inside the website background
+  #   card: '#333' # Card background color
+  #   text: '#fff' # The color of the text on the card.
+  #   inner: '#333' # Text color inside the button
+  #   block: '#555' # Block color
+  #   inlinecode: '#555' # Inline code color
+  #   codeblock: '#555' # Codeblock color
+  #   p: '#ccc' #
+  fontfamily:
+    iconfont:
+      fontfamily: 'Font Awesome 5 Pro'
