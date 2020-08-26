@@ -147,6 +147,9 @@ comments:
   path: /
   disqus:
     shortname: volantis
+  valine:
+    appId: FIKAgh6n0pUM08JXxhJHChVQ-MdYXbMMI
+    appKey: RJGiOYFc1fBvfox4frBPpRzU
 
 
 sidebar:
@@ -306,19 +309,3 @@ style:
     effect: [shadow] # [shadow, floatable, blur]
   body:
     effect: [shadow] # [shadow, floatable, blur]
-  color:
-    text: '#333'
-    p: '#333'
-  #   site: '#21232F' # Website background color
-  #   site_inner: '#fff' # Text color inside the website background
-  #   site_footer: '#fff' # Footer text color inside the website background
-  #   card: '#333' # Card background color
-  #   text: '#fff' # The color of the text on the card.
-  #   inner: '#333' # Text color inside the button
-  #   block: '#555' # Block color
-  #   inlinecode: '#555' # Inline code color
-  #   codeblock: '#555' # Codeblock color
-  #   p: '#ccc' #
-  fontfamily:
-    iconfont:
-      fontfamily: 'Font Awesome 5 Pro'

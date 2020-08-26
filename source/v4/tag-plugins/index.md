@@ -2,8 +2,8 @@
 layout: docs
 group: docs-latest
 order: 501
-title: 标签插件索引
-short_title: 5-1 标签插件索引
+title: 内置标签插件
+short_title: 5-1 内置标签插件
 sidebar: [docs-latest, toc, repos]
 ---
 

@@ -1,4 +1,5 @@
 ---
+layout: friends
 title: 示例博客
 cover: true
 meta:
