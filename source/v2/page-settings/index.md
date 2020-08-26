@@ -331,39 +331,15 @@ music:
 
 ## 显示 meta 标签
 
-文章顶部和底部的日期、分类、更新日期、标签、分享等属于 meta 标签。
-顶部的为 `header`，底部的为 `footer`，取值见主题配置文件中的 meta 库。
+文章顶部和底部的日期、分类、更新日期、标签、分享等属于 meta 标签，默认跟随主题配置文件，可在 front-matter 中关闭。
 
 ```yaml front-matter
 ---
-# 默认的meta信息，文章中没有配置则按照这里的配置来显示，设置为false则不显示
-# 其中，title只在header中有效，music和thumbnail无需在这里设置，文章中有则显示
-# 如果tags放置在meta.header中，那么在post列表中不显示（因为卡片下方已经有了）
-meta:
-  header: [title, author, date, category, counter, top]
-  footer: [updated, tags, share]
----
-```
-像404、关于页面就可以完全隐藏：
-
-```yaml front-matter
----
-meta:
-  header: []
-  footer: []
+top_meta: false
+bottom_meta: false
 ---
 ```
 
-## 居中标题模式
-
-如果标题居中且下方不想显示任何 meta 信息，可以这样设置：
-
-```yaml front-matter
----
-meta:
-  header: [centertitle]
----
-```
 
 ## 标题右边显示缩略图
 
@@ -481,5 +457,3 @@ body: [article]
 body: [comments]
 ---
 ```
-
-

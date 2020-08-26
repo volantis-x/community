@@ -7,24 +7,6 @@ short_title: 4-3 页面自定义布局
 sidebar: [docs-latest, toc, repos]
 ---
 
-## 正文布局
-
-默认是文章+评论：
-```yaml front-matter
----
-body: [article, comments]
----
-```
-
-如果你想把相关文章卡片显示在评论前，可以这样写：
-```yaml front-matter
----
-body: [article, related_posts, comments]
----
-```
-
-如果想全局修改，在主题配置文件中的 `layout.on_page.body` 中设置。
-
 ## 显示迷你音乐播放器
 
 标题右边显示迷你音乐播放器，支持的字段有：`server`、`type`、`id`。
@@ -49,7 +31,6 @@ music:
 ---
 # 默认的meta信息，文章中没有配置则按照这里的配置来显示，设置为false则不显示
 # 其中，title只在header中有效，music和thumbnail无需在这里设置，文章中有则显示
-# 如果tags放置在meta.header中，那么在post列表中不显示（因为卡片下方已经有了）
 meta:
  header: [title, author, date, category, counter, top]
  footer: [updated, tags, share]

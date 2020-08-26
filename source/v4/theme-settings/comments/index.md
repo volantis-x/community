@@ -44,7 +44,7 @@ valine:
 ---
 ```
 
-也可以通过设置 `comment.path` 实现多个页面共用一个评论框。
+也可以通过设置 `valine.path` 实现多个页面共用一个评论框。
 
 ```yaml front-matter
 ---

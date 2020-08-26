@@ -25,7 +25,8 @@ front-matter 是文件最上方以 `---` 分隔的区域，用于指定个别文
 | keywords    | 页面关键词   | String        | -      |
 | description | 页面描述、摘要     | String        | -      |
 | cover | 是否显示封面     | Bool        | true      |
-| meta | 文章或页面的meta信息     | Bool, Array        | theme.layout.*.meta      |
+| top_meta | 是否显示文章或页面顶部的meta信息     | Bool        | true      |
+| bottom_meta | 是否显示文章或页面底部的meta信息     | Bool        | true      |
 | sidebar | 页面侧边栏     | Bool, Array        | theme.layout.*.sidebar      |
 | body | 页面主体元素     | Array        | theme.layout.on_page.body      |
 | mathjax           | 是否渲染公式 | Bool, String  | false  |

@@ -2,11 +2,10 @@
 layout: page
 group: docs-latest
 order: 100
-title: 安装与版本更新
+seo_title: 安装与版本更新
 short_title: 1-1 安装与版本更新
 cover: true
-meta:
-  header: []
+top_meta: false
 sidebar: [docs-latest, toc, repos]
 ---
 

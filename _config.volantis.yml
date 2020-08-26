@@ -144,12 +144,13 @@ comments:
   title: #<i class='fas fa-comments'></i> 用户交流区
   subtitle: #这里仅供用户之间进行交流，有任何疑问请前往GitHub提交Issue。在评论区进行提问将不会收到开发者的任何回复！
   service: disqus
-  path: /
   disqus:
     shortname: volantis
+    path: /
   valine:
     appId: FIKAgh6n0pUM08JXxhJHChVQ-MdYXbMMI
     appKey: RJGiOYFc1fBvfox4frBPpRzU
+    path: /
 
 
 sidebar:
@@ -274,8 +275,6 @@ tag_plugins:
 
 plugins:
   fontawesome: https://cdn.jsdelivr.net/gh/volantis-x/cdn-fontawesome-pro@master/css/all.min.css
-  comment_typing: false
-  busuanzi: false
   backstretch:
     images:               # For personal use only. At your own risk if used for commercial purposes !!!
       - https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/016.jpg
@@ -294,7 +293,7 @@ plugins:
     # id: 5135845906 # for Volantis 3.0
     id: 5062959861 # TOP 30
   darkmodejs:
-    compatible: true
+    enable: true
 
 analytics:
   busuanzi: #https://cdn.jsdelivr.net/gh/volantis-x/cdn-busuanzi@2.3/js/busuanzi.pure.mini.js
