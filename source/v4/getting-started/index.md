@@ -150,14 +150,12 @@ npm i hexo-renderer-stylus
 
 {% timeline %}
 
-{% timenode 2020-08-09 [2.6.6 -> 3.0.0](https://github.com/volantis-x/hexo-theme-volantis/releases/tag/3.0.0) %}
+{% timenode 2020-08-09 [3.0.0 -> 4.0.0](https://github.com/volantis-x/hexo-theme-volantis/releases/tag/4.0.0) %}
 
-1. 如果有 `hexo-lazyload-image` 插件，需要重新安装最新版本并增加设置 `lazyload.isSPA: true` 。
-2. 2.x 版本的 css 和 js 不适用于 3.x 版本，如果使用了 `use_cdn: true` 则需要删除。
-3. 2.x 版本的 `fancybox` 标签在 3.x 版本中被重命名为 `gallery` 。
-4. 2.x 版本的置顶 `top: true` 改为了 `pin: true` 并且同样适用于 `layout: page` 的页面。
-5. 如果使用了 `hexo-offline` 插件，建议卸载，3.0 版本使用了 pjax 服务。
-6. 欢迎补充
+1. 如果安装了懒加载插件，需要卸载原来的懒加载插件。
+2. 主题配置文件配置项全部重新设计，建议重新配置一遍。
+3. layout & meta 相关功能作出重大调整。
+4. 文章列表不支持自定义 meta 了。
 
 {% endtimenode %}
 
