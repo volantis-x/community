@@ -24,3 +24,18 @@ sidebar: [docs-latest, toc, repos]
 - [button](/v4/tag-plugins/button/)
 - [ghcard](/v4/tag-plugins/ghcard/)
 - [site](/v4/tag-plugins/site/)
+
+## 容器类
+
+- [tab](/v4/tag-plugins/tab/)
+- [folding](/v4/tag-plugins/folding/)
+
+
+## 多媒体类
+
+- [行内图片： inlineimage](/v4/tag-plugins/inlineimage/)
+- [单张图片： image](/v4/tag-plugins/image/)
+- [相册、组图： gallery](/v4/tag-plugins/gallery/)
+- [音频： audio](/v4/tag-plugins/audio/)
+- [视频： video](/v4/tag-plugins/video/)
+- [音乐播放器： aplayer](/v4/tag-plugins/aplayer/)
