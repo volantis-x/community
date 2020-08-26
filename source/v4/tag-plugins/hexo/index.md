@@ -1,11 +1,7 @@
 ---
-layout: page
-group: docs-latest
-order: 505
-title: Hexo 内置标签
-short_title: 5-5 Hexo 内置标签
-sidebar: [docs-latest, toc, repos]
-mathjax: true
+layout: docs
+title: 'Hexo 原生支持的标签'
+sidebar: [docs-latest, toc]
 ---
 
 ## 文章摘要和截断
