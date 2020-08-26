@@ -17,3 +17,10 @@ sidebar: [docs-latest, toc, repos]
 - [checkbox](/v4/tag-plugins/checkbox/)
 - [radio](/v4/tag-plugins/radio/)
 - [timeline](/v4/tag-plugins/timeline/)
+
+## 链接、按钮、菜单
+
+- [link](/v4/tag-plugins/link/)
+- [button](/v4/tag-plugins/button/)
+- [ghcard](/v4/tag-plugins/ghcard/)
+- [site](/v4/tag-plugins/site/)
