@@ -39,7 +39,7 @@ comments:
 
 ```yaml front-matter
 ---
-comment:
+valine:
   placeholder: 你觉得xxx怎么样呢？
 ---
 ```
@@ -48,7 +48,7 @@ comment:
 
 ```yaml front-matter
 ---
-comment:
+valine:
   path: /wiki/volantis/
 ---
 ```

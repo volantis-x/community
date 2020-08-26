@@ -146,10 +146,9 @@ sidebar: [grid, toc, tags] # 放置任何你想要显示的侧边栏部件
 
 ## 关闭评论
 
-默认是 `body: [article, comments]`，如果某个页面不要评论，只需要去掉 `comments` 即可。
 ```yaml front-matter
 ---
-body: [article]
+comments: false
 ---
 ```
 
