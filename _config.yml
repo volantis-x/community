@@ -137,7 +137,8 @@ sitemap:
 
 
 # npm install hexo-all-minifier --save
-all_minifier: false
+# all_minifier: false
+
 
 # hexo-autonofollow
 nofollow:
