@@ -25,37 +25,23 @@ music:
 ## 显示 meta 标签
 
 文章顶部和底部的日期、分类、更新日期、标签、分享等属于 meta 标签。
-顶部的为 `header`，底部的为 `footer`，取值见主题配置文件中的 meta 库。
 
 ```yaml front-matter
 ---
-# 默认的meta信息，文章中没有配置则按照这里的配置来显示，设置为false则不显示
-# 其中，title只在header中有效，music和thumbnail无需在这里设置，文章中有则显示
-meta:
- header: [title, author, date, category, counter, top]
- footer: [updated, tags, share]
+top_meta: false
+bottom_meta: false
 ---
 ```
-像404、关于页面就可以完全隐藏：
+如果一个页面没有 title 则不会显示 top_meta ，像404、关于页面就可以完全隐藏：
 
 ```yaml front-matter
 ---
-meta:
- header: []
- footer: []
+seo_title: 关于
+top_meta: false
+bottom_meta: false
 ---
 ```
 
-## 居中标题模式
-
-如果标题居中且下方不想显示任何 meta 信息，可以这样设置：
-
-```yaml front-matter
----
-meta:
- header: [centertitle]
----
-```
 
 ## 标题右边显示缩略图
 
@@ -79,23 +65,6 @@ icons: [fas fa-fire red, fas fa-star green]
 
 {% note info, 可以通过 red / blue / green / yellow / orange / theme / accent 来设置图标的颜色 %}
 
-## meta 区域显示外链按钮
-
-例如当前文档页面的设置：
-
-```yaml front-matter
----
-meta:
- footer: [btns]
-btns:
- repo: https://github.com/volantis-x/hexo-theme-volantis
- bug: https://github.com/volantis-x/hexo-theme-volantis/issues/
- doubt: https://github.com/volantis-x/hexo-theme-volantis/issues/
- idea: https://github.com/volantis-x/hexo-theme-volantis/issues/
----
-```
-
-按钮的颜色、图标、标题在主题配置文件中设置。
 
 ## 是否要显示封面
 
@@ -130,15 +99,5 @@ sidebar: [grid, toc, tags] # 放置任何你想要显示的侧边栏部件
 ```yaml front-matter
 ---
 comments: false
----
-```
-
-## 只显示留言板
-
-如果你想创建一个只有留言板的页面
-
-```yaml front-matter
----
-body: [comments]
 ---
 ```

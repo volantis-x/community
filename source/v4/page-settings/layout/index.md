@@ -13,21 +13,19 @@ sidebar: [docs-latest, toc, repos]
 | :----- | :----  |
 | page | 独立页面 |
 | post | 文章页面 |
+| docs | 文档页面 |
 | category | 分类页面 |
 | tag | 标签页面 |
 | friends | 友链页面 |
 | list | 列表页面 |
 
-## page & post
+## page & post & docs
 
-post 页面布局几乎与 page 页面相同，但是有以下细微区别：
+这三种页面相同，但是有以下细微区别：
 
-- post 文章有 title 时，向下滚动网页，导航栏会向上移出屏幕显出文章标题，而 page 不会。
-- 主题配置中的 `article_footer` 只作用于 `post`，如果 page 也要显示，可以在 front-matter 中设置
-  ```yaml
-  meta:
-    article_footer: [xxx]
-  ```
+- post 文章有 title 时，向下滚动网页，导航栏会向上移出屏幕显出文章标题，而 page 和 docs 不会。
+- post 文章末尾最多可以显示「参考资料」、「相关文章」、「版权标识」、「打赏」四个模块。
+- docs 文章末尾最多可以显示「参考资料」一个模块。
 
 
 除了归档页面是自动生成的，其它独立页面都需要手动创建 md 文件。
@@ -46,10 +44,8 @@ archive_dir: archives
 ```yaml Create file if not exists: source/about/index.md
 ---
 layout: page
-title: 关于
-meta:
-  header: []
-  footer: []
+seo_title: 关于
+bottom_meta: false
 sidebar: []
 valine:
   placeholder: 有什么想对我说的呢？
@@ -137,18 +133,20 @@ links:
 
 ```yaml Create file if not exists: source/404.md
 ---
+cover: true
+robots: noindex,nofollow
+sitemap: false
 layout: page
-title: 404 Not Found
-body: [article, comments]
-meta:
-  header: []
-  footer: []
+seo_title: 404 Not Found
+bottom_meta: false
 sidebar: []
 valine:
   path: /404.html
   placeholder: 请留言告诉我您要访问哪个页面找不到了
 ---
-{% p center huge, 404 %}
+
+{% p logo center huge, 404 %}
 {% p center bold, 很抱歉，您访问的页面不存在 %}
 {% p center small, 可能是输入地址有误或该地址已被删除 %}
+
 ```
