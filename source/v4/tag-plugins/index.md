@@ -7,6 +7,7 @@ short_title: 5-1 内置标签插件
 sidebar: [docs-latest, toc, repos]
 ---
 
+{% p h2, Volantis 专用标签 %}
 
 - 文本类
   - [文本样式标签 #text](/v4/tag-plugins/text/)
@@ -36,7 +37,6 @@ sidebar: [docs-latest, toc, repos]
   - [视频标签 #video](/v4/tag-plugins/video/)
   - [音乐播放器标签 #aplayer](/v4/tag-plugins/aplayer/)
 
-## Hexo 原生支持的标签
-
+{% p h2, Hexo 通用标签 %}
 
 {% link hexo-tag-aplayer, /v4/tag-plugins/hexo/ %}

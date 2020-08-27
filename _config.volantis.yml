@@ -24,12 +24,10 @@ navbar:
               url: /v4/theme-settings/footer/
             - name: 网站与文章封面
               url: /v4/theme-settings/cover/
-            - name: 设置默认布局
+            - name: 文章布局配置
               url: /v4/theme-settings/layout/
-            - name: 元数据组件
-              url: /v4/theme-settings/meta/
-            - name: 卡片式组件
-              url: /v4/theme-settings/widget/
+            - name: 侧边栏配置
+              url: /v4/theme-settings/sidebar/
             - name: 选择评论系统
               url: /v4/theme-settings/comments/
             - name: 站内搜索
@@ -48,16 +46,8 @@ navbar:
               url: /v4/page-settings/math/
         - name: 标签插件
           rows:
-            - name: 文本和段落标签
-              url: /v4/tag-plugins/text/
-            - name: 链接、按钮和菜单标签
-              url: /v4/tag-plugins/link/
-            - name: 容器类标签
-              url: /v4/tag-plugins/container/
-            - name: 多媒体标签
-              url: /v4/tag-plugins/media/
-            - name: Hexo 内置标签
-              url: /v4/tag-plugins/hexo/
+            - name: 内置标签插件
+              url: /v4/tag-plugins/
         - name: 进阶设定
           rows:
             - name: 进阶设定
