@@ -2,8 +2,8 @@
 layout: page
 title: 选择评论系统
 group: docs-latest
-order: 309
-short_title: 3-9 选择评论系统
+order: 308
+short_title: 3-8 选择评论系统
 sidebar: [docs-latest, toc, repos]
 ---
 

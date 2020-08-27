@@ -15,7 +15,7 @@ sidebar: [docs-latest, toc, repos]
 | post | 文章页面 |
 | category | 分类页面 |
 | tag | 标签页面 |
-| links | 友链页面 |
+| friends | 友链页面 |
 | list | 列表页面 |
 
 ## page & post
@@ -96,7 +96,7 @@ index: true
 
 ```yaml Create file if not exists: source/friends/index.md
 ---
-layout: links     # 必须
+layout: friends     # 必须
 title: 我的朋友们   # 可选，这是友链页的标题
 links:
   - group: 分组1

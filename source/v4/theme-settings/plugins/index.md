@@ -2,8 +2,8 @@
 layout: page
 title: 第三方插件
 group: docs-latest
-order: 311
-short_title: 3-11 第三方插件
+order: 310
+short_title: 3-10 第三方插件
 sidebar: [docs-latest, toc, repos]
 ---
 
@@ -14,33 +14,45 @@ Volantis 为丰富的插件提供了兼容性优化。大部分插件您只需�
 ```yaml blog/_config.volantis.yml
 plugins:
   ################ required plugins ################
-
   # jquery
   jquery: https://cdn.jsdelivr.net/npm/jquery@3.5/dist/jquery.min.js
-
-  ################ optional plugins ################
-
   # fontawesome
-  fontawesome: https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13/css/all.min.css
-  # fontawesome animation
-  fontawesome_animation: https://cdn.jsdelivr.net/gh/l-lin/font-awesome-animation/dist/font-awesome-animation.min.css
+  fontawesome: https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.14/css/all.min.css
   # fancybox
   fancybox: https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css
 
+  ################ optional plugins ################
 
   ######## Plugins to improve loading speed:
-  # Preload (The menu's url must end with ‘/’)
-  instant_page: https://cdn.jsdelivr.net/gh/volantis-x/cdn-volantis@2/js/instant_page.js
+
+  # 预加载
+  preload:
+    enable: true
+    service: flying_pages # instant_page, flying_pages
+    instant_page: https://cdn.jsdelivr.net/gh/volantis-x/cdn-volantis@2/js/instant_page.js
+    flying_pages: https://cdn.jsdelivr.net/gh/gijo-varghese/flying-pages@2.1.2/flying-pages.min.js
+
+  # 图片懒加载
+  # https://www.npmjs.com/package/vanilla-lazyload
+  lazyload:
+    enable: true
+    js: https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.1.0/dist/lazyload.min.js
+    onlypost: false
+    loadingImg: # https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/placeholder/c617bfd2497fcea598e621413e315c368f8d8e.svg
+    blurIn: true # 模糊加载效果 （loadingImg为空时有效）
 
   ######## Plugins to optimize the experience:
+
   # highlight.js
   highlightjs:
+    enable: #true # Please set hexo.config.highlight.enable = false !!!
     js: https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js
     css: https://cdn.jsdelivr.net/npm/highlight.js@9.18.1/styles/solarized-light.css
     # more: https://www.jsdelivr.com/package/npm/highlight.js?path=styles
 
   # https://scrollrevealjs.org/api/reveal.html
   scrollreveal:
+    enable: #true
     js: https://cdn.jsdelivr.net/npm/scrollreveal@4.0.6/dist/scrollreveal.min.js
     distance: 32px
     duration: 800 # ms
@@ -48,31 +60,40 @@ plugins:
     scale: 1 # 0.1~1
 
   # Codeblock Copy Button
-  clipboard: https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js
+  clipboard:
+    enable: true
+    js: https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js
 
   ######## Plugins for SEO:
-  # Traffic statistics (very slow loading)
-  busuanzi: https://cdn.jsdelivr.net/gh/volantis-x/cdn-busuanzi@2.3/js/busuanzi.pure.mini.js
 
-  # npm i --save hexo-wordcount
-  wordcount: #true
+  # npm i hexo-wordcount
+  wordcount:
+    enable: #true
 
   ######## Plugins for ...
   # Button Ripple Effect
   nodewaves:
+    enable: #true
     css: https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.css
     js: https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.js
 
+  # fontawesome animation
+  fontawesome_animation:
+    enable: #true
+    css: https://cdn.jsdelivr.net/gh/l-lin/font-awesome-animation/dist/font-awesome-animation.min.css
+
   # Typing Effects
-  comment_typing: #https://cdn.jsdelivr.net/gh/volantis-x/cdn-volantis@2/js/comment_typing.js
+  comment_typing:
+    enable: #true
+    js: https://cdn.jsdelivr.net/gh/volantis-x/cdn-volantis@2/js/comment_typing.js
 
   # Slide Background
   backstretch:
-    enable: true
+    enable: #true
     js: https://cdn.jsdelivr.net/npm/jquery-backstretch@2.1.18/jquery.backstretch.min.js
     position: cover       # cover: sticky on the cover.   fixed: Fixed as background for the site.
     shuffle: true         # shuffle playlist
-    duration: 20000       # Duration (ms)
+    duration: 10000       # Duration (ms)
     fade: 1500            # fade duration (ms) (Not more than 1500)
     images:               # For personal use only. At your own risk if used for commercial purposes !!!
       - https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/001.jpg
@@ -100,11 +121,10 @@ plugins:
   # APlayer is only available in mainland China.
   # APlayer config: https://github.com/metowolf/MetingJS
   aplayer:
-    enable: true
+    enable: #true
     js:
       - https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.js
       - https://cdn.jsdelivr.net/npm/meting@2.0/dist/Meting.min.js
-      - js/aplayer.js
     # Required
     server: netease   # netease, tencent, kugou, xiami, baidu
     type: playlist    # song, playlist, album, search, artist
@@ -124,13 +144,14 @@ plugins:
     cacheBust: false     # When set to true, Pjax appends a timestamp  to skip the browser cache.
     animation: nprogress # nprogress, circle
     banUrl:              # 被屏蔽的 url 地址将不启用 pjax 跳转，可以在控制台下使用 window.location.pathname 获取
-      # - '/about/index.html'
+      # - /artitalk/     # artitalk 不支持 pjax
+
 
   # Artitalk https://artitalk.js.org
   # 配置过程请参考：https://artitalk.js.org/doc.html
   # 除appID和appKEY外均为选填项
-  Artitalk:
-    enable: false # true为开启，false为关闭
+  artitalk:
+    # Set `layout: artitalk` to enable in page
     appID: ogP8qj3veMh0LFpFWMPOyF0X-MdYXbMMI # your appID
     appKEY: nHXLd3N3Jgh460t2iRQKWAtr # your appKEY
     # severurl:  #leancloud绑定的安全域名，使用国际版的话不需要填写
@@ -148,19 +169,15 @@ plugins:
   # https://darkmodejs.learn.uno
   # 暗黑模式样式：https://github.com/volantis-x/hexo-theme-volantis/blob/master/source/css/_third-party/darkmode.styl
   darkmodejs:
-    enable: false
+    enable: #true
     js: https://cdn.jsdelivr.net/npm/darkmode-js@1.5/lib/darkmode-js.min.js
-    bottom: 32px
-    right: unset
-    left: 16px
-    time: 0s
-    mixColor: '#f4f4f4'
-    backgroundColor: '#f4f4f4'
-    buttonColorDark: '#100f2c'
-    buttonColorLight: '#f4f4f4'
-    saveInCookies: true
-    label: 🌓
-    autoMatchOsTheme: true
+    button: # button 使用默认或自行开发
+      enable: true
+      left: '16px'
+      bottom: '32px'
+      buttonDark: '#333'
+      buttonLight: '#ddd'
+    compatible: true # 卡片兼容性处理，如果未发现卡片出现兼容问题设置为false
 ```
 
 

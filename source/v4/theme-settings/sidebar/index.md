@@ -1,94 +1,116 @@
 ---
 layout: page
-title: 卡片式组件
+title: 侧边栏配置
 group: docs-latest
-order: 308
-short_title: 3-8 卡片式组件
+order: 307
+short_title: 3-7 侧边栏配置
 sidebar: [docs-latest, toc, repos]
 ---
 
-<u>widget</u> 即小部件，大部分小部件都可以放置在侧边栏，一部分已经为正文区域显示做了优化，还有一部分只可以放置在文章页脚部分。与 meta 库不同的是：除了现有的 widget ，您可以很轻易地创建自己的 widget ，然后放在需要的地方。此外，您还可以将 widget 写在单独的文件中。
+侧边栏小组件与 meta 库不同的是：除了现有的 widget ，您可以很轻易地创建自己的 widget ，然后放在需要的地方。此外，您还可以将 widget 写在单独的文件中。
 
 {% folding 查看所有相关配置 %}
 
 ```yaml blog/_config.volantis.yml
-widget:
-  # The following can be written in `blog/source/_data/widget.yml`
-  # ---------------------------------------
-  # blogger info widget
-  blogger:
-    class: blogger
-    display: [desktop] # [desktop, mobile]
-    avatar: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png
-    title:
-    subtitle:
-    jinrishici: true # Poetry Today. You can set a string, and it will be displayed when loading fails.
-    social: true
-  # ---------------------------------------
-  # toc widget (valid only in articles)
-  toc:
-    class: toc
-    display: [desktop, mobile] # [desktop, mobile]
-    header:
-      icon: fas fa-list
-      title: 本文目录
-    list_number: false
-    min_depth: 2
-    max_depth: 5
-  # ---------------------------------------
-  # category widget
-  category:
-    class: category
-    display: [desktop] # [desktop, mobile]
-    header:
-      icon: fas fa-folder-open
-      title: 文章分类
-      url: /blog/categories/
-  # ---------------------------------------
-  # tagcloud widget
-  tagcloud:
-    class: tagcloud
-    display: [desktop] # [desktop, mobile]
-    header:
-      icon: fas fa-tags
-      title: 热门标签
-      url: /blog/tags/
-    min_font: 14
-    max_font: 24
-    color: true
-    start_color: '#999'
-    end_color: '#555'
-  # ---------------------------------------
-  # related posts widget
-  related_posts:
-    class: related_posts # npm i -S hexo-related-popular-posts
-    display: [desktop, mobile] # [desktop, mobile]
-    header:
-      icon: fas fa-bookmark
-      title: 相关文章
-    max_count: 5
-  # ---------------------------------------
-  # copyright widget (valid only in articles)
-  copyright:
-    class: copyright
-    display: [desktop, mobile] # [desktop, mobile]
-    blockquote: true
-    permalink: '本文永久链接是：'
-    content:
-      - '博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议'
-      - permalink
-  # ---------------------------------------
-  # qrcode widget
-  donate:
-    class: qrcode
-    display: [desktop, mobile] # [desktop, mobile]
-    height: 64px  # Automatic height if not set
-    fancybox: true
-    images:
-      - https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/qrcode/github@volantis.png
-      - https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/qrcode/github@volantis.png
-  # You can add your own widget here or 'blog/source/_data/widget.yml'
-  # class: text, list, grid, qrcode, page, ... see more at https://volantis.js.org/
+sidebar:
+  # 主页、分类、归档等独立页面
+  for_page: [blogger, category, tagcloud, qrcode]
+  # layout: docs/post 这类文章页面
+  for_post: [toc]
+  # 侧边栏组件库
+  widget_library:
+    # ---------------------------------------
+    # blogger info widget
+    blogger:
+      class: blogger
+      display: [desktop, mobile] # [desktop, mobile]
+      avatar: https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-NavBar@3x.png
+      shape: rectangle # circle, rectangle
+      url: /about/
+      title:
+      subtitle:
+      jinrishici: true # Poetry Today. You can set a string, and it will be displayed when loading fails.
+      social: true
+    # ---------------------------------------
+    # toc widget (valid only in articles)
+    toc:
+      class: toc
+      display: [desktop, mobile] # [desktop, mobile]
+      header:
+        icon: fas fa-list
+        title: 本文目录
+      list_number: false
+      min_depth: 2
+      max_depth: 5
+    # ---------------------------------------
+    # category widget
+    category:
+      class: category
+      display: [desktop] # [desktop, mobile]
+      header:
+        icon: fas fa-folder-open
+        title: 文章分类
+        url: /blog/categories/
+    # ---------------------------------------
+    # tagcloud widget
+    tagcloud:
+      class: tagcloud
+      display: [desktop, mobile] # [desktop, mobile]
+      header:
+        icon: fas fa-tags
+        title: 热门标签
+        url: /blog/tags/
+      min_font: 14
+      max_font: 24
+      color: true
+      start_color: '#999'
+      end_color: '#555'
+
+    # ---------------------------------------
+    # qrcode widget
+    donate:
+      class: qrcode
+      display: [desktop, mobile] # [desktop, mobile]
+      height: 64px  # Automatic height if not set
+      fancybox: true
+      images:
+        - https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/qrcode/github@volantis.png
+        - https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/qrcode/github@volantis.png
+    # ---------------------------------------
+    # webinfo widget
+    webinfo:
+      class: webinfo
+      display: [desktop]
+      header:
+        icon: fas fa-award
+        title: 站点信息
+      type:
+        article:
+          enable: true
+          text: '文章数目：'
+          unit: '篇'
+        runtime:
+          enable: true
+          data: '2020/01/01'    # 填写建站日期
+          text: '已运行时间：'
+          unit: '天'
+        wordcount:
+          enable: true
+          text: '本站总字数：'   # 需要启用 wordcount
+          unit: '字'
+        siteuv:
+          enable: true
+          text: '本站访客数：'   # 需要启用 busuanzi
+          unit: '人'
+        sitepv:
+          enable: true
+          text: '本站总访问量：' # 需要启用 busuanzi
+          unit: '次'
+        lastupd:
+          enable: true
+          friendlyShow: true    # 更友好的时间显示
+          text: '最后活动时间：'
+          unit: '日'
 ```
 {% endfolding %}
 
@@ -97,7 +119,7 @@ widget:
 ```yaml
 小部件名:
   class: 小部件类别
-  display: [小部件在桌面端显示, 小部件在移动设备显示]
+  display: [小部件在桌面端是否显示, 小部件在移动设备是否显示]
 ```
 
 ## 博主信息部件
@@ -156,34 +178,6 @@ tagcloud:
 ```
 这个部件可以直接显示所有文章的标签，如果您希望有一个独立的页面来展示，需要自己创建一个文件，具体操作在「页面」部分文档中。
 
-## 相关文章部件
-```yaml blog/_config.volantis.yml
-related_posts:
-  class: related_posts # npm i -S hexo-related-popular-posts
-  display: [desktop, mobile] # [desktop, mobile]
-  header:
-    icon: fas fa-bookmark
-    title: 相关文章
-  max_count: 5
-```
-这个小部件建议放置在文章页脚，要使用这个部件，您需要安装插件：
-```
-npm i -S hexo-related-popular-posts
-```
-{% note warning, 值得注意的是，开启了这个功能之后，每次修改文章内容包括 `front-matter` 之后，都需要重新 `hexo s`。 %}
-
-## 文章版权部件
-```yaml blog/_config.volantis.yml
-copyright:
-  class: copyright
-  display: [desktop, mobile] # [desktop, mobile]
-  blockquote: true
-  permalink: '本文永久链接是：'
-  content:
-    - '博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议'
-    - permalink
-```
-这个部件<u>只可以</u>放置在文章页脚。
 
 ## 二维码部件
 ```yaml blog/_config.volantis.yml
@@ -231,26 +225,6 @@ wiki-hexo-theme:
       url: /wiki/resume/
 ```
 您可以创建用于展示任何链接列表的列表部件。列表的 `rows` 中的每一项支持的属性有： `name`、`url`、`icon`、`img`、`avatar`，其中 `img` 是方形图片的链接，`avatar` 是圆形图片的链接。
-
-### 参考资料
-
-这个部件的布局继承自 list 部件，用于展示文章的参考资料。请将您的 Volantis 升级至 <u>2.5</u> 版本以上使用。
-
-```yaml blog/_config.volantis.yml
-references:
-  class: references # is subclass of list
-  display: [desktop, mobile] # [desktop, mobile]
-  header:
-    icon: fas fa-quote-left
-    title: 参考资料
-```
-
-在文章的 front-matter 中设置：
-```yaml front-matter
-references:
-  - name: Apple Developer Documentation
-    url: https://developer.apple.com/documentation/
-```
 
 ### 组索引
 

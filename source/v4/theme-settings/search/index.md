@@ -2,8 +2,8 @@
 layout: page
 title: 站内搜索
 group: docs-latest
-order: 310
-short_title: 3-10 站内搜索
+order: 309
+short_title: 3-9 站内搜索
 sidebar: [docs-latest, toc, repos]
 ---
 

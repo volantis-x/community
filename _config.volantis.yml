@@ -97,7 +97,7 @@ navbar:
 
 
 cover:
-  use_for: docs # docs, blog
+  height_scheme: full # full, half
   background: https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/052.jpg
   features:
     - name: 文档

@@ -9,7 +9,7 @@ sidebar: [docs-latest, toc, repos]
 
 您通过 `layout` 可以自由布局网站页脚内容 `aplayer`, `social`, `license`, `info`, `copyright`。
 ```yaml blog/_config.volantis.yml
-footer:
+site_footer:
   # layout of footer: [aplayer, social, license, info, copyright]
   layout: [aplayer, social, license, info, copyright]
   social:
@@ -27,7 +27,7 @@ footer:
 ```
 其中，`aplayer` 需要在插件部分设置中启用。您可以新增文字属性，用于展示其它文字信息，例如：
 ```yaml blog/_config.volantis.yml
-footer:
+site_footer:
   layout: [..., br, hello, ...]
   ...
   # You can add your own property here. (Support markdown, for example: br: '<br>')
