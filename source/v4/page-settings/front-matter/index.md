@@ -36,29 +36,34 @@ front-matter 是文件最上方以 `---` 分隔的区域，用于指定个别文
 
 `layout:post` 时特有的字段：
 
+{% table %}
 | 字段              | 含义         | 值类型        | 默认值 |
 | :----------------- | :------------ | :------------- | :------ |
 | author            | 文章作者     | [Object]        | config.author      |
 | categories        | 分类         | String, Array | -      |
 | tags               | 标签         | String, Array | -      |
 | toc               | 是否生成目录 | Bool          | true   |
+{% endtable %}
 
 author
 
+{% table %}
 | 字段              | 含义         | 值类型        | 默认值 |
 | :----------------- | :------------ | :------------- | :------ |
 | name            | 作者名     | String        | config.author      |
 | avatar        | 头像         | String | config.avatar      |
 | url               | 链接         | String | config.url      |
+{% endtable %}
 
 music
 
+{% table %}
 | 字段              | 是否必须         | 值类型      |
 | :----------------- | :------------ | :----------------- |
 | server            | 是     | netease, tencent, kugou, xiami, baidu           |
 | type        | 是         | song, playlist, album, search, artist  |
 | id               | 是         | song id / playlist id / album id / search keyword   |
-
+{% endtable %}
 
 ### 文章置顶
 

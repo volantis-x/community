@@ -9,6 +9,7 @@ sidebar: [docs-latest, toc, repos]
 
 ## 布局模板
 
+{% table %}
 | 取值  | 含义  |
 | :----- | :----  |
 | page | 独立页面 |
@@ -18,6 +19,7 @@ sidebar: [docs-latest, toc, repos]
 | tag | 标签页面 |
 | friends | 友链页面 |
 | list | 列表页面 |
+{% endtable %}
 
 ## page & post & docs
 
