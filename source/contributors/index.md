@@ -53,12 +53,6 @@ music:
 
 如果您有一个好点子或者解决了这里没有解决的问题，欢迎去 [GitHub](https://github.com/volantis-x/hexo-theme-volantis/) 贡献一下代码。👏
 
-## 维护官方网站
-
-如果您发现文档中有错误，或者遗漏内容，欢迎补充和纠正。👏
-
-{% btn regular, 文档源码, https://github.com/volantis-x/volantis-docs/, fab fa-github %}
-
 ## 发布与分享文章
 
 如果您有与 Hexo 博客搭建相关的原创文章，可以转载到 Volantis 官网，示例如下：
@@ -74,13 +68,20 @@ author:
   url: https://inkss.cn
 link: https://inkss.cn/article/other/76993423.html
 description: 本篇文章记录了我对 Volantis 主题做 Pjax 兼容的种种，大抵算是种记录吧~
+headimg: # 可以设置文章头图
 ---
 ```
 
-要求：
-
+{% noteblock %}
+**要求**
 1. 文章存放在 `_posts/blogs/` 目录中，且文件名格式为 `年-月-日-文章主题`。
 2. 必须是原创文章，摘要部分不要太长。
+{% endnoteblock %}
+
+<br>
+
+{% link 开始行动吧, https://github.com/volantis-x/volantis-docs/tree/master/source/_posts/blogs, https://cdn.jsdelivr.net/gh/volantis-x/cdn-org@1.1.3/icon/ui-interface-21/plus.svg  %}
+
 
 ## 可供交流的渠道
 
