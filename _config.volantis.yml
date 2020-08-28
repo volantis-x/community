@@ -3,7 +3,7 @@ navbar:
   menu:
     - name: 开始
       icon: fad fa-flag faa-tada
-      url: /v4/getting-started/
+      url: https://xaoxuu.com/wiki/volantis/
 
     - name: 文档
       icon: fad fa-book faa-tada
@@ -100,9 +100,19 @@ comments:
 
 
 sidebar:
-  for_page: [docs-latest]
+  for_page: [blogger, dv4, category, tagcloud]
   for_post: [toc]
   widget_library:
+    dv4:
+      class: list
+      display: [desktop, mobile] # [desktop, mobile]
+      header:
+        icon: fas fa-map-signs
+        title: 文档导航
+      rows:
+        - name: 文档 v4
+          icon: fa fa-book
+          url: https://xaoxuu.com/wiki/volantis/
     # 文档导航
     guide:
       class: grid
