@@ -4,10 +4,12 @@ navbar:
     - name: 开始
       icon: fad fa-flag faa-tada
       url: https://xaoxuu.com/wiki/volantis/
+      target: _self
 
     - name: 文档
       icon: fad fa-book faa-tada
       url: https://xaoxuu.com/wiki/volantis/
+      target: _self
 
     - name: 帮助
       icon: fad fa-question-circle faa-tada
@@ -49,6 +51,7 @@ cover:
     - name: 文档
       img: https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f5c3.svg
       url: https://xaoxuu.com/wiki/volantis/
+      target: _self
     - name: 帮助
       img: https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f516.svg
       url: faqs/
@@ -64,6 +67,7 @@ cover:
     - name: 源码
       img: https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f9ec.svg
       url: https://github.com/volantis-x/hexo-theme-volantis/
+      target: _self
 
 article:
   preview:
@@ -100,19 +104,31 @@ comments:
 
 
 sidebar:
-  for_page: [blogger, dv4, category, tagcloud]
+  for_page: [blogger, docs4cn, post, category, tagcloud]
   for_post: [toc]
   widget_library:
-    dv4:
+    docs4cn:
       class: list
       display: [desktop, mobile] # [desktop, mobile]
       header:
         icon: fas fa-map-signs
         title: 文档导航
       rows:
-        - name: 文档 v4
+        - name: 最新中文文档 v4
           icon: fa fa-book
           url: https://xaoxuu.com/wiki/volantis/
+          target: _self
+        - name: 旧版中文文档 v3
+          icon: fa fa-book
+          url: /v3/getting-started/
+    post:
+      class: text
+      display: [desktop, mobile] # [desktop, mobile]
+      header:
+        icon: fas fa-plus
+        title: 社区活动
+      content:
+        - '**如何让自己的文章收录到这里？**<br>官方网站是开源的，只要您的文章与 Hexo 博客搭建相关，就可以自助进行收录，详细的操作步骤请见：「[**发布与分享文章**](/contributors/#发布与分享文章)」。'
     # 文档导航
     guide:
       class: grid
@@ -144,22 +160,6 @@ sidebar:
           url: https://github.com/volantis-x/hexo-theme-volantis/releases/
           rel: external nofollow noopener noreferrer
           target: _blank
-
-
-    # 项目仓库
-    repos:
-      class: text
-      display: [desktop] # [desktop, mobile]
-      header:
-        icon: fab fa-github
-        title: 点个赞吧
-        url: https://github.com/xaoxuu/
-      content:
-        - "<img style='width:20%' src='https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/qq/抱拳.gif'><img style='width:20%' src='https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/qq/抱拳.gif'><img style='width:20%' src='https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/qq/抱拳.gif'><img style='width:20%' src='https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/qq/抱拳.gif'><img style='width:20%' src='https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/qq/抱拳.gif'>"
-        - "您的赞对我来说很重要，如果您喜欢本主题，希望能够给下面的项目点个赞来支持一下。"
-        - '[<img src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/proj/prohud/logo.png" height="50px">](https://github.com/xaoxuu/ProHUD)'
-        - '[<img src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/proj/valuex/logo.png" height="50px">](https://github.com/xaoxuu/ValueX)'
-        - '[<img src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/proj/inspire/logo.png" height="50px">](https://github.com/xaoxuu/Inspire)'
 
 
     # qrcode widget

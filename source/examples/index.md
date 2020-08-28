@@ -1,10 +1,8 @@
 ---
 layout: friends
-title: 示例博客
+seo_title: 示例博客
 cover: true
-meta:
-  header: []
-sidebar: [docs-latest, toc, repos]
+sidebar: []
 
 ---
 

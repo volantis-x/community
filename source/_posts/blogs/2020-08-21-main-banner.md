@@ -2,6 +2,7 @@
 title: 给 Hexo Volantis 主题添加图片轮播功能
 date: 2020-08-21
 updated: 2020-08-22
+categories: [进阶玩法]
 author:
   name: heson
   avatar: https://cdn.jsdelivr.net/gh/heson525/pic@master/pic/avatar03.png
