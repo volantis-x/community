@@ -7,51 +7,7 @@ navbar:
 
     - name: 文档
       icon: fad fa-book faa-tada
-      rows:
-        - name: 站点配置
-          rows:
-            - name: 站点配置文件
-              url: /v4/site-settings/configuration/
-        - name: 主题配置
-          rows:
-            - name: 主题配置文件
-              url: /v4/theme-settings/configuration/
-            - name: 自定义主题外观
-              url: /v4/theme-settings/style/
-            - name: 设置网站导航栏
-              url: /v4/theme-settings/navbar/
-            - name: 设置网站页脚
-              url: /v4/theme-settings/footer/
-            - name: 网站与文章封面
-              url: /v4/theme-settings/cover/
-            - name: 文章布局配置
-              url: /v4/theme-settings/layout/
-            - name: 侧边栏配置
-              url: /v4/theme-settings/sidebar/
-            - name: 选择评论系统
-              url: /v4/theme-settings/comments/
-            - name: 站内搜索
-              url: /v4/theme-settings/search/
-            - name: 第三方插件
-              url: /v4/theme-settings/plugins/
-        - name: 页面配置
-          rows:
-            - name: 页面布局模板
-              url: /v4/page-settings/layout/
-            - name: front-matter
-              url: /v4/page-settings/front-matter/
-            - name: 页面自定义布局
-              url: /v4/page-settings/body/
-            - name: 渲染公式
-              url: /v4/page-settings/math/
-        - name: 标签插件
-          rows:
-            - name: 内置标签插件
-              url: /v4/tag-plugins/
-        - name: 进阶设定
-          rows:
-            - name: 进阶设定
-              url: /v4/advanced-settings/
+      url: https://xaoxuu.com/wiki/volantis/
 
     - name: 帮助
       icon: fad fa-question-circle faa-tada
@@ -92,7 +48,7 @@ cover:
   features:
     - name: 文档
       img: https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f5c3.svg
-      url: /v4/getting-started/
+      url: https://xaoxuu.com/wiki/volantis/
     - name: 帮助
       img: https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f516.svg
       url: faqs/
