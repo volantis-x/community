@@ -11,19 +11,17 @@ navbar:
       url: https://xaoxuu.com/wiki/volantis/
       target: _self
 
-    - name: 帮助
-      icon: fad fa-question-circle faa-tada
-      url: faqs/
-
     - name: 示例
       icon: fad fa-play-circle faa-tada
       url: examples/
 
+    - name: 帮助
+      icon: fad fa-question-circle faa-tada
+      url: faqs/
 
     - name: 社区
       icon: fad fa-fan fa-spin
       url: contributors/
-
 
     - name: 更多
       icon: fad fa-ellipsis-v
@@ -45,24 +43,29 @@ navbar:
 
 
 cover:
-  height_scheme: full # full, half
+  height_scheme: half # full, half
+  title: 'Volantis'
+  subtitle: '开源社区主页'
   background: https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/052.jpg
   features:
+    - name: 文章
+      img: https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f4f0.svg
+      url: /
     - name: 文档
-      img: https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f5c3.svg
+      img: https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f516.svg
       url: https://xaoxuu.com/wiki/volantis/
       target: _self
-    - name: 帮助
-      img: https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f516.svg
-      url: faqs/
     - name: 示例
       img: https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f396.svg
       url: /examples/
-    - name: 社区
-      img: https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f389.svg
+    - name: 帮助
+      img: https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f4ac.svg
+      url: faqs/
+    - name: 团队
+      img: https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f9e9.svg
       url: /contributors/
-    - name: 博客
-      img: https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f4f0.svg
+    - name: 归档
+      img: https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f5c3.svg
       url: /archives/
     - name: 源码
       img: https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f9ec.svg
@@ -104,29 +107,16 @@ comments:
 
 
 sidebar:
-  for_page: [blogger, docs4cn, post, category, tagcloud]
+  for_page: [post, category, tagcloud]
   for_post: [toc]
   widget_library:
-    docs4cn:
-      class: list
-      display: [desktop, mobile] # [desktop, mobile]
-      header:
-        icon: fas fa-map-signs
-        title: 文档导航
-      rows:
-        - name: 最新中文文档 v4
-          icon: fa fa-book
-          url: https://xaoxuu.com/wiki/volantis/
-          target: _self
-        - name: 旧版中文文档 v3
-          icon: fa fa-book
-          url: /v3/getting-started/
     post:
       class: text
       display: [desktop, mobile] # [desktop, mobile]
       header:
         icon: fas fa-plus
         title: 社区活动
+        url: /contributors/
       content:
         - '**如何让自己的文章收录到这里？**<br>官方网站是开源的，只要您的文章与 Hexo 博客搭建相关，就可以自助进行收录，详细的操作步骤请见：「[**发布与分享文章**](/contributors/#发布与分享文章)」。'
     # 文档导航

@@ -21,22 +21,20 @@ sidebar: []
 
 如果不懂请自行搜索关键词：<u>fork 更新</u>
 
-{% folding open, 实用小技巧 %}
+{% noteblock idea, 实用小技巧 %}
 
 所有需要写在主题配置文件中的配置都可以写在站点配置文件的 `theme_config:` 中，在 {% u Hexo 5.0 %} 后，还可以写在 `_config.volantis.yml` 文件中，详见 Hexo 官方文档：
-{% link 覆盖主题配置, https://hexo.io/zh-cn/docs/configuration#%E8%A6%86%E7%9B%96%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE, https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/logo/hexo.jpg %}
+{% link 覆盖主题配置, https://hexo.io/zh-cn/docs/configuration#%E8%A6%86%E7%9B%96%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE %}
 
 也可以直接查看本站源码中站点配置文件的写法：[_config.volantis.yml](https://github.com/volantis-x/volantis-docs/blob/master/_config.volantis.yml)
 
-{% endfolding %}
+{% endnoteblock %}
 
 ## 无法成功运行本地预览
 
-可能是没有安装依赖，请按照「开始」页面中的步骤进行安装，并安装所需依赖。
-
-如果开启了某些第三方服务，请查看文档中是否要求安装插件。
-
-如果报错信息有 `lastIndex`，你可以尝试把博客根目录配置文件中找到 `highlight`，并将 `auto_detect` 设置为 `false`。
+- 可能是没有安装依赖，请按照「开始」页面中的步骤进行安装，并安装所需依赖。
+- 如果开启了某些第三方服务，请查看文档中是否要求安装插件。
+- 如果报错信息有 `lastIndex`，你可以尝试把博客根目录配置文件中找到 `highlight`，并将 `auto_detect` 设置为 `false`。
 
 
 ## 主题配置修改没有生效
