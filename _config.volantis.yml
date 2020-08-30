@@ -229,7 +229,7 @@ plugins:
       - https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/033.jpg
       - https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/052.jpg
   aplayer:
-    # enable: false
+    enable: true
     autoplay: true
     volume: 0.4
     order: random
@@ -254,3 +254,7 @@ style:
     effect: [shadow] # [shadow, floatable, blur]
   body:
     effect: [shadow] # [shadow, floatable, blur]
+
+rightmenu:
+  enable: true
+  
