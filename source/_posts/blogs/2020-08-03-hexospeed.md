@@ -2,6 +2,7 @@
 title: 博客访问速度提升：最佳线路分流
 date: 2020-08-31
 updated: 2020-08-31
+categories: [进阶玩法]
 author:
   name: Colsrch
   avatar: https://cdn.jsdelivr.net/gh/Colsrch/images/Colsrch/avatar.jpg
