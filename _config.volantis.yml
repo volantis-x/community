@@ -238,6 +238,8 @@ tag_plugins:
     iconfont: 'Font Awesome 5 Pro'
 
 plugins:
+  issues:
+    enable: true
   fontawesome: https://cdn.jsdelivr.net/gh/volantis-x/cdn-fontawesome-pro@master/css/all.min.css
   backstretch:
     images:               # For personal use only. At your own risk if used for commercial purposes !!!
