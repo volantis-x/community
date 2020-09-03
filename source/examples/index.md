@@ -157,8 +157,6 @@ function loadExamples() {
 document.addEventListener('DOMContentLoaded', function () {
   loadExamples();
 });
-window.onload = function () {
 loadExamples();
-}
 </script>
 {% endraw %}
