@@ -91,6 +91,23 @@ article:
         url: https://github.com/volantis-x/
       updated:
         title: '本页文档最后更新于：'
+  author:
+    xaoxuu:
+      name: Mr. X
+      avatar: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png
+      url: https://xaoxuu.com
+    inkss:
+      name: 枋柚梓
+      avatar: https://cdn.jsdelivr.net/gh/inkss/common@1.4.2/hexo/img/static/avatar.jpg
+      url: https://inkss.cn
+    heson:
+      name: heson
+      avatar: https://cdn.jsdelivr.net/gh/heson525/pic@master/pic/avatar03.png
+      url: https://www.heson10.com
+    Colsrch:
+      name: Colsrch
+      avatar: https://cdn.jsdelivr.net/gh/Colsrch/images/Colsrch/avatar.jpg
+      url: https://colsrch.top
 
 
 comments:
@@ -257,4 +274,3 @@ style:
 
 rightmenu:
   enable: true
-  
