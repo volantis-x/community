@@ -214,6 +214,20 @@ sidebar:
 site_footer:
   layout: [aplayer, social, source, analytics, copyright]
   copyright: '[Copyright © 2017-2020 Volantis Team](https://github.com/volantis-x/)'
+  social:
+    - img: https://cdn.jsdelivr.net/gh/volantis-x/cdn-org@1.1/icon/1322024-social-media/020-rss.svg
+      url: atom.xml
+    - img: https://cdn.jsdelivr.net/gh/volantis-x/cdn-org@1.1/icon/1322024-social-media/029-github.svg
+      url: https://github.com/volantis-x/
+    - img: https://cdn.jsdelivr.net/gh/volantis-x/cdn-org@1.1/icon/1322024-social-media/010-facebook.svg
+      url: /
+    - img: https://cdn.jsdelivr.net/gh/volantis-x/cdn-org@1.1/icon/1322024-social-media/018-twitter.svg
+      url: /
+    - img: https://cdn.jsdelivr.net/gh/volantis-x/cdn-org@1.1/icon/1322024-social-media/045-telegram.svg
+      url: /
+    - img: https://cdn.jsdelivr.net/gh/volantis-x/cdn-org@1.1/icon/1322024-social-media/006-youtube.svg
+      url: /
+
 
 tag_plugins:
   # {% note text %}
