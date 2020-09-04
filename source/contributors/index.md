@@ -62,20 +62,30 @@ music:
 title: Volantis 主题部署 Pjax
 date: 2020-05-17
 updated: 2020-08-07
-author:
-  name: 枋柚梓
-  avatar: https://cdn.jsdelivr.net/gh/inkss/common@1.4.2/hexo/img/static/avatar.jpg
-  url: https://inkss.cn
+categories: [开发心得]
+author: inkss
 link: https://inkss.cn/article/other/76993423.html
 description: 本篇文章记录了我对 Volantis 主题做 Pjax 兼容的种种，大抵算是种记录吧~
 headimg: # 可以设置文章头图
 ---
 ```
 
+如果您是第一次在官网投稿，还需要在 `_data/author.yml` 文件中添加作者信息，例如：
+
+```yaml _data/author.yml
+...
+inkss:
+  name: 枋柚梓
+  avatar: https://cdn.jsdelivr.net/gh/inkss/common@1.4.2/hexo/img/static/avatar.jpg
+  url: https://inkss.cn
+```
+
+
 {% noteblock %}
 **要求**
 1. 文章存放在 `_posts/blogs/` 目录中，且文件名格式为 `年-月-日-文章主题`。
 2. 必须是原创文章，摘要部分不要太长。
+3. 最好选择一个文章分类，如果现有的分类中没有合适的，可以自己新增。
 {% endnoteblock %}
 
 <br>
@@ -87,19 +97,29 @@ headimg: # 可以设置文章头图
 
 {% p subtitle, 解决问题 %}
 
+{% table %}
 | 渠道 | 方式 | 用途 |
 | :-- | :-- | :-- |
-| Issue | [@volantis-x/hexo-theme-volantis](https://github.com/volantis-x/hexo-theme-volantis/issues/) | 和开发者沟通的唯一渠道，用于跟进和解决问题 |
+| Issues | [@volantis-x/hexo-theme-volantis](https://github.com/volantis-x/hexo-theme-volantis/issues/) | 和开发者沟通的唯一渠道，用于跟进和解决问题 |
+{% endtable %}
+
+{% noteblock error, 请不要发送邮件 %}
+
+开源项目的开发者很反感别人不通过正确的途径如 Issues 而是通过私人邮件询问开源项目问题，所以一般不会回复此类邮件。
+
+{% endnoteblock %}
 
 {% p subtitle, 交流 %}
-
+{% table %}
 | 渠道 | 方式 | 用途 |
 | :-- | :-- | :-- |
 | 论坛 | [@volantis-x/forum](https://github.com/volantis-x/forum/issues/) | 慢，相对正式，方便检索，可以给其他用户参考 |
 | QQ群 | 1146399464 (验证码: <psw>vlts-2020</psw>) | 非正式，即时通讯，易于斗图；不利于给其他用户参考 |
+{% endtable %}
 
 {% p subtitle, 佛系互动 %}
-
+{% table %}
 | 渠道 | 方式 | 用途 |
 | :-- | :-- | :-- |
 | 评论区 | 留言 | 可以测试、灌水、推广自己的博客。 |
+{% endtable %}
