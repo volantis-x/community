@@ -2,10 +2,7 @@
 title: 给Volantis主题调用Valine最新评论
 date: 2020-08-28
 updated: 2020-09-03
-author:
-  name: Heson
-  avatar: https://cdn.jsdelivr.net/gh/heson525/pic@master/pic/avatar03.png
-  url: https://www.heson10.com
+author: Heson
 link: https://www.heson10.com/posts/7207.html
 description: 给博客加上最新评论栏目。以Volantis主题为例，给侧边栏加上最新评论功能，实现整站调用。
 headimg: https://picup.heson10.com/img/upyun/HEXOnewcommentwebp.png
