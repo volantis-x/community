@@ -1,5 +1,4 @@
 ---
-layout: friends
 seo_title: 示例博客
 cover: true
 sidebar: []
