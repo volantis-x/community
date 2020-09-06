@@ -39,25 +39,15 @@ sidebar: []
 
 {% timenode 第一步：新建 [Issue](https://github.com/volantis-x/examples/issues/) 按照格式填写并提交 %}
 
-```yaml
-#### 必填项 ####
-# 网站标题
-title:
-# 网站截图
-screenshot:
-# 网站链接
-url:
-# 网站使用的主题版本，如 group: 版本：^4.0
-group: 版本：^4.0
-
-
-#### 可选项 ####
-# 作者头像链接
-avatar:
-# 网站描述
-description:
-# 关键词，多个关键词用英文逗号和一个空格隔开，如 keywords: A, B
-keywords:
+```json
+{
+    "title": "",
+    "description": "",
+    "screenshot": "",
+    "url": "",
+    "avatar": "",
+    "version": "版本：^4.0"
+}
 ```
 
 为了提高图片加载速度，建议优化图片尺寸：
