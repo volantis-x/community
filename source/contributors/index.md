@@ -38,14 +38,14 @@ music:
 
 {% btns circle grid5 %}
 {% cell xaoxuu, https://github.com/xaoxuu, https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png %}
-{% cell inkss, https://github.com/inkss, https://avatars2.githubusercontent.com/u/31947043?s=60&v=4 %}
 {% cell MHuiG, https://github.com/MHuiG, https://avatars0.githubusercontent.com/u/38281581?s=60&v=4 %}
+{% cell inkss, https://github.com/inkss, https://avatars2.githubusercontent.com/u/31947043?s=60&v=4 %}
+{% cell Colsrch, https://github.com/Colsrch, https://avatars0.githubusercontent.com/u/58458181?v=4 %}
 {% cell Drew233, https://github.com/Drew233, https://avatars0.githubusercontent.com/u/47592224?s=60&v=4 %}
 {% cell Linhk1606, https://github.com/Linhk1606, https://avatars1.githubusercontent.com/u/50829219?s=60&v=4 %}
 {% cell ericclose, https://github.com/ericclose, https://avatars1.githubusercontent.com/u/34526560?s=60&v=4 %}
-{% cell CRainyDay, https://github.com/CRainyDay, https://avatars2.githubusercontent.com/u/46487957?s=60&v=4 %}
 {% cell Flexiston, https://github.com/Flexiston, https://avatars0.githubusercontent.com/u/62386802?s=60&v=4 %}
-{% cell Colsrch, https://github.com/Colsrch, https://avatars0.githubusercontent.com/u/58458181?v=4 %}
+{% cell CRainyDay, https://github.com/CRainyDay, https://avatars2.githubusercontent.com/u/46487957?s=60&v=4 %}
 {% cell 查看全部, https://github.com/volantis-x/hexo-theme-volantis/graphs/contributors, fab fa-github %}
 {% endbtns %}
 
