@@ -9,15 +9,10 @@ short_title: 5-5 Hexo 内置标签
 meta:
   header: [centertitle]
 sidebar: [docs-v3, toc, repos]
+snackbar: oldversion
 mathjax: true
 ---
-
-{% noteblock red warning, 过期的文档 %}
-
-这份文档是旧版本的，如果您使用的是新版的主题，请查看新版本的文档。
-
-{% endnoteblock %}
-
+ 
 ## 文章摘要和截断
 
 在文章中使用 `<!-- more -->`，那么 `<!-- more -->` 之前的文字将会被视为摘要。首页中将只出现这部分文字，同时这部分文字也会出现在正文之中。详见 Hexo 官方文档：

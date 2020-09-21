@@ -9,13 +9,9 @@ short_title: 3-6 设置默认布局
 meta:
   header: [centertitle]
 sidebar: [docs-v3, toc, repos]
+snackbar: oldversion
 ---
-
-{% noteblock red warning, 过期的文档 %}
-
-这份文档是旧版本的，如果您使用的是新版的主题，请查看新版本的文档。
-
-{% endnoteblock %}
+ 
 
 您可以自由决定每个页面是否显示侧边栏，侧边栏显示什么小部件，正文区域显示什么卡片，文章卡片显示什么 meta 信息。
 ```yaml

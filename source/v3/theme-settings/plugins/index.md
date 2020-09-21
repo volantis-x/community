@@ -9,13 +9,9 @@ short_title: 3-11 第三方插件
 meta:
   header: [centertitle]
 sidebar: [docs-v3, toc, repos]
+snackbar: oldversion
 ---
-
-{% noteblock red warning, 过期的文档 %}
-
-这份文档是旧版本的，如果您使用的是新版的主题，请查看新版本的文档。
-
-{% endnoteblock %}
+ 
 
 
 ## 插件库

@@ -9,13 +9,8 @@ short_title: 6. 进阶设定
 meta:
   header: [title, author, updated]
 sidebar: [docs-v2, repos, toc]
+snackbar: oldversion
 ---
-
-{% noteblock red warning, 过期的文档 %}
-
-这份文档是旧版本的，如果您使用的是新版的主题，请查看新版本的文档。
-
-{% endnoteblock %}
 
 建议有一定基础知识的朋友进行尝试。
 

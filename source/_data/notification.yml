@@ -1,0 +1,9 @@
+# 这个功能还在测试中
+oldversion:
+  title: 过期的文档
+  message: 这份文档过于久远，如果您使用的是新版的主题，请查看新版本的文档。
+  theme: warning # default, warning
+  action:
+    - title: 查看新版文档
+      url: https://xaoxuu.com/wiki/volantis/
+      dismiss: false # 点击了是否关闭底部横幅

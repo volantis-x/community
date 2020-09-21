@@ -9,15 +9,10 @@ short_title: 5. 标签插件
 meta:
   header: [title, author, updated]
 sidebar: [docs-v2, repos, toc]
+snackbar: oldversion
 mathjax: true
 ---
-
-{% noteblock red warning, 过期的文档 %}
-
-这份文档是旧版本的，如果您使用的是新版的主题，请查看新版本的文档。
-
-{% endnoteblock %}
-
+ 
 
 主题原生支持<b>{% span red, 丰 %}{% span yellow, 富 %}{% span green, 多 %}{% span blue, 彩 %}</b>的标签。
 

@@ -9,13 +9,9 @@ short_title: 3-5 网站与文章封面
 meta:
   header: [centertitle]
 sidebar: [docs-v3, toc, repos]
+snackbar: oldversion
 ---
 
-{% noteblock red warning, 过期的文档 %}
-
-这份文档是旧版本的，如果您使用的是新版的主题，请查看新版本的文档。
-
-{% endnoteblock %}
 
 ## 封面方案
 

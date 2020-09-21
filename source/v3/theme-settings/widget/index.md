@@ -9,13 +9,9 @@ short_title: 3-8 卡片式组件
 meta:
   header: [centertitle]
 sidebar: [docs-v3, toc, repos]
+snackbar: oldversion
 ---
-
-{% noteblock red warning, 过期的文档 %}
-
-这份文档是旧版本的，如果您使用的是新版的主题，请查看新版本的文档。
-
-{% endnoteblock %}
+ 
 
 <u>widget</u> 即小部件，大部分小部件都可以放置在侧边栏，一部分已经为正文区域显示做了优化，还有一部分只可以放置在文章页脚部分。与 meta 库不同的是：除了现有的 widget ，您可以很轻易地创建自己的 widget ，然后放在需要的地方。此外，您还可以将 widget 写在单独的文件中。
 

@@ -9,14 +9,9 @@ short_title: 1. 开始使用
 meta:
   header: []
 sidebar: [docs-v2, repos, toc]
+snackbar: oldversion
 ---
-
-{% noteblock red warning, 过期的文档 %}
-
-这份文档是旧版本的，如果您使用的是新版的主题，请查看新版本的文档。
-
-{% endnoteblock %}
-
+ 
 <p>
 {% span logo center large, <sup>&ensp;</sup>Volantis<sup>2</sup> %}
 {% span center small, A Wonderful Theme for Hexo %}

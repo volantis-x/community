@@ -9,14 +9,9 @@ short_title: 3-7 元数据组件
 meta:
   header: [centertitle]
 sidebar: [docs-v3, toc, repos]
+snackbar: oldversion
 ---
-
-{% noteblock red warning, 过期的文档 %}
-
-这份文档是旧版本的，如果您使用的是新版的主题，请查看新版本的文档。
-
-{% endnoteblock %}
-
+ 
 <u>meta</u> 即文章的元数据，描述文章的作者、发布时间、更新时间等等信息，Volantis 不替您决定，显示什么图标、如何描述都可以自定义。
 
 ```yaml blog/_config.volantis.yml
