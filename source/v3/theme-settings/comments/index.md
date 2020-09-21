@@ -1,4 +1,6 @@
 ---
+robots: noindex,nofollow
+sitemap: false
 layout: page
 title: 选择评论系统
 group: docs-v3
@@ -8,6 +10,12 @@ meta:
   header: [centertitle]
 sidebar: [docs-v3, toc, repos]
 ---
+
+{% noteblock red warning, 过期的文档 %}
+
+这份文档是旧版本的，如果您使用的是新版的主题，请查看新版本的文档。
+
+{% endnoteblock %}
 
 目前支持的评论系统有： Valine, MiniValine, Disqus, Gitalk, Vssue, Livere, Isso, Hashover
 

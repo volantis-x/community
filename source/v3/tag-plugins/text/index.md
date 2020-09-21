@@ -1,4 +1,6 @@
 ---
+robots: noindex,nofollow
+sitemap: false
 layout: page
 group: docs-v3
 order: 501
@@ -9,6 +11,12 @@ meta:
 sidebar: [docs-v3, toc, repos]
 mathjax: true
 ---
+
+{% noteblock red warning, 过期的文档 %}
+
+这份文档是旧版本的，如果您使用的是新版的主题，请查看新版本的文档。
+
+{% endnoteblock %}
 
 
 ## 行内小标签

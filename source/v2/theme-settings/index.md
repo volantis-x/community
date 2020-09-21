@@ -1,4 +1,6 @@
 ---
+robots: noindex,nofollow
+sitemap: false
 layout: page
 group: docs-v2
 order: 3
@@ -8,6 +10,12 @@ meta:
   header: [title, author, updated]
 sidebar: [docs-v2, repos, toc]
 ---
+
+{% noteblock red warning, 过期的文档 %}
+
+这份文档是旧版本的，如果您使用的是新版的主题，请查看新版本的文档。
+
+{% endnoteblock %}
 
 如无特殊说明，本页面的配置信息写在 <u>**主题**</u> 的 `config.yml` 文件中。
 
@@ -988,5 +996,3 @@ search:
 ```sh
 npm i -S hexo-generator-search hexo-generator-json-content
 ```
-
-

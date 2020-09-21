@@ -1,4 +1,6 @@
 ---
+robots: noindex,nofollow
+sitemap: false
 layout: page
 title: 设置网站页脚
 group: docs-v3
@@ -8,6 +10,12 @@ meta:
   header: [centertitle]
 sidebar: [docs-v3, toc, repos]
 ---
+
+{% noteblock red warning, 过期的文档 %}
+
+这份文档是旧版本的，如果您使用的是新版的主题，请查看新版本的文档。
+
+{% endnoteblock %}
 
 您通过 `layout` 可以自由布局网站页脚内容 `aplayer`, `social`, `license`, `info`, `copyright`。
 ```yaml blog/_config.volantis.yml

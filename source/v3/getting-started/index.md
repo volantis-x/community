@@ -1,4 +1,6 @@
 ---
+robots: noindex,nofollow
+sitemap: false
 layout: page
 group: docs-v3
 order: 100
@@ -9,6 +11,12 @@ meta:
   header: []
 sidebar: [docs-v3, toc, repos]
 ---
+
+{% noteblock red warning, 过期的文档 %}
+
+这份文档是旧版本的，如果您使用的是新版的主题，请查看新版本的文档。
+
+{% endnoteblock %}
 
 <p>
 {% span logo center large, <sup>&ensp;</sup>Volantis<sup>3</sup> %}
@@ -174,5 +182,3 @@ npm i hexo-renderer-stylus
 被授权人可根据程式的需要修改授权条款为适当的内容。
 在软件和软件的所有副本中都必须包含版权声明和许可声明。
 {% endnoteblock %}
-
-
