@@ -6,7 +6,7 @@
 
 中文文档：
 
-[v4](https://xaoxuu.com/wiki/volantis/) ｜ [v3](https://volantis.js.org/v3/getting-started/) ｜ [v2](https://volantis.js.org/v2/getting-started/)
+[v4](https://volantis.js.org/getting-started/) ｜ [v3](https://volantis.js.org/v3/getting-started/) ｜ [v2](https://volantis.js.org/v2/getting-started/)
 
 > 暂时没有英文文档
 

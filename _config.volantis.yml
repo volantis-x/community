@@ -3,12 +3,12 @@ navbar:
   menu:
     - name: 开始
       icon: fad fa-flag faa-tada
-      url: https://xaoxuu.com/wiki/volantis/
+      url: /getting-started/
       target: _self
 
     - name: 文档
       icon: fad fa-book faa-tada
-      url: https://xaoxuu.com/wiki/volantis/
+      url: /getting-started/
       target: _self
 
     - name: 示例
@@ -53,7 +53,7 @@ cover:
       url: /
     - name: 文档
       img: https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f516.svg
-      url: https://xaoxuu.com/wiki/volantis/
+      url: /getting-started/
       target: _self
     - name: 示例
       img: https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f396.svg
@@ -152,6 +152,25 @@ sidebar:
           rel: external nofollow noopener noreferrer
           target: _blank
 
+    # 项目仓库
+    repos:
+      class: text
+      display: [desktop] # [desktop, mobile]
+      header:
+        icon: fab fa-github
+        title: 点个赞吧
+        url: https://github.com/xaoxuu/
+      content:
+        - '我近期在找工作，希望您能够帮忙给下面这个项目点亮 Star 并保留两三个月，非常感谢。'
+        - '[<img src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/proj/prohud/logo.png" height="50px">](https://github.com/xaoxuu/ProHUD)'
+
+    docs-volantis-latest:
+      class: group
+      display: [desktop, mobile] # [desktop, mobile]
+      seo_title: Volantis
+      header:
+        icon: fa fa-book
+        title: Volantis 文档导航 v4.0
 
     # qrcode widget
     qrcode:

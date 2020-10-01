@@ -5,5 +5,5 @@ oldversion:
   theme: warning # default, warning
   action:
     - title: 查看新版文档
-      url: https://xaoxuu.com/wiki/volantis/
+      url: /getting-started/
       dismiss: false # 点击了是否关闭底部横幅
