@@ -170,7 +170,7 @@ sidebar:
       seo_title: Volantis
       header:
         icon: fa fa-book
-        title: Volantis 文档导航 v4.0
+        title: 文档导航 v4.0
 
     # qrcode widget
     qrcode:
