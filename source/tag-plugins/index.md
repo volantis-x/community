@@ -3,7 +3,7 @@ layout: docs
 group: docs-volantis-latest
 order: 501
 title: 内置标签插件
-short_title: 5-1 内置标签插件 (x20)
+short_title: 5-1 内置标签插件 (x23)
 sidebar: [repos, docs-volantis-latest, toc]
 disqus:
   path: /wiki/volantis/
@@ -13,44 +13,53 @@ disqus:
 
 ### 文本类
 
-{% link #text 文本样式标签, /wiki/volantis/tag-plugins/text/ %}
-{% link #span 行内文本标签, /wiki/volantis/tag-plugins/span/ %}
-{% link #p 段落文本标签, /wiki/volantis/tag-plugins/p/ %}
-{% link #note 引用标签, /wiki/volantis/tag-plugins/note/ %}
-{% link #noteblock 引用块标签, /wiki/volantis/tag-plugins/noteblock/ %}
-{% link #checkbox 复选列表标签, /wiki/volantis/tag-plugins/checkbox/ %}
-{% link #radio 单选列表标签, /wiki/volantis/tag-plugins/radio/ %}
-{% link #timeline 时间线标签, /wiki/volantis/tag-plugins/timeline/ %}
-
+{% linkgroup %}
+{% link 行内文本样式, text %}
+{% link 行内文本, span %}
+{% link 段落文本, p %}
+{% link 引用, note %}
+{% link 引用块, noteblock %}
+{% link 复选列表, checkbox %}
+{% link 单选列表, radio %}
+{% link 时间线, timeline %}
+{% endlinkgroup %}
 
 ### 链接、按钮、菜单
 
-{% link #link 链接卡片标签, /wiki/volantis/tag-plugins/link/ %}
-{% link #button 按钮标签, /wiki/volantis/tag-plugins/button/ %}
-{% link #ghcard GitHub 卡片标签, /wiki/volantis/tag-plugins/ghcard/ %}
-{% link #site 网站卡片标签, /wiki/volantis/tag-plugins/site/ %}
-{% link #dropmenu 网站卡片标签, /wiki/volantis/tag-plugins/dropmenu/ %}
+{% linkgroup %}
+{% link 链接卡片, link %}
+{% link 按钮, button %}
+{% link GitHub 卡片, ghcard %}
+{% link 网站卡片, site %}
+{% link 网站卡片, dropmenu %}
+{% endlinkgroup %}
 
 
 ### 容器类
 
-{% link #tab 分栏标签, /wiki/volantis/tag-plugins/tab/ %}
-{% link #folding 折叠框标签, /wiki/volantis/tag-plugins/folding/ %}
+{% linkgroup %}
+{% link 分栏, tab %}
+{% link 折叠框, folding %}
+{% endlinkgroup %}
 
 
 ### 多媒体类
 
-{% link #inlineimage 行内图片标签, /wiki/volantis/tag-plugins/inlineimage/ %}
-{% link #image 单张图片标签, /wiki/volantis/tag-plugins/image/ %}
-{% link #gallery 相册、组图标签, /wiki/volantis/tag-plugins/gallery/ %}
-{% link #audio 音频标签, /wiki/volantis/tag-plugins/audio/ %}
-{% link #video 视频标签, /wiki/volantis/tag-plugins/video/ %}
-{% link #frame 带框架的图片视频标签, /wiki/volantis/tag-plugins/frame/ %}
-{% link #aplayer 音乐播放器标签, /wiki/volantis/tag-plugins/aplayer/ %}
+{% linkgroup %}
+{% link 行内图片, inlineimage %}
+{% link 单张图片, image %}
+{% link 相册、组图, gallery %}
+{% link 音频, audio %}
+{% link 视频, video %}
+{% link 带框架的图片视频, frame %}
+{% link 音乐播放器, aplayer %}
+{% endlinkgroup %}
 
 ### 数据集合类
 
-{% link #issues Issues API 标签, /wiki/volantis/tag-plugins/issues/ %}
+{% linkgroup %}
+{% link Issues API, issues %}
+{% endlinkgroup %}
 
 
 ## Hexo 通用标签
