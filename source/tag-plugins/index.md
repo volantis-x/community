@@ -31,7 +31,7 @@ disqus:
 {% link 按钮, button %}
 {% link GitHub 卡片, ghcard %}
 {% link 网站卡片, site %}
-{% link 网站卡片, dropmenu %}
+{% link 下拉菜单, dropmenu %}
 {% endlinkgroup %}
 
 
