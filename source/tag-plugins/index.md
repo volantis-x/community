@@ -29,6 +29,7 @@ disqus:
 {% link #button 按钮标签, /wiki/volantis/tag-plugins/button/ %}
 {% link #ghcard GitHub 卡片标签, /wiki/volantis/tag-plugins/ghcard/ %}
 {% link #site 网站卡片标签, /wiki/volantis/tag-plugins/site/ %}
+{% link #dropmenu 网站卡片标签, /wiki/volantis/tag-plugins/dropmenu/ %}
 
 
 ### 容器类
