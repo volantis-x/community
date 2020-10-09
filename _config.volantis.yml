@@ -43,7 +43,7 @@ navbar:
 
 
 cover:
-  height_scheme: half # full, half
+  # height_scheme: full # full, half
   title: 'Volantis'
   subtitle: '开源社区主页'
   background: https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/052.jpg
