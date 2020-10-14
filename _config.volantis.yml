@@ -61,7 +61,7 @@ cover:
     - name: 帮助
       img: https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f4ac.svg
       url: faqs/
-    - name: 团队
+    - name: 社区
       img: https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f9e9.svg
       url: /contributors/
     - name: 归档
@@ -151,18 +151,6 @@ sidebar:
           url: https://github.com/volantis-x/hexo-theme-volantis/releases/
           rel: external nofollow noopener noreferrer
           target: _blank
-
-    # 项目仓库
-    repos:
-      class: text
-      display: [desktop] # [desktop, mobile]
-      header:
-        icon: fab fa-github
-        title: 点个赞吧
-        url: https://github.com/xaoxuu/
-      content:
-        - '我近期在找工作，希望您能够帮忙给下面这个项目点亮 Star 并保留两三个月，非常感谢。'
-        - '[<img src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/proj/prohud/logo.png" height="50px">](https://github.com/xaoxuu/ProHUD)'
 
     docs-volantis-latest:
       class: group

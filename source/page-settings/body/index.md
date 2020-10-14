@@ -4,7 +4,7 @@ title: 页面自定义布局
 group: docs-volantis-latest
 order: 403
 short_title: 4-3 页面自定义布局
-sidebar: [repos, docs-volantis-latest, toc]
+sidebar: [docs-volantis-latest, toc]
 disqus:
   path: /wiki/volantis/
 ---

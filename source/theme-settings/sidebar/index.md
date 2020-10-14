@@ -4,7 +4,7 @@ title: 侧边栏配置
 group: docs-volantis-latest
 order: 307
 short_title: 3-7 侧边栏配置
-sidebar: [repos, docs-volantis-latest, toc]
+sidebar: [docs-volantis-latest, toc]
 disqus:
   path: /wiki/volantis/
 ---

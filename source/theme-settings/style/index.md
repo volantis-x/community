@@ -4,7 +4,7 @@ title: 自定义主题外观
 group: docs-volantis-latest
 order: 302
 short_title: 3-2 自定义主题外观
-sidebar: [repos, docs-volantis-latest, toc]
+sidebar: [docs-volantis-latest, toc]
 disqus:
   path: /wiki/volantis/
 ---

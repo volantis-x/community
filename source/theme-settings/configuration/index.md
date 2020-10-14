@@ -4,7 +4,7 @@ group: docs-volantis-latest
 order: 301
 title: 创建主题配置文件
 short_title: 3-1 创建主题配置文件
-sidebar: [repos, docs-volantis-latest, toc]
+sidebar: [docs-volantis-latest, toc]
 disqus:
   path: /wiki/volantis/
 ---

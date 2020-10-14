@@ -4,7 +4,7 @@ group: docs-volantis-latest
 order: 516
 short_title: false
 title: 'tag-plugins: checkbox'
-sidebar: [repos, docs-volantis-latest, toc]
+sidebar: [docs-volantis-latest, toc]
 disqus:
   path: /wiki/volantis/
 ---

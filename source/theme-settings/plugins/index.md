@@ -4,7 +4,7 @@ title: 第三方插件
 group: docs-volantis-latest
 order: 310
 short_title: 3-10 第三方插件
-sidebar: [repos, docs-volantis-latest, toc]
+sidebar: [docs-volantis-latest, toc]
 disqus:
   path: /wiki/volantis/
 ---

@@ -4,7 +4,7 @@ group: docs-volantis-latest
 order: 545
 short_title: false
 title: 'tag-plugins: video'
-sidebar: [repos, docs-volantis-latest, toc]
+sidebar: [docs-volantis-latest, toc]
 disqus:
   path: /wiki/volantis/
 ---

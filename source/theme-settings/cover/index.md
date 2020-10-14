@@ -4,7 +4,7 @@ title: 网站与文章封面
 group: docs-volantis-latest
 order: 305
 short_title: 3-5 网站与文章封面
-sidebar: [repos, docs-volantis-latest, toc]
+sidebar: [docs-volantis-latest, toc]
 disqus:
   path: /wiki/volantis/
 ---

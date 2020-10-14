@@ -4,7 +4,7 @@ group: docs-volantis-latest
 order: 501
 title: 内置标签插件
 short_title: 5-1 内置标签插件 (x23)
-sidebar: [repos, docs-volantis-latest, toc]
+sidebar: [docs-volantis-latest, toc]
 disqus:
   path: /wiki/volantis/
 ---

@@ -4,7 +4,7 @@ title: 站内搜索
 group: docs-volantis-latest
 order: 309
 short_title: 3-9 站内搜索
-sidebar: [repos, docs-volantis-latest, toc]
+sidebar: [docs-volantis-latest, toc]
 disqus:
   path: /wiki/volantis/
 ---

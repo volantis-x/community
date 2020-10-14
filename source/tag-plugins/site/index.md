@@ -4,7 +4,7 @@ group: docs-volantis-latest
 order: 524
 short_title: false
 title: 'tag-plugins: site'
-sidebar: [repos, docs-volantis-latest, toc]
+sidebar: [docs-volantis-latest, toc]
 disqus:
   path: /wiki/volantis/
 ---

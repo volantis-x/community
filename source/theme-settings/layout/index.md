@@ -4,7 +4,7 @@ title: 文章布局配置
 group: docs-volantis-latest
 order: 306
 short_title: 3-6 文章布局配置
-sidebar: [repos, docs-volantis-latest, toc]
+sidebar: [docs-volantis-latest, toc]
 disqus:
   path: /wiki/volantis/
 ---

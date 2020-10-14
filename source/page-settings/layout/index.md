@@ -4,7 +4,7 @@ title: 页面布局模板
 group: docs-volantis-latest
 order: 401
 short_title: 4-1 页面布局模板
-sidebar: [repos, docs-volantis-latest, toc]
+sidebar: [docs-volantis-latest, toc]
 disqus:
   path: /wiki/volantis/
 ---

@@ -4,7 +4,7 @@ title: 选择评论系统
 group: docs-volantis-latest
 order: 308
 short_title: 3-8 选择评论系统
-sidebar: [repos, docs-volantis-latest, toc]
+sidebar: [docs-volantis-latest, toc]
 disqus:
   path: /wiki/volantis/
 ---

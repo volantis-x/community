@@ -4,7 +4,7 @@ title: front-matter
 group: docs-volantis-latest
 order: 402
 short_title: 4-2 front-matter
-sidebar: [repos, docs-volantis-latest, toc]
+sidebar: [docs-volantis-latest, toc]
 disqus:
   path: /wiki/volantis/
 ---

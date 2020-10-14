@@ -4,7 +4,7 @@ title: 渲染公式
 group: docs-volantis-latest
 order: 404
 short_title: 4-4 渲染公式
-sidebar: [repos, docs-volantis-latest, toc]
+sidebar: [docs-volantis-latest, toc]
 mathjax: true
 disqus:
   path: /wiki/volantis/

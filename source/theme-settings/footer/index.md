@@ -4,7 +4,7 @@ title: 设置网站页脚
 group: docs-volantis-latest
 order: 304
 short_title: 3-4 设置网站页脚
-sidebar: [repos, docs-volantis-latest, toc]
+sidebar: [docs-volantis-latest, toc]
 disqus:
   path: /wiki/volantis/
 ---

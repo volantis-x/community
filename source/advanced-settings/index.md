@@ -4,7 +4,7 @@ group: docs-volantis-latest
 order: 601
 title: 进阶设定
 short_title: 6-1 进阶设定
-sidebar: [repos, docs-volantis-latest, toc]
+sidebar: [docs-volantis-latest, toc]
 disqus:
   path: /wiki/volantis/
 ---

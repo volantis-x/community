@@ -4,7 +4,7 @@ group: docs-volantis-latest
 order: 517
 short_title: false
 title: 'tag-plugins: radio'
-sidebar: [repos, docs-volantis-latest, toc]
+sidebar: [docs-volantis-latest, toc]
 disqus:
   path: /wiki/volantis/
 ---

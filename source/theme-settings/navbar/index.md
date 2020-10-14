@@ -4,7 +4,7 @@ title: 设置网站导航栏
 group: docs-volantis-latest
 order: 303
 short_title: 3-3 设置网站导航栏
-sidebar: [repos, docs-volantis-latest, toc]
+sidebar: [docs-volantis-latest, toc]
 disqus:
   path: /wiki/volantis/
 ---

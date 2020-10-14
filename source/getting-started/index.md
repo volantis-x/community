@@ -4,7 +4,7 @@ seo_title: 一个功能丰富、高度模块化的 Hexo 博客主题。支持多
 short_title: 1-1 安装与版本更新
 group: docs-volantis-latest
 order: 1
-sidebar: [repos, docs-volantis-latest, toc]
+sidebar: [docs-volantis-latest, toc]
 description: Volantis 是一个功能丰富、高度模块化的 Hexo 博客主题。得益于其强大的模块化特性，您可以轻松搭建一个极简风格的博客，也可以仿照官网搭建一个多人协作的、包含文档模块的大体量综合型博客。
 ---
 
