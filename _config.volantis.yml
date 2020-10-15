@@ -1,11 +1,6 @@
 
 navbar:
   menu:
-    - name: 开始
-      icon: fad fa-flag faa-tada
-      url: /getting-started/
-      target: _self
-
     - name: 文档
       icon: fad fa-book faa-tada
       url: /getting-started/
@@ -103,9 +98,9 @@ article:
 
 
 comments:
-  title: #<i class='fas fa-comments'></i> 用户交流区
-  subtitle: #这里仅供用户之间进行交流，有任何疑问请前往GitHub提交Issue。在评论区进行提问将不会收到开发者的任何回复！
-  service: disqus
+  title: <i class='fas fa-comments'></i> 用户交流区
+  subtitle: 这里仅供用户之间进行交流，有任何疑问请前往GitHub提交Issue。在评论区进行提问将不会收到开发者的任何回复！
+  service: valine
   disqus:
     shortname: volantis
     path: /
