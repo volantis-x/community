@@ -23,6 +23,13 @@ navbar:
       icon: fad fa-fan fa-spin
       url: contributors/
 
+    - name: 设置
+      icon: fad fa-cog
+      rows:
+        - name: 暗黑模式
+          icon: fas fa-moon
+          toggle: darkmode
+
     - name: 更多
       icon: fad fa-ellipsis-v
       rows:
@@ -40,6 +47,7 @@ navbar:
           url: /v3/getting-started/
         - name: 旧版文档 v2
           url: /v2/getting-started/
+
 
 
 cover:
