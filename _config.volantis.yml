@@ -1,4 +1,4 @@
-
+use_cdn: false
 navbar:
   menu:
     - name: 文档
