@@ -21,10 +21,10 @@ jobs:
         npm i
         npm install hexo-cli -g
         hexo clean&&hexo g
-    - name: Deploy Github
-      uses: peaceiris/actions-gh-pages@v3
+    - name: Deploy # step4
+      id: deploy
+      uses: sma11black/hexo-action@v1.0.0
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./public 
-        commit_message: ${{ github.event.head_commit.message }}
-        publish_branch: gh-page
+        deploy_key: ${{ secrets.DEPLOY_KEY }}
+        user_name: ${{ secrets.NAME }}
+        user_email: ${{ secrets.EMAIL }}
