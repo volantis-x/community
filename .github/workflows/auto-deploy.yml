@@ -23,7 +23,7 @@ jobs:
         hexo clean&&hexo g
     - name: Deploy # step4
       id: deploy
-      uses: sma11black/hexo-action@v1.0.0
+      uses: sma11black/hexo-action@v1.0.4
       with:
         deploy_key: ${{ secrets.DEPLOY_KEY }}
         user_name: ${{ secrets.NAME }}
