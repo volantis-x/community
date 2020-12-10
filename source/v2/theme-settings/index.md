@@ -11,7 +11,7 @@ meta:
 sidebar: [docs-v2, repos, toc]
 snackbar: oldversion
 ---
- 
+
 如无特殊说明，本页面的配置信息写在 <u>**主题**</u> 的 `config.yml` 文件中。
 
 {% noteblock idea green %}
@@ -715,7 +715,7 @@ footer:
       url: https://github.com/xaoxuu
     - icon: fas fa-headphones-alt
       url: https://music.163.com/#/user/home?id=63035382
-  copyright: '[Copyright © 2017-2020 Mr. X](https://xaoxuu.com)'
+  copyright: '[Copyright © 2017-2021 XXX](/)'
   # You can add your own property here. (Support markdown, for example: br: '<br>')
   br: '<br>'
 ```

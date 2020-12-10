@@ -23,7 +23,7 @@ site_footer:
       url: https://github.com/xaoxuu
     - icon: fas fa-headphones-alt
       url: https://music.163.com/#/user/home?id=63035382
-  copyright: '[Copyright © 2017-2020 Mr. X](https://xaoxuu.com)'
+  copyright: '[Copyright © 2017-2021 XXX](/)'
   # You can add your own property here. (Support markdown, for example: br: '<br>')
   br: '<br>'
 ```

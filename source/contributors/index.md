@@ -115,7 +115,7 @@ inkss:
 | 渠道 | 方式 | 用途 |
 | :-- | :-- | :-- |
 | 论坛 | [@volantis-x/forum](https://github.com/volantis-x/forum/issues/) | 慢，相对正式，方便检索，可以给其他用户参考 |
-| QQ群 | 1146399464 (验证码: <psw>vlts-2020</psw>) | 非正式，即时通讯，易于斗图；不利于给其他用户参考 |
+| QQ群 | 1146399464 (验证码: <psw>vlts-2021</psw>) | 非正式，即时通讯，易于斗图；不利于给其他用户参考 |
 {% endtable %}
 
 {% p subtitle, 佛系互动 %}

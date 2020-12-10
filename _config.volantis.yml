@@ -1,31 +1,31 @@
 use_cdn: false
 navbar:
   menu:
-    - name: 文档
+    - name: Docs
       icon: fad fa-book faa-tada
       url: /getting-started/
       target: _self
 
-    - name: 示例
+    - name: Examples
       icon: fad fa-play-circle faa-tada
       url: examples/
 
-    - name: 帮助
+    - name: Help
       icon: fad fa-question-circle faa-tada
       url: faqs/
 
-    - name: 社区
-      icon: fad fa-fan fa-spin
+    - name: Contributors
+      icon: fad fa-heart
       url: contributors/
 
-    - name: 设置
+    - name: Settings
       icon: fad fa-cog
       rows:
         - name: 暗黑模式
           icon: fas fa-moon
           toggle: darkmode
 
-    - name: 更多
+    - name: More
       icon: fad fa-ellipsis-v
       rows:
         - name: 本站源码
@@ -48,29 +48,29 @@ navbar:
 cover:
   # height_scheme: full # full, half
   title: 'Volantis'
-  subtitle: '开源社区主页'
+  subtitle: 'Chinese Community'
   background: https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/052.jpg
   features:
-    - name: 文章
+    - name: Blogs
       img: https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f4f0.svg
       url: /
-    - name: 文档
+    - name: Docs
       img: https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f516.svg
       url: /getting-started/
       target: _self
-    - name: 示例
+    - name: Examples
       img: https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f396.svg
       url: /examples/
-    - name: 帮助
+    - name: Help
       img: https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f4ac.svg
       url: faqs/
-    - name: 社区
+    - name: Contributors
       img: https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f9e9.svg
       url: /contributors/
-    - name: 归档
+    - name: Archives
       img: https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f5c3.svg
       url: /archives/
-    - name: 源码
+    - name: Codes
       img: https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f9ec.svg
       url: https://github.com/volantis-x/hexo-theme-volantis/
       target: _self
@@ -223,7 +223,7 @@ sidebar:
 
 site_footer:
   layout: [aplayer, social, source, analytics, copyright]
-  copyright: '[Copyright © 2017-2020 Volantis Team](https://github.com/volantis-x/)'
+  copyright: '[Copyright © 2017-2021 Volantis Team](https://github.com/volantis-x/)'
   social:
     - img: https://cdn.jsdelivr.net/gh/volantis-x/cdn-org@1.1/icon/1322024-social-media/020-rss.svg
       url: atom.xml
@@ -277,12 +277,25 @@ analytics:
     app_key: 4xKBXGBj6BgecU62vff5rJHs
     custom_api_server: # 一般不需要写，除非自定义了 API Server
 
-style:
+custom_css:
   font_smoothing: true
   sidebar:
     effect: [shadow] # [shadow, floatable, blur]
   body:
     effect: [shadow] # [shadow, floatable, blur]
+  fontfamily:
+    logofont:
+      fontfamily: 'Dosis, "PingFang SC", "Microsoft YaHei", Helvetica, Arial'
+      name: 'Dosis'
+      url: https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts@20.5.30/Dosis/Dosis-Medium.ttf
+      weight: normal
+      style: normal
+    bodyfont:
+      fontfamily: 'Dosis, "PingFang SC", "Microsoft YaHei", Helvetica, Arial'
+      name: 'Dosis'
+      url: https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts@20.5.30/Dosis/Dosis-Medium.ttf
+      weight: normal
+      style: normal
 
 rightmenu:
   enable: true
