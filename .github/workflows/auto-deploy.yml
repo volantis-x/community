@@ -1,30 +1,40 @@
-name: auto deploy # workflow name
+name: Deploy
 
-on:
-  [push] # 触发事件
+on: [push]
 
 jobs:
-  build: # job1 id
-    runs-on: ubuntu-latest # 运行环境为最新版 Ubuntu
+  build:
+    runs-on: ubuntu-latest
     name: A job to deploy blog.
     steps:
-    - name: Checkout # step1 获取源码
-      uses: actions/checkout@v1 # 使用 actions/checkout@v1
-      with: # 条件
-        submodules: true # Checkout private submodules(themes or something else). 当有子模块时切换分支？
-    - name: Setup Node.js 10.x
-      uses: actions/setup-node@master
+    - name: Checkout
+      uses: actions/checkout@v1
       with:
-        node-version: "10.x"
-    - name: Generate Public Files
+        submodules: true # Checkout private submodules(themes or something else).
+
+    # Caching dependencies to speed up workflows. (GitHub will remove any cache entries that have not been accessed in over 7 days.)
+    - name: Cache node modules
+      uses: actions/cache@v1
+      id: cache
+      with:
+        path: node_modules
+        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-node-
+    - name: Install Dependencies
+      if: steps.cache.outputs.cache-hit != 'true'
+      run: npm ci
+
+    # Deploy hexo blog website.
+    - name: Deploy
+      id: deploy
+      uses: sma11black/hexo-action@v1.0.3
+      with:
+        deploy_key: ${{ secrets.DEPLOY_KEY }}
+        user_name: your github username  # (or delete this input setting to use bot account)
+        user_email: your github useremail  # (or delete this input setting to use bot account)
+        commit_msg: ${{ github.event.head_commit.message }}  # (or delete this input setting to use hexo default settings)
+    # Use the output from the `deploy` step(use for test action)
+    - name: Get the output
       run: |
-        npm i
-        npm install hexo-cli -g
-        hexo clean&&hexo g
-    - name: Deploy Github
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./public 
-        commit_message: ${{ github.event.head_commit.message }}
-        publish_branch: gh-page
+        echo "${{ steps.deploy.outputs.notify }}"
