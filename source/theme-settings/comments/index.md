@@ -6,7 +6,7 @@ order: 308
 short_title: 3-8 选择评论系统
 sidebar: [docs-volantis-latest, toc]
 disqus:
-  path: /wiki/volantis/
+  path: /
 ---
 
 目前支持的评论系统有： Valine, MiniValine, Disqus, Gitalk, Vssue, Livere, Isso, Hashover
@@ -51,7 +51,7 @@ valine:
 ```yaml front-matter
 ---
 valine:
-  path: /wiki/volantis/
+  path: /
 ---
 ```
 

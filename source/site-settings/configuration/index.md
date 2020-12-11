@@ -6,7 +6,7 @@ title: 修改站点配置文件
 short_title: 2-1 修改站点配置文件
 sidebar: [docs-volantis-latest, toc]
 disqus:
-  path: /wiki/volantis/
+  path: /
 ---
 
 博客根目录下的 `_config.yml` 文件通常负责站点相关配置、第三方 npm 插件相关的配置。

@@ -6,7 +6,7 @@ short_title: false
 title: 'tag-plugins: checkbox'
 sidebar: [docs-volantis-latest, toc]
 disqus:
-  path: /wiki/volantis/
+  path: /
 ---
 
 ```md 最后更新于 <u>2.6</u> 版本

@@ -7,7 +7,7 @@ short_title: 4-4 渲染公式
 sidebar: [docs-volantis-latest, toc]
 mathjax: true
 disqus:
-  path: /wiki/volantis/
+  path: /
 ---
 
 默认是不渲染的，如果文章内有公式，需要在 front-matter 中设置开启。即便开启了，文章列表中也不会进行渲染，请注意不要把公式写在文章开头。

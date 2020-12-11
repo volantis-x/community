@@ -6,7 +6,7 @@ short_title: false
 title: 'tag-plugins: note'
 sidebar: [docs-volantis-latest, toc]
 disqus:
-  path: /wiki/volantis/
+  path: /
 ---
 
 NoteBlock 是 Blockquote 的增强版，在左边显示图标，并且可以自定颜色。而 Note 是 NoteBlock 的简便写法。

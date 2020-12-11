@@ -656,7 +656,7 @@ sidebar: [group-1, toc]
 
 「group-1」卡片将会以列表的形式显示所有设置了 `group: group-1` 的文章，顺序按照 `order` 从小到大排列。
 
-{% note play, 效果见： https://xaoxuu.com/wiki/ios/ %}
+{% note play, 效果见： https://xaoxuu.com/wiki/git/ %}
 
 ### 通用网格部件
 ```yaml blog/themes/volantis/_config.yml
@@ -921,7 +921,7 @@ valine:
 ```yaml front-matter
 ---
 valine:
-  path: /wiki/volantis/
+  path: /
 ---
 ```
 

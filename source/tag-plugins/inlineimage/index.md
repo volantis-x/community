@@ -6,7 +6,7 @@ short_title: false
 title: 'tag-plugins: inlineimage'
 sidebar: [docs-volantis-latest, toc]
 disqus:
-  path: /wiki/volantis/
+  path: /
 ---
 
 Inlineimage 标签是一种行内图片标签，可以用来在一段话中间插入表情。

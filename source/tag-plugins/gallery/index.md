@@ -6,7 +6,7 @@ short_title: false
 title: 'tag-plugins: gallery'
 sidebar: [docs-volantis-latest, toc]
 disqus:
-  path: /wiki/volantis/
+  path: /
 ---
 
 Gallery 标签是一种针对一组图片应用场景的标签。

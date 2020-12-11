@@ -6,7 +6,7 @@ short_title: false
 title: 'tag-plugins: frame'
 sidebar: [docs-volantis-latest, toc]
 disqus:
-  path: /wiki/volantis/
+  path: /
 ---
 
 这是一个能够将图片或者视频套入设备框架中的标签，可以用来更优雅地显示截图、录屏。

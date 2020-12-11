@@ -6,7 +6,7 @@ short_title: false
 title: 'tag-plugins: aplayer'
 sidebar: [docs-volantis-latest, toc]
 disqus:
-  path: /wiki/volantis/
+  path: /
 ---
 
 主题对 APlayer 插件的样式进行了兼容。安装插件：

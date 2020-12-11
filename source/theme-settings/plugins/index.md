@@ -6,7 +6,7 @@ order: 310
 short_title: 3-10 第三方插件
 sidebar: [docs-volantis-latest, toc]
 disqus:
-  path: /wiki/volantis/
+  path: /
 ---
 
 

@@ -203,4 +203,4 @@ npm i hexo-renderer-stylus
 
 ## 配置与使用
 
-{% link 配置与使用, /wiki/volantis/site-settings/configuration/, https://cdn.jsdelivr.net/gh/volantis-x/cdn-org@1.1/icon/2439351-arrows/005-arrows.svg %}
+{% link 配置与使用, /site-settings/configuration/, https://cdn.jsdelivr.net/gh/volantis-x/cdn-org@1.1/icon/2439351-arrows/005-arrows.svg %}

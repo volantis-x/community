@@ -6,7 +6,7 @@ order: 309
 short_title: 3-9 站内搜索
 sidebar: [docs-volantis-latest, toc]
 disqus:
-  path: /wiki/volantis/
+  path: /
 ---
 
 ```yaml blog/_config.volantis.yml

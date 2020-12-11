@@ -6,7 +6,7 @@ order: 401
 short_title: 4-1 页面布局模板
 sidebar: [docs-volantis-latest, toc]
 disqus:
-  path: /wiki/volantis/
+  path: /
 ---
 
 ## 布局模板

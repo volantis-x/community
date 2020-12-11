@@ -6,7 +6,7 @@ order: 302
 short_title: 3-2 自定义主题外观
 sidebar: [docs-volantis-latest, toc]
 disqus:
-  path: /wiki/volantis/
+  path: /
 ---
 
 ## 最大布局宽度

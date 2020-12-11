@@ -6,7 +6,7 @@ short_title: false
 title: 'tag-plugins: folding'
 sidebar: [docs-volantis-latest, toc]
 disqus:
-  path: /wiki/volantis/
+  path: /
 ---
 
 ```md 最后更新于 <u>2.3</u> 版本

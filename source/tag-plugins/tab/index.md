@@ -6,7 +6,7 @@ short_title: false
 title: 'tag-plugins: tab'
 sidebar: [docs-volantis-latest, toc]
 disqus:
-  path: /wiki/volantis/
+  path: /
 ---
 
 此插件移植自 [NexT #tabs](https://theme-next.org/docs/tag-plugins/tabs)

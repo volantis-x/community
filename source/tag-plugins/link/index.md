@@ -6,7 +6,7 @@ short_title: false
 title: 'tag-plugins: link'
 sidebar: [docs-volantis-latest, toc]
 disqus:
-  path: /wiki/volantis/
+  path: /
 ---
 
 ```md 最后更新于 <u>3.0</u> 版本

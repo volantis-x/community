@@ -6,7 +6,7 @@ short_title: false
 title: 'tag-plugins: span'
 sidebar: [docs-volantis-latest, toc]
 disqus:
-  path: /wiki/volantis/
+  path: /
 ---
 
 ```md 本插件最后更新于 <u>2.5</u> 版本

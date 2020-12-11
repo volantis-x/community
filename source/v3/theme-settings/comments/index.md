@@ -55,7 +55,7 @@ valine:
 ```yaml front-matter
 ---
 valine:
-  path: /wiki/volantis/
+  path: /
 ---
 ```
 

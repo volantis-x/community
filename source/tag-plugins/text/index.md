@@ -6,7 +6,7 @@ short_title: false
 title: 'tag-plugins: text'
 sidebar: [docs-volantis-latest, toc]
 disqus:
-  path: /wiki/volantis/
+  path: /
 ---
 
 这是一些文本样式标签：

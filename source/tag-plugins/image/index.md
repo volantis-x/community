@@ -6,7 +6,7 @@ short_title: false
 title: 'tag-plugins: image'
 sidebar: [docs-volantis-latest, toc]
 disqus:
-  path: /wiki/volantis/
+  path: /
 ---
 
 Image 标签是一种针对单个图片应用场景的标签，支持图片描述文字和指定宽度。

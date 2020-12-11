@@ -6,7 +6,7 @@ short_title: false
 title: 'tag-plugins: audio'
 sidebar: [docs-volantis-latest, toc]
 disqus:
-  path: /wiki/volantis/
+  path: /
 ---
 
 

@@ -6,7 +6,7 @@ title: 内置标签插件
 short_title: 5-1 内置标签插件 (x23)
 sidebar: [docs-volantis-latest, toc]
 disqus:
-  path: /wiki/volantis/
+  path: /
 ---
 
 ## Volantis 专用标签

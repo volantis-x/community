@@ -6,7 +6,7 @@ short_title: false
 title: 'tag-plugins: dropmenu'
 sidebar: [docs-volantis-latest, toc]
 disqus:
-  path: /wiki/volantis/
+  path: /
 ---
 
 {% note warning, 这个页面的标签将会在不久后重构 %}

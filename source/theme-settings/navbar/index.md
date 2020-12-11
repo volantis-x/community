@@ -6,7 +6,7 @@ order: 303
 short_title: 3-3 设置网站导航栏
 sidebar: [docs-volantis-latest, toc]
 disqus:
-  path: /wiki/volantis/
+  path: /
 ---
 
 ## 导航栏配置

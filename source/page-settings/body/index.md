@@ -6,7 +6,7 @@ order: 403
 short_title: 4-3 页面自定义布局
 sidebar: [docs-volantis-latest, toc]
 disqus:
-  path: /wiki/volantis/
+  path: /
 ---
 
 ## 显示迷你音乐播放器

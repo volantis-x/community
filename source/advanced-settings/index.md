@@ -6,7 +6,7 @@ title: 进阶设定
 short_title: 6-1 进阶设定
 sidebar: [docs-volantis-latest, toc]
 disqus:
-  path: /wiki/volantis/
+  path: /
 ---
 
 
