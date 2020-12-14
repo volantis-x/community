@@ -23,7 +23,7 @@ music:
 - 发布文章推荐主题
 - 发布相关文章并转载外链到官网或者直接在官网发布文章
 
-则可以在{% btn, 论坛, https://github.com/volantis-x/forum/issues %}发帖申请加入团队。
+则可以在{% btn, 论坛, https://github.com/volantis-x/hexo-theme-volantis/discussions %}发帖申请加入团队。
 
 {% image https://upimage.alexhchu.com/2020/08/09/22ec83d3de717.png, width=300px, alt=在 GitHub 页面可以看到团队成员 %}
 
