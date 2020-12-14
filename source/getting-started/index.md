@@ -134,7 +134,7 @@ git clone https://github.com/volantis-x/hexo-theme-volantis themes/volantis
 如果您无法访问 GitHub 可以使用国内镜像源：
 
 ```
-git clone https://e.coding.net/volantis/volantis/volantis.git themes/volantis
+git clone https://e.coding.net/volantis-x/p/hexo-theme-volantis.git themes/volantis
 ```
 
 {% endtimenode %}
