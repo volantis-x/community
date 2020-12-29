@@ -245,8 +245,6 @@ tag_plugins:
     iconfont: 'Font Awesome 5 Pro'
 
 plugins:
-  issues:
-    enable: true
   clipboard:
     enable: true
   fontawesome: https://cdn.jsdelivr.net/gh/volantis-x/cdn-fontawesome-pro@master/css/all.min.css
