@@ -49,7 +49,7 @@ cover:
   # height_scheme: full # full, half
   title: 'Volantis'
   subtitle: 'Chinese Community'
-  background: https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/052.jpg
+  background: https://uploadbeta.com/api/pictures/random/?key=BingEverydayWallpaperPicture
   features:
     - name: Blogs
       img: https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f4f0.svg
