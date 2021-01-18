@@ -49,16 +49,6 @@ front-matter 是文件最上方以 `---` 分隔的区域，用于指定个别文
 | toc               | 是否生成目录 | Bool          | true   |
 {% endtable %}
 
-author
-
-{% table %}
-| 字段              | 含义         | 值类型        | 默认值 |
-| :----------------- | :------------ | :------------- | :------ |
-| name            | 作者名     | String        | config.author      |
-| avatar        | 头像         | String | config.avatar      |
-| url               | 链接         | String | config.url      |
-{% endtable %}
-
 music
 
 {% table %}
@@ -133,13 +123,25 @@ date: 2020-02-21
 
 ### 设置文章作者
 
-由于支持多作者共同维护一个博客，所以可以设置单独一篇文章的作者：
+Volantis 支持多作者，其他作者信息需要写在数据文件中，例如：
+
+```yaml blog/source/_data/author.yml
+Jon:
+  name: Jon Snow
+  avatar: https://cn.bing.com/th?id=AMMS_fc8f99fd41ebd737a71c4e13806db9a0&w=110&h=110&c=7&rs=1&qlt=80&pcl=f9f9f9&cdv=1&dpr=2&pid=16.1
+  url: https://gameofthrones.fandom.com/wiki/Jon_Snow
+Dany:
+  name: Daenerys Targaryen
+  avatar: https://tse1-mm.cn.bing.net/th?id=OIP.Yax4wLzIFbcBVUa_RsKywQHaLH&w=80&h=80&c=8&rs=1&qlt=90&dpr=2&pid=3.1&rm=2
+  url: https://gameofthrones.fandom.com/wiki/Daenerys_Targaryen
+```
+
+在文章的 front-matter 中新增 `author` 即可：
+
 ```yaml front-matter
 ---
-author:
-  name: 作者
-  avatar: https://img.vim-cn.com/a1/d53c11fb5d4fd69529bc805d385fe818feb3f6.png
-  url: https://baidu.com
+title: Jon Snow | Game of Thrones Wiki | Fandom
+author: Jon
 ---
 ```
 
