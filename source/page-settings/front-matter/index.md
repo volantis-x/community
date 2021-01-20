@@ -149,6 +149,13 @@ author: Jon
 
 利用 `link`，搭配自定义的文章作者信息，你可以在文章列表中显示外部文章或者网址，例如：
 
+```yaml blog/source/_data/author.yml
+xaoxuu:
+  name: xaoxuu
+  avatar: https://cdn.jsdelivr.net/gh/xaoxuu/assets@master/avatar/avatar.png
+  url: https://xaoxuu.com
+```
+
 ```yaml front-matter
 ---
 layout:     post
@@ -157,10 +164,7 @@ title:      [转]如何搭建基于Hexo的独立博客
 categories: [Dev, Hexo]
 tags:
   - Hexo
-author:
-  name: xaoxuu
-  avatar: https://cdn.jsdelivr.net/gh/xaoxuu/assets@master/avatar/avatar.png
-  url: https://xaoxuu.com
+author: xaoxuu
 link: https://xaoxuu.com/blog/2017-07-05-hexo-blog/
 ---
 
