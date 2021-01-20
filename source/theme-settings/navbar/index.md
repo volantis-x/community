@@ -13,6 +13,7 @@ disqus:
 
 导航栏分为 logo、menu、search 三个区域设置，其中 logo 区域如果设置了图片，则不能显示图标和标题， menu 区域的设置可以写在一个单独的文件中。
 ```yaml blog/_config.volantis.yml
+# 注意事项：建议规范全站路径 URL 最后带一个 "/" 例如 "about/"
 navbar:
   logo: # choose [img] or [icon + title]
     img:

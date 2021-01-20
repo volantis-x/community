@@ -9,13 +9,13 @@ disqus:
   path: /
 ---
 
-目前支持的评论系统有： Valine, MiniValine, Disqus, Gitalk, Vssue, Livere, Isso, Hashover
+目前支持的评论系统有： valine, twikoo, waline, minivaline, disqus, disqusjs, gitalk, vssue, livere, isso, hashover
 
 ```yaml blog/_config.volantis.yml
 comments:
   title: <i class='fas fa-comments'></i> 评论
   subtitle:
-  service: valine # valine, minivaline, disqus, gitalk, vssue, livere, isso, hashover
+  service: valine # valine, twikoo, waline, minivaline, disqus, disqusjs, gitalk, vssue, livere, isso, hashover
 ```
 
 {% tabs comments-1, 1 %}
@@ -31,9 +31,12 @@ comments:
   service: valine
   ...
   valine:
+    # js: https://cdn.jsdelivr.net/npm/valine@1.4/dist/Valine.min.js
+    path: # 全局评论地址 目前设置全局评论地址后visitor失效,这是valine的问题
+    placeholder: 快来评论吧~  # 评论占位提示
+    # 其他配置项按照yml格式继续填写即可 除了 [el path placeholder emojiCDN emojiMaps] 选项
     appId: # your appId
     appKey: # your appKey
-    js: https://cdn.jsdelivr.net/npm/valine@1.4/dist/Valine.min.js
     ... 可选配置项详见源码
 ```
 
@@ -57,6 +60,49 @@ valine:
 
 <!-- endtab -->
 
+<!-- tab twikoo -->
+
+<i class='fas fa-comment-dots fa-fw'></i> 一个简洁、安全、免费的静态网站评论系统 | A simple, safe, free comment system.
+<i class='fas fa-globe fa-fw'></i> [https://twikoo.js.org/](https://twikoo.js.org/)
+
+```yaml blog/_config.volantis.yml
+comments:
+  ...
+  service: twikoo
+  ...
+  twikoo:
+    js: https://cdn.jsdelivr.net/npm/twikoo@latest # 建议锁定版本
+    path: # 全局评论地址
+    # 其他配置项按照yml格式继续填写即可 除了 [el path] 选项
+    envId: xxxxxxxxxxxxxxx # 腾讯云环境id
+```
+
+<!-- endtab -->
+
+<!-- tab waline -->
+
+<i class='fas fa-comment-dots fa-fw'></i> 一个简洁、安全、免费的静态网站评论系统 | A simple, safe, free comment system.
+<i class='fas fa-globe fa-fw'></i> [https://waline.js.org/](https://waline.js.org/)
+
+```yaml blog/_config.volantis.yml
+comments:
+  ...
+  service: waline
+  ...
+  # Waline
+  # https://waline.js.org/
+  waline:
+    js: https://cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js
+    path: # 全局评论地址 目前设置全局评论地址后visitor失效,这是waline的问题
+    placeholder: 快来评论吧~  # 评论占位提示
+    imageHosting: https://7bu.top/api/upload # 图床api（默认使用去不图床）
+    # 其他配置项按照yml格式继续填写即可 除了 [el path placeholder uploadImage] 选项
+    serverURL: xxxxxxxxxxxxxxx # Waline 的服务端地址（必填） 测试用地址: https://waline-ruddy.vercel.app
+    ... 可选配置项详见源码
+```
+
+<!-- endtab -->
+
 <!-- tab MiniValine -->
 
 <i class='fas fa-comment-dots fa-fw'></i> 一款快速、简洁且高效的无后端评论系统
@@ -67,10 +113,17 @@ comments:
   ...
   service: minivaline
   ...
+  # MiniValine
+  # https://github.com/MiniValine/MiniValine
   minivaline:
-    appId: # Your leancloud application appid
-    appKey: # Your leancloud application appkey
-    ... 可选配置项详见源码
+    js: https://cdn.jsdelivr.net/npm/minivaline@latest
+    path: # 全局评论地址
+    placeholder: 快来评论吧~  # 全局评论占位提示
+    # 更多选项 https://minivaline.js.org/docs/cn/#/Options 按照yml格式继续填写即可 （除了 [el path placeholder] 选项）
+    # emoticonUrl 等列表选项 可参考 https://github.com/MiniValine/hexo-next-minivaline
+    # 下面是一个例子：
+    backend: waline
+    serverURL: https://waline.vercel.app
 ```
 
 <!-- endtab -->
@@ -143,6 +196,30 @@ comments:
   ...
   disqus:
     shortname:
+```
+
+<!-- endtab -->
+
+<!-- tab DisqusJS -->
+
+<i class='fas fa-comment-dots fa-fw'></i> Render Disqus comments in Mainland China using Disqus API
+<i class='fas fa-globe fa-fw'></i> [https://github.com/SukkaW/DisqusJS](https://github.com/SukkaW/DisqusJS)
+
+```yaml blog/_config.volantis.yml
+comments:
+  ...
+  service: disqusjs
+  ...
+  # DisqusJS
+  # https://github.com/SukkaW/DisqusJS
+  disqusjs:
+    path: # 全局评论地址
+    # 配置项按照yml格式继续填写即可 除了 [siteName url identifier] 选项
+    #shortname:
+    #api:
+    #apikey:
+    #admin:
+    #nesting:
 ```
 
 <!-- endtab -->

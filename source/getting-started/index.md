@@ -183,6 +183,7 @@ npm i hexo-renderer-stylus
 10. 如果需要同时隐藏标题和顶部的 meta 标签也可以把 `title: xxx` 改为 `seo_title: xxx` 。
 11. 多作者的信息使用数据文件进行定义，文章中只需要写 `author: xxx` 而不需要重复写作者的信息了。
 12. 现在只有 gallery 标签的图片支持放大。
+13. 友链页面 `layout: links` 改为 `layout: friends`。
 
 {% endtimenode %}
 

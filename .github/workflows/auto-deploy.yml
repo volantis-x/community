@@ -26,11 +26,18 @@ jobs:
       if: steps.cache.outputs.cache-hit != 'true' # 如果变量 cache-hit 不等于 true
       run: npm install # 安装 node modules 相关依赖
 
-    # Deploy hexo blog website.
-    - name: Deploy # step4
-      id: deploy
-      uses: sma11black/hexo-action@v1.0.4
+    - name: Generate Public Files
+      run: |
+        npm i
+        npm install hexo-cli -g
+        npm run start
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
       with:
         deploy_key: ${{ secrets.DEPLOY_KEY }}
-        user_name: ${{ secrets.NAME }}
-        user_email: ${{ secrets.EMAIL }}
+        external_repository: xaoxuu/volantis.js.org
+        publish_branch: master
+        publish_dir: ./public 
+        commit_message: ${{ github.event.head_commit.message }}
+        user_name: 'github-actions[bot]'
+        user_email: 'github-actions[bot]@users.noreply.github.com'
