@@ -12,8 +12,8 @@
 
 ## 示例博客
 
-[在线预览](https://volantis.js.org/examples/) | [收录自己](https://github.com/volantis-x/examples/issues/)
+[在线预览](https://volantis.js.org/examples/) | [收录自己的博客](https://github.com/volantis-x/examples/issues/)
 
 ## 帮助
 
-[FAQ](https://volantis.js.org/faqs/) | [向开发者反馈](https://github.com/volantis-x/hexo-theme-volantis/issues/) | [用户论坛](https://github.com/volantis-x/community/issues/)
+[FAQ](https://volantis.js.org/faqs/) | [向开发者反馈](https://github.com/volantis-x/hexo-theme-volantis/issues/) | [用户论坛](https://github.com/volantis-x/hexo-theme-volantis/discussions/)
