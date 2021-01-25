@@ -169,7 +169,7 @@ npm i hexo-renderer-stylus
 
 {% timenode 2021-01-15 [4.2.0 -> 4.3.0](https://github.com/volantis-x/hexo-theme-volantis/releases/tag/4.3.0) %}
 
-{% u 更多关于Volantis的小版本更新请[点击这里](https://github.com/volantis-x/hexo-theme-volantis/releases) %}
+{% u 更多关于Volantis的小版本更新请点击上方`更新日志`按钮 %}
 
 1. 增加 `disqusjs` 评论系统；
 
@@ -188,7 +188,7 @@ npm i hexo-renderer-stylus
 
 {% endtimenode %}
 
-<!-- more -->
+
 
 {% timenode 2020-09-26 [3.0.0 -> 4.0.0](https://github.com/volantis-x/hexo-theme-volantis/releases/tag/4.0.0) %}
 
