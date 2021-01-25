@@ -18,13 +18,14 @@ navbar:
       icon: fad fa-heart
       url: contributors/
 
-    - name: Settings
+    - name: Tools
       icon: fad fa-cog
       rows:
         - name: 暗黑模式
           icon: fas fa-moon
           toggle: darkmode
-
+        - name: Music
+          icon: fad fa-compact-disc fa-spin
     - name: More
       icon: fad fa-ellipsis-v
       rows:
