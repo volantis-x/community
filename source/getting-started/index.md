@@ -167,6 +167,29 @@ npm i hexo-renderer-stylus
 
 {% timeline %}
 
+{% timenode 2021-01-15 [4.2.0 -> 4.3.0](https://github.com/volantis-x/hexo-theme-volantis/releases/tag/4.3.0) %}
+
+{% u 更多关于Volantis的小版本更新请[点击这里](https://github.com/volantis-x/hexo-theme-volantis/releases) %}
+
+1. 增加 `disqusjs` 评论系统；
+
+2. 增加 `waline` 评论系统；
+
+3. 增加 [旧版 Internet Explorer 淘汰行动](https://www.microsoft.com/zh-cn/WindowsForBusiness/End-of-IE-support) ；
+
+4. 增加 Tidio聊天功能；
+
+5. 增加 twitoo waline valine minivaline 文章阅读量统计；
+
+6. 增加 bbtalk.js；
+7. 修复[#514](https://github.com/volantis-x/hexo-theme-volantis/issues/514) [#538](https://github.com/volantis-x/hexo-theme-volantis/issues/538) [#567](https://github.com/volantis-x/hexo-theme-volantis/pull/567) [#431](https://github.com/volantis-x/hexo-theme-volantis/issues/431) [#468](https://github.com/volantis-x/hexo-theme-volantis/issues/468)；
+
+8. 修复关闭 pjax 时 cover样式失效 和 报错 的问题 。
+
+{% endtimenode %}
+
+<!-- more -->
+
 {% timenode 2020-09-26 [3.0.0 -> 4.0.0](https://github.com/volantis-x/hexo-theme-volantis/releases/tag/4.0.0) %}
 
 {% u 4.0.0 的配置文件改动非常大，强烈建议不要在旧的配置文件上改。 %}
