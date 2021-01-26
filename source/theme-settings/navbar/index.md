@@ -111,3 +111,11 @@ blog/source/_data/menu.yml
     - name: 心率管家 App 的设计与开发
       url: blog/2019-07-23-heartmate/
 ```
+
+## 播放器
+
+在子菜单中，新增一个 `icon: fas fa-compact-disc` 的“菜单”就会被渲染成一个 APlayer 播放器。
+```yaml
+- name: 背景音乐
+  icon: fas fa-compact-disc
+```

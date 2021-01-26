@@ -243,10 +243,11 @@ color_scheme:
 ## 自定义右键菜单
 
 ```yaml blog/_config.volantis.yml
+# 自定义右键菜单
 rightmenu:
   enable: true
   # hr: 分割线, music: 音乐控制器
-  layout: [home, help, examples, contributors, hr, source_docs, source_theme, hr, print, hr, music]
+  layout: [home, help, examples, contributors, hr, source_docs, source_theme, hr, print, hr, dark_mode, hr, music]
   # 可选功能项
   print:
     name: 打印页面
@@ -273,4 +274,8 @@ rightmenu:
     name: 主题源码
     icon: fa fa-code-branch
     url: https://github.com/volantis-x/hexo-theme-volantis/
+  dark_mode:
+    name: Dark mode
+    icon: fas fa-moon
+    toggle: darkmode
 ```
