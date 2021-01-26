@@ -18,7 +18,7 @@ navbar:
       icon: fad fa-heart
       url: contributors/
 
-    - name: Tools
+    - name: Box
       icon: fad fa-cog
       rows:
         - name: 暗黑模式
