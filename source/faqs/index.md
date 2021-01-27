@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 常见问题
+title: 常见问题与反馈渠道
 pid: faq
 body: [article, comments]
 cover: true
@@ -81,3 +81,34 @@ root: /
 {% image https://cdn.jsdelivr.net/npm/alus@latest/8080.png, width=800px %}
 
 {% endfolding %}
+
+## 可供交流的渠道
+
+{% p subtitle, 解决问题 %}
+
+{% table %}
+| 渠道 | 方式 | 用途 |
+| :-- | :-- | :-- |
+| Issues | [@volantis-x/hexo-theme-volantis](https://github.com/volantis-x/hexo-theme-volantis/issues/) | 和开发者沟通的唯一渠道，用于跟进和解决问题 |
+{% endtable %}
+
+{% noteblock error, 请不要发送邮件 %}
+
+开源项目的开发者很反感别人不通过正确的途径如 Issues 而是通过私人邮件询问开源项目问题，所以一般不会回复此类邮件。
+
+{% endnoteblock %}
+
+{% p subtitle, 交流 %}
+{% table %}
+| 渠道 | 方式 | 用途 |
+| :-- | :-- | :-- |
+| 论坛 | [@volantis-x/discussions](https://github.com/volantis-x/hexo-theme-volantis/discussions/) | 慢，相对正式，方便检索，可以给其他用户参考 |
+| QQ群 | 1146399464 (验证码: <psw>vlts-2021</psw>) | 非正式，即时通讯，易于斗图；不利于给其他用户参考 |
+{% endtable %}
+
+{% p subtitle, 佛系互动 %}
+{% table %}
+| 渠道 | 方式 | 用途 |
+| :-- | :-- | :-- |
+| 评论区 | 留言 | 可以测试、灌水、推广自己的博客。 |
+{% endtable %}

@@ -1,34 +1,30 @@
 use_cdn: false
 navbar:
   menu:
-    - name: Docs
+    - name: 文档
       icon: fad fa-book faa-tada
       url: /getting-started/
       target: _self
 
-    - name: Examples
+    - name: 示例
       icon: fad fa-play-circle faa-tada
       url: examples/
 
-    - name: Help
+    - name: 帮助
       icon: fad fa-question-circle faa-tada
       url: faqs/
 
-    - name: Contributors
+    - name: 鸣谢
       icon: fad fa-heart
       url: contributors/
 
-    - name: Box
-      icon: fad fa-cog
+    - name: 更多
+      icon: fad fa-ellipsis-v
       rows:
         - name: 暗黑模式
           icon: fas fa-moon
           toggle: darkmode
-        - name: Music
-          icon: fad fa-compact-disc fa-spin
-    - name: More
-      icon: fad fa-ellipsis-v
-      rows:
+        - name: hr
         - name: 本站源码
           url: https://github.com/volantis-x/volantis-docs/
         - name: 主题源码
@@ -52,26 +48,26 @@ cover:
   subtitle: 'Chinese Community'
   background: https://uploadbeta.com/api/pictures/random/?key=BingEverydayWallpaperPicture
   features:
-    - name: Blogs
+    - name: 博客
       img: https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f4f0.svg
       url: /
-    - name: Docs
+    - name: 文档
       img: https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f516.svg
       url: /getting-started/
       target: _self
-    - name: Examples
-      img: https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f396.svg
+    - name: 示例
+      img: https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f4af.svg
       url: /examples/
-    - name: Help
+    - name: 帮助
       img: https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f4ac.svg
       url: faqs/
-    - name: Contributors
-      img: https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f9e9.svg
+    - name: 鸣谢
+      img: https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f497.svg
       url: /contributors/
-    - name: Archives
+    - name: 归档
       img: https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f5c3.svg
       url: /archives/
-    - name: Codes
+    - name: 源码
       img: https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f9ec.svg
       url: https://github.com/volantis-x/hexo-theme-volantis/
       target: _self
@@ -101,7 +97,7 @@ article:
 comments:
   title: <i class='fas fa-comments'></i> 用户交流区
   subtitle: 这里仅供用户之间进行交流，有任何疑问请前往GitHub提交Issue。在评论区进行提问将不会收到开发者的任何回复！
-  service: valine
+  service: utterances
   disqus:
     shortname: volantis
     path: /
@@ -109,7 +105,8 @@ comments:
     appId: FIKAgh6n0pUM08JXxhJHChVQ-MdYXbMMI
     appKey: RJGiOYFc1fBvfox4frBPpRzU
     path: /
-
+  utterances:
+    repo: volantis-x/community
 
 sidebar:
   for_page: [post, category, tagcloud]
