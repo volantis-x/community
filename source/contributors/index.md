@@ -26,28 +26,51 @@ Volantis 社区的发展离不开团队大佬们的无私奉献和社区小伙�
 ## 感谢开发者
 
 {% btns circle grid5 %}
-{% cell xaoxuu, https://github.com/xaoxuu, https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png %}
-{% cell MHuiG, https://github.com/MHuiG, https://avatars0.githubusercontent.com/u/38281581?s=60&v=4 %}
-{% cell inkss, https://github.com/inkss, https://avatars2.githubusercontent.com/u/31947043?s=60&v=4 %}
-{% cell Colsrch, https://github.com/Colsrch, https://avatars0.githubusercontent.com/u/58458181?v=4 %}
-{% cell Drew233, https://github.com/Drew233, https://avatars0.githubusercontent.com/u/47592224?s=60&v=4 %}
-{% cell Linhk1606, https://github.com/Linhk1606, https://avatars1.githubusercontent.com/u/50829219?s=60&v=4 %}
-{% cell ericclose, https://github.com/ericclose, https://avatars1.githubusercontent.com/u/34526560?s=60&v=4 %}
-{% cell Flexiston, https://github.com/Flexiston, https://avatars0.githubusercontent.com/u/62386802?s=60&v=4 %}
-{% cell CRainyDay, https://github.com/CRainyDay, https://avatars2.githubusercontent.com/u/46487957?s=60&v=4 %}
+{% cell xaoxuu, https://github.com/xaoxuu, https://avatars.githubusercontent.com/u/16400144?s=60&v=4 %}
+{% cell MHuiG, https://github.com/MHuiG, https://avatars.githubusercontent.com/u/38281581?s=60&v=4 %}
+{% cell inkss, https://github.com/inkss, https://avatars.githubusercontent.com/u/31947043?s=60&v=4 %}
+{% cell Colsrch, https://github.com/Colsrch, https://avatars.githubusercontent.com/u/58458181?s=60&v=4 %}
+{% cell Drew233, https://github.com/Drew233, https://avatars.githubusercontent.com/u/47592224?s=60&v=4 %}
+{% cell Linhk1606, https://github.com/Linhk1606, https://avatars.githubusercontent.com/u/50829219?s=60&v=4 %}
+{% cell ericclose, https://github.com/ericclose, https://avatars.githubusercontent.com/u/34526560?s=60&v=4 %}
+{% cell Flexiston, https://github.com/Flexiston, https://avatars.githubusercontent.com/u/62386802?s=60&v=4 %}
+{% cell CRainyDay, https://github.com/CRainyDay, https://avatars.githubusercontent.com/u/46487957?s=60&v=4 %}
 {% cell 查看全部, https://github.com/volantis-x/hexo-theme-volantis/graphs/contributors, fab fa-github %}
 {% endbtns %}
 
 
-## 感谢社区建设
+## 感谢社区建设者
+
+{% btns circle grid5 %}
+{% cell xaoxuu, https://github.com/xaoxuu, https://avatars.githubusercontent.com/u/16400144?s=60&v=4 %}
+{% cell MHuiG, https://github.com/MHuiG, https://avatars.githubusercontent.com/u/38281581?s=60&v=4 %}
+{% cell Colsrch, https://github.com/Colsrch, https://avatars.githubusercontent.com/u/58458181?s=60&v=4 %}
+{% cell penndu, https://github.com/penndu, https://avatars.githubusercontent.com/u/46226528?s=60&v=4 %}
+{% cell heson525, https://github.com/heson525, https://avatars.githubusercontent.com/u/32234343?s=60&v=4 %}
+{% cell W4J1e, https://github.com/W4J1e, https://avatars.githubusercontent.com/u/74824162?s=60&v=4 %}
+{% endbtns %}
+
+> 参与社区建设的朋友可以添加自己的链接到这里
+
+## 如何参与社区建设
 
 社区建设主要包括 {% btn, Issues, https://github.com/volantis-x/hexo-theme-volantis/issues %} {% btn, Discussions(论坛), https://github.com/volantis-x/hexo-theme-volantis/discussions %} {% btn, 官网博客收录, #如何收录博客 %} {% btn, 官网文档维护, #如何维护文档 %} 几个方面。
+
+
+### 如何维护文档
+
+目前 Volantis 4.x 已是已知的 Hexo 主题中文档最全面的，但仍有部分功能缺少明确的文档、部分文档已经过时，如果您发现了遗漏或者错误之处，我们非常希望您能够帮忙完善一下。
+
+Volantis 官网支持 CI ，您可以直接在线编辑源码：
+
+{% link 在线编辑文档, https://github.com/volantis-x/community/tree/master/source %}
+
 
 ### 如何收录博客
 
 每位用户在使用或更新主题的时候都需要阅读官网的文档，收录的相关内容能帮助用户更高效地上手，同时也能够提高被收录的文章的曝光率。如果在官网能看到更多的有价值的文章，就会有更多 Volantis 用户或者非 Volantis 用户来访问。
 
-如果您有或者发现了与 Hexo 博客搭建相关的精选原创文章，可以转载外链到 Volantis 官网，示例如下：
+如果您有或者发现了与 Hexo 博客搭建相关的文章，可以转载外链到 Volantis 官网，示例如下：
 
 ```md _posts/blogs/2020-05-17-pjax.md
 ---
@@ -73,23 +96,14 @@ inkss:
 ```
 
 {% noteblock warning %}
-**注意**
+**注意事项**
 1. 文章存放在 `_posts/blogs/` 目录中，且文件名格式为「年-月-日-文章话题」。
-2. 必须是原创文章，摘要部分300字符以内。如果想不出摘要可以不写，不要在摘要里重复一遍文章标题。
+2. 鼓励原创文章，摘要部分300字符以内。如果想不出摘要可以不写，不要在摘要里重复一遍文章标题。
 3. 最好选择一个文章分类，如果现有的分类中没有合适的，可以自己新增。
 4. 如果有文章头图，请确保图片内最多只有一个单词或短语，图片不清晰或者与文章无关的话不建议使用。
-5. 不仅限于自己的文章，可以在征得文章作者同意的情况下将其转载到官网。
+5. 不仅限于自己的文章，可以在征得文章作者同意的情况下将其链接收录到官网。
 {% endnoteblock %}
 
 
 {% link 在线编辑文档, https://github.com/volantis-x/community/tree/master/source/_posts/blogs %}
-
-
-### 如何维护文档
-
-目前 Volantis 4.x 已是已知的 Hexo 主题中文档最全面的，但仍有部分功能缺少明确的文档、部分文档已经过时，如果您发现了遗漏或者错误之处，我们非常希望您能够帮忙完善一下。
-
-Volantis 官网支持 CI ，您可以直接在线编辑源码：
-
-{% link 在线编辑文档, https://github.com/volantis-x/community/tree/master/source %}
 
