@@ -3,20 +3,20 @@ navbar:
   menu:
     - name: 文档
       icon: fad fa-book faa-tada
-      url: /getting-started/
+      url: /v4/getting-started/
       target: _self
 
     - name: 示例
       icon: fad fa-play-circle faa-tada
-      url: examples/
+      url: /examples/
 
     - name: 帮助
       icon: fad fa-question-circle faa-tada
-      url: faqs/
+      url: /faqs/
 
     - name: 鸣谢
       icon: fad fa-heart
-      url: contributors/
+      url: /contributors/
 
     - name: 更多
       icon: fad fa-ellipsis-v
@@ -33,7 +33,7 @@ navbar:
         - name: 更新日志
           url: https://github.com/volantis-x/hexo-theme-volantis/releases/
         - name: 博客文章
-          url: archives/
+          url: /archives/
         - name: hr
         - name: 旧版文档 v3
           url: /v3/getting-started/
@@ -53,14 +53,14 @@ cover:
       url: /
     - name: 文档
       img: https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f516.svg
-      url: /getting-started/
+      url: /v4/getting-started/
       target: _self
     - name: 示例
       img: https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f4af.svg
       url: /examples/
     - name: 帮助
       img: https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f4ac.svg
-      url: faqs/
+      url: /faqs/
     - name: 鸣谢
       img: https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f497.svg
       url: /contributors/
@@ -130,16 +130,16 @@ sidebar:
       rows:
         - name: 常见问题
           icon: fas fa-question-circle
-          url: faqs/
+          url: /faqs/
         - name: 示例博客
           icon: fas fa-play-circle
-          url: examples/
+          url: /examples/
         - name: 特别感谢
           icon: fas fa-handshake
-          url: contributors/
+          url: /contributors/
         - name: 测试博文
           icon: fas fa-file-alt
-          url: archives/
+          url: /archives/
         - name: 主题源码
           icon: fas fa-file-code
           url: https://github.com/volantis-x/hexo-theme-volantis/
