@@ -1,6 +1,6 @@
 ---
 layout: docs
-seo_title: 一个功能丰富、高度模块化的 Hexo 博客主题。支持多人协作、wiki文档等复杂系统，支持大量的标签插件。
+seo_title: 开始使用
 short_title: 1. 开始使用
 group: docs-volantis-latest
 order: 1
@@ -241,4 +241,4 @@ npm i hexo-renderer-stylus
 
 ## 配置与使用
 
-{% link 配置与使用, /site-settings/configuration/, https://cdn.jsdelivr.net/gh/volantis-x/cdn-org@1.1/icon/2439351-arrows/005-arrows.svg %}
+{% link 配置与使用, /v4/site-settings/, https://cdn.jsdelivr.net/gh/volantis-x/cdn-org@1.1/icon/2439351-arrows/005-arrows.svg %}

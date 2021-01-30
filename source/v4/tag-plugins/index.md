@@ -13,7 +13,7 @@ disqus:
 
 > 我们也在探索哪种分隔符既简单又不容易引起冲突，所以可能存在多种格式，具体以对应文档描述为准。
 
-## tag-plugins: text
+## text
 
 这是一些文本样式标签：
 
@@ -51,7 +51,7 @@ disqus:
 
 <br>
 
-## tag-plugins: span
+## span
 
 ```md 本插件最后更新于 <u>2.5</u> 版本
 {% span 样式参数, 文本内容 %}
@@ -113,7 +113,7 @@ left, center, right
 
 <br>
 
-## tag-plugins: p
+## p
 
 ```md 本插件最后更新于 <u>2.5</u> 版本
 {% p 样式参数, 文本内容 %}
@@ -178,7 +178,7 @@ left, center, right
 
 <br>
 
-## tag-plugins: note
+## note
 
 NoteBlock 是 Blockquote 的增强版，在左边显示图标，并且可以自定颜色。而 Note 是 NoteBlock 的简便写法。
 
@@ -263,7 +263,7 @@ clear, light, gray, red, yellow, green, cyan, blue
 ```
 <br>
 
-## tag-plugins: noteblock
+## noteblock
 
 NoteBlock 是 Blockquote 的增强版，在左边显示图标，并且可以自定颜色。而 Note 是 NoteBlock 的简便写法。
 
@@ -340,7 +340,7 @@ clear, light, gray, red, yellow, green, cyan, blue
 
 <br>
 
-## tag-plugins: checkbox
+## checkbox
 
 ```md 最后更新于 <u>2.6</u> 版本
 {% checkbox 样式参数（可选）, 文本（支持简单md） %}
@@ -397,7 +397,7 @@ checked
 
 <br>
 
-## tag-plugins: radio
+## radio
 
 ```md 最后更新于 <u>2.6</u> 版本
 {% checkbox 样式参数（可选）, 文本（支持简单md） %}
@@ -441,7 +441,7 @@ checked
 
 <br>
 
-## tag-plugins: timeline
+## timeline
 
 ```md 最后更新于 <u>3.0</u> 版本
 {% timeline 时间线标题（可选） %}
@@ -526,7 +526,7 @@ checked
 
 <br>
 
-## tag-plugins: link
+## link
 
 ```md 最后更新于 <u>3.0</u> 版本
 {% link 标题, 链接, 图片链接（可选） %}
@@ -545,7 +545,7 @@ checked
 
 <br>
 
-## tag-plugins: button
+## button
 
 {% note warning, 这个页面的标签将会在不久后重构 %}
 
@@ -765,7 +765,7 @@ rounded, circle
 
 <br>
 
-## tag-plugins: ghcard
+## ghcard
 
 ```md 最后更新于 <u>4.0</u> 版本
 {% ghcard 用户名, 其它参数（可选） %}
@@ -815,7 +815,7 @@ rounded, circle
 
 <br>
 
-## tag-plugins: site
+## site
 
 ```md 最后更新于 <u>4.0</u> 版本
 {% sitegroup %}
@@ -849,7 +849,7 @@ rounded, circle
 
 <br>
 
-## tag-plugins: dropmenu
+## dropmenu
 
 {% note warning, 这个页面的标签将会在不久后重构 %}
 
@@ -976,7 +976,7 @@ rounded, circle
 
 <br>
 
-## tag-plugins: tab
+## tab
 
 此插件移植自 [NexT #tabs](https://theme-next.org/docs/tag-plugins/tabs)
 
@@ -1032,7 +1032,7 @@ rounded, circle
 
 <br>
 
-## tag-plugins: folding
+## folding
 
 ```md 最后更新于 <u>2.3</u> 版本
 {% folding 参数（可选）, 标题 %}
@@ -1145,7 +1145,7 @@ blue, cyan, green, yellow, red
 
 <br>
 
-## tag-plugins: inlineimage
+## inlineimage
 
 Inlineimage 标签是一种行内图片标签，可以用来在一段话中间插入表情。
 
@@ -1179,7 +1179,7 @@ height=20px
 
 <br>
 
-## tag-plugins: image
+## image
 
 Image 标签是一种针对单个图片应用场景的标签，支持图片描述文字和指定宽度。
 
@@ -1252,7 +1252,7 @@ bg=#f2f2f2
 
 <br>
 
-## tag-plugins: gallery
+## gallery
 
 Gallery 标签是一种针对一组图片应用场景的标签。
 
@@ -1394,7 +1394,7 @@ stretch
 
 <br>
 
-## tag-plugins: audio
+## audio
 
 ```md 本插件最后更新于 <u>2.4</u> 版本
 {% audio 音频链接 %}
@@ -1415,7 +1415,7 @@ stretch
 
 <br>
 
-## tag-plugins: video
+## video
 
 ```md 本插件最后更新于 <u>2.3</u> 版本
 {% video 视频链接 %}
@@ -1500,7 +1500,7 @@ left, center, right
 
 <br>
 
-## tag-plugins: frame
+## frame
 
 这是一个能够将图片或者视频套入设备框架中的标签，可以用来更优雅地显示截图、录屏。
 
@@ -1540,7 +1540,7 @@ android, ipad, macbook, watch
 
 <br>
 
-## tag-plugins: aplayer
+## aplayer
 
 主题对 APlayer 插件的样式进行了兼容。安装插件：
 
@@ -1555,7 +1555,7 @@ npm i -S hexo-tag-aplayer
 
 <br>
 
-## tag-plugins: issues
+## issues
 
 ```md 最后更新于 <u>4.0</u> 版本
 {% issues type | api=url | group=key:value1,value2（可选） %}

@@ -110,6 +110,15 @@ sidebar:
   for_page: [post, category, tagcloud]
   for_post: [toc]
   widget_library:
+    toc:
+      class: toc
+      display: [desktop, mobile] # [desktop, mobile]
+      header:
+        icon: fas fa-list
+        title: 本文目录
+      list_number: true
+      min_depth: 2
+      max_depth: 5
     post:
       class: text
       display: [desktop, mobile] # [desktop, mobile]
@@ -245,12 +254,15 @@ plugins:
     enable: true
   fontawesome: https://cdn.jsdelivr.net/gh/volantis-x/cdn-fontawesome-pro@master/css/all.min.css
   backstretch:
+    enable: false
     images:               # For personal use only. At your own risk if used for commercial purposes !!!
       - https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/016.jpg
       - https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/019.jpg
       - https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.jpg
       - https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/033.jpg
       - https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/052.jpg
+  parallax:
+    enable: true
   aplayer:
     enable: true
     autoplay: true
