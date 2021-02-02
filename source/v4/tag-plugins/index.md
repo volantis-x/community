@@ -1511,10 +1511,12 @@ left, center, right
 
 <br>
 
-{% frame iphone11 | img=https://gitee.com/xaoxuu/cdn-assets/raw/master/wiki/prohud/toast-loading@2x.jpg | video=https://gitee.com/xaoxuu/cdn-assets/raw/master/wiki/prohud/toast-loading@2x.mov | part=top %}
+
+{% frame iphone11 | img=https://7.dusays.com/2020/09/28/baa33914a34ec.jpg | video=https://7.dusays.com/2020/09/28/39db723f1e200.mp4 | part=top %}
+
 
 ```
-{% frame iphone11 | img=https://gitee.com/xaoxuu/cdn-assets/raw/master/wiki/prohud/toast-loading@2x.jpg | video=https://gitee.com/xaoxuu/cdn-assets/raw/master/wiki/prohud/toast-loading@2x.mov | part=top %}
+{% frame iphone11 | img=https://7.dusays.com/2020/09/28/baa33914a34ec.jpg | video=https://7.dusays.com/2020/09/28/39db723f1e200.mp4 | part=top %}
 ```
 
 在这个示例中同时出现了 `img` 和 `video` 那么它就是一个带有封面的视频，在视频加载完成之前会先显示视频封面。
