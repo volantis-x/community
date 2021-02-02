@@ -105,6 +105,7 @@ comments:
     path: /
   utterances:
     repo: volantis-x/community
+    issue-number: 115
 
 sidebar:
   for_page: [post, category, tagcloud]
