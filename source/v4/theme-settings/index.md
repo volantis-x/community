@@ -189,6 +189,8 @@ custom_css:
 
 ### 自定义颜色
 
+{% btn solid large center, 多彩配色方案, https://mhg-lab.github.io/pages/color/ , fad fa-paper-plane %}
+
 ```yaml blog/_config.volantis.yml
 color_scheme:
   # ------------
