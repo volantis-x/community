@@ -251,6 +251,7 @@ front-matter 是文件最上方以 `---` 分隔的区域，用于指定个别文
 | thumbnail           | 缩略图 | String | false  |
 | icons           | 图标 | Array | []  |
 | pin           | 是否置顶 | Bool  | false  |
+| headimg           | 文章头图| url  | - |
 {% endtable %}
 
 `layout:post` 时特有的字段：
