@@ -48,6 +48,7 @@ Volantis 社区的发展离不开团队大佬们的无私奉献和社区小伙�
 {% cell penndu, https://github.com/penndu, https://avatars.githubusercontent.com/u/46226528?s=60&v=4 %}
 {% cell heson525, https://github.com/heson525, https://avatars.githubusercontent.com/u/32234343?s=60&v=4 %}
 {% cell W4J1e, https://github.com/W4J1e, https://avatars.githubusercontent.com/u/74824162?s=60&v=4 %}
+{% cell luosw, https://github.com/luosiwei-cmd, https://avatars.githubusercontent.com/u/61175380?s=60&v=4 %}
 {% endbtns %}
 
 > 参与社区建设的朋友可以添加自己的链接到这里
