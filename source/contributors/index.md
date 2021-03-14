@@ -22,36 +22,13 @@ Volantis 社区的发展离不开团队大佬们的无私奉献和社区小伙�
 
 <!-- more -->
 
-
 ## 感谢开发者
 
-{% btns circle grid5 %}
-{% cell xaoxuu, https://github.com/xaoxuu, https://avatars.githubusercontent.com/u/16400144?s=60&v=4 %}
-{% cell MHuiG, https://github.com/MHuiG, https://avatars.githubusercontent.com/u/38281581?s=60&v=4 %}
-{% cell inkss, https://github.com/inkss, https://avatars.githubusercontent.com/u/31947043?s=60&v=4 %}
-{% cell Colsrch, https://github.com/Colsrch, https://avatars.githubusercontent.com/u/58458181?s=60&v=4 %}
-{% cell Drew233, https://github.com/Drew233, https://avatars.githubusercontent.com/u/47592224?s=60&v=4 %}
-{% cell Linhk1606, https://github.com/Linhk1606, https://avatars.githubusercontent.com/u/50829219?s=60&v=4 %}
-{% cell ericclose, https://github.com/ericclose, https://avatars.githubusercontent.com/u/34526560?s=60&v=4 %}
-{% cell Flexiston, https://github.com/Flexiston, https://avatars.githubusercontent.com/u/62386802?s=60&v=4 %}
-{% cell CRainyDay, https://github.com/CRainyDay, https://avatars.githubusercontent.com/u/46487957?s=60&v=4 %}
-{% cell 查看全部, https://github.com/volantis-x/hexo-theme-volantis/graphs/contributors, fab fa-github %}
-{% endbtns %}
-
+{% contributors repo:volantis-x/hexo-theme-volantis %}
 
 ## 感谢社区建设者
 
-{% btns circle grid5 %}
-{% cell xaoxuu, https://github.com/xaoxuu, https://avatars.githubusercontent.com/u/16400144?s=60&v=4 %}
-{% cell MHuiG, https://github.com/MHuiG, https://avatars.githubusercontent.com/u/38281581?s=60&v=4 %}
-{% cell Colsrch, https://github.com/Colsrch, https://avatars.githubusercontent.com/u/58458181?s=60&v=4 %}
-{% cell penndu, https://github.com/penndu, https://avatars.githubusercontent.com/u/46226528?s=60&v=4 %}
-{% cell heson525, https://github.com/heson525, https://avatars.githubusercontent.com/u/32234343?s=60&v=4 %}
-{% cell W4J1e, https://github.com/W4J1e, https://avatars.githubusercontent.com/u/74824162?s=60&v=4 %}
-{% cell luosw, https://github.com/luosiwei-cmd, https://avatars.githubusercontent.com/u/61175380?s=60&v=4 %}
-{% endbtns %}
-
-> 参与社区建设的朋友可以添加自己的链接到这里
+{% contributors repo:volantis-x/community %}
 
 ## 如何参与社区建设
 
@@ -107,4 +84,3 @@ inkss:
 
 
 {% link 在线编辑文档, https://github.com/volantis-x/community/tree/master/source/_posts/blogs %}
-
