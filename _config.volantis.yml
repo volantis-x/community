@@ -1,5 +1,9 @@
 use_cdn: false
 navbar:
+  logo: # choose [img] or [icon + title]
+    img: '' #https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-NavBar@3x.png
+    icon:
+    title: 'Volantis 5.0 <sup style="color:#ff9800">alpha</sup>'
   menu:
     - name: 文档
       icon: fad fa-book faa-tada
@@ -45,8 +49,8 @@ navbar:
 cover:
   # height_scheme: full # full, half
   title: 'Volantis'
-  subtitle: 'Chinese Community'
-  background: https://uploadbeta.com/api/pictures/random/?key=BingEverydayWallpaperPicture
+  subtitle: '中文创作者社区'
+  background: # https://bing.ioliu.cn/v1/rand?w=1920&h=1200
   features:
     - name: 博客
       img: https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f4f0.svg
@@ -264,6 +268,8 @@ plugins:
       - https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/052.jpg
   parallax:
     enable: true
+    images:
+      - https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/042.jpg
   aplayer:
     enable: true
     autoplay: true
