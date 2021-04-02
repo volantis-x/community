@@ -272,7 +272,7 @@ plugins:
       - https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/042.jpg
   aplayer:
     enable: true
-    autoplay: true
+    autoplay: false
     volume: 0.4
     order: random
     # id: 4917530132 # vol red
