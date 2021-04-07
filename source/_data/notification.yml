@@ -2,8 +2,10 @@
 oldversion:
   title: 过期的文档
   message: 这份文档过于久远，如果您使用的是新版的主题，请查看新版本的文档。
+  position: bottom # bottom (底部通知), right (右侧通知，会自动消失)
   theme: warning # default, warning
-  action:
+  cache: false # 是否记住选项（下次不再弹出）
+  buttons:
     - title: 查看新版文档
       url: /getting-started/
       dismiss: false # 点击了是否关闭底部横幅

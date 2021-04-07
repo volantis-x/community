@@ -1,10 +1,10 @@
 ---
 layout: docs
-group: docs-v4
+group: docs-volantis-latest
 order: 501
 title: 标签插件
 short_title: 5. 标签插件
-sidebar: [docs-v4, toc]
+sidebar: [docs-volantis-latest, toc]
 disqus:
   path: /
 ---

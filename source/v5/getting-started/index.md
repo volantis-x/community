@@ -2,14 +2,14 @@
 layout: docs
 seo_title: 开始使用
 short_title: 1. 开始使用
-group: docs-v4
+group: docs-volantis-latest
 order: 1
-sidebar: [docs-v4, toc]
+sidebar: [docs-volantis-latest, toc]
 description: Volantis 是一个功能丰富、高度模块化的 Hexo 博客主题。得益于其强大的模块化特性，您可以轻松搭建一个极简风格的博客，也可以仿照官网搭建一个多人协作的、包含文档模块的大体量综合型博客。
 ---
 
 <p>
-{% span logo center large, <sup>&ensp;</sup>Volantis<sup>4</sup> %}
+{% span logo center large, <sup>&ensp;</sup>Volantis<sup>5</sup> %}
 {% span center small logo, A Wonderful Theme for Hexo %}
 </p>
 <br>
@@ -177,54 +177,7 @@ npm i hexo-renderer-stylus
 {% endnoteblock %}
 
 
-请对照 {% btn, 更新日志, https://github.com/volantis-x/hexo-theme-volantis/releases %} 进行更新，下面是更新之后需要注意的事项：
-
-{% timeline %}
-
-{% timenode 2021-01-15 [4.2.0 -> 4.3.0](https://github.com/volantis-x/hexo-theme-volantis/releases/tag/4.3.0) %}
-
-{% u 更多关于Volantis的小版本更新请点击上方`更新日志`按钮 %}
-
-1. 增加 `disqusjs` 评论系统；
-
-2. 增加 `waline` 评论系统；
-
-3. 增加 [旧版 Internet Explorer 淘汰行动](https://www.microsoft.com/zh-cn/WindowsForBusiness/End-of-IE-support) ；
-
-4. 增加 Tidio聊天功能；
-
-5. 增加 twitoo waline valine minivaline 文章阅读量统计；
-
-6. 增加 bbtalk.js；
-7. 修复[#514](https://github.com/volantis-x/hexo-theme-volantis/issues/514) [#538](https://github.com/volantis-x/hexo-theme-volantis/issues/538) [#567](https://github.com/volantis-x/hexo-theme-volantis/pull/567) [#431](https://github.com/volantis-x/hexo-theme-volantis/issues/431) [#468](https://github.com/volantis-x/hexo-theme-volantis/issues/468)；
-
-8. 修复关闭 pjax 时 cover样式失效 和 报错 的问题 。
-
-{% endtimenode %}
-
-
-
-{% timenode 2020-09-26 [3.0.0 -> 4.0.0](https://github.com/volantis-x/hexo-theme-volantis/releases/tag/4.0.0) %}
-
-{% u 4.0.0 的配置文件改动非常大，强烈建议不要在旧的配置文件上改。 %}
-
-1. 原数据文件中的配置项不再支持，请在配置文件中进行设置。
-2. 主题配置文件进行了重新设计，需要「完全」重新配置一遍。
-3. 友链使用数据文件，并支持 issues 标签实现动态自助友链。
-4. 原 meta 自定义布局现在只支持文章内部的 top_meta 和 bottom_meta 。
-5. 文章列表页面布局现在只能在有限范围内进行自定义。
-6. 侧边栏组件现在只支持侧边栏位置；文章末尾有专用的组件。
-7. 如果安装了懒加载插件，需要卸载掉，使用主题内置的懒加载（和插件冲突）。
-8. 如果想要关闭评论，需要改为 `comments: false` 。
-9. 如果要隐藏文章顶部或者底部的 meta 标签，需设置 `top_meta: false` 或者 `bottom_meta: false` 。
-10. 如果需要同时隐藏标题和顶部的 meta 标签也可以把 `title: xxx` 改为 `seo_title: xxx` 。
-11. 作者的信息使用数据文件进行定义，文章中只需要写 `author: xxx` 而不需要重复写作者的信息了。
-12. 现在只有 gallery 标签的图片支持放大。
-13. 友链页面 `layout: links` 改为 `layout: friends`。
-
-{% endtimenode %}
-
-{% endtimeline %}
+请对照 {% btn, 更新日志, https://github.com/volantis-x/hexo-theme-volantis/releases %} 进行更新.
 
 ## 许可协议
 

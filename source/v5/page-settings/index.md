@@ -1,10 +1,10 @@
 ---
 layout: docs
 title: 页面配置
-group: docs-v4
+group: docs-volantis-latest
 order: 401
 short_title: 4. 页面配置
-sidebar: [docs-v4, toc]
+sidebar: [docs-volantis-latest, toc]
 mathjax: true
 disqus:
   path: /

@@ -7,7 +7,7 @@ navbar:
   menu:
     - name: 文档
       icon: fad fa-book faa-tada
-      url: /v4/getting-started/
+      url: /v5/getting-started/
       target: _self
 
     - name: 示例
@@ -39,6 +39,8 @@ navbar:
         - name: 博客文章
           url: /archives/
         - name: hr
+        - name: 旧版文档 v4
+          url: /v4/getting-started/
         - name: 旧版文档 v3
           url: /v3/getting-started/
         - name: 旧版文档 v2
@@ -57,7 +59,7 @@ cover:
       url: /
     - name: 文档
       img: https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f516.svg
-      url: /v4/getting-started/
+      url: /v5/getting-started/
       target: _self
     - name: 示例
       img: https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f4af.svg
@@ -165,14 +167,6 @@ sidebar:
           rel: external nofollow noopener noreferrer
           target: _blank
 
-    docs-volantis-latest:
-      class: group
-      display: [desktop, mobile] # [desktop, mobile]
-      seo_title: Volantis
-      header:
-        icon: fa fa-book
-        title: 文档导航 v4.0
-
     # qrcode widget
     qrcode:
       class: qrcode
@@ -222,14 +216,27 @@ sidebar:
         icon: fad fa-list-alt
         title: 文档导航 v3
 
+    docs-v4:
+      class: group
+      display: [desktop, mobile] # [desktop, mobile]
+      header:
+        icon: fad fa-list-alt
+        title: 文档导航 v4
+
     docs-latest:
       class: group
       display: [desktop, mobile] # [desktop, mobile]
       header:
         icon: fad fa-book
-        title: 文档导航 v4.0
+        title: 文档导航 v5.0
 
-
+    docs-volantis-latest:
+      class: group
+      display: [desktop, mobile] # [desktop, mobile]
+      seo_title: Volantis
+      header:
+        icon: fa fa-book
+        title: 文档导航 v5.0
 
 site_footer:
   layout: [aplayer, social, source, analytics, copyright]

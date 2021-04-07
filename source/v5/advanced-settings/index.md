@@ -1,10 +1,10 @@
 ---
 layout: docs
-group: docs-v4
+group: docs-volantis-latest
 order: 601
 title: 进阶设定
 short_title: 6. 进阶设定
-sidebar: [docs-v4, toc]
+sidebar: [docs-volantis-latest, toc]
 disqus:
   path: /
 ---
@@ -77,10 +77,6 @@ author: Jon
 
 - 访问具有动态特效背景（如雪花、粒子等）的网站时，手机很快会发烫变卡，笔记本很快会风扇狂转并且浏览器提示建议关闭此页面。如果你希望网站有好的使用体验请尽量不要安装这类插件。
 
-<!--
-- 强烈推荐安装 [hexo-offline](https://github.com/JLHwung/hexo-offline) 插件，初次加载速度不变，后期切换页面和刷新网页速度越来越快。
--->
-
 
 ## 优化 SEO
 
@@ -119,22 +115,27 @@ seo:
 ### 开启方法
 
 ```yaml blog/_config.volantis.yml
-# use_cdn: /source/js/* 中的JS文件(JS Only)使用jsdelivr的min版本加速
+# 本地静态文件使用jsdelivr的min版本加速 https://www.jsdelivr.com/features
 # 默认使用 https://cdn.jsdelivr.net/npm/hexo-theme-volantis@<%- theme.info.theme_version %>/source/js/*.min.js 的CDN压缩版本(min.js)，注意版本号对应关系！！可以通过修改以下配置项覆盖
-# 开发者注意 use_cdn 设置为 false
-use_cdn: true
-info:
-  theme_version: 'x.x.x' # This is theme's version.
-  cdn:
-    js: # https://cdn.jsdelivr.net/npm/hexo-theme-volantis@<%- theme.info.theme_version %>/source/js/app.min.js # 注意版本!!!
+# 开发者注意 cdn.enable 设置为 false
+cdn:
+  enable: false
+  prefix: # CDN 前缀，为空使用默认值，链接最后不加 "/",例如： https://cdn.jsdelivr.net/gh/volantis-x/volantis-x.github.io@gh-page 填写最后编译生成的源码CDN地址前缀，此路径下应该含有/js与/css目录,该配置默认值是："https://cdn.jsdelivr.net/npm/hexo-theme-volantis@"+ theme.info.theme_version +"/source"
+  # 以下配置可以覆盖 cdn.prefix,配置项的值可以为空，但是要使用CDN必须依据路径填写配置项的键
+  set:
+    js:
+      app: #/js/app.js
     css:
-      first: # /css/first.css (默认不提供CDN，first.css 中为首屏渲染的样式，内含 cover navbar search 的样式。)
-      style: # /css/style.css (默认不提供CDN，style.css 为异步延迟加载的样式。)
+      style: #/css/style.css # (异步加载样式)
 ```
 
 {% note info, 如果你需要对样式进行 DIY，可以只关闭 style 文件的 CDN。 %}
 
+从V5版本开始，首屏样式采用硬编码的方式写在HTML中。首屏样式内含 cover navbar search 的样式，其他样式放入/css/style.css异步加载。
+
 {% note warning up, 如果你需要对样式进行 DIY，请注意首屏渲染和异步延迟加载的差异。 %}
+
+{% note info, 可以对 style.css 使用 HTTP/2 Server Push，但是此方案并不推荐。我们已经对style.css进行了preload处理，推荐使用对服务器压力成本较小的 CDN 服务。 %}
 
 ### 自定义 CDN
 
@@ -151,6 +152,9 @@ npm install --save-dev gulp gulp-html-minifier-terser gulp-htmlclean gulp-htmlmi
 ```
 
 ### gulp 配置文件
+
+
+{% folding green, gulp 配置文件 %}
 
 ```js blog/gulpfile.js
 var gulp = require('gulp');
@@ -200,6 +204,9 @@ gulp.task('one', gulp.parallel(
 gulp.task('default', gulp.series('one'));
 ```
 
+{% endfolding %}
+
+
 ### 运行压缩
 
 ```shell
@@ -208,18 +215,25 @@ gulp
 
 ## 安装 Service Worker 服务
 
+### 方案一 安装插件
+
+安装 [hexo-offline-popup](https://github.com/Colsrch/hexo-offline-popup)  或者 [hexo-offline](https://github.com/JLHwung/hexo-offline) 插件，初次加载速度不变，后期切换页面和刷新网页速度越来越快。
+
+### 方案二 使用 workbox 自定义配置
+
+{% folding green, step 1. 修改 blog/_config.yml 文件。 %}
+
 ```yaml blog/_config.yml
 # 全局导入
 import:
   script:
     - <script>"serviceWorker"in navigator&&navigator.serviceWorker.register("/sw.js").then(function(n){n.onupdatefound=function(){var e=n.installing;e.onstatechange=function(){switch(e.state){case"installed":navigator.serviceWorker.controller?console.log("Updated serviceWorker."):console.log("serviceWorker Sucess!");break;case"redundant":console.log("The installing service worker became redundant.")}}}}).catch(function(e){console.log("Error during service worker registration:",e)}); </script>
 ```
+{% endfolding %}
 
-在`blog/source`中创建`sw.js`文件。
+{% folding green, step 2. 在 blog/source 中创建 sw.js 文件。 %}
 
-内容如下：
-
-```js
+```js blog/source/sw.js
 importScripts('https://cdn.jsdelivr.net/npm/workbox-cdn@5.1.3/workbox/workbox-sw.js');
 
 workbox.setConfig({
@@ -360,6 +374,10 @@ routing.setDefaultHandler(
 );
 
 ```
+
+{% endfolding %}
+
+{% note warning up, 如果你使用了此方案，修改静态文件后发布网页一定要修改缓存版本号。 %}
 
 ## 安装「相关文章」插件
 
