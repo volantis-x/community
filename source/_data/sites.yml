@@ -14,12 +14,12 @@ community_team:
       description: 开发者
     - title: inkss
       url: https://inkss.cn
-      screenshot: https://7.dusays.com/2021/03/15/c55e25fcb9227.png
+      screenshot: https://i.loli.net/2021/04/08/suyXO3VRDSZHPeG.png
       avatar: https://cdn.jsdelivr.net/gh/inkss/common@master/static/web/avatar.jpg
       description: 摸鱼
     - title: W4J1e
       url: https://www.hin.cool
-      screenshot: https://7.dusays.com/2020/12/13/bc50e8dab935e.jpg
+      screenshot: https://i.loli.net/2021/04/08/VfYXGSs6M32UeLw.jpg
       avatar: https://cdn.hin.cool/pic/my/dl3.png
       description: 打杂
 
@@ -29,7 +29,7 @@ test_demo:
   items:
     - title: volantis-x.js.org
       url: https://volantis-x.js.org/
-      screenshot: https://7.dusays.com/2021/01/26/308758c15420f.png
+      screenshot: https://i.loli.net/2021/04/08/YQ2nhcvyCuFsm3g.png
       avatar: https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/apple-touch-icon.png
       description: Test Site For Development
 
