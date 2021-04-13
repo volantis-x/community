@@ -1238,8 +1238,8 @@ bg=#f2f2f2
 
 Gallery 标签是一种针对一组图片应用场景的标签。
 
-```md 本插件最后更新于 <u>3.0</u> 版本
-{% gallery 参数, 列数 %}
+```md 本插件最后更新于 <u>5.0</u> 版本
+{% gallery 参数, 列数, 分组 %}
 ![图片描述](https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper/abstract/B18FCBB3-67FD-48CC-B4F3-457BA145F17A.jpeg)
 ![](https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper/abstract/67239FBB-E15D-4F4F-8EE8-0F1C9F3C4E7C.jpeg)
 {% endgallery %}
@@ -1253,14 +1253,14 @@ Gallery 标签是一种针对一组图片应用场景的标签。
 {% endgallery %}
 
 一行多个图片（不换行）
-{% gallery %}
+{% gallery,, one %}
 ![图片描述](https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper/abstract/B18FCBB3-67FD-48CC-B4F3-457BA145F17A.jpeg)
 ![图片描述](https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper/abstract/67239FBB-E15D-4F4F-8EE8-0F1C9F3C4E7C.jpeg)
 ![图片描述](https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper/abstract/00E0F0ED-9F1C-407A-9AA6-545649D919F4.jpeg)
 {% endgallery %}
 
 多行多个图片（每行2～8个图片）
-{% gallery stretch, 8 %}
+{% gallery stretch, 8, two %}
 ![](https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/001.jpg)
 ![](https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/002.jpg)
 ![](https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/003.jpg)
@@ -1332,7 +1332,7 @@ Gallery 标签是一种针对一组图片应用场景的标签。
 一行多个图片（不换行）
 
 ```md example.md:
-{% gallery %}
+{% gallery,, one %}
 ![图片描述](https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper/abstract/B18FCBB3-67FD-48CC-B4F3-457BA145F17A.jpeg)
 ![图片描述](https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper/abstract/67239FBB-E15D-4F4F-8EE8-0F1C9F3C4E7C.jpeg)
 ![图片描述](https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper/abstract/00E0F0ED-9F1C-407A-9AA6-545649D919F4.jpeg)
@@ -1342,7 +1342,7 @@ Gallery 标签是一种针对一组图片应用场景的标签。
 多行多个图片（每行2～8个图片）
 
 ```md example.md:
-{% gallery stretch, 4 %}
+{% gallery stretch, 4, two %}
 ![](https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper/abstract/B951AE18-D431-417F-B3FE-A382403FF21B.jpeg)
 ![](https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper/landscape/AEB33F9D-7294-4CF1-B8C5-3020748A9D45.jpeg)
 ![](https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper/landscape/250662D4-5A21-4AAA-BB63-CD25CF97CFF1.jpeg)
@@ -1372,7 +1372,9 @@ stretch
 
 逗号后面直接写列数，支持 2 ～ 8 列。设定列列数之后就是「多行多图」布局，此时图片默认左对齐。为了避免图片大小不一，建议搭配 `stretch` 来时图片放大填充。
 
+#### 分组
 
+相同内容的会被归档在一个分组中。
 
 <br>
 
