@@ -9,174 +9,123 @@ disqus:
   path: /
 ---
 
-为了兼容老用户，旧的标签插件在重构之前依然沿用旧的格式，即「英文逗号+空格」作为参数分隔符，而部分新增标签插件是「空格+英文竖线+空格」，请注意区分。
+{% note info, 为了兼容老用户，旧的标签插件在重构之前依然沿用旧的格式，即 **command** + **空格** 作为参数分隔符，而部分新增标签插件是 **空格** + **英文竖线** + **空格** ，请注意区分。 %}
 
-> 我们也在探索哪种分隔符既简单又不容易引起冲突，所以可能存在多种格式，具体以对应文档描述为准。
+{% note info, 我们也在探索哪种分隔符既简单又不容易引起冲突，所以可能存在多种格式，具体以对应文档描述为准。 %}
 
 ## text
 
-这是一些文本样式标签：
+{% tabs text %}
+<!-- tab 效果 -->
 
-带 {% u 下划线 %} 的文本
-```md example.md:
-带 {% u 下划线 %} 的文本
-```
+带 {% u 下划线 %} 的文本；带 {% emp 着重号 %} 的文本；带 {% wavy 波浪线 %} 的文本；带 {% del 删除线 %} 的文本
 
-带 {% emp 着重号 %} 的文本
-```md example.md:
-带 {% emp 着重号 %} 的文本
-```
-
-
-带 {% wavy 波浪线 %} 的文本
-```md example.md:
-带 {% wavy 波浪线 %} 的文本
-```
-
-
-带 {% del 删除线 %} 的文本
-```md example.md:
-带 {% del 删除线 %} 的文本
-```
-
-键盘样式的文本 {% kbd command %} + {% kbd D %}
-```md example.md:
-键盘样式的文本 {% kbd command %} + {% kbd D %}
-```
+键盘样式的文本：{% kbd ⌘ %} + {% kbd D %}
 
 密码样式的文本：{% psw 这里没有验证码 %}
-```md example.md:
+
+<!-- endtab -->
+<!-- tab 源码 -->
+```md
+带 {% u 下划线 %} 的文本；带 {% emp 着重号 %} 的文本；带 {% wavy 波浪线 %} 的文本；带 {% del 删除线 %} 的文本
+
+键盘样式的文本：{% kbd ⌘ %} + {% kbd D %}
+
 密码样式的文本：{% psw 这里没有验证码 %}
 ```
-
-<br>
+<!-- endtab -->
+{% endtabs %}
 
 ## span
 
-```md 本插件最后更新于 <u>2.5</u> 版本
+{% tabs span %}
+<!-- tab 语法 -->
+
+```markdown 本插件最后更新于 <emp>2.5</emp> 版本
 {% span 样式参数, 文本内容 %}
 ```
 
-### 彩色文字
+<!-- endtab -->
 
-在一段话中方便插入各种颜色的标签，包括：{% span red, 红色 %}、{% span yellow, 黄色 %}、{% span green, 绿色 %}、{% span cyan, 青色 %}、{% span blue, 蓝色 %}、{% span gray, 灰色 %}。
+<!-- tab 效果 -->
+各种颜色的标签，包括：{% span red, 红色 %}、{% span yellow, 黄色 %}、{% span green, 绿色 %}、{% span cyan, 青色 %}、{% span blue, 蓝色 %}、{% span gray, 灰色 %}。
 
-### 超大号文字
+超大号文字：
 
-文档「开始」页面中的标题部分就是超大号文字。
+{% span center logo large, Volantis %} {% span center small, A Wonderful Theme for Hexo %}
 
-{% span center logo large, Volantis %}
-{% span center small, A Wonderful Theme for Hexo %}
+<!-- endtab -->
 
-### 上述示例的源码
+<!-- tab 源码 -->
+```md
+各种颜色的标签，包括：{% span red, 红色 %}、{% span yellow, 黄色 %}、{% span green, 绿色 %}、{% span cyan, 青色 %}、{% span blue, 蓝色 %}、{% span gray, 灰色 %}。
 
-```md example:
-#### 彩色文字
+超大号文字：
 
-在一段话中方便插入各种颜色的标签，包括：{% span red, 红色 %}、{% span yellow, 黄色 %}、{% span green, 绿色 %}、{% span cyan, 青色 %}、{% span blue, 蓝色 %}、{% span gray, 灰色 %}。
-
-#### 超大号文字
-
-文档「开始」页面中的标题部分就是超大号文字。
-
-{% span center logo large, Volantis %}
-{% span center small, A Wonderful Theme for Hexo %}
+{% span center logo large, Volantis %} {% span center small, A Wonderful Theme for Hexo %}
 ```
+<!-- endtab -->
 
-### 可以支持的参数
+<!-- tab 参数 -->
 
-样式参数位置可以写颜色、大小和对齐方向，多个样式参数用空格隔开。
+|   属性   | 可选值                                                    |
+| :------: | --------------------------------------------------------- |
+|   字体   | `logo`, `code`                                            |
+|   颜色   | `red`, `yellow`, `green`, `cyan`, `blue`, `gray`          |
+|   大小   | `small`, `h4`, `h3`, `h2`, `h1`, `large`, `huge`, `ultra` |
+| 对齐方向 | `left`, `center`, `right`                                 |
 
-#### 字体
-
-```
-logo, code
-```
-
-#### 颜色
-
-```
-red, yellow, green, cyan, blue, gray
-```
-
-#### 大小
-
-```
-small, h4, h3, h2, h1, large, huge, ultra
-```
-
-#### 对齐方向
-
-```
-left, center, right
-```
-
-<br>
+<!-- endtab -->
+{% endtabs %}
 
 ## p
 
-```md 本插件最后更新于 <u>2.5</u> 版本
+{% tabs p %}
+
+<!-- tab 参数 -->
+```markdown 本插件最后更新于 <emp>2.5</emp> 版本
 {% p 样式参数, 文本内容 %}
 ```
+<!-- endtab -->
 
-### 演示效果
-
-#### 彩色文字
-
-在一段话中方便插入各种颜色的标签，包括：{% p red, 红色 %}、{% p yellow, 黄色 %}、{% p green, 绿色 %}、{% p cyan, 青色 %}、{% p blue, 蓝色 %}、{% p gray, 灰色 %}。
-
-#### 超大号文字
-
-文档「开始」页面中的标题部分就是超大号文字。
-
-{% p center logo large, Volantis %}
-{% p center small, A Wonderful Theme for Hexo %}
-
-### 上述示例的源码
-
-```md example:
-#### 彩色文字
-
-在一段话中方便插入各种颜色的标签，包括：{% p red, 红色 %}、{% p yellow, 黄色 %}、{% p green, 绿色 %}、{% p cyan, 青色 %}、{% p blue, 蓝色 %}、{% p gray, 灰色 %}。
-
-#### 超大号文字
-
-文档「开始」页面中的标题部分就是超大号文字。
+<!-- tab 效果 -->
+{% p red, 红色 %}
+{% p yellow, 黄色 %}
+{% p green, 绿色 %}
+{% p cyan, 青色 %}
+{% p blue, 蓝色 %}
+{% p gray, 灰色 %}
 
 {% p center logo large, Volantis %}
 {% p center small, A Wonderful Theme for Hexo %}
+<!-- endtab -->
+
+<!-- tab 源码 -->
+```md
+{% p red, 红色 %}
+{% p yellow, 黄色 %}
+{% p green, 绿色 %}
+{% p cyan, 青色 %}
+{% p blue, 蓝色 %}
+{% p gray, 灰色 %}
+
+{% p center logo large, Volantis %}
+{% p center small, A Wonderful Theme for Hexo %}
 ```
+<!-- endtab -->
 
-### 可以支持的参数
+<!-- tab 参数 -->
 
-样式参数位置可以写颜色、大小和对齐方向，多个样式参数用空格隔开。
+|   属性   | 可选值                                                    |
+| :------: | --------------------------------------------------------- |
+|   字体   | `logo`, `code`                                            |
+|   颜色   | `red`, `yellow`, `green`, `cyan`, `blue`, `gray`          |
+|   大小   | `small`, `h4`, `h3`, `h2`, `h1`, `large`, `huge`, `ultra` |
+| 对齐方向 | `left`, `center`, `right`                                 |
 
-#### 字体
+<!-- endtab -->
 
-```
-logo, code
-```
-
-#### 颜色
-
-```
-red, yellow, green, cyan, blue, gray
-```
-
-#### 大小
-
-```
-small, h4, h3, h2, h1, large, huge, ultra
-```
-
-#### 对齐方向
-
-```
-left, center, right
-```
-
-
-<br>
+{% endtabs %}
 
 ## note
 
