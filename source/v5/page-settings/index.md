@@ -202,6 +202,40 @@ blog/source/_data/friends.yml
 
 {% endnoteblock %}
 
+### Artitalk页面
+
+#### 创建页面文件
+
+```yaml Create file if not exists: source/artitalk/index.md
+---
+layout: artitalk
+seo_title: 说说
+---
+```
+
+#### 配置Artitalk
+
+在主题配置文件中找到以下内容
+
+``` yaml
+artitalk:
+  # Set `layout: artitalk` to enable in page
+  # 配置项按照yml格式继续填写即可
+  appId: # your appID
+  appKey: # your appKEY
+  # serverURL:  #leancloud绑定的安全域名，使用国际版的话不需要填写
+  # lang: # 语言设置，zh为汉语，en为英语，es为西班牙语。默认为汉语
+  # pageSize: #每页说说的显示数量
+  # shuoPla: #在编辑说说的输入框中的占位符
+  # avatarPla: #自定义头像url的输入框的占位符
+  # motion: #加载动画的开关，1为开，0为关，默认为开
+  # bgImg: #说说输入框背景图片url
+  # color1: #说说背景颜色1&按钮颜色1
+  # color2: #说说背景颜色2&按钮颜色2
+  # color3: #说说字体颜色
+  # cssUrl: #自定义css接口
+```
+
 ### 404页面
 
 ```yaml Create file if not exists: source/404.md
