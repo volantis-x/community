@@ -24,6 +24,7 @@ disqus:
 | tag | 标签页面 |
 | friends | 友链页面 |
 | list | 列表页面 |
+| artitalk | 说说页面 |
 {% endtable %}
 
 ### page & post & docs
@@ -210,6 +211,7 @@ blog/source/_data/friends.yml
 ---
 layout: artitalk
 seo_title: 说说
+comments: false
 ---
 ```
 
@@ -235,6 +237,8 @@ artitalk:
   # color3: #说说字体颜色
   # cssUrl: #自定义css接口
 ```
+
+最后记得屏蔽Artitalk页面的pjax
 
 ### 404页面
 
