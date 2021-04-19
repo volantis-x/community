@@ -6,4 +6,5 @@ categories: [开发心得]
 author: Nanami
 link: https://shiraha.cn/2021/use-pandoc-to-render-multiline-formulas-correctly/
 description: 关于更换 Markdown 渲染器以正确渲染 MathJax 公式的一些考据
+backup: https://archive.ph/FTmHt
 ---

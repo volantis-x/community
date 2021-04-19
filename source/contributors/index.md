@@ -60,6 +60,7 @@ author: inkss
 link: https://inkss.cn/blog/76993423/
 description: 本篇文章记录了我对 Volantis 主题做 Pjax 兼容的种种，大抵算是种记录吧~
 headimg: # 可以设置文章头图
+backup: https://archive.vn/U36NG # 将页面存档到 archive.tody 网页快照档案馆的存档链接 https://archive.tody
 ---
 ```
 
