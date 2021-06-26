@@ -333,7 +333,7 @@ let points={
 
 当然,你仍然可以修改主题配置文件将自定义布局或样式放置在特定位置.以下是默认配置,该配置已隐藏.
 
-```yml
+```yml blog/_config.volantis.yml
 custom_files:
   first: source/_volantis/first.styl
   style: source/_volantis/style.styl
@@ -352,7 +352,7 @@ custom_files:
 使用 Hexo 过滤器 `theme_inject` ，可以将所需的自定义内容添加到任何注入点。
 
 {% note info, 如果您的代码很简单，建议您编写脚本，您只需要把 JavaScript 文件放到 scripts 文件夹，在启动时就会自动载入。您可以直接在 blog 
-文件夹下创建 scripts 文件夹 %}
+文件夹下创建 scripts 文件夹. %}
 
 ```js
 hexo.extend.filter.register('theme_inject', function(injects) {
