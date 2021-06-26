@@ -254,4 +254,160 @@ cdn:
 
 直接使用cdn配置项，不使用`theme.cdn.addJS("sites","plugins/sites")` 也可以生成 `theme.cdn.map.js.sites` CDN链接回调
 
+
+## Custom Files 自定义文件
+
+在不修改主题原始源代码的情况下添加自定义内容
+
+### 注入点
+
+我们提供了一些注入点接口:
+
+```js
+let points={
+  styles:[
+    "first",
+    "style",
+    "dark",
+  ],
+  views:[
+    "head",
+    "header",
+    "side",
+    "topMeta",
+    "bottomMeta",
+    "footer",
+    "postEnd",
+    "bodyEnd",
+    "comment",
+  ]
+}
+```
+
+#### 样式注入点
+
+- first: 向 `theme/css/first.styl` 文件末尾注入自定义内容, 该文件中包含首屏样式,首屏样式采用硬编码的方式写在HTML中。首屏样式内含 cover navbar search 的样式.
+
+- style: 向 `theme/css/style.styl` 文件末尾注入自定义内容, 该文件中包含异步延迟加载的样式,除首屏样式,其他样式放入此处异步加载.
+
+- dark: 向 `theme/css/_plugins/dark.styl` 文件末尾注入自定义内容, 该文件中包含暗黑模式样式.
+
+#### 视图注入点
+
+- head: 向 `theme/layout/_partial/head.ejs` 文件 `<head>` 标签末尾注入自定义内容.
+
+- header: 向 `theme/layout/_partial/header.ejs` 文件 导航栏 `.nav-main` 末尾注入自定义内容.
+
+- side: 向 `theme/layout/_partial/side.ejs` 文件 侧边栏 `#l_side` 末尾注入自定义内容.
+
+- topMeta: 向 `theme/layout/_partial/meta.ejs` 文件 topMetas 末尾注入自定义内容.
+
+- bottomMeta: 向 `theme/layout/_partial/meta.ejs` 文件 bottomMetas 末尾注入自定义内容.
+
+- footer: 向 `theme/layout/_partial/footer.ejs` 文件 `<footer>` 标签末尾注入自定义内容.
+
+- postEnd: 向 `theme/layout/_partial/article.ejs` 文件 `<article>` 标签末尾注入自定义内容.
+
+- bodyEnd:  向 `theme/layout/layout.ejs` 文件 `<body>` 标签末尾注入自定义内容.
+
+- comment: 向 `theme/layout_third-party/comments/index.ejs` 文件 `<article>` 标签末尾注入自定义内容.
+
+### blog/source/_volantis/ 文件夹
+
+一般的, 创建 `blog/source/_volantis/` 文件夹并在此文件夹下创建与注入点同名同扩展名的文件,用以写入注入点自定义内容.
+
+```js
+  blog/source/_volantis/
+    ├─ first.styl
+    ├─ style.styl
+    ├─ dark.styl
+    ├─ head.ejs
+    ├─ header.ejs
+    ├─ topMeta.ejs
+    ├─ bottomMeta.ejs
+    ├─ postEnd.ejs
+    ├─ bodyEnd.ejs
+    └─ comment.ejs
+
+```
+
+当然,你仍然可以修改主题配置文件将自定义布局或样式放置在特定位置.以下是默认配置,该配置已隐藏.
+
+```yml
+custom_files:
+  first: source/_volantis/first.styl
+  style: source/_volantis/style.styl
+  dark: source/_volantis/dark.styl
+  head: source/_volantis/head.ejs
+  header: source/_volantis/header.ejs
+  topMeta: source/_volantis/topMeta.ejs
+  bottomMeta: source/_volantis/bottomMeta.ejs
+  postEnd: source/_volantis/postEnd.ejs
+  bodyEnd: source/_volantis/bodyEnd.ejs
+  comment: source/_volantis/comment.ejs
+```
+
+### `theme_inject` 过滤器
+
+使用 Hexo 过滤器 `theme_inject` ，可以将所需的自定义内容添加到任何注入点。
+
+```js
+hexo.extend.filter.register('theme_inject', function(injects) {
+  // ...
+});
+```
+
+对于注入视图:
+
+```js
+// The name of same `injectPoint` suggest be unique. If same, it will override low priority configurations.
+// `locals` and `options` is the same as partial https://hexo.io/docs/helpers#partial.
+// `order` defines the order of injection, which by default depends on the priority of injection.
+hexo.extend.filter.register('theme_inject', function(injects) {
+  // it will put code from this filePath into injectPoint.
+  injects.[injectPoint].file(name, filePath, [locals, options, order]);
+  // it will put raw string as code into injectPoint.
+  injects.[injectPoint].raw(name, raw, [locals, options, order]);
+});
+```
+
+对于注入样式:
+
+```js
+hexo.extend.filter.register('theme_inject', function(injects) {
+  // it will put styleFile into injectPoint.
+  injects.[injectPoint].push(styleFile);
+});
+```
+
+### Examples
+
+向 `theme/css/style.styl` 文件末尾注入自定义样式
+
+```js
+hexo.extend.filter.register('theme_inject', function(injects) {
+  injects.style.push('source/_data/mystyle.styl');
+});
+```
+
+向 `<body>` 标签末尾注入自定义脚本内容
+
+```js
+hexo.extend.filter.register('theme_inject', function(injects) {
+  injects.bodyEnd.raw('load-custom-js', '<script src="js-path-or-cdn.js"></script>');
+});
+```
+
+向侧栏注入自定义视图内容
+
+```js
+hexo.extend.filter.register('theme_inject', function(injects) {
+  injects.sidebar.file('my-favourite-food', 'source/_data/my-favourite-food.ejs');
+});
+```
+
+### 插件系统
+
+我们还支持 hexo 的插件系统，无需修改核心模块的源代码即可轻松扩展功能。你可以参考 https://hexo.io/docs/plugins.html#Plugin 学习如何创建插件。
+
 {% note warning up, 请注意，以上是主题开发文档，不是使用文档！ %}
