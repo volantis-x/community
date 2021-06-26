@@ -292,7 +292,7 @@ let points={
 
 - dark: 向 `theme/css/_plugins/dark.styl` 文件末尾注入自定义内容, 该文件中包含暗黑模式样式.
 
-#### 视图注入点
+#### 布局视图注入点
 
 - head: 向 `theme/layout/_partial/head.ejs` 文件 `<head>` 标签末尾注入自定义内容.
 
@@ -351,13 +351,16 @@ custom_files:
 
 使用 Hexo 过滤器 `theme_inject` ，可以将所需的自定义内容添加到任何注入点。
 
+{% note info, 如果您的代码很简单，建议您编写脚本，您只需要把 JavaScript 文件放到 scripts 文件夹，在启动时就会自动载入。您可以直接在 blog 
+文件夹下创建 scripts 文件夹 %}
+
 ```js
 hexo.extend.filter.register('theme_inject', function(injects) {
   // ...
 });
 ```
 
-对于注入视图:
+对于注入布局视图:
 
 ```js
 // The name of same `injectPoint` suggest be unique. If same, it will override low priority configurations.
@@ -382,25 +385,25 @@ hexo.extend.filter.register('theme_inject', function(injects) {
 
 ### Examples
 
-向 `theme/css/style.styl` 文件末尾注入自定义样式
+以文件的形式向 `theme/css/style.styl` 文件末尾注入自定义样式
 
-```js
+```js blog/scripts/example-1.js
 hexo.extend.filter.register('theme_inject', function(injects) {
   injects.style.push('source/_data/mystyle.styl');
 });
 ```
 
-向 `<body>` 标签末尾注入自定义脚本内容
+以文本的形式向 `<body>` 标签末尾注入自定义脚本内容
 
-```js
+```js blog/scripts/example-2.js
 hexo.extend.filter.register('theme_inject', function(injects) {
   injects.bodyEnd.raw('load-custom-js', '<script src="js-path-or-cdn.js"></script>');
 });
 ```
 
-向侧栏注入自定义视图内容
+以文件的形式向侧栏注入自定义布局视图内容
 
-```js
+```js blog/scripts/example-3.js
 hexo.extend.filter.register('theme_inject', function(injects) {
   injects.sidebar.file('my-favourite-food', 'source/_data/my-favourite-food.ejs');
 });
