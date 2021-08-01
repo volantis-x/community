@@ -185,3 +185,11 @@ marked:
     enable: true
     exclude: []
     nofollow: true
+
+jsonContent:
+  ignore:
+    paths:
+      - v4/
+      - v3/
+      - v2/
+      - test/

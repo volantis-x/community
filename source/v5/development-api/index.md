@@ -141,26 +141,36 @@ disqus:
 
 ## Message 消息提示
 
-我们提供了 Message 消息提示灵活的开发接口。
+我们在 [iziToast](https://izitoast.marcelodolza.com/) 的基础上封装了一个简单的消息提示：
 
 源码参考：
 
-[`layout/_partial/scripts/global.ejs`](https://github.com/volantis-x/hexo-theme-volantis/blob/e4c05ff9c7b2b2f458ce6418daf94dfa9103a9b2/layout/_partial/scripts/global.ejs)
-
-[`layout/_third-party/message/script.ejs`](https://github.com/volantis-x/hexo-theme-volantis/blob/e4c05ff9c7b2b2f458ce6418daf94dfa9103a9b2/layout/_third-party/message/script.ejs)
 
 ```js
-volantis.message("title","message","type",autoClose,time)
+volantis.message = (title, message, icon, time, position, done);
+volantis.question = (title, message, success, cancel, done, icon, time);
 ```
 
-参数都是String类型，可选的。
+| 参数     | 可选值(加粗为默认值)                                         | 必填 | 备注          |
+| -------- | ------------------------------------------------------------ | ---- | ------------- |
+| title    | -                                                            | √    | 标题          |
+| message  | -                                                            | √    | 内容          |
+| icon     | **fas fa-info-circle**, Fontawesome 图标库                   | ×    | 图标          |
+| time     | **5000**                                                     | ×    | 持续时间（s） |
+| position | **topRight**, bottomRight, bottomLeft, topLeft, topCenter, bottomCenter, center | ×    | 弹出位置      |
+| done     | fun()                                                        | ×    | 结束时回调    |
 
-| title     | 标题                                        |
-| --------- | ------------------------------------------- |
-| message   | 信息                                        |
-| type      | 图标类型 【info、warning、error、question】 |
-| autoClose | 自动关闭                                    |
-| time      | 显示时间，默认3秒                           |
+| 参数    | 可选值(加粗为默认值)                           | 必填 | 备注          |
+| ------- | ---------------------------------------------- | ---- | ------------- |
+| title   | -                                              | √    | 标题          |
+| message | -                                              | √    | 内容          |
+| success | fun()                                          | ×    | 确认回调      |
+| cancel  | fun()                                          | ×    | 取消回调      |
+| done    | fun()                                          | ×    | 结束时回调    |
+| icon    | **fas fa-question-circle**, Fontawesome 图标库 | ×    | 图标          |
+| time    | 20000                                          | ×    | 持续时间（s） |
+
+如果以上两个接口仍然不能满足您的需求，可以参考 [iziToast](https://izitoast.marcelodolza.com/) 的内容直接调用 `iziToast()` 
 
 ## 动态加载脚本
 
