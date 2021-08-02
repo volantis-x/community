@@ -114,7 +114,7 @@ comments:
     issue-number: 115
 
 sidebar:
-  for_page: [post, category, tagcloud]
+  for_page: [post, category, guide]
   for_post: [toc]
   widget_library:
     toc:
@@ -264,7 +264,7 @@ tag_plugins:
 plugins:
   clipboard:
     enable: true
-  fontawesome: https://cdn.jsdelivr.net/gh/volantis-x/cdn-fontawesome-pro@master/css/all.min.css
+  fontawesome: https://cdn.jsdelivr.net/gh/inkss/fontawesome@5.15.3/css/all.min.css
   backstretch:
     enable: false
     images:               # For personal use only. At your own risk if used for commercial purposes !!!
@@ -287,6 +287,11 @@ plugins:
     # id: 76244489 # vol white
     # id: 5135845906 # for Volantis 3.0
     id: 5062959861 # TOP 30
+    message:          # 音乐通知，播放、暂停、失败 时的图标
+      enable: true
+      play: fal fa-play light-blue
+      pause: fal fa-pause light-blue
+      error: fal fa-exclamation-square red
   darkmodejs:
     enable: true
 
