@@ -101,7 +101,7 @@ article:
 
 
 comments:
-  service: utterances
+  service: beaudar
   disqus:
     shortname: volantis
     path: /
@@ -112,7 +112,9 @@ comments:
   utterances:
     repo: volantis-x/community
     issue-number: 115
-
+  beaudar:
+    repo: volantis-x/community  
+    issue-number: 115
 sidebar:
   for_page: [post, category, guide]
   for_post: [toc]
