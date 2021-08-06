@@ -326,3 +326,18 @@ custom_css:
 
 rightmenu:
   enable: true
+  faicon: fal PETERRIVE
+  print:
+    icon: fal fa-print TURQUOISE
+  darkmode:
+    icon: fal fa-eclipse-alt WISTERIA
+  help:
+    icon: fal fa-question EMERALD
+  examples:
+    icon: fal fa-rss PETERRIVE
+  contributors:
+    icon: fal fa-fan fa-spin AMETHYST
+  source_docs:
+    icon: fal fa-code-branch WETASPHALT
+  source_theme:
+    icon: fal fa-file-code CONCRETE
