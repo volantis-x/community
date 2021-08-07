@@ -305,6 +305,8 @@ analytics:
     custom_api_server: # 一般不需要写，除非自定义了 API Server
 
 custom_css:
+  cursor:
+    enable: true
   font_smoothing: true
   sidebar:
     effect: [shadow] # [shadow, floatable, blur]
@@ -326,18 +328,18 @@ custom_css:
 
 rightmenu:
   enable: true
-  faicon: fal PETERRIVE
+  faicon: fad PETERRIVE
   print:
-    icon: fal fa-print TURQUOISE
+    icon: fad fa-print TURQUOISE
   darkmode:
-    icon: fal fa-eclipse-alt WISTERIA
+    icon: fad fa-eclipse-alt WISTERIA
   help:
-    icon: fal fa-question EMERALD
+    icon: fad fa-question EMERALD
   examples:
-    icon: fal fa-rss PETERRIVE
+    icon: fad fa-rss PETERRIVE
   contributors:
-    icon: fal fa-fan fa-spin AMETHYST
+    icon: fad fa-fan fa-spin AMETHYST
   source_docs:
-    icon: fal fa-code-branch WETASPHALT
+    icon: fad fa-code-branch WETASPHALT
   source_theme:
-    icon: fal fa-file-code CONCRETE
+    icon: fad fa-file-code CONCRETE
