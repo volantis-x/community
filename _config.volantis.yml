@@ -293,7 +293,6 @@ plugins:
       enable: true
       play: fal fa-play light-blue
       pause: fal fa-pause light-blue
-      error: fal fa-exclamation-square red
   darkmodejs:
     enable: true
 
@@ -329,6 +328,8 @@ custom_css:
 rightmenu:
   enable: true
   faicon: fad PETERRIVE
+  copyright:
+      enable: false
   print:
     icon: fad fa-print TURQUOISE
   darkmode:
