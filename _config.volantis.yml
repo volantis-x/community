@@ -267,18 +267,8 @@ plugins:
   clipboard:
     enable: true
   fontawesome: https://cdn.jsdelivr.net/gh/inkss/fontawesome@5.15.3/css/all.min.css
-  backstretch:
-    enable: false
-    images:               # For personal use only. At your own risk if used for commercial purposes !!!
-      - https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/016.jpg
-      - https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/019.jpg
-      - https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.jpg
-      - https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/033.jpg
-      - https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/052.jpg
   parallax:
     enable: true
-    images:
-      - https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/042.jpg
   aplayer:
     enable: true
     autoplay: false

@@ -1234,15 +1234,23 @@ Volantis 为丰富的插件提供了兼容性优化。大部分插件您只需�
 
 ```yaml blog/_config.volantis.yml
 plugins:
-  ################# required plugins ################
+  ################ required plugins ################
   # jquery
+  globalJquery: false # 全局引入 jquery
   jquery: https://cdn.jsdelivr.net/npm/jquery@3.5/dist/jquery.min.js
-  # fontawesome
+  # fontawesome Pro 版本：https://cdn.jsdelivr.net/gh/inkss/fontawesome@5.15.3/css/all.min.css
   fontawesome: https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.14/css/all.min.css
-  ################# optional plugins ################
+  
+  ################ optional plugins ################
+  # issues api
+  sitesjs:
+    enable: true
+  friendsjs:
+    enable: true
+  contributorsjs:
+    enable: true
 
-  ######### Plugins to improve loading speed:
-
+  ######## Plugins to improve loading speed:
   # 预加载
   preload:
     enable: true
@@ -1259,13 +1267,12 @@ plugins:
     loadingImg: # https://cdn.jsdelivr.net/gh/volantis-x/cdn-volantis@3/img/placeholder/c617bfd2497fcea598e621413e315c368f8d8e.svg
     blurIn: true # 模糊加载效果 （loadingImg为空时有效）
 
-  ######### Plugins to optimize the experience:
-
+  ######## Plugins to optimize the experience:
   # highlight.js
   highlightjs:
     enable: #true # Please set hexo.config.highlight.enable = false !!!
-    js: https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10/build/highlight.min.js
-    css: https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10/build/styles/solarized-light.min.css
+    js: https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.1.0/build/highlight.min.js
+    css: https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.1.0/build/styles/default.min.css
     # more: https://www.jsdelivr.com/package/npm/highlight.js?path=styles
 
   # https://scrollrevealjs.org/api/reveal.html
@@ -1282,13 +1289,12 @@ plugins:
     enable: #true
     js: https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js
 
-  ######### Plugins for SEO:
-
+  ######## Plugins for SEO:
   # npm i hexo-wordcount
   wordcount:
     enable: #true
 
-  ######### Plugins for ...
+  ######## Plugins for ...
   # Button Ripple Effect
   nodewaves:
     enable: #true
@@ -1305,10 +1311,9 @@ plugins:
     enable: #true
     js: https://cdn.jsdelivr.net/gh/volantis-x/cdn-volantis@2/js/comment_typing.js
 
-  # Slide Background
-  backstretch:
+  # 视差滚动效果 Slide Background
+  parallax:
     enable: #true
-    js: https://cdn.jsdelivr.net/npm/jquery-backstretch@2.1.18/jquery.backstretch.min.js
     position: cover       # cover: sticky on the cover.   fixed: Fixed as background for the site.
     shuffle: true         # shuffle playlist
     duration: 10000       # Duration (ms)
@@ -1356,6 +1361,12 @@ plugins:
     volume: 0.7       # default volume, notice that player will remember user setting, default volume will not work after user set volume themselves
     list_max_height: 320px # list max height
     list_folded: true
+    message:          # 音乐通知，播放、暂停、失败 时的图标
+      enable: true
+      play: fas fa-play
+      pause: fas fa-pause
+  
+  # Pjax 
   pjax:
     enable: true
     cover: true          # 封面是否pjax处理 false：每次切换页面封面都重载，适合封面较少的情况 true：封面经过Pjax处理，适合封面较多的情况
@@ -1365,12 +1376,6 @@ plugins:
     banUrl:              # 被屏蔽的 url 地址将不启用 pjax 跳转，可以在控制台下使用 window.location.pathname 获取
       # - '/artitalk/'     # artitalk 不支持 pjax
       # - '/bb/'           # bbtalk 不支持 pjax
-
-  # 从 issues 加载动态数据
-  # {% issues sites/timeline/friends | api=xxx | group=key:a,b,c %}
-  # 例如：
-  # {% issues sites | api=https://api.github.com/repos/volantis-x/examples/issues?sort=updated&state=open&page=1&per_page=100 | group=version:latest,v6,v5,v4,v3,v2,v1,v0 %}
-
 
   # 暗黑模式 darkmode
   # 样式：source/css/_plugins/dark.styl
@@ -1402,7 +1407,7 @@ plugins:
     # 配置项按照yml格式继续填写即可
     appId: ogP8qj3veMh0LFpFWMPOyF0X-MdYXbMMI # your appID
     appKey: nHXLd3N3Jgh460t2iRQKWAtr # your appKEY
-    # serverURL:  #leancloud绑定的安全域名，使用国际版的话不需要填写
+    # serverURL:  #leancloud绑定的api访问域名，使用国际版的话不需要填写
     # lang: # 语言设置，zh为汉语，en为英语，es为西班牙语。默认为汉语
     # pageSize: #每页说说的显示数量
     # shuoPla: #在编辑说说的输入框中的占位符
@@ -1427,19 +1432,67 @@ plugins:
     enable: #true
     id: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
+  # HexoPlusPlus
+  # https://github.com/HexoPlusPlus/HexoPlusPlus
+  # https://hexoplusplus.js.org/
+  # 无服务器Hexo后端,支持文章编辑,自带图床功能.目标:解决静态博客所有痛点[文章编辑、图片上传、博主活跃信息统计、博主说说、Twikoo加强版、阅读量统计等
+  hpp:
+    # 说说功能
+    # Set `hpptalk:true` to enable in page
+    hpp_talk:
+      css: https://cdn.jsdelivr.net/gh/HexoPlusPlus/HexoPlusPlus@latest/talk.css # 建议锁定版本
+      js: https://cdn.jsdelivr.net/gh/HexoPlusPlus/HexoPlusPlus@latest/talk_user.js # 建议锁定版本
+      limit: 10
+      start: 0
+      # 配置项按照yml格式继续填写即可
+      # domain:
+      # themecss:
+    # HexoPlusPlus其他功能暂未集成
+
+  # 友链朋友圈 hexo-circle-of-friends
+  # https://github.com/Rock-Candy-Tea/hexo-circle-of-friends
+  # https://zfe.space/post/friend-link-circle.html
+  fcircle:
+    # Set `layout: fcircle` to enable in page
+    api: '' # api 地址
+    max_number: 20 # 页面展示文章数量
+    add_number: 10 # 每次加载增加的篇数
+    opentype: '_blank' # '_blank'打开新标签,'_self'本窗口打开
+    nofollow: true # 禁止搜索引擎抓取
+    # loadingCutom: # 自定义loading图 例如: <i class="fa fa-spinner fa-spin"></i> | <img src="你的图片地址" alt="加载中...">
+
+  # 消息提示
+  message:
+    enable: true
+    icon:     # 默认图标，支持对图标添加颜色，可选值：see：/source/css/_plugins/message.styl
+      default: fas fa-info-circle light-blue
+      quection: fas fa-question-circle light-blue
+    time:     # 默认持续时间
+      default: 5000
+      quection: 20000
+    position: 'topRight'                 # 弹出位置 可选值：topRight, bottomRight, bottomLeft, topLeft, topCenter, bottomCenter, center
+    titleColor: 'var(--color-text)'      # 标题颜色
+    messageColor: 'var(--color-text)'    # 消息颜色
+    backgroundColor: 'var(--color-card)' # 默认背景色
+    zindex: 2147483647                   # 层级
+    copyright:                           # 是否在复制时弹出版权提示(非右键下的操作提示)
+      enable: true
+      title: '知识共享许可协议'
+      message: '请遵守 CC BY-NC-SA 4.0 协议。'
+      icon: 'far fa-copyright light-blue'
 ```
 
 
 
-### 幻灯片背景
+### 幻灯片背景(视差滚动效果)
 ```yaml blog/_config.volantis.yml
 plugins:
   ...
-  backstretch:
+  parallax:
     enable: true
-    js: https://cdn.jsdelivr.net/npm/jquery-backstretch@2.1.18/jquery.backstretch.min.js
     position: cover       # cover: sticky on the cover.   fixed: Fixed as background for the site.
-    duration: 20000       # Duration (ms)
+    shuffle: true         # shuffle playlist
+    duration: 10000       # Duration (ms)
     fade: 1500            # fade duration (ms) (Not more than 1500)
     images:               # For personal use only. At your own risk if used for commercial purposes !!!
       - https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper/abstract/41F215B9-261F-48B4-80B5-4E86E165259E.jpeg
@@ -1454,8 +1507,8 @@ plugins:
   # highlight.js
   highlightjs:
     enable: true # Please set hexo.config.highlight.enable = false !!!
-    js: https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10/build/highlight.min.js
-    css: https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10/build/styles/solarized-light.min.css
+    js: https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.1.0/build/highlight.min.js
+    css: https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.1.0/build/styles/default.min.css
     # more: https://www.jsdelivr.com/package/npm/highlight.js?path=styles
 ```
 如果需要使用 highlight.js 进行语法高亮，请将站点配置文件中的 `highlight.enable` 设置为 `false` 否则不会加载插件。您可以在 <u>94</u> 种 [语法高亮主题](https://www.jsdelivr.com/package/npm/highlight.js?path=styles) 中挑选喜爱的主题，然后替换上面的 css 链接。
@@ -1487,6 +1540,10 @@ plugins:
     volume: 0.7       # default volume, notice that player will remember user setting, default volume will not work after user set volume themselves
     list_max_height: 320px # list max height
     list_folded: true
+    message:          # 音乐通知，播放、暂停、失败 时的图标
+      enable: true
+      play: fas fa-play
+      pause: fas fa-pause
 ```
 
 {% note warning, APlayer播放器只可以在中国大陆地区使用。相关文档： [APlayer](https://aplayer.js.org/) | [MetingJS](https://github.com/metowolf/MetingJS) %}
