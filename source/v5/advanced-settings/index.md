@@ -404,9 +404,13 @@ popularPosts:
 
 ## 分析与统计
 
-默认支持 [不蒜子](http://busuanzi.ibruce.info/) 的访问统计，可以自行添加百度统计和 Google Analytics。
+### 数据统计
 
-### 字数和阅读时长
+#### PV 和 UV
+
+默认支持 [不蒜子](http://busuanzi.ibruce.info/) 的访问统计和 leancloud 统计，在配置文件中设置。
+
+#### 字数和阅读时长
 
 1. 安装以下插件：
 ```
@@ -436,8 +440,27 @@ article:
     bottom_meta: [..., wordcount, ...]
 ```
 
+### 数据分析
 
-### CNZZ 统计
+#### 百度统计
+
+```yaml blog/_config.yml
+baidu_analytics_key: 百度统计的key
+```
+
+#### Google Analytics
+
+```yaml blog/_config.yml
+google_analytics_key: Google Analytics Key
+```
+
+#### 腾讯前端性能监控
+
+```yaml blog/_config.yml
+tencent_aegis_id: 上报 id
+```
+
+#### CNZZ 统计
 
 请参考 ZYMIN 的这篇教程：
 {% link Hexo hexo+ejs+material x 添加CNZZ统计代码, https://zymin.cn/arcticle/hexo+ejs+material.html %}
