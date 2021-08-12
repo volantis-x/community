@@ -147,8 +147,8 @@ disqus:
 
 
 ```js
-volantis.message = (title, message, icon, time, position, done);
-volantis.question = (title, message, success, cancel, done, icon, time);
+volantis.message(title, message, icon, time, position, done);
+volantis.question(title, message, success, cancel, done, icon, time);
 ```
 
 | 参数     | 可选值(加粗为默认值)                                         | 必填 | 备注          |
