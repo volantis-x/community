@@ -13,6 +13,8 @@ disqus:
 
 {% note info, 我们也在探索哪种分隔符既简单又不容易引起冲突，所以可能存在多种格式，具体以对应文档描述为准。 %}
 
+{% note info :: 5.0 版本起使用英文双冒号 ( \:\: ) 作为分隔符，之前版本的分隔符写法向下兼容 %}
+
 ## text
 
 {% tabs text %}
@@ -41,28 +43,28 @@ disqus:
 {% tabs span %}
 <!-- tab 语法 -->
 
-```markdown 本插件最后更新于 <emp>2.5</emp> 版本
-{% span 样式参数, 文本内容 %}
+```markdown 本插件最后更新于 <emp>5.0</emp> 版本
+{% span 样式参数::文本内容 %}
 ```
 
 <!-- endtab -->
 
 <!-- tab 效果 -->
-各种颜色的标签，包括：{% span red, 红色 %}、{% span yellow, 黄色 %}、{% span green, 绿色 %}、{% span cyan, 青色 %}、{% span blue, 蓝色 %}、{% span gray, 灰色 %}。
+各种颜色的标签，包括：{% span red::红色 %}、{% span yellow::黄色 %}、{% span green::绿色 %}、{% span cyan::青色 %}、{% span blue::蓝色 %}、{% span gray::灰色 %}。
 
 超大号文字：
 
-{% span center logo large, Volantis %} {% span center small, A Wonderful Theme for Hexo %}
+{% span center logo large::Volantis %} {% span center small::A Wonderful Theme for Hexo %}
 
 <!-- endtab -->
 
 <!-- tab 源码 -->
 ```md
-各种颜色的标签，包括：{% span red, 红色 %}、{% span yellow, 黄色 %}、{% span green, 绿色 %}、{% span cyan, 青色 %}、{% span blue, 蓝色 %}、{% span gray, 灰色 %}。
+各种颜色的标签，包括：{% span red::红色 %}、{% span yellow::黄色 %}、{% span green::绿色 %}、{% span cyan::青色 %}、{% span blue::蓝色 %}、{% span gray::灰色 %}。
 
 超大号文字：
 
-{% span center logo large, Volantis %} {% span center small, A Wonderful Theme for Hexo %}
+{% span center logo large::Volantis %} {% span center small::A Wonderful Theme for Hexo %}
 ```
 <!-- endtab -->
 
@@ -83,34 +85,34 @@ disqus:
 {% tabs p %}
 
 <!-- tab 参数 -->
-```markdown 本插件最后更新于 <emp>2.5</emp> 版本
-{% p 样式参数, 文本内容 %}
+```markdown 本插件最后更新于 <emp>5.0</emp> 版本
+{% p 样式参数::文本内容 %}
 ```
 <!-- endtab -->
 
 <!-- tab 效果 -->
-{% p red, 红色 %}
-{% p yellow, 黄色 %}
-{% p green, 绿色 %}
-{% p cyan, 青色 %}
-{% p blue, 蓝色 %}
-{% p gray, 灰色 %}
+{% p red::红色 %}
+{% p yellow::黄色 %}
+{% p green::绿色 %}
+{% p cyan::青色 %}
+{% p blue::蓝色 %}
+{% p gray::灰色 %}
 
-{% p center logo large, Volantis %}
-{% p center small, A Wonderful Theme for Hexo %}
+{% p center logo large::Volantis %}
+{% p center small::A Wonderful Theme for Hexo %}
 <!-- endtab -->
 
 <!-- tab 源码 -->
 ```md
-{% p red, 红色 %}
-{% p yellow, 黄色 %}
-{% p green, 绿色 %}
-{% p cyan, 青色 %}
-{% p blue, 蓝色 %}
-{% p gray, 灰色 %}
+{% p red::红色 %}
+{% p yellow::黄色 %}
+{% p green::绿色 %}
+{% p cyan::青色 %}
+{% p blue::蓝色 %}
+{% p gray::灰色 %}
 
-{% p center logo large, Volantis %}
-{% p center small, A Wonderful Theme for Hexo %}
+{% p center logo large::Volantis %}
+{% p center small::A Wonderful Theme for Hexo %}
 ```
 <!-- endtab -->
 
@@ -131,64 +133,64 @@ disqus:
 
 NoteBlock 是 Blockquote 的增强版，在左边显示图标，并且可以自定颜色。而 Note 是 NoteBlock 的简便写法。
 
-```md 最后更新于 <u>2.3</u> 版本
-{% note 样式参数, 文本内容 %}
+```md 最后更新于 <u>5.0</u> 版本
+{% note 样式参数::文本内容 %}
 ```
 
 ### 演示效果
 
 #### 经典用法
 
-{% note, 可以在配置文件中设置默认样式，为简单的一句话提供最的简便写法。 %}
-{% note quote, note quote 适合引用一段话 %}
-{% note info, note info 默认主题色，适合中性的信息 %}
-{% note warning, note warning 默认黄色，适合警告性的信息 %}
-{% note danger, note error/danger 默认红色，适合危险性的信息 %}
-{% note success, note done/success 默认绿色，适合正确操作的信息 %}
+{% note::可以在配置文件中设置默认样式，为简单的一句话提供最的简便写法。 %}
+{% note quote::note quote 适合引用一段话 %}
+{% note info::note info 默认主题色，适合中性的信息 %}
+{% note warning::note warning 默认黄色，适合警告性的信息 %}
+{% note danger::note error/danger 默认红色，适合危险性的信息 %}
+{% note success::note done/success 默认绿色，适合正确操作的信息 %}
 
 #### 更多图标
 
 这些都是默认样式，可以手动加上颜色：
 
-{% note radiation, note radiation 默认样式 %}
-{% note radiation yellow, note radiation yellow 可以加上颜色 %}
-{% note bug red, note bug red 说明还存在的一些故障 %}
-{% note link green, note link green 可以放置一些链接 %}
-{% note paperclip blue, note paperclip blue 放置一些附件链接 %}
-{% note todo, note todo 待办事项 %}
-{% note guide clear, note guide clear 可以加上一段向导 %}
-{% note download, note download 可以放置下载链接 %}
-{% note message gray, note message gray 一段消息 %}
-{% note up, note up 可以说明如何进行更新 %}
-{% note undo light, note undo light 可以说明如何撤销或者回退 %}
+{% note radiation::note radiation 默认样式 %}
+{% note radiation yellow::note radiation yellow 可以加上颜色 %}
+{% note bug red::note bug red 说明还存在的一些故障 %}
+{% note link green::note link green 可以放置一些链接 %}
+{% note paperclip blue::note paperclip blue 放置一些附件链接 %}
+{% note todo::note todo 待办事项 %}
+{% note guide clear::note guide clear 可以加上一段向导 %}
+{% note download::note download 可以放置下载链接 %}
+{% note message gray::note message gray 一段消息 %}
+{% note up::note up 可以说明如何进行更新 %}
+{% note undo light::note undo light 可以说明如何撤销或者回退 %}
 
 ### 上述示例的源码
 
 ```md example:
 #### 经典用法
 
-{% note, 可以在配置文件中设置默认样式，为简单的一句话提供最的简便写法。 %}
-{% note quote, note quote 适合引用一段话 %}
-{% note info, note info 默认主题色，适合中性的信息 %}
-{% note warning, note warning 默认黄色，适合警告性的信息 %}
-{% note danger, note error/danger 默认红色，适合危险性的信息 %}
-{% note success, note done/success 默认绿色，适合正确操作的信息 %}
+{% note::可以在配置文件中设置默认样式，为简单的一句话提供最的简便写法。 %}
+{% note quote::note quote 适合引用一段话 %}
+{% note info::note info 默认主题色，适合中性的信息 %}
+{% note warning::note warning 默认黄色，适合警告性的信息 %}
+{% note danger::note error/danger 默认红色，适合危险性的信息 %}
+{% note success::note done/success 默认绿色，适合正确操作的信息 %}
 
 #### 更多图标
 
 这些都是默认样式，可以手动加上颜色：
 
-{% note radiation, note radiation 默认样式 %}
-{% note radiation yellow, note radiation yellow 可以加上颜色 %}
-{% note bug red, note bug red 说明还存在的一些故障 %}
-{% note link green, note link green 可以放置一些链接 %}
-{% note paperclip blue, note paperclip blue 放置一些附件链接 %}
-{% note todo, note todo 待办事项 %}
-{% note guide clear, note guide clear 可以加上一段向导 %}
-{% note download, note download 可以放置下载链接 %}
-{% note message gray, note message gray 一段消息 %}
-{% note up, note up 可以说明如何进行更新 %}
-{% note undo light, note undo light 可以说明如何撤销或者回退 %}
+{% note radiation::note radiation 默认样式 %}
+{% note radiation yellow::note radiation yellow 可以加上颜色 %}
+{% note bug red::note bug red 说明还存在的一些故障 %}
+{% note link green::note link green 可以放置一些链接 %}
+{% note paperclip blue::note paperclip blue 放置一些附件链接 %}
+{% note todo::note todo 待办事项 %}
+{% note guide clear::note guide clear 可以加上一段向导 %}
+{% note download::note download 可以放置下载链接 %}
+{% note message gray::note message gray 一段消息 %}
+{% note up::note up 可以说明如何进行更新 %}
+{% note undo light::note undo light 可以说明如何撤销或者回退 %}
 ```
 
 ### 可以支持的参数
@@ -216,8 +218,8 @@ clear, light, gray, red, yellow, green, cyan, blue
 
 NoteBlock 是 Blockquote 的增强版，在左边显示图标，并且可以自定颜色。而 Note 是 NoteBlock 的简便写法。
 
-```md 最后更新于 <u>4.0</u> 版本
-{% noteblock 样式参数（可选）, 标题（可选） %}
+```md 最后更新于 <u>5.0</u> 版本
+{% noteblock 样式参数（可选）::标题（可选） %}
 文本段落
 {% endnoteblock %}
 ```
@@ -226,7 +228,7 @@ NoteBlock 是 Blockquote 的增强版，在左边显示图标，并且可以自�
 
 可以在区块中放置一些复杂的结构，支持嵌套。
 
-{% noteblock, 标题（可选） %}
+{% noteblock::标题（可选） %}
 
 Windows 10不是為所有人設計,而是為每個人設計
 
@@ -234,9 +236,9 @@ Windows 10不是為所有人設計,而是為每個人設計
 嵌套测试： 请坐和放宽，我正在帮你搞定一切...
 {% endnoteblock %}
 
-{% folding yellow, Folding 测试： 点击查看更多 %}
+{% folding yellow::Folding 测试： 点击查看更多 %}
 
-{% note warning, 不要说我们没有警告过你 %}
+{% note warning::不要说我们没有警告过你 %}
 {% noteblock bug red %}
 我们都有不顺利的时候
 {% endnoteblock %}
@@ -247,7 +249,7 @@ Windows 10不是為所有人設計,而是為每個人設計
 ### 上述示例的源码
 
 ```md example:
-{% noteblock, 标题（可选） %}
+{% noteblock::标题（可选） %}
 
 Windows 10不是為所有人設計,而是為每個人設計
 
@@ -255,9 +257,9 @@ Windows 10不是為所有人設計,而是為每個人設計
 嵌套测试： 请坐和放宽，我正在帮你搞定一切...
 {% endnoteblock %}
 
-{% folding yellow, Folding 测试： 点击查看更多 %}
+{% folding yellow::Folding 测试： 点击查看更多 %}
 
-{% note warning, 不要说我们没有警告过你 %}
+{% note warning::不要说我们没有警告过你 %}
 {% noteblock bug red %}
 我们都有不顺利的时候
 {% endnoteblock %}
@@ -291,36 +293,36 @@ clear, light, gray, red, yellow, green, cyan, blue
 
 ## checkbox
 
-```md 最后更新于 <u>2.6</u> 版本
-{% checkbox 样式参数（可选）, 文本（支持简单md） %}
+```md 最后更新于 <u>5.0</u> 版本
+{% checkbox 样式参数（可选）::文本（支持简单md） %}
 ```
 
 ### 演示效果
 
 {% checkbox 纯文本测试 %}
-{% checkbox checked, 支持简单的 [markdown](https://guides.github.com/features/mastering-markdown/) 语法 %}
-{% checkbox red, 支持自定义颜色 %}
-{% checkbox green checked, 绿色 + 默认选中 %}
-{% checkbox yellow checked, 黄色 + 默认选中 %}
-{% checkbox cyan checked, 青色 + 默认选中 %}
-{% checkbox blue checked, 蓝色 + 默认选中 %}
-{% checkbox plus green checked, 增加 %}
-{% checkbox minus yellow checked, 减少 %}
-{% checkbox times red checked, 叉 %}
+{% checkbox checked::支持简单的 [markdown](https://guides.github.com/features/mastering-markdown/) 语法 %}
+{% checkbox red::支持自定义颜色 %}
+{% checkbox green checked::绿色 + 默认选中 %}
+{% checkbox yellow checked::黄色 + 默认选中 %}
+{% checkbox cyan checked::青色 + 默认选中 %}
+{% checkbox blue checked::蓝色 + 默认选中 %}
+{% checkbox plus green checked::增加 %}
+{% checkbox minus yellow checked::减少 %}
+{% checkbox times red checked::叉 %}
 
 ### 上述示例的源码
 
 ```md example:
 {% checkbox 纯文本测试 %}
-{% checkbox checked, 支持简单的 [markdown](https://guides.github.com/features/mastering-markdown/) 语法 %}
-{% checkbox red, 支持自定义颜色 %}
-{% checkbox green checked, 绿色 + 默认选中 %}
-{% checkbox yellow checked, 黄色 + 默认选中 %}
-{% checkbox cyan checked, 青色 + 默认选中 %}
-{% checkbox blue checked, 蓝色 + 默认选中 %}
-{% checkbox plus green checked, 增加 %}
-{% checkbox minus yellow checked, 减少 %}
-{% checkbox times red checked, 叉 %}
+{% checkbox checked::支持简单的 [markdown](https://guides.github.com/features/mastering-markdown/) 语法 %}
+{% checkbox red::支持自定义颜色 %}
+{% checkbox green checked::绿色 + 默认选中 %}
+{% checkbox yellow checked::黄色 + 默认选中 %}
+{% checkbox cyan checked::青色 + 默认选中 %}
+{% checkbox blue checked::蓝色 + 默认选中 %}
+{% checkbox plus green checked::增加 %}
+{% checkbox minus yellow checked::减少 %}
+{% checkbox times red checked::叉 %}
 ```
 
 ### 可以支持的参数
@@ -348,30 +350,30 @@ checked
 
 ## radio
 
-```md 最后更新于 <u>2.6</u> 版本
-{% checkbox 样式参数（可选）, 文本（支持简单md） %}
+```md 最后更新于 <u>5.0</u> 版本
+{% checkbox 样式参数（可选）::文本（支持简单md） %}
 ```
 
 ### 演示效果
 
 {% radio 纯文本测试 %}
-{% radio checked, 支持简单的 [markdown](https://guides.github.com/features/mastering-markdown/) 语法 %}
-{% radio red, 支持自定义颜色 %}
-{% radio green, 绿色 %}
-{% radio yellow, 黄色 %}
-{% radio cyan, 青色 %}
-{% radio blue, 蓝色 %}
+{% radio checked::支持简单的 [markdown](https://guides.github.com/features/mastering-markdown/) 语法 %}
+{% radio red::支持自定义颜色 %}
+{% radio green::绿色 %}
+{% radio yellow::黄色 %}
+{% radio cyan::青色 %}
+{% radio blue::蓝色 %}
 
 ### 上述示例的源码
 
 ```md example:
 {% radio 纯文本测试 %}
-{% radio checked, 支持简单的 [markdown](https://guides.github.com/features/mastering-markdown/) 语法 %}
-{% radio red, 支持自定义颜色 %}
-{% radio green, 绿色 %}
-{% radio yellow, 黄色 %}
-{% radio cyan, 青色 %}
-{% radio blue, 蓝色 %}
+{% radio checked::支持简单的 [markdown](https://guides.github.com/features/mastering-markdown/) 语法 %}
+{% radio red::支持自定义颜色 %}
+{% radio green::绿色 %}
+{% radio yellow::黄色 %}
+{% radio cyan::青色 %}
+{% radio blue::蓝色 %}
 ```
 
 ### 可以支持的参数
@@ -477,18 +479,18 @@ checked
 
 ## link
 
-```md 最后更新于 <u>3.0</u> 版本
-{% link 标题, 链接, 图片链接（可选） %}
+```md 最后更新于 <u>5.0</u> 版本
+{% link 标题::链接::图片链接（可选） %}
 ```
 
 ### 演示效果
 
-{% link 如何参与项目, https://volantis.js.org/contributors/, https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets@master/logo/256/safari.png %}
+{% link 如何参与项目::https://volantis.js.org/contributors/::https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets@master/logo/256/safari.png %}
 
 ### 上述示例的源码
 
 ```md example:
-{% link 如何参与项目, https://volantis.js.org/contributors/, https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets@master/logo/256/safari.png %}
+{% link 如何参与项目::https://volantis.js.org/contributors/::https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets@master/logo/256/safari.png %}
 ```
 
 
@@ -496,33 +498,33 @@ checked
 
 ## button
 
-{% note warning, 这个页面的标签将会在不久后重构 %}
+{% note warning::这个页面的标签将会在不久后重构 %}
 
 ### 基础按钮
 
 请将您的 Volantis 升级至 <u>2.4</u> 版本以上使用。
 
-{% tabs btn, 4 %}
+{% tabs btn::4 %}
 
 <!-- tab 语法格式 -->
 
 ```
-{% btn 样式参数（可选）, 标题, 链接, 图标（可选） %}
+{% btn 样式参数（可选）::标题::链接::图标（可选） %}
 ```
 
-{% note warning, 可选的参数可以省略，但是前后顺序不能乱。 %}
+{% note warning::可选的参数可以省略，但是前后顺序不能乱。 %}
 
 <!-- endtab -->
 
 <!-- tab 参数列表 -->
 
-{% p subtitle, 样式参数 %}
+{% p subtitle::样式参数 %}
 
 ```
 regular, large, center
 ```
 
-{% p subtitle, 图标 %}
+{% p subtitle::图标 %}
 
 第1个或者第2个参数包含 `fa-` 的那个被识别为图标。
 
@@ -532,44 +534,44 @@ regular, large, center
 <!-- tab 示例写法 -->
 
 ```md example.md:
-不设置任何参数的 {% btn 按钮, / %} 适合融入段落中。
+不设置任何参数的 {% btn 按钮:: / %} 适合融入段落中。
 
 regular 按钮适合独立于段落之外：
 
-{% btn regular, 示例博客, https://xaoxuu.com, fas fa-play-circle %}
+{% btn regular::示例博客::https://xaoxuu.com::fas fa-play-circle %}
 
 large 按钮更具有强调作用，建议搭配 center 使用：
 
-{% btn center large, 开始使用, https://volantis.js.org/v3/getting-started/, fas fa-download %}
+{% btn center large::开始使用::https://volantis.js.org/v3/getting-started/::fas fa-download %}
 ```
 
 <!-- endtab -->
 
 <!-- tab 示例效果 -->
 
-{% p subtitle, 行内按钮 %}
+{% p subtitle::行内按钮 %}
 
-不设置任何参数的 {% btn 按钮, / %} 适合融入段落中。
+不设置任何参数的 {% btn 按钮::/ %} 适合融入段落中。
 
-{% p subtitle, 空心按钮 %}
+{% p subtitle::空心按钮 %}
 
-{% btn regular, 示例博客, /, fas fa-rss %} {% btn regular, 示例博客, , fas fa-rss %}
+{% btn regular::示例博客::/::fas fa-rss %} {% btn regular::示例博客::::fas fa-rss %}
 
-{% btn regular large, 示例博客, /, fas fa-rss %} {% btn regular large, 示例博客, , fas fa-rss %}
-
-居中：
-
-{% btn center large, 开始使用, https://volantis.js.org/v3/getting-started/, fas fa-download %}
-
-{% p subtitle, 实心按钮 %}
-
-{% btn solid, 示例博客, /, fas fa-rss %} {% btn solid, 示例博客, , fas fa-rss %}
-
-{% btn solid large, 示例博客, /, fas fa-rss %} {% btn solid large, 示例博客, , fas fa-rss %}
+{% btn regular large::示例博客::/::fas fa-rss %} {% btn regular large::示例博客::::fas fa-rss %}
 
 居中：
 
-{% btn solid center large, 开始使用, https://volantis.js.org/v3/getting-started/, fas fa-download %}
+{% btn center large::开始使用::https://volantis.js.org/v3/getting-started/::fas fa-download %}
+
+{% p subtitle::实心按钮 %}
+
+{% btn solid::示例博客::/::fas fa-rss %} {% btn solid::示例博客::::fas fa-rss %}
+
+{% btn solid large::示例博客::/::fas fa-rss %} {% btn solid large::示例博客::::fas fa-rss %}
+
+居中：
+
+{% btn solid center large::开始使用::https://volantis.js.org/v3/getting-started/::fas fa-download %}
 
 <!-- endtab -->
 
@@ -580,14 +582,14 @@ large 按钮更具有强调作用，建议搭配 center 使用：
 
 请将您的 Volantis 升级至 <u>2.3</u> 版本以上使用。
 
-{% tabs btns, 4 %}
+{% tabs btns::4 %}
 
 <!-- tab 语法格式 -->
 
 ```
 {% btns 样式参数 %}
-{% cell 标题, 链接, 图片或者图标 %}
-{% cell 标题, 链接, 图片或者图标 %}
+{% cell 标题::链接::图片或者图标 %}
+{% cell 标题::链接::图片或者图标 %}
 {% endbtns %}
 ```
 
@@ -597,7 +599,7 @@ large 按钮更具有强调作用，建议搭配 center 使用：
 
 样式参数位置可以写图片样式、布局方式，多个样式参数用空格隔开。
 
-{% p subtitle, 圆角样式 %}
+{% p subtitle::圆角样式 %}
 
 默认为方形
 
@@ -606,7 +608,7 @@ rounded, circle
 ```
 
 
-{% p subtitle, 布局方式 %}
+{% p subtitle::布局方式 %}
 
 默认为自动宽度，适合视野内只有一两个的情况。
 
@@ -623,7 +625,7 @@ rounded, circle
 | grid5 | 等宽最多5列，屏幕变窄会适当减少列数。 |
 {% endtable %}
 
-{% p subtitle, 增加文字样式 %}
+{% p subtitle::增加文字样式 %}
 
 可以在容器内增加 `<b>标题</b>` 和 `<p>描述文字</p>`
 
@@ -635,11 +637,11 @@ rounded, circle
 
 ```md example.md:
 {% btns circle grid5 %}
-{% cell xaoxuu, https://xaoxuu.com, https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png %}
-{% cell xaoxuu, https://xaoxuu.com, https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png %}
-{% cell xaoxuu, https://xaoxuu.com, https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png %}
-{% cell xaoxuu, https://xaoxuu.com, https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png %}
-{% cell xaoxuu, https://xaoxuu.com, https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png %}
+{% cell xaoxuu::https://xaoxuu.com::https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png %}
+{% cell xaoxuu::https://xaoxuu.com::https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png %}
+{% cell xaoxuu::https://xaoxuu.com::https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png %}
+{% cell xaoxuu::https://xaoxuu.com::https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png %}
+{% cell xaoxuu::https://xaoxuu.com::https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png %}
 {% endbtns %}
 ```
 
@@ -647,8 +649,8 @@ rounded, circle
 
 ```md example.md:
 {% btns rounded grid5 %}
-{% cell 下载源码, /, fas fa-download %}
-{% cell 查看文档, /, fas fa-book-open %}
+{% cell 下载源码::/::fas fa-download %}
+{% cell 查看文档::/::fas fa-book-open %}
 {% endbtns %}
 ```
 
@@ -659,13 +661,13 @@ rounded, circle
 <a href='https://apps.apple.com/cn/app/heart-mate-pro-hrm-utility/id1463348922?ls=1'>
   <i class='fab fa-apple'></i>
   <b>心率管家</b>
-  {% p red, 专业版 %}
+  {% p red::专业版 %}
   <img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/qrcode/heartmate_pro.png'>
 </a>
 <a href='https://apps.apple.com/cn/app/heart-mate-lite-hrm-utility/id1475747930?ls=1'>
   <i class='fab fa-apple'></i>
   <b>心率管家</b>
-  {% p green, 免费版 %}
+  {% p green::免费版 %}
   <img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/qrcode/heartmate_lite.png'>
 </a>
 {% endbtns %}
@@ -677,17 +679,17 @@ rounded, circle
 
 如果需要显示类似「团队成员」之类的一组含有头像的链接：
 {% btns circle grid5 %}
-{% cell xaoxuu, https://xaoxuu.com, https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png %}
-{% cell xaoxuu, https://xaoxuu.com, https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png %}
-{% cell xaoxuu, https://xaoxuu.com, https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png %}
-{% cell xaoxuu, https://xaoxuu.com, https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png %}
-{% cell xaoxuu, https://xaoxuu.com, https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png %}
+{% cell xaoxuu::https://xaoxuu.com::https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png %}
+{% cell xaoxuu::https://xaoxuu.com::https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png %}
+{% cell xaoxuu::https://xaoxuu.com::https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png %}
+{% cell xaoxuu::https://xaoxuu.com::https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png %}
+{% cell xaoxuu::https://xaoxuu.com::https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png %}
 {% endbtns %}
 
 或者含有图标的按钮：
 {% btns rounded grid5 %}
-{% cell 下载源码, /, fas fa-download %}
-{% cell 查看文档, /, fas fa-book-open %}
+{% cell 下载源码::/::fas fa-download %}
+{% cell 查看文档::/::fas fa-book-open %}
 {% endbtns %}
 
 
@@ -696,13 +698,13 @@ rounded, circle
 <a href='https://apps.apple.com/cn/app/heart-mate-pro-hrm-utility/id1463348922?ls=1'>
   <i class='fab fa-apple'></i>
   <b>心率管家</b>
-  {% p red, 专业版 %}
+  {% p red::专业版 %}
   <img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/qrcode/heartmate_pro.png'>
 </a>
 <a href='https://apps.apple.com/cn/app/heart-mate-lite-hrm-utility/id1475747930?ls=1'>
   <i class='fab fa-apple'></i>
   <b>心率管家</b>
-  {% p green, 免费版 %}
+  {% p green::免费版 %}
   <img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/qrcode/heartmate_lite.png'>
 </a>
 {% endbtns %}
@@ -716,50 +718,50 @@ rounded, circle
 
 ## ghcard
 
-```md 最后更新于 <u>4.0</u> 版本
-{% ghcard 用户名, 其它参数（可选） %}
-{% ghcard 用户名/仓库, 其它参数（可选） %}
+```md 最后更新于 <u>5.0</u> 版本
+{% ghcard 用户名::其它参数（可选） %}
+{% ghcard 用户名/仓库::其它参数（可选） %}
 ```
 
 ### 用户信息卡片
 
-| {% ghcard xaoxuu %} | {% ghcard xaoxuu, theme=vue %} |
+| {% ghcard xaoxuu %} | {% ghcard xaoxuu::theme=vue %} |
 | -- | -- |
-| {% ghcard xaoxuu, theme=buefy %} | {% ghcard xaoxuu, theme=solarized-light %} |
-| {% ghcard xaoxuu, theme=onedark %} | {% ghcard xaoxuu, theme=solarized-dark %} |
-| {% ghcard xaoxuu, theme=algolia %} | {% ghcard xaoxuu, theme=calm %} |
+| {% ghcard xaoxuu::theme=buefy %} | {% ghcard xaoxuu::theme=solarized-light %} |
+| {% ghcard xaoxuu::theme=onedark %} | {% ghcard xaoxuu::theme=solarized-dark %} |
+| {% ghcard xaoxuu::theme=algolia %} | {% ghcard xaoxuu::theme=calm %} |
 
 上述示例的源码：
 
 ```md example:
-| {% ghcard xaoxuu %} | {% ghcard xaoxuu, theme=vue %} |
+| {% ghcard xaoxuu %} | {% ghcard xaoxuu::theme=vue %} |
 | -- | -- |
-| {% ghcard xaoxuu, theme=buefy %} | {% ghcard xaoxuu, theme=solarized-light %} |
-| {% ghcard xaoxuu, theme=onedark %} | {% ghcard xaoxuu, theme=solarized-dark %} |
-| {% ghcard xaoxuu, theme=algolia %} | {% ghcard xaoxuu, theme=calm %} |
+| {% ghcard xaoxuu::theme=buefy %} | {% ghcard xaoxuu::theme=solarized-light %} |
+| {% ghcard xaoxuu::theme=onedark %} | {% ghcard xaoxuu::theme=solarized-dark %} |
+| {% ghcard xaoxuu::theme=algolia %} | {% ghcard xaoxuu::theme=calm %} |
 ```
 
 ### 仓库信息卡片
 
-| {% ghcard volantis-x/hexo-theme-volantis %} | {% ghcard volantis-x/hexo-theme-volantis, theme=vue %} |
+| {% ghcard volantis-x/hexo-theme-volantis %} | {% ghcard volantis-x/hexo-theme-volantis::theme=vue %} |
 | -- | -- |
-| {% ghcard volantis-x/hexo-theme-volantis, theme=buefy %} | {% ghcard volantis-x/hexo-theme-volantis, theme=solarized-light %} |
-| {% ghcard volantis-x/hexo-theme-volantis, theme=onedark %} | {% ghcard volantis-x/hexo-theme-volantis, theme=solarized-dark %} |
-| {% ghcard volantis-x/hexo-theme-volantis, theme=algolia %} | {% ghcard volantis-x/hexo-theme-volantis, theme=calm %} |
+| {% ghcard volantis-x/hexo-theme-volantis::theme=buefy %} | {% ghcard volantis-x/hexo-theme-volantis::theme=solarized-light %} |
+| {% ghcard volantis-x/hexo-theme-volantis::theme=onedark %} | {% ghcard volantis-x/hexo-theme-volantis::theme=solarized-dark %} |
+| {% ghcard volantis-x/hexo-theme-volantis::theme=algolia %} | {% ghcard volantis-x/hexo-theme-volantis::theme=calm %} |
 
 上述示例的源码：
 
 ```md example:
-| {% ghcard volantis-x/hexo-theme-volantis %} | {% ghcard volantis-x/hexo-theme-volantis, theme=vue %} |
+| {% ghcard volantis-x/hexo-theme-volantis %} | {% ghcard volantis-x/hexo-theme-volantis::theme=vue %} |
 | -- | -- |
-| {% ghcard volantis-x/hexo-theme-volantis, theme=buefy %} | {% ghcard volantis-x/hexo-theme-volantis, theme=solarized-light %} |
-| {% ghcard volantis-x/hexo-theme-volantis, theme=onedark %} | {% ghcard volantis-x/hexo-theme-volantis, theme=solarized-dark %} |
-| {% ghcard volantis-x/hexo-theme-volantis, theme=algolia %} | {% ghcard volantis-x/hexo-theme-volantis, theme=calm %} |
+| {% ghcard volantis-x/hexo-theme-volantis::theme=buefy %} | {% ghcard volantis-x/hexo-theme-volantis::theme=solarized-light %} |
+| {% ghcard volantis-x/hexo-theme-volantis::theme=onedark %} | {% ghcard volantis-x/hexo-theme-volantis::theme=solarized-dark %} |
+| {% ghcard volantis-x/hexo-theme-volantis::theme=algolia %} | {% ghcard volantis-x/hexo-theme-volantis::theme=calm %} |
 ```
 
 ### 更多参数选择
 
-{% link GitHub 卡片 API 参数, https://github-readme-stats.vercel.app %}
+{% link GitHub 卡片 API 参数::https://github-readme-stats.vercel.app %}
 
 
 <br>
@@ -788,24 +790,24 @@ rounded, circle
 
 请将您的 Volantis 升级至 <u>3.0</u> 版本以上使用。
 
-{% tabs menu, 3 %}
+{% tabs menu::3 %}
 
 <!-- tab 语法格式 -->
 
-{% p subtitle, 容器 %}
+{% p subtitle::容器 %}
 
 ```md
-{% menu 前缀（可省略）, 标题, 后缀（可省略） %}
+{% menu 前缀（可省略）::标题::后缀（可省略） %}
 菜单内容
 {% endmenu %}
 ```
 
-{% p subtitle, 菜单内容 %}
+{% p subtitle::菜单内容 %}
 
 菜单项
 
 ```md
-{% menuitem 文本, 链接, 图标 %}
+{% menuitem 文本::链接::图标 %}
 ```
 
 分割线
@@ -817,7 +819,7 @@ rounded, circle
 子菜单
 
 ```md
-{% submenu 嵌套菜单, 图标 %}
+{% submenu 嵌套菜单::图标 %}
 菜单内容
 {% endsubmenu %}
 ```
@@ -826,33 +828,33 @@ rounded, circle
 
 <!-- tab 示例写法 -->
 
-{% p subtitle, 示例1 %}
+{% p subtitle::示例1 %}
 
 ```md
 {% menu 下拉菜单 %}
-{% menuitem 主题源码, https://github.com/volantis-x/hexo-theme-volantis/, fas fa-file-code %}
-{% menuitem 更新日志, https://github.com/volantis-x/hexo-theme-volantis/releases/, fas fa-clipboard-list %}
+{% menuitem 主题源码::https://github.com/volantis-x/hexo-theme-volantis/::fas fa-file-code %}
+{% menuitem 更新日志::https://github.com/volantis-x/hexo-theme-volantis/releases/::fas fa-clipboard-list %}
 {% menuitem hr %}
-{% submenu 有疑问？, fas fa-question-circle %}
-{% menuitem 看 FAQ, /faqs/ %}
-{% menuitem 看 本站源码, https://github.com/volantis-x/volantis-docs/ %}
-{% menuitem 提 Issue, https://github.com/volantis-x/hexo-theme-volantis/issues/ %}
+{% submenu 有疑问？::fas fa-question-circle %}
+{% menuitem 看 FAQ::/faqs/ %}
+{% menuitem 看 本站源码::https://github.com/volantis-x/volantis-docs/ %}
+{% menuitem 提 Issue::https://github.com/volantis-x/hexo-theme-volantis/issues/ %}
 {% endsubmenu %}
 {% endmenu %}
 ```
 
-{% p subtitle, 示例2 %}
+{% p subtitle::示例2 %}
 
 ```md
-{% menu 这个是, 下拉菜单 %}
+{% menu 这个是::下拉菜单 %}
 （同上）
 {% endmenu %}
 ```
 
-{% p subtitle, 示例3 %}
+{% p subtitle::示例3 %}
 
 ```md
-{% menu 这个是, 下拉菜单, 的示例效果。 %}
+{% menu 这个是::下拉菜单::的示例效果。 %}
 （同上）
 {% endmenu %}
 ```
@@ -861,42 +863,42 @@ rounded, circle
 
 <!-- tab 示例效果 -->
 
-{% p subtitle, 示例1 %}
+{% p subtitle::示例1 %}
 
 {% menu 下拉菜单 %}
-{% menuitem 主题源码, https://github.com/volantis-x/hexo-theme-volantis/, fas fa-file-code %}
-{% menuitem 更新日志, https://github.com/volantis-x/hexo-theme-volantis/releases/, fas fa-clipboard-list %}
+{% menuitem 主题源码::https://github.com/volantis-x/hexo-theme-volantis/::fas fa-file-code %}
+{% menuitem 更新日志::https://github.com/volantis-x/hexo-theme-volantis/releases/::fas fa-clipboard-list %}
 {% menuitem hr %}
-{% submenu 有疑问？, fas fa-question-circle %}
-{% menuitem 看 FAQ, /faqs/ %}
-{% menuitem 看 本站源码, https://github.com/volantis-x/volantis-docs/ %}
-{% menuitem 提 Issue, https://github.com/volantis-x/hexo-theme-volantis/issues/ %}
+{% submenu 有疑问？::fas fa-question-circle %}
+{% menuitem 看 FAQ::/faqs/ %}
+{% menuitem 看 本站源码::https://github.com/volantis-x/volantis-docs/ %}
+{% menuitem 提 Issue::https://github.com/volantis-x/hexo-theme-volantis/issues/ %}
 {% endsubmenu %}
 {% endmenu %}
 
-{% p subtitle, 示例2 %}
+{% p subtitle::示例2 %}
 
-{% menu 这个是, 下拉菜单 %}
-{% menuitem 主题源码, https://github.com/volantis-x/hexo-theme-volantis/, fas fa-file-code %}
-{% menuitem 更新日志, https://github.com/volantis-x/hexo-theme-volantis/releases/, fas fa-clipboard-list %}
+{% menu 这个是::下拉菜单 %}
+{% menuitem 主题源码::https://github.com/volantis-x/hexo-theme-volantis/::fas fa-file-code %}
+{% menuitem 更新日志::https://github.com/volantis-x/hexo-theme-volantis/releases/::fas fa-clipboard-list %}
 {% menuitem hr %}
-{% submenu 有疑问？, fas fa-question-circle %}
-{% menuitem 看 FAQ, /faqs/ %}
-{% menuitem 看 本站源码, https://github.com/volantis-x/volantis-docs/ %}
-{% menuitem 提 Issue, https://github.com/volantis-x/hexo-theme-volantis/issues/ %}
+{% submenu 有疑问？::fas fa-question-circle %}
+{% menuitem 看 FAQ::/faqs/ %}
+{% menuitem 看 本站源码::https://github.com/volantis-x/volantis-docs/ %}
+{% menuitem 提 Issue::https://github.com/volantis-x/hexo-theme-volantis/issues/ %}
 {% endsubmenu %}
 {% endmenu %}
 
-{% p subtitle, 示例3 %}
+{% p subtitle::示例3 %}
 
-{% menu 这个是, 下拉菜单, 的示例效果。 %}
-{% menuitem 主题源码, https://github.com/volantis-x/hexo-theme-volantis/, fas fa-file-code %}
-{% menuitem 更新日志, https://github.com/volantis-x/hexo-theme-volantis/releases/, fas fa-clipboard-list %}
+{% menu 这个是::下拉菜单::的示例效果。 %}
+{% menuitem 主题源码::https://github.com/volantis-x/hexo-theme-volantis/::fas fa-file-code %}
+{% menuitem 更新日志::https://github.com/volantis-x/hexo-theme-volantis/releases/::fas fa-clipboard-list %}
 {% menuitem hr %}
-{% submenu 有疑问？, fas fa-question-circle %}
-{% menuitem 看 FAQ, /faqs/ %}
-{% menuitem 看 本站源码, https://github.com/volantis-x/volantis-docs/ %}
-{% menuitem 提 Issue, https://github.com/volantis-x/hexo-theme-volantis/issues/ %}
+{% submenu 有疑问？::fas fa-question-circle %}
+{% menuitem 看 FAQ::/faqs/ %}
+{% menuitem 看 本站源码::https://github.com/volantis-x/volantis-docs/ %}
+{% menuitem 提 Issue::https://github.com/volantis-x/hexo-theme-volantis/issues/ %}
 {% endsubmenu %}
 {% endmenu %}
 
@@ -965,8 +967,8 @@ rounded, circle
 
 ## folding
 
-```md 最后更新于 <u>2.3</u> 版本
-{% folding 参数（可选）, 标题 %}
+```md 最后更新于 <u>5.0</u> 版本
+{% folding 参数（可选）::标题 %}
 ![](https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper/abstract/41F215B9-261F-48B4-80B5-4E86E165259E.jpeg)
 {% endfolding %}
 ```
@@ -979,16 +981,16 @@ rounded, circle
 
 {% endfolding %}
 
-{% folding cyan open, 查看默认打开的折叠框 %}
+{% folding cyan open::查看默认打开的折叠框 %}
 
 这是一个默认打开的折叠框。
 
 {% endfolding %}
 
-{% folding green, 查看代码测试 %}
+{% folding green::查看代码测试 %}
 
 ```md
-{% folding green, 查看代码测试 %}
+{% folding green::查看代码测试 %}
 
 查看代码测试
 
@@ -997,16 +999,16 @@ rounded, circle
 
 {% endfolding %}
 
-{% folding yellow, 查看列表测试 %}
+{% folding yellow::查看列表测试 %}
 
 - haha
 - hehe
 
 {% endfolding %}
 
-{% folding red, 查看嵌套测试 %}
+{% folding red::查看嵌套测试 %}
 
-{% folding blue, 查看嵌套测试2 %}
+{% folding blue::查看嵌套测试2 %}
 
 {% folding 查看嵌套测试3 %}
 
@@ -1027,26 +1029,26 @@ hahaha <span><img src='https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/tieba/%E
 
 {% endfolding %}
 
-{% folding cyan open, 查看默认打开的折叠框 %}
+{% folding cyan open::查看默认打开的折叠框 %}
 
 这是一个默认打开的折叠框。
 
 {% endfolding %}
 
-{% folding green, 查看代码测试 %}
+{% folding green::查看代码测试 %}
 
 {% endfolding %}
 
-{% folding yellow, 查看列表测试 %}
+{% folding yellow::查看列表测试 %}
 
 - haha
 - hehe
 
 {% endfolding %}
 
-{% folding red, 查看嵌套测试 %}
+{% folding red::查看嵌套测试 %}
 
-{% folding blue, 查看嵌套测试2 %}
+{% folding blue::查看嵌套测试2 %}
 
 {% folding 查看嵌套测试3 %}
 
@@ -1080,15 +1082,15 @@ blue, cyan, green, yellow, red
 
 Inlineimage 标签是一种行内图片标签，可以用来在一段话中间插入表情。
 
-```md 本插件最后更新于 <u>4.0</u> 版本
-{% inlineimage 图片链接, height=高度（可选） %}
+```md 本插件最后更新于 <u>5.0</u> 版本
+{% inlineimage 图片链接::height=高度（可选） %}
 ```
 
 ### 演示效果
 
 这是 {% inlineimage https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/aru-l/0000.gif %} 一段话。
 
-这又是 {% inlineimage https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/aru-l/5150.gif, height=40px %} 一段话。
+这又是 {% inlineimage https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/aru-l/5150.gif::height=40px %} 一段话。
 
 
 ### 上述示例的源码
@@ -1096,7 +1098,7 @@ Inlineimage 标签是一种行内图片标签，可以用来在一段话中间�
 ```md example:
 这是 {% inlineimage https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/aru-l/0000.gif %} 一段话。
 
-这又是 {% inlineimage https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/aru-l/5150.gif, height=40px %} 一段话。
+这又是 {% inlineimage https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/aru-l/5150.gif::height=40px %} 一段话。
 ```
 
 ### 可以支持的参数
@@ -1114,27 +1116,27 @@ height=20px
 
 Image 标签是一种针对单个图片应用场景的标签，支持图片描述文字和指定宽度。
 
-```md 本插件最后更新于 <u>4.0</u> 版本
-{% image 链接, width=宽度（可选）, height=高度（可选）, alt=描述（可选）, bg=占位颜色（可选） %}
+```md 本插件最后更新于 <u>5.0</u> 版本
+{% image 链接::width=宽度（可选）::height=高度（可选）::alt=描述（可选）::bg=占位颜色（可选） %}
 ```
 
 ### 演示效果
 
 添加描述：
 
-{% image https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.jpg, alt=每天下课回宿舍的路，没有什么故事。 %}
+{% image https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.jpg::alt=每天下课回宿舍的路，没有什么故事。 %}
 
 指定宽度：
 
-{% image https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.jpg, width=300px %}
+{% image https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.jpg::width=300px %}
 
 指定宽度并添加描述：
 
-{% image https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.jpg, width=300px, alt=每天下课回宿舍的路，没有什么故事。 %}
+{% image https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.jpg::width=300px::alt=每天下课回宿舍的路，没有什么故事。 %}
 
 设置占位背景色：
 
-{% image https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.jpg, width=414px, bg=#224855, alt=优化不同宽度浏览的观感 %}
+{% image https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.jpg::width=414px::bg=#224855::alt=优化不同宽度浏览的观感 %}
 
 
 
@@ -1143,19 +1145,19 @@ Image 标签是一种针对单个图片应用场景的标签，支持图片描�
 ```md example:
 添加描述：
 
-{% image https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.jpg, alt=每天下课回宿舍的路，没有什么故事。 %}
+{% image https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.jpg::alt=每天下课回宿舍的路，没有什么故事。 %}
 
 指定宽度：
 
-{% image https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.jpg, width=400px %}
+{% image https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.jpg::width=400px %}
 
 指定宽度并添加描述：
 
-{% image https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.jpg, width=400px, alt=每天下课回宿舍的路，没有什么故事。 %}
+{% image https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.jpg::width=400px::alt=每天下课回宿舍的路，没有什么故事。 %}
 
 设置占位背景色：
 
-{% image https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.jpg, width=400px, bg=#1D0C04, alt=优化不同宽度浏览的观感 %}
+{% image https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.jpg::width=400px::bg=#1D0C04::alt=优化不同宽度浏览的观感 %}
 ```
 
 ### 可以支持的参数
@@ -1164,7 +1166,7 @@ Image 标签是一种针对单个图片应用场景的标签，支持图片描�
 #### 图片宽高度
 
 ```md example:
-width=300px, height=32px
+width=300px::height=32px
 ```
 
 #### 图片描述
@@ -1188,7 +1190,7 @@ bg=#f2f2f2
 Gallery 标签是一种针对一组图片应用场景的标签。
 
 ```md 本插件最后更新于 <u>5.0</u> 版本
-{% gallery 参数, 列数, 分组 %}
+{% gallery 参数::列数::分组 %}
 ![图片描述](https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper/abstract/B18FCBB3-67FD-48CC-B4F3-457BA145F17A.jpeg)
 ![](https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper/abstract/67239FBB-E15D-4F4F-8EE8-0F1C9F3C4E7C.jpeg)
 {% endgallery %}
@@ -1202,14 +1204,14 @@ Gallery 标签是一种针对一组图片应用场景的标签。
 {% endgallery %}
 
 一行多个图片（不换行）
-{% gallery , , one %}
+{% gallery::::one %}
 ![图片描述](https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper/abstract/B18FCBB3-67FD-48CC-B4F3-457BA145F17A.jpeg)
 ![图片描述](https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper/abstract/67239FBB-E15D-4F4F-8EE8-0F1C9F3C4E7C.jpeg)
 ![图片描述](https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper/abstract/00E0F0ED-9F1C-407A-9AA6-545649D919F4.jpeg)
 {% endgallery %}
 
 多行多个图片（每行2～8个图片）
-{% gallery stretch, 6, two %}
+{% gallery stretch::6::two %}
 ![](https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/001.jpg)
 ![](https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/002.jpg)
 ![](https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/003.jpg)
@@ -1249,7 +1251,7 @@ Gallery 标签是一种针对一组图片应用场景的标签。
 一行多个图片（不换行）
 
 ```md example.md:
-{% gallery , , one %}
+{% gallery::::one %}
 ![图片描述](https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper/abstract/B18FCBB3-67FD-48CC-B4F3-457BA145F17A.jpeg)
 ![图片描述](https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper/abstract/67239FBB-E15D-4F4F-8EE8-0F1C9F3C4E7C.jpeg)
 ![图片描述](https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper/abstract/00E0F0ED-9F1C-407A-9AA6-545649D919F4.jpeg)
@@ -1259,7 +1261,7 @@ Gallery 标签是一种针对一组图片应用场景的标签。
 多行多个图片（每行2～8个图片）
 
 ```md example.md:
-{% gallery stretch, 6, two %}
+{% gallery stretch::6::two %}
 ![](https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/001.jpg)
 ![](https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/002.jpg)
 ![](https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/003.jpg)
@@ -1292,7 +1294,7 @@ Gallery 标签是一种针对一组图片应用场景的标签。
 #### 对齐方向
 
 ```
-left, center, right
+left::center::right
 ```
 
 #### 缩放
@@ -1334,7 +1336,7 @@ stretch
 
 ## video
 
-```md 本插件最后更新于 <u>2.3</u> 版本
+```md 本插件最后更新于 <u>5.0</u> 版本
 {% video 视频链接 %}
 ```
 
@@ -1347,7 +1349,7 @@ stretch
 
 50%宽度
 
-{% videos, 2 %}
+{% videos::2 %}
 {% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
 {% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
 {% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
@@ -1356,7 +1358,7 @@ stretch
 
 25%宽度
 
-{% videos, 4 %}
+{% videos::4 %}
 {% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
 {% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
 {% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
@@ -1378,7 +1380,7 @@ stretch
 50%宽度
 
 ```md example.md:
-{% videos, 2 %}
+{% videos::2 %}
 {% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
 {% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
 {% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
@@ -1389,7 +1391,7 @@ stretch
 25%宽度
 
 ```md example.md:
-{% videos, 4 %}
+{% videos::4 %}
 {% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
 {% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
 {% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
@@ -1407,7 +1409,7 @@ stretch
 #### 对齐方向
 
 ```
-left, center, right
+left::center::right
 ```
 
 #### 列数
@@ -1421,19 +1423,19 @@ left, center, right
 
 这是一个能够将图片或者视频套入设备框架中的标签，可以用来更优雅地显示截图、录屏。
 
-```md 本插件最后更新于 <u>4.0</u> 版本
-{% frame 框架名 | img=图片链接 | alt=图片描述（可选） | part=top/bottom（可选） %}
-{% frame 框架名 | video=视频链接 | part=top/bottom（可选） %}
+```md 本插件最后更新于 <u>5.0</u> 版本
+{% frame 框架名::img=图片链接::alt=图片描述（可选）::part=top/bottom（可选） %}
+{% frame 框架名::video=视频链接::part=top/bottom（可选） %}
 ```
 
 <br>
 
 
-{% frame iphone11 | img=https://7.dusays.com/2020/09/28/baa33914a34ec.jpg | video=https://7.dusays.com/2020/09/28/39db723f1e200.mp4 | part=top %}
+{% frame iphone11::img=https://7.dusays.com/2020/09/28/baa33914a34ec.jpg::video=https://7.dusays.com/2020/09/28/39db723f1e200.mp4::part=top %}
 
 
 ```
-{% frame iphone11 | img=https://7.dusays.com/2020/09/28/baa33914a34ec.jpg | video=https://7.dusays.com/2020/09/28/39db723f1e200.mp4 | part=top %}
+{% frame iphone11::img=https://7.dusays.com/2020/09/28/baa33914a34ec.jpg::video=https://7.dusays.com/2020/09/28/39db723f1e200.mp4::part=top %}
 ```
 
 在这个示例中同时出现了 `img` 和 `video` 那么它就是一个带有封面的视频，在视频加载完成之前会先显示视频封面。
