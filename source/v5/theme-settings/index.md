@@ -291,14 +291,24 @@ color_scheme:
 # 自定义右键菜单
 rightmenu:
   enable: true
+  faicon: fa              # 公共图标类型 fa fal fas fad
   # hr: 分割线, music: 音乐控制器
-  layout: [home, help, examples, contributors, hr, source_docs, source_theme, hr, print, hr, dark_mode, hr, music]
-  # 可选功能项
-  print:
+  layout: [home, hr, help, examples, contributors, hr, source_docs, source_theme, hr, print, darkmode, music]
+  ### 可选功能项 ###
+  print:                  # 只有文章页才允许自定义打印
     name: 打印页面
     icon: fa fa-print
-    onclick: document.execCommand('print')
-  # 自定义菜单的格式如下
+    defaultStyles: true   # 是否使用预制的打印样式
+    # js:                 # 自定义 js ，可用于修饰打印样式~， 右键剔除了对 Jquery 的依赖，所以此处你只能使用原生 js
+    #  - document.querySelector('article#comments').remove()  # 移除评论
+  darkmode:        # 需开启 plugins.darkmodejs
+    name: 暗黑模式
+    icon: fa fa-moon
+  customPicUrl:    # 右键的图片复制：只有 Chrome 支持，且只支持 PNG 格式的图片。
+    enable: false  # 如果使用了对象存储且开启了自适应 Webp，那么可以提供额外的链接用以替换图片的访问地址
+    old: #https://static.inkss.cn/img/article/
+    new: #https://cdn.jsdelivr.net/gh/inkss/inkss-cdn@master/img/article/  
+  ### 自定义菜单 ###
   help:
     name: 常见问题
     icon: fa fa-question
@@ -319,10 +329,6 @@ rightmenu:
     name: 主题源码
     icon: fa fa-code-branch
     url: https://github.com/volantis-x/hexo-theme-volantis/
-  dark_mode:
-    name: Dark mode
-    icon: fas fa-moon
-    toggle: darkmode
 ```
 
 ## 设置网站导航栏
@@ -1626,4 +1632,68 @@ plugins:
   tidio:
     enable: true
     id: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+```
+
+### HexoPlusPlus
+```yaml blog/_config.volantis.yml
+plugins:
+  ...
+  # HexoPlusPlus
+  # https://github.com/HexoPlusPlus/HexoPlusPlus
+  # https://hexoplusplus.js.org/
+  # 无服务器Hexo后端,支持文章编辑,自带图床功能.目标:解决静态博客所有痛点[文章编辑、图片上传、博主活跃信息统计、博主说说、Twikoo加强版、阅读量统计等
+  hpp:
+    # 说说功能
+    # Set `hpptalk:true` to enable in page
+    hpp_talk:
+      css: https://cdn.jsdelivr.net/gh/HexoPlusPlus/HexoPlusPlus@latest/talk.css # 建议锁定版本
+      js: https://cdn.jsdelivr.net/gh/HexoPlusPlus/HexoPlusPlus@latest/talk_user.js # 建议锁定版本
+      limit: 10
+      start: 0
+      # 配置项按照yml格式继续填写即可
+      # domain:
+      # themecss:
+    # HexoPlusPlus其他功能暂未集成
+```
+
+### 友链朋友圈
+```yaml blog/_config.volantis.yml
+plugins:
+  ...
+  # 友链朋友圈 hexo-circle-of-friends
+  # https://github.com/Rock-Candy-Tea/hexo-circle-of-friends
+  # https://zfe.space/post/friend-link-circle.html
+  fcircle:
+    # Set `layout: fcircle` to enable in page
+    api: '' # api 地址
+    max_number: 20 # 页面展示文章数量
+    add_number: 10 # 每次加载增加的篇数
+    opentype: '_blank' # '_blank'打开新标签,'_self'本窗口打开
+    nofollow: true # 禁止搜索引擎抓取
+    # loadingCutom: # 自定义loading图 例如: <i class="fa fa-spinner fa-spin"></i> | <img src="你的图片地址" alt="加载中...">
+```
+
+### 消息提示
+```yaml blog/_config.volantis.yml
+plugins:
+  ...
+  # 消息提示
+  message:
+    enable: true
+    icon:     # 默认图标，支持对图标添加颜色，可选值：see：/source/css/_plugins/message.styl
+      default: fas fa-info-circle light-blue
+      quection: fas fa-question-circle light-blue
+    time:     # 默认持续时间
+      default: 5000
+      quection: 20000
+    position: 'topRight'                 # 弹出位置 可选值：topRight, bottomRight, bottomLeft, topLeft, topCenter, bottomCenter, center
+    titleColor: 'var(--color-text)'      # 标题颜色
+    messageColor: 'var(--color-text)'    # 消息颜色
+    backgroundColor: 'var(--color-card)' # 默认背景色
+    zindex: 2147483647                   # 层级
+    copyright:                           # 是否在复制时弹出版权提示(非右键下的操作提示)
+      enable: true
+      title: '知识共享许可协议'
+      message: '请遵守 CC BY-NC-SA 4.0 协议。'
+      icon: 'far fa-copyright light-blue'
 ```

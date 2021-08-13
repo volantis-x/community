@@ -114,6 +114,8 @@ title: 我的朋友们 # 可选，这是友链页的标题
 
 ```
 
+{% note info :: 插入友链数据可以 选择布局方案 或 使用友链标签 %}
+
 #### 选择布局方案
 
 在主题配置文件中找到以下内容：
@@ -122,22 +124,15 @@ title: 我的朋友们 # 可选，这是友链页的标题
 pages:
   # 友链页面配置
   friends:
-    layout_scheme: traditional # simple: 简单布局, traditional: 传统布局,  sites: 网站卡片布局
+    layout_scheme: traditional # simple: 简单布局, traditional: 传统布局
 ```
 
-目前提供三种布局方案：
+目前提供2种布局方案：
 - simple: 简单布局，只有头像和标题。
 - traditional: 传统布局，是 Volantis 旧版本的风格。
-- sites: 网站卡片布局，是 Volantis 4.x 新增的网站卡片标签的样式。
 
-#### 设置数据源
+以上2种友链的数据源写在以下路径，如果没有请自行创建：
 
-
-{% tabs about, 1 %}
-
-<!-- tab 静态数据源 -->
-
-友链的数据源写在以下路径，如果没有请自行创建：
 ```
 blog/source/_data/friends.yml
 ```
@@ -162,46 +157,17 @@ blog/source/_data/friends.yml
 
 不同的布局方式，会用到一部分的字段，一般来说，`title`、`avatar` 和 `url` 都是必须的。这些数据被转成 HTML 标签插入到友链页面的 `<!-- more -->` 部分。
 
-<!-- endtab -->
+{% note error:: Volantis 4.x 新增的网站卡片标签的样式 sites 网站卡片布局 在5.0版本移除 被 sites标签 friends标签 contributors标签 替代 %}
 
-<!-- tab 动态数据源 -->
+{% note error:: issues 标签在5.0版本移除 被 sites标签 friends标签 contributors标签 替代 %}
 
-使用 issues 标签可以从 issues 中获取 JSON 数据解析并生成 HTML 填充到页面中，使用方法如下：
+#### 使用友链标签
 
-```
-{% issues sites | api=https://api.github.com/repos/xaoxuu/friends/issues?sort=updated&state=open&page=1&per_page=100&labels=active %}
-```
+使用 友链标签 您可以在任何位置插入友链，支持静态数据和动态数据, 关于如何使用 友链标签 插入友链，详见：
 
-这样添加友链的方式就变成了：对方提 Issue ，自己审核，然后添加 `active` 标签，然后刷新网页就生效了。更新友链内容也变得十分方便， Issue 的创建者拥有修改和关闭的权限。
-
-新建一个 GitHub 或者 Gitee 仓库，创建 Issues 模板，如下：
-
-```json
-{
-    "title": "",
-    "screenshot": "",
-    "url": "",
-    "avatar": "",
-    "description": "",
-    "keywords": ""
-}
-```
-
-关于如何使用 issues 标签，详见这篇文章：
-
-{% link 静态博客使用 Issues API 发布动态、友链、书签, https://xaoxuu.com/blog/2020-08-23-issues-api/ %}
+{% link volantis 主题文档 #友链标签::/v5/tag-plugins/#友链标签 %}
 
 
-<!-- endtab -->
-
-{% endtabs %}
-
-{% noteblock idea, 建议 %}
-
-- 两者是可以同时使用的哦，建议开放 issues 友链给大家，常联系的自己再保存到静态友链。
-- 实测 GitHub API 速度和稳定性不如 Gitee ，如果追求稳定建议使用 Gitee。
-
-{% endnoteblock %}
 
 ### Artitalk页面
 
