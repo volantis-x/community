@@ -80,6 +80,8 @@ author: Jon
 
 ## 优化 SEO
 
+### Robots
+
 ```yaml blog/_config.volantis.yml
 seo:
   # When there are no keywords in the article's front-matter, use tags as keywords.
@@ -107,6 +109,40 @@ seo:
 
 - 页面不要堆砌关键词，不要频繁更改路径。
 
+### Open Graph
+
+```yaml blog/_config.volantis.yml
+# https://ogp.me/
+# https://hexo.io/zh-cn/docs/helpers#open-graph
+open_graph:
+  image: https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png
+  twitter_card: summary # summary_large_image , summary
+  #twitter_id:
+  #twitter_site:
+```
+
+### Structured Data
+
+```yaml blog/_config.volantis.yml
+# SEO 入门文档: https://developers.google.com/search/docs
+# https://schema.org.cn/
+# 结构化数据用于更改搜索结果的显示效果
+# 目前内置的结构化数据: blogposting, breadcrumblist, organization, person, website
+# 目前内置的富媒体搜索结果: 路径(面包屑导航), 徽标(Logo), 站点链接搜索框(SearchAction)
+# https://developers.google.com/search/docs/advanced/structured-data/intro-structured-data
+# 富媒体搜索结果测试: https://search.google.com/test/rich-results
+structured_data:
+  enable: true
+  # 以下是覆盖配置, 默认配置见 scripts/helpers/structured-data/lib/config.js
+  data:
+    person:
+      sns:
+        - https://github.com/volantis-x
+    logo:
+      path: https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png
+      width: 192
+      height: 192
+```
 
 ## 使用 CDN
 
