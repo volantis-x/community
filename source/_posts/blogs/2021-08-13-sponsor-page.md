@@ -7,5 +7,5 @@ author: kelecn
 link: https://kelecn.top/posts/34795/
 description: sponsor-page 是一个开源的捐赠按钮样式，可以用于美化我们的博客。
 headimg: https://cdn.jsdelivr.net/gh/kelecn/images@master/cover26.png
-backup: https://archive.vn/U36NG # 将页面存档到 archive.tody 网页快照档案馆的存档链接 https://archive.tody
+backup: https://archive.ph/l2jwF
 ---
