@@ -196,6 +196,7 @@ git submodule add https://github.com/volantis-x/hexo-theme-volantis.git themes/v
 在终端中输入：
 
 ```
+cd themes/volantis
 git checkout dev
 ```
 
