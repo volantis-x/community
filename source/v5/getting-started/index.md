@@ -66,6 +66,14 @@ git clone https://github.com/volantis-x/demo.git && cd demo && npm i && hexo s
 
 ## 下载与安装
 
+{% note radiation yellow :: volantis 5.x 目前正处于 「alpha 阶段」 volantis 4.x 目前正处于 「stable 阶段」 %}
+
+{% note info :: volantis 开发发布周期依次经过: 「alpha 阶段」=>「beta 阶段」=>「rc 阶段」=>「stable 阶段」 %}
+
+{% note guide clear :: rc 阶段的测试版本和 stable 阶段的正式版本 我们统称为 「稳定版本」 , 只有 「稳定版本」 发布到 [npm](https://www.npmjs.com/package/hexo-theme-volantis) %}
+
+{% folding green::安装或更新 「稳定版本」 (rc 阶段的测试版本 或 stable 阶段的正式版本) %}
+
 {% tabs install, 1 %}
 
 <!-- tab 全新博客安装 -->
@@ -158,6 +166,50 @@ npm i hexo-renderer-stylus
 <!-- endtab -->
 
 {% endtabs %}
+
+{% endfolding %}
+
+{% note bug danger :: alpha 阶段的开发测试版本 和 beta 阶段的测试版本 我们统称为 「小白鼠测试版本」, 「小白鼠测试版本」 仅存在于 [Github 仓库的 dev 分支](https://github.com/volantis-x/hexo-theme-volantis/tree/dev) %}
+
+{% folding red::安装或更新 「小白鼠测试版本」 (alpha 阶段的开发测试版本 或 beta 阶段的测试版本) %}
+{% timenode 第 1/3 步：修改站点配置文件 %}
+
+在 `blog/_config.yml` 文件中找到并修改：
+
+```
+theme: volantis
+```
+
+{% endtimenode %}
+
+{% timenode 第 2/3 步：将主题仓库添加为子模块 %}
+
+在终端中输入：
+
+```
+git submodule add https://github.com/volantis-x/hexo-theme-volantis.git themes/volantis
+```
+
+{% endtimenode %}
+{% timenode 第 3/3 步：将主题仓库切换为 dev 分支 %}
+
+在终端中输入：
+
+```
+git checkout dev
+```
+
+{% endtimenode %}
+{% timenode 第 n/n 步：更新主题 %}
+
+在终端中输入：
+
+```
+git pull
+```
+
+{% endtimenode %}
+{% endfolding %}
 
 
 
