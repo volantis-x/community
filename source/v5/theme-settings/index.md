@@ -1211,27 +1211,15 @@ comments:
 ```yaml blog/_config.volantis.yml
 search:
   enable: true
-  service: hexo  # hexo, google, algolia, azure, baidu
+  service: hexo  # hexo
   js: https://cdn.jsdelivr.net/gh/volantis-x/cdn-volantis@2.6.4/js/search.js
-  google:
-    apiKey:
-    engineId:
-  algolia:
-    applicationID:
-    apiKey:
-    indexName:
-  azure:
-    serviceName:
-    indexName:
-    queryKey:
-  baidu:
-    apiId:
 ```
 默认配置为 Hexo 搜索，但是需要安装插件才能使用：
 ```sh
 npm i -S hexo-generator-search hexo-generator-json-content
 ```
 
+{% note error :: google,  algolia,  azure,  baidu 搜索服务 在5.0版本 临时 移除 %}
 
 ## 第三方插件
 
@@ -1491,6 +1479,9 @@ plugins:
 
 
 ### 幻灯片背景(视差滚动效果)
+
+{% note error :: jquery.backstretch 在 5.0 版本 移除, 被 parallax 替代 %}
+
 ```yaml blog/_config.volantis.yml
 plugins:
   ...
