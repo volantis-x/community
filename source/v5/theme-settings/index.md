@@ -1278,11 +1278,6 @@ plugins:
     interval: 20 # ms
     scale: 1 # 0.1~1
 
-  # Codeblock Copy Button
-  clipboard:
-    enable: #true
-    js: https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js
-
   ######## Plugins for SEO:
   # npm i hexo-wordcount
   wordcount:

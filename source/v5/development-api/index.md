@@ -145,30 +145,54 @@ disqus:
 
 源码参考：
 
-
 ```js
-volantis.message(title, message, icon, time, position, done);
-volantis.question(title, message, success, cancel, done, icon, time);
+volantis.message(title, message, option, done);
+volantis.question(title, message, option, success, cancel, done);
 ```
 
-| 参数     | 可选值(加粗为默认值)                                         | 必填 | 备注          |
-| -------- | ------------------------------------------------------------ | ---- | ------------- |
-| title    | -                                                            | √    | 标题          |
-| message  | -                                                            | √    | 内容          |
-| icon     | **fas fa-info-circle**, Fontawesome 图标库                   | ×    | 图标          |
-| time     | **5000**                                                     | ×    | 持续时间（s） |
-| position | **topRight**, bottomRight, bottomLeft, topLeft, topCenter, bottomCenter, center | ×    | 弹出位置      |
-| done     | fun()                                                        | ×    | 结束时回调    |
+- `title`：标题（必填），字符串（String）
+- `message`：内容（必填），字符串（String）
+- `option`：配置项，对象(Object)
+- `done`：完成时回调，函数(Function)
+- `success`：确认时回调，函数(Function)
+- `cancel`: 取消时回调，函数(Function)
 
-| 参数    | 可选值(加粗为默认值)                           | 必填 | 备注          |
-| ------- | ---------------------------------------------- | ---- | ------------- |
-| title   | -                                              | √    | 标题          |
-| message | -                                              | √    | 内容          |
-| success | fun()                                          | ×    | 确认回调      |
-| cancel  | fun()                                          | ×    | 取消回调      |
-| done    | fun()                                          | ×    | 结束时回调    |
-| icon    | **fas fa-question-circle**, Fontawesome 图标库 | ×    | 图标          |
-| time    | 20000                                          | ×    | 持续时间（s） |
+`option` 可选参数：
+
+- `icon`,                 // Fontawesome 图标
+- `time`,                 // 持续时间
+- `position`,             // 弹出位置
+- `transitionIn`,         // 弹窗打开动画
+- `transitionOut`,        // 弹窗关闭动画
+- `messageColor`,         // 消息颜色
+- `titleColor`,           // 标题颜色
+- `backgroundColor`,      // 默认背景色
+- `zindex`                // 层级
+
+option 配置优先级大于配置文件设置值。
+
+使用范例：
+
+```js
+// 同样弹窗
+volantis.message('这里是标题', '这里是弹窗内容');
+
+// 居中弹窗
+volantis.message('系统提示', '这里是 Volantis 主题站，欢迎访问。', {
+  icon: 'fad fa-smile-wink light-blue', 
+  position: 'topCenter', 
+  transitionIn:'bounceInDown',
+  transitionOut: 'fadeOutDown',
+  time: 10000
+});
+
+// 询问弹窗
+volantis.question('问卷调查', '你是否喜欢 Volantis 主题', {}, () => {
+  alert('谢谢支持')
+}, () => {
+  console.log('再接再厉')
+});
+```
 
 如果以上两个接口仍然不能满足您的需求，可以参考 [iziToast](https://izitoast.marcelodolza.com/) 的内容直接调用 `iziToast()` 
 
