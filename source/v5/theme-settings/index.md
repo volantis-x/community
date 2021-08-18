@@ -1212,7 +1212,7 @@ comments:
 search:
   enable: true
   service: hexo  # hexo
-  js: https://cdn.jsdelivr.net/gh/volantis-x/cdn-volantis@2.6.4/js/search.js
+  js: https://cdn.jsdelivr.net/xxxxxxxx/js/search/hexo.js
 ```
 默认配置为 Hexo 搜索，但是需要安装插件才能使用：
 ```sh
