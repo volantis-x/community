@@ -33,6 +33,8 @@ disqus:
 
 所有被 `<pjax></pjax>` 标签包裹的所有元素将被pjax重载。
 
+请检查并确保 pjax 标签必须存在于所有页面 否则 pjax error.
+
 ```html
 <pjax>
     <!--我是将被pjax重载的内容 begin-->

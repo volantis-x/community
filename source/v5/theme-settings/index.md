@@ -1234,7 +1234,7 @@ plugins:
   jquery: https://cdn.jsdelivr.net/npm/jquery@3.5/dist/jquery.min.js
   # fontawesome Pro 版本：https://cdn.jsdelivr.net/gh/inkss/fontawesome@5.15.3/css/all.min.css
   fontawesome: https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.14/css/all.min.css
-  
+
   ################ optional plugins ################
   # issues api
   sitesjs:
@@ -1350,12 +1350,8 @@ plugins:
     volume: 0.7       # default volume, notice that player will remember user setting, default volume will not work after user set volume themselves
     list_max_height: 320px # list max height
     list_folded: true
-    message:          # 音乐通知，播放、暂停、失败 时的图标
-      enable: true
-      play: fas fa-play
-      pause: fas fa-pause
-  
-  # Pjax 
+
+  # Pjax
   pjax:
     enable: true
     cover: true          # 封面是否pjax处理 false：每次切换页面封面都重载，适合封面较少的情况 true：封面经过Pjax处理，适合封面较多的情况
@@ -1364,7 +1360,6 @@ plugins:
     animation: false # false, nprogress, circle
     banUrl:              # 被屏蔽的 url 地址将不启用 pjax 跳转，可以在控制台下使用 window.location.pathname 获取
       # - '/artitalk/'     # artitalk 不支持 pjax
-      # - '/bb/'           # bbtalk 不支持 pjax
 
   # 暗黑模式 darkmode
   # 样式：source/css/_plugins/dark.styl
@@ -1392,7 +1387,8 @@ plugins:
   # 使用过旧版本的请修改Leancloud shuoshuo class部分列名：https://artitalk.js.org/release.html
   # 除appID和appKEY外均为选填项
   artitalk:
-    # Set `layout: artitalk` to enable in page
+    # Set `plugins: ["artitalk"]` to enable in page
+    # 不支持 Pjax
     # 配置项按照yml格式继续填写即可
     appId: ogP8qj3veMh0LFpFWMPOyF0X-MdYXbMMI # your appID
     appKey: nHXLd3N3Jgh460t2iRQKWAtr # your appKEY
@@ -1410,6 +1406,8 @@ plugins:
 
   # BBtalk https://bb.js.org
   bbtalk:
+    # Set `plugins: ["bbtalk"]` to enable in page
+    # 支持 Pjax
     js: https://cdn.jsdelivr.net/npm/bbtalk@0.1.5/dist/bbtalk.min.js # BBtalk.js
     appId: 0KzOX4vC7Jsk6vzUGNeEiUaI-gzGzoHsz # your appID
     appKey: HwCiWuxfpvKiLm4teCUgTIba # your appKEY
@@ -1427,7 +1425,8 @@ plugins:
   # 无服务器Hexo后端,支持文章编辑,自带图床功能.目标:解决静态博客所有痛点[文章编辑、图片上传、博主活跃信息统计、博主说说、Twikoo加强版、阅读量统计等
   hpp:
     # 说说功能
-    # Set `hpptalk:true` to enable in page
+    # Set `plugins: ["hpptalk"]` to enable in page
+    # 支持 Pjax
     hpp_talk:
       css: https://cdn.jsdelivr.net/gh/HexoPlusPlus/HexoPlusPlus@latest/talk.css # 建议锁定版本
       js: https://cdn.jsdelivr.net/gh/HexoPlusPlus/HexoPlusPlus@latest/talk_user.js # 建议锁定版本
@@ -1442,7 +1441,8 @@ plugins:
   # https://github.com/Rock-Candy-Tea/hexo-circle-of-friends
   # https://zfe.space/post/friend-link-circle.html
   fcircle:
-    # Set `layout: fcircle` to enable in page
+    # Set `plugins: ["fcircle"]` to enable in page
+    # 支持 Pjax
     api: '' # api 地址
     max_number: 20 # 页面展示文章数量
     add_number: 10 # 每次加载增加的篇数
@@ -1460,15 +1460,23 @@ plugins:
       default: 5000
       quection: 20000
     position: 'topRight'                 # 弹出位置 可选值：topRight, bottomRight, bottomLeft, topLeft, topCenter, bottomCenter, center
+    transitionIn: 'bounceInLeft'         # 弹窗打开动画 可选值：bounceInLeft, bounceInRight, bounceInUp, bounceInDown, fadeIn, fadeInDown, fadeInUp, fadeInLeft, fadeInRight, flipInX
+    transitionOut: 'fadeOutRight'        # 弹窗关闭动画 可选值：fadeOut, fadeOutUp, fadeOutDown, fadeOutLeft, fadeOutRight, flipOutX
     titleColor: 'var(--color-text)'      # 标题颜色
     messageColor: 'var(--color-text)'    # 消息颜色
     backgroundColor: 'var(--color-card)' # 默认背景色
     zindex: 2147483647                   # 层级
-    copyright:                           # 是否在复制时弹出版权提示(非右键下的操作提示)
+    copyright:                           # 是否在复制时弹出版权提示，影响范围：ctrl+c、代码块复制按钮、右键复制选项
       enable: true
       title: '知识共享许可协议'
       message: '请遵守 CC BY-NC-SA 4.0 协议。'
       icon: 'far fa-copyright light-blue'
+    aplayer:                              # 是否开启音乐通知；播放、暂停、失败 时的图标
+      enable: true
+      play: fas fa-play
+      pause: fas fa-pause
+    rightmenu:                            # 是否开启右键模块的消息通知
+      enable: true
 ```
 
 
@@ -1532,10 +1540,6 @@ plugins:
     volume: 0.7       # default volume, notice that player will remember user setting, default volume will not work after user set volume themselves
     list_max_height: 320px # list max height
     list_folded: true
-    message:          # 音乐通知，播放、暂停、失败 时的图标
-      enable: true
-      play: fas fa-play
-      pause: fas fa-pause
 ```
 
 {% note warning, APlayer播放器只可以在中国大陆地区使用。相关文档： [APlayer](https://aplayer.js.org/) | [MetingJS](https://github.com/metowolf/MetingJS) %}
@@ -1581,11 +1585,12 @@ plugins:
   # 使用过旧版本的请修改Leancloud shuoshuo class部分列名：https://artitalk.js.org/release.html
   # 除appID和appKEY外均为选填项
   artitalk:
-    # Set `layout: artitalk` to enable in page
+    # Set `plugins: ["artitalk"]` to enable in page
+    # 不支持 Pjax
     # 配置项按照yml格式继续填写即可
     appId: ogP8qj3veMh0LFpFWMPOyF0X-MdYXbMMI # your appID
     appKey: nHXLd3N3Jgh460t2iRQKWAtr # your appKEY
-    # serverURL:  #leancloud绑定的安全域名，使用国际版的话不需要填写
+    # serverURL:  #leancloud绑定的api访问域名，使用国际版的话不需要填写
     # lang: # 语言设置，zh为汉语，en为英语，es为西班牙语。默认为汉语
     # pageSize: #每页说说的显示数量
     # shuoPla: #在编辑说说的输入框中的占位符
@@ -1602,7 +1607,10 @@ plugins:
 ```yaml blog/_config.volantis.yml
 plugins:
   ...
+  # BBtalk https://bb.js.org
   bbtalk:
+    # Set `plugins: ["bbtalk"]` to enable in page
+    # 支持 Pjax
     js: https://cdn.jsdelivr.net/npm/bbtalk@0.1.5/dist/bbtalk.min.js # BBtalk.js
     appId: 0KzOX4vC7Jsk6vzUGNeEiUaI-gzGzoHsz # your appID
     appKey: HwCiWuxfpvKiLm4teCUgTIba # your appKEY
@@ -1630,7 +1638,8 @@ plugins:
   # 无服务器Hexo后端,支持文章编辑,自带图床功能.目标:解决静态博客所有痛点[文章编辑、图片上传、博主活跃信息统计、博主说说、Twikoo加强版、阅读量统计等
   hpp:
     # 说说功能
-    # Set `hpptalk:true` to enable in page
+    # Set `plugins: ["hpptalk"]` to enable in page
+    # 支持 Pjax
     hpp_talk:
       css: https://cdn.jsdelivr.net/gh/HexoPlusPlus/HexoPlusPlus@latest/talk.css # 建议锁定版本
       js: https://cdn.jsdelivr.net/gh/HexoPlusPlus/HexoPlusPlus@latest/talk_user.js # 建议锁定版本
@@ -1650,7 +1659,8 @@ plugins:
   # https://github.com/Rock-Candy-Tea/hexo-circle-of-friends
   # https://zfe.space/post/friend-link-circle.html
   fcircle:
-    # Set `layout: fcircle` to enable in page
+    # Set `plugins: ["fcircle"]` to enable in page
+    # 支持 Pjax
     api: '' # api 地址
     max_number: 20 # 页面展示文章数量
     add_number: 10 # 每次加载增加的篇数
@@ -1673,13 +1683,21 @@ plugins:
       default: 5000
       quection: 20000
     position: 'topRight'                 # 弹出位置 可选值：topRight, bottomRight, bottomLeft, topLeft, topCenter, bottomCenter, center
+    transitionIn: 'bounceInLeft'         # 弹窗打开动画 可选值：bounceInLeft, bounceInRight, bounceInUp, bounceInDown, fadeIn, fadeInDown, fadeInUp, fadeInLeft, fadeInRight, flipInX
+    transitionOut: 'fadeOutRight'        # 弹窗关闭动画 可选值：fadeOut, fadeOutUp, fadeOutDown, fadeOutLeft, fadeOutRight, flipOutX
     titleColor: 'var(--color-text)'      # 标题颜色
     messageColor: 'var(--color-text)'    # 消息颜色
     backgroundColor: 'var(--color-card)' # 默认背景色
     zindex: 2147483647                   # 层级
-    copyright:                           # 是否在复制时弹出版权提示(非右键下的操作提示)
+    copyright:                           # 是否在复制时弹出版权提示，影响范围：ctrl+c、代码块复制按钮、右键复制选项
       enable: true
       title: '知识共享许可协议'
       message: '请遵守 CC BY-NC-SA 4.0 协议。'
       icon: 'far fa-copyright light-blue'
+    aplayer:                              # 是否开启音乐通知；播放、暂停、失败 时的图标
+      enable: true
+      play: fas fa-play
+      pause: fas fa-pause
+    rightmenu:                            # 是否开启右键模块的消息通知
+      enable: true
 ```

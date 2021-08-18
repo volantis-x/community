@@ -168,16 +168,21 @@ blog/source/_data/friends.yml
 {% link volantis 主题文档 #友链标签::/v5/tag-plugins/#友链标签 %}
 
 
+### Plugins页面
 
-### Artitalk页面
+以 Artitalk页面 为例:
 
 #### 创建页面文件
 
 ```yaml Create file if not exists: source/artitalk/index.md
 ---
-layout: artitalk
 seo_title: 说说
 comments: false
+plugins:
+  - artitalk
+  # - bbtalk
+  # - fcircle
+  # - hpptalk
 ---
 ```
 
@@ -186,12 +191,17 @@ comments: false
 在主题配置文件中找到以下内容
 
 ``` yaml
+# Artitalk https://artitalk.js.org
+# 配置过程请参考：https://artitalk.js.org/doc.html
+# 使用过旧版本的请修改Leancloud shuoshuo class部分列名：https://artitalk.js.org/release.html
+# 除appID和appKEY外均为选填项
 artitalk:
-  # Set `layout: artitalk` to enable in page
+  # Set `plugins: ["artitalk"]` to enable in page
+  # 不支持 Pjax
   # 配置项按照yml格式继续填写即可
   appId: # your appID
   appKey: # your appKEY
-  # serverURL:  #leancloud绑定的安全域名，使用国际版的话不需要填写
+  # serverURL:  #leancloud绑定的api访问域名，使用国际版的话不需要填写
   # lang: # 语言设置，zh为汉语，en为英语，es为西班牙语。默认为汉语
   # pageSize: #每页说说的显示数量
   # shuoPla: #在编辑说说的输入框中的占位符
