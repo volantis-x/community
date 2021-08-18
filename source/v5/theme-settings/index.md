@@ -1216,10 +1216,10 @@ search:
 ```
 默认配置为 Hexo 搜索，但是需要安装插件才能使用：
 ```sh
-npm i -S hexo-generator-search hexo-generator-json-content
+npm i -S hexo-generator-json-content
 ```
 
-{% note error :: google,  algolia,  azure,  baidu 搜索服务 在5.0版本 临时 移除 %}
+{% note error :: 原 google,  algolia,  azure,  baidu 站内搜索 系祖传代码, 且文档丢失, 不便后续维护 在 5.0 版本移除 %}
 
 ## 第三方插件
 
