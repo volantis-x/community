@@ -1221,9 +1221,9 @@ npm i -S hexo-generator-json-content
 
 {% note error :: 原 google,  algolia,  azure,  baidu 站内搜索 系祖传代码, 且文档丢失, 不便后续维护 在 5.0 版本移除 %}
 
-## 第三方插件
+## 插件库
 
-### 插件库
+### 概述
 Volantis 为丰富的插件提供了兼容性优化。大部分插件您只需开启和关闭，无需进行设置。
 
 ```yaml blog/_config.volantis.yml
