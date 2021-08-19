@@ -260,9 +260,22 @@ volantis.import.jQuery().then(()=>{
 
 ```
 volantis.requestAnimationFrame(() => {
+  // 包含 DOM 操作的代码段
   // .........
   // .........
 })
+```
+
+## Clean Content Visibility
+
+见 source/css/first.styl 如果遇到任何问题 删除 .post-story 即可
+
+一个元素被声明 content-visibility 属性后 如果元素不在 viewport 中 浏览器不会计算其后代元素样式和属性 从而节省 Style & Layout 耗时 
+
+content-visibility 的副作用: 锚点失效 等等 (实验初期 暂不明确), 使用此方法清除样式
+
+```
+volantis.cleanContentVisibility()
 ```
 
 ## 对本地文件使用CDN
