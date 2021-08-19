@@ -196,7 +196,7 @@ plugins:
 # 使用过旧版本的请修改Leancloud shuoshuo class部分列名：https://artitalk.js.org/release.html
 # 除appID和appKEY外均为选填项
 artitalk:
-  # Set `plugins: ["artitalk"]` to enable in page
+  # Set `plugins: ["artitalk"]` to enable in front-matter
   # 不支持 Pjax
   # 配置项按照yml格式继续填写即可
   appId: # your appID
