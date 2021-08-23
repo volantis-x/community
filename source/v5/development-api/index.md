@@ -15,6 +15,10 @@ disqus:
 </p>
 <br>
 
+## 样式文件说明
+
+[`/source/css/Readme.md`](https://github.com/volantis-x/hexo-theme-volantis/blob/dev/source/css/Readme.md)
+
 ## 全局变量 volantis
 
 我们提供了全局变量 volantis 和一些全局函数等主题开发调用接口。
@@ -125,7 +129,7 @@ disqus:
 
 ### 暗黑模式样式
 
-详见：[`source/css/_plugins/dark.styl`](https://github.com/volantis-x/hexo-theme-volantis/blob/d71e7d533a8a3f13694f1adbb11417d02ac4ca04/source/css/_plugins/dark.styl)
+详见：[`/source/css/Readme.md`](https://github.com/volantis-x/hexo-theme-volantis/blob/dev/source/css/Readme.md)
 
 ### 当前模式
 
@@ -354,6 +358,7 @@ let points={
     "first",
     "style",
     "dark",
+    "darkVar",
   ],
   views:[
     "head",
@@ -371,11 +376,13 @@ let points={
 
 #### 样式注入点
 
-- first: 向 `theme/css/first.styl` 文件末尾注入自定义内容, 该文件中包含首屏样式,首屏样式采用硬编码的方式写在HTML中。首屏样式内含 cover navbar search 的样式.
+- first: 向 `theme/source/css/first.styl` 文件末尾注入自定义内容, 该文件中包含首屏样式,首屏样式采用硬编码的方式写在HTML中。首屏样式内含 cover navbar search 的样式.
 
-- style: 向 `theme/css/style.styl` 文件末尾注入自定义内容, 该文件中包含异步延迟加载的样式,除首屏样式,其他样式放入此处异步加载.
+- style: 向 `theme/source/css/style.styl` 文件末尾注入自定义内容, 该文件中包含异步延迟加载的样式,除首屏样式,其他样式放入此处异步加载.
 
-- dark: 向 `theme/css/_plugins/dark.styl` 文件末尾注入自定义内容, 该文件中包含暗黑模式样式.
+- dark: 向 `theme/source/css/_style/_plugins/_dark/dark_plugins.styl` 文件末尾注入自定义内容, 该文件中包含异步暗黑模式样式 的 强制覆盖样式.
+
+- darkVar: 向 `theme/source/css/_style/_plugins/_dark/dark_async.styl` 调用函数 `async_dark()` 末尾注入自定义内容, 该文件中包含异步暗黑模式样式 的 暗黑模式 CSS 变量.
 
 #### 布局视图注入点
 
@@ -406,6 +413,7 @@ let points={
     ├─ first.styl
     ├─ style.styl
     ├─ dark.styl
+    ├─ darkVar.styl
     ├─ head.ejs
     ├─ header.ejs
     ├─ topMeta.ejs
@@ -423,6 +431,7 @@ custom_files:
   first: source/_volantis/first.styl
   style: source/_volantis/style.styl
   dark: source/_volantis/dark.styl
+  darkVar: source/_volantis/darkVar.styl
   head: source/_volantis/head.ejs
   header: source/_volantis/header.ejs
   topMeta: source/_volantis/topMeta.ejs
@@ -430,6 +439,13 @@ custom_files:
   postEnd: source/_volantis/postEnd.ejs
   bodyEnd: source/_volantis/bodyEnd.ejs
   comment: source/_volantis/comment.ejs
+```
+
+示例:
+
+```yml blog/source/_volantis/darkVar.styl
+body
+  --color-site-body: blue !important
 ```
 
 ### `theme_inject` 过滤器

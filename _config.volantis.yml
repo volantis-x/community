@@ -285,7 +285,7 @@ plugins:
       pause: fal fa-pause light-blue
       copyright:
         enable: false
-  darkmodejs:
+  darkmode:
     enable: true
 
 analytics:
