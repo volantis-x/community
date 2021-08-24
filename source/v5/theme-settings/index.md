@@ -366,24 +366,10 @@ navbar:
   search: 搜索   # Search bar placeholder
 ```
 
-{% p subtitle, 使用数据文件 %}
-
-建议新建一个文件，专门存放导航栏<u>菜单</u>配置，文件的路径为：
-```
-blog/source/_data/menu.yml
-```
-文件的内容为：
-```yaml blog/source/_data/menu.yml
-- name: 博客
-  icon: fas fa-rss
-  url: /
-...
-```
-
 ### 菜单嵌套
 
 导航栏菜单支持嵌套，嵌套的属性名为 `rows` ，写法示例：
-```yaml blog/source/_data/menu.yml
+```yaml
 ...
 - name: 更多
   icon: fas fa-ellipsis-v
