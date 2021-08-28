@@ -5,7 +5,8 @@ group: docs-volantis-latest
 order: 401
 short_title: 4. 页面配置
 sidebar: [docs-volantis-latest, toc]
-mathjax: true
+plugins:
+  - mathjax
 disqus:
   path: /
 ---
@@ -24,7 +25,6 @@ disqus:
 | tag | 标签页面 |
 | friends | 友链页面 |
 | list | 列表页面 |
-| artitalk | 说说页面 |
 {% endtable %}
 
 ### page & post & docs
@@ -167,55 +167,6 @@ blog/source/_data/friends.yml
 
 {% link volantis 主题文档 #友链标签::/v5/tag-plugins/#友链标签 %}
 
-
-### Plugins页面
-
-以 Artitalk页面 为例:
-
-#### 创建页面文件
-
-```yaml Create file if not exists: source/artitalk/index.md
----
-seo_title: 说说
-comments: false
-plugins:
-  - artitalk
-  # - bbtalk
-  # - fcircle
-  # - hpptalk
----
-```
-
-#### 配置Artitalk
-
-在主题配置文件中找到以下内容
-
-``` yaml
-# Artitalk https://artitalk.js.org
-# 配置过程请参考：https://artitalk.js.org/doc.html
-# 使用过旧版本的请修改Leancloud shuoshuo class部分列名：https://artitalk.js.org/release.html
-# 除appID和appKEY外均为选填项
-artitalk:
-  # Set `plugins: ["artitalk"]` to enable in front-matter
-  # 不支持 Pjax
-  # 配置项按照yml格式继续填写即可
-  appId: # your appID
-  appKey: # your appKEY
-  # serverURL:  #leancloud绑定的api访问域名，使用国际版的话不需要填写
-  # lang: # 语言设置，zh为汉语，en为英语，es为西班牙语。默认为汉语
-  # pageSize: #每页说说的显示数量
-  # shuoPla: #在编辑说说的输入框中的占位符
-  # avatarPla: #自定义头像url的输入框的占位符
-  # motion: #加载动画的开关，1为开，0为关，默认为开
-  # bgImg: #说说输入框背景图片url
-  # color1: #说说背景颜色1&按钮颜色1
-  # color2: #说说背景颜色2&按钮颜色2
-  # color3: #说说字体颜色
-  # cssUrl: #自定义css接口
-```
-
-最后记得屏蔽Artitalk页面的pjax
-
 ### 404页面
 
 ```yaml Create file if not exists: source/404.md
@@ -261,7 +212,6 @@ front-matter 是文件最上方以 `---` 分隔的区域，用于指定个别文
 | bottom_meta | 是否显示文章或页面底部的meta信息     | Bool        | true      |
 | sidebar | 页面侧边栏     | Bool, Array        | theme.layout.*.sidebar      |
 | body | 页面主体元素     | Array        | theme.layout.on_page.body      |
-| mathjax           | 是否渲染公式 | Bool, String  | false  |
 | thumbnail           | 缩略图 | String | false  |
 | icons           | 图标 | Array | []  |
 | pin           | 是否置顶 | Bool  | false  |
@@ -523,7 +473,71 @@ comments: false
 ```
 
 
-## 渲染公式
+## 页面插件 (page plugins)
+
+在 front-matter 中配置页面插件
+
+```yaml front-matter
+---
+plugins:
+  - mathjax
+  - katex
+  - artitalk
+  - bbtalk
+  - fcircle
+  - hpptalk
+---
+```
+
+### 说说页面
+
+以 Artitalk页面 为例:
+
+#### 创建页面文件
+
+```yaml Create file if not exists: source/artitalk/index.md
+---
+seo_title: 说说
+comments: false
+plugins:
+  - artitalk
+  # - bbtalk
+  # - fcircle
+  # - hpptalk
+---
+```
+
+#### 配置Artitalk
+
+在主题配置文件中找到以下内容
+
+``` yaml
+# Artitalk https://artitalk.js.org
+# 配置过程请参考：https://artitalk.js.org/doc.html
+# 使用过旧版本的请修改Leancloud shuoshuo class部分列名：https://artitalk.js.org/release.html
+# 除appID和appKEY外均为选填项
+artitalk:
+  # Set `plugins: ["artitalk"]` to enable in front-matter
+  # 不支持 Pjax
+  # 配置项按照yml格式继续填写即可
+  appId: # your appID
+  appKey: # your appKEY
+  # serverURL:  #leancloud绑定的api访问域名，使用国际版的话不需要填写
+  # lang: # 语言设置，zh为汉语，en为英语，es为西班牙语。默认为汉语
+  # pageSize: #每页说说的显示数量
+  # shuoPla: #在编辑说说的输入框中的占位符
+  # avatarPla: #自定义头像url的输入框的占位符
+  # motion: #加载动画的开关，1为开，0为关，默认为开
+  # bgImg: #说说输入框背景图片url
+  # color1: #说说背景颜色1&按钮颜色1
+  # color2: #说说背景颜色2&按钮颜色2
+  # color3: #说说字体颜色
+  # cssUrl: #自定义css接口
+```
+
+最后记得屏蔽Artitalk页面的pjax
+
+### 渲染公式
 
 默认是不渲染的，如果文章内有公式，需要在 front-matter 中设置开启。即便开启了，文章列表中也不会进行渲染，请注意不要把公式写在文章开头。
 
@@ -532,7 +546,8 @@ comments: false
 ---
 title: 渲染公式（MathJax）
 date: 2020-02-23
-mathjax: true # false: 不渲染, true: 渲染
+plugins:
+  - mathjax
 ---
 
 添加一段描述性文字
