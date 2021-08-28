@@ -9,7 +9,8 @@ short_title: 3-11 第三方插件
 meta:
   header: [centertitle]
 sidebar: [docs-v3, toc, repos]
-snackbar: oldversion
+plugins:
+  - snackbar: oldversion
 ---
  
 

@@ -9,8 +9,9 @@ short_title: 5. 标签插件
 meta:
   header: [title, author, updated]
 sidebar: [docs-v2, repos, toc]
-snackbar: oldversion
-mathjax: true
+plugins:
+  - snackbar: oldversion
+  - mathjax
 ---
  
 

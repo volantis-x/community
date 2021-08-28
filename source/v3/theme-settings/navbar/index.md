@@ -9,7 +9,8 @@ short_title: 3-3 设置网站导航栏
 meta:
   header: [centertitle]
 sidebar: [docs-v3, toc, repos]
-snackbar: oldversion
+plugins:
+  - snackbar: oldversion
 ---
  
 

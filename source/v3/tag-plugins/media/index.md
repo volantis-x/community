@@ -9,8 +9,9 @@ short_title: 5-4 多媒体标签
 meta:
   header: [centertitle]
 sidebar: [docs-v3, toc, repos]
-snackbar: oldversion
-mathjax: true
+plugins:
+  - snackbar: oldversion
+  - mathjax
 ---
  
 

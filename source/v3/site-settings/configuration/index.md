@@ -9,7 +9,8 @@ short_title: 2-1 站点配置文件
 meta:
   header: [centertitle]
 sidebar: [docs-v3, toc, repos]
-snackbar: oldversion
+plugins:
+  - snackbar: oldversion
 ---
  
 

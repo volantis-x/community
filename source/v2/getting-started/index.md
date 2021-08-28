@@ -9,7 +9,8 @@ short_title: 1. 开始使用
 meta:
   header: []
 sidebar: [docs-v2, repos, toc]
-snackbar: oldversion
+plugins:
+  - snackbar: oldversion
 ---
  
 <p>

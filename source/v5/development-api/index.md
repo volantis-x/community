@@ -248,7 +248,7 @@ volantis.question('问卷调查', '你是否喜欢 Volantis 主题', {}, () => {
 
 ### jQuery
 
-```
+```js
 volantis.import.jQuery().then(()=>{
   // 依赖 jQuery 的代码段
   // .....
@@ -262,12 +262,40 @@ volantis.import.jQuery().then(()=>{
 
 2、在隐藏或不可见的元素中，requestAnimationFrame 将不会进行重绘或回流，这当然就意味着更少的的 cpu，gpu 和内存使用量。
 
-```
+```js
 volantis.requestAnimationFrame(() => {
   // 包含 DOM 操作的代码段
   // .........
   // .........
 })
+```
+
+## Layout Helper
+
+向目标元素动态注入 HTML
+
+```js
+volantis.layoutHelper(helper, html, opt)
+```
+
+- `helper`：Helper id（必填），字符串（String）
+- `html`：HTML（必填），字符串（String）
+- `opt`：配置项，对象(Object)
+
+
+`opt` 可选参数：
+
+- `clean`,  // 清除 Layout Helper 原有的所有内容, 默认 false
+- `pjax`,   // 支持 pjax, 默认 true
+
+`helper` 可选参数：
+
+- `page-plugins`,  // 页面插件 Layout, 位于 layout/_partial/article.ejs
+- `comments`,      // 评论 Layout, 位于 layout/_plugins/comments/index.ejs
+
+```js
+// 向 page-plugins 入口动态注入 id 为 artitalk_main 的 div, 不启用 pjax, 不清除 Layout Helper 原有的内容
+volantis.layoutHelper("page-plugins",`<div id="artitalk_main"></div>`, { pjax:false, clean:false })
 ```
 
 ## 对本地文件使用CDN
@@ -353,7 +381,6 @@ let points={
     "footer",
     "postEnd",
     "bodyEnd",
-    "comment",
   ]
 }
 ```
@@ -386,7 +413,6 @@ let points={
 
 - bodyEnd:  向 `theme/layout/layout.ejs` 文件 `<body>` 标签末尾注入自定义内容.
 
-- comment: 向 `theme/layout/_plugins/comments/index.ejs` 文件 `<article>` 标签末尾注入自定义内容.
 
 ### blog/source/_volantis/ 文件夹
 
@@ -403,8 +429,7 @@ let points={
     ├─ topMeta.ejs
     ├─ bottomMeta.ejs
     ├─ postEnd.ejs
-    ├─ bodyEnd.ejs
-    └─ comment.ejs
+    └─ bodyEnd.ejs
 
 ```
 
@@ -422,7 +447,6 @@ custom_files:
   bottomMeta: source/_volantis/bottomMeta.ejs
   postEnd: source/_volantis/postEnd.ejs
   bodyEnd: source/_volantis/bodyEnd.ejs
-  comment: source/_volantis/comment.ejs
 ```
 
 示例:

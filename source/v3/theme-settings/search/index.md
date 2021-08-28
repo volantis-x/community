@@ -9,7 +9,8 @@ short_title: 3-10 站内搜索
 meta:
   header: [centertitle]
 sidebar: [docs-v3, toc, repos]
-snackbar: oldversion
+plugins:
+  - snackbar: oldversion
 ---
  
 

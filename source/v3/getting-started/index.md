@@ -10,7 +10,8 @@ cover: true
 meta:
   header: []
 sidebar: [docs-v3, toc, repos]
-snackbar: oldversion
+plugins:
+  - snackbar: oldversion
 ---
  
 <p>

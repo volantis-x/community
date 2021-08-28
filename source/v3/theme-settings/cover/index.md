@@ -9,7 +9,8 @@ short_title: 3-5 网站与文章封面
 meta:
   header: [centertitle]
 sidebar: [docs-v3, toc, repos]
-snackbar: oldversion
+plugins:
+  - snackbar: oldversion
 ---
 
 

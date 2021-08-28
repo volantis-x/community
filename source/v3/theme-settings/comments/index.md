@@ -9,7 +9,8 @@ short_title: 3-9 选择评论系统
 meta:
   header: [centertitle]
 sidebar: [docs-v3, toc, repos]
-snackbar: oldversion
+plugins:
+  - snackbar: oldversion
 ---
  
 

@@ -9,7 +9,8 @@ short_title: 4. 页面配置
 meta:
   header: [title, author, updated]
 sidebar: [docs-v2, repos, toc]
-snackbar: oldversion
+plugins:
+  - snackbar: oldversion
 ---
  
 

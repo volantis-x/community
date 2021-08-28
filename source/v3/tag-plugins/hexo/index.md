@@ -9,8 +9,9 @@ short_title: 5-5 Hexo 内置标签
 meta:
   header: [centertitle]
 sidebar: [docs-v3, toc, repos]
-snackbar: oldversion
-mathjax: true
+plugins:
+  - snackbar: oldversion
+  - mathjax
 ---
  
 ## 文章摘要和截断

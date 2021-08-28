@@ -9,7 +9,8 @@ short_title: 4-3 页面自定义布局
 meta:
   header: [centertitle]
 sidebar: [docs-v3, toc, repos]
-snackbar: oldversion
+plugins:
+  - snackbar: oldversion
 ---
  
 ## 正文布局

@@ -9,7 +9,8 @@ short_title: 5-1 文本和段落标签
 meta:
   header: [centertitle]
 sidebar: [docs-v3, toc, repos]
-snackbar: oldversion
+plugins:
+  - snackbar: oldversion
 ---
  
 

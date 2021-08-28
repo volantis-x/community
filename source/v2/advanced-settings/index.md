@@ -9,7 +9,8 @@ short_title: 6. 进阶设定
 meta:
   header: [title, author, updated]
 sidebar: [docs-v2, repos, toc]
-snackbar: oldversion
+plugins:
+  - snackbar: oldversion
 ---
 
 建议有一定基础知识的朋友进行尝试。

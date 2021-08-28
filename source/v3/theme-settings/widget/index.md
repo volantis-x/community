@@ -9,7 +9,8 @@ short_title: 3-8 卡片式组件
 meta:
   header: [centertitle]
 sidebar: [docs-v3, toc, repos]
-snackbar: oldversion
+plugins:
+  - snackbar: oldversion
 ---
  
 

@@ -9,7 +9,8 @@ short_title: 3-2 自定义主题外观
 meta:
   header: [centertitle]
 sidebar: [docs-v3, toc, repos]
-snackbar: oldversion
+plugins:
+  - snackbar: oldversion
 ---
  
 

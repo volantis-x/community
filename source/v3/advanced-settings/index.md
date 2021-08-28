@@ -9,7 +9,8 @@ short_title: 6-1 进阶设定
 meta:
   header: [centertitle]
 sidebar: [docs-v3, toc, repos]
-snackbar: oldversion
+plugins:
+  - snackbar: oldversion
 ---
 
 ## 使用数据文件

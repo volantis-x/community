@@ -9,7 +9,8 @@ short_title: 3. 主题配置
 meta:
   header: [title, author, updated]
 sidebar: [docs-v2, repos, toc]
-snackbar: oldversion
+plugins:
+  - snackbar: oldversion
 ---
 
 如无特殊说明，本页面的配置信息写在 <u>**主题**</u> 的 `config.yml` 文件中。
