@@ -287,6 +287,8 @@ plugins:
         enable: false
   darkmode:
     enable: true
+  gitter:
+    room: hexo-theme-volantis/community
 
 analytics:
   busuanzi: #https://cdn.jsdelivr.net/gh/volantis-x/cdn-busuanzi@2.3/js/busuanzi.pure.mini.js

@@ -1419,12 +1419,6 @@ plugins:
     appKey: HwCiWuxfpvKiLm4teCUgTIba # your appKEY
     serverURLs: https://bbapi.heson10.com # Request Api 域名
 
-  # Tidio聊天功能
-  # https://www.tidio.com/
-  tidio:
-    enable: #true
-    id: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-
   # HexoPlusPlus
   # https://github.com/HexoPlusPlus/HexoPlusPlus
   # https://hexoplusplus.js.org/
@@ -1485,7 +1479,7 @@ plugins:
       enable: true
   
   # 标签插件样式按需加载
-  # 每次调试需要执行 hexo clean, 否则由于错误的缓存会抛异常
+  # 注意这个配置是带缓存的, 如果修改标签插件样式每次调试需要刷新两次页面, 建议开发者关闭该配置
   tag_plugin_load_on_demand:
     enable: #true
     # 每个页面强制加载以下标签插件样式
@@ -1494,6 +1488,20 @@ plugins:
       - btns
       - p
       - gallery
+
+  # 聊天功能
+  chat_service: # tidio or gitter
+
+  # Tidio
+  # https://www.tidio.com/
+  tidio:
+    id: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+  # Gitter
+  # https://gitter.im
+  gitter:
+    room: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
 ```
 
 
@@ -1641,10 +1649,12 @@ plugins:
 ```yaml blog/_config.volantis.yml
 plugins:
   ...
-  # Tidio聊天功能
+  # 聊天功能
+  chat_service: tidio # tidio or gitter
+
+  # Tidio
   # https://www.tidio.com/
   tidio:
-    enable: true
     id: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ```
 
