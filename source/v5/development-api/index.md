@@ -50,7 +50,7 @@ disqus:
 </pjax>
 ```
 
-使用案例：[`layout/_plugins/snackbar/script.ejs`](https://github.com/volantis-x/hexo-theme-volantis/blob/d71e7d533a8a3f13694f1adbb11417d02ac4ca04/layout/_plugins/snackbar/script.ejs)
+使用案例：[`/layout/_partial/scripts/index.ejs`](https://github.com/volantis-x/hexo-theme-volantis/blob/5a001b1555dc67ab61b050cded35e3c3b95750dd/layout/_partial/scripts/index.ejs#L97-L102)
 
 #### `script[data-pjax]`
 

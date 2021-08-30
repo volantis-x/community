@@ -101,7 +101,14 @@ article:
 
 
 comments:
-  service: beaudar
+  service: giscus
+  giscus:
+    repo: volantis-x/hexo-theme-volantis
+    repo-id: MDEwOlJlcG9zaXRvcnkxMDgwNzM2MzQ=
+    mapping: "number"
+    term: "539"
+    reactions-enabled: "1"
+    emit-metadata: "0"
   disqus:
     shortname: volantis
     path: /
