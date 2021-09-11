@@ -14,9 +14,25 @@ disqus:
 
 {% folding yellow open, 将主题添加为子模块 %}
 
+{% note warning:: 开始前需要确认不存在 themes/volantis 文件夹, 如果有, 请自行删除. %}
+
+{% tabs 子模块 %}
+
+<!-- tab ssh -->
+
+```sh
+git submodule add git@github.com:volantis-x/hexo-theme-volantis.git themes/volantis
+```
+
+<!-- endtab -->
+<!-- tab https -->
+
 ```sh
 git submodule add https://github.com/volantis-x/hexo-theme-volantis.git themes/volantis
 ```
+
+<!-- endtab -->
+{% endtabs %}
 
 {% endfolding %}
 

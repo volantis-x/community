@@ -298,6 +298,69 @@ volantis.layoutHelper(helper, html, opt)
 volantis.layoutHelper("page-plugins",`<div id="artitalk_main"></div>`, { pjax:false, clean:false })
 ```
 
+## 滚动事件处理
+
+源码参考：`layout/_partial/scripts/global.ejs`
+
+### 获取滚动条距离顶部的距离
+
+```js
+volantis.scroll.getScrollTop()
+```
+
+### 获取滚动方向
+
+```js
+volantis.scroll.del
+```
+
+`volantis.scroll.del` 中存储了一个数值, 该数值检测一定时间间隔内滚动条滚动的位移, 数值的检测频率是浏览器的刷新频率.
+
+- 数值为正数时, 表示向下滚动.
+- 数值为负数时, 表示向上滚动.
+
+
+### 滚动事件回调函数
+
+使用 `volantis.scroll.push(callBack[,"callBackName"])` 传入滚动事件回调函数, 当页面滚动时触发回调函数。
+
+```js
+volantis.scroll.push(()=>{
+  if (volantis.scroll.del > 0) {
+    console.log("向下滚动");
+  } else {
+    console.log("向上滚动");
+  }
+})
+```
+
+使用 `volantis.scroll.unengine.push(callBack[,"callBackName"])` 传入非滚动事件回调函数, 当页面没有滚动时触发回调函数。
+
+使用 `volantis.scroll.unengine.remove("callBackName")` 移除名称为 "callBackName" 的非滚动事件回调函数。
+
+### 触发页面滚动至目标元素位置
+
+```js
+// 滚动到目标 Dom 元素 "ele" 位置
+volantis.scroll.to(ele, option)
+```
+
+`ele`：Dom 元素（必填）
+
+`option` 可选参数：
+
+- `top`,                     // 类型 Float,文档中的纵轴坐标, 默认值 `ele.getBoundingClientRect().top + document.documentElement.scrollTop`
+- `addTop`,                  // 类型 Float,向上面的 top 参数中 添加补偿值.
+- `behavior`,                // 类型 String, 表示滚动行为, 支持参数 smooth (平滑滚动), instant (瞬间滚动)
+- `observer`,                // 类型 Boolean, 是否启用监视器,默认值 false, 监视器用于监视元素是否滚动到指定位置 目前用于处理 toc 部分 lazyload 引起的 cls 导致的定位失败问题.
+- `observerDic`,             // 类型 Float, 监视器监视距离, 默认值 25.
+
+例如:
+
+```js
+volantis.scroll.to(document.getElementById("locationID"),{addTop: - volantis.dom.header.offsetHeight - 10, behavior: 'instant'})
+```
+
 ## 对本地文件使用CDN
 
 源码参考：

@@ -7,7 +7,7 @@ robots: noindex,nofollow
 
 This is a image test post.
 
-测试中 设定列数之后 不会产生 累积布局偏移 
+测试 设定列数
 
 {% gallery stretch::6::two %}
 ![](https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/001.jpg)
@@ -38,7 +38,7 @@ This is a image test post.
 
 This is a image test post.
 
-测试中 没有设定列数 产生了累积布局偏移 
+测试 没有设定列数
 
 {% gallery %}
 ![](https://i.loli.net/2020/03/18/1TpiUwhuskGm5SV.png)
