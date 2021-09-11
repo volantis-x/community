@@ -295,12 +295,21 @@ plugins:
     # id: 76244489 # vol white
     # id: 5135845906 # for Volantis 3.0
     id: 5062959861 # TOP 30
-    message:          # 音乐通知，播放、暂停、失败 时的图标
+  message:          # 音乐通知，播放、暂停、失败 时的图标
+    enable: true
+    icon:     # 默认图标，支持对图标添加颜色，可选值：see：/source/css/_plugins/message.styl
+      default: fal fa-info-circle light-blue
+      quection: fal fa-question-circle light-blue
+    copyright:  # 是否在复制时弹出版权提示
+      enable: false
+      title: '知识共享许可协议'
+      message: '请遵守 CC BY-NC-SA 4.0 协议。'
+      icon: 'fab fa-creative-commons light-blue'
+    aplayer:
       enable: true
       play: fal fa-play light-blue
       pause: fal fa-pause light-blue
-      copyright:
-        enable: false
+      error: fal fa-exclamation-square red
   darkmode:
     enable: true
   gitter:
