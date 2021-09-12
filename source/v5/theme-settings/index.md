@@ -909,121 +909,104 @@ music:
 
 ## 选择评论系统
 
-目前支持的评论系统有： valine, twikoo, waline, minivaline, disqus, disqusjs, gitalk, vssue, livere, isso, hashover
+目前支持的评论系统有： giscus, beaudar, utterances, valine, twikoo, waline, minivaline, disqus, disqusjs, gitalk, vssue, livere, isso, hashover
 
 ```yaml blog/_config.volantis.yml
 comments:
   title: <i class='fas fa-comments'></i> 评论
   subtitle:
-  service: valine # valine, twikoo, waline, minivaline, disqus, disqusjs, gitalk, vssue, livere, isso, hashover
+  service: giscus # giscus, beaudar, utterances, valine, twikoo, waline, minivaline, disqus, disqusjs, gitalk, vssue, livere, isso, hashover
 ```
 
-{% tabs comments-1, 1 %}
 
-<!-- tab Valine -->
+{% folding cyan open:: GitHub Discussions 系列 %}
 
-<i class='fas fa-comment-dots fa-fw'></i> 一款快速、简洁且高效的无后端评论系统
-<i class='fas fa-globe fa-fw'></i> [https://valine.js.org](https://valine.js.org)
+{% tabs comments-github-discussions , 1 %}
+
+<!-- tab giscus -->
+
+<i class='fas fa-comment-dots fa-fw'></i> A comments system powered by GitHub Discussions.
+<i class='fas fa-globe fa-fw'></i> [https://giscus.app/](https://giscus.app/)
 
 ```yaml blog/_config.volantis.yml
 comments:
   ...
-  service: valine
+  service: giscus
   ...
-  valine:
-    # js: https://cdn.jsdelivr.net/npm/valine@1.4/dist/Valine.min.js
-    path: # 全局评论地址 目前设置全局评论地址后visitor失效,这是valine的问题
-    placeholder: 快来评论吧~  # 评论占位提示
-    # 其他配置项按照yml格式继续填写即可 除了 [el path placeholder emojiCDN emojiMaps] 选项
-    appId: # your appId
-    appKey: # your appKey
-    ... 可选配置项详见源码
-```
-
-其中，`placeholder` 支持在 front-matter 中设置。
-
-```yaml front-matter
----
-valine:
-  placeholder: 你觉得xxx怎么样呢？
----
-```
-
-也可以通过设置 `valine.path` 实现多个页面共用一个评论框。
-
-```yaml front-matter
----
-valine:
-  path: /
----
+  # giscus
+  # https://giscus.app
+  # https://github.com/laymonage/giscus
+  giscus:
+    theme:
+      light: https://cdn.jsdelivr.net/gh/volantis-x/cdn-volantis@master/css/giscus/light.css
+      dark: https://cdn.jsdelivr.net/gh/volantis-x/cdn-volantis@master/css/giscus/dark.css
+    # 以下配置按照 yml 格式增删填写即可
+    # repo: xxx/xxx
+    # repo-id: xxx
+    # category: xxx
+    # category-id: xxx
+    # mapping: "pathname"
+    # reactions-enabled: "1"
+    # emit-metadata: "0"
 ```
 
 <!-- endtab -->
 
-<!-- tab twikoo -->
+{% endtabs %}
 
-<i class='fas fa-comment-dots fa-fw'></i> 一个简洁、安全、免费的静态网站评论系统 | A simple, safe, free comment system.
-<i class='fas fa-globe fa-fw'></i> [https://twikoo.js.org/](https://twikoo.js.org/)
+{% endfolding %}
+
+{% folding green:: GitHub Issues 系列 %}
+
+{% tabs comments-github-issues , 1 %}
+
+<!-- tab beaudar -->
+
+<i class='fas fa-comment-dots fa-fw'></i> Beaudar 名称源于粤语“表达”的发音，是 Utterances 的中文版本。
+<i class='fas fa-globe fa-fw'></i> [https://beaudar.lipk.org/](https://beaudar.lipk.org/)
 
 ```yaml blog/_config.volantis.yml
 comments:
   ...
-  service: twikoo
+  service: beaudar
   ...
-  twikoo:
-    js: https://cdn.jsdelivr.net/npm/twikoo@latest # 建议锁定版本
-    path: # 全局评论地址
-    # 其他配置项按照yml格式继续填写即可 除了 [el path] 选项
-    envId: xxxxxxxxxxxxxxx # 腾讯云环境id
+  # beaudar
+  # https://beaudar.lipk.org/
+  beaudar:
+    repo: xxx/xxx
+    issue-term: pathname
+    issue-number:
+    branch: main
+    position: top
+    order: desc
+    theme:
+      light: github-light
+      dark: github-dark
+    label: ✨💬✨
 ```
 
 <!-- endtab -->
 
-<!-- tab waline -->
+<!-- tab utterances -->
 
-<i class='fas fa-comment-dots fa-fw'></i> 一个简洁、安全、免费的静态网站评论系统 | A simple, safe, free comment system.
-<i class='fas fa-globe fa-fw'></i> [https://waline.js.org/](https://waline.js.org/)
-
-```yaml blog/_config.volantis.yml
-comments:
-  ...
-  service: waline
-  ...
-  # Waline
-  # https://waline.js.org/
-  waline:
-    js: https://cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js
-    path: # 全局评论地址 目前设置全局评论地址后visitor失效,这是waline的问题
-    placeholder: 快来评论吧~  # 评论占位提示
-    imageHosting: https://7bu.top/api/upload # 图床api（默认使用去不图床）
-    # 其他配置项按照yml格式继续填写即可 除了 [el path placeholder uploadImage] 选项
-    serverURL: xxxxxxxxxxxxxxx # Waline 的服务端地址（必填） 测试用地址: https://waline-ruddy.vercel.app
-    ... 可选配置项详见源码
-```
-
-<!-- endtab -->
-
-<!-- tab MiniValine -->
-
-<i class='fas fa-comment-dots fa-fw'></i> 一款快速、简洁且高效的无后端评论系统
-<i class='fas fa-globe fa-fw'></i> [https://github.com/MiniValine/MiniValine/](https://github.com/MiniValine/MiniValine/)
+<i class='fas fa-comment-dots fa-fw'></i> A lightweight comments widget built on GitHub issues.
+<i class='fas fa-globe fa-fw'></i> [https://utteranc.es/](https://utteranc.es/)
 
 ```yaml blog/_config.volantis.yml
 comments:
   ...
-  service: minivaline
+  service: utterances
   ...
-  # MiniValine
-  # https://github.com/MiniValine/MiniValine
-  minivaline:
-    js: https://cdn.jsdelivr.net/npm/minivaline@latest
-    path: # 全局评论地址
-    placeholder: 快来评论吧~  # 全局评论占位提示
-    # 更多选项 https://minivaline.js.org/docs/cn/#/Options 按照yml格式继续填写即可 （除了 [el path placeholder] 选项）
-    # emoticonUrl 等列表选项 可参考 https://github.com/MiniValine/hexo-next-minivaline
-    # 下面是一个例子：
-    backend: waline
-    serverURL: https://waline.vercel.app
+  # utterances
+  # https://utteranc.es/
+  utterances:
+    repo: xxx/xxx
+    issue-term: pathname
+    issue-number:
+    theme:
+      light: github-light
+      dark: github-dark
+    label: ✨💬✨
 ```
 
 <!-- endtab -->
@@ -1084,6 +1067,16 @@ gitalk:
 
 <!-- endtab -->
 
+{% endtabs %}
+
+{% endfolding %}
+
+
+
+{% folding yellow:: Disqus 系列 %}
+
+{% tabs comments-disqus , 1 %}
+
 <!-- tab Disqus -->
 
 <i class='fas fa-comment-dots fa-fw'></i> Disqus - The #1 way to build an audience on your website.
@@ -1124,6 +1117,210 @@ comments:
 
 <!-- endtab -->
 
+
+<!-- tab Isso -->
+
+<i class='fas fa-comment-dots fa-fw'></i> A commenting server similar to Disqus.
+<i class='fas fa-globe fa-fw'></i> [https://posativ.org/isso/](https://posativ.org/isso/)
+
+```yaml blog/_config.volantis.yml
+comments:
+  ...
+  service: isso
+  ...
+  isso:
+    url: https://example.com/(path/)
+    src: https://example.com/(path/)js/embed.min.js
+```
+
+<!-- endtab -->
+
+
+{% endtabs %}
+
+{% endfolding %}
+
+
+
+{% folding blue:: valine 或 解决 valine 遗留问题同一时期产生的评论系统 %}
+
+{% tabs comments-valine , 1 %}
+
+
+<!-- tab Valine -->
+
+<i class='fas fa-comment-dots fa-fw'></i> 一款快速、简洁且高效的无后端评论系统
+<i class='fas fa-globe fa-fw'></i> [https://valine.js.org](https://valine.js.org)
+
+```yaml blog/_config.volantis.yml
+comments:
+  ...
+  service: valine
+  ...
+  valine:
+    # js: https://cdn.jsdelivr.net/npm/valine@1.4/dist/Valine.min.js
+    path: # 全局评论地址 目前设置全局评论地址后visitor失效,这是valine的问题
+    placeholder: 快来评论吧~  # 评论占位提示
+    # 其他配置项按照yml格式继续填写即可 除了 [el path placeholder emojiCDN emojiMaps] 选项
+    appId: # your appId
+    appKey: # your appKey
+    ... 可选配置项详见源码
+```
+
+其中，`placeholder` 支持在 front-matter 中设置。
+
+```yaml front-matter
+---
+valine:
+  placeholder: 你觉得xxx怎么样呢？
+---
+```
+
+也可以通过设置 `valine.path` 实现多个页面共用一个评论框。
+
+```yaml front-matter
+---
+valine:
+  path: /
+---
+```
+
+<!-- endtab -->
+
+<!-- tab twikoo -->
+
+<i class='fas fa-comment-dots fa-fw'></i> 一个简洁、安全、免费的静态网站评论系统 | A simple, safe, free comment system.
+<i class='fas fa-globe fa-fw'></i> [https://twikoo.js.org/](https://twikoo.js.org/)
+
+```yaml blog/_config.volantis.yml
+comments:
+  ...
+  service: twikoo
+  ...
+  twikoo:
+    js: https://cdn.jsdelivr.net/npm/twikoo@latest # 建议锁定版本
+    path: # 全局评论地址
+    # 其他配置项按照yml格式继续填写即可 除了 [el path] 选项
+    envId: xxxxxxxxxxxxxxx # 腾讯云环境id
+```
+
+其中，`placeholder` 支持在 front-matter 中设置。
+
+```yaml front-matter
+---
+twikoo:
+  placeholder: 你觉得xxx怎么样呢？
+---
+```
+
+也可以通过设置 `twikoo.path` 实现多个页面共用一个评论框。
+
+```yaml front-matter
+---
+twikoo:
+  path: /
+---
+```
+
+<!-- endtab -->
+
+<!-- tab waline -->
+
+<i class='fas fa-comment-dots fa-fw'></i> 一个简洁、安全、免费的静态网站评论系统 | A simple, safe, free comment system.
+<i class='fas fa-globe fa-fw'></i> [https://waline.js.org/](https://waline.js.org/)
+
+```yaml blog/_config.volantis.yml
+comments:
+  ...
+  service: waline
+  ...
+  # Waline
+  # https://waline.js.org/
+  waline:
+    js: https://cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js
+    path: # 全局评论地址 目前设置全局评论地址后visitor失效,这是waline的问题
+    placeholder: 快来评论吧~  # 评论占位提示
+    imageHosting: https://7bu.top/api/upload # 图床api（默认使用去不图床）
+    # 其他配置项按照yml格式继续填写即可 除了 [el path placeholder uploadImage] 选项
+    serverURL: xxxxxxxxxxxxxxx # Waline 的服务端地址（必填） 测试用地址: https://waline-ruddy.vercel.app
+    ... 可选配置项详见源码
+```
+
+
+其中，`placeholder` 支持在 front-matter 中设置。
+
+```yaml front-matter
+---
+waline:
+  placeholder: 你觉得xxx怎么样呢？
+---
+```
+
+也可以通过设置 `waline.path` 实现多个页面共用一个评论框。
+
+```yaml front-matter
+---
+waline:
+  path: /
+---
+```
+
+<!-- endtab -->
+
+<!-- tab MiniValine -->
+
+<i class='fas fa-comment-dots fa-fw'></i> 一款快速、简洁且高效的评论系统
+<i class='fas fa-globe fa-fw'></i> [https://github.com/MiniValine/MiniValine/](https://github.com/MiniValine/MiniValine/)
+
+```yaml blog/_config.volantis.yml
+comments:
+  ...
+  service: minivaline
+  ...
+  # MiniValine
+  # https://github.com/MiniValine/MiniValine
+  minivaline:
+    js: https://cdn.jsdelivr.net/npm/minivaline@latest
+    path: # 全局评论地址
+    placeholder: 快来评论吧~  # 全局评论占位提示
+    # 更多选项 https://minivaline.js.org/docs/cn/#/Options 按照yml格式继续填写即可 （除了 [el path placeholder] 选项）
+    # 下面是一个例子：
+    serverURL: https://hello.com
+```
+
+
+
+其中，`placeholder` 支持在 front-matter 中设置。
+
+```yaml front-matter
+---
+minivaline:
+  placeholder: 你觉得xxx怎么样呢？
+---
+```
+
+也可以通过设置 `minivaline.path` 实现多个页面共用一个评论框。
+
+```yaml front-matter
+---
+minivaline:
+  path: /
+---
+```
+
+<!-- endtab -->
+
+
+{% endtabs %}
+
+{% endfolding %}
+
+
+{% folding red:: Others %}
+
+{% tabs comments-others , 1 %}
+
+
 <!-- tab Livere -->
 
 <i class='fas fa-comment-dots fa-fw'></i> Communication makes better world.
@@ -1144,23 +1341,6 @@ comments:
 <!-- 来必力City版安装代码 -->
 <div id="lv-container" data-id="city" data-uid="你的livere的uid">
 ...
-```
-
-<!-- endtab -->
-
-<!-- tab Isso -->
-
-<i class='fas fa-comment-dots fa-fw'></i> A commenting server similar to Disqus.
-<i class='fas fa-globe fa-fw'></i> [https://posativ.org/isso/](https://posativ.org/isso/)
-
-```yaml blog/_config.volantis.yml
-comments:
-  ...
-  service: isso
-  ...
-  isso:
-    url: https://example.com/(path/)
-    src: https://example.com/(path/)js/embed.min.js
 ```
 
 <!-- endtab -->
@@ -1198,6 +1378,8 @@ comments:
 <!-- endtab -->
 
 {% endtabs %}
+
+{% endfolding %}
 
 
 ## 站内搜索
