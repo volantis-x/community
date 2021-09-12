@@ -484,8 +484,11 @@ plugins:
   - katex
   - artitalk
   - bbtalk
-  - fcircle
   - hpptalk
+  - fcircle
+  - gitter
+  - indent
+  - snackbar: oldversion
 ---
 ```
 
@@ -601,3 +604,68 @@ $$
 如果公式仍无法正确渲染可以阅读 [@MicDZ](https://www.micdz.cn) 的这篇文章：
 
 {% link 在Material-X上使用KaTeX, https://www.micdz.cn/article/katex-on-volantis/, https://www.micdz.cn/img/h.jpeg %}
+
+### 页面 gitter
+
+#### 页面配置 front-matter
+
+```yaml
+---
+plugins:
+  - gitter
+---
+```
+
+#### 配置 gitter
+
+在主题配置文件中找到以下内容
+
+``` yaml
+plugins:
+  ....
+  # Gitter
+  # https://gitter.im
+  gitter:
+    room: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+```
+
+### 文章页首行缩进
+
+```yaml front-matter
+---
+plugins:
+  - indent
+---
+```
+
+### Snackbar (页面通知)
+
+#### 配置数据源
+
+数据源写在以下路径，如果没有请自行创建：
+
+```
+blog/source/_data/notification.yml
+```
+内容格式为：
+```yaml blog/source/_data/notification.yml
+oldversion:
+  title: 过期的文档
+  message: 这份文档过于久远，如果您使用的是新版的主题，请查看新版本的文档。
+  position: bottom # bottom (底部通知), right (右侧通知，会自动消失)
+  theme: warning # default, warning
+  cache: false # 是否记住选项（下次不再弹出）
+  buttons:
+    - title: 查看新版文档
+      url: /getting-started/
+      dismiss: false # 点击了是否关闭底部横幅
+```
+
+#### 配置 front-matter
+
+```yaml front-matter
+---
+plugins:
+  - snackbar: oldversion
+---
+```
