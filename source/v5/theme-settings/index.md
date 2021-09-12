@@ -898,6 +898,14 @@ test:
 ```
 您可以把整个页面的md内容作为一个小部件渲染显示出来。只需要设置小部件里的 `pid` 属性和文章的 `front-matter` 中设置一样的 `pid` 即可。 `content` 代表这个部件显示的内容，可选 `excerpt`，`more`，`content` 分别对应文章的摘要、摘要后面的内容、全文。
 
+### 音乐部件
+```yaml blog/_config.volantis.yml
+music:
+  class: music
+  display: [desktop, mobile] # [desktop, mobile]
+```
+
+{% note warning :: 侧边栏音乐部件不能兼容pjax %}
 
 ## 选择评论系统
 
