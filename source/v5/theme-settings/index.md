@@ -1392,7 +1392,7 @@ comments:
 
 **可以通过在 front-matter 设置 config 实现在特定页面修改评论系统的相关配置。**
 
-**支持的有(按字母顺序): giscus, gitalk, minivaline, twikoo, valine, waline **
+**支持的有(按字母顺序): giscus, gitalk, minivaline, twikoo, valine, waline**
 
 ```yaml front-matter
 ---
