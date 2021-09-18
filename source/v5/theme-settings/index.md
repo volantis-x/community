@@ -1091,6 +1091,15 @@ comments:
     shortname:
 ```
 
+**可以通过设置 disqus.path 实现多个页面共用一个评论框。**
+
+```yaml front-matter
+---
+disqus:
+  path: /wiki/volantis/
+---
+```
+
 <!-- endtab -->
 
 <!-- tab DisqusJS -->
@@ -1381,6 +1390,17 @@ comments:
 
 {% endfolding %}
 
+**可以通过在 front-matter 设置 config 实现在特定页面修改评论系统的相关配置。**
+
+**支持的有(按字母顺序): giscus, gitalk, minivaline, twikoo, valine, waline **
+
+```yaml front-matter
+---
+gitalk:
+  config:
+    id: /233/
+---
+```
 
 ## 站内搜索
 
