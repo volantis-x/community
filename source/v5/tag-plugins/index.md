@@ -1611,6 +1611,18 @@ groupGitHub:
 {% sites only:test_demo %}
 {% endfolding %}
 
+## embed
+
+在局部渲染外部md文件。
+
+```md 示例写法
+{% embed https://cdn.jsdelivr.net/gh/volantis-x/hexo-theme-volantis@dev/README.md %}
+```
+
+{% folding embed %}
+{% embed https://cdn.jsdelivr.net/gh/volantis-x/hexo-theme-volantis@dev/README.md %}
+{% endfolding %}
+
 ## Hexo 通用标签
 
 在文章中使用 `<!-- more -->`，那么 `<!-- more -->` 之前的文字将会被视为摘要。首页中将只出现这部分文字，同时这部分文字也会出现在正文之中。详见 Hexo 官方文档：
