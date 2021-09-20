@@ -28,7 +28,7 @@ npm i hexo-theme-volantis
 
 &ensp;&emsp;*本文以 GitKraken 软件的使用展开*，相关链接：[GitKraken: Free Git GUI Client - Windows, Mac, Linux](https://www.gitkraken.com/)
 
-&ensp;&emsp;如果您按照主题文章中的 [设置子模块](https://volantis.js.org/v5/advanced-settings/#%E8%AE%BE%E7%BD%AE%E5%AD%90%E6%A8%A1%E5%9D%97) 已经克隆了一份主题并添加到自己的博客仓库中，那么本篇文章将极大的帮助到您，如果您还没有如此操作，不妨尝试一番。这里是本文的仓库环境：博客仓库 *Hexo-Blog* 、主题仓库 *volantis* 。
+&ensp;&emsp;如果您按照主题文章中的 [设置子模块](/v5/advanced-settings/#设置子模块) 已经克隆了一份主题并添加到自己的博客仓库中，那么本篇文章将极大的帮助到您，如果您还没有如此操作，不妨尝试一番。这里是本文的仓库环境：博客仓库 *Hexo-Blog* 、主题仓库 *volantis* 。
 
 ### 一、GitKraken 的简单操作
 
@@ -120,7 +120,7 @@ npm i hexo-theme-volantis
 
 &ensp;&emsp;冲突一般产生于同一处被不同人修改时，Git 无法自动处理，抛出错误让用户解决。由于主题目前仍处于青少年阶段，更新迭代速度比较快，冲突现象可能会比较明显，下面提供一些思路减少这类情况。
 
-&ensp;&emsp;1.首先是配置文件，根据 Hexo 的规则，所有对配置的修改都可以独立出来，无需直接修改主题仓库下的 `config.yml` ，这里可以参阅：[使用代替主题配置文件](https://volantis.js.org/v5/theme-settings/configuration/)。*配置类文件是最不该产生冲突的地方*。
+&ensp;&emsp;1.首先是配置文件，根据 Hexo 的规则，所有对配置的修改都可以独立出来，无需直接修改主题仓库下的 `config.yml` ，这里可以参阅：[创建主题配置文件](/v5/theme-settings/#创建主题配置文件)。*配置类文件是最不该产生冲突的地方*。
 
 &ensp;&emsp;2.样式文件，根据 css 的覆盖规则，使用样式覆盖比直接修改样式来的欢快，例如主题中的光标便是采用的样式覆盖的思路。
  
