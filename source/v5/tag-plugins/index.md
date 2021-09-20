@@ -1611,16 +1611,16 @@ groupGitHub:
 {% sites only:test_demo %}
 {% endfolding %}
 
-## embed
+## md
 
 在局部渲染外部md文件。
 
 ```md 示例写法
-{% embed https://cdn.jsdelivr.net/gh/volantis-x/hexo-theme-volantis@dev/README.md %}
+{% md https://cdn.jsdelivr.net/gh/volantis-x/hexo-theme-volantis/README.md %}
 ```
 
-{% folding embed %}
-{% embed https://cdn.jsdelivr.net/gh/volantis-x/hexo-theme-volantis@dev/README.md %}
+{% folding md %}
+{% md https://cdn.jsdelivr.net/gh/volantis-x/hexo-theme-volantis/README.md %}
 {% endfolding %}
 
 ## Hexo 通用标签
