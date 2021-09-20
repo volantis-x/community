@@ -252,6 +252,8 @@ git pull
 
 请对照 {% btn, 更新日志, https://github.com/volantis-x/hexo-theme-volantis/releases %} 进行更新.
 
+{% link 如何正确地更新主题, /how-to-update/ %}
+
 ## 许可协议
 
 本主题采用 [MIT开源许可协议](https://cdn.jsdelivr.net/gh/theme-volantis/hexo-theme-volantis/LICENSE) ，永久无限制免费使用。
