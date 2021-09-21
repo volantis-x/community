@@ -737,6 +737,7 @@ sidebar:
 小部件名:
   class: 小部件类别
   display: [小部件在桌面端是否显示, 小部件在移动设备是否显示]
+  pjaxReload: true # 是否 pjax 重载 默认 true; 设置为 false 时 确保所有页面都含有该小部件
 ```
 
 ### 博主信息部件
@@ -903,9 +904,8 @@ test:
 music:
   class: music
   display: [desktop, mobile] # [desktop, mobile]
+  pjaxReload: false
 ```
-
-{% note warning :: 侧边栏音乐部件不能兼容pjax %}
 
 ## 选择评论系统
 

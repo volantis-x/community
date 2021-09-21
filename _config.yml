@@ -147,6 +147,11 @@ nofollow:
   exclude:
   - xaoxuu.com
   - volantis.js.org
+  - volantis-x.js.org
+  - blog.mhuig.top
+  - colsrch.cn
+  - inkss.cn
+  - vlts.hin.cool
 
 # autoprefixer
 autoprefixer:
