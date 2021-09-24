@@ -1,0 +1,37 @@
+name: auto deploy vlts.cc
+
+on:
+  [push] # 触发事件
+
+jobs:
+  build: # job1 id
+    runs-on: ubuntu-latest # 运行环境为最新版 Ubuntu
+    name: A job to deploy blog.
+    steps:
+    - name: Checkout # step1 获取源码
+      uses: actions/checkout@v1 # 使用 actions/checkout@v1
+      with: # 条件
+        submodules: true # Checkout private submodules(themes or something else). 当有子模块时切换分支？
+    - name: Setup Node.js 10.x
+      uses: actions/setup-node@master
+      with:
+        node-version: "10.x"
+    - name: Generate Public Files
+      run: |
+        # Restore last modified time
+        git ls-files -z | while read -d '' path; do touch -d "$(git log -1 --format="@%ct" "$path")" "$path"; done
+        npm i
+        npm install hexo-cli -g
+        npm run start
+        rm -rf ./public/CNAME
+        echo vlts.cc > ./public/CNAME
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        deploy_key: ${{ secrets.DEPLOY_KEY }}
+        external_repository: volantis-x/site
+        publish_branch: master
+        publish_dir: ./public 
+        commit_message: ${{ github.event.head_commit.message }}
+        user_name: 'github-actions[bot]'
+        user_email: 'github-actions[bot]@users.noreply.github.com'
