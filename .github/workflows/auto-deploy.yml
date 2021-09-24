@@ -23,7 +23,7 @@ jobs:
         npm i
         npm install hexo-cli -g
         npm run start
-    - name: Deploy
+    - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         deploy_key: ${{ secrets.DEPLOY_KEY }}
@@ -33,3 +33,15 @@ jobs:
         commit_message: ${{ github.event.head_commit.message }}
         user_name: 'github-actions[bot]'
         user_email: 'github-actions[bot]@users.noreply.github.com'
+        # Deploy to Server
+    - name: Deploy to Server
+      uses: easingthemes/ssh-deploy@v2
+      env:
+        SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
+        ARGS: "-rltgoDzvO --delete"
+        SOURCE: public/
+        REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
+        REMOTE_PORT: ${{ secrets.REMOTE_PORT }}
+        REMOTE_USER: ${{ secrets.REMOTE_USER }}
+        TARGET: ${{ secrets.TARGET }}
+
