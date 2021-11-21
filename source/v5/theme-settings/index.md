@@ -909,17 +909,20 @@ music:
 
 ## 选择评论系统
 
-目前支持的评论系统有： giscus, beaudar, utterances, valine, twikoo, waline, minivaline, disqus, disqusjs, gitalk, vssue, livere, isso, hashover
+目前共支持 15 款评论系统：
+
+artalk, giscus, beaudar, utterances, valine, twikoo, waline, minivaline, disqus, disqusjs, gitalk, vssue, livere, isso, hashover
 
 ```yaml blog/_config.volantis.yml
 comments:
   title: <i class='fas fa-comments'></i> 评论
   subtitle:
-  service: giscus # giscus, beaudar, utterances, valine, twikoo, waline, minivaline, disqus, disqusjs, gitalk, vssue, livere, isso, hashover
+  service: giscus
 ```
 
+------
 
-{% folding cyan open:: GitHub Discussions 系列 %}
+{% folding cyan :: GitHub Discussions 系列 %}
 
 {% tabs comments-github-discussions , 1 %}
 
@@ -1151,7 +1154,7 @@ comments:
 
 
 
-{% folding blue:: valine 或 解决 valine 遗留问题同一时期产生的评论系统 %}
+{% folding blue:: Valine 及其衍生 %}
 
 {% tabs comments-valine , 1 %}
 
@@ -1196,44 +1199,7 @@ valine:
 
 <!-- endtab -->
 
-<!-- tab twikoo -->
-
-<i class='fas fa-comment-dots fa-fw'></i> 一个简洁、安全、免费的静态网站评论系统 | A simple, safe, free comment system.
-<i class='fas fa-globe fa-fw'></i> [https://twikoo.js.org/](https://twikoo.js.org/)
-
-```yaml blog/_config.volantis.yml
-comments:
-  ...
-  service: twikoo
-  ...
-  twikoo:
-    js: https://cdn.jsdelivr.net/npm/twikoo@latest # 建议锁定版本
-    path: # 全局评论地址
-    # 其他配置项按照yml格式继续填写即可 除了 [el path] 选项
-    envId: xxxxxxxxxxxxxxx # 腾讯云环境id
-```
-
-其中，`placeholder` 支持在 front-matter 中设置。
-
-```yaml front-matter
----
-twikoo:
-  placeholder: 你觉得xxx怎么样呢？
----
-```
-
-也可以通过设置 `twikoo.path` 实现多个页面共用一个评论框。
-
-```yaml front-matter
----
-twikoo:
-  path: /
----
-```
-
-<!-- endtab -->
-
-<!-- tab waline -->
+<!-- tab Waline -->
 
 <i class='fas fa-comment-dots fa-fw'></i> 一个简洁、安全、免费的静态网站评论系统 | A simple, safe, free comment system.
 <i class='fas fa-globe fa-fw'></i> [https://waline.js.org/](https://waline.js.org/)
@@ -1325,10 +1291,83 @@ minivaline:
 {% endfolding %}
 
 
-{% folding red:: Others %}
+{% folding red:: Others 其他系列 %}
 
 {% tabs comments-others , 1 %}
 
+<!-- tab Artalk -->
+
+<i class='fas fa-comment-dots fa-fw'></i> 一款简洁的自托管评论系统 | A Selfhosted Comment System.
+<i class='fas fa-globe fa-fw'></i> [https://artalk.js.org/](https://artalk.js.org/)
+
+```yaml blog/_config.volantis.yml
+comments:
+  ...
+  service: artalk
+  ...
+  artalk:
+    js: https://cdn.jsdelivr.net/npm/artalk@2.1.3/dist/Artalk.js
+    css: https://cdn.jsdelivr.net/npm/artalk@2.1.3/dist/Artalk.css
+    server: http://127.0.0.1:8080/api    # 修改为自建的后端服务地址
+```
+
+其中，`placeholder` 支持在 front-matter 中设置。
+
+```yaml front-matter
+---
+artalk:
+  placeholder: 你觉得xxx怎么样呢？
+---
+```
+
+也可以通过设置 `artalk.path` 实现多个页面共用一个评论框。
+
+```yaml front-matter
+---
+artalk:
+  path: /
+---
+```
+
+<!-- endtab -->
+
+
+<!-- tab twikoo -->
+
+<i class='fas fa-comment-dots fa-fw'></i> 一个简洁、安全、免费的静态网站评论系统 | A simple, safe, free comment system.
+<i class='fas fa-globe fa-fw'></i> [https://twikoo.js.org/](https://twikoo.js.org/)
+
+```yaml blog/_config.volantis.yml
+comments:
+  ...
+  service: twikoo
+  ...
+  twikoo:
+    js: https://cdn.jsdelivr.net/npm/twikoo@latest # 建议锁定版本
+    path: # 全局评论地址
+    # 其他配置项按照yml格式继续填写即可 除了 [el path] 选项
+    envId: xxxxxxxxxxxxxxx # 腾讯云环境id
+```
+
+其中，`placeholder` 支持在 front-matter 中设置。
+
+```yaml front-matter
+---
+twikoo:
+  placeholder: 你觉得xxx怎么样呢？
+---
+```
+
+也可以通过设置 `twikoo.path` 实现多个页面共用一个评论框。
+
+```yaml front-matter
+---
+twikoo:
+  path: /
+---
+```
+
+<!-- endtab -->
 
 <!-- tab Livere -->
 
@@ -1371,7 +1410,7 @@ comments:
 
 <!-- endtab -->
 
-<!-- tab ... -->
+<!-- tab More... -->
 
 
 ```plain blog/themes/volantis/layout/_third-party/comments/评论系统名称/layout.ejs
@@ -1389,6 +1428,8 @@ comments:
 {% endtabs %}
 
 {% endfolding %}
+
+------
 
 **可以通过在 front-matter 设置 config 实现在特定页面修改评论系统的相关配置。**
 
@@ -1421,301 +1462,6 @@ npm i -S hexo-generator-json-content
 
 ### 概述
 Volantis 为丰富的插件提供了兼容性优化。大部分插件您只需开启和关闭，无需进行设置。
-
-```yaml blog/_config.volantis.yml
-plugins:
-  ################ required plugins ################
-  # jquery
-  globalJquery: false # 全局引入 jquery
-  jquery: https://cdn.jsdelivr.net/npm/jquery@3.5/dist/jquery.min.js
-  # fontawesome Pro 版本：https://cdn.jsdelivr.net/gh/inkss/fontawesome@5.15.3/css/all.min.css
-  fontawesome: https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.14/css/all.min.css
-
-  ################ optional plugins ################
-  # issues api
-  sitesjs:
-    enable: true
-  friendsjs:
-    enable: true
-  contributorsjs:
-    enable: true
-
-  ######## Plugins to improve loading speed:
-  # 预加载
-  preload:
-    enable: true
-    service: flying_pages # instant_page, flying_pages
-    instant_page: https://cdn.jsdelivr.net/gh/volantis-x/cdn-volantis@2/js/instant_page.js
-    flying_pages: https://cdn.jsdelivr.net/gh/gijo-varghese/flying-pages@2.1.2/flying-pages.min.js
-
-  # 图片懒加载
-  # https://www.npmjs.com/package/vanilla-lazyload
-  # tips: 
-  # 这里是主题自带的图片懒加载, 实现方案位于 /scripts/filters/z-lazyload ; srcset 属性的的优先级比 src 属性要高, 注意 srcset 存放了懒加载占位图,  src 存放了原图
-  # 在支持 srcset 的浏览器或者 RSS 阅读器(还会有人使用老旧的阅读器?)上会优先读取 srcset 加载的图片(懒加载占位图), 对于 RSS 中图片丢失变成懒加载占位图的问题, 建议 自行使用脚本移除 srcset 属性 或 关闭图片懒加载 或 在 RSS 中插入 vanilla-lazyload
-  lazyload:
-    enable: true
-    js: https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.1.0/dist/lazyload.min.js
-    onlypost: false
-    loadingImg: # https://cdn.jsdelivr.net/gh/volantis-x/cdn-volantis@3/img/placeholder/c617bfd2497fcea598e621413e315c368f8d8e.svg # 不建议使用占位图, 建议loadingImg为空, 当前占位图会产生布局偏移, loadingImg 为空占位图是一个 1X1 像素的图片
-    blurIn: true # 模糊加载效果 （loadingImg为空时有效）
-
-  ######## Plugins to optimize the experience:
-  # 代码高亮
-  code_highlight: highlightjs # highlightjs or prismjs
-  # highlight.js
-  highlightjs:
-    copy_code: true
-    # 如果开启 js, hexo.config.highlight.enable 需要设置为 false
-    js: #https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.1.0/build/highlight.min.js # Please set hexo.config.highlight.enable = false !!!
-    css: https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.1.0/build/styles/default.min.css
-    # more: https://www.jsdelivr.com/package/npm/highlight.js?path=styles
-
-  # prismjs
-  # https://prismjs.com/
-  # https://hexo.io/zh-cn/docs/syntax-highlight#PrismJS
-  prismjs:
-    copy_code: true
-    # Please set hexo.config.highlight.enable = false !!! set hexo.config.prismjs.enable = true !!!
-    js:
-      - https://cdn.jsdelivr.net/npm/prismjs/components/prism-core.min.js
-      - https://cdn.jsdelivr.net/npm/prismjs/plugins/autoloader/prism-autoloader.min.js
-      - https://cdn.jsdelivr.net/npm/prismjs/plugins/line-numbers/prism-line-numbers.min.js
-    css:
-      - https://cdn.jsdelivr.net/npm/prismjs/themes/prism-dark.css
-      - https://cdn.jsdelivr.net/npm/prismjs/plugins/line-numbers/prism-line-numbers.css
-
-  # https://scrollrevealjs.org/api/reveal.html
-  scrollreveal:
-    enable: #true
-    js: https://cdn.jsdelivr.net/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js
-    distance: 32px
-    duration: 800 # ms
-    interval: 20 # ms
-    scale: 1 # 0.1~1
-
-  ######## Plugins for SEO:
-  # npm i hexo-wordcount
-  wordcount:
-    enable: #true
-
-  ######## Plugins for ...
-  # Button Ripple Effect
-  nodewaves:
-    enable: #true
-    css: https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.css
-    js: https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.js
-
-  # fontawesome animation
-  fontawesome_animation:
-    enable: #true
-    css: https://cdn.jsdelivr.net/gh/l-lin/font-awesome-animation/dist/font-awesome-animation.min.css
-
-  # Typing Effects
-  comment_typing:
-    enable: #true
-    js: https://cdn.jsdelivr.net/gh/volantis-x/cdn-volantis@2/js/comment_typing.js
-
-  # 视差滚动效果 Slide Background
-  parallax:
-    enable: #true
-    position: cover       # cover: sticky on the cover.   fixed: Fixed as background for the site.
-    shuffle: true         # shuffle playlist
-    duration: 10000       # Duration (ms)
-    fade: 1500            # fade duration (ms) (Not more than 1500)
-    images:               # For personal use only. At your own risk if used for commercial purposes !!!
-      - https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/001.webp
-      - https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/002.webp
-      - https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/003.webp
-      - https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/004.webp
-      - https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/005.webp
-      - https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/006.webp
-      - https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/012.webp
-      - https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/016.webp
-      - https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/019.webp
-      - https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.webp
-      - https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/033.webp
-      - https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/034.webp
-      - https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/035.webp
-      - https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/038.webp
-      - https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/039.webp
-      - https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/042.webp
-      - https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.webp
-      - https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/051.webp
-      - https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/052.webp
-      - https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/054.webp
-      - https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/056.webp
-
-  # APlayer is only available in mainland China.
-  # APlayer config: https://github.com/metowolf/MetingJS
-  aplayer:
-    enable: #true
-    js:
-      aplayer: https://cdn.jsdelivr.net/gh/volantis-x/cdn-volantis@master/js/APlayer.mini.js # aplayer@1.10 魔改: 将触摸和滚轮事件监听器标记为 `passive`，以提高页面的滚动性能
-      meting: https://cdn.jsdelivr.net/npm/meting@2.0/dist/Meting.min.js
-    # Required
-    server: netease   # netease, tencent, kugou, xiami, baidu
-    type: playlist    # song, playlist, album, search, artist
-    id: 3175833810    # song id / playlist id / album id / search keyword
-    # Optional
-    fixed: false      # enable fixed mode
-    theme: '#1BCDFC'  # main color
-    autoplay: false   # audio autoplay
-    order: list       # player play order, values: 'list', 'random'
-    loop: all         # player loop play, values: 'all', 'one', 'none'
-    volume: 0.7       # default volume, notice that player will remember user setting, default volume will not work after user set volume themselves
-    list_max_height: 320px # list max height
-    list_folded: true
-
-  # Pjax
-  pjax:
-    enable: true
-    cover: true          # 封面是否pjax处理 false：每次切换页面封面都重载，适合封面较少的情况 true：封面经过Pjax处理，适合封面较多的情况
-    timeout: 5000        # The timeout in milliseconds for the XHR requests. Set to 0 to disable the timeout.
-    cacheBust: false     # When set to true, Pjax appends a timestamp  to skip the browser cache.
-    animation: false # false, nprogress, circle
-    banUrl:              # 被屏蔽的 url 地址将不启用 pjax 跳转，可以在控制台下使用 window.location.pathname 获取
-      # - '/artitalk/'   # artitalk 不支持 pjax
-      # - '/bbtalk/'     # bbtalk 不支持 pjax
-
-  # 暗黑模式 darkmode
-  # 开关按钮：在 navbar.menu 中添加：
-  # - name: 暗黑模式 # 可自定义
-  #   icon: fas fa-moon # 可自定义
-  #   toggle: darkmode
-  darkmode:
-    enable: #true
-
-  # 旧版 Internet Explorer 淘汰行动
-  # https://www.microsoft.com/zh-cn/WindowsForBusiness/End-of-IE-support
-  # 本主题不支持Internet Explorer的任何版本!!!
-  killOldVersionsOfIE:
-    enable: true
-
-  # 禁用JavaScript提示
-  # 本页面需要浏览器支持（启用）JavaScript
-  # 主题中的某些插件必须启用JavaScript才能正常工作，例如开启scrollreveal如果禁用JavaScript会导致卡片消失
-  killNoScript:
-    enable: true
-
-  # Artitalk https://artitalk.js.org
-  # 配置过程请参考：https://artitalk.js.org/doc.html
-  # 使用过旧版本的请修改Leancloud shuoshuo class部分列名：https://artitalk.js.org/release.html
-  # 除appID和appKEY外均为选填项
-  artitalk:
-    # Set `plugins: ["artitalk"]` to enable in front-matter
-    # 不支持 Pjax
-    # 配置项按照yml格式继续填写即可
-    appId: ogP8qj3veMh0LFpFWMPOyF0X-MdYXbMMI # your appID
-    appKey: nHXLd3N3Jgh460t2iRQKWAtr # your appKEY
-    # serverURL:  #leancloud绑定的api访问域名，使用国际版的话不需要填写
-    # lang: # 语言设置，zh为汉语，en为英语，es为西班牙语。默认为汉语
-    # pageSize: #每页说说的显示数量
-    # shuoPla: #在编辑说说的输入框中的占位符
-    # avatarPla: #自定义头像url的输入框的占位符
-    # motion: #加载动画的开关，1为开，0为关，默认为开
-    # bgImg: #说说输入框背景图片url
-    # color1: #说说背景颜色1&按钮颜色1
-    # color2: #说说背景颜色2&按钮颜色2
-    # color3: #说说字体颜色
-    # cssUrl: #自定义css接口
-
-  # BBtalk https://bb.js.org
-  bbtalk:
-    # Set `plugins: ["bbtalk"]` to enable in front-matter
-    # 不支持 Pjax
-    js: https://cdn.jsdelivr.net/npm/bbtalk@0.1.5/dist/bbtalk.min.js # BBtalk.js
-    appId: 0KzOX4vC7Jsk6vzUGNeEiUaI-gzGzoHsz # your appID
-    appKey: HwCiWuxfpvKiLm4teCUgTIba # your appKEY
-    serverURLs: https://bbapi.heson10.com # Request Api 域名
-
-  # HexoPlusPlus
-  # https://github.com/HexoPlusPlus/HexoPlusPlus
-  # https://hexoplusplus.js.org/
-  # 无服务器Hexo后端,支持文章编辑,自带图床功能.目标:解决静态博客所有痛点[文章编辑、图片上传、博主活跃信息统计、博主说说、Twikoo加强版、阅读量统计等
-  hpp:
-    # 说说功能
-    # Set `plugins: ["hpptalk"]` to enable in front-matter
-    # 支持 Pjax
-    hpp_talk:
-      css: https://cdn.jsdelivr.net/gh/HexoPlusPlus/HexoPlusPlus@latest/talk.css # 建议锁定版本
-      js: https://cdn.jsdelivr.net/gh/HexoPlusPlus/HexoPlusPlus@latest/talk_user.js # 建议锁定版本
-      limit: 10
-      start: 0
-      # 配置项按照yml格式继续填写即可
-      # domain:
-      # themecss:
-    # HexoPlusPlus其他功能暂未集成
-
-  # 友链朋友圈 hexo-circle-of-friends
-  # https://github.com/Rock-Candy-Tea/hexo-circle-of-friends
-  # https://zfe.space/post/friend-link-circle.html
-  fcircle:
-    # Set `plugins: ["fcircle"]` to enable in front-matter
-    # 支持 Pjax
-    api: '' # api 地址
-    max_number: 20 # 页面展示文章数量
-    add_number: 10 # 每次加载增加的篇数
-    opentype: '_blank' # '_blank'打开新标签,'_self'本窗口打开
-    nofollow: true # 禁止搜索引擎抓取
-    # loadingCutom: # 自定义loading图 例如: <i class="fa fa-spinner fa-spin"></i> | <img src="你的图片地址" alt="加载中...">
-
-  # 消息提示
-  message:
-    enable: true
-    icon:     # 默认图标，支持对图标添加颜色，可选值：see：/source/css/_style/_plugins/fontcolor.styl
-      default: fas fa-info-circle light-blue
-      quection: fas fa-question-circle light-blue
-    time:     # 默认持续时间
-      default: 5000
-      quection: 20000
-    position: 'topRight'                 # 弹出位置 可选值：topRight, bottomRight, bottomLeft, topLeft, topCenter, bottomCenter, center
-    transitionIn: 'bounceInLeft'         # 弹窗打开动画 可选值：bounceInLeft, bounceInRight, bounceInUp, bounceInDown, fadeIn, fadeInDown, fadeInUp, fadeInLeft, fadeInRight, flipInX
-    transitionOut: 'fadeOutRight'        # 弹窗关闭动画 可选值：fadeOut, fadeOutUp, fadeOutDown, fadeOutLeft, fadeOutRight, flipOutX
-    titleColor: 'var(--color-text)'      # 标题颜色
-    messageColor: 'var(--color-text)'    # 消息颜色
-    backgroundColor: 'var(--color-card)' # 默认背景色
-    zindex: 2147483647                   # 层级
-    copyright:                           # 是否在复制时弹出版权提示，影响范围：ctrl+c、代码块复制按钮、右键复制选项
-      enable: true
-      title: '知识共享许可协议'
-      message: '请遵守 CC BY-NC-SA 4.0 协议。'
-      icon: 'far fa-copyright light-blue'
-    aplayer:                              # 是否开启音乐通知；播放、暂停、失败 时的图标
-      enable: true
-      play: fas fa-play
-      pause: fas fa-pause
-    rightmenu:                            # 是否开启右键模块的消息通知
-      enable: true
-  
-  # 标签插件样式按需加载
-  # 注意这个配置是带缓存的, 如果修改标签插件样式每次调试需要刷新两次页面, 建议开发者关闭该配置
-  tag_plugin_load_on_demand:
-    enable: #true
-    # 每个页面强制加载以下标签插件样式
-    plugins:
-      - note
-      - btns
-      - p
-      - gallery
-
-  # 聊天功能
-  chat_service: # tidio or gitter
-
-  # Tidio
-  # https://www.tidio.com/
-  tidio:
-    id: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-
-  # Gitter
-  # https://gitter.im
-  gitter:
-    room: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-
-```
-
-
-
 ### 幻灯片背景(视差滚动效果)
 
 {% note error :: jquery.backstretch 在 5.0 版本 移除, 被 parallax 替代 %}
@@ -1940,4 +1686,15 @@ plugins:
       pause: fas fa-pause
     rightmenu:                            # 是否开启右键模块的消息通知
       enable: true
+```
+
+### 轮播标签
+
+使用方法参见：[swiper](/v5/tag-plugins/#swiper)
+
+```yaml blog/_config.volantis.yml
+swiper:
+  enable: true
+  css: https://unpkg.com/swiper@6/swiper-bundle.min.css
+  js: https://unpkg.com/swiper@6/swiper-bundle.min.js
 ```

@@ -72,6 +72,8 @@ git clone https://github.com/volantis-x/demo.git && cd demo && npm i && hexo s
 
 {% note guide clear :: rc 阶段的测试版本和 stable 阶段的正式版本 我们统称为 「稳定版本」 , 只有 「稳定版本」 发布到 [npm](https://www.npmjs.com/package/hexo-theme-volantis) %}
 
+{% note bug danger :: alpha 阶段的开发测试版本 和 beta 阶段的测试版本 我们统称为 「小白鼠测试版本」, 「小白鼠测试版本」 仅存在于 [Github 仓库的 dev 分支](https://github.com/volantis-x/hexo-theme-volantis/tree/dev) %}
+
 {% folding green::安装或更新 「稳定版本」 (rc 阶段的测试版本 或 stable 阶段的正式版本) %}
 
 {% tabs install, 1 %}
@@ -169,8 +171,6 @@ npm i hexo-renderer-stylus
 
 {% endfolding %}
 
-{% note bug danger :: alpha 阶段的开发测试版本 和 beta 阶段的测试版本 我们统称为 「小白鼠测试版本」, 「小白鼠测试版本」 仅存在于 [Github 仓库的 dev 分支](https://github.com/volantis-x/hexo-theme-volantis/tree/dev) %}
-
 {% folding red::安装或更新 「小白鼠测试版本」 (alpha 阶段的开发测试版本 或 beta 阶段的测试版本) %}
 {% timenode 第 1/3 步：修改站点配置文件 %}
 
@@ -230,9 +230,6 @@ git pull
 
 {% endtimenode %}
 {% endfolding %}
-
-诚聘小白鼠！！！
-
 
 ## 版本更新注意事项
 

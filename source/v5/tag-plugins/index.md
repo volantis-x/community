@@ -1484,6 +1484,70 @@ npm i -S hexo-tag-aplayer
 
 {% note error, issues 标签在5.0版本移除 被 sites标签 friends标签 contributors标签 替代 %}
 
+## md
+
+在局部渲染外部md文件。
+
+```md 示例写法
+{% md https://cdn.jsdelivr.net/gh/volantis-x/hexo-theme-volantis/README.md %}
+```
+
+{% folding md %}
+{% md https://cdn.jsdelivr.net/gh/volantis-x/hexo-theme-volantis/README.md %}
+{% endfolding %}
+
+## swiper
+
+### 轮播标签
+
+默认一张图片是 50% 宽度，通过设置 width:min 设置为 25% 宽度，width:max 设置为 100% 宽度。
+
+### 最大图片宽度
+
+{% swiper width:max %}
+![](https://cdn.jsdelivr.net/gh/cdn-x/wiki@1.0.2/prohud/screenshot11.png)
+![](https://cdn.jsdelivr.net/gh/cdn-x/wiki@1.0.2/prohud/screenshot12.png)
+![](https://cdn.jsdelivr.net/gh/cdn-x/wiki@1.0.2/prohud/screenshot13.png)
+{% endswiper %}
+
+```md
+{% swiper width:max %}
+![](https://cdn.jsdelivr.net/gh/cdn-x/wiki@1.0.2/prohud/screenshot11.png)
+![](https://cdn.jsdelivr.net/gh/cdn-x/wiki@1.0.2/prohud/screenshot12.png)
+![](https://cdn.jsdelivr.net/gh/cdn-x/wiki@1.0.2/prohud/screenshot13.png)
+{% endswiper %}
+```
+
+### 最小图片宽度
+
+{% swiper width:min %}
+![](https://cdn.jsdelivr.net/gh/cdn-x/wiki@1.0.2/prohud/screenshot01.png)
+![](https://cdn.jsdelivr.net/gh/cdn-x/wiki@1.0.2/prohud/screenshot02.png)
+![](https://cdn.jsdelivr.net/gh/cdn-x/wiki@1.0.2/prohud/screenshot03.png)
+![](https://cdn.jsdelivr.net/gh/cdn-x/wiki@1.0.2/prohud/screenshot04.png)
+![](https://cdn.jsdelivr.net/gh/cdn-x/wiki@1.0.2/prohud/screenshot05.png)
+![](https://cdn.jsdelivr.net/gh/cdn-x/wiki@1.0.2/prohud/screenshot06.png)
+![](https://cdn.jsdelivr.net/gh/cdn-x/wiki@1.0.2/prohud/screenshot07.png)
+![](https://cdn.jsdelivr.net/gh/cdn-x/wiki@1.0.2/prohud/screenshot08.png)
+![](https://cdn.jsdelivr.net/gh/cdn-x/wiki@1.0.2/prohud/screenshot09.png)
+![](https://cdn.jsdelivr.net/gh/cdn-x/wiki@1.0.2/prohud/screenshot10.png)
+{% endswiper %}
+
+```md
+{% swiper width:min %}
+![](https://cdn.jsdelivr.net/gh/cdn-x/wiki@1.0.2/prohud/screenshot01.png)
+![](https://cdn.jsdelivr.net/gh/cdn-x/wiki@1.0.2/prohud/screenshot02.png)
+![](https://cdn.jsdelivr.net/gh/cdn-x/wiki@1.0.2/prohud/screenshot03.png)
+![](https://cdn.jsdelivr.net/gh/cdn-x/wiki@1.0.2/prohud/screenshot04.png)
+![](https://cdn.jsdelivr.net/gh/cdn-x/wiki@1.0.2/prohud/screenshot05.png)
+![](https://cdn.jsdelivr.net/gh/cdn-x/wiki@1.0.2/prohud/screenshot06.png)
+![](https://cdn.jsdelivr.net/gh/cdn-x/wiki@1.0.2/prohud/screenshot07.png)
+![](https://cdn.jsdelivr.net/gh/cdn-x/wiki@1.0.2/prohud/screenshot08.png)
+![](https://cdn.jsdelivr.net/gh/cdn-x/wiki@1.0.2/prohud/screenshot09.png)
+![](https://cdn.jsdelivr.net/gh/cdn-x/wiki@1.0.2/prohud/screenshot10.png)
+{% endswiper %}
+```
+
 ## 友链标签
 
 您可以在任何位置插入友链，支持静态数据和动态数据，静态数据需要写在数据文件中：
@@ -1609,18 +1673,6 @@ groupGitHub:
 
 {% folding sites only:test_demo %}
 {% sites only:test_demo %}
-{% endfolding %}
-
-## md
-
-在局部渲染外部md文件。
-
-```md 示例写法
-{% md https://cdn.jsdelivr.net/gh/volantis-x/hexo-theme-volantis/README.md %}
-```
-
-{% folding md %}
-{% md https://cdn.jsdelivr.net/gh/volantis-x/hexo-theme-volantis/README.md %}
 {% endfolding %}
 
 ## Hexo 通用标签
