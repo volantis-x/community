@@ -6,14 +6,14 @@ var terser = require('gulp-terser');
 
 // 压缩css文件
 const minify_css = () => (
-    gulp.src(['./public/**/*.css','!./public/{libs,libs/**}'])
+    gulp.src(['./public/**/*.css','!./public/{lib,lib/**}','!./public/{libs,libs/**}','!./public/{media,media/**}'])
         .pipe(minifycss())
         .pipe(gulp.dest('./public'))
 );
 
 // 压缩html文件
 const minify_html = () => (
-    gulp.src(['./public/**/*.html','!./public/{lib,lib/**}','!./public/{libs,libs/**}'])
+    gulp.src(['./public/**/*.html',,'!./public/{lib,lib/**}','!./public/{libs,libs/**}','!./public/{media,media/**}'])
         .pipe(htmlclean())
         .pipe(htmlmin({
             removeComments: true,
@@ -26,7 +26,7 @@ const minify_html = () => (
 
 // 压缩js文件
 const minify_js = () => (
-    gulp.src(['./public/**/*.js', '!./public/**/*.min.js','!./public/{lib,lib/**}','!./public/{libs,libs/**}'])
+    gulp.src(['./public/**/*.js', '!./public/**/*.min.js',,'!./public/{lib,lib/**}','!./public/{libs,libs/**}','!./public/{media,media/**}'])
         .pipe(terser())
         .pipe(gulp.dest('./public'))
 )
