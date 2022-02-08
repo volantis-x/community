@@ -10,10 +10,10 @@
     "s": "hexo clean && hexo server"
   },
   "hexo": {
-    "version": "6.0.0"
+    "version": "5.4.1"
   },
   "dependencies": {
-    "hexo": "^6.0.0",
+    "hexo": "^5.4.1",
     "hexo-autonofollow": "^1.0.1",
     "hexo-autoprefixer": "^2.0.0",
     "hexo-deployer-git": "^3.0.0",
@@ -25,7 +25,7 @@
     "hexo-generator-seo-friendly-sitemap": "^0.2.1",
     "hexo-generator-tag": "^1.0.0",
     "hexo-renderer-ejs": "^1.0.0",
-    "hexo-renderer-marked": "^4.0.0",
+    "hexo-renderer-marked": "^5.0.0",
     "hexo-renderer-stylus": "^2.0.1",
     "hexo-server": "^3.0.0"
   },
