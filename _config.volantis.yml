@@ -103,12 +103,17 @@ article:
 comments:
   service: giscus
   giscus:
+    theme:
+      light: "light"
+      dark: "dark"
     repo: volantis-x/hexo-theme-volantis
     repo-id: MDEwOlJlcG9zaXRvcnkxMDgwNzM2MzQ=
     mapping: "number"
     term: "539"
     reactions-enabled: "1"
     emit-metadata: "0"
+    lang: "zh-CN"
+    input-position: "top"
   disqus:
     shortname: volantis
     path: /
