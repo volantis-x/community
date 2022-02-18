@@ -6,27 +6,27 @@ navbar:
     title: 'Volantis 5.0 <sup style="color:#ff9800">alpha</sup>'
   menu:
     - name: 文档
-      icon: fad fa-book faa-tada
+      icon: fa-duotone fa-book faa-tada
       url: /v5/getting-started/
       target: _self
 
     - name: 示例
-      icon: fad fa-play-circle faa-tada
+      icon: fa-duotone fa-play-circle faa-tada
       url: /examples/
 
     - name: 帮助
-      icon: fad fa-question-circle faa-tada
+      icon: fa-duotone fa-question-circle faa-tada
       url: /faqs/
 
     - name: 鸣谢
-      icon: fad fa-heart
+      icon: fa-duotone fa-heart
       url: /contributors/
 
     - name: 更多
-      icon: fad fa-ellipsis-v
+      icon: fa-duotone fa-ellipsis-v
       rows:
         - name: 暗黑模式
-          icon: fas fa-moon
+          icon: fa-solid fa-moon
           toggle: darkmode
         - name: hr
         - name: 本站源码
@@ -135,7 +135,7 @@ sidebar:
       class: toc
       display: [desktop, mobile] # [desktop, mobile]
       header:
-        icon: fas fa-list
+        icon: fa-solid fa-list
         title: 本文目录
       list_number: true
       min_depth: 2
@@ -144,7 +144,7 @@ sidebar:
       class: text
       display: [desktop, mobile] # [desktop, mobile]
       header:
-        icon: fas fa-plus
+        icon: fa-solid fa-plus
         title: 社区活动
         url: /contributors/
       content:
@@ -154,29 +154,29 @@ sidebar:
       class: grid
       display: [desktop, mobile] # [desktop, mobile]
       header:
-        icon: fas fa-map-signs
+        icon: fa-solid fa-map-signs
         title: 分类导航
       fixed: true # 固定宽度
       rows:
         - name: 常见问题
-          icon: fas fa-question-circle
+          icon: fa-solid fa-question-circle
           url: /faqs/
         - name: 示例博客
-          icon: fas fa-play-circle
+          icon: fa-solid fa-play-circle
           url: /examples/
         - name: 特别感谢
-          icon: fas fa-handshake
+          icon: fa-solid fa-handshake
           url: /contributors/
         - name: 测试博文
-          icon: fas fa-file-alt
+          icon: fa-solid fa-file-alt
           url: /archives/
         - name: 主题源码
-          icon: fas fa-file-code
+          icon: fa-solid fa-file-code
           url: https://github.com/volantis-x/hexo-theme-volantis/
           rel: external nofollow noopener noreferrer
           target: _blank
         - name: 更新日志
-          icon: fas fa-tags
+          icon: fa-solid fa-tags
           url: https://github.com/volantis-x/hexo-theme-volantis/releases/
           rel: external nofollow noopener noreferrer
           target: _blank
@@ -186,7 +186,7 @@ sidebar:
       class: qrcode
       display: [desktop] # [desktop, mobile]
       header:
-        icon: fas fa-mobile
+        icon: fa-solid fa-mobile
         title: 手机观看
       height: #64px  # Automatic height if not set
       fancybox: #true
@@ -197,7 +197,7 @@ sidebar:
       class: text
       display: [desktop, moblie]
       header:
-        icon: fab fa-qq
+        icon: fa-brands fa-qq
         title: '加入 QQ 群'
       content:
         - '如果你在使用中遇到问题，请到 [Github Issues](https://github.com/volantis-x/hexo-theme-volantis/issues) 或者 [留言板](/faqs/#comments) 进行反馈，你也可以加入 **QQ 群**，验证码：vlts-2021<br>[![](https://bu.dusays.com/2021/09/24/ae832f0aadee8.png)](https://qm.qq.com/cgi-bin/qm/qr?k=FpexWW5GCLWOM3jF3LG-YWfllXuv7cMs&jump_from=webapi)'
@@ -206,7 +206,7 @@ sidebar:
       class: page
       display: [desktop, mobile]
       header:
-        icon: fas fa-headset
+        icon: fa-solid fa-headset
         title: 帮助
       pid: faq
       content: excerpt # excerpt, more, content
@@ -215,42 +215,42 @@ sidebar:
       class: list
       display: [desktop, mobile] # [desktop, mobile]
       header:
-        icon: fas fa-exclamation-triangle
+        icon: fa-solid fa-exclamation-triangle
         title: 近期公告
       rows:
         - name: 关于主题与文档的更新
-          icon: fas fa-info-circle
+          icon: fa-solid fa-info-circle
           url: https://github.com/volantis-x/hexo-theme-volantis/issues/215
         - name: 升级小助手
-          icon: fas fa-angle-double-up
+          icon: fa-solid fa-angle-double-up
           url: /v3/getting-started/#升级小助手
 
     docs-v2:
       class: group
       display: [desktop, mobile] # [desktop, mobile]
       header:
-        icon: fad fa-list-alt
+        icon: fa-duotone fa-list-alt
         title: 文档导航 v2
 
     docs-v3:
       class: group
       display: [desktop, mobile] # [desktop, mobile]
       header:
-        icon: fad fa-list-alt
+        icon: fa-duotone fa-list-alt
         title: 文档导航 v3
 
     docs-v4:
       class: group
       display: [desktop, mobile] # [desktop, mobile]
       header:
-        icon: fad fa-list-alt
+        icon: fa-duotone fa-list-alt
         title: 文档导航 v4
 
     docs-latest:
       class: group
       display: [desktop, mobile] # [desktop, mobile]
       header:
-        icon: fad fa-book
+        icon: fa-duotone fa-book
         title: 文档导航 v5.0
 
     docs-volantis-latest:
@@ -282,12 +282,12 @@ site_footer:
 tag_plugins:
   # {% note text %}
   note: # style for default note:
-    iconfont: 'Font Awesome 5 Pro'
+    iconfont: 'Font Awesome 6 Pro'
 
 plugins:
   clipboard:
     enable: true
-  fontawesome: https://cdn.jsdelivr.net/gh/inkss/fontawesome@5.15.3/css/all.min.css
+  fontawesome: /libs/@fortawesome/fontawesome-pro/css/all.min.css
   parallax:
     enable: true
   aplayer:
@@ -303,18 +303,18 @@ plugins:
   message:          # 音乐通知，播放、暂停、失败 时的图标
     enable: true
     icon:     # 默认图标，支持对图标添加颜色，可选值：see：/source/css/_plugins/message.styl
-      default: fal fa-info-circle light-blue
-      quection: fal fa-question-circle light-blue
+      default: fa-light fa-info-circle light-blue
+      quection: fa-light fa-question-circle light-blue
     copyright:  # 是否在复制时弹出版权提示
       enable: false
       title: '知识共享许可协议'
       message: '请遵守 CC BY-NC-SA 4.0 协议。'
-      icon: 'fab fa-creative-commons light-blue'
+      icon: 'fa-brands fa-creative-commons light-blue'
     aplayer:
       enable: true
-      play: fal fa-play light-blue
-      pause: fal fa-pause light-blue
-      error: fal fa-exclamation-square red
+      play: fa-light fa-play light-blue
+      pause: fa-light fa-pause light-blue
+      error: fa-light fa-exclamation-square red
   darkmode:
     enable: true
   gitter:
@@ -351,20 +351,20 @@ custom_css:
 
 rightmenu:
   enable: true
-  faicon: fad PETERRIVE
+  faicon: fa-duotone PETERRIVE
   print:
-    icon: fad fa-print TURQUOISE
+    icon: fa-duotone fa-print TURQUOISE
   darkmode:
-    icon: fad fa-eclipse-alt WISTERIA
+    icon: fa-duotone fa-eclipse-alt WISTERIA
   reading:
-    icon: fad fa-book-open EMERALD
+    icon: fa-duotone fa-book-open EMERALD
   help:
-    icon: fad fa-question EMERALD
+    icon: fa-duotone fa-question EMERALD
   examples:
-    icon: fad fa-rss PETERRIVE
+    icon: fa-duotone fa-rss PETERRIVE
   contributors:
-    icon: fad fa-fan fa-spin AMETHYST
+    icon: fa-duotone fa-fan fa-spin AMETHYST
   source_docs:
-    icon: fad fa-code-branch WETASPHALT
+    icon: fa-duotone fa-code-branch WETASPHALT
   source_theme:
-    icon: fad fa-file-code CONCRETE
+    icon: fa-duotone fa-file-code CONCRETE
