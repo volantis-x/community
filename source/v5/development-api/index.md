@@ -577,7 +577,7 @@ hexo.extend.filter.register('theme_inject', function(injects) {
 
 ```js blog/scripts/example-3.js
 hexo.extend.filter.register('theme_inject', function(injects) {
-  injects.sidebar.file('my-favourite-food', 'source/_data/my-favourite-food.ejs');
+  injects.side.file('my-favourite-food', 'source/_data/my-favourite-food.ejs');
 });
 ```
 
