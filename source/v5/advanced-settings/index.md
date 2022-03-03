@@ -460,7 +460,19 @@ popularPosts:
 
 #### PV 和 UV
 
-默认支持 [不蒜子](http://busuanzi.ibruce.info/) 的访问统计和 leancloud 统计，在配置文件中设置。
+默认支持 [不蒜子](http://busuanzi.ibruce.info/) 的访问统计和 [leancloud](https://leancloud.app/) 统计，在配置文件中设置。
+
+- 若你选择 [leancloud](https://leancloud.app/) 统计, 你还需前往 leancloud 创建应用并填写下面 leancloud 相关配置
+- 若你选择 [不蒜子](http://busuanzi.ibruce.info/) 统计, 请取消下面 busuanzi 的配置注释
+
+``` yaml blog/_config.volantis.yml
+analytics:
+  busuanzi: #/libs/busuanzi/js/busuanzi.pure.mini.js #https://cdn.jsdelivr.net/gh/volantis-x/cdn-busuanzi@2.3/js/busuanzi.pure.mini.js
+  leancloud: # 请使用自己的 id & key 以防止数据丢失
+    app_id: # 应用 APP_ID
+    app_key: # 应用 APP_KEY
+    custom_api_server: # 国际版一般不需要写，除非自定义了 API Server
+```
 
 #### 字数和阅读时长
 
