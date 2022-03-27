@@ -532,7 +532,7 @@ tencent_aegis_id: 上报 id
 ## 更多进阶玩法
 
 详见 [@TRHX](https://www.itrhx.com) 的这篇博客：
-{% link Hexo 博客主题个性化, https://www.itrhx.com/2018/08/27/A04-Hexo-blog-topic-personalization/ %}
+{% link Hexo 博客主题个性化, https://www.itbob.cn/article/003/ %}
 
 内含卡片半透明、增加卡通人物、自定义鼠标样式、鼠标特效、烟花特效、彩色滚动字体、网站运行时间、动态浏览器标题、雪花飘落特效等多种详细教程。
 
