@@ -100,6 +100,7 @@ csp:
   "
   # hexo_fliter_sha256 用于 hexo g 时替换 'unsafe-inline' 生成 script-src 'sha256-' , 如果外层含有压缩工具会改变 hash 导致无效,需设为false.
   hexo_fliter_sha256: false
+  # gulp: https://github.com/volantis-x/community/blob/main/gulpfile.js
 ```
 
 ## 为网站提速
