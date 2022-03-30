@@ -940,9 +940,6 @@ comments:
   # https://giscus.app
   # https://github.com/laymonage/giscus
   giscus:
-    theme:
-      light: https://cdn.jsdelivr.net/gh/volantis-x/cdn-volantis@master/css/giscus/light.css
-      dark: https://cdn.jsdelivr.net/gh/volantis-x/cdn-volantis@master/css/giscus/dark.css
     # 以下配置按照 yml 格式增删填写即可
     # repo: xxx/xxx
     # repo-id: xxx
@@ -951,6 +948,11 @@ comments:
     # mapping: "pathname"
     # reactions-enabled: "1"
     # emit-metadata: "0"
+    # lang: "zh-CN"
+    # 以上配置按照 yml 格式增删填写即可
+    theme:
+      light: "light" # https://cdn.jsdelivr.net/gh/volantis-x/cdn-volantis@master/css/giscus/light.css
+      dark: "dark" # https://cdn.jsdelivr.net/gh/volantis-x/cdn-volantis@master/css/giscus/dark.css
 ```
 
 <!-- endtab -->

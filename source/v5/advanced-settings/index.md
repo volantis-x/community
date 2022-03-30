@@ -75,6 +75,30 @@ author: Jon
 ---
 ```
 
+## 内容安全策略(CSP)
+
+```yaml blog/_config.volantis.yml
+# 内容安全策略( CSP )
+# https://developer.mozilla.org/zh-CN/docs/Web/HTTP/CSP
+# https://content-security-policy.com/
+csp: "
+  default-src 'self' https:;
+  block-all-mixed-content;
+  base-uri 'self' https:;
+  form-action 'self' https:;
+  worker-src 'self' https:;
+  connect-src 'self' https: *;
+  img-src 'self' data: https: *;
+  media-src 'self' https: *;
+  font-src 'self' data: https: *;
+  frame-src 'self' https: *;
+  manifest-src 'self' https: *;
+  child-src https:;
+  script-src 'self' https: 'unsafe-inline' *;
+  style-src 'self' https: 'unsafe-inline' *;
+"
+```
+
 ## 为网站提速
 
 ### 加载速度
