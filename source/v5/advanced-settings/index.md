@@ -81,22 +81,25 @@ author: Jon
 # 内容安全策略( CSP )
 # https://developer.mozilla.org/zh-CN/docs/Web/HTTP/CSP
 # https://content-security-policy.com/
-csp: "
-  default-src 'self' https:;
-  block-all-mixed-content;
-  base-uri 'self' https:;
-  form-action 'self' https:;
-  worker-src 'self' https:;
-  connect-src 'self' https: *;
-  img-src 'self' data: https: *;
-  media-src 'self' https: *;
-  font-src 'self' data: https: *;
-  frame-src 'self' https: *;
-  manifest-src 'self' https: *;
-  child-src https:;
-  script-src 'self' https: 'unsafe-inline' *;
-  style-src 'self' https: 'unsafe-inline' *;
-"
+csp:
+  content: "
+    default-src 'self' https:;
+    block-all-mixed-content;
+    base-uri 'self' https:;
+    form-action 'self' https:;
+    worker-src 'self' https:;
+    connect-src 'self' https: *;
+    img-src 'self' data: https: *;
+    media-src 'self' https: *;
+    font-src 'self' data: https: *;
+    frame-src 'self' https: *;
+    manifest-src 'self' https: *;
+    child-src https:;
+    script-src 'self' https: 'unsafe-inline' *;
+    style-src 'self' https: 'unsafe-inline' *;
+  "
+  # hexo_fliter_sha256 用于 hexo g 时替换 'unsafe-inline' 生成 script-src 'sha256-' , 如果外层含有压缩工具会改变 hash 导致无效,需设为false.
+  hexo_fliter_sha256: false
 ```
 
 ## 为网站提速
