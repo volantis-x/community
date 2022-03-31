@@ -61,7 +61,7 @@ unsafe_script_list.forEach(e => {
 gulp.task('csp_hash', () => {
   return gulp.src(['./public/**/*.html','!./public/{lib,lib/**}','!./public/{libs,libs/**}','!./public/{media,media/**}'])
     .pipe(hashstream({
-      what: 'script',
+      what: 'script:not([type="application/ld+json"])',
       replace_cb: (s, hashes) => {
         unsafe_script_hash.push.apply(unsafe_script_hash,hashes);
         unsafe_script_hash=Array.from(new Set(unsafe_script_hash))
@@ -74,7 +74,7 @@ gulp.task('csp_hash', () => {
 gulp.task('csp_replace', () => {
   return gulp.src(['./public/**/*.html','!./public/{lib,lib/**}','!./public/{libs,libs/**}','!./public/{media,media/**}'])
     .pipe(hashstream({
-      what: 'script',
+      what: 'script:not([type="application/ld+json"])',
       replace_cb: (s, hashes) => {
         unsafe_script_hash=Array.from(new Set(unsafe_script_hash))
         s=s.replace(/script-src 'self' https: 'unsafe-inline'[^;]*/, "script-src 'self' https: 'unsafe-hashes' " + unsafe_script_hash.join(" "))
