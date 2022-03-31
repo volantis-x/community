@@ -41,14 +41,19 @@ gulp.task('minify', gulp.parallel(
 const hashstream = require('inline-csp-hash');
 const crypto = require('crypto');
 const hash = (s) => crypto.createHash("sha256").update(s).digest('base64');
+
+// script White list [scripts in event handlers (eg onclick)]. 包含压缩的 inline js
 unsafe_script_list = [
   "this.media='all';this.onload=null",
   'this.media="all",this.onload=null',
   "errorImgAvatar(this)",
   "errorImgCover(this)",
   "return false;",
+  "return!1",
 ]
+// script hash White list
 unsafe_script_hash = ["'sha256-MXV1jvkHrZruEyFEOrQRjKs9WlPZC1V/3RLoKrkoDFQ='"]
+
 unsafe_script_list.forEach(e => {
   unsafe_script_hash.push("'sha256-" + hash(e) + "'")
 });
