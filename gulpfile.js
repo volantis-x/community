@@ -42,6 +42,15 @@ const hashstream = require('inline-csp-hash');
 const crypto = require('crypto');
 const hash = (s) => crypto.createHash("sha256").update(s).digest('base64');
 
+function getRandStr(len) {
+  var str = '';
+  for (var i = 0; i < len; i++) {
+    str += String.fromCharCode(Math.floor(Math.random() * 26) + 97);
+  }
+  return str;
+}
+const nonce = getRandStr(15);
+
 // script White list [scripts in event handlers (eg onclick)]. 包含压缩的 inline js
 unsafe_script_list = [
   "this.media='all';this.onload=null",
@@ -77,14 +86,13 @@ gulp.task('csp_replace', () => {
       what: 'script:not([type="application/ld+json"])',
       replace_cb: (s, hashes) => {
         unsafe_script_hash=Array.from(new Set(unsafe_script_hash))
-        s=s.replace(/script-src 'self' https: 'unsafe-inline'[^;]*/, "script-src 'self' https: 'unsafe-hashes' " + unsafe_script_hash.join(" "))
+        s = s.replace(/<script.*?>/g, function (match) {
+          return match.replace(/>/g, ` nonce='${nonce}'>`);
+        });
+        s=s.replace(/script-src 'self' https: 'unsafe-inline'[^;]*/, `script-src 'self' https: 'unsafe-hashes' 'nonce-${nonce}' 'strict-dynamic' ` + unsafe_script_hash.join(" "))
         return s
       }
     }))
-    // .pipe(hashstream({
-    //   what: 'style',
-    //   replace_cb: (s, hashes) => s.replace(/style-src 'self' https: 'unsafe-inline'[^;]*/, "style-src 'self' https: " + hashes.join(" "))
-    // }))
     .pipe(gulp.dest('./public'))
   ;
 });
