@@ -595,10 +595,6 @@ article:
       counter:
         icon: fas fa-eye
         unit: '次浏览'
-      # 文章评论数量：只支持 valine
-      valinecount:
-        icon: fas fa-comment-dots
-        desc: '' # 条评论
       # 文章字数和阅读时长
       wordcount:
         icon_wordcount: fas fa-keyboard
@@ -909,9 +905,9 @@ music:
 
 ## 选择评论系统
 
-目前共支持 15 款评论系统：
+目前共支持 13 款评论系统：
 
-artalk, giscus, beaudar, utterances, valine, twikoo, waline, minivaline, disqus, disqusjs, gitalk, vssue, livere, isso, hashover
+artalk, giscus, beaudar, utterances, twikoo, waline, disqus, disqusjs, gitalk, vssue, livere, isso, hashover
 
 ```yaml blog/_config.volantis.yml
 comments:
@@ -1156,45 +1152,41 @@ comments:
 
 
 
-{% folding blue:: Valine 及其衍生 %}
+{% folding blue:: 由 Valine 衍生 %}
 
 {% tabs comments-valine , 1 %}
 
+<!-- tab twikoo -->
 
-<!-- tab Valine -->
-
-<i class='fas fa-comment-dots fa-fw'></i> 一款快速、简洁且高效的无后端评论系统
-<i class='fas fa-globe fa-fw'></i> [https://valine.js.org](https://valine.js.org)
+<i class='fas fa-comment-dots fa-fw'></i> 一个简洁、安全、免费的静态网站评论系统 | A simple, safe, free comment system.
+<i class='fas fa-globe fa-fw'></i> [https://twikoo.js.org/](https://twikoo.js.org/)
 
 ```yaml blog/_config.volantis.yml
 comments:
   ...
-  service: valine
+  service: twikoo
   ...
-  valine:
-    # js: https://cdn.jsdelivr.net/npm/valine@1.4/dist/Valine.min.js
-    path: # 全局评论地址 目前设置全局评论地址后visitor失效,这是valine的问题
-    placeholder: 快来评论吧~  # 评论占位提示
-    # 其他配置项按照yml格式继续填写即可 除了 [el path placeholder emojiCDN emojiMaps] 选项
-    appId: # your appId
-    appKey: # your appKey
-    ... 可选配置项详见源码
+  twikoo:
+    js: https://cdn.jsdelivr.net/npm/twikoo@latest # 建议锁定版本
+    path: # 全局评论地址
+    # 其他配置项按照yml格式继续填写即可 除了 [el path] 选项
+    envId: xxxxxxxxxxxxxxx # 腾讯云环境id
 ```
 
 其中，`placeholder` 支持在 front-matter 中设置。
 
 ```yaml front-matter
 ---
-valine:
+twikoo:
   placeholder: 你觉得xxx怎么样呢？
 ---
 ```
 
-也可以通过设置 `valine.path` 实现多个页面共用一个评论框。
+也可以通过设置 `twikoo.path` 实现多个页面共用一个评论框。
 
 ```yaml front-matter
 ---
-valine:
+twikoo:
   path: /
 ---
 ```
@@ -1244,50 +1236,6 @@ waline:
 
 <!-- endtab -->
 
-<!-- tab MiniValine -->
-
-<i class='fas fa-comment-dots fa-fw'></i> 一款快速、简洁且高效的评论系统
-<i class='fas fa-globe fa-fw'></i> [https://github.com/MiniValine/MiniValine/](https://github.com/MiniValine/MiniValine/)
-
-```yaml blog/_config.volantis.yml
-comments:
-  ...
-  service: minivaline
-  ...
-  # MiniValine
-  # https://github.com/MiniValine/MiniValine
-  minivaline:
-    js: https://cdn.jsdelivr.net/npm/minivaline@latest
-    path: # 全局评论地址
-    placeholder: 快来评论吧~  # 全局评论占位提示
-    # 更多选项 https://minivaline.js.org/docs/cn/#/Options 按照yml格式继续填写即可 （除了 [el path placeholder] 选项）
-    # 下面是一个例子：
-    serverURL: https://hello.com
-```
-
-
-
-其中，`placeholder` 支持在 front-matter 中设置。
-
-```yaml front-matter
----
-minivaline:
-  placeholder: 你觉得xxx怎么样呢？
----
-```
-
-也可以通过设置 `minivaline.path` 实现多个页面共用一个评论框。
-
-```yaml front-matter
----
-minivaline:
-  path: /
----
-```
-
-<!-- endtab -->
-
-
 {% endtabs %}
 
 {% endfolding %}
@@ -1333,43 +1281,6 @@ artalk:
 
 <!-- endtab -->
 
-
-<!-- tab twikoo -->
-
-<i class='fas fa-comment-dots fa-fw'></i> 一个简洁、安全、免费的静态网站评论系统 | A simple, safe, free comment system.
-<i class='fas fa-globe fa-fw'></i> [https://twikoo.js.org/](https://twikoo.js.org/)
-
-```yaml blog/_config.volantis.yml
-comments:
-  ...
-  service: twikoo
-  ...
-  twikoo:
-    js: https://cdn.jsdelivr.net/npm/twikoo@latest # 建议锁定版本
-    path: # 全局评论地址
-    # 其他配置项按照yml格式继续填写即可 除了 [el path] 选项
-    envId: xxxxxxxxxxxxxxx # 腾讯云环境id
-```
-
-其中，`placeholder` 支持在 front-matter 中设置。
-
-```yaml front-matter
----
-twikoo:
-  placeholder: 你觉得xxx怎么样呢？
----
-```
-
-也可以通过设置 `twikoo.path` 实现多个页面共用一个评论框。
-
-```yaml front-matter
----
-twikoo:
-  path: /
----
-```
-
-<!-- endtab -->
 
 <!-- tab Livere -->
 
@@ -1435,7 +1346,7 @@ comments:
 
 **可以通过在 front-matter 设置 config 实现在特定页面修改评论系统的相关配置。**
 
-**支持的有(按字母顺序): giscus, gitalk, minivaline, twikoo, valine, waline**
+**支持的有(按字母顺序): giscus, gitalk, twikoo, waline**
 
 ```yaml front-matter
 ---
@@ -1614,29 +1525,6 @@ plugins:
   # https://www.tidio.com/
   tidio:
     id: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-```
-
-### HexoPlusPlus
-```yaml blog/_config.volantis.yml
-plugins:
-  ...
-  # HexoPlusPlus
-  # https://github.com/HexoPlusPlus/HexoPlusPlus
-  # https://hexoplusplus.js.org/
-  # 无服务器Hexo后端,支持文章编辑,自带图床功能.目标:解决静态博客所有痛点[文章编辑、图片上传、博主活跃信息统计、博主说说、Twikoo加强版、阅读量统计等
-  hpp:
-    # 说说功能
-    # Set `plugins: ["hpptalk"]` to enable in front-matter
-    # 支持 Pjax
-    hpp_talk:
-      css: https://cdn.jsdelivr.net/gh/HexoPlusPlus/HexoPlusPlus@latest/talk.css # 建议锁定版本
-      js: https://cdn.jsdelivr.net/gh/HexoPlusPlus/HexoPlusPlus@latest/talk_user.js # 建议锁定版本
-      limit: 10
-      start: 0
-      # 配置项按照yml格式继续填写即可
-      # domain:
-      # themecss:
-    # HexoPlusPlus其他功能暂未集成
 ```
 
 ### 友链朋友圈

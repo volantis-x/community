@@ -76,7 +76,7 @@ root: /
 
 {% folding open, 教程与指南 %}
 
-[Hexo 官方文档](https://hexo.io) | [Valine 官方文档](https://valine.js.org)
+[Hexo 官方文档](https://hexo.io)
 
 请一定要阅读官方文档！
 

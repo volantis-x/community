@@ -55,7 +55,7 @@ layout: docs
 seo_title: 关于
 bottom_meta: false
 sidebar: []
-valine:
+twikoo:
   placeholder: 有什么想对我说的呢？
 ---
 
@@ -177,7 +177,7 @@ sitemap: false
 seo_title: 404 Not Found
 bottom_meta: false
 sidebar: []
-valine:
+twikoo:
   path: /404.html
   placeholder: 请留言告诉我您要访问哪个页面找不到了
 ---
@@ -484,7 +484,6 @@ plugins:
   - katex
   - artitalk
   - bbtalk
-  - hpptalk
   - fcircle
   - gitter
   - indent
@@ -506,7 +505,6 @@ plugins:
   - artitalk
   # - bbtalk
   # - fcircle
-  # - hpptalk
 ---
 ```
 
