@@ -1152,7 +1152,11 @@ comments:
 
 
 
-{% folding blue:: 由 Valine 衍生 %}
+{% folding blue:: Valine 衍生系列 %}
+
+{% note error :: Valine 在 5.0 版本被移除,具体原因可参考[hexo-theme-next#188#issuecomment-766578906](https://github.com/next-theme/hexo-theme-next/issues/188#issuecomment-766578906) %}
+
+以下是在解决 valine 遗留问题同一时期产生的评论系统故归为一类, 然在其社区issue中也报告了类似的攻击事件(eg: [twikoo#157](https://github.com/imaegoo/twikoo/issues/157) [waline#424](https://github.com/walinejs/waline/issues/424) [waline#430](https://github.com/walinejs/waline/issues/430)),故请谨慎选择.
 
 {% tabs comments-valine , 1 %}
 
