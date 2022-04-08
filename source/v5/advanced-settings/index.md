@@ -198,18 +198,26 @@ structured_data:
 ### 开启方法
 
 ```yaml blog/_config.volantis.yml
-# 本地静态文件使用jsdelivr的min版本加速 https://www.jsdelivr.com/features
-# 默认使用 https://cdn.jsdelivr.net/npm/hexo-theme-volantis@<%- theme.info.theme_version %>/source/js/*.min.js 的CDN压缩版本(min.js)，注意版本号对应关系！！可以通过修改以下配置项覆盖
+# 本地静态文件使用 CDN 加速
+# 默认使用 https://unpkg.com/hexo-theme-volantis@<%- theme.info.theme_version %>/source/js/*.js ，注意版本号对应关系！！可以通过修改以下配置项覆盖
 # 开发者注意 cdn.enable 设置为 false
 cdn:
-  enable: false
-  prefix: # CDN 前缀，为空使用默认值，链接最后不加 "/",例如： https://cdn.jsdelivr.net/gh/volantis-x/volantis-x.github.io@gh-page 填写最后编译生成的源码CDN地址前缀，此路径下应该含有/js与/css目录,该配置默认值是："https://cdn.jsdelivr.net/npm/hexo-theme-volantis@"+ theme.info.theme_version +"/source"
+  enable: true
+  # CDN 前缀，为空使用默认值，链接最后不加 "/",
+  # 例如： https://cdn.jsdelivr.net/gh/volantis-x/volantis-x.github.io@gh-page 填写最后编译生成的源码CDN地址前缀，此路径下应该含有/js与/css目录,
+  # 该配置默认值是："https://unpkg.com/hexo-theme-volantis@"+ theme.info.theme_version +"/source"
+  prefix: #https://npm.elemecdn.com/hexo-theme-volantis/source
   # 以下配置可以覆盖 cdn.prefix,配置项的值可以为空，但是要使用CDN必须依据路径填写配置项的键
   set:
     js:
-      app: #/js/app.js
+      app: /js/app.js
     css:
-      style: #/css/style.css # (异步加载样式)
+      style: /css/style.css # (异步加载样式)
+# 请求静态资源添加时间戳 ?time=1648684470140
+cdn_version: true
+# volantis static 静态资源文件 npm 包 CDN 地址 (后面加 "/" )
+# https://github.com/volantis-x/volantis-static
+volantis_static_cdn: https://unpkg.com/volantis-static/
 ```
 
 {% note info, 如果你需要对样式进行 DIY，可以只关闭 style 文件的 CDN。 %}

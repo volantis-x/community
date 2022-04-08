@@ -1,7 +1,7 @@
 use_cdn: false
 navbar:
   logo: # choose [img] or [icon + title]
-    img: '' #https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-NavBar@3x.png
+    img: '' # volantis-static/media/org.volantis/blog/Logo-NavBar@3x.png
     icon:
     title: 'Volantis 5.0 <sup style="color:#ff9800">alpha</sup>'
   menu:
@@ -55,26 +55,26 @@ cover:
   background: # https://bing.ioliu.cn/v1/rand?w=1920&h=1200
   features:
     - name: 博客
-      img: https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f4f0.svg
+      img: volantis-static/media/twemoji/assets/svg/1f4f0.svg
       url: /
     - name: 文档
-      img: https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f516.svg
+      img: volantis-static/media/twemoji/assets/svg/1f516.svg
       url: /v5/getting-started/
       target: _self
     - name: 示例
-      img: https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f4af.svg
+      img: volantis-static/media/twemoji/assets/svg/1f4af.svg
       url: /examples/
     - name: 帮助
-      img: https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f4ac.svg
+      img: volantis-static/media/twemoji/assets/svg/1f4ac.svg
       url: /faqs/
     - name: 鸣谢
-      img: https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f497.svg
+      img: volantis-static/media/twemoji/assets/svg/1f497.svg
       url: /contributors/
     - name: 归档
-      img: https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f5c3.svg
+      img: volantis-static/media/twemoji/assets/svg/1f5c3.svg
       url: /archives/
     - name: 源码
-      img: https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f9ec.svg
+      img: volantis-static/media/twemoji/assets/svg/1f9ec.svg
       url: https://github.com/volantis-x/hexo-theme-volantis/
       target: _self
 
@@ -82,7 +82,7 @@ article:
   preview:
     scheme: landscape # landscape
     # pin icon for post
-    pin_icon: # https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f4cc.svg
+    pin_icon: # volantis-static/media/twemoji/assets/svg/1f4cc.svg
     # auto generate title if not exist
     auto_title: false # false, true
     # auto generate excerpt if not exist
@@ -93,7 +93,7 @@ article:
   body:
     meta_library:
       author:
-        avatar: https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/apple-touch-icon.png
+        avatar: volantis-static/media/org.volantis/blog/favicon/apple-touch-icon.png
         name: Volantis Team
         url: https://github.com/volantis-x/
       updated:
@@ -191,7 +191,7 @@ sidebar:
       height: #64px  # Automatic height if not set
       fancybox: #true
       images:
-        - https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/qrcode/github@volantis.png
+        - volantis-static/media/org.volantis/blog/qrcode/github@volantis.png
 
     qgroup:
       class: text
@@ -265,17 +265,17 @@ site_footer:
   layout: [aplayer, social, source, analytics, copyright]
   copyright: '[Copyright © 2017-2021 Volantis Team](https://github.com/volantis-x/)'
   social:
-    - img: https://cdn.jsdelivr.net/gh/volantis-x/cdn-org@1.1/icon/1322024-social-media/020-rss.svg
+    - img: volantis-static/media/org.volantis/icon/1322024-social-media/020-rss.svg
       url: atom.xml
-    - img: https://cdn.jsdelivr.net/gh/volantis-x/cdn-org@1.1/icon/1322024-social-media/029-github.svg
+    - img: volantis-static/media/org.volantis/icon/1322024-social-media/029-github.svg
       url: https://github.com/volantis-x/
-    - img: https://cdn.jsdelivr.net/gh/volantis-x/cdn-org@1.1/icon/1322024-social-media/010-facebook.svg
+    - img: volantis-static/media/org.volantis/icon/1322024-social-media/010-facebook.svg
       url: /
-    - img: https://cdn.jsdelivr.net/gh/volantis-x/cdn-org@1.1/icon/1322024-social-media/018-twitter.svg
+    - img: volantis-static/media/org.volantis/icon/1322024-social-media/018-twitter.svg
       url: /
-    - img: https://cdn.jsdelivr.net/gh/volantis-x/cdn-org@1.1/icon/1322024-social-media/045-telegram.svg
+    - img: volantis-static/media/org.volantis/icon/1322024-social-media/045-telegram.svg
       url: /
-    - img: https://cdn.jsdelivr.net/gh/volantis-x/cdn-org@1.1/icon/1322024-social-media/006-youtube.svg
+    - img: volantis-static/media/org.volantis/icon/1322024-social-media/006-youtube.svg
       url: /
 
 
@@ -287,7 +287,7 @@ tag_plugins:
 plugins:
   clipboard:
     enable: true
-  fontawesome: /libs/@fortawesome/fontawesome-pro/css/all.min.css
+  fontawesome: volantis-static/libs/@fortawesome/fontawesome-pro/css/all.min.css
   parallax:
     enable: true
   aplayer:
@@ -339,13 +339,13 @@ custom_css:
     logofont:
       fontfamily: 'Dosis, "PingFang SC", "Microsoft YaHei", Helvetica, Arial'
       name: 'Dosis'
-      url: https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts@20.5.30/Dosis/Dosis-Medium.ttf
+      url: volantis-static/media/fonts/Dosis/Dosis-Medium.ttf
       weight: normal
       style: normal
     bodyfont:
       fontfamily: 'Dosis, "PingFang SC", "Microsoft YaHei", Helvetica, Arial'
       name: 'Dosis'
-      url: https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts@20.5.30/Dosis/Dosis-Medium.ttf
+      url: volantis-static/media/fonts/Dosis/Dosis-Medium.ttf
       weight: normal
       style: normal
 
