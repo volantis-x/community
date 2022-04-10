@@ -44,7 +44,7 @@ Volantis 官网支持 CI ，您可以直接在线编辑源码：
 {% link 在线编辑文档, https://github.com/volantis-x/community/tree/master/source %}
 
 
-### 如何收录博客
+### 发布与分享文章
 
 每位用户在使用或更新主题的时候都需要阅读官网的文档，收录的相关内容能帮助用户更高效地上手，同时也能够提高被收录的文章的曝光率。如果在官网能看到更多的有价值的文章，就会有更多 Volantis 用户或者非 Volantis 用户来访问。
 
@@ -60,7 +60,7 @@ author: inkss
 link: https://inkss.cn/blog/76993423/
 description: 本篇文章记录了我对 Volantis 主题做 Pjax 兼容的种种，大抵算是种记录吧~
 headimg: # 可以设置文章头图
-backup: https://archive.vn/U36NG # 将页面存档到 archive.tody 网页快照档案馆的存档链接 https://archive.tody
+backup: https://web.archive.org/web/xxxxxxxxxx # 将页面存档到互联网档案馆 archive.org 的存档链接  https://web.archive.org/save
 ---
 ```
 
