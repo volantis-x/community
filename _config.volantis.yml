@@ -408,9 +408,9 @@ rightmenus:
       - {id: 'copyImg', name: '复制图片文件', icon: 'fa-duotone PETERRIVE fa-image', event: 'copyImg', group: 'elementCheck'}
   menus:
       links:
-        - {id: 'help', name: '常见问题', icon: 'fa-duotone fa-question EMERALD', link: 'https://volantis.js.org/faqs/', group: 'link'}
-        - {id: 'examples', name: '示例博客', icon: 'fa-duotone fa-rss PETERRIVE', link: 'https://volantis.js.org/examples/', group: 'link'}
-        - {id: 'contributors', name: '加入社区', icon: 'fa-duotone fa-fan fa-spin AMETHYST', link: 'https://volantis.js.org/contributors/', group: 'link'}
+        - {id: 'help', name: '常见问题', icon: 'fa-duotone fa-question EMERALD', link: '/faqs/', group: 'link'}
+        - {id: 'examples', name: '示例博客', icon: 'fa-duotone fa-rss PETERRIVE', link: '/examples/', group: 'link'}
+        - {id: 'contributors', name: '加入社区', icon: 'fa-duotone fa-fan fa-spin AMETHYST', link: '/contributors/', group: 'link'}
         - hr
         - {id: 'source_docs', name: '本站源码', icon: 'fa-duotone fa-code-branch WETASPHALT', link: 'https://github.com/volantis-x/volantis-docs/', group: 'link'}
         - {id: 'source_theme', name: '主题源码', icon: 'fa-duotone fa-code-branch CONCRETE', link: 'https://github.com/volantis-x/hexo-theme-volantis/', group: 'link'}
