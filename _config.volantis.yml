@@ -350,7 +350,7 @@ custom_css:
       style: normal
 
 rightmenu:
-  enable: true
+  enable: false
   faicon: fa-duotone PETERRIVE
   print:
     icon: fa-duotone fa-print TURQUOISE
@@ -368,3 +368,51 @@ rightmenu:
     icon: fa-duotone fa-code-branch WETASPHALT
   source_theme:
     icon: fa-duotone fa-file-code CONCRETE
+
+rightmenus:
+  enable: true
+  order:
+    - plugins.navigation  
+    - hr
+    - plugins.inputBox
+    - plugins.seletctText
+    - plugins.elementCheck
+    - menus.links
+    - hr
+    - menus.darkMode
+    - plugins.articlePage
+    - music
+  options:
+    iconPrefix: fa-duotone PETERRIVE
+    articleShowLink: true
+  plugins:
+    navigation: 
+      - {id: 'left', name: '转到上一页', icon: 'fa-duotone fa-arrow-left', event: 'history.back()', group: 'navigation'}
+      - {id: 'right', name: '转到下一页', icon: 'fa-duotone fa-arrow-right', event: 'history.forward()', group: 'navigation'}
+      - {id: 'redo', name: '刷新当前页面', icon: 'fa-duotone fa-redo', event: 'window.location.reload()', group: 'navigation'}
+      - {id: 'up', name: '回到顶部', icon: 'fa-duotone fa-arrow-up', event: 'VolantisApp.scrolltoElement(volantis.dom.bodyAnchor)', group: 'navigation'}
+    articlePage:
+      - {id: 'printMode', name: '打印页面', icon: 'fa-duotone fa-print TURQUOISE', event: 'printMode', group: 'articlePage'}
+      - {id: 'readMode', name: '阅读模式', icon: 'fa-duotone fa-book-open EMERALD', event: 'readMode', group: 'articlePage'}
+    inputBox:
+      - {id: 'copyPaste', name: '粘贴文本', icon: 'fa-duotone PETERRIVE fa-paste', event: 'copyPaste', group: 'inputBox'}
+      - {id: 'copyAll', name: '全选文本', icon: 'fa-duotone PETERRIVE fa-object-ungroup', event: 'copyAll', group: 'inputBox'}
+      - {id: 'copyCut', name: '剪切文本', icon: 'fa-duotone PETERRIVE fa-cut', event: 'copyCut', group: 'inputBox'}
+    seletctText:
+      - {id: 'copyText', name: '复制文本', icon: 'fa-duotone PETERRIVE fa-copy', event: 'copyText', group: 'seletctText'}
+      - {id: 'searchWord', name: '站内搜索', icon: 'fa-duotone PETERRIVE fa-search', event: 'OpenSearch(__text__)', group: 'seletctText'}
+      - {id: 'bingSearch', name: '必应搜索', icon: 'fa-duotone PETERRIVE fa-search', event: 'window.open(`https://cn.bing.com/search?q=${__text__}`)', group: 'seletctText'}
+    elementCheck:
+      - {id: 'openTab', name: '新标签页打开', icon: 'fa-duotone PETERRIVE fa-external-link-square-alt', event: 'window.open(__link__)', group: 'elementCheck'}
+      - {id: 'copyLink', name: '复制链接地址', icon: 'fa-duotone PETERRIVE fa-link', event: 'copyLink', group: 'elementCheck'}
+      - {id: 'copyImg', name: '复制图片文件', icon: 'fa-duotone PETERRIVE fa-image', event: 'copyImg', group: 'elementCheck'}
+  menus:
+      links:
+        - {id: 'help', name: '常见问题', icon: 'fa-duotone fa-question EMERALD', link: 'https://volantis.js.org/faqs/', group: 'link'}
+        - {id: 'examples', name: '示例博客', icon: 'fa-duotone fa-rss PETERRIVE', link: 'https://volantis.js.org/examples/', group: 'link'}
+        - {id: 'contributors', name: '加入社区', icon: 'fa-duotone fa-fan fa-spin AMETHYST', link: 'https://volantis.js.org/contributors/', group: 'link'}
+        - hr
+        - {id: 'source_docs', name: '本站源码', icon: 'fa-duotone fa-code-branch WETASPHALT', link: 'https://github.com/volantis-x/volantis-docs/', group: 'link'}
+        - {id: 'source_theme', name: '主题源码', icon: 'fa-duotone fa-code-branch CONCRETE', link: 'https://github.com/volantis-x/hexo-theme-volantis/', group: 'link'}
+      darkMode: 
+        - {id: 'darkMode', name: '暗黑模式', icon: 'fa-duotone fa-eclipse-alt WISTERIA', event: 'volantis.dark.toggle()', group: 'darkMode'}
