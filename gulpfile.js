@@ -92,7 +92,7 @@ gulp.task('csp_replace', () => {
         s = s.replace(/<script.*?>/g, function (match) {
           return match.replace(/>/g, ` nonce='${nonce}'>`);
         });
-        s=s.replace(/script-src 'self' https: 'unsafe-inline'[^;]*/, `script-src 'self' https: 'unsafe-hashes' 'nonce-${nonce}' 'strict-dynamic' ` + unsafe_script_hash.join(" "))
+        s=s.replace(/script-src 'self'[^;]*/, `script-src 'self' https: 'unsafe-hashes' 'nonce-${nonce}' 'strict-dynamic' ` + unsafe_script_hash.join(" "))
         return s
       }
     }))

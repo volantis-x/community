@@ -263,7 +263,7 @@ sidebar:
 
 site_footer:
   layout: [aplayer, social, source, analytics, copyright]
-  copyright: '[Copyright © 2017-2021 Volantis Team](https://github.com/volantis-x/)'
+  copyright: '[Copyright © since 2017 Volantis Team](https://github.com/volantis-x/)'
   social:
     - img: volantis-static/media/org.volantis/icon/1322024-social-media/020-rss.svg
       url: atom.xml
@@ -331,10 +331,10 @@ custom_css:
   cursor:
     enable: true
   font_smoothing: true
-  sidebar:
-    effect: [shadow] # [shadow, floatable, blur]
-  body:
-    effect: [shadow] # [shadow, floatable, blur]
+  # sidebar:
+  #   effect: [shadow] # [shadow, floatable, blur]
+  # body:
+  #   effect: [shadow] # [shadow, floatable, blur]
   fontfamily:
     logofont:
       fontfamily: 'Dosis, "PingFang SC", "Microsoft YaHei", Helvetica, Arial'
