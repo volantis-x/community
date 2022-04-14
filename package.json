@@ -10,10 +10,10 @@
     "s": "hexo clean && hexo server"
   },
   "hexo": {
-    "version": "5.4.1"
+    "version": "6.1.0"
   },
   "dependencies": {
-    "hexo": "^5.4.1",
+    "hexo": "^6.1.0",
     "hexo-autonofollow": "^1.0.1",
     "hexo-autoprefixer": "^2.0.0",
     "hexo-deployer-git": "^3.0.0",
