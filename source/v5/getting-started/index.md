@@ -44,10 +44,10 @@ description: Volantis 是一个功能丰富、高度模块化的 Hexo 博客主�
 如果您从旧版本更新或着其它主题迁移，请确保环境版本不要太低，否则会产生兼容性问题。
 
 ```yaml
-Hexo: 4.2 ~ 5.x
-hexo-cli: 3.1 ~ 4.x
-node.js: 12.16 ~ latest # 推荐使用 LTS 版
-npm: 6.13 ~ latest
+Hexo: 5.4 ~ 6.x
+hexo-cli: 4.x
+node.js: 16.x LTS ~ latest LTS
+npm: 8.x ~ latest LTS
 ```
 
 <!-- endtab -->
