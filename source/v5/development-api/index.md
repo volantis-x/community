@@ -493,11 +493,13 @@ let points={
     ├─ style.styl
     ├─ dark.styl
     ├─ darkVar.styl
-    ├─ head.ejs
+    ├─ headBegin.ejs
+    ├─ headEnd.ejs
     ├─ header.ejs
     ├─ topMeta.ejs
     ├─ bottomMeta.ejs
     ├─ postEnd.ejs
+    ├─ bodyBegin.ejs
     └─ bodyEnd.ejs
 
 ```
@@ -510,11 +512,13 @@ custom_files:
   style: source/_volantis/style.styl
   dark: source/_volantis/dark.styl
   darkVar: source/_volantis/darkVar.styl
-  head: source/_volantis/head.ejs
+  headBegin: source/_volantis/headBegin.ejs
+  headEnd: source/_volantis/headEnd.ejs
   header: source/_volantis/header.ejs
   topMeta: source/_volantis/topMeta.ejs
   bottomMeta: source/_volantis/bottomMeta.ejs
   postEnd: source/_volantis/postEnd.ejs
+  bodyBegin: source/_volantis/bodyBegin.ejs
   bodyEnd: source/_volantis/bodyEnd.ejs
 ```
 
