@@ -436,13 +436,15 @@ let points={
     "darkVar",
   ],
   views:[
-    "head",
+    "headBegin",
+    "headEnd",
     "header",
     "side",
     "topMeta",
     "bottomMeta",
     "footer",
     "postEnd",
+    "bodyBegin",
     "bodyEnd",
   ]
 }
@@ -460,7 +462,9 @@ let points={
 
 #### 布局视图注入点
 
-- head: 向 `theme/layout/_partial/head.ejs` 文件 `<head>` 标签末尾注入自定义内容.
+- headBegin: 向 `theme/layout/_partial/head.ejs` 文件 `<head>` 标签开头注入自定义内容.
+
+- headEnd: 向 `theme/layout/_partial/head.ejs` 文件 `<head>` 标签末尾注入自定义内容.
 
 - header: 向 `theme/layout/_partial/header.ejs` 文件 导航栏 `.nav-main` 末尾注入自定义内容.
 
@@ -473,6 +477,8 @@ let points={
 - footer: 向 `theme/layout/_partial/footer.ejs` 文件 `<footer>` 标签末尾注入自定义内容.
 
 - postEnd: 向 `theme/layout/_partial/article.ejs` 文件 `<article>` 标签末尾注入自定义内容.
+
+- bodyBegin:  向 `theme/layout/layout.ejs` 文件 `<body>` 标签开头注入自定义内容.
 
 - bodyEnd:  向 `theme/layout/layout.ejs` 文件 `<body>` 标签末尾注入自定义内容.
 
