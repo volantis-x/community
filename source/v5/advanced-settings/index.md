@@ -99,9 +99,6 @@ csp:
     style-src 'self' https: 'unsafe-inline' *;
   "
   # 可以使用自动程序替换默认的 'unsafe-inline' 和 * 生成更严格的内容安全策略.
-  # hexo_fliter_sha256 用于 hexo g 时替换 'unsafe-inline' 生成 script-src 'sha256-' , 只适用于外层不含有压缩工具得场景.
-  # 如果外层含有压缩工具会改变 hash 导致无效,hexo_fliter_sha256 需设为false, 使用 gulp 方案.
-  hexo_fliter_sha256: false
   # 另可以参考官网的 gulp 方案.
   # gulpfile.js https://github.com/volantis-x/community/blob/main/gulpfile.js
 ```
@@ -247,23 +244,28 @@ npm install --save-dev gulp gulp-html-minifier-terser gulp-htmlclean gulp-htmlmi
 
 {% folding green, gulp 配置文件 %}
 
+https://github.com/volantis-x/community/blob/main/gulpfile.js
+
 ```js blog/gulpfile.js
 var gulp = require('gulp');
-var minifycss = require('gulp-minify-css');
+const cleanCSS = require('gulp-clean-css');
 var htmlmin = require('gulp-html-minifier-terser');
 var htmlclean = require('gulp-htmlclean');
 var terser = require('gulp-terser');
+var sourcemaps = require('gulp-sourcemaps');
 
 // 压缩css文件
 const minify_css = () => (
-    gulp.src(['./public/**/*.css'])
-        .pipe(minifycss())
+    gulp.src(['./public/**/*.css','!./public/{lib,lib/**}','!./public/{libs,libs/**}','!./public/{media,media/**}'])
+        .pipe(sourcemaps.init())
+        .pipe(cleanCSS({compatibility: 'ie8'}))
+        .pipe(sourcemaps.write('./maps'))
         .pipe(gulp.dest('./public'))
 );
 
 // 压缩html文件
 const minify_html = () => (
-    gulp.src(['./public/**/*.html','!./public/{lib,lib/**}'])
+    gulp.src(['./public/**/*.html','!./public/{lib,lib/**}','!./public/{libs,libs/**}','!./public/{media,media/**}'])
         .pipe(htmlclean())
         .pipe(htmlmin({
             removeComments: true,
@@ -276,16 +278,13 @@ const minify_html = () => (
 
 // 压缩js文件
 const minify_js = () => (
-    gulp.src(['./public/**/*.js', '!./public/**/*.min.js','!./public/{lib,lib/**}'])
+    gulp.src(['./public/**/*.js', '!./public/**/*.min.js','!./public/{lib,lib/**}','!./public/{libs,libs/**}','!./public/{media,media/**}'])
+        .pipe(sourcemaps.init())
         .pipe(terser())
+        .pipe(sourcemaps.write('./maps'))
         .pipe(gulp.dest('./public'))
 )
 
-module.exports = {
-    minify_html: minify_html,
-    minify_css: minify_css,
-    minify_js: minify_js
-};
 gulp.task('one', gulp.parallel(
     minify_html,
     minify_css,
