@@ -377,21 +377,25 @@ rightmenus:
     - plugins.inputBox
     - plugins.seletctText
     - plugins.elementCheck
+    - plugins.elementImage
+    - hr
     - menus.links
     - hr
     - menus.darkMode
+    - hr
     - plugins.articlePage
+    - hr
     - music
   options:
     iconPrefix: fa-duotone PETERRIVE
-    articleShowLink: true
+    articleShowLink: false
     corsAnywhere: https://cors.adc.ink/
   plugins:
     navigation: 
       - {id: 'left', name: '转到上一页', icon: 'fa-duotone fa-arrow-left', event: 'history.back()', group: 'navigation'}
       - {id: 'right', name: '转到下一页', icon: 'fa-duotone fa-arrow-right', event: 'history.forward()', group: 'navigation'}
       - {id: 'redo', name: '刷新当前页面', icon: 'fa-duotone fa-redo', event: 'window.location.reload()', group: 'navigation'}
-      - {id: 'up', name: '回到顶部', icon: 'fa-solid fa-arrow-up', event: 'VolantisApp.scrolltoElement(volantis.dom.bodyAnchor)', group: 'navigation'}
+      - {id: 'up', name: '回到顶部', icon: 'fa-duotone fa-arrow-up', event: 'VolantisApp.scrolltoElement(volantis.dom.bodyAnchor)', group: 'navigation'}
     articlePage:
       - {id: 'printMode', name: '打印页面', icon: 'fa-duotone fa-print TURQUOISE', event: 'printMode', group: 'articlePage'}
       - {id: 'readMode', name: '阅读模式', icon: 'fa-duotone fa-book-open EMERALD', event: 'readMode', group: 'articlePage'}
@@ -406,7 +410,9 @@ rightmenus:
     elementCheck:
       - {id: 'openTab', name: '新标签页打开', icon: 'fa-duotone PETERRIVE fa-external-link-square-alt', event: 'window.open(__link__)', group: 'elementCheck'}
       - {id: 'copyLink', name: '复制链接地址', icon: 'fa-duotone PETERRIVE fa-link', event: 'copyLink', group: 'elementCheck'}
-      - {id: 'copyImg', name: '复制图片文件', icon: 'fa-duotone PETERRIVE fa-image', event: 'copyImg', group: 'elementCheck'}
+    elementImage:
+      - {id: 'copyImg', name: '复制图片', icon: 'fa-duotone PETERRIVE fa-image', event: 'copyImg', group: 'elementImage'}
+      - {id: 'googleImg', name: '谷歌识图', icon: 'fa-duotone PETERRIVE fa-images', event: 'window.open(`https://www.google.com/searchbyimage?image_url=${__link__}`)', group: 'elementImage'}
   menus:
       links:
         - {id: 'help', name: '常见问题', icon: 'fa-duotone fa-question EMERALD', link: '/faqs/', group: 'link'}
