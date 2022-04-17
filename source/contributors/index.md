@@ -41,7 +41,7 @@ Volantis 社区的发展离不开团队大佬们的无私奉献和社区小伙�
 
 Volantis 官网支持 CI ，您可以直接在线编辑源码：
 
-{% link 在线编辑文档, https://github.com/volantis-x/community/tree/master/source %}
+{% link 在线编辑文档::https://github.com/volantis-x/community/tree/main/source::https://unpkg.com/volantis-static@0.0.1649552113628/media/twemoji/assets/svg/270f.svg %}
 
 
 ### 发布与分享文章
@@ -84,4 +84,4 @@ inkss:
 {% endnoteblock %}
 
 
-{% link 在线编辑文档, https://github.com/volantis-x/community/tree/master/source/_posts/blogs %}
+{% link 在线编辑文档::https://github.com/volantis-x/community/tree/main/source/_posts/blogs::https://unpkg.com/volantis-static@0.0.1649552113628/media/twemoji/assets/svg/1f4dd.svg %}

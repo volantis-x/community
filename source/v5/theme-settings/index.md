@@ -30,12 +30,12 @@ disqus:
 navbar:
   visiable: auto # always, auto
   logo: # choose [img] or [icon + title]
-    img: https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-NavBar@3x.png
+    img: volantis-static/media/org.volantis/blog/Logo-NavBar@3x.png # https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-NavBar@3x.png
     icon:
     title:
   menu:
     - name: 博客
-      icon: fas fa-rss
+      icon: fa-solid fa-rss
       url: /
 ```
 
@@ -77,13 +77,13 @@ custom_css:
   ...
   cursor:
     enable: true
-    text: https://cdn.jsdelivr.net/gh/inkss/common@master/cursor/text.png
-    pointer: https://cdn.jsdelivr.net/gh/inkss/common@master/cursor/pointer.png
-    default: https://cdn.jsdelivr.net/gh/inkss/common@master/cursor/left_ptr.png
-    not-allowed: https://cdn.jsdelivr.net/gh/inkss/common@master/cursor/circle.png
-    zoom-out: https://cdn.jsdelivr.net/gh/inkss/common@master/cursor/zoom-out.png
-    zoom-in: https://cdn.jsdelivr.net/gh/inkss/common@master/cursor/zoom-in.png
-    grab: https://cdn.jsdelivr.net/gh/inkss/common@master/cursor/openhand.png
+    text: volantis-static/media/cursor/text.png # https://cdn.jsdelivr.net/gh/inkss/common@1/cursor/text.png
+    pointer: volantis-static/media/cursor/pointer.png # https://cdn.jsdelivr.net/gh/inkss/common@1/cursor/pointer.png
+    default: volantis-static/media/cursor/left_ptr.png # https://cdn.jsdelivr.net/gh/inkss/common@1/cursor/left_ptr.png
+    not-allowed: volantis-static/media/cursor/circle.png # https://cdn.jsdelivr.net/gh/inkss/common@1/cursor/circle.png
+    zoom-out: volantis-static/media/cursor/zoom-out.png # https://cdn.jsdelivr.net/gh/inkss/common@1/cursor/zoom-out.png
+    zoom-in: volantis-static/media/cursor/zoom-in.png # https://cdn.jsdelivr.net/gh/inkss/common@1/cursor/zoom-in.png
+    grab: volantis-static/media/cursor/openhand.png # https://cdn.jsdelivr.net/gh/inkss/common@1/cursor/openhand.png
 ```
 
 
@@ -99,6 +99,7 @@ custom_css:
   ...
   navbar:
     height: 64px
+    width: auto # auto, max
     effect: [shadow, blur] # [shadow, floatable, blur]
 ```
 
@@ -141,9 +142,6 @@ custom_css:
       h3: left
       h4: left
       p: justify
-    note: # style for default note: {% note text %}
-      icon: '\f054'
-      color: ''
 ```
 
 ### 布局间距
@@ -154,10 +152,10 @@ custom_css:
   ...
   gap:
     h2: 48px # Spacing above H2 (only px unit)
-    h3: 32px # Spacing above H3 (only px unit)
+    h3: 24px # Spacing above H3 (only px unit)
     h4: 16px # Spacing above H4 (only px unit)
-    paragraph: 1rem # Paragraph spacing between paragraphs
-    row: .5rem # Paragraph spacing between other elements
+    p: 1em # Paragraph spacing between paragraphs
+    line_height: 1.6 # normal, 1.5, 1.75, 2 ...
 ```
 
 ### 自定义字体
@@ -170,21 +168,21 @@ custom_css:
     logofont:
       fontfamily: '"Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial'
       name: 'Varela Round'
-      url: https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/VarelaRound/VarelaRound-Regular.ttf
+      url: volantis-static/media/fonts/VarelaRound/VarelaRound-Regular.ttf # https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/VarelaRound/VarelaRound-Regular.ttf
       weight: normal
       style: normal
     bodyfont:
-      fontfamily: 'UbuntuMono, "PingFang SC", "Microsoft YaHei", Helvetica, Arial'
+      fontfamily: 'UbuntuMono, "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial'
       name: 'UbuntuMono'
-      url: https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/UbuntuMono/UbuntuMono-Regular.ttf
+      url: volantis-static/media/fonts/UbuntuMono/UbuntuMono-Regular.ttf # https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/UbuntuMono/UbuntuMono-Regular.ttf
       weight: normal
       style: normal
     codefont:
-      fontfamily: 'Menlo, Monaco'
-      name: 'Monaco'
-      url: https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/Monaco/Monaco.ttf
-      weight: normal
-      style: normal
+      fontfamily: 'Menlo, UbuntuMono, Monaco'
+      # name: 'Monaco'
+      # url: volantis-static/media/fonts/Monaco/Monaco.ttf # https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/Monaco/Monaco.ttf
+      # weight: normal
+      # style: normal
 ```
 
 ### 自定义颜色
@@ -291,23 +289,25 @@ color_scheme:
 # 自定义右键菜单
 rightmenu:
   enable: true
-  faicon: fa              # 公共图标类型 fa fal fas fad
+  faicon: fa              # 公共图标类型 fa fal fa-solid fa-duotone
   # hr: 分割线, music: 音乐控制器
-  layout: [home, hr, help, examples, contributors, hr, source_docs, source_theme, hr, print, darkmode, music]
+  layout: [home, hr, help, examples, contributors, hr, source_docs, source_theme, hr, print, darkmode, reading, music]
   ### 可选功能项 ###
   print:                  # 只有文章页才允许自定义打印
     name: 打印页面
     icon: fa fa-print
-    defaultStyles: true   # 是否使用预制的打印样式
-    # js:                 # 自定义 js ，可用于修饰打印样式~， 右键剔除了对 Jquery 的依赖，所以此处你只能使用原生 js
-    #  - document.querySelector('article#comments').remove()  # 移除评论
   darkmode:        # 需开启 plugins.darkmodejs
     name: 暗黑模式
     icon: fa fa-moon
+  reading:
+    name: 阅读模式
+    icon: fa fa-book-open
   customPicUrl:    # 右键的图片复制：只有 Chrome 支持，且只支持 PNG 格式的图片。
     enable: false  # 如果使用了对象存储且开启了自适应 Webp，那么可以提供额外的链接用以替换图片的访问地址
     old: #https://static.inkss.cn/img/article/
-    new: #https://cdn.jsdelivr.net/gh/inkss/inkss-cdn@master/img/article/  
+    new: #https://cdn.jsdelivr.net/gh/inkss/inkss-cdn@master/img/article/
+  music:           # 当设定全局音乐播放器时，是否一直显示音乐控制菜单。false：仅当音乐播放时启用
+    alwaysShow: true
   ### 自定义菜单 ###
   help:
     name: 常见问题
@@ -339,31 +339,31 @@ rightmenu:
 ```yaml blog/_config.volantis.yml
 # 注意事项：建议规范全站路径 URL 最后带一个 "/" 例如 "about/"
 navbar:
+  visiable: auto # always, auto
   logo: # choose [img] or [icon + title]
-    img:
+    img: volantis-static/media/org.volantis/blog/Logo-NavBar@3x.png # https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-NavBar@3x.png
     icon:
     title:
   menu:
-    # The following can be written in `blog/source/_data/menu.yml`
     - name: 博客
-      icon: fas fa-rss
+      icon: fa-solid fa-rss
       url: /
     - name: 分类
-      icon: fas fa-folder-open
+      icon: fa-solid fa-folder-open
       url: categories/
     - name: 标签
-      icon: fas fa-tags
+      icon: fa-solid fa-tags
       url: tags/
     - name: 归档
-      icon: fas fa-archive
+      icon: fa-solid fa-archive
       url: archives/
     - name: 友链
-      icon: fas fa-link
+      icon: fa-solid fa-link
       url: friends/
     - name: 关于
-      icon: fas fa-info-circle
+      icon: fa-solid fa-info-circle
       url: about/
-  search: 搜索   # Search bar placeholder
+  search: Search...   # Search bar placeholder
 ```
 
 ### 菜单嵌套
@@ -372,7 +372,7 @@ navbar:
 ```yaml
 ...
 - name: 更多
-  icon: fas fa-ellipsis-v
+  icon: fa-solid fa-ellipsis-v
   rows:
     - name: 主题源码
       url: https://github.com/volantis-x/hexo-theme-volantis/
@@ -409,11 +409,11 @@ navbar:
 ```yaml
 ...
 - name: 近期
-  icon: fas fa-clock
+  icon: fa-solid fa-clock
   url: /
   rows:
     - name: 热门文章
-      icon: fas fa-fire
+      icon: fa-solid fa-fire
     - name: ProHUD 开源库的设计思路
       url: blog/2019-08-27-prohud/
     - name: ValueX：实用的安全对象类型转换库
@@ -424,10 +424,10 @@ navbar:
 
 ### 播放器
 
-在子菜单中，新增一个 `icon: fas fa-compact-disc` 的“菜单”就会被渲染成一个 APlayer 播放器。
+在子菜单中，新增一个 `icon: fa-solid fa-compact-disc` 的“菜单”就会被渲染成一个 APlayer 播放器。
 ```yaml
 - name: 背景音乐
-  icon: fas fa-compact-disc
+  icon: fa-solid fa-compact-disc
 ```
 
 
@@ -1553,12 +1553,15 @@ plugins:
 ```yaml blog/_config.volantis.yml
 plugins:
   ...
-  # 消息提示
+  # 消息提示 
+  # izitoast@1.4.0
   message:
     enable: true
+    css: volantis-static/libs/izitoast/dist/css/iziToast.min.css
+    js: volantis-static/libs/izitoast/dist/js/iziToast.min.js
     icon:     # 默认图标，支持对图标添加颜色，可选值：see：/source/css/_style/_plugins/fontcolor.styl
-      default: fas fa-info-circle light-blue
-      quection: fas fa-question-circle light-blue
+      default: fa-solid fa-info-circle light-blue
+      quection: fa-solid fa-question-circle light-blue
     time:     # 默认持续时间
       default: 5000
       quection: 20000
@@ -1576,10 +1579,11 @@ plugins:
       icon: 'far fa-copyright light-blue'
     aplayer:                              # 是否开启音乐通知；播放、暂停、失败 时的图标
       enable: true
-      play: fas fa-play
-      pause: fas fa-pause
-    rightmenu:                            # 是否开启右键模块的消息通知
-      enable: true
+      play: fa-solid fa-play
+      pause: fa-solid fa-pause
+    rightmenu:                            
+      enable: true                        # 是否开启右键模块的消息通知
+      notice: true                        # 唤醒原右键菜单的通知 
 ```
 
 ### 轮播标签

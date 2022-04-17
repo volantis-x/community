@@ -80,10 +80,10 @@ Volantis 用户可以在不修改主题文件的情况下向 head 和 body 中�
 
 代码片段注入的位置：
 
-- head_begin: 注入在 <head> 之后
-- head_end: 注入在 </head> 之前
-- body_begin: 注入在 <body> 之后
-- body_end: 注入在 </body> 之前
+- head_begin: 注入在 `<head>` 之后
+- head_end: 注入在 `</head>` 之前
+- body_begin: 注入在 `<body>` 之后
+- body_end: 注入在 `</body>` 之前
 
 ```yaml blog/_config.yml
 import:
@@ -113,4 +113,4 @@ import:
 
 ## 更多
 
-{% link Hexo 官方文档 #配置, https://hexo.io/zh-cn/docs/configuration %}
+{% link Hexo 官方文档 #配置::https://hexo.io/zh-cn/docs/configuration::https://unpkg.com/volantis-static@0.0.1649552113628/media/twemoji/assets/svg/1f4da.svg %}

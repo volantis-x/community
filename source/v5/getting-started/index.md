@@ -16,7 +16,7 @@ description: Volantis 是一个功能丰富、高度模块化的 Hexo 博客主�
 
 **[Volantis](https://volantis.js.org) 是一个功能丰富、高度模块化的 Hexo 博客主题。得益于其强大的模块化特性，您可以轻松搭建一个极简风格的博客，也可以仿照官网搭建一个多人协作的、包含文档模块的大体量综合型博客。**
 
-{% link 示例博客, https://volantis.js.org/examples/ %}
+{% link 示例博客::/examples/::https://unpkg.com/volantis-static@0.0.1649552113628/media/twemoji/assets/svg/1f433.svg %}
 
 所有的 Volantis 用户都可以按照格式自行创建 [**Issue**](https://github.com/volantis-x/examples/issues/) 来将自己的博客添加到官网的示例博客页面中。
 
@@ -240,7 +240,7 @@ git pull
 {% noteblock idea, 实用小技巧 %}
 
 所有需要写在主题配置文件中的配置都可以写在站点配置文件的 `theme_config:` 中，在 {% u Hexo 5.0 %} 后，还可以写在 `_config.volantis.yml` 文件中，详见 Hexo 官方文档：
-{% link 覆盖主题配置, https://hexo.io/zh-cn/docs/configuration#%E8%A6%86%E7%9B%96%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE %}
+{% link 覆盖主题配置::https://hexo.io/zh-cn/docs/configuration#覆盖主题配置::https://unpkg.com/volantis-static@0.0.1649552113628/media/twemoji/assets/svg/1f4da.svg %}
 
 也可以直接查看本站源码中站点配置文件的写法：[_config.volantis.yml](https://github.com/volantis-x/volantis-docs/blob/master/_config.volantis.yml)
 
@@ -249,7 +249,7 @@ git pull
 
 请对照 {% btn, 更新日志, https://github.com/volantis-x/hexo-theme-volantis/releases %} 进行更新.
 
-{% link 如何正确地更新主题, /how-to-update/ %}
+{% link 如何正确地更新主题::/how-to-update/::https://unpkg.com/volantis-static@0.0.1649552113628/media/twemoji/assets/svg/1f4d6.svg %}
 
 ## 许可协议
 

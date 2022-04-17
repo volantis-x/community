@@ -19,19 +19,26 @@ disqus:
 
 [`/source/css/Readme.md`](https://github.com/volantis-x/hexo-theme-volantis/blob/dev/source/css/Readme.md)
 
-## 全局变量 volantis
+## 全局变量
+
+### volantis
 
 我们提供了全局变量 volantis 和一些全局函数等主题开发调用接口。
 
-源码参考：[`layout/_partial/scripts/global.ejs`](https://github.com/volantis-x/hexo-theme-volantis/blob/d71e7d533a8a3f13694f1adbb11417d02ac4ca04/layout/_partial/scripts/global.ejs)
+源码参考：[`layout/_partial/scripts/global.ejs`](https://github.com/volantis-x/hexo-theme-volantis/blob/dev/layout/_partial/scripts/global.ejs)
 
+### VolantisApp
+
+我们提供了全局变量 VolantisApp 和一些全局函数等主题开发调用接口。
+
+源码参考：[`/source/js/app.js`](https://github.com/volantis-x/hexo-theme-volantis/blob/8cc1f93a992ef378bc5f30a0528d28d35a804379/source/js/app.js#L44)
 ## Pjax
 
 ### Pjax 重载区域划分接口
 
 我们提供了可以实现Pjax重载区域灵活划分的开发接口。
 
-源码参考：[`layout/_plugins/pjax/index.ejs`](https://github.com/volantis-x/hexo-theme-volantis/blob/d71e7d533a8a3f13694f1adbb11417d02ac4ca04/layout/_plugins/pjax/index.ejs)
+源码参考：[`layout/_plugins/pjax/index.ejs`](https://github.com/volantis-x/hexo-theme-volantis/blob/dev/layout/_plugins/pjax/index.ejs)
 
 #### `<pjax></pjax>` 标签
 
@@ -79,11 +86,11 @@ disqus:
 
 源码参考：
 
-[`layout/_partial/scripts/global.ejs`](https://github.com/volantis-x/hexo-theme-volantis/blob/d71e7d533a8a3f13694f1adbb11417d02ac4ca04/layout/_partial/scripts/global.ejs)
+[`layout/_partial/scripts/global.ejs`](https://github.com/volantis-x/hexo-theme-volantis/blob/dev/layout/_partial/scripts/global.ejs)
 
-[`layout/_plugins/pjax/index.ejs`](https://github.com/volantis-x/hexo-theme-volantis/blob/d71e7d533a8a3f13694f1adbb11417d02ac4ca04/layout/_plugins/pjax/index.ejs)
+[`layout/_plugins/pjax/index.ejs`](https://github.com/volantis-x/hexo-theme-volantis/blob/dev/layout/_plugins/pjax/index.ejs)
 
-使用案例：[`layout/_plugins/pjax/animate.ejs`](https://github.com/volantis-x/hexo-theme-volantis/blob/d71e7d533a8a3f13694f1adbb11417d02ac4ca04/layout/_plugins/pjax/animate.ejs#L27-L29)
+使用案例：[`layout/_plugins/pjax/animate.ejs`](https://github.com/volantis-x/hexo-theme-volantis/blob/dev/layout/_plugins/pjax/animate.ejs#L27-L29)
 
 {% note info, 中括号[]里面的内容表示选项是可选的，可以不填。下同，不再赘述。 %}
 
@@ -122,9 +129,9 @@ disqus:
 
 源码参考：
 
-[`layout/_partial/scripts/global.ejs`](https://github.com/volantis-x/hexo-theme-volantis/blob/d71e7d533a8a3f13694f1adbb11417d02ac4ca04/layout/_partial/scripts/global.ejs)
+[`layout/_partial/scripts/global.ejs`](https://github.com/volantis-x/hexo-theme-volantis/blob/dev/layout/_partial/scripts/global.ejs)
 
-[`layout/_partial/scripts/darkmode.ejs`](https://github.com/volantis-x/hexo-theme-volantis/blob/d71e7d533a8a3f13694f1adbb11417d02ac4ca04/layout/_partial/scripts/darkmode.ejs)
+[`layout/_plugins/darkmode/script.ejs`](https://github.com/volantis-x/hexo-theme-volantis/blob/dev/layout/_plugins/darkmode/script.ejs)
 
 
 ### 暗黑模式样式
@@ -143,7 +150,7 @@ disqus:
 
 调用 volantis.dark.push(callBack[,"callBackName"]) 传入触发器回调函数.
 
-使用案例：[`layout/_plugins/comments/utterances/script.ejs`](https://github.com/volantis-x/hexo-theme-volantis/blob/d71e7d533a8a3f13694f1adbb11417d02ac4ca04/layout/_plugins/comments/utterances/script.ejs#L41)
+使用案例：[`layout/_plugins/comments/utterances/script.ejs`](https://github.com/volantis-x/hexo-theme-volantis/blob/dev/layout/_plugins/comments/utterances/script.ejs#L41)
 
 ## Message 消息提示
 
@@ -151,11 +158,11 @@ disqus:
 
 源码参考：
 
-[`layout/_plugins/message/script.ejs`](https://github.com/volantis-x/hexo-theme-volantis/blob/d71e7d533a8a3f13694f1adbb11417d02ac4ca04/layout/_plugins/message/script.ejs)
+源码参考：[`/source/js/app.js`](https://github.com/volantis-x/hexo-theme-volantis/blob/8cc1f93a992ef378bc5f30a0528d28d35a804379/source/js/app.js#L511)
 
 ```js
-volantis.message(title, message, option, done);
-volantis.question(title, message, option, success, cancel, done);
+VolantisApp.message(title, message, option, done);
+VolantisApp.question(title, message, option, success, cancel, done);
 ```
 
 - `title`：标题（必填），字符串（String）
@@ -183,10 +190,10 @@ option 配置优先级大于配置文件设置值。
 
 ```js
 // 同样弹窗
-volantis.message('这里是标题', '这里是弹窗内容');
+VolantisApp.message('这里是标题', '这里是弹窗内容');
 
 // 居中弹窗
-volantis.message('系统提示', '这里是 Volantis 主题站，欢迎访问。', {
+VolantisApp.message('系统提示', '这里是 Volantis 主题站，欢迎访问。', {
   icon: 'fad fa-smile-wink light-blue', 
   position: 'topCenter', 
   transitionIn:'bounceInDown',
@@ -195,20 +202,20 @@ volantis.message('系统提示', '这里是 Volantis 主题站，欢迎访问。
 });
 
 // 询问弹窗
-volantis.question('问卷调查', '你是否喜欢 Volantis 主题', {}, () => {
+VolantisApp.question('问卷调查', '你是否喜欢 Volantis 主题', {}, () => {
   alert('谢谢支持')
 }, () => {
   console.log('再接再厉')
 });
 ```
 
-如果以上两个接口仍然不能满足您的需求，可以参考 [iziToast](https://izitoast.marcelodolza.com/) 的内容直接调用 `iziToast()` 
+如果以上两个接口仍然不能满足您的需求，可以参考 [iziToast](https://izitoast.marcelodolza.com/) 的内容直接调用 `iziToast` 
 
 ## 动态加载脚本
 
 源码参考：
 
-[`layout/_partial/scripts/global.ejs`](https://github.com/volantis-x/hexo-theme-volantis/blob/d71e7d533a8a3f13694f1adbb11417d02ac4ca04/layout/_partial/scripts/global.ejs)
+[`layout/_partial/scripts/global.ejs`](https://github.com/volantis-x/hexo-theme-volantis/blob/dev/layout/_partial/scripts/global.ejs)
 
 ```js
   volantis.js("src", cb)
@@ -243,7 +250,7 @@ volantis.question('问卷调查', '你是否喜欢 Volantis 主题', {}, () => {
 
 源码参考：
 
-[`layout/_partial/scripts/global.ejs`](https://github.com/volantis-x/hexo-theme-volantis/blob/d71e7d533a8a3f13694f1adbb11417d02ac4ca04/layout/_partial/scripts/global.ejs)
+[`layout/_partial/scripts/global.ejs`](https://github.com/volantis-x/hexo-theme-volantis/blob/dev/layout/_partial/scripts/global.ejs)
 
 
 ### jQuery
@@ -365,7 +372,7 @@ volantis.scroll.to(document.getElementById("locationID"),{addTop: - volantis.dom
 
 源码参考：
 
-[`layout/_partial/scripts/_ctrl/cdnCtrl.ejs`](https://github.com/volantis-x/hexo-theme-volantis/blob/d71e7d533a8a3f13694f1adbb11417d02ac4ca04/layout/_partial/scripts/_ctrl/cdnCtrl.ejs)
+[`layout/_partial/scripts/_ctrl/cdnCtrl.ejs`](https://github.com/volantis-x/hexo-theme-volantis/blob/dev/layout/_partial/scripts/_ctrl/cdnCtrl.ejs)
 
 ```js
 theme.cdn.addJS("name","source","force")
