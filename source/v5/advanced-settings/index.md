@@ -78,10 +78,12 @@ author: Jon
 ## 内容安全策略(CSP)
 
 ```yaml blog/_config.volantis.yml
-# 内容安全策略( CSP )
+# 内容安全策略( CSP ) meta 标签 http-equiv="Content-Security-Policy"
 # https://developer.mozilla.org/zh-CN/docs/Web/HTTP/CSP
 # https://content-security-policy.com/
+# 也可以设为 false 在 HTTP 标头中设置 https://volantis.js.org/v5/advanced-settings/#设置-HTTP-响应标头
 csp:
+  enable: true
   content: "
     default-src 'self' https:;
     block-all-mixed-content;
@@ -102,6 +104,35 @@ csp:
   # 另可以参考官网的 gulp 方案.
   # gulpfile.js https://github.com/volantis-x/community/blob/main/gulpfile.js
 ```
+
+
+## 设置 HTTP 响应标头
+
+以 [Cloudflare](https://developers.cloudflare.com/rules/transform/response-header-modification/create-dashboard/) 为例， 在 规则 > 转换规则 > HTTP 响应头修改 中，可以添加以下设置：
+
+- 内容安全策略( CSP )
+
+```
+Content-Security-Policy: default-src 'self' https:; block-all-mixed-content; base-uri 'self' https:; form-action 'self' https:; worker-src 'self' https:; connect-src 'self' https: *; img-src 'self' data: https: *; media-src 'self' https: *; font-src 'self' data: https: *; frame-src 'self' https: *; manifest-src 'self' https: *; child-src https:; script-src 'self' https: 'unsafe-inline' *; style-src 'self' https: 'unsafe-inline' *;
+```
+
+[Doc for Content-Security-Policy](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/CSP)
+
+- 不允许在 frame 中展示
+
+```
+x-frame-options: DENY
+```
+
+[Doc for X-Frame-Options](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Headers/X-Frame-Options)
+
+- HTTP/2 Server Push
+
+```
+link: </css/style.0eb76567.css>; rel=preload; as=style,</js/app.c1d0c869.js>; rel=preload; as=script, <https://static.mycdn.com>; rel=dns-prefetch, <https://static.mycdn.com>; rel=preconnect; crossorigin
+```
+
+[Doc for Link](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Headers/Link)
 
 ## 为网站提速
 
@@ -210,7 +241,9 @@ cdn:
       app: /js/app.js
     css:
       style: /css/style.css # (异步加载样式)
-# 请求静态资源添加时间戳 ?time=1648684470140
+# 静态资源版本控制
+# 本地文件使用文件内容的hash值作为版本号(app.8c1e7c88.js)  其他为时间戳 (?time=1648684470140)
+# 建议静态资源设置标头浏览器缓存一年边缘缓存一个月 cache-control: max-age=86400, s-maxage=31536000 如果有更新记得刷新缓存
 cdn_version: true
 # volantis static 静态资源文件 npm 包 CDN 地址 (后面加 "/" )
 # https://github.com/volantis-x/volantis-static
@@ -236,7 +269,7 @@ volantis_static_cdn: https://unpkg.com/volantis-static/
 
 ```shell
 npm install -g gulp
-npm install --save-dev gulp gulp-html-minifier-terser gulp-htmlclean gulp-htmlmin gulp-minify-css gulp-terser
+npm install --save-dev gulp gulp-html-minifier-terser gulp-htmlclean gulp-htmlmin gulp-clean-css gulp-terser gulp-sourcemaps
 ```
 
 ### gulp 配置文件

@@ -45,7 +45,7 @@ description: Volantis 是一个功能丰富、高度模块化的 Hexo 博客主�
 
 ```yaml
 Hexo: 5.4 ~ 6.x
-hexo-cli: 4.x
+hexo-cli: 4.3 ~ latest
 node.js: 16.x LTS ~ latest LTS
 npm: 8.x ~ latest LTS
 ```
