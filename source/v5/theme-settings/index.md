@@ -1160,6 +1160,44 @@ comments:
 
 {% tabs comments-valine , 1 %}
 
+<!-- tab discuss -->
+
+<i class='fas fa-comment-dots fa-fw'></i> 一款简单，安全，免费的评论系统 | A simple, safe, free comment system
+<i class='fas fa-globe fa-fw'></i> [https://discuss.js.org](https://discuss.js.org)
+
+```yaml blog/_config.volantis.yml
+comments:
+  ...
+  service: discuss
+  ...
+  # Discuss
+  # https://discuss.js.org
+  discuss:
+    js: https://cdn.jsdelivr.net/npm/discuss/dist/Discuss.js # 建议锁定版本
+    serverURLs: # Discuss server address url
+    # https://discuss.js.org/Quick-Start.html#path
+```
+
+其中，`placeholder` 支持在 front-matter 中设置。
+
+```yaml front-matter
+---
+discuss:
+  placeholder: 你觉得xxx怎么样呢？
+---
+```
+
+也可以通过设置 `discuss.path` 实现多个页面共用一个评论框。
+
+```yaml front-matter
+---
+discuss:
+  path: /
+---
+```
+
+<!-- endtab -->
+
 <!-- tab twikoo -->
 
 <i class='fas fa-comment-dots fa-fw'></i> 一个简洁、安全、免费的静态网站评论系统 | A simple, safe, free comment system.
