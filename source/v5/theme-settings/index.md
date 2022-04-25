@@ -905,9 +905,9 @@ music:
 
 ## 选择评论系统
 
-目前共支持 13 款评论系统：
+目前共支持 14 款评论系统：
 
-artalk, giscus, beaudar, utterances, twikoo, waline, disqus, disqusjs, gitalk, vssue, livere, isso, hashover
+artalk, giscus, beaudar, utterances, twikoo, waline, ,discuss disqus, disqusjs, gitalk, vssue, livere, isso, hashover
 
 ```yaml blog/_config.volantis.yml
 comments:
