@@ -285,10 +285,253 @@ color_scheme:
 
 ### 自定义右键菜单
 
-```yaml blog/_config.volantis.yml
+自定义右键菜单自 `5.0.0-rc.8` 版本进行了全新重构，与历史版本相比，重构版右键菜单拥有更灵活的配置。
+
+由于新版右键菜单配置较为复杂，原版菜单**暂时性**保留，在配置文件上新版右键以  `rightmenus` 命名。
+
+> *为了方面称呼，以**新版右键**代指重构版右键菜单，**老版右键**代指历史版本右键菜单。*
+
+#### 差异对比
+
+新旧两版右键菜单的差异如下：
+
+| 对比项               | 老版右键             | 新版右键                             |
+| -------------------- | -------------------- | ------------------------------------ |
+| 自定义菜单项         | 只支持新增链接型菜单 | 同时支持事件型和链接型菜单           |
+| 菜单项显示与顺序调整 | 部分支持             | 完全支持                             |
+| 内置菜单自定义调整   | 部分支持             | 完全支持修改文字描述、图标显示、功能实现等内容 |
+| 自定义响应事件处理   | 不支持               | 支持自行添加                         |
+| 复制图片至剪切板     | 仅支持 PNG 格式图片  | 任意格式的图片                       |
+| 全局音乐控制         | 支持                 | 支持                                 |
+
+
+#### 新版右键菜单
+
+新版右键在菜单项上根据配置文件自行生成前端代码，所以统一了一个共用的菜单对象：
+
+```js
+{id: '', name: '', icon: '', link: '', event: '', group: ''}
+```
+
+同时为了响应不同元素下的右键行为，提出了**内置组** （`defaultGroup`）的概念，相应的对于右键默认提供的功能实现则定义为**内置实现**（`defaultEvent`）。
+
+```js
+{
+  defaultEvent: ['copyText', 'copyLink', 'copyPaste', 'copyAll', 'copyCut', 'copyImg', 'printMode', 'readMode'],
+  defaultGroup: ['navigation', 'inputBox', 'seletctText', 'elementCheck', 'elementImage', 'articlePage']
+}
+```
+
+具体来说，内置组对应右键行为，例如 `inputBox` 代表在输入框下右键行为。
+
+##### 参数解释
+
+```yml 组内数据支持对象（单个菜单）或数组（一系列菜单）
+rightmenus:
+  order:
+    menus.groupName
+  plugins:
+    defaultGroupItem
+  menus:
+    groupName:
+      - {menu}
+    groupName1: {menu}
+```
+
+
+
+**右键菜单加载**
+
+菜单的具体加载和排序由 `order` 控制，可供使用的内容为：plugins.[组名], menus.[组名], hr(分割线), music(音乐控制器) 这四大类。
+
+**右键菜单排序**
+
+菜单的排序由 `order` 字段的先后顺序和组内菜单项的先后顺序决定。
+
+**右键菜单类**
+
+菜单项共分为两大类：`plugins` 和 `menus`，前者放置内置组及内置菜单，允许添加/修改组内菜单；后者允许用户用户自定义菜单区域，允许添加/修改组及组内菜单。一般意义上 plugins 类的组为动态组，根据实际的右键状态进行显示；menus 类用户添加，默认永久显示。
+
+**右键菜单项**
+
+菜单项共六个字段：`id`, `name`, `icon`, `link`, `event`, `group`，具体作用如下：
+
+- id: 唯一值
+- name: 用于菜单名称显示
+- icon: 用于菜单图标显示
+- link: 跳转链接
+- event: 事件，当输入内容不为内置事件时，作 JavaScript 代码执行
+- group: 菜单项所处分组名称
+
+
+##### 回调方法
+
+**`volantis.rightmenu.handle`** 在右键菜单打开时执行
+
+volantis.rightmenu.handle(callBack[,"callBackName"])，`callBack` 是回调函数,必填。
+
+此外，你还可以在 `volantis.mouseEvent` 处获得 MouseEvent 信息。
+
+##### 配置文件
+
+{% folding blog/_config.volantis.yml %}
+```yml
+### 自定义右键 新
+rightmenus:
+  enable: true
+  # 右键菜单项及加载顺序
+  # 内容示例：plugins.[组名], menus.[组名], hr(分割线，推荐去线留白), music(音乐控制器)
+  order: 
+    - plugins.navigation
+    - hr
+    - plugins.inputBox
+    - plugins.seletctText
+    - plugins.elementCheck
+    - plugins.elementImage
+    - menus.link
+    - hr
+    - menus.darkMode
+    - plugins.articlePage
+    - music
+  ############################
+  # - {id: '', name: '', icon: '', link: '', event: '', group: ''}
+  # id: 唯一值
+  # name: 用于菜单名称显示
+  # icon: 用于菜单图标显示
+  # link: 跳转链接
+  # event: 事件，当输入内容不为内置事件时，作 JavaScript 代码执行
+  # group: 菜单项所处分组名称
+  # 注： 
+  # 1. link/event 二选一，同时出现时仅处理 link
+  # 2. 内置事件列表： copyText, copyLink, copyPaste, copyAll, copyCut, copyImg, printMode, readMode
+  # 3. 内置组列表：navigation, inputBox, seletctText, elementCheck, elementImage, articlePage
+  # 4. plugins 列允许自定义组内项目
+  # 5. menus   列允许自定义组及其内容
+  # 6. 除 navigation 外的内置组，在显示时会隐藏含 link 属性的菜单项
+  ###########################
+  # 基础项设置
+  options:
+    # 图标前缀 fa-solid, fa-regular, fa-light, fa-thin, fa-duotone, fa-brands
+    iconPrefix: fa-solid
+    # 例外，在 articlePage 组显示时（文章页）时依旧显示含 link 属性的菜单项
+    articleShowLink: false
+    # 当设定全局音乐播放器时，是否一直显示音乐控制菜单。false：仅当音乐播放时启用
+    musicAlwaysShow: false
+    # 适用于复制图片文件的场景，当图片源未设置 Access-Control-Allow-Origin 时，图片复制由于 CORS 问题失败
+    # 你可以自行部署相应项目解决该问题，详见：https://github.com/Rob--W/cors-anywhere 或者 https://github.com/Zibri/cloudflare-cors-anywhere
+    corsAnywhere: 
+  # 右键内置组，预置实现
+  plugins:
+    # 导航组件
+    # 横向排列，共用一行，仅显示图标 (原则上支持的数量不限)
+    navigation: 
+      - {id: 'left', name: '转到上一页', icon: 'fa-solid fa-arrow-left', event: 'history.back()', group: 'navigation'}
+      - {id: 'right', name: '转到下一页', icon: 'fa-solid fa-arrow-right', event: 'history.forward()', group: 'navigation'}
+      - {id: 'redo', name: '刷新当前页面', icon: 'fa-solid fa-redo', event: 'window.location.reload()', group: 'navigation'}
+      - {id: 'up', name: '回到顶部', icon: 'fa-solid fa-arrow-up', event: 'VolantisApp.scrolltoElement(volantis.dom.bodyAnchor)', group: 'navigation'}
+      #- {id: 'home', name: '回到首页', icon: 'fa-solid fa-home', link: '/', group: 'navigation'}
+    # 文本输入框相关组件
+    # 生效于 input/textarea，粘贴、剪切、全选
+    inputBox:
+      - {id: 'copyPaste', name: '粘贴文本', icon: 'fa-solid fa-paste', event: 'copyPaste', group: 'inputBox'}
+      - {id: 'copyAll', name: '全选文本', icon: 'fa-solid fa-object-ungroup', event: 'copyAll', group: 'inputBox'}
+      - {id: 'copyCut', name: '剪切文本', icon: 'fa-solid fa-cut', event: 'copyCut', group: 'inputBox'}
+    # 文本选中类组件
+    # 生效于右键选中文本，__text__ 为选中的文本。     
+    seletctText:
+      - {id: 'copyText', name: '复制文本', icon: 'fa-solid fa-copy', event: 'copyText', group: 'seletctText'}
+      - {id: 'searchWord', name: '站内搜索', icon: 'fa-solid fa-search', event: 'OpenSearch(__text__)', group: 'seletctText'}
+      - {id: 'bingSearch', name: '必应搜索', icon: 'fa-solid fa-search', event: 'window.open(`https://cn.bing.com/search?q=${__text__}`)', group: 'seletctText'}
+      #- {id: 'googleSearch', name: '谷歌搜索', icon: 'fa-solid fa-search', event: 'window.open(`https://www.google.com/search?q=${__text__}`)', group: 'seletctText'}
+    # 链接判断组件
+    # 生效于链接处的右键行为，__link__ 为链接地址
+    elementCheck:
+      - {id: 'openTab', name: '新标签页打开', icon: 'fa-solid fa-external-link-square-alt', event: 'window.open(__link__)', group: 'elementCheck'}
+      - {id: 'copyLink', name: '复制链接地址', icon: 'fa-solid fa-link', event: 'copyLink', group: 'elementCheck'}
+    # 图片判断类组件
+    # 生效于图片类的右键行为，__link__ 为链接地址
+    elementImage:
+      - {id: 'copyImg', name: '复制图片', icon: 'fa-solid fa-image', event: 'copyImg', group: 'elementImage'}
+      - {id: 'googleImg', name: '谷歌识图', icon: 'fa-solid fa-images', event: 'window.open(`https://www.google.com.hk/searchbyimage?image_url=${__link__}`)', group: 'elementImage'}
+    # 文章页面组件
+    # 生效于 post.article 页面
+    articlePage:
+      - {id: 'printMode', name: '打印页面', icon: 'fa-solid fa-print', event: 'printMode', group: 'articlePage'}
+      - {id: 'readMode', name: '阅读模式', icon: 'fa-solid fa-book-open', event: 'readMode', group: 'articlePage'}
+  # 右键自定义菜单区域
+  menus:
+    link:
+      - {id: 'help', name: '常见问题', icon: 'fa-solid fa-question', link: 'https://volantis.js.org/faqs/', group: 'link'}
+      - {id: 'examples', name: '示例博客', icon: 'fa-solid fa-rss', link: 'https://volantis.js.org/examples/', group: 'link'}
+      - {id: 'contributors', name: '加入社区', icon: 'fa-solid fa-fan', link: 'https://volantis.js.org/contributors/', group: 'link'}
+      - hr
+      - {id: 'source_docs', name: '本站源码', icon: 'fa-solid fa-code-branch', link: 'https://github.com/volantis-x/volantis-docs/', group: 'link'}
+      - {id: 'source_theme', name: '主题源码', icon: 'fa-solid fa-code-branch', link: 'https://github.com/volantis-x/hexo-theme-volantis/', group: 'link'}
+    darkMode: 
+      - {id: 'darkMode', name: '暗黑模式', icon: 'fa-solid fa-moon', event: 'volantis.dark.toggle()', group: 'darkMode'}
+###
+```
+{% endfolding %}
+
+##### 高级玩法
+
+可以利用 *Custom Files 自定义文件* 功能，实现自定义右键菜单脚本及菜单项控制。
+
+- 一个在右键菜单中添加 **查看上一篇**、**查看下一篇** 菜单项的范例：
+
+{% tabs rightmenus %}
+<!-- tab blog/_config.volantis.yml -->
+```yml 省略了部分不相关内容
+rightmenus:
+  order:
+    - menus.prevNext
+  menus:
+    prevNext:
+      - {id: 'prev', name: '查看上一篇', icon: 'fa-solid fa-angles-left', event: "volantis.rightmenu.jump('prev')", group: 'prevNext'}
+      - {id: 'next', name: '查看下一篇', icon: 'fa-solid fa-angles-right', event: "volantis.rightmenu.jump('next')", group: 'prevNext'}
+```
+<!-- endtab -->
+<!-- tab blog/source/_volantis/bodyEnd.ejs -->
+```js
+<script> 
+  volantis.rightmenu.jump = (type) => { 
+    const item = document.querySelector(type === 'prev' ? 'article .prev-next a.prev' : 'article .prev-next a.next'); 
+    if(!!item) { 
+      if(typeof pjax !== 'undefined') { 
+        pjax.loadUrl(item.href) 
+      } else { 
+        window.location.href = item.href; 
+      } 
+    } 
+  } 
+ 
+  volantis.rightmenu.handle(() => { 
+    const prev = document.querySelector('#prev').parentElement, 
+      next = document.querySelector('#next').parentElement, 
+      articlePrev = document.querySelector('article .prev-next a.prev p.title'), 
+      articleNext = document.querySelector('article .prev-next a.next p.title'); 
+ 
+    prev.style.display = articlePrev ? 'block' : 'none'; 
+    prev.title = articlePrev ? articlePrev.innerText : null; 
+    next.style.display = articleNext ? 'block' : 'none'; 
+    next.title = articleNext ? articleNext.innerText : null; 
+  }, 'prevNext', false) 
+</script> 
+```
+<!-- endtab -->
+{% endtabs %}
+
+#### 老版右键菜单
+
+目前老版右键与新版右键共存，但同时只能开启一个自定义右键菜单。
+
+##### 配置文件
+
+{% folding blog/_config.volantis.yml %}
+```yml
 # 自定义右键菜单
 rightmenu:
-  enable: true
+  enable: false
   faicon: fa              # 公共图标类型 fa fal fa-solid fa-duotone
   # hr: 分割线, music: 音乐控制器
   layout: [home, hr, help, examples, contributors, hr, source_docs, source_theme, hr, print, darkmode, reading, music]
@@ -329,7 +572,9 @@ rightmenu:
     name: 主题源码
     icon: fa fa-code-branch
     url: https://github.com/volantis-x/hexo-theme-volantis/
+####
 ```
+{% endfolding %}
 
 ## 设置网站导航栏
 

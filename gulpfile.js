@@ -68,6 +68,8 @@ unsafe_script_list = [
   "history.forward()",
   "window.location.reload()",
   "VolantisApp.scrolltoElement(volantis.dom.bodyAnchor)",
+  "volantis.rightmenu.jump('prev')",
+  "volantis.rightmenu.jump('next')"
 ]
 // script hash White list
 unsafe_script_hash = ["'sha256-MXV1jvkHrZruEyFEOrQRjKs9WlPZC1V/3RLoKrkoDFQ='"]
