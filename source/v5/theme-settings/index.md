@@ -313,7 +313,7 @@ color_scheme:
 {id: '', name: '', icon: '', link: '', event: '', group: ''}
 ```
 
-同时为了响应不同元素下的右键行为，提出了**内置组** （`defaultGroup`）的概念，相应的对于右键默认提供的功能实现则定义为**内置实现**（`defaultEvent`）。
+同时为了响应不同状态下的右键行为，提出了**内置组** （`defaultGroup`）的概念，相应的对于右键默认提供的功能实现则定义为**内置实现**（`defaultEvent`）。
 
 ```js
 {
@@ -322,7 +322,7 @@ color_scheme:
 }
 ```
 
-具体来说，内置组对应右键行为，例如 `inputBox` 代表在输入框下右键行为。
+具体来说，内置组对应右键行为，例如 `inputBox` 代表在输入框下右键行为；内置实现对应自定义右键默认提供的功能实现，例如 `readMode` 代表了阅读模式。
 
 ##### 参数解释
 
@@ -338,11 +338,9 @@ rightmenus:
     groupName1: {menu}
 ```
 
-
-
 **右键菜单加载**
 
-菜单的具体加载和排序由 `order` 控制，可供使用的内容为：plugins.[组名], menus.[组名], hr(分割线), music(音乐控制器) 这四大类。
+菜单的具体加载和排序由 `order` 控制，可供使用的内容为：plugins.[组名], menus.[组名], hr, music 这四大类。
 
 **右键菜单排序**
 
@@ -350,7 +348,7 @@ rightmenus:
 
 **右键菜单类**
 
-菜单项共分为两大类：`plugins` 和 `menus`，前者放置内置组及内置菜单，允许添加/修改组内菜单；后者允许用户用户自定义菜单区域，允许添加/修改组及组内菜单。一般意义上 plugins 类的组为动态组，根据实际的右键状态进行显示；menus 类用户添加，默认永久显示。
+菜单项共分为两大类：`plugins` 和 `menus`，前者放置内置组及内置菜单，允许添加/修改组内菜单；后者为用户自建菜单类，允许添加/修改组及组内菜单。一般意义上 plugins 类的组为动态组，根据实际的右键状态进行显示；menus 类中内容由用户添加，菜单项默认显示。
 
 **右键菜单项**
 
@@ -363,12 +361,11 @@ rightmenus:
 - event: 事件，当输入内容不为内置事件时，作 JavaScript 代码执行
 - group: 菜单项所处分组名称
 
-
 ##### 回调方法
 
-**`volantis.rightmenu.handle`** 在右键菜单打开时执行
+**`volantis.rightmenu.handle`** 在右键菜单打开时执行。
 
-volantis.rightmenu.handle(callBack[,"callBackName"])，`callBack` 是回调函数,必填。
+volantis.rightmenu.handle(callBack[,"callBackName", "setRequestAnimationFrame = true"])。
 
 此外，你还可以在 `volantis.mouseEvent` 处获得 MouseEvent 信息。
 
@@ -492,10 +489,11 @@ rightmenus:
 ```
 <!-- endtab -->
 <!-- tab blog/source/_volantis/bodyEnd.ejs -->
-```js
+```js 为了方便管理，将函数挂在 volantis.rightmenu 对象下
 <script> 
   volantis.rightmenu.jump = (type) => { 
-    const item = document.querySelector(type === 'prev' ? 'article .prev-next a.prev' : 'article .prev-next a.next'); 
+    const selector = type === 'prev' ? 'article .prev-next a.prev' : 'article .prev-next a.next';
+    const item = document.querySelector(selector); 
     if(!!item) { 
       if(typeof pjax !== 'undefined') { 
         pjax.loadUrl(item.href) 
@@ -940,7 +938,7 @@ sidebar:
       class: webinfo
       display: [desktop]
       header:
-        icon: fas fa-award
+        icon: fa-solid fa-award
         title: 站点信息
       type:
         article:
@@ -956,14 +954,15 @@ sidebar:
           enable: true
           text: '本站总字数：'   # 需要启用 wordcount
           unit: '字'
-        siteuv:
-          enable: true
-          text: '本站访客数：'   # 需要启用 busuanzi
-          unit: '人'
-        sitepv:
-          enable: true
-          text: '本站总访问量：' # 需要启用 busuanzi
-          unit: '次'
+        visitcounter:
+          siteuv:
+            enable: true
+            text: '本站访客数：'
+            unit: '人'
+          sitepv:
+            enable: true
+            text: '本站总访问量：'
+            unit: '次'
         lastupd:
           enable: true
           friendlyShow: true    # 更友好的时间显示
