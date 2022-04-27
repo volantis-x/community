@@ -3,7 +3,7 @@ layout: docs
 group: docs-volantis-latest
 order: 801
 title: FAQ
-short_title: 6. FAQ
+short_title: 8. FAQ
 sidebar: [docs-volantis-latest, toc]
 disqus:
   path: /
