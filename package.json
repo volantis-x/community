@@ -12,12 +12,13 @@
   "hexo": {
     "version": "6.1.0"
   },
-  "overrides" : {
-    "nib" : {
-      "stylus" : "0.54.8"
+  "overrides": {
+    "nib": {
+      "stylus": "0.54.8"
     }
   },
   "dependencies": {
+    "@jiangtj/hexo-extend-theme": "^0.2.4",
     "hexo": "^6.1.0",
     "hexo-autonofollow": "^1.0.1",
     "hexo-autoprefixer": "^2.0.0",
@@ -36,12 +37,12 @@
   },
   "devDependencies": {
     "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
     "gulp-html-minifier-terser": "^6.0.1",
     "gulp-htmlclean": "^2.7.22",
     "gulp-htmlmin": "^5.0.1",
-    "gulp-clean-css": "^4.3.0",
-    "gulp-terser": "^2.0.1",
     "gulp-sourcemaps": "^3.0.0",
+    "gulp-terser": "^2.0.1",
     "inline-csp-hash": "^1.1.15"
   }
 }

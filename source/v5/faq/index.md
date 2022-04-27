@@ -37,6 +37,10 @@ is like driving with your eyes closed. %}
 
 使用 [Custom Files 自定义文件](/v5/development-api/#Custom-Files-自定义文件) 和 [Development API for Volantis](/v5/development-api/).
 
+使用 [Hexo Theme Plus](https://github.com/jiangtj/hexo-extend-theme) 替换掉在layout文件夹下的主题文件.
+
+使用 [Hexo 插件系统](https://hexo.io/zh-cn/docs/plugins.html) 在 `blog` 目录根下创建 `scripts` 文件夹编写脚本.
+
 ## 如何更新主题？
 
 [RTFM](/how-to-update/)
