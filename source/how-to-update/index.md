@@ -38,13 +38,13 @@ npm i hexo-theme-volantis
 
 <details><summary>博客仓库</summary>
 
-![image](https://cdn.jsdelivr.net/gh/volantis-x/cdn-volantis@master/img/how-to-update/91117158-83595300-e6c0-11ea-85b0-3ac12afcf57b.png)
+![image](./images/91117158-83595300-e6c0-11ea-85b0-3ac12afcf57b.png)
 
 </details>
 
 <details><summary>打开子模块</summary>
 
-![Snipaste_2020-08-25_09-40-13](https://cdn.jsdelivr.net/gh/volantis-x/cdn-volantis@master/img/how-to-update/91114771-45a5fb80-e6bb-11ea-8a0f-f1bc6c3b6817.png)
+![Snipaste_2020-08-25_09-40-13](./images/91114771-45a5fb80-e6bb-11ea-8a0f-f1bc6c3b6817.png)
 
 </details>
 
@@ -52,7 +52,7 @@ npm i hexo-theme-volantis
 
 <details><summary>主题仓库</summary>
 
-![image](https://cdn.jsdelivr.net/gh/volantis-x/cdn-volantis@master/img/how-to-update/91116761-b0f1cc80-e6bf-11ea-9eb7-89de7dbedb79.png)
+![image](./images/91116761-b0f1cc80-e6bf-11ea-9eb7-89de7dbedb79.png)
 
 </details>
 
@@ -62,7 +62,7 @@ npm i hexo-theme-volantis
 
 在左侧面板的 *REMOTE* 选项卡处，点击加号，进入如下图所示界面，选中 **volantis-x/hexo-theme-volantis** 后添加即可。
 
-![Snipaste_2020-08-25_09-42-16](https://cdn.jsdelivr.net/gh/volantis-x/cdn-volantis@master/img/how-to-update/91115836-ad5d4600-e6bd-11ea-9084-40fe01dafed1.png)
+![Snipaste_2020-08-25_09-42-16](./images/91115836-ad5d4600-e6bd-11ea-9084-40fe01dafed1.png)
 
 
 </details>
@@ -82,25 +82,25 @@ npm i hexo-theme-volantis
 
 <details><summary>A. 合并操作</summary>
 
-![image](https://cdn.jsdelivr.net/gh/volantis-x/cdn-volantis@master/img/how-to-update/91128121-2bc7e100-e6da-11ea-99c9-16f8521b7d4c.png)
+![image](./images/91128121-2bc7e100-e6da-11ea-99c9-16f8521b7d4c.png)
 
 </details>
 
 <details><summary>B. 合并冲突检测</summary>
 
-![image](https://cdn.jsdelivr.net/gh/volantis-x/cdn-volantis@master/img/how-to-update/91128803-68e0a300-e6db-11ea-9fdb-4ea91a6c6a3c.png)
+![image](./images/91128803-68e0a300-e6db-11ea-9fdb-4ea91a6c6a3c.png)
 
 </details>
 
 <details><summary>C. 选择合适的内容</summary>
 
-![image](https://cdn.jsdelivr.net/gh/volantis-x/cdn-volantis@master/img/how-to-update/91129077-f4f2ca80-e6db-11ea-9ea8-47b09d4be32c.png)
+![image](./images/91129077-f4f2ca80-e6db-11ea-9ea8-47b09d4be32c.png)
 
 </details>
 
 <details><summary>D. 提交内容</summary>
 
-![image](https://cdn.jsdelivr.net/gh/volantis-x/cdn-volantis@master/img/how-to-update/91132519-caa30c00-e6df-11ea-94fa-f31d8279f5a6.png)
+![image](./images/91132519-caa30c00-e6df-11ea-94fa-f31d8279f5a6.png)
 
 </details>
 
@@ -132,7 +132,7 @@ npm i hexo-theme-volantis
 
 <details><summary>历史记录</summary>
 
-![image](https://cdn.jsdelivr.net/gh/volantis-x/cdn-volantis@master/img/how-to-update/91163040-8293e180-e6ff-11ea-971f-27b1959d436d.png)
+![image](./images/91163040-8293e180-e6ff-11ea-971f-27b1959d436d.png)
 
 </details>
 
