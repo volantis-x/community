@@ -72,7 +72,7 @@ is like driving with your eyes closed. %}
 
 ## 为什么无法正常显示 aplayer？
 
-可能是网易云崩溃了
+可能是网易云 API 崩溃了
 
 ## 图片怎么添加灯箱放大效果？
 
@@ -124,7 +124,7 @@ is like driving with your eyes closed. %}
 
 
 
-## What is the answer of Life, the Universe, and Everything?
+## What is the answer to Life, the Universe, and Everything?
 
 42
 
