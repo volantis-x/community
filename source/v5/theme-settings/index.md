@@ -326,7 +326,7 @@ color_scheme:
 
 ##### 参数解释
 
-```yml 组内数据支持对象（单个菜单）或数组（一系列菜单）
+```yml plugins/menus 类的组内数据支持对象（单个菜单）或数组（一系列菜单）
 rightmenus:
   order:
     menus.groupName
@@ -335,22 +335,23 @@ rightmenus:
   menus:
     groupName:
       - {menu}
+      - {menu}
     groupName1: {menu}
 ```
 
-**右键菜单加载**
+###### **右键菜单加载**
 
-菜单的具体加载和排序由 `order` 控制，可供使用的内容为：plugins.[组名], menus.[组名], hr, music 这四大类。
+菜单的具体加载由 `order` 控制，可供使用的内容为：plugins.[组名], menus.[组名], hr, music 这四大类。
 
-**右键菜单排序**
+###### **右键菜单排序**
 
 菜单的排序由 `order` 字段的先后顺序和组内菜单项的先后顺序决定。
 
-**右键菜单类**
+###### **右键菜单类**
 
 菜单项共分为两大类：`plugins` 和 `menus`，前者放置内置组及内置菜单，允许添加/修改组内菜单；后者为用户自建菜单类，允许添加/修改组及组内菜单。一般意义上 plugins 类的组为动态组，根据实际的右键状态进行显示；menus 类中内容由用户添加，菜单项默认显示。
 
-**右键菜单项**
+###### **右键菜单项**
 
 菜单项共六个字段：`id`, `name`, `icon`, `link`, `event`, `group`，具体作用如下：
 
@@ -360,6 +361,56 @@ rightmenus:
 - link: 跳转链接
 - event: 事件，当输入内容不为内置事件时，作 JavaScript 代码执行
 - group: 菜单项所处分组名称
+
+{% note info::note link/event 二选一，同时出现时仅处理 link。 %}
+
+##### 内置功能
+
+###### **内置组**
+
+| 组名           | 描述                                       | 备注                                          |
+| -------------- | ------------------------------------------ | --------------------------------------------- |
+| *navigation*   | *导航组件，横向排列，共用一行，仅显示图标* | *原则上支持的数量不限*                        |
+| *inputBox*     | *文本输入框相关组件*                       | *生效于 input/textarea*                       |
+| *seletctText*  | *文本选中类组件*                           | *生效于右键选中文本，__text__ 为选中的文本*   |
+| *elementCheck* | *链接判断组件*                             | *生效于链接处的右键行为，__link__ 为链接地址* |
+| *elementImage* | *图片判断类组件*                           | *生效于图片类的右键行为，__link__ 为链接地址* |
+| *articlePage*  | *文章页面组件*                             | *生效于 post.article 页面*                    |
+
+{% note info::note 除 navigation 外的内置组，在显示时会隐藏含 link 属性的菜单项。 %}
+
+###### **内置实现**
+
+| 事件名      | 描述         | 备注                                                         |
+| ----------- | ------------ | ------------------------------------------------------------ |
+| *copyText*  | 复制文本     | 复制选中文本                                                 |
+| *copyLink*  | 复制链接地址 | 复制 `a` 或 `image` 下的链接至剪切板                         |
+| *copyPaste* | 粘贴文本     | 需要用户批准相应权限，仅支持粘贴文本至输入框（暂不支持粘贴图片） |
+| *copyAll*   | 全选文本     | 选中输入框内的文本内容                                       |
+| *copyCut*   | 剪切文本     | 剪切输入框中选中的文本内容                                   |
+| *copyImg*   | 复制图片     | 支持 Chrome 浏览器，复制图片资源至剪切板                     |
+| *printMode* | 打印页面     | 一个调制过样式的打印功能                                     |
+| *readMode*  | 阅读模式     | 一个简单的阅读模式功能                                       |
+
+
+##### 默认设置
+
+###### **iconPrefix<String>**
+
+Fontawesome 图标前缀，音乐类组件使用，参考内容：*fa-solid, fa-regular, fa-light, fa-thin, fa-duotone, fa-brands*。
+
+###### **articleShowLink<Boolean>**
+
+在 articlePage 组显示时（文章页）时依旧显示含 link 属性的菜单项。
+
+###### **musicAlwaysShow<Boolean>**
+
+当设定全局音乐播放器时，是否一直显示音乐控制菜单。false：仅当音乐播放时启用。
+###### **corsAnywhere<String>**
+
+适用于复制图片文件的场景，当图片源未设置 Access-Control-Allow-Origin 时，图片复制由于 CORS 问题失败。
+
+你可以自行部署相应项目解决该问题，详见：[Rob--W/cors-anywhere](https://github.com/Rob--W/cors-anywhere) 或者 [Zibri/cloudflare-cors-anywhere](https://github.com/Zibri/cloudflare-cors-anywhere)。
 
 ##### 回调方法
 
