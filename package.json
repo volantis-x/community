@@ -15,7 +15,8 @@
   "overrides": {
     "nib": {
       "stylus": "0.54.8"
-    }
+    },
+    "glob": "7.2.0"
   },
   "dependencies": {
     "@jiangtj/hexo-extend-theme": "^0.2.4",
