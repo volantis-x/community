@@ -154,13 +154,13 @@ git clone https://e.coding.net/volantis-x/p/hexo-theme-volantis.git themes/volan
 安装 Hexo 搜索的依赖包：
 
 ```
-npm i hexo-generator-search hexo-generator-json-content
+npm i hexo-generator-json-content
 ```
 
 安装 Stylus 渲染器：
 
 ```
-npm i hexo-renderer-stylus
+npm i @copoko/hexo-renderer-stylus
 ```
 
 {% endtimenode %}

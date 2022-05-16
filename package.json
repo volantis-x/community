@@ -13,7 +13,7 @@
     "version": "6.1.0"
   },
   "dependencies": {
-    "@jiangtj/hexo-extend-theme": "^0.2.4",
+    "@copoko/hexo-renderer-stylus": "*",
     "hexo": "^6.1.0",
     "hexo-autonofollow": "^1.0.1",
     "hexo-autoprefixer": "^2.0.0",
@@ -27,7 +27,6 @@
     "hexo-generator-tag": "^1.0.0",
     "hexo-renderer-ejs": "^2.0.0",
     "hexo-renderer-marked": "^5.0.0",
-    "@copoko/hexo-renderer-stylus": "*",
     "hexo-server": "^3.0.0"
   },
   "devDependencies": {

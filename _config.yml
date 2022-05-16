@@ -209,8 +209,8 @@ jsonContent:
       - news/
 
 # npm i @jiangtj/hexo-extend-theme -S
-theme_plus:
-  custom_path: custom/theme # disabled: set 'false'
-  views:
-    - path: '_plugins/comments/index.ejs'
-      file: 'source/_volantis/theme_plus/comments.ejs'
+# theme_plus:
+#   custom_path: custom/theme # disabled: set 'false'
+#   views:
+#     - path: '_plugins/comments/index.ejs'
+#       file: 'source/_volantis/theme_plus/comments.ejs'
