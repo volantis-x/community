@@ -160,7 +160,7 @@ npm i hexo-generator-json-content
 安装 Stylus 渲染器：
 
 ```
-npm i @copoko/hexo-renderer-stylus
+npm i hexo-renderer-stylus
 ```
 
 {% endtimenode %}
