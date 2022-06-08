@@ -17,3 +17,9 @@
 ## 帮助
 
 [FAQ](https://volantis.js.org/faqs/) | [向开发者反馈](https://github.com/volantis-x/hexo-theme-volantis/issues/) | [用户论坛](https://github.com/volantis-x/hexo-theme-volantis/discussions/)
+
+## 本地预览
+
+```bash
+git clone --recursive https://github.com/volantis-x/community && cd community && npm i && hexo s
+```
