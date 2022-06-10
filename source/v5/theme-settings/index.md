@@ -1029,6 +1029,7 @@ sidebar:
   class: 小部件类别
   display: [小部件在桌面端是否显示, 小部件在移动设备是否显示]
   pjaxReload: true # 是否 pjax 重载 默认 true; 设置为 false 时 确保所有页面都含有该小部件
+  sticky: true # 是否开启粘性定位，默认 false；设置为 true 时固定在屏幕中
 ```
 
 ### 博主信息部件

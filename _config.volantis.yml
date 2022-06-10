@@ -91,6 +91,7 @@ article:
     # show readmore button
     readmore: auto # auto, always
   body:
+    top_meta: [author, category, date]
     meta_library:
       author:
         avatar: volantis-static/media/org.volantis/blog/favicon/apple-touch-icon.png
@@ -101,7 +102,7 @@ article:
 
 
 comments:
-  service: giscus
+  service: artalk
   giscus:
     theme:
       light: "light"
@@ -128,8 +129,8 @@ comments:
     repo: volantis-x/community  
     issue-number: 115
 sidebar:
-  for_page: [qgroup, post, category, guide]
-  for_post: [toc]
+  for_page: [artalk, qgroup, post, category, guide, music]
+  for_post: [music, toc]
   widget_library:
     toc:
       class: toc
@@ -143,6 +144,7 @@ sidebar:
     post:
       class: text
       display: [desktop, mobile] # [desktop, mobile]
+      sticky: true
       header:
         icon: fa-solid fa-plus
         title: 社区活动
@@ -262,7 +264,7 @@ sidebar:
         title: 文档导航 v5.0
 
 site_footer:
-  layout: [aplayer, social, source, analytics, copyright]
+  layout: [social, source, analytics, copyright]
   copyright: '[Copyright © since 2017 Volantis Team](https://github.com/volantis-x/)'
   social:
     - img: volantis-static/media/org.volantis/icon/1322024-social-media/020-rss.svg
