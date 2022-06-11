@@ -102,7 +102,7 @@ article:
 
 
 comments:
-  service: artalk
+  service: giscus
   giscus:
     theme:
       light: "light"
@@ -129,8 +129,8 @@ comments:
     repo: volantis-x/community  
     issue-number: 115
 sidebar:
-  for_page: [artalk, qgroup, post, category, guide, music]
-  for_post: [music, toc]
+  for_page: [qgroup, post, category, guide]
+  for_post: [toc]
   widget_library:
     toc:
       class: toc
@@ -264,7 +264,7 @@ sidebar:
         title: 文档导航 v5.0
 
 site_footer:
-  layout: [social, source, analytics, copyright]
+  layout: [aplayer, social, source, analytics, copyright]
   copyright: '[Copyright © since 2017 Volantis Team](https://github.com/volantis-x/)'
   social:
     - img: volantis-static/media/org.volantis/icon/1322024-social-media/020-rss.svg
