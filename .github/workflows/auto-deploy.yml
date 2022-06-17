@@ -66,3 +66,7 @@ jobs:
           REMOTE_PORT: ${{ secrets.REMOTE_PORT }}
           REMOTE_USER: ${{ secrets.REMOTE_USER }}
           TARGET: ${{ secrets.TARGET }}
+
+      - name: Refresh NPM Cache
+        run: |
+          curl -X PUT "https://registry.npmmirror.com/@mhg/volantis-community/sync?publish=false&nodeps=false"
