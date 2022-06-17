@@ -66,7 +66,7 @@ const cdn = {
 const cdn_match_list = []
 for (const type in cdn) {
   for (const key in cdn[type]) {
-    cdn_match_list.push({ type: type, match: cdn[type][key] })
+    cdn_match_list.push({ type: type, key: cdn[type][key] })
   }
 }
 const _console = console;
@@ -491,9 +491,10 @@ const matchCDN = async (req) => {
       urls.push(url)
     }
     logger.group.end()
-  } else {
-    for (const item in cdn_match_list) {
-      if (new RegExp(item.match).test(req.url)) {
+  }
+  if (!urls.length) {
+    for (const item of cdn_match_list) {
+      if (new RegExp(item.key).test(req.url)) {
         pathType = item.type
         break;
       }
@@ -524,6 +525,7 @@ const matchCDN = async (req) => {
           "Content-Type": "text/html;charset=utf-8"
         }
       }))
+      .catch(() => null)
   }
   return res
 }
