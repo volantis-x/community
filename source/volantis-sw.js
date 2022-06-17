@@ -63,6 +63,12 @@ const cdn = {
     unpkg: 'https://unpkg.com',
   }
 }
+const cdn_match_list = []
+for (const type in cdn) {
+  for (const key in cdn[type]) {
+    cdn_match_list.push({ type: type, match: cdn[type][key] })
+  }
+}
 const _console = console;
 const color = {
   black: '#000000',
@@ -471,6 +477,7 @@ const matchCDN = async (req) => {
     logger.group.ready(`Match NPM Mirror: ` + req.url);
     for (const key in cdn.npm) {
       let url = cdn.npm[key] + "/" + NPMPackage + "@" + NPMPackageVersion + req.url.replace(location.origin, '')
+      url = url.split('?')[0].split('#')[0]
       if (url.endsWith('/')) {
         url += 'index.html'
       } else {
@@ -484,19 +491,26 @@ const matchCDN = async (req) => {
       urls.push(url)
     }
     logger.group.end()
-  }
-
-  for (const type in cdn) {
-    if (type === pathType) {
-      logger.group.ready(`Match CDN ${pathType}: ` + req.url);
-      for (const key in cdn[type]) {
-        const url = cdn[type][key] + urlObj.pathname.replace('/' + pathType, '')
-        console.log(url);
-        urls.push(url)
+  } else {
+    for (const item in cdn_match_list) {
+      if (new RegExp(item.match).test(req.url)) {
+        pathType = item.type
+        break;
       }
-      logger.group.end()
+    }
+    for (const type in cdn) {
+      if (type === pathType) {
+        logger.group.ready(`Match CDN ${pathType}: ` + req.url);
+        for (const key in cdn[type]) {
+          const url = cdn[type][key] + urlObj.pathname.replace('/' + pathType, '')
+          console.log(url);
+          urls.push(url)
+        }
+        logger.group.end()
+      }
     }
   }
+
   let res;
   if (urls.length)
     res = fetchAny(urls)
