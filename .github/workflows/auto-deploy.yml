@@ -1,48 +1,68 @@
 name: auto deploy # workflow name
 
-on:
-  [push] # 触发事件
+on: [push] # 触发事件
 
 jobs:
   build: # job1 id
     runs-on: ubuntu-latest # 运行环境为最新版 Ubuntu
     name: A job to deploy blog.
     steps:
-    - name: Checkout # step1 获取源码
-      uses: actions/checkout@v1 # 使用 actions/checkout@v1
-      with: # 条件
-        submodules: true # Checkout private submodules(themes or something else). 当有子模块时切换分支？
-    - name: Setup Node.js 16.x
-      uses: actions/setup-node@master
-      with:
-        node-version: "16.x"
-    - name: Generate Public Files
-      run: |
-        # Restore last modified time
-        git ls-files -z | while read -d '' path; do touch -d "$(git log -1 --format="@%ct" "$path")" "$path"; done
-        npm i
-        npm install hexo-cli -g
-        npm run start
-    - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        deploy_key: ${{ secrets.DEPLOY_KEY }}
-        external_repository: xaoxuu/volantis.js.org
-        publish_branch: master
-        publish_dir: ./public 
-        commit_message: ${{ github.event.head_commit.message }}
-        user_name: 'github-actions[bot]'
-        user_email: 'github-actions[bot]@users.noreply.github.com'
-        # Deploy to Server
-    - name: Deploy to Server
-      uses: easingthemes/ssh-deploy@v2
-      env:
-        SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
-        ARGS: "-rltgoDzvO --delete"
-        EXCLUDE: ".well-known"
-        SOURCE: public/
-        REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
-        REMOTE_PORT: ${{ secrets.REMOTE_PORT }}
-        REMOTE_USER: ${{ secrets.REMOTE_USER }}
-        TARGET: ${{ secrets.TARGET }}
+      - name: Checkout # step1 获取源码
+        uses: actions/checkout@v3
+        with: # 条件
+          submodules: true # Checkout private submodules(themes or something else). 当有子模块时切换分支？
+      - name: Setup Node.js 16.x
+        uses: actions/setup-node@main
+        with:
+          node-version: 16
+          registry-url: https://registry.npmjs.org
+      - name: Setup Python 3.7
+        uses: actions/setup-python@v2
+        with:
+          python-version: "3.7"
+          architecture: "x64"
+      - name: Generate Public Files
+        run: |
+          # Restore last modified time
+          git ls-files -z | while read -d '' path; do touch -d "$(git log -1 --format="@%ct" "$path")" "$path"; done
+          npm i
+          npm install hexo-cli -g
+          npm run start
 
+      - name: Run Tools
+        run: |
+          python ./.github/cache.py
+
+      - name: NPM Publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.mhuig_npm_token }}
+        run: |
+          node ./.github/npm-version-bump.js
+          cd public
+          npm publish --access public
+          rm -rf ./package.json
+          cd ..
+
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          deploy_key: ${{ secrets.DEPLOY_KEY }}
+          external_repository: xaoxuu/volantis.js.org
+          publish_branch: master
+          publish_dir: ./public
+          commit_message: ${{ github.event.head_commit.message }}
+          user_name: "github-actions[bot]"
+          user_email: "github-actions[bot]@users.noreply.github.com"
+          # Deploy to Server
+      - name: Deploy to Server
+        uses: easingthemes/ssh-deploy@v2
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
+          ARGS: "-rltgoDzvO --delete"
+          EXCLUDE: ".well-known"
+          SOURCE: public/
+          REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
+          REMOTE_PORT: ${{ secrets.REMOTE_PORT }}
+          REMOTE_USER: ${{ secrets.REMOTE_USER }}
+          TARGET: ${{ secrets.TARGET }}

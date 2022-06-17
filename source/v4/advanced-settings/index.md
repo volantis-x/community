@@ -7,6 +7,8 @@ short_title: 6. 进阶设定
 sidebar: [docs-v4, toc]
 disqus:
   path: /
+plugins:
+  - snackbar: oldversion
 ---
 
 

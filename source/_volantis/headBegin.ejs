@@ -1,0 +1,38 @@
+<script>
+  /////////////////////////////// serviceWorker ///////////////////////////////////////////
+  function registerServiceWorker(path) {
+    if (window.location.hostname != "localhost") {
+      "serviceWorker" in navigator && navigator.serviceWorker.register(`${path}?time=${new Date().getTime()}`).then(function (n) {
+        n.onupdatefound = function () {
+          var e = n.installing;
+          e.onstatechange = function () {
+            switch (e.state) {
+              case "installed":
+                navigator.serviceWorker.controller ?
+                  console.log("Updated Service Worker.") :
+                  console.log("Service Worker Sucess!");
+                break;
+              case "redundant":
+                console.log("The installing service worker became redundant.")
+            }
+          }
+        }
+      }).catch(function (e) {
+        console.error("Error during service worker registration:", e)
+        if (typeof swinstallretry === 'undefined') {
+          swinstallretry = 1;
+          registerServiceWorker(`/volantis-sw.js`)
+        }
+      });
+    }
+  }
+  registerServiceWorker(`/volantis-sw.js`)
+  //////////////////////////////////////////////////////////////////////////
+  //// unregister serviceWorker
+  // if ('serviceWorker' in navigator) {
+  //   navigator.serviceWorker.ready.then(registration => {
+  //     registration.unregister();
+  //   });
+  // }
+  //////////////////////////////////////////////////////////////////////////
+</script>

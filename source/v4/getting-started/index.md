@@ -6,6 +6,8 @@ group: docs-v4
 order: 1
 sidebar: [docs-v4, toc]
 description: Volantis 是一个功能丰富、高度模块化的 Hexo 博客主题。得益于其强大的模块化特性，您可以轻松搭建一个极简风格的博客，也可以仿照官网搭建一个多人协作的、包含文档模块的大体量综合型博客。
+plugins:
+  - snackbar: oldversion
 ---
 
 <p>

@@ -8,6 +8,8 @@ sidebar: [docs-v4, toc]
 mathjax: true
 disqus:
   path: /
+plugins:
+  - snackbar: oldversion
 ---
 
 ## 页面布局模板

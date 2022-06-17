@@ -7,6 +7,8 @@ short_title: 3. 主题配置
 sidebar: [docs-v4, toc]
 disqus:
   path: /
+plugins:
+  - snackbar: oldversion
 ---
 
 ## 创建主题配置文件

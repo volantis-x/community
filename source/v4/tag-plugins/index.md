@@ -7,6 +7,8 @@ short_title: 5. 标签插件
 sidebar: [docs-v4, toc]
 disqus:
   path: /
+plugins:
+  - snackbar: oldversion
 ---
 
 为了兼容老用户，旧的标签插件在重构之前依然沿用旧的格式，即「英文逗号+空格」作为参数分隔符，而部分新增标签插件是「空格+英文竖线+空格」，请注意区分。

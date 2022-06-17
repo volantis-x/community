@@ -66,9 +66,9 @@ git clone https://github.com/volantis-x/demo.git && cd demo && npm i && hexo s
 
 ## 下载与安装
 
-{% note radiation yellow :: volantis 5.x 目前正处于 「alpha 阶段」 volantis 4.x 目前正处于 「stable 阶段」 %}
+{% note radiation yellow :: volantis 5.x 目前正处于 「stable 阶段」 volantis 4.x 目前正处于 「EOL(End of Life) 阶段」 %}
 
-{% note info :: volantis 开发发布周期依次经过: 「alpha 阶段」=>「beta 阶段」=>「rc 阶段」=>「stable 阶段」 %}
+{% note info :: volantis 开发发布周期依次经过: 「alpha 阶段」=>「beta 阶段」=>「rc 阶段」=>「stable 阶段」=>「EOL 阶段」 %}
 
 {% note guide clear :: rc 阶段的测试版本和 stable 阶段的正式版本 我们统称为 「稳定版本」 , 只有 「稳定版本」 发布到 [npm](https://www.npmjs.com/package/hexo-theme-volantis) %}
 

@@ -3,7 +3,7 @@ navbar:
   logo: # choose [img] or [icon + title]
     img: '' # volantis-static/media/org.volantis/blog/Logo-NavBar@3x.png
     icon:
-    title: 'Volantis 5.0 <sup style="color:#ff9800">alpha</sup>'
+    title: 'Volantis 5 <sup style="color:#00ff90">dev</sup>'
   menu:
     - name: 文档
       icon: fa-duotone fa-book faa-tada

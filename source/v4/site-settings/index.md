@@ -7,6 +7,8 @@ short_title: 2. 站点配置
 sidebar: [docs-v4, toc]
 disqus:
   path: /
+plugins:
+  - snackbar: oldversion
 ---
 
 博客根目录下的 `_config.yml` 文件通常负责站点相关配置、第三方 npm 插件相关的配置。
