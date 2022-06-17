@@ -7,9 +7,9 @@ const PreCachlist = [
   "/js/app.js",
   "/js/search/hexo.js",
 ];
-let NPMMirror = false;
+let NPMMirror = true;
 const NPMPackage = "@mhg/volantis-community";
-let NPMPackageVersion = "1.0.0";
+let NPMPackageVersion = "1.0.1655438979150";
 let debug = true;
 // location.hostname == 'localhost' && (debug = true) && (NPMMirror = false);
 const handleFetch = async (event) => {
