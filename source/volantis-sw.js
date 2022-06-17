@@ -26,8 +26,6 @@ const handleFetch = async (event) => {
     return CacheAlways(event)
   } else if (/jsdelivr\.net/.test(url)) {
     return CacheAlways(event)
-  } else if (/static\.mhuig\.top/.test(url)) {
-    return CacheAlways(event)
   } else if (/npm\.elemecdn\.com/.test(url)) {
     return CacheAlways(event)
   } else if (/unpkg\.com/.test(url)) {
@@ -294,7 +292,7 @@ const setNewestVersion = async () => {
       await db.write('blog_version', NPMPackageVersion)
     })
     .catch(error => {
-      logger.error('[Set Newest Version] ' + error.stack)
+      logger.error('[Set Newest Version] ' + (error.stack || error))
     })
 }
 setInterval(async () => {
@@ -330,7 +328,7 @@ const installFunction = async () => {
         })
       }
     }).catch((error) => {
-      logger.error('[install] ' + error.stack);
+      logger.error('[install] ' + (error.stack || error));
     })
 }
 self.addEventListener('install', async function (event) {
@@ -340,7 +338,7 @@ self.addEventListener('install', async function (event) {
     event.waitUntil(installFunction());
     logger.bg.ready('service worker install sucess!');
   } catch (error) {
-    logger.error('[install] ' + error.stack);
+    logger.error('[install] ' + (error.stack || error));
   }
 });
 self.addEventListener('activate', async event => {
@@ -355,19 +353,19 @@ self.addEventListener('activate', async event => {
           }
         }));
       }).catch((error) => {
-        logger.error('[activate] ' + error.stack);
+        logger.error('[activate] ' + (error.stack || error));
       })
     );
     await self.clients.claim()
     logger.bg.ready('service worker activate sucess!');
   } catch (error) {
-    logger.error('[activate] ' + error.stack);
+    logger.error('[activate] ' + (error.stack || error));
   }
 })
 self.addEventListener('fetch', async event => {
   event.respondWith(
     handleFetch(event).catch((error) => {
-      logger.error('[fetch] ' + event.request.url + '\n[error] ' + error.stack);
+      logger.error('[fetch] ' + event.request.url + '\n[error] ' + (error.stack || error));
     })
   )
 });
@@ -441,7 +439,7 @@ async function CacheRuntime(request) {
   logger.wait(`Cacheing url: ${request.url}`);
   console.log(response);
 
-  if (request.method !== "POST" && (url.protocol == "https:" || url.protocol == "http:")) {
+  if (request.method === "GET" && (url.protocol == "https:")) {
     const cache = await caches.open(CACHE_NAME + "-runtime");
     cache.put(request, response.clone()).catch(error => {
       logger.error('[CacheRuntime] ' + (error.stack || error));
