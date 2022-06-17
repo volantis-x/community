@@ -441,14 +441,14 @@ async function CacheRuntime(request) {
   if (!response) {
     response = await fetch(request).catch(() => null)
   }
-  logger.group.event(`Cacheing Runtime ${url.pathname}`);
-  logger.wait(`Cacheing url: ${request.url}`);
+  logger.group.event(`Cache Runtime ${url.pathname}`);
+  logger.wait(`Caching url: ${request.url}`);
   console.log(response);
 
   if (request.method === "GET" && (url.protocol == "https:")) {
     const cache = await caches.open(CACHE_NAME + "-runtime");
     cache.put(request, response.clone()).catch(error => {
-      logger.error('[CacheRuntime] ' + (error.stack || error));
+      logger.error('[Cache Runtime] ' + (error.stack || error));
       if (error.name === 'QuotaExceededError') {
         caches.delete(CACHE_NAME + "-runtime");
         logger.ready("deleted cache")
