@@ -277,19 +277,27 @@ const compareVersion = (a, b) => {
 }
 
 const mirrors = [
-  `https://registry.npmmirror.com/${NPMPackage}/latest`,
   `https://registry.npmjs.org/${NPMPackage}/latest`,
+  `https://registry.npmmirror.com/${NPMPackage}/latest`,
   `https://mirrors.cloud.tencent.com/npm/${NPMPackage}/latest`
 ]
 const getLocalVersion = async () => {
   NPMPackageVersion = await db.read('blog_version') || NPMPackageVersion
   logger.bg.info(`Local Version: ${NPMPackage}@${NPMPackageVersion}`)
 }
+let mirror_time = 0;
 const setNewestVersion = async () => {
   if (!NPMMirror) {
     return
   }
-  return fetchAny(mirrors)
+  let f = null;
+  if (!(mirror_time % (mirrors.length + 1))) {
+    f = fetchAny(mirrors);
+  } else {
+    f = fetch(mirrors[(mirror_time % (mirrors.length + 1)) - 1]);
+  }
+  mirror_time++;
+  return f
     .then(res => res.json())
     .then(async res => {
       if (!res.version) throw ('No Version Found!')
