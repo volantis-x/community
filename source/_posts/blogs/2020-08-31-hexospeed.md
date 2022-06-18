@@ -6,5 +6,5 @@ categories: [进阶玩法]
 author: Colsrch
 link: https://colsrch.cn/posts/56951997/
 backup: https://archive.vn/rw5WO
-headimg: https://7bu.top/2020/09/08/246316f2e8491.png
+headimg: https://fastly.jsdelivr.net/npm/mhgoos@0.0.1655516388715/246316f2e8491.png
 ---

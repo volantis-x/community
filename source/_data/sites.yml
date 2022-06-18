@@ -4,22 +4,22 @@ community_team:
   items:
     - title: xaoxuu
       url: https://xaoxuu.com
-      screenshot: https://i.loli.net/2020/08/21/VuSwWZ1xAeUHEBC.jpg
+      screenshot: https://fastly.jsdelivr.net/npm/mhgoos@0.0.1655516660514/VuSwWZ1xAeUHEBC.jpg
       avatar: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png
       description: 开发者
     - title: MHuiG
       url: https://blog.mhuig.top
-      screenshot: https://i.loli.net/2020/08/22/d24zpPlhLYWX6D1.png
+      screenshot: https://fastly.jsdelivr.net/npm/mhgoos@0.0.1655516784786/d24zpPlhLYWX6D1.png
       avatar: https://cdn.jsdelivr.net/npm/mhg@latest
       description: 划水
     - title: Colsrch
       url: https://colsrch.cn
-      screenshot: https://i.loli.net/2020/08/22/dFRWXm52OVu8qfK.png
+      screenshot: https://fastly.jsdelivr.net/npm/mhgoos@0.0.1655516818927/dFRWXm52OVu8qfK.png
       avatar: https://cdn.jsdelivr.net/gh/Colsrch/images/Colsrch/avatar.jpg
       description: 开发者
     - title: inkss
       url: https://inkss.cn
-      screenshot: https://upload.cc/i1/2021/04/24/vEzn96.png
+      screenshot: https://fastly.jsdelivr.net/npm/mhgoos@0.0.1655516854778/vEzn96.png
       avatar: https://cdn.jsdelivr.net/gh/inkss/common@master/static/web/avatar.jpg
       description: 摸鱼
 
@@ -29,7 +29,7 @@ test_demo:
   items:
     - title: volantis-x.js.org
       url: https://volantis-x.js.org/
-      screenshot: https://i.loli.net/2021/04/08/YQ2nhcvyCuFsm3g.png
+      screenshot: https://fastly.jsdelivr.net/npm/mhgoos@0.0.1655516891879/YQ2nhcvyCuFsm3g.png
       avatar: https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/apple-touch-icon.png
       description: Test Site For Development
 
