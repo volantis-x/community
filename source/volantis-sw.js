@@ -485,16 +485,7 @@ const matchCDN = async (req) => {
     logger.group.ready(`Match NPM Mirror: ` + req.url);
     for (const key in cdn.npm) {
       let url = cdn.npm[key] + "/" + NPMPackage + "@" + NPMPackageVersion + req.url.replace(location.origin, '')
-      url = url.split('?')[0].split('#')[0]
-      if (url.endsWith('/')) {
-        url += 'index.html'
-      } else {
-        const list = url.split('/')
-        const last = list[list.length - 1]
-        if (last.indexOf('.') === -1) {
-          url += '.html'
-        }
-      }
+      url = fullPath(url)
       console.log(url);
       urls.push(url)
     }
@@ -526,11 +517,13 @@ const matchCDN = async (req) => {
   else
     res = fetch(req)
   if (res && NPMMirror && new RegExp(location.origin).test(req.url)) {
+    const ext = fullPath(req.url).split('.').pop()
+    const contentType = getContentType(ext)
     res = res
       .then(res => res.arrayBuffer())
       .then(buffer => new Response(buffer, {
         headers: {
-          "Content-Type": "text/html;charset=utf-8"
+          "Content-Type": contentType
         }
       }))
       .catch(() => null)
@@ -538,6 +531,19 @@ const matchCDN = async (req) => {
   return res
 }
 
+const fullPath = (url) => {
+  url = url.split('?')[0].split('#')[0]
+  if (url.endsWith('/')) {
+    url += 'index.html'
+  } else {
+    const list = url.split('/')
+    const last = list[list.length - 1]
+    if (last.indexOf('.') === -1) {
+      url += '.html'
+    }
+  }
+  return url
+}
 async function progress(res) {
   return new Response(await res.arrayBuffer(), {
     status: res.status,
@@ -595,3 +601,153 @@ function fetchAny(urls) {
     .catch(() => null)
 }
 
+const getContentType = (ext) => {
+  switch (ext) {
+    case 'js':
+      return 'text/javascript'
+    case 'html':
+      return 'text/html'
+    case 'css':
+      return 'text/css'
+    case 'json':
+      return 'application/json'
+    case 'webp':
+      return 'image/webp'
+    case 'jpg':
+      return 'image/jpg'
+    case 'jpeg':
+      return 'image/jpeg'
+    case 'png':
+      return 'image/png'
+    case 'gif':
+      return 'image/gif'
+    case 'xml':
+      return 'text/xml'
+    case 'xsl':
+      return 'text/xml'
+    case 'webmanifest':
+      return 'text/webmanifest'
+    case 'map':
+      return 'application/json'
+    case 'bcmap':
+      return 'image/vnd.wap.wbmp'
+    case 'wbmp':
+      return 'image/vnd.wap.wbmp'
+    case 'bmp':
+      return 'image/bmp'
+    case 'ico':
+      return 'image/vnd.microsoft.icon'
+    case 'tiff':
+      return 'image/tiff'
+    case 'tif':
+      return 'image/tiff'
+    case 'svg':
+      return 'image/svg+xml'
+    case 'svgz':
+      return 'image/svg+xml'
+    case 'woff':
+      return 'application/font-woff'
+    case 'woff2':
+      return 'application/font-woff2'
+    case 'ttf':
+      return 'application/font-ttf'
+    case 'otf':
+      return 'application/font-otf'
+    case 'eot':
+      return 'application/vnd.ms-fontobject'
+    case 'zip':
+      return 'application/zip'
+    case 'tar':
+      return 'application/x-tar'
+    case 'gz':
+      return 'application/gzip'
+    case 'bz2':
+      return 'application/x-bzip2'
+    case 'rar':
+      return 'application/x-rar-compressed'
+    case '7z':
+      return 'application/x-7z-compressed'
+    case 'doc':
+      return 'application/msword'
+    case 'docx':
+      return 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
+    case 'xls':
+      return 'application/vnd.ms-excel'
+    case 'xlsx':
+      return 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
+    case 'ppt':
+      return 'application/vnd.ms-powerpoint'
+    case 'pptx':
+      return 'application/vnd.openxmlformats-officedocument.presentationml.presentation'
+    case 'pdf':
+      return 'application/pdf'
+    case 'txt':
+      return 'text/plain'
+    case 'rtf':
+      return 'application/rtf'
+    case 'mp3':
+      return 'audio/mpeg'
+    case 'wav':
+      return 'audio/x-wav'
+    case 'ogg':
+      return 'audio/ogg'
+    case 'mp4':
+      return 'video/mp4'
+    case 'm4v':
+      return 'video/x-m4v'
+    case 'mov':
+      return 'video/quicktime'
+    case 'avi':
+      return 'video/x-msvideo'
+    case 'wmv':
+      return 'video/x-ms-wmv'
+    case 'flv':
+      return 'video/x-flv'
+    case 'swf':
+      return 'application/x-shockwave-flash'
+    case 'mpg':
+      return 'video/mpeg'
+    case 'mpeg':
+      return 'video/mpeg'
+    case 'mpe':
+      return 'video/mpeg'
+    case 'mpv':
+      return 'video/mpeg'
+    case 'm2v':
+      return 'video/mpeg'
+    case 'm4a':
+      return 'audio/mp4'
+    case 'aac':
+      return 'audio/aac'
+    case 'm3u':
+      return 'audio/x-mpegurl'
+    case 'm3u8':
+      return 'application/vnd.apple.mpegurl'
+    case 'pls':
+      return 'audio/x-scpls'
+    case 'cue':
+      return 'application/x-cue'
+    case 'wma':
+      return 'audio/x-ms-wma'
+    case 'flac':
+      return 'audio/flac'
+    case 'aif':
+      return 'audio/x-aiff'
+    case 'aiff':
+      return 'audio/x-aiff'
+    case 'aifc':
+      return 'audio/x-aiff'
+    case 'au':
+      return 'audio/basic'
+    case 'snd':
+      return 'audio/basic'
+    case 'mid':
+      return 'audio/midi'
+    case 'midi':
+      return 'audio/midi'
+    case 'kar':
+      return 'audio/midi'
+    default:
+      return 'text/plain'
+  }
+}
