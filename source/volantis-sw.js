@@ -1,6 +1,6 @@
 // 全站打包上传 npm，sw 并发请求 cdn
 const prefix = 'volantis-community';
-const cacheSuffixVersion = '00000003-::cacheSuffixVersion::';
+const cacheSuffixVersion = '00000005-::cacheSuffixVersion::';
 const CACHE_NAME = prefix + '-v' + cacheSuffixVersion;
 const PreCachlist = [
   "/css/style.css",
@@ -59,7 +59,6 @@ const cdn = {
     gcore: 'https://gcore.jsdelivr.net/npm',
     testingcf: 'https://testingcf.jsdelivr.net/npm',
     test1: 'https://test1.jsdelivr.net/npm',
-    eleme: 'https://npm.elemecdn.com',
     unpkg: 'https://unpkg.com',
   }
 }
