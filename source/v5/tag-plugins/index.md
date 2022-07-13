@@ -1596,6 +1596,9 @@ npm i -S hexo-tag-aplayer
 baidu, tx, onedrive, hc, ty, aliyun, 115, jg, 360, 123, qn, github, lz
 ```
 
+如果里的主题版本不支持或有问题可查看如下文档
+{% link 原版文档::https://www.yt-blog.top/docs/vls-pandown-tags %}
+
 ## 友链标签
 
 您可以在任何位置插入友链，支持静态数据和动态数据，静态数据需要写在数据文件中：
