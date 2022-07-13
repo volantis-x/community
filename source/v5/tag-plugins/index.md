@@ -1548,6 +1548,54 @@ npm i -S hexo-tag-aplayer
 {% endswiper %}
 ```
 
+## pandown
+
+```md 本插件最后更新于 <u>5.0</u> 版本
+{% pandown 网盘类型::网盘链接::提取码(可为空)::文件名 %}
+```
+
+### 演示效果
+
+{% pandown baidu::https://example.com::1234::百度网盘 %}
+{% pandown tx::https://example.com::1234::腾讯微云 %}
+{% pandown onedrive::https://example.com::1234::onedrive %}
+{% pandown hc::https://example.com::1234::和彩云 %}
+{% pandown ty::https://example.com::1234::天翼云 %}
+{% pandown aliyun::https://example.com::1234::阿里网盘 %}
+{% pandown 115::https://example.com::1234::115网盘 %}
+{% pandown jg::https://example.com::1234::坚果云 %}
+{% pandown 360::https://example.com::1234::360安全云盘 %}
+{% pandown 123::https://example.com::1234::123网盘 %}
+{% pandown qn::https://example.com::1234::七牛云 %}
+{% pandown github::https://example.com::::Github %}
+{% pandown lz::https://example.com::1234::蓝奏云 %}
+
+### 上述示例的源码
+
+```md example:
+{% pandown baidu::https://example.com::1234::百度网盘 %}
+{% pandown tx::https://example.com::1234::腾讯微云 %}
+{% pandown onedrive::https://example.com::1234::onedrive %}
+{% pandown hc::https://example.com::1234::和彩云 %}
+{% pandown ty::https://example.com::1234::天翼云 %}
+{% pandown aliyun::https://example.com::1234::阿里网盘 %}
+{% pandown 115::https://example.com::1234::115网盘 %}
+{% pandown jg::https://example.com::1234::坚果云 %}
+{% pandown 360::https://example.com::1234::360安全云盘 %}
+{% pandown 123::https://example.com::1234::123网盘 %}
+{% pandown qn::https://example.com::1234::七牛云 %}
+{% pandown github::https://example.com::::Github %}
+{% pandown lz::https://example.com::1234::蓝奏云 %}
+```
+
+### 可以支持的参数
+
+#### 网盘类型
+
+```md
+baidu, tx, onedrive, hc, ty, aliyun, 115, jg, 360, 123, qn, github, lz
+```
+
 ## 友链标签
 
 您可以在任何位置插入友链，支持静态数据和动态数据，静态数据需要写在数据文件中：
