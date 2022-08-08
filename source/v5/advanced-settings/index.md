@@ -595,6 +595,16 @@ google_analytics_key: Google Analytics Key
 tencent_aegis_id: 上报 id
 ```
 
+#### 51LA统计
+```yaml blog/_config.yml
+v6_51_la: 应用id
+```
+
+#### 灵鹊监控
+```yaml blog/_config.yml
+perf_51_la: 应用id
+```
+
 #### CNZZ 统计
 
 请参考 ZYMIN 的这篇教程：
