@@ -600,7 +600,7 @@ tencent_aegis_id: 上报 id
 v6_51_la: 应用id
 ```
 
-#### 灵鹊监控
+#### 灵雀监控
 ```yaml blog/_config.yml
 perf_51_la: 应用id
 ```
