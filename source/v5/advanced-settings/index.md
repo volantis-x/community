@@ -531,7 +531,7 @@ popularPosts:
 
 #### PV 和 UV
 
-默认支持 [不蒜子](http://busuanzi.ibruce.info/) 的访问统计和 [leancloud](https://leancloud.app/) 统计，在配置文件中设置。
+支持 [不蒜子](http://busuanzi.ibruce.info/) 的访问统计和 [leancloud](https://leancloud.app/) 统计，在配置文件中设置。
 
 - 若你选择 [leancloud](https://leancloud.app/) 统计, 你还需前往 leancloud 创建应用并填写下面 leancloud 相关配置
 - 若你选择 [不蒜子](http://busuanzi.ibruce.info/) 统计, 请取消下面 busuanzi 的配置注释
@@ -544,6 +544,10 @@ analytics:
     app_key: # 应用 APP_KEY
     custom_api_server: # 国际版一般不需要写，除非自定义了 API Server
 ```
+
+我们还支持以下评论系统提供的访问统计: [waline](https://waline.js.org/)、[twikoo](https://twikoo.js.org/)、[discuss](https://discuss.js.org)、[artalk](https://artalk.js.org)
+
+如需使用它们，请将上面 `leancloud` 和 `busuanzi` 的所有配置注释，并启用对应评论系统的统计功能
 
 #### 字数和阅读时长
 
