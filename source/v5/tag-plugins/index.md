@@ -771,16 +771,38 @@ rounded, circle
 ## site
 
 
-网站卡片可以显示网站截图、logo、标题、描述，使用方法和[友链标签](#友链标签)一模一样，唯一的区别是数据文件名称为 `sites.yml`，可以和友链数据混用，通过分组过滤实现不一样的效果。
+网站卡片可以显示网站截图、logo、标题、描述，使用方法和 `友链标签` 一模一样，唯一的区别是数据文件名称为 `sites.yml`，可以和友链数据混用，通过分组过滤实现不一样的效果。
 
-```md 示例写法
+```md 最后更新于 <u>5.0</u> 版本
+{% sites [筛选方式]:[组名] %}
+```
+
+### 演示效果
+
+{% sites only:community_team %}
+
+### 上述示例的源码
+
+```md example
 {% sites only:community_team %}
 ```
 
-{% folding sites only:community_team %}
-{% sites only:community_team %}
-{% endfolding %}
+### 可以支持的参数
 
+#### 数据按组筛选
+
+支持分组（白名单模式和黑名单模式）显示:
+
+```
+// 显示 communtiy_team
+{% sites only:communtiy_team %}
+
+// 除了 communtiy_team 别的都显示
+{% sites not:community_team %}
+
+// 多个分组使用 `,` 分隔
+{% sites only:communtiy_team, communtiy_builder %}
+```
 
 <br>
 
