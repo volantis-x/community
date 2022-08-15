@@ -25,9 +25,14 @@ print(Precache)
 f=open("./public/volantis-sw.js","rb")
 fb = f.read().decode("utf8","ignore")
 f.close()
-fb=fb.replace("/css/style.css","/css/"+Precache["style"])
-fb=fb.replace("/js/app.js","/js/"+Precache["app"])
-fb=fb.replace("/js/search/hexo.js","/js/search/"+Precache["search"])
+
+if "style" in Precache:
+  fb=fb.replace("/css/style.css","/css/"+Precache["style"])
+if "app" in Precache:
+  fb=fb.replace("/js/app.js","/js/"+Precache["app"])
+if "search" in Precache:
+  fb=fb.replace("/js/search/hexo.js","/js/search/"+Precache["search"])
+
 fb=fb.replace("::cacheSuffixVersion::",str(random()))
 print(fb)
 f=open("./public/volantis-sw.js","wb")
