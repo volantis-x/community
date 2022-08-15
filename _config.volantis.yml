@@ -264,7 +264,7 @@ sidebar:
         title: 文档导航 v5.0
 
 site_footer:
-  layout: [aplayer, social, source, analytics, copyright]
+  layout: [aplayer, social, source, copyright]
   copyright: '[Copyright © since 2017 Volantis Team](https://github.com/volantis-x/)'
   social:
     - img: volantis-static/media/org.volantis/icon/1322024-social-media/020-rss.svg
@@ -325,8 +325,8 @@ plugins:
 analytics:
   busuanzi: #https://cdn.jsdelivr.net/gh/volantis-x/cdn-busuanzi@2.3/js/busuanzi.pure.mini.js
   leancloud:
-    app_id: GCYDRKI6XRkyC7EuEhJv90ia-MdYXbMMI
-    app_key: 4xKBXGBj6BgecU62vff5rJHs
+    app_id: #GCYDRKI6XRkyC7EuEhJv90ia-MdYXbMMI
+    app_key: #4xKBXGBj6BgecU62vff5rJHs
     custom_api_server: # 一般不需要写，除非自定义了 API Server
 
 custom_css:
