@@ -1,4 +1,7 @@
-use_cdn: false
+cdn:
+  enable: false
+cdn_version: true
+content_visibility: true
 navbar:
   logo: # choose [img] or [icon + title]
     img: '' # volantis-static/media/org.volantis/blog/Logo-NavBar@3x.png
@@ -321,6 +324,8 @@ plugins:
     enable: true
   gitter:
     room: hexo-theme-volantis/community
+  scrollreveal:
+    enable: true
 
 analytics:
   busuanzi: #https://cdn.jsdelivr.net/gh/volantis-x/cdn-busuanzi@2.3/js/busuanzi.pure.mini.js
