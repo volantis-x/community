@@ -1,0 +1,7 @@
+fontawesome:
+  name: "@fortawesome/fontawesome-pro"
+  file: css/all.min.css
+  version: 6.1.1
+  npm: false
+  static: true
+  cdnjs: false

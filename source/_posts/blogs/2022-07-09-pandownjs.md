@@ -14,7 +14,11 @@ link: https://www.yt-blog.top/2022/05/05/12/00/30/pandown-js/
 
 ~~↑↑↑和上次一样的开头↑↑↑~~
 
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Fgaoxing/pandown-js/pandown.js"></script>
+<!--
+这一段会使返回主页的pjax失效。。
+<script pjax-data type="text/javascript" src="https://cdn.jsdelivr.net/gh/Fgaoxing/pandown-js/pandown.js"></script>
 <pandown type="lz" url="123" pwd="1234" fname="啥都没有，我没放链接"></pandown>
-<script>pandown()</script>
+<script pjax-data>pandown()</script> 
+-->
+
 <!-- more -->
