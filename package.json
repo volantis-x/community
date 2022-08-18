@@ -13,7 +13,7 @@
     "version": "6.2.0"
   },
   "dependencies": {
-    "hexo": "^6.1.0",
+    "hexo": "^6.2.0",
     "hexo-autonofollow": "^1.0.1",
     "hexo-autoprefixer": "^2.0.0",
     "hexo-deployer-git": "^3.0.0",
@@ -26,7 +26,7 @@
     "hexo-generator-tag": "^1.0.0",
     "hexo-renderer-ejs": "^2.0.0",
     "hexo-renderer-marked": "^5.0.0",
-    "hexo-renderer-stylus": "^2.0.1",
+    "hexo-renderer-stylus": "^2.1.0",
     "hexo-server": "^3.0.0"
   },
   "devDependencies": {
@@ -36,7 +36,7 @@
     "gulp-htmlclean": "^2.7.22",
     "gulp-htmlmin": "^5.0.1",
     "gulp-sourcemaps": "^3.0.0",
-    "gulp-terser": "^2.0.1",
-    "inline-csp-hash": "^1.1.15"
+    "gulp-terser": "^2.1.0",
+    "inline-csp-hash": "^1.1.16"
   }
 }
