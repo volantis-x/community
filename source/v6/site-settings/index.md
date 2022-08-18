@@ -1,10 +1,10 @@
 ---
 layout: docs
-group: docs-volantis-latest
+group: docs-v6
 order: 201
 title: 站点配置
 short_title: 2. 站点配置
-sidebar: [docs-volantis-latest, toc]
+sidebar: [docs-v6, toc]
 disqus:
   path: /
 ---

@@ -251,6 +251,20 @@ sidebar:
         icon: fa-duotone fa-list-alt
         title: 文档导航 v4
 
+    docs-v5:
+      class: group
+      display: [desktop, mobile] # [desktop, mobile]
+      header:
+        icon: fa-duotone fa-list-alt
+        title: 文档导航 v5
+
+    docs-v6:
+      class: group
+      display: [desktop, mobile] # [desktop, mobile]
+      header:
+        icon: fa-duotone fa-list-alt
+        title: 文档导航 v6
+
     docs-latest:
       class: group
       display: [desktop, mobile] # [desktop, mobile]
@@ -267,7 +281,7 @@ sidebar:
         title: 文档导航 v5.0
 
 site_footer:
-  layout: [aplayer, social, source, copyright]
+  layout: [aplayer, social, source, analytics, copyright]
   copyright: '[Copyright © since 2017 Volantis Team](https://github.com/volantis-x/)'
   social:
     - img: volantis-static/media/org.volantis/icon/1322024-social-media/020-rss.svg
@@ -294,6 +308,8 @@ plugins:
     enable: true
   fontawesome: volantis-static/libs/@fortawesome/fontawesome-pro/css/all.min.css
   parallax:
+    enable: true
+  busuanzi:
     enable: true
   aplayer:
     enable: true
@@ -327,13 +343,6 @@ plugins:
   scrollreveal:
     enable: true
 
-analytics:
-  busuanzi: #https://cdn.jsdelivr.net/gh/volantis-x/cdn-busuanzi@2.3/js/busuanzi.pure.mini.js
-  leancloud:
-    app_id: #GCYDRKI6XRkyC7EuEhJv90ia-MdYXbMMI
-    app_key: #4xKBXGBj6BgecU62vff5rJHs
-    custom_api_server: # 一般不需要写，除非自定义了 API Server
-
 custom_css:
   cursor:
     enable: true
@@ -356,25 +365,6 @@ custom_css:
       weight: normal
       style: normal
 
-rightmenu:
-  enable: false
-  faicon: fa-duotone PETERRIVE
-  print:
-    icon: fa-duotone fa-print TURQUOISE
-  darkmode:
-    icon: fa-duotone fa-eclipse-alt WISTERIA
-  reading:
-    icon: fa-duotone fa-book-open EMERALD
-  help:
-    icon: fa-duotone fa-question EMERALD
-  examples:
-    icon: fa-duotone fa-rss PETERRIVE
-  contributors:
-    icon: fa-duotone fa-fan fa-spin AMETHYST
-  source_docs:
-    icon: fa-duotone fa-code-branch WETASPHALT
-  source_theme:
-    icon: fa-duotone fa-file-code CONCRETE
 
 rightmenus:
   enable: true

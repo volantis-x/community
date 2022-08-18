@@ -1,10 +1,10 @@
 ---
 layout: docs
-group: docs-volantis-latest
+group: docs-v6
 order: 701
 title: 开发文档
 short_title: 7. 开发文档
-sidebar: [docs-volantis-latest, toc]
+sidebar: [docs-v6, toc]
 disqus:
   path: /
 ---

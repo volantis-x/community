@@ -1,10 +1,10 @@
 ---
 layout: docs
-group: docs-volantis-latest
+group: docs-v6
 order: 601
 title: 进阶设定
 short_title: 6. 进阶设定
-sidebar: [docs-volantis-latest, toc]
+sidebar: [docs-v6, toc]
 disqus:
   path: /
 ---
@@ -531,23 +531,19 @@ popularPosts:
 
 #### PV 和 UV
 
-支持 [不蒜子](http://busuanzi.ibruce.info/) 的访问统计和 [leancloud](https://leancloud.app/) 统计，在配置文件中设置。
-
-- 若你选择 [leancloud](https://leancloud.app/) 统计, 你还需前往 leancloud 创建应用并填写下面 leancloud 相关配置
-- 若你选择 [不蒜子](http://busuanzi.ibruce.info/) 统计, 请取消下面 busuanzi 的配置注释
+支持 [不蒜子](http://busuanzi.ibruce.info/) 的访问统计，在配置文件中设置。
 
 ``` yaml blog/_config.volantis.yml
-analytics:
-  busuanzi: #/libs/busuanzi/js/busuanzi.pure.mini.js #https://cdn.jsdelivr.net/gh/volantis-x/cdn-busuanzi@2.3/js/busuanzi.pure.mini.js
-  leancloud: # 请使用自己的 id & key 以防止数据丢失
-    app_id: # 应用 APP_ID
-    app_key: # 应用 APP_KEY
-    custom_api_server: # 国际版一般不需要写，除非自定义了 API Server
+plugins:
+  busuanzi: 
+    enable: true
 ```
 
 我们还支持以下评论系统提供的访问统计: [waline](https://waline.js.org/)、[twikoo](https://twikoo.js.org/)、[discuss](https://discuss.js.org)、[artalk](https://artalk.js.org)
 
-如需使用它们，请将上面 `leancloud` 和 `busuanzi` 的所有配置注释，并启用对应评论系统的统计功能
+如需使用它们，请关闭不蒜子，并启用对应评论系统的统计功能（评论统计不支持全站统计）。
+
+{% note info :: 推广：[杜老师自建国内不蒜子统计平台](https://dusays.com/476/)：4H8G，60G，下行 500M，上行 50M，阿里 CDN。 %}
 
 #### 字数和阅读时长
 

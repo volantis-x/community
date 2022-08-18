@@ -2,14 +2,14 @@
 layout: docs
 seo_title: 开始使用
 short_title: 1. 开始使用
-group: docs-volantis-latest
+group: docs-v6
 order: 1
-sidebar: [docs-volantis-latest, toc]
+sidebar: [docs-v6, toc]
 description: Volantis 是一个功能丰富、高度模块化的 Hexo 博客主题。得益于其强大的模块化特性，您可以轻松搭建一个极简风格的博客，也可以仿照官网搭建一个多人协作的、包含文档模块的大体量综合型博客。
 ---
 
 <p>
-{% span logo center large, <sup>&ensp;</sup>Volantis<sup>5</sup> %}
+{% span logo center large, <sup>&ensp;</sup>Volantis<sup>6</sup> %}
 {% span center small logo, A Wonderful Theme for Hexo %}
 </p>
 <br>

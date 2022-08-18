@@ -1,10 +1,10 @@
 ---
 layout: docs
-group: docs-volantis-latest
+group: docs-v6
 order: 801
 title: FAQ
 short_title: 8. FAQ
-sidebar: [docs-volantis-latest, toc]
+sidebar: [docs-v6, toc]
 disqus:
   path: /
 ---
