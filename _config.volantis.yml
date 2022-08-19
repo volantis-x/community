@@ -387,8 +387,7 @@ rightmenus:
     - music
   options:
     iconPrefix: fa-duotone PETERRIVE
-    articleShowLink: false
-    corsAnywhere: https://cors.adc.ink/
+    articleShowLink: true
   plugins:
     navigation: 
       - {id: 'left', name: '转到上一页', icon: 'fa-duotone fa-arrow-left PETERRIVE', event: 'history.back()', group: 'navigation'}

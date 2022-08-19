@@ -289,29 +289,9 @@ color_scheme:
 
 ### 自定义右键菜单
 
-自定义右键菜单自 `5.0.0-rc.8` 版本进行了全新重构，与历史版本相比，重构版右键菜单拥有更灵活的配置。
+#### 右键菜单
 
-由于新版右键菜单配置较为复杂，原版菜单**暂时性**保留，在配置文件上新版右键以  `rightmenus` 命名。
-
-> *为了方面称呼，以**新版右键**代指重构版右键菜单，**老版右键**代指历史版本右键菜单。*
-
-#### 差异对比
-
-新旧两版右键菜单的差异如下：
-
-| 对比项               | 老版右键             | 新版右键                             |
-| -------------------- | -------------------- | ------------------------------------ |
-| 自定义菜单项         | 只支持新增链接型菜单 | 同时支持事件型和链接型菜单           |
-| 菜单项显示与顺序调整 | 部分支持             | 完全支持                             |
-| 内置菜单自定义调整   | 部分支持             | 完全支持修改文字描述、图标显示、功能实现等内容 |
-| 自定义响应事件处理   | 不支持               | 支持自行添加                         |
-| 复制图片至剪切板     | 仅支持 PNG 格式图片  | 任意格式的图片                       |
-| 全局音乐控制         | 支持                 | 支持                                 |
-
-
-#### 新版右键菜单
-
-新版右键在菜单项上根据配置文件自行生成前端代码，所以统一了一个共用的菜单对象：
+右键在菜单项上根据配置文件自行生成前端代码，所以统一了一个共用的菜单对象：
 
 ```js
 {id: '', name: '', icon: '', link: '', event: '', group: ''}
@@ -399,15 +379,15 @@ rightmenus:
 
 ##### 默认设置
 
-###### **iconPrefix<String>**
+**iconPrefix<String>**
 
 Fontawesome 图标前缀，音乐类组件使用，参考内容：*fa-solid, fa-regular, fa-light, fa-thin, fa-duotone, fa-brands*。
 
-###### **articleShowLink<Boolean>**
+**articleShowLink<Boolean>**
 
 在 articlePage 组显示时（文章页）时依旧显示含 link 属性的菜单项。
 
-###### **musicAlwaysShow<Boolean>**
+**musicAlwaysShow<Boolean>**
 
 当设定全局音乐播放器时，是否一直显示音乐控制菜单。false：仅当音乐播放时启用。
 
@@ -565,61 +545,6 @@ rightmenus:
 ```
 <!-- endtab -->
 {% endtabs %}
-
-#### 老版右键菜单
-
-目前老版右键与新版右键共存，但同时只能开启一个自定义右键菜单。
-
-##### 配置文件
-
-{% folding blog/_config.volantis.yml %}
-```yml
-# 自定义右键菜单
-rightmenu:
-  enable: false
-  faicon: fa              # 公共图标类型 fa fal fa-solid fa-duotone
-  # hr: 分割线, music: 音乐控制器
-  layout: [home, hr, help, examples, contributors, hr, source_docs, source_theme, hr, print, darkmode, reading, music]
-  ### 可选功能项 ###
-  print:                  # 只有文章页才允许自定义打印
-    name: 打印页面
-    icon: fa fa-print
-  darkmode:        # 需开启 plugins.darkmodejs
-    name: 暗黑模式
-    icon: fa fa-moon
-  reading:
-    name: 阅读模式
-    icon: fa fa-book-open
-  customPicUrl:    # 右键的图片复制：只有 Chrome 支持，且只支持 PNG 格式的图片。
-    enable: false  # 如果使用了对象存储且开启了自适应 Webp，那么可以提供额外的链接用以替换图片的访问地址
-    old: #https://static.inkss.cn/img/article/
-    new: #https://cdn.jsdelivr.net/gh/inkss/inkss-cdn@master/img/article/
-  music:           # 当设定全局音乐播放器时，是否一直显示音乐控制菜单。false：仅当音乐播放时启用
-    alwaysShow: true
-  ### 自定义菜单 ###
-  help:
-    name: 常见问题
-    icon: fa fa-question
-    url: https://volantis.js.org/faqs/
-  examples:
-    name: 示例博客
-    icon: fa fa-rss
-    url: https://volantis.js.org/examples/
-  contributors:
-    name: 加入社区
-    icon: fa fa-fan fa-spin
-    url: https://volantis.js.org/contributors/
-  source_docs:
-    name: 本站源码
-    icon: fa fa-code-branch
-    url: https://github.com/volantis-x/volantis-docs/
-  source_theme:
-    name: 主题源码
-    icon: fa fa-code-branch
-    url: https://github.com/volantis-x/hexo-theme-volantis/
-####
-```
-{% endfolding %}
 
 ## 设置网站导航栏
 
