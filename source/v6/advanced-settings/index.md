@@ -541,7 +541,7 @@ plugins:
 
 我们还支持以下评论系统提供的访问统计: [waline](https://waline.js.org/)、[twikoo](https://twikoo.js.org/)、[discuss](https://discuss.js.org)、[artalk](https://artalk.js.org)
 
-如需使用它们，请关闭不蒜子，并启用对应评论系统的统计功能（评论统计不支持全站统计）。
+如需使用它们，请开启对应评论系统的相关设置，此时将接管含评论页面的 PV 量统计。
 
 {% note info :: 推广：[杜老师自建国内不蒜子统计平台](https://dusays.com/476/)：4H8G，60G，下行 500M，上行 50M，阿里 CDN。 %}
 
