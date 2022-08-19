@@ -28,6 +28,21 @@ is like driving with your eyes closed. %}
 </p>
 <br>
 
+
+## 控制台报错 SyntaxError: Unexpected token '.'
+
+```bash
+  SyntaxError: Unexpected token '.'
+      at new Script (vm.js:88:7)
+      at createScript (vm.js:263:10)
+      at runInThisContext (vm.js:311:10)
+```
+
+node.js 版本过低，请升级至 v16.x 及以上版本！
+
+{% note info :: 配置和使用 volantis 5.x 之前请确保 node.js 升级至 <emp>v16.x 及以上</emp>版本！ %}
+
+
 ## 我应该使用哪个版本？
 
 使用最新的版本
@@ -111,13 +126,6 @@ is like driving with your eyes closed. %}
 ## 为什么文章会被截断？
 
 ![](./images/12.png)
-
-
-
-
-
-
-
 
 
 

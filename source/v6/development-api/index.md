@@ -10,7 +10,7 @@ disqus:
 ---
 
 <p>
-{% span logo center large, <sup>&ensp;</sup>Volantis<sup>5</sup> %}
+{% span logo center large, <sup>&ensp;</sup>Volantis<sup>6</sup> %}
 {% span center small logo, Development API for Volantis %}
 </p>
 <br>

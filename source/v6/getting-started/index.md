@@ -54,6 +54,10 @@ npm: 8.x ~ latest LTS
 
 {% endtabs %}
 
+{% note info :: 配置和使用 volantis 6.x 之前请确保 node.js 升级至 <emp>v16.x 及以上</emp>版本！ %}
+
+
+{% link FAQ List For Volantis 6::/v6/faq/::https://unpkg.com/volantis-static@0.0.1649552113628/media/twemoji/assets/svg/1fa82.svg %}
 
 ## 快速体验
 
@@ -66,17 +70,17 @@ git clone https://github.com/volantis-x/demo.git && cd demo && npm i && hexo s
 
 ## 下载与安装
 
-{% note radiation yellow :: volantis 5.x 目前正处于 「stable 阶段」<br> volantis 4.x 目前正处于 「EOL(End of Life) 阶段」 %}
+{% note radiation yellow :: volantis 6.x 目前正处于 「alpha 阶段」<br> volantis 5.x 目前正处于 「stable 阶段」<br> volantis 4.x 目前正处于 「EOL(End of Life) 阶段」 %}
 
-------
+{% folding green:: Tips: volantis 开发发布周期 %}
 
-{% note info :: volantis 开发发布周期依次经过: 「alpha 阶段」→「beta 阶段」→「rc 阶段」→「stable 阶段」→「EOL 阶段」 %}
+{% note info :: volantis 开发发布周期依次经过: 「alpha 阶段」=>「beta 阶段」=>「rc 阶段」=>「stable 阶段」=>「EOL 阶段」 %}
 
-{% note guide :: rc 阶段的测试版本和 stable 阶段的正式版本 我们统称为 「稳定版本」，只有 「稳定版本」 发布到 [npm](https://www.npmjs.com/package/hexo-theme-volantis)。 %}
+{% note guide clear :: rc 阶段的测试版本和 stable 阶段的正式版本 我们统称为 「稳定版本」 , 只有 「稳定版本」 发布到 [npm](https://www.npmjs.com/package/hexo-theme-volantis) %}
 
-{% note bug danger :: alpha 阶段的开发测试版本 和 beta 阶段的测试版本 我们统称为 「小白鼠测试版本」，「小白鼠测试版本」 仅存在于 [Github 仓库的 dev 分支](https://github.com/volantis-x/hexo-theme-volantis/tree/dev)。 %}
+{% note bug danger :: alpha 阶段的开发测试版本 和 beta 阶段的测试版本 我们统称为 「小白鼠测试版本」, 「小白鼠测试版本」 仅存在于 [Github 仓库的 dev 分支](https://github.com/volantis-x/hexo-theme-volantis/tree/dev) %}
 
-------
+{% endfolding %}
 
 {% folding green::安装或更新 「稳定版本」 %}
 

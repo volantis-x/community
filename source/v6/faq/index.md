@@ -10,8 +10,8 @@ disqus:
 ---
 
 <p>
-{% span logo center large, <sup>&ensp;</sup>Volantis<sup>5</sup> %}
-{% span center small logo, FAQ List For Volantis 5 %}
+{% span logo center large, <sup>&ensp;</sup>Volantis<sup>6</sup> %}
+{% span center small logo, FAQ List For Volantis 6 %}
 </p>
 <br>
 
@@ -27,6 +27,21 @@ is like driving with your eyes closed. %}
 {% span logo center small, 在没有错误日志的情况下诊断任何问题无异于闭眼开车 %}
 </p>
 <br>
+
+## 控制台报错 SyntaxError: Unexpected token '.'
+
+```bash
+  SyntaxError: Unexpected token '.'
+      at new Script (vm.js:88:7)
+      at createScript (vm.js:263:10)
+      at runInThisContext (vm.js:311:10)
+```
+
+node.js 版本过低，请升级至 v16.x 及以上版本！
+
+{% note info :: 配置和使用 volantis 6.x 之前请确保 node.js 升级至 <emp>v16.x 及以上</emp>版本！ %}
+
+
 
 ## 我应该使用哪个版本？
 
