@@ -393,7 +393,7 @@ rightmenus:
       - {id: 'left', name: '转到上一页', icon: 'fa-duotone fa-arrow-left PETERRIVE', event: 'history.back()', group: 'navigation'}
       - {id: 'right', name: '转到下一页', icon: 'fa-duotone fa-arrow-right PETERRIVE', event: 'history.forward()', group: 'navigation'}
       - {id: 'redo', name: '刷新当前页面', icon: 'fa-duotone fa-redo PETERRIVE', event: 'window.location.reload()', group: 'navigation'}
-      - {id: 'home', name: '回到首页', icon: 'fa-duotone fa-home PETERRIVE', link: '/', group: 'navigation'}
+      # - {id: 'home', name: '回到首页', icon: 'fa-duotone fa-home PETERRIVE', link: '/', group: 'navigation'}
       - {id: 'up', name: '回到顶部', icon: 'fa-duotone fa-arrow-up PETERRIVE', event: 'VolantisApp.scrolltoElement(volantis.dom.bodyAnchor)', group: 'navigation'}
     articlePage:
       - {id: 'printMode', name: '打印页面', icon: 'fa-duotone fa-print TURQUOISE', event: 'printMode', group: 'articlePage'}
