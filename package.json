@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "hexo clean && hexo g && gulp",
+    "start": "hexo clean && hexo g && gulp && npm run hash",
+    "hash": "cache-hash --target public --output public",
     "g": "hexo clean && hexo generate",
     "c": "hexo clean",
     "d": "hexo deploy",
@@ -30,7 +31,11 @@
     "hexo-server": "^3.0.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.18.13",
+    "@babel/preset-env": "^7.18.10",
+    "cache-hash": "^1.0.0-beta.5",
     "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
     "gulp-clean-css": "^4.3.0",
     "gulp-html-minifier-terser": "^6.0.1",
     "gulp-htmlclean": "^2.7.22",

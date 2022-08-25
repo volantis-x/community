@@ -184,7 +184,7 @@ Object.keys(color).forEach(key => {
     return str;
   };
 });
-logger = {
+self.logger = {
   add,
   ...chalk,
   ...colorUtils,
@@ -254,8 +254,8 @@ self.db = {
   }
 }
 const compareVersion = (a, b) => {
-  v1 = a.split('.');
-  v2 = b.split('.');
+  let v1 = a.split('.');
+  let v2 = b.split('.');
   const len = Math.max(v1.length, v2.length);
   while (v1.length < len) {
     v1.push('0');

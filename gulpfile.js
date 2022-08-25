@@ -1,45 +1,54 @@
-var gulp = require('gulp');
+const gulp = require('gulp');
 const cleanCSS = require('gulp-clean-css');
-var htmlmin = require('gulp-html-minifier-terser');
-var htmlclean = require('gulp-htmlclean');
-var terser = require('gulp-terser');
-var sourcemaps = require('gulp-sourcemaps');
+const htmlmin = require('gulp-html-minifier-terser');
+const htmlclean = require('gulp-htmlclean');
+const terser = require('gulp-terser');
+const sourcemaps = require('gulp-sourcemaps');
+const babel = require('gulp-babel');
 
 // 压缩css文件
 const minify_css = () => (
-    gulp.src(['./public/**/*.css','!./public/{lib,lib/**}','!./public/{libs,libs/**}','!./public/{media,media/**}'])
-        .pipe(sourcemaps.init())
-        .pipe(cleanCSS({compatibility: 'ie8'}))
-        .pipe(sourcemaps.write('./maps'))
-        .pipe(gulp.dest('./public'))
+  gulp.src(['./public/**/*.css', '!./public/{lib,lib/**}', '!./public/{libs,libs/**}', '!./public/{media,media/**}'])
+    .pipe(sourcemaps.init())
+    .pipe(cleanCSS({ compatibility: 'ie8' }))
+    .pipe(sourcemaps.write('./maps'))
+    .pipe(gulp.dest('./public'))
 );
 
 // 压缩html文件
 const minify_html = () => (
-    gulp.src(['./public/**/*.html','!./public/{lib,lib/**}','!./public/{libs,libs/**}','!./public/{media,media/**}'])
-        .pipe(htmlclean())
-        .pipe(htmlmin({
-            removeComments: true,
-            minifyJS: true,
-            minifyCSS: true,
-            minifyURLs: true,
-        }))
-        .pipe(gulp.dest('./public'))
+  gulp.src(['./public/**/*.html', '!./public/{lib,lib/**}', '!./public/{libs,libs/**}', '!./public/{media,media/**}'])
+    .pipe(htmlclean())
+    .pipe(htmlmin({
+      removeComments: true,
+      minifyJS: true,
+      minifyCSS: true,
+      minifyURLs: true,
+    }))
+    .pipe(gulp.dest('./public'))
 )
 
 // 压缩js文件
 const minify_js = () => (
-    gulp.src(['./public/**/*.js', '!./public/**/*.min.js','!./public/{lib,lib/**}','!./public/{libs,libs/**}','!./public/{media,media/**}'])
-        .pipe(sourcemaps.init())
-        .pipe(terser())
-        .pipe(sourcemaps.write('./maps'))
-        .pipe(gulp.dest('./public'))
+  gulp.src(['./public/**/*.js', '!./public/**/*.min.js', '!./public/{lib,lib/**}', '!./public/{libs,libs/**}', '!./public/{media,media/**}'])
+    .pipe(sourcemaps.init())
+    .pipe(babel({
+      presets: ['@babel/preset-env']
+    }))
+    .pipe(terser({
+      ecma: 2015,
+      ie8: true,
+      safari10: true,
+      output: { comments: false }
+    }))
+    .pipe(sourcemaps.write('./maps'))
+    .pipe(gulp.dest('./public'))
 )
 
 gulp.task('minify', gulp.parallel(
-    minify_html,
-    minify_css,
-    minify_js
+  minify_html,
+  minify_css,
+  minify_js
 ))
 
 // CSP inline hash
@@ -79,35 +88,35 @@ unsafe_script_list.forEach(e => {
 });
 
 gulp.task('csp_hash', () => {
-  return gulp.src(['./public/**/*.html','!./public/{lib,lib/**}','!./public/{libs,libs/**}','!./public/{media,media/**}'])
+  return gulp.src(['./public/**/*.html', '!./public/{lib,lib/**}', '!./public/{libs,libs/**}', '!./public/{media,media/**}'])
     .pipe(hashstream({
       what: 'script:not([type="application/ld+json"])',
       replace_cb: (s, hashes) => {
-        unsafe_script_hash.push.apply(unsafe_script_hash,hashes);
-        unsafe_script_hash=Array.from(new Set(unsafe_script_hash))
+        unsafe_script_hash.push.apply(unsafe_script_hash, hashes);
+        unsafe_script_hash = Array.from(new Set(unsafe_script_hash))
         return s
       }
     }))
-  ;
+    ;
 });
 
 gulp.task('csp_replace', () => {
-  return gulp.src(['./public/**/*.html','!./public/{lib,lib/**}','!./public/{libs,libs/**}','!./public/{media,media/**}'])
+  return gulp.src(['./public/**/*.html', '!./public/{lib,lib/**}', '!./public/{libs,libs/**}', '!./public/{media,media/**}'])
     .pipe(hashstream({
       what: 'script:not([type="application/ld+json"])',
       replace_cb: (s, hashes) => {
-        unsafe_script_hash=Array.from(new Set(unsafe_script_hash))
+        unsafe_script_hash = Array.from(new Set(unsafe_script_hash))
         s = s.replace(/<script.*?>/g, function (match) {
           return match.replace(/>/g, ` nonce='${nonce}'>`);
         });
-        s=s.replace(/script-src 'self'[^;]*/, `script-src 'self' https: 'unsafe-hashes' 'nonce-${nonce}' 'strict-dynamic' ` + unsafe_script_hash.join(" "))
+        s = s.replace(/script-src 'self'[^;]*/, `script-src 'self' https: 'unsafe-hashes' 'nonce-${nonce}' 'strict-dynamic' ` + unsafe_script_hash.join(" "))
         return s
       }
     }))
     .pipe(gulp.dest('./public'))
-  ;
+    ;
 });
 
-gulp.task('csp', gulp.series('csp_hash','csp_replace'));
+gulp.task('csp', gulp.series('csp_hash', 'csp_replace'));
 
-gulp.task('default', gulp.series('minify','csp'));
+gulp.task('default', gulp.series('minify', 'csp'));
