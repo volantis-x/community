@@ -1,6 +1,6 @@
 // 全站打包上传 npm，sw 并发请求 cdn
 const prefix = 'volantis-community';
-const cacheSuffixVersion = '00000005-::cacheSuffixVersion::';
+const cacheSuffixVersion = '00000006-::cacheSuffixVersion::';
 const CACHE_NAME = prefix + '-v' + cacheSuffixVersion;
 const PreCachlist = [
   "/css/style.css",
@@ -9,7 +9,7 @@ const PreCachlist = [
 ];
 let NPMMirror = true;
 const NPMPackage = "@mhg/volantis-community";
-let NPMPackageVersion = "1.0.1660899926730";
+let NPMPackageVersion = "1.0.1661396364298";
 let debug = true;
 // location.hostname == 'localhost' && (debug = true) && (NPMMirror = false);
 const handleFetch = async (event) => {
@@ -60,6 +60,12 @@ const cdn = {
     testingcf: 'https://testingcf.jsdelivr.net/npm',
     test1: 'https://test1.jsdelivr.net/npm',
     unpkg: 'https://unpkg.com',
+  },
+  cdnjs: {
+    cdnjs: 'https://cdnjs.cloudflare.com/ajax/libs',
+    baomitu: 'https://lib.baomitu.com',
+    bootcdn: 'https://cdn.bootcdn.net/ajax/libs',
+    bytedance: 'https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M',
   }
 }
 const cdn_match_list = []
@@ -479,6 +485,7 @@ const matchCDN = async (req) => {
   const urls = []
   let urlObj = new URL(req.url)
   let pathType = urlObj.pathname.split('/')[1]
+  let pathTestRes = "";
 
   if (NPMMirror && new RegExp(location.origin).test(req.url)) {
     logger.group.ready(`Match NPM Mirror: ` + req.url);
@@ -494,6 +501,7 @@ const matchCDN = async (req) => {
     for (const item of cdn_match_list) {
       if (new RegExp(item.key).test(req.url)) {
         pathType = item.type
+        pathTestRes = new RegExp(item.key).exec(req.url)[0]
         break;
       }
     }
@@ -501,7 +509,7 @@ const matchCDN = async (req) => {
       if (type === pathType) {
         logger.group.ready(`Match CDN ${pathType}: ` + req.url);
         for (const key in cdn[type]) {
-          const url = cdn[type][key] + urlObj.pathname.replace('/' + pathType, '')
+          const url = cdn[type][key] + req.url.replace(pathTestRes, '')
           console.log(url);
           urls.push(url)
         }
