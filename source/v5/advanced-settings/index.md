@@ -255,7 +255,7 @@ volantis_static_cdn: https://unpkg.com/volantis-static/
 如果你把对应的文件上传到自己的 CDN 服务器，可以把对应的链接改为自己的 CDN 链接。
 
 
-## 尝试使用 Terser 压缩 ES6
+## 尝试使用 gulp 压缩静态文件
 
 ### 安装压缩工具
 
@@ -266,6 +266,7 @@ npm install --save-dev gulp gulp-html-minifier-terser gulp-htmlclean gulp-htmlmi
 
 ### gulp 配置文件
 
+参考文档： [gulp](https://github.com/gulpjs/gulp) [gulp-html-minifier-terser](https://github.com/pioug/gulp-html-minifier-terser) [gulp-htmlclean](https://github.com/anseki/gulp-htmlclean) [gulp-htmlmin](https://github.com/jonschlinkert/gulp-htmlmin) [gulp-clean-css](https://github.com/scniro/gulp-clean-css) [gulp-terser](https://github.com/duan602728596/gulp-terser) [gulp-sourcemaps](https://github.com/gulp-sourcemaps/gulp-sourcemaps)
 
 {% folding green, gulp 配置文件 %}
 
@@ -292,6 +293,10 @@ gulp
 npm install -g gulp
 npm install --save-dev gulp-babel @babel/core @babel/preset-env
 ```
+
+### gulp 配置文件
+
+参考文档： [gulp](https://github.com/gulpjs/gulp) [gulp-babel](https://github.com/babel/gulp-babel)
 
 {% folding green, gulp 配置文件 %}
 
