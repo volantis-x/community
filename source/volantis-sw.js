@@ -9,7 +9,7 @@ const PreCachlist = [
 ];
 let NPMMirror = true;
 const NPMPackage = "@mhg/volantis-community";
-let NPMPackageVersion = "1.0.1661396364298";
+let NPMPackageVersion = "1.0.1661396570793";
 let debug = true;
 // location.hostname == 'localhost' && (debug = true) && (NPMMirror = false);
 const handleFetch = async (event) => {
@@ -491,7 +491,7 @@ const matchCDN = async (req) => {
     logger.group.ready(`Match NPM Mirror: ` + req.url);
     for (const key in cdn.npm) {
       let url = cdn.npm[key] + "/" + NPMPackage + "@" + NPMPackageVersion + req.url.replace(location.origin, '')
-      url = fullPath(url)
+      url = fullPath(fullPath(url))
       console.log(url);
       urls.push(url)
     }
@@ -524,7 +524,7 @@ const matchCDN = async (req) => {
   else
     res = fetch(req)
   if (res && NPMMirror && new RegExp(location.origin).test(req.url)) {
-    const ext = fullPath(req.url).split('.').pop()
+    const ext = fullPath(fullPath(req.url)).split('.').pop()
     const contentType = getContentType(ext)
     res = res
       .then(res => res.arrayBuffer())
