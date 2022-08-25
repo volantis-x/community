@@ -30,7 +30,7 @@ const minify_html = () => (
 
 // 压缩js文件
 const minify_js = () => (
-  gulp.src(['./public/**/*.js', '!./public/**/*.min.js', '!./public/{lib,lib/**}', '!./public/{libs,libs/**}', '!./public/{media,media/**}'])
+  gulp.src(['./public/**/*.js', '!./public/**/*.min.js', '!./public/*sw.js', '!./public/{lib,lib/**}', '!./public/{libs,libs/**}', '!./public/{media,media/**}'])
     .pipe(sourcemaps.init())
     .pipe(babel({
       presets: ['@babel/preset-env']
