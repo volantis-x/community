@@ -126,13 +126,6 @@ x-frame-options: DENY
 
 [Doc for X-Frame-Options](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Headers/X-Frame-Options)
 
-- HTTP/2 Server Push
-
-```
-link: </css/style.0eb76567.css>; rel=preload; as=style,</js/app.c1d0c869.js>; rel=preload; as=script, <https://static.mycdn.com>; rel=dns-prefetch, <https://static.mycdn.com>; rel=preconnect; crossorigin
-```
-
-[Doc for Link](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Headers/Link)
 
 ## 为网站提速
 
@@ -146,7 +139,7 @@ link: </css/style.0eb76567.css>; rel=preload; as=style,</js/app.c1d0c869.js>; re
   3. 刷新网页，查看加载速度慢的资源。
     3.1. 加载缓慢的图片，建议使用 CDN。
     3.2. 加载缓慢的可以不用的 js 插件，建议舍弃。
-    3.3. 加载缓慢却必须使用的 js 插件，建议下载并自己上传至 jsdelivr。
+    3.3. 加载缓慢却必须使用的 js 插件，建议下载并自己上传至 CDN。
 
 ### 运行速度
 
@@ -226,28 +219,60 @@ structured_data:
 ### 开启方法
 
 ```yaml blog/_config.volantis.yml
-# 本地静态文件使用 CDN 加速
-# 默认使用 https://unpkg.com/hexo-theme-volantis@<%- theme.info.theme_version %>/source/js/*.js ，注意版本号对应关系！！可以通过修改以下配置项覆盖
-# 开发者注意 cdn.enable 设置为 false
-cdn:
-  enable: true
-  # CDN 前缀，为空使用默认值，链接最后不加 "/",
-  # 例如： https://cdn.jsdelivr.net/gh/volantis-x/volantis-x.github.io@gh-page 填写最后编译生成的源码CDN地址前缀，此路径下应该含有/js与/css目录,
-  # 该配置默认值是："https://unpkg.com/hexo-theme-volantis@"+ theme.info.theme_version +"/source"
-  prefix: #https://npm.elemecdn.com/hexo-theme-volantis/source
-  # 以下配置可以覆盖 cdn.prefix,配置项的值可以为空，但是要使用CDN必须依据路径填写配置项的键
-  set:
-    js:
-      app: /js/app.js
-    css:
-      style: /css/style.css # (异步加载样式)
-# 静态资源版本控制
-# 本地文件使用文件内容的hash值作为版本号(app.8c1e7c88.js)  其他为时间戳 (?time=1648684470140)
-# 建议静态资源设置标头浏览器缓存一年边缘缓存一个月 cache-control: max-age=86400, s-maxage=31536000 如果有更新记得刷新缓存
-cdn_version: true
-# volantis static 静态资源文件 npm 包 CDN 地址 (后面加 "/" )
-# https://github.com/volantis-x/volantis-static
-volantis_static_cdn: https://unpkg.com/volantis-static/
+cdn_system:
+  # CDN 优先级 从高到低排序 写入 priority 列表即表示启用(enable)
+  priority: [custom, local, cdnjs, npm, static]
+  # ========================================================================
+  # cdn数据配置文件见 "theme/_cdn.yml", 可以在 source/_data/cdn.yml 覆盖 theme/_cdn.yml
+  # 变量说明：
+  # 以下变量只能在 `prefix` 中使用。
+  # ${site_root}                站点根目录 一般是 "/"
+  # 以下变量只能在 `format` 中使用。
+  # ${prefix}                   CDN 链接前缀
+  # ${name}                     package 名称 见 "theme/_cdn.yml"
+  # ${version}                  package 版本 见 "theme/_cdn.yml"
+  # ${file}                     文件路径 见 "theme/_cdn.yml"
+  # ${min_file}                 文件路径 ${file} 后添加 .min. (jsdelivr、cdnjs 官方自带压缩)
+  # ${timestamp}                Hexo运行时的时间戳(eg：1661246702300), 可用于静态资源版本控制 format: ${prefix}${file}?v=${timestamp}
+  system_config:
+    # 自定义配置 使用 "theme/_cdn.yml" 中的名称作为配置项的键
+    custom:
+      #volantis_style: /css/style.css
+      #volantis_app: /js/app.js
+
+    # 主题 /js与/css目录 （一般放在本地，可以在此处配置站点CDN）,"theme/_cdn.yml" 中以 "volantis_" 开头的名称
+    # Tip: 在本配置文件中 匹配以 "volantis-local" 开头的链接路径替换为该格式的前缀开头 prefix
+    local:
+      # CDN 链接前缀
+      prefix: ${site_root}
+      # local CDN 格式
+      format: ${prefix}${file}
+    # npm
+    # https://www.npmjs.com/
+    # Tip: 在本配置文件中 匹配以 "volantis-npm" 开头的链接路径替换为该格式的前缀开头 prefix
+    npm:
+      # CDN 链接前缀
+      prefix: https://unpkg.com
+      # npm CDN 格式
+      format: ${prefix}/${name}@${version}/${file}
+    # volantis static 静态资源文件 npm 包 CDN 地址
+    # https://github.com/volantis-x/volantis-static
+    # Tip: 在本配置文件中 匹配以 "volantis-static" 开头的链接路径替换为该格式的前缀开头 prefix
+    static:
+      # CDN 链接前缀
+      prefix: https://unpkg.com/volantis-static@0.0.1660614606622
+      # volantis-static CDN 格式
+      format: ${prefix}/libs/${name}/${file}
+    # cdnjs
+    # https://cdnjs.com/
+    # Tip: 在本配置文件中 匹配以 "volantis-cdnjs" 开头的链接路径替换为该格式的前缀开头 prefix
+    cdnjs:
+      # CDN 链接前缀
+      prefix: https://cdnjs.cloudflare.com/ajax/libs
+      # cdnjs CDN 格式
+      format: ${prefix}/${name}/${version}/${min_file}
+  # ========================================================================
+
 ```
 
 {% note info, 如果你需要对样式进行 DIY，可以只关闭 style 文件的 CDN。 %}
@@ -255,8 +280,6 @@ volantis_static_cdn: https://unpkg.com/volantis-static/
 从V5版本开始，首屏样式采用硬编码的方式写在HTML中。首屏样式内含 cover navbar search 的样式，其他样式放入/css/style.css异步加载。
 
 {% note warning up, 如果你需要对样式进行 DIY，请注意首屏渲染和异步延迟加载的差异。 %}
-
-{% note info, 可以对 style.css 使用 HTTP/2 Server Push，但是此方案并不推荐。我们已经对style.css进行了preload处理，推荐使用对服务器压力成本较小的 CDN 服务。 %}
 
 ### 自定义 CDN
 
@@ -279,58 +302,43 @@ npm install --save-dev gulp gulp-html-minifier-terser gulp-htmlclean gulp-htmlmi
 
 https://github.com/volantis-x/community/blob/main/gulpfile.js
 
-```js blog/gulpfile.js
-var gulp = require('gulp');
-const cleanCSS = require('gulp-clean-css');
-var htmlmin = require('gulp-html-minifier-terser');
-var htmlclean = require('gulp-htmlclean');
-var terser = require('gulp-terser');
-var sourcemaps = require('gulp-sourcemaps');
-
-// 压缩css文件
-const minify_css = () => (
-    gulp.src(['./public/**/*.css','!./public/{lib,lib/**}','!./public/{libs,libs/**}','!./public/{media,media/**}'])
-        .pipe(sourcemaps.init())
-        .pipe(cleanCSS({compatibility: 'ie8'}))
-        .pipe(sourcemaps.write('./maps'))
-        .pipe(gulp.dest('./public'))
-);
-
-// 压缩html文件
-const minify_html = () => (
-    gulp.src(['./public/**/*.html','!./public/{lib,lib/**}','!./public/{libs,libs/**}','!./public/{media,media/**}'])
-        .pipe(htmlclean())
-        .pipe(htmlmin({
-            removeComments: true,
-            minifyJS: true,
-            minifyCSS: true,
-            minifyURLs: true,
-        }))
-        .pipe(gulp.dest('./public'))
-)
-
-// 压缩js文件
-const minify_js = () => (
-    gulp.src(['./public/**/*.js', '!./public/**/*.min.js','!./public/{lib,lib/**}','!./public/{libs,libs/**}','!./public/{media,media/**}'])
-        .pipe(sourcemaps.init())
-        .pipe(terser())
-        .pipe(sourcemaps.write('./maps'))
-        .pipe(gulp.dest('./public'))
-)
-
-gulp.task('one', gulp.parallel(
-    minify_html,
-    minify_css,
-    minify_js
-))
-
-gulp.task('default', gulp.series('one'));
-```
+<script src="https://gist.github.com/MHuiG/4d443d3bfb10eac961a13e46023581f7.js"></script>
 
 {% endfolding %}
 
 
-### 运行压缩
+### 运行 gulp
+
+```shell
+gulp
+```
+
+## 尝试使用 babel 转换兼容 ES6
+
+如果想要兼容旧版浏览器，可以尝试使用 [gulp-babel](https://github.com/babel/gulp-babel) 将 ES6 转换为 ES5。
+
+### 安装 gulp-babel 工具
+
+```bash
+npm install -g gulp
+npm install --save-dev gulp-babel @babel/core @babel/preset-env
+```
+
+{% folding green, gulp 配置文件 %}
+
+https://github.com/volantis-x/community/blob/main/gulpfile.js
+
+```js
+gulp.src(['./public/**/*.js', '!./public/**/*.min.js', '!./public/{lib,lib/**}', '!./public/{libs,libs/**}', '!./public/{media,media/**}'])
+  .pipe(babel({
+    presets: ['@babel/preset-env']
+  }))
+  .pipe(gulp.dest('./public'))
+```
+
+{% endfolding %}
+
+### 运行 gulp
 
 ```shell
 gulp
@@ -356,151 +364,19 @@ import:
 
 {% folding green, step 2. 在 blog/source 中创建 sw.js 文件。 %}
 
-```js blog/source/sw.js
-importScripts('https://cdn.jsdelivr.net/npm/workbox-cdn@5.1.3/workbox/workbox-sw.js');
+https://gist.github.com/MHuiG/a423c0a953ed5645840a651c33dcd60c
 
-workbox.setConfig({
-    modulePathPrefix: 'https://cdn.jsdelivr.net/npm/workbox-cdn@5.1.3/workbox/'
-});
-
-const { core, precaching, routing, strategies, expiration, cacheableResponse, backgroundSync } = workbox;
-const { CacheFirst, NetworkFirst, NetworkOnly, StaleWhileRevalidate } = strategies;
-const { ExpirationPlugin } = expiration;
-const { CacheableResponsePlugin } = cacheableResponse;
-
-const cacheSuffixVersion = '-000010', // 缓存版本号 极端重要，修改静态文件后发布网页一定要修改缓存版本号
-    maxEntries = 100;
-
-self.addEventListener('activate', (event) => {
-    event.waitUntil(
-        caches.keys().then((keys) => {
-            return Promise.all(keys.map((key) => {
-                if (!key.includes(cacheSuffixVersion)) return caches.delete(key);
-            }));
-        })
-    );
-});
-
-
-core.setCacheNameDetails({
-    prefix: 'volantis', // 极端重要 自己拟定一个名字
-    suffix: cacheSuffixVersion
-});
-
-core.skipWaiting();
-core.clientsClaim();
-precaching.cleanupOutdatedCaches();
-
-/*
- * Precache
- * - Static Assets
- */
-precaching.precacheAndRoute( // 极端重要 定义首次缓存的静态文件 如果开启CDN需要修改为CDN链接
-    [
-        { url: '/css/first.css', revision: null },
-        { url: '/css/style.css', revision: null },
-        { url: '/js/app.js', revision: null },
-    ],
-);
-
-/*
- * Cache File From CDN
- *
- * Method: CacheFirst
- * cacheName: static-immutable
- * cacheTime: 30d
- */
-
-// cdn.jsdelivr.net - cors enabled
-routing.registerRoute(
-    /.*cdn\.jsdelivr\.net/,
-    new CacheFirst({
-        cacheName: 'static-immutable' + cacheSuffixVersion,
-        fetchOptions: {
-            mode: 'cors',
-            credentials: 'omit'
-        },
-        plugins: [
-            new ExpirationPlugin({
-                maxAgeSeconds: 30 * 24 * 60 * 60,
-                purgeOnQuotaError: true
-            })
-        ]
-    })
-);
-
-// m7.music.126.net - cors enabled
-routing.registerRoute(
-    /.*m7\.music\.126\.net/,
-    new CacheFirst({
-        cacheName: 'static-immutable' + cacheSuffixVersion,
-        fetchOptions: {
-            mode: 'cors',
-            credentials: 'omit'
-        },
-        plugins: [
-            new ExpirationPlugin({
-                maxAgeSeconds: 30 * 24 * 60 * 60,
-                purgeOnQuotaError: true
-            })
-        ]
-    })
-);
-
-/*
- *  No Cache
- *
- * Method: networkOnly
- */
-routing.registerRoute(
-    /.*baidu\.com.*/,
-    new NetworkOnly()
-);
-/*
- * Others img fonts
- * Method: staleWhileRevalidate
- */
-routing.registerRoute(
-    // Cache image fonts files
-    /.*\.(?:png|jpg|jpeg|svg|gif|webp|ico|eot|ttf|woff|woff2|mp3)/,
-    new StaleWhileRevalidate()
-);
-
-/*
- * Static Assets
- * Method: staleWhileRevalidate
- */
-routing.registerRoute(
-    // Cache CSS files
-    /.*\.(css|js)/,
-    // Use cache but update in the background ASAP
-    new StaleWhileRevalidate()
-);
-
-/*
- * sw.js - Revalidate every time
- * staleWhileRevalidate
- */
-routing.registerRoute(
-    '/sw.js', // 本文件名
-    new StaleWhileRevalidate()
-);
-
-/*
- * Default - Serve as it is
- * networkFirst
- */
-routing.setDefaultHandler(
-    new NetworkFirst({
-        networkTimeoutSeconds: 3
-    })
-);
-
-```
+<script src="https://gist.github.com/MHuiG/a423c0a953ed5645840a651c33dcd60c.js"></script>
 
 {% endfolding %}
 
 {% note warning up, 如果你使用了此方案，修改静态文件后发布网页一定要修改缓存版本号。 %}
+
+### 方案三 参考官网 volantis-sw.js
+
+[volantis-sw.js](https://github.com/volantis-x/community/blob/main/source/volantis-sw.js)
+
+[discussions/791](https://github.com/volantis-x/hexo-theme-volantis/discussions/791)
 
 ## 安装「相关文章」插件
 
