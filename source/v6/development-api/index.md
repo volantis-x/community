@@ -372,59 +372,9 @@ volantis.scroll.to(document.getElementById("locationID"),{addTop: - volantis.dom
 
 源码参考：
 
-[`layout/_partial/scripts/_ctrl/cdnCtrl.ejs`](https://github.com/volantis-x/hexo-theme-volantis/blob/dev/layout/_partial/scripts/_ctrl/cdnCtrl.ejs)
+`/scripts/events/lib/cdn.js`
 
-```js
-theme.cdn.addJS("name","source","force")
-theme.cdn.addCSS("name","source","force")
-```
-
-参数都为 String 类型，其中 source 和 force 是可选的。
-
-返回值为 CDN 处理后的链接，并存入`theme.cdn.map.js`和`theme.cdn.map.css`中
-
-可以使用`theme.cdn.map.js["name"]`再次调用。
-
-`"name"` 是自定义名称
-
-`"source"` 是资源路径
-
-`"force"` 是强制覆盖的资源路径
-
-如果`"source"`为空，则将`"name"`赋值给`"source"`。
-
-例如：
-
-对于文件`source/js/plugins/sites.js`使用CND链接，使用如下方法生成。
-
-```js
-theme.cdn.addJS("sites","plugins/sites")
-```
-
-生成的CDN链接可使用 `theme.cdn.map.js.sites` 回调。
-
-以下用于配置项 cdn.set 覆盖配置,下面是覆盖配置的方法
-
-```yml
-cdn:
-   enable: true
-   # 以下配置可以覆盖 cdn.prefix,配置项的值可以为空，但是要使用CDN必须依据路径填写配置项的键
-   set:
-     js:
-       app: https://cdn.jsdelivr.net/gh/volantis-x/volantis-x.github.io@gh-page/js/app.js
-       rightMenu: https://cdn.jsdelivr.net/gh/volantis-x/volantis-x.github.io@gh-page/js/rightMenu.js
-       parallax: https://cdn.jsdelivr.net/gh/volantis-x/volantis-x.github.io@gh-page/js/parallax.js
-       plugins:
-         contributors: https://cdn.jsdelivr.net/gh/volantis-x/volantis-x.github.io@gh-page/js/plugins/contributors.js
-         friends: https://cdn.jsdelivr.net/gh/volantis-x/volantis-x.github.io@gh-page/js/plugins/friends.js
-         sites: https://cdn.jsdelivr.net/gh/volantis-x/volantis-x.github.io@gh-page/js/plugins/sites.js
-     css:
-       style: https://cdn.jsdelivr.net/gh/volantis-x/volantis-x.github.io@gh-page/css/style.css
-       message: https://cdn.jsdelivr.net/gh/volantis-x/volantis-x.github.io@gh-page/css/message.css
-```
-
-直接使用cdn配置项，不使用`theme.cdn.addJS("sites","plugins/sites")` 也可以生成 `theme.cdn.map.js.sites` CDN链接回调
-
+生成的CDN链接可使用 `theme.cdn.[keyword]` 回调。
 
 ## Custom Files 自定义文件
 

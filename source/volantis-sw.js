@@ -9,7 +9,7 @@ const PreCachlist = [
 ];
 let NPMMirror = true;
 const NPMPackage = "@mhg/volantis-community";
-let NPMPackageVersion = "1.0.1661396570793";
+let NPMPackageVersion = "1.0.1661759144496";
 let debug = true;
 // location.hostname == 'localhost' && (debug = true) && (NPMMirror = false);
 const handleFetch = async (event) => {

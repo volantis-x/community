@@ -81,7 +81,7 @@ author: Jon
 # 内容安全策略( CSP ) meta 标签 http-equiv="Content-Security-Policy"
 # https://developer.mozilla.org/zh-CN/docs/Web/HTTP/CSP
 # https://content-security-policy.com/
-# 也可以设为 false 在 HTTP 标头中设置 https://volantis.js.org/v5/advanced-settings/#设置-HTTP-响应标头
+# 也可以设为 false 在 HTTP 标头中设置 https://volantis.js.org/v6/advanced-settings/#设置-HTTP-响应标头
 csp:
   enable: true
   content: "

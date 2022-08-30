@@ -1,16 +1,15 @@
 cdn:
   enable: false
-cdn_version: true
 content_visibility: true
 navbar:
   logo: # choose [img] or [icon + title]
     img: '' # volantis-static/media/org.volantis/blog/Logo-NavBar@3x.png
     icon:
-    title: 'Volantis 5 <sup style="color:#00ff90">dev</sup>'
+    title: 'Volantis 6 <sup style="color:#ff9800">alpha</sup>'
   menu:
     - name: 文档
       icon: fa-duotone fa-book faa-tada
-      url: /v5/getting-started/
+      url: /v6/getting-started/
       target: _self
 
     - name: 示例
@@ -42,6 +41,8 @@ navbar:
         - name: 博客文章
           url: /archives/
         - name: hr
+        - name: 文档 v5
+          url: /v5/getting-started/
         - name: 旧版文档 v4
           url: /v4/getting-started/
         - name: 旧版文档 v3
@@ -62,7 +63,7 @@ cover:
       url: /
     - name: 文档
       img: volantis-static/media/twemoji/assets/svg/1f516.svg
-      url: /v5/getting-started/
+      url: /v6/getting-started/
       target: _self
     - name: 示例
       img: volantis-static/media/twemoji/assets/svg/1f4af.svg
@@ -282,7 +283,7 @@ sidebar:
 
 site_footer:
   layout: [aplayer, social, source, analytics, copyright]
-  copyright: '[Copyright © since 2017 Volantis Team](https://github.com/volantis-x/)'
+  copyright: '[Copyright © Since 2017 Volantis Team](https://github.com/volantis-x/)'
   social:
     - img: volantis-static/media/org.volantis/icon/1322024-social-media/020-rss.svg
       url: atom.xml

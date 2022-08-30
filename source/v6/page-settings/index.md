@@ -165,7 +165,7 @@ blog/source/_data/friends.yml
 
 使用 友链标签 您可以在任何位置插入友链，支持静态数据和动态数据, 关于如何使用 友链标签 插入友链，详见：
 
-{% link volantis 主题文档 #友链标签::/v5/tag-plugins/#友链标签 %}
+{% link volantis 主题文档 #友链标签::/v6/tag-plugins/#友链标签 %}
 
 ### 404页面
 

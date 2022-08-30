@@ -192,14 +192,17 @@ custom_css:
 {% folding 查看所有相关配置 %}
 
 ```yaml blog/_config.volantis.yml
+############################### Color Scheme ############################### > start
+# Accessibility: 背景色和前景色要有足够的对比度 https://web.dev/color-contrast/
+# https://ant.design/docs/spec/colors-cn
 color_scheme:
   # ------------
   # 通用颜色
   common:
     # 主题色
-    theme: '#44D7B6'
+    theme: '#3dd9b6'
     # 链接色
-    link: '#2196f3'
+    link: '#2092ec'
     # 按钮色
     button: '#44D7B6'
     # 鼠标放到交互元素上时的色
@@ -228,15 +231,15 @@ color_scheme:
     # 代码块高亮时的背景色
     codeblock: '#FFF7EA'
     # 行内代码颜色
-    inlinecode: '#D56D28'
+    inlinecode: '#c74f00'
 
     # 文章部分
-    h1: '#444'
-    h2: '#444'
-    h3: '#444'
+    h1: '#3a3a3a'
+    h2: '#3a3a3a'
+    h3: '#333'
     h4: '#444'
-    h5: '#444'
-    h6: '#444'
+    h5: '#555'
+    h6: '#666'
     p: '#444'
 
     # 列表文字
@@ -245,44 +248,53 @@ color_scheme:
     list_hl: 'mix($color-theme, #000, 80)'
     # 辅助性文字
     meta: '#888'
+    
+    # 版权卡片背景色
+    copyright_bkg: '#f5f5f5'
   # ------------
   # 暗色主题
+  # https://www.maijisheji.com/2094.html
   dark:
-    # 网站背景色
-    site_bg: '#222'
+    # 网站最深底色            # Dark Grey 1
+    site_bd: '#121212'
+    # 网站背景色              # Dark Grey 2
+    site_bg: '#1f1f1f'
+    # 卡片背景色              # Dark Grey 3
+    card: '#262626'
     # 网站背景上的文字
-    site_inner: '#eee'
+    site_inner: '#eeeeeede'
     # 网站页脚文字
-    site_footer: '#aaa'
-    # 卡片背景色
-    card: '#444'
+    site_footer: '#aaaaaade'
     # 卡片上的普通文字
-    text: '#eee'
+    text: '#eeeeeede'
 
-    # 区块和代码块背景色
-    block: '#3a3a3a'
-    # 代码块高亮时的背景色
-    codeblock: '#343a3c'
+    # 区块和代码块背景色       # Dark Grey 4
+    block: '#434343'
+    # 代码块高亮时的背景色     # Dark Grey 2
+    codeblock: '#1f1f1f'
     # 行内代码颜色
     inlinecode: '#D56D28'
 
-    # 文章部分
-    h1: '#eee'
-    h2: '#eee'
-    h3: '#ddd'
-    h4: '#ddd'
-    h5: '#ddd'
-    h6: '#ddd'
-    p: '#bbb'
+    # 文章部分 高强度文本的不透明度应为87％ 中等重点文字适用于60％
+    h1: '#FFFFFFde'            #  Dark Grey 8
+    h2: '#FFFFFFde'
+    h3: '#FFFFFF99'            #  Dark Grey 7
+    h4: '#FFFFFF99'
+    h5: '#FFFFFF99'
+    h6: '#FFFFFF99'
+    p: '#d9d9d9de'           #  Dark Grey 6
 
-    # 列表文字
-    list: '#aaa'
+    # 列表文字                #  Dark Grey 6
+    list: '#d9d9d9de'
     # 列表 hover 时的文字
     list_hl: 'mix($color-theme, #fff, 80)'
-    # 辅助性文字
-    meta: '#888'
+    # 辅助性文字              #  Dark Grey 5
+    meta: '#bfbfbfde'
+    # 版权卡片背景色
+    copyright_bkg: '#21252b'
     # 夜间图片亮度
     brightness: 70%
+############################### Color Scheme ############################### > end
 ```
 
 {% endfolding %}
@@ -552,6 +564,7 @@ rightmenus:
 
 导航栏分为 logo、menu、search 三个区域设置，其中 logo 区域如果设置了图片，则不能显示图标和标题， menu 区域的设置可以写在一个单独的文件中。
 ```yaml blog/_config.volantis.yml
+############################### Navigation Bar ############################### > start
 # 注意事项：建议规范全站路径 URL 最后带一个 "/" 例如 "about/"
 navbar:
   visiable: auto # always, auto
@@ -579,6 +592,7 @@ navbar:
       icon: fa-solid fa-info-circle
       url: about/
   search: Search...   # Search bar placeholder
+############################### Navigation Bar ############################### > end
 ```
 
 ### 菜单嵌套
@@ -727,26 +741,34 @@ cover:
 {% folding 查看所有相关配置 %}
 
 ```yaml
+############################### Article Layout ############################### > start
 # 文章布局
 article:
   # 文章列表页面的文章卡片布局方案
   preview:
     scheme: landscape # landscape
     # pin icon for post
-    pin_icon: https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f4cc.svg
+    pin_icon: volantis-static/media/twemoji/assets/svg/1f4cc.svg # https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f4cc.svg
     # auto generate title if not exist
     auto_title: true # false, true
     # auto generate excerpt if not exist
     auto_excerpt: true # false, true
+    # hide excerpt
+    hide_excerpt: false
     # show split line or not
     line_style: solid # hidden, solid, dashed, dotted
+    # show author
+    author: false # true, false
     # show readmore button
     readmore: auto # auto, always
   # 文章详情页面的文章卡片本体布局方案
   body:
     # 文章顶部信息
     # 从 meta_library 中取
-    top_meta: [author, category, date, counter]
+    top_meta: [author, category, date, counter] #启用评论数量需在此添加
+    # 文章底部信息
+    # 从 meta_library 中取
+    bottom_meta: [updated, tags, share]
     # ----------------
     # 文章页脚组件
     footer_widget:
@@ -754,7 +776,7 @@ article:
       # 参考资料、相关资料等 (for layout: post/docs)
       references:
         title: 参考资料
-        icon: fas fa-quote-left
+        icon: fa-solid fa-quote-left
         # 在 front-matter 中:
         #   references:
         #     - title: 某篇文章
@@ -766,72 +788,112 @@ article:
       related_posts:
         enable: false
         title: 相关文章
-        icon: fas fa-bookmark
+        icon: fa-solid fa-bookmark
         max_count: 5
         # 设为空则不使用文章头图
-        placeholder_img: https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.jpg
+        placeholder_img: https://gcore.jsdelivr.net/gh/MHG-LAB/cron@gh-pages/bing/bing.jpg
       # ----------------
-      # 版权声明组件 (for layout: post/docs)
+      # 版权声明组件 (for layout: post)
       copyright:
-        enable: true
+        enable: false
         permalink: '本文永久链接是：'
         content:
           - '博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议'
           - permalink
+         # 自定义版权组件：精细到文章的版权声明
+        custom: false # 开启后替代上方内容的版权显示
+        customData:
+          default: type1  # 默认授权声明
+          #############################
+          # 你可以在文章的 front-matter 覆盖默认版权声明
+          # 配置示例（均可选）： 
+          # copyright:
+          #   type: type3           # 当前文章版权声明类型
+          #   author: 张三          # 本文作者
+          #   ref:                  # 原文出处
+          #     title:              # 原文出处 - 标题
+          #     url:                # 原文出处 - 链接
+          #############################
+          rules:
+            type1: 
+              text: <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh#" target="_blank">CC BY-NC-SA 4.0</a>
+              desc: 署名-非商业性使用-相同方式共享 4.0 国际。
+            type2: 
+              text: 禁止转载引用
+              desc: 除非获得原作者的单独授权，任何第三方不得转载！
+            type3: 
+              text: 原作许可协议
+              desc: 本文转载自他站，转载或引用本文时，请遵守原作许可协议！
+            type4: 
+              text: 来自互联网
+              desc: 本文来自互联网，未知来源，侵权请联系删除。
+            type5:
+              text: 允许规范转载
+              desc: 转载请保留本文转载地址，著作权归作者所有！
+            type6:
+              text: 允许付费转载
+              desc: 您可以联系作者通过付费方式获得授权。
+            # 还能自行添加更多
       # ----------------
-      # 打赏组件 (for layout: post/docs)
+      # 打赏组件 (for layout: post)
       donate:
         enable: false
         images:
-          - https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/qrcode/github@volantis.png
-          - https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/qrcode/github@volantis.png
-    # 文章底部信息
-    # 从 meta_library 中取
-    bottom_meta: [updated, tags, share]
+          - volantis-static/media/org.volantis/blog/qrcode/github@volantis.png # https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/qrcode/github@volantis.png
+          - volantis-static/media/org.volantis/blog/qrcode/github@volantis.png # https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/qrcode/github@volantis.png
     # meta library
     meta_library:
-      # 默认文章作者（可在 front-matter 中覆盖）
+      # 默认文章作者（可在 _data/author.yaml 中增加其他作者，并在 front-matter 中设置）
+      # https://volantis.js.org/advanced-settings/#多人协同
       author:
-        avatar:
+        avatar: volantis-static/media/org.volantis/blog/favicon/apple-touch-icon.png # https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/apple-touch-icon.png
         name: 请设置文章作者
         url: /
       # 文章创建日期
       date:
-        icon: fas fa-calendar-alt
+        icon: fa-solid fa-calendar-alt
         title: '发布于：'
         format: 'll' # 日期格式 http://momentjs.com/docs/
       # 文章更新日期
       updated:
-        icon: fas fa-edit
+        icon: fa-solid fa-edit
         title: '更新于：'
         format: 'll' # 日期格式 http://momentjs.com/docs/
       # 文章分类
       category:
-        icon: fas fa-folder-open
+        icon: fa-solid fa-folder-open
       # 文章浏览计数
       counter:
-        icon: fas fa-eye
+        icon: fa-solid fa-eye
         unit: '次浏览'
+      # waline 文章评论数量
+      walinecount:
+        icon: fa-solid fa-comment-dots
+        desc: '条评论' # 条评论
+      # artalk 文章评论数量
+      artalkcount:
+        icon: fa-solid fa-comment-dots
+        desc: '条评论' # 条评论
       # 文章字数和阅读时长
       wordcount:
-        icon_wordcount: fas fa-keyboard
-        icon_duration: fas fa-hourglass-half
+        icon_wordcount: fa-solid fa-keyboard
+        icon_duration: fa-solid fa-hourglass-half
       # 文章标签
       tags:
-        icon: fas fa-hashtag
+        icon: fa-solid fa-hashtag
       # 分享
       share:
         - id: qq
-          img: https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png
+          img:  volantis-static/media/org.volantis/logo/128/qq.png #  https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png
         - id: qzone
-          img: https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png
+          img: volantis-static/media/org.volantis/logo/128/qzone.png #  https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png
         - id: weibo
-          img: https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png
+          img: volantis-static/media/org.volantis/logo/128/weibo.png #  https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png
         - id: # qrcode # 当id为qrcode时需要安装插件  npm i hexo-helper-qrcode
-          img: # https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/wechat.png
+          img: # volantis-static/media/org.volantis/logo/128/wechat.png #  https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/wechat.png
         - id: # telegram
-          img: # https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/telegram.png
-
+          img: # volantis-static/media/org.volantis/logo/128/telegram.png #  https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/telegram.png
+############################### Article Layout ############################### > end
 ```
 {% endfolding %}
 
@@ -845,9 +907,11 @@ article:
 {% folding 查看所有相关配置 %}
 
 ```yaml blog/_config.volantis.yml
+############################### Sidebar ############################### > start
 sidebar:
+  position: right # left right
   # 主页、分类、归档等独立页面
-  for_page: [blogger, category, tagcloud, qrcode]
+  for_page: [blogger, category, tagcloud, donate]
   # layout: docs/post 这类文章页面
   for_post: [toc]
   # 侧边栏组件库
@@ -857,31 +921,46 @@ sidebar:
     blogger:
       class: blogger
       display: [desktop, mobile] # [desktop, mobile]
-      avatar: https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-NavBar@3x.png
+      avatar: volantis-static/media/org.volantis/blog/Logo-NavBar@3x.png # https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-NavBar@3x.png
       shape: rectangle # circle, rectangle
       url: /about/
       title:
       subtitle:
       jinrishici: true # Poetry Today. You can set a string, and it will be displayed when loading fails.
-      social: true
+      social:
+        - icon: fa-solid fa-rss
+          url: /atom.xml
+        - icon: fa-solid fa-envelope
+          url: mailto:me@xxx.com
+        - icon: fab fa-github
+          url: https://github.com/volantis-x/
+        - icon: fa-solid fa-headphones-alt
+          url: /
     # ---------------------------------------
     # toc widget (valid only in articles)
     toc:
       class: toc
       display: [desktop, mobile] # [desktop, mobile]
+      sticky: true
       header:
-        icon: fas fa-list
+        icon: fa-solid fa-list
         title: 本文目录
       list_number: false
       min_depth: 2
       max_depth: 5
+    # ---------------------------------------
+    # music
+    music:
+      class: music
+      display: [desktop, mobile] # [desktop, mobile]
+      pjaxReload: false
     # ---------------------------------------
     # category widget
     category:
       class: category
       display: [desktop] # [desktop, mobile]
       header:
-        icon: fas fa-folder-open
+        icon: fa-solid fa-folder-open
         title: 文章分类
         url: /blog/categories/
     # ---------------------------------------
@@ -890,7 +969,7 @@ sidebar:
       class: tagcloud
       display: [desktop, mobile] # [desktop, mobile]
       header:
-        icon: fas fa-tags
+        icon: fa-solid fa-tags
         title: 热门标签
         url: /blog/tags/
       min_font: 14
@@ -898,16 +977,15 @@ sidebar:
       color: true
       start_color: '#999'
       end_color: '#555'
-
     # ---------------------------------------
     # qrcode widget
-    donate:
+    qrcode:
       class: qrcode
       display: [desktop, mobile] # [desktop, mobile]
       height: 64px  # Automatic height if not set
       images:
-        - https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/qrcode/github@volantis.png
-        - https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/qrcode/github@volantis.png
+        - volantis-static/media/org.volantis/blog/qrcode/github@volantis.png # https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/qrcode/github@volantis.png
+        - volantis-static/media/org.volantis/blog/qrcode/github@volantis.png # https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/qrcode/github@volantis.png
     # ---------------------------------------
     # webinfo widget
     webinfo:
@@ -922,21 +1000,20 @@ sidebar:
           text: '文章数目：'
           unit: '篇'
         runtime:
-          enable: true
+          enable: false
           data: '2020/01/01'    # 填写建站日期
           text: '已运行时间：'
           unit: '天'
         wordcount:
-          enable: true
+          enable: false
           text: '本站总字数：'   # 需要启用 wordcount
           unit: '字'
         visitcounter:
+          enable: true
           siteuv:
-            enable: true
             text: '本站访客数：'
             unit: '人'
           sitepv:
-            enable: true
             text: '本站总访问量：'
             unit: '次'
         lastupd:
@@ -944,6 +1021,15 @@ sidebar:
           friendlyShow: true    # 更友好的时间显示
           text: '最后活动时间：'
           unit: '日'
+    # ---------------------------------------
+    # lastupdate widget
+    lastupdate:
+      class: lastupdate
+      display: [desktop, mobile]
+      header:
+        icon: fa-solid fa-clock WISTERIA
+        title: 最近更新
+############################### Sidebar ############################### > end
 ```
 {% endfolding %}
 
@@ -1394,7 +1480,6 @@ comments:
   # Discuss
   # https://discuss.js.org
   discuss:
-    js: https://cdn.jsdelivr.net/npm/discuss/dist/Discuss.js # 建议锁定版本
     serverURLs: # Discuss server address url
     # https://discuss.js.org/Quick-Start.html#path
 ```
@@ -1430,7 +1515,6 @@ comments:
   service: twikoo
   ...
   twikoo:
-    js: https://cdn.jsdelivr.net/npm/twikoo@latest # 建议锁定版本
     path: # 全局评论地址
     # 其他配置项按照yml格式继续填写即可 除了 [el path] 选项
     envId: xxxxxxxxxxxxxxx # 腾讯云环境id
@@ -1469,7 +1553,6 @@ comments:
   # Waline
   # https://waline.js.org/
   waline:
-    js: https://cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js
     path: # 全局评论地址 目前设置全局评论地址后visitor失效,这是waline的问题
     placeholder: 快来评论吧~  # 评论占位提示
     imageHosting: https://7bu.top/api/upload # 图床api（默认使用去不图床）
@@ -1519,8 +1602,6 @@ comments:
   service: artalk
   ...
   artalk:
-    js: https://cdn.jsdelivr.net/npm/artalk@2.1.3/dist/Artalk.js
-    css: https://cdn.jsdelivr.net/npm/artalk@2.1.3/dist/Artalk.css
     server: http://127.0.0.1:8080/api    # 修改为自建的后端服务地址
 ```
 
@@ -1622,17 +1703,24 @@ gitalk:
 ## 站内搜索
 
 ```yaml blog/_config.volantis.yml
+# To use hexo search, you need to install the following plugins:
+# npm i hexo-generator-json-content
 search:
   enable: true
-  service: hexo  # hexo
-  js: https://cdn.jsdelivr.net/xxxxxxxx/js/search/hexo.js
+  service: hexo  # hexo, algolia
+  algolia:
+    searchAsYouType: true # If false, triggers the search only on submit.
+    hitsPerPage: 5 # Set the number of hits per page.
+    placeholder: 'Search...' # The placeholder text of the input.
 ```
 默认配置为 Hexo 搜索，但是需要安装插件才能使用：
 ```sh
 npm i -S hexo-generator-json-content
 ```
 
-{% note error :: 原 google,  algolia,  azure,  baidu 站内搜索 系祖传代码, 且文档丢失, 不便后续维护 在 5.0 版本移除 %}
+如果使用 algolia 搜索，需要安装 [hexo-algolia](https://github.com/oncletom/hexo-algolia)。
+
+{% note error :: 原 google, azure,  baidu 站内搜索 系祖传代码, 且文档丢失, 不便后续维护 在 5.0 版本移除 %}
 
 ## 插件库
 
@@ -1657,7 +1745,7 @@ plugins:
 ```
 幻灯片背景图片显示的位置可以选择粘贴在封面上，跟随封面一起滑动，也可以选择固定作为网页背景图片。
 
-### highlight.js
+### 语法高亮
 ```yaml blog/_config.volantis.yml
 plugins:
   ...
@@ -1666,12 +1754,27 @@ plugins:
   # highlight.js
   highlightjs:
     copy_code: true
-    # 如果开启 js, hexo.config.highlight.enable 需要设置为 false
-    js: #https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.1.0/build/highlight.min.js # Please set hexo.config.highlight.enable = false !!!
-    css: https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.1.0/build/styles/default.min.css
-    # more: https://www.jsdelivr.com/package/npm/highlight.js?path=styles
+    # 如果开启以下配置, hexo.config.highlight.enable 需要设置为 false ; hexo.config.highlight.enable 设置为 true, 则以下配置无效
+    # # 不再支持 v11.1.0 以下版本
+    # js: https://unpkg.com/@highlightjs/cdn-assets@11.5.1/highlight.min.js # Please set hexo.config.highlight.enable = false !!!
+    # css: https://unpkg.com/@highlightjs/cdn-assets@11.5.1/styles/default.min.css
+    # # # more: https://www.jsdelivr.com/package/npm/@highlightjs/cdn-assets?path=styles
+
+  # prismjs
+  # https://prismjs.com/
+  # https://hexo.io/zh-cn/docs/syntax-highlight#PrismJS
+  prismjs:
+    copy_code: true
+    # Please set hexo.config.highlight.enable = false !!! set hexo.config.prismjs.enable = true !!!
+    js:
+      - https://unpkg.com/prismjs/components/prism-core.min.js
+      - https://unpkg.com/prismjs/plugins/autoloader/prism-autoloader.min.js
+      - https://unpkg.com/prismjs/plugins/line-numbers/prism-line-numbers.min.js
+    css:
+      - https://unpkg.com/prismjs/themes/prism-dark.css
+      - https://unpkg.com/prismjs/plugins/line-numbers/prism-line-numbers.css
 ```
-如果需要使用 highlight.js 进行语法高亮，请将站点配置文件中的 `highlight.enable` 设置为 `false` 否则不会加载插件。您可以在 <u>94</u> 种 [语法高亮主题](https://www.jsdelivr.com/package/npm/highlight.js?path=styles) 中挑选喜爱的主题，然后替换上面的 css 链接。
+如果需要使用 highlight.js 进行语法高亮，请将站点配置文件中的 `highlight.enable` 设置为 `false` 否则不会加载插件。您可以在 <u>94</u> 种 [语法高亮主题](https://www.jsdelivr.com/package/npm/@highlightjs/cdn-assets?path=styles) 中挑选喜爱的主题，然后替换上面的 css 链接。
 
 {% note warning, 如果您使用 highlight.js 请确保没有使用 hexo 官方的 codeblock 标签，否则会报错。 %}
 {% note bug red, 经测试，使用 highlight.js 的情况下，部分容器内的代码可能仍然会被渲染甚至报错。 %}
@@ -1684,9 +1787,6 @@ plugins:
   # APlayer config: https://github.com/metowolf/MetingJS
   aplayer:
     enable: true
-    js:
-      aplayer: https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.js
-      meting: https://cdn.jsdelivr.net/npm/meting@2.0/dist/Meting.min.js
     # Required
     server: netease   # netease, tencent, kugou, xiami, baidu
     type: playlist    # song, playlist, album, search, artist
@@ -1700,6 +1800,7 @@ plugins:
     volume: 0.7       # default volume, notice that player will remember user setting, default volume will not work after user set volume themselves
     list_max_height: 320px # list max height
     list_folded: true
+    autoHide: true    # hide automaticaly
 ```
 
 {% note warning, APlayer播放器只可以在中国大陆地区使用。相关文档： [APlayer](https://aplayer.js.org/) | [MetingJS](https://github.com/metowolf/MetingJS) %}
@@ -1813,11 +1914,9 @@ plugins:
 plugins:
   ...
   # 消息提示 
-  # izitoast@1.4.0
+  # izitoast
   message:
     enable: true
-    css: volantis-static/libs/izitoast/dist/css/iziToast.min.css
-    js: volantis-static/libs/izitoast/dist/js/iziToast.min.js
     icon:     # 默认图标，支持对图标添加颜色，可选值：see：/source/css/_style/_plugins/fontcolor.styl
       default: fa-solid fa-info-circle light-blue
       quection: fa-solid fa-question-circle light-blue
@@ -1840,18 +1939,18 @@ plugins:
       enable: true
       play: fa-solid fa-play
       pause: fa-solid fa-pause
-    rightmenu:                            
+    rightmenu:
       enable: true                        # 是否开启右键模块的消息通知
-      notice: true                        # 唤醒原右键菜单的通知 
+      notice: true                        # 唤醒原右键菜单的通知
 ```
 
 ### 轮播标签
 
-使用方法参见：[swiper](/v5/tag-plugins/#swiper)
+使用方法参见：[swiper](/v6/tag-plugins/#swiper)
 
 ```yaml blog/_config.volantis.yml
-swiper:
-  enable: true
-  css: https://unpkg.com/swiper@6/swiper-bundle.min.css
-  js: https://unpkg.com/swiper@6/swiper-bundle.min.js
+  # swiper
+  # https://www.swiper.com.cn/
+  swiper:
+    enable: true
 ```

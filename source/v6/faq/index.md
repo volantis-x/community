@@ -50,7 +50,7 @@ node.js 版本过低，请升级至 v16.x 及以上版本！
 
 ## 如何在魔改主题的情况下还能兼顾更新？
 
-使用 [Custom Files 自定义文件](/v5/development-api/#Custom-Files-自定义文件) 和 [Development API for Volantis](/v5/development-api/).
+使用 [Custom Files 自定义文件](/v6/development-api/#Custom-Files-自定义文件) 和 [Development API for Volantis](/v6/development-api/).
 
 使用 [Hexo Theme Plus](https://github.com/jiangtj/hexo-extend-theme) 替换掉在 `layout` 文件夹下的主题文件.
 
@@ -62,7 +62,7 @@ node.js 版本过低，请升级至 v16.x 及以上版本！
 
 ## 如何修改 favicon？
 
-[RTFM](/v5/site-settings/#网站图标)
+[RTFM](/v6/site-settings/#网站图标)
 
 ## 文档为什么和配置文件不一样？
 

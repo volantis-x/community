@@ -218,13 +218,13 @@ git submodule add https://github.com/volantis-x/hexo-theme-volantis.git themes/v
 
 
 {% endtimenode %}
-{% timenode 第 3/3 步：将主题仓库切换为 dev 分支 %}
+{% timenode 第 3/3 步：将主题仓库切换为 6.0 分支 %}
 
 在终端中输入：
 
 ```
 cd themes/volantis
-git checkout dev
+git checkout 6.0
 ```
 
 {% endtimenode %}
@@ -274,4 +274,4 @@ git pull
 
 ## 配置与使用
 
-{% link 配置与使用, /v5/site-settings/, https://cdn.jsdelivr.net/gh/volantis-x/cdn-org@1.1/icon/2439351-arrows/005-arrows.svg %}
+{% link 配置与使用, /v6/site-settings/, https://cdn.jsdelivr.net/gh/volantis-x/cdn-org@1.1/icon/2439351-arrows/005-arrows.svg %}
