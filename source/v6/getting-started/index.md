@@ -78,7 +78,7 @@ git clone https://github.com/volantis-x/demo.git && cd demo && npm i && hexo s
 
 {% note guide clear :: rc 阶段的测试版本和 stable 阶段的正式版本 我们统称为 「稳定版本」 , 只有 「稳定版本」 发布到 [npm](https://www.npmjs.com/package/hexo-theme-volantis) %}
 
-{% note bug danger :: alpha 阶段的开发测试版本 和 beta 阶段的测试版本 我们统称为 「小白鼠测试版本」, 「小白鼠测试版本」 仅存在于 [Github 仓库的 dev 分支](https://github.com/volantis-x/hexo-theme-volantis/tree/dev) %}
+{% note bug danger :: alpha 阶段的开发测试版本 和 beta 阶段的测试版本 我们统称为 「小白鼠测试版本」, 「小白鼠测试版本」 仅存在于 [Github 仓库的 dev 分支](https://github.com/volantis-x/hexo-theme-volantis/tree/dev) 和 [Github 仓库的 6.0 分支](https://github.com/volantis-x/hexo-theme-volantis/tree/6.0) %}
 
 {% endfolding %}
 
