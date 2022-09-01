@@ -1702,23 +1702,82 @@ gitalk:
 
 ## 站内搜索
 
+{% folding 配置代码 %}
 ```yaml blog/_config.volantis.yml
 # To use hexo search, you need to install the following plugins:
 # npm i hexo-generator-json-content
 search:
   enable: true
-  service: hexo  # hexo, algolia
+  service: hexo  # hexo, algolia, meilisearch
   algolia:
     searchAsYouType: true # If false, triggers the search only on submit.
     hitsPerPage: 5 # Set the number of hits per page.
     placeholder: 'Search...' # The placeholder text of the input.
+  meilisearch:
+    placeholder: 'Search...'
+    searchKey: ''
+    indexName: ''
+    hostUrl: ''
 ```
-默认配置为 Hexo 搜索，但是需要安装插件才能使用：
-```sh
-npm i -S hexo-generator-json-content
+{% endfolding %}
+
+{% tabs localsearch %}
+
+<!-- tab Hexo 搜索 -->
+
+1. 你需要安装 [hexo-generator-json-content](https://github.com/alexbruno/hexo-generator-json-content)，并根据它的文档去做相应配置。
+2. 修改 **主题配置文件**。
+
+```yaml blog/_config.volantis.yml
+search:
+  enable: true
+  service: hexo
 ```
 
-如果使用 algolia 搜索，需要安装 [hexo-algolia](https://github.com/oncletom/hexo-algolia)。
+<!-- endtab -->
+
+<!-- tab Algolia 搜索 -->
+
+1. 你需要安装 [hexo-algoliasearch](https://github.com/LouisBarranqueiro/hexo-algoliasearch) 或 [hexo-algolia](https://github.com/thom4parisot/hexo-algolia)，根据它们的说明文档去做相应的配置。
+2. 修改 **主题配置文件**。
+
+```yaml blog/_config.volantis.yml
+search:
+  enable: true
+  service: algolia
+```
+
+> 如果你使用 [hexo-algoliasearch](https://github.com/LouisBarranqueiro/hexo-algoliasearch)，请记得配置 fields 参数的 title, permalink 和 content:strip
+
+<!-- endtab -->
+
+<!-- tab MeiliSearch 搜搜 -->
+
+1. MeiliSearch 为自托管搜索引擎，需要服务器支撑，部署文档详见：[Meilisearch Doc](https://docs.meilisearch.com/learn/getting_started/quick_start.html)。
+2. 数据集需要自行上传，可使用 [hexo-generator-json-content](https://github.com/alexbruno/hexo-generator-json-content) 生成索引，同时配置修改如下：
+  ```yaml blog/_config.yml
+  jsonContent: 
+    meta: false 
+    pages: false 
+    posts: 
+      title: true 
+      path: true 
+      text: true 
+      uuid: true # <--- 做主键
+  ```
+3. 你需要为文章分配一个唯一 ID 作为主键，此处推荐使用 [hexo-uuid](https://github.com/chekun/hexo-uuid) 生成。
+4. 修改 **主题配置文件**。
+
+  ```yaml blog/_config.volantis.yml
+  search:
+    enable: true
+    service: meilisearch
+  ```
+
+<!-- endtab -->
+
+{% endtabs %}
+
 
 {% note error :: 原 google, azure,  baidu 站内搜索 系祖传代码, 且文档丢失, 不便后续维护 在 5.0 版本移除 %}
 
