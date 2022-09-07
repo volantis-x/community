@@ -207,6 +207,7 @@ jsonContent:
       - v2/
       - test/
       - news/
+      - volantis-sw.js
 
 # npm i @jiangtj/hexo-extend-theme -S
 # theme_plus:

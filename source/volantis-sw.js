@@ -1,6 +1,6 @@
 // 全站打包上传 npm，sw 并发请求 cdn
 const prefix = 'volantis-community';
-const cacheSuffixVersion = '00000006-::cacheSuffixVersion::';
+const cacheSuffixVersion = '00000018-::cacheSuffixVersion::';
 const CACHE_NAME = prefix + '-v' + cacheSuffixVersion;
 const PreCachlist = [
   "/css/style.css",
@@ -9,7 +9,7 @@ const PreCachlist = [
 ];
 let NPMMirror = true;
 const NPMPackage = "@mhg/volantis-community";
-let NPMPackageVersion = "1.0.1661824222845";
+let NPMPackageVersion = "1.0.1662049284131";
 let debug = true;
 // location.hostname == 'localhost' && (debug = true) && (NPMMirror = false);
 const handleFetch = async (event) => {
@@ -60,12 +60,14 @@ const cdn = {
     testingcf: 'https://testingcf.jsdelivr.net/npm',
     test1: 'https://test1.jsdelivr.net/npm',
     unpkg: 'https://unpkg.com',
+    eleme: 'https://npm.elemecdn.com',
   },
   cdnjs: {
     cdnjs: 'https://cdnjs.cloudflare.com/ajax/libs',
     baomitu: 'https://lib.baomitu.com',
     bootcdn: 'https://cdn.bootcdn.net/ajax/libs',
     bytedance: 'https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M',
+    sustech: 'https://mirrors.sustech.edu.cn/cdnjs/ajax/libs',
   }
 }
 const cdn_match_list = []
@@ -297,7 +299,7 @@ const setNewestVersion = async () => {
   }
   let f = null;
   if (!(mirror_time % (mirrors.length + 1))) {
-    f = fetchAny(mirrors);
+    f = FetchEngine(mirrors);
   } else {
     f = fetch(mirrors[(mirror_time % (mirrors.length + 1)) - 1]);
   }
@@ -520,7 +522,7 @@ const matchCDN = async (req) => {
 
   let res;
   if (urls.length)
-    res = fetchAny(urls)
+    res = FetchEngine(urls)
   else
     res = fetch(req)
   if (res && NPMMirror && new RegExp(location.origin).test(req.url)) {
@@ -583,30 +585,64 @@ function createPromiseAny() {
   }
 }
 
-function fetchAny(urls) {
+function fetchAny(reqs) {
   const controller = new AbortController()
-  const signal = controller.signal
 
-  const PromiseAll = urls.map((url) => {
+  return reqs.map(req => {
     return new Promise((resolve, reject) => {
-      fetch(url, { signal })
+      fetch(req, {
+        signal: controller.signal
+      })
         .then(progress)
-        .then((res) => {
-          const r = res.clone()
-          if (r.status !== 200) reject(null)
+        .then(res => {
           controller.abort()
-          resolve(r)
+          if (res.status !== 200)
+            reject(null)
+          else
+            resolve(res)
         })
         .catch(() => reject(null))
     })
   })
-
-  if (!Promise.any) createPromiseAny()
-
-  return Promise.any(PromiseAll)
-    .then((res) => res)
-    .catch(() => null)
 }
+
+function fetchParallel(reqs) {
+  const abortEvent = new Event("abortOtherInstance")
+  const eventTarget = new EventTarget();
+
+  return reqs.map(async req => {
+    const controller = new AbortController();
+    let tagged = false;
+    eventTarget.addEventListener(abortEvent.type, () => {
+      if (!tagged) controller.abort();
+    })
+    return new Promise((resolve, reject) => {
+      fetch(req, {
+        signal: controller.signal,
+      }).then(res => {
+        tagged = true;
+        eventTarget.dispatchEvent(abortEvent)
+        if (res.status !== 200)
+          reject(null)
+        else
+          resolve(res)
+      }).catch(() => reject(null))
+    })
+  });
+}
+
+const FetchEngine = (reqs) => {
+  if (!Promise.any) createPromiseAny();
+  return Promise.any(fetchParallel(reqs)).then(res => res)
+    .catch((e) => {
+      if (e == "AggregateError: All promises were rejected") {
+        return Promise.any(fetchAny(reqs))
+          .then((res) => res)
+          .catch(() => null);
+      }
+      return null;
+    });
+};
 
 const getContentType = (ext) => {
   switch (ext) {

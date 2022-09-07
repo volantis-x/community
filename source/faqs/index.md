@@ -106,11 +106,7 @@ root: /
 | :-- | :-- | :-- |
 | 论坛 | [@volantis-x/discussions](https://github.com/volantis-x/hexo-theme-volantis/discussions/) | 慢，相对正式，方便检索，可以给其他用户参考 |
 | QQ群 | 1146399464 (验证码: <psw>vlts-2021</psw>) | 非正式，即时通讯，易于斗图；不利于给其他用户参考 |
-{% endtable %}
-
-{% p subtitle, 佛系互动 %}
-{% table %}
-| 渠道 | 方式 | 用途 |
-| :-- | :-- | :-- |
-| 评论区 | 留言 | 可以测试、灌水、推广自己的博客。 |
+| Telegram | [t.me/volantis_x](https://t.me/volantis_x) | 非正式，即时通讯，佛系交流互动 |
+| Gitter | [hexo-theme-volantis/community](https://gitter.im/hexo-theme-volantis/community) | 佛系交流互动 |
+| 评论区 | 留言 | 佛系交流互动 可以测试、灌水、推广自己的博客。 |
 {% endtable %}
