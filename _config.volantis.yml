@@ -1,5 +1,4 @@
-cdn:
-  enable: false
+debug: false
 content_visibility: true
 navbar:
   logo: # choose [img] or [icon + title]
@@ -206,7 +205,7 @@ sidebar:
         icon: fa-brands fa-qq
         title: '加入 QQ 群'
       content:
-        - '如果你在使用中遇到问题，请到 [Github Issues](https://github.com/volantis-x/hexo-theme-volantis/issues) 或者 [留言板](/faqs/#comments) 进行反馈，你也可以加入 **QQ 群**，验证码：vlts-2021<br>[![](https://bu.dusays.com/2021/09/24/ae832f0aadee8.png)](https://qm.qq.com/cgi-bin/qm/qr?k=FpexWW5GCLWOM3jF3LG-YWfllXuv7cMs&jump_from=webapi)'
+        - '如果你在使用中遇到问题，请到 [Github Issues](https://github.com/volantis-x/hexo-theme-volantis/issues) 或者 [留言板](/faqs/#comments) 进行反馈，你也可以加入 [Telegram](https://t.me/volantis_x) 或者 **QQ 群**，验证码：vlts-2021<br>[![](https://bu.dusays.com/2021/09/24/ae832f0aadee8.png)](https://qm.qq.com/cgi-bin/qm/qr?k=FpexWW5GCLWOM3jF3LG-YWfllXuv7cMs&jump_from=webapi)'
 
     help:
       class: page
@@ -290,13 +289,13 @@ site_footer:
     - img: volantis-static/media/org.volantis/icon/1322024-social-media/029-github.svg
       url: https://github.com/volantis-x/
     - img: volantis-static/media/org.volantis/icon/1322024-social-media/010-facebook.svg
-      url: /
+      url: https://t.me/volantis_x
     - img: volantis-static/media/org.volantis/icon/1322024-social-media/018-twitter.svg
-      url: /
+      url: https://t.me/volantis_x
     - img: volantis-static/media/org.volantis/icon/1322024-social-media/045-telegram.svg
-      url: /
+      url: https://t.me/volantis_x
     - img: volantis-static/media/org.volantis/icon/1322024-social-media/006-youtube.svg
-      url: /
+      url: https://t.me/volantis_x
 
 
 tag_plugins:
