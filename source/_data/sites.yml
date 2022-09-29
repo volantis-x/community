@@ -36,5 +36,5 @@ test_demo:
 examples:
   title:
   description:
-  api: https://issues-api.vercel.app
+  api: https://issues-api.xaoxuu.com
   repo: volantis-x/examples

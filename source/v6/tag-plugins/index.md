@@ -763,7 +763,7 @@ rounded, circle
 
 ### 更多参数选择
 
-{% link GitHub 卡片 API 参数::https://github-readme-stats.vercel.app %}
+{% link GitHub 卡片 API 参数::https://github-readme-stats.xaoxuu.com %}
 
 
 <br>
@@ -1634,7 +1634,7 @@ community_builder:
 groupGitHub:
   title: 来自 GitHub 的朋友
   description: '以下友链通过 [GitHub Issue](https://github.com/xaoxuu/friends/issues/) 提交，按 issue 最后更新时间排序：'
-  api: https://issues-api.vercel.app
+  api: https://issues-api.xaoxuu.com
   repo: xaoxuu/friends
 ```
 
@@ -1686,7 +1686,7 @@ groupGitHub:
 当然，如果您自己部署了 API 接口，可以指定：
 
 ```
-{% friends repo:xaoxuu/friends api:https://issues-api.vercel.app %}
+{% friends repo:xaoxuu/friends api:https://issues-api.xaoxuu.com %}
 ```
 
 ## 网站卡片标签
