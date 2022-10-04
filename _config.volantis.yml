@@ -42,12 +42,12 @@ navbar:
         - name: hr
         - name: 文档 v5
           url: /v5/getting-started/
-        - name: 旧版文档 v4
-          url: /v4/getting-started/
-        - name: 旧版文档 v3
-          url: /v3/getting-started/
-        - name: 旧版文档 v2
-          url: /v2/getting-started/
+        # - name: 旧版文档 v4
+        #   url: /v4/getting-started/
+        # - name: 旧版文档 v3
+        #   url: /v3/getting-started/
+        # - name: 旧版文档 v2
+        #   url: /v2/getting-started/
 
 
 
