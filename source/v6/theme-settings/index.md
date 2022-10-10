@@ -1956,16 +1956,16 @@ plugins:
   ...
   # 友链朋友圈 hexo-circle-of-friends
   # https://github.com/Rock-Candy-Tea/hexo-circle-of-friends
-  # https://zfe.space/post/friend-link-circle.html
+  # https://fcircle-doc.js.cool/
   fcircle:
     # Set `plugins: ["fcircle"]` to enable in front-matter
     # 支持 Pjax
-    api: '' # api 地址
-    max_number: 20 # 页面展示文章数量
-    add_number: 10 # 每次加载增加的篇数
-    opentype: '_blank' # '_blank'打开新标签,'_self'本窗口打开
-    nofollow: true # 禁止搜索引擎抓取
-    # loadingCutom: # 自定义loading图 例如: <i class="fa fa-spinner fa-spin"></i> | <img src="你的图片地址" alt="加载中...">
+    private_api_url: https://fcircle-api.example.com/ # api 地址
+    page_turning_number: 10  # 点击加载更多时，一次最多加载几篇文章，默认10
+    error_img: https://sdn.geekzu.org/avatar/57d8260dfb55501c37dde588e7c3852c # 头像加载失败时，默认头像地址
+    sort_rule: updated # 进入页面时第一次的排序规则,可选值：created/updated
+    app: https://unpkg.com/imgscdn@1.1.33/fcircle/app.min.js # app.min.js的url
+    bundle: https://unpkg.com/imgscdn@1.1.33/fcircle/bundle.js # bundle.js的url
 ```
 
 ### 消息提示
