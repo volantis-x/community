@@ -1871,16 +1871,14 @@ plugins:
   ...
   # 友链朋友圈 hexo-circle-of-friends
   # https://github.com/Rock-Candy-Tea/hexo-circle-of-friends
-  # https://zfe.space/post/friend-link-circle.html
+  # https://fcircle-doc.js.cool/
   fcircle:
     # Set `plugins: ["fcircle"]` to enable in front-matter
     # 支持 Pjax
-    api: '' # api 地址
-    max_number: 20 # 页面展示文章数量
-    add_number: 10 # 每次加载增加的篇数
-    opentype: '_blank' # '_blank'打开新标签,'_self'本窗口打开
-    nofollow: true # 禁止搜索引擎抓取
-    # loadingCutom: # 自定义loading图 例如: <i class="fa fa-spinner fa-spin"></i> | <img src="你的图片地址" alt="加载中...">
+    api: https://fcircle-api.example.com/ # api 地址
+    message: 与主机通讯中……  # 占位文字
+    css: volantis-static/libs/fcircle/fcircle.css
+    js: volantis-static/libs/fcircle/fcircle.js
 ```
 
 ### 消息提示
