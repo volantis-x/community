@@ -117,7 +117,7 @@ curl -s https://volantis.js.org/start | bash
 ```
 
 这行命令将会自动检测并安装所需环境，初始化博客，然后下载安装并应用主题。
-脚本详细使用方法：[#hexo.sh](https://xaoxuu.com/wiki/hexo.sh/)
+脚本详细使用方法：[#blog脚本](https://xaoxuu.com/wiki/cloud-shell/blog/)
 
 {% endfolding %}
 
