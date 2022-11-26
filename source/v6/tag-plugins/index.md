@@ -1677,16 +1677,10 @@ groupGitHub:
 
 ### 只显示动态数据
 
-如果您不想创建 `friends.yml` 来设置任何静态数据，可以在标签中设置 `repo` 来只显示动态数据：
+如果您不想创建 `friends.yml` 来设置任何静态数据，可以在标签中设置 `api` 来只显示动态数据：
 
 ```
-{% friends repo:xaoxuu/friends %}
-```
-
-当然，如果您自己部署了 API 接口，可以指定：
-
-```
-{% friends repo:xaoxuu/friends api:https://issues-api.xaoxuu.com %}
+{% friends api:https://api.vlts.cc/output_data/v2/volantis-x/examples %}
 ```
 
 ## 网站卡片标签

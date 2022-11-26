@@ -36,4 +36,4 @@ test_demo:
 examples:
   title:
   description:
-  api: https://issues-api.xaoxuu.com/v1/volantis-x/examples
+  api: https://api.vlts.cc/output_data/v2/volantis-x/examples
