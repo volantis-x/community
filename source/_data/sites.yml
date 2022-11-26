@@ -36,5 +36,4 @@ test_demo:
 examples:
   title:
   description:
-  api: https://issues-api.xaoxuu.com
-  repo: volantis-x/examples
+  api: https://issues-api.xaoxuu.com/v1/volantis-x/examples
