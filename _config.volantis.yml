@@ -200,7 +200,7 @@ sidebar:
 
     qgroup:
       class: text
-      display: [desktop, moblie]
+      display: [desktop, mobile]
       header:
         icon: fa-brands fa-qq
         title: '加入 QQ 群'
