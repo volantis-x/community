@@ -216,6 +216,7 @@ front-matter 是文件最上方以 `---` 分隔的区域，用于指定个别文
 | icons           | 图标 | Array | []  |
 | pin           | 是否置顶 | Bool  | false  |
 | headimg           | 文章头图| url  | - |
+| readmore           | 阅读更多按钮 | Bool | - |
 {% endtable %}
 
 `layout:post` 时特有的字段：
@@ -363,6 +364,16 @@ pin: true
 ```
 
 这会导致一个小问题：首页 post 卡片数量多于设定值，如果有强迫症希望每一个分页数量一致，可以安装插件来实现，详见：[#421](https://github.com/volantis-x/hexo-theme-volantis/issues/421)
+
+### 不显示阅读更多
+
+对于任何文章或者页面，默认在有摘要的情况下，会显示阅读更多按钮，设置 `readmore: false` 即可隐藏阅读更多按钮
+
+```yaml front-matter
+---
+readmore: false
+---
+```
 
 ### 不归档
 
