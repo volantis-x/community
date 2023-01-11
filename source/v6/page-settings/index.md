@@ -364,6 +364,16 @@ pin: true
 
 这会导致一个小问题：首页 post 卡片数量多于设定值，如果有强迫症希望每一个分页数量一致，可以安装插件来实现，详见：[#421](https://github.com/volantis-x/hexo-theme-volantis/issues/421)
 
+### 不显示Readmore
+
+存放在 `_posts` 文件夹下的文章在首页会出现 `Readmore`，如果某篇文章不想显示Readmore：
+
+```yaml front-matter
+---
+readmore: false
+---
+```
+
 ### 不归档
 
 存放在 `_posts` 文件夹下的文章一般都会出现在归档页，如果某篇文章不希望出现在归档页面：
