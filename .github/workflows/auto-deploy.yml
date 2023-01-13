@@ -55,17 +55,17 @@ jobs:
           user_name: "github-actions[bot]"
           user_email: "github-actions[bot]@users.noreply.github.com"
           # Deploy to Server
-      - name: Deploy to Server
-        uses: easingthemes/ssh-deploy@v2
-        env:
-          SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
-          ARGS: "-rltgoDzvO --delete"
-          EXCLUDE: ".well-known"
-          SOURCE: public/
-          REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
-          REMOTE_PORT: ${{ secrets.REMOTE_PORT }}
-          REMOTE_USER: ${{ secrets.REMOTE_USER }}
-          TARGET: ${{ secrets.TARGET }}
+#       - name: Deploy to Server
+#         uses: easingthemes/ssh-deploy@v2
+#         env:
+#           SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
+#           ARGS: "-rltgoDzvO --delete"
+#           EXCLUDE: ".well-known"
+#           SOURCE: public/
+#           REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
+#           REMOTE_PORT: ${{ secrets.REMOTE_PORT }}
+#           REMOTE_USER: ${{ secrets.REMOTE_USER }}
+#           TARGET: ${{ secrets.TARGET }}
 
       - name: Refresh NPM Cache
         run: |
