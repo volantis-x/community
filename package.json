@@ -33,7 +33,7 @@
   "devDependencies": {
     "@babel/core": "^7.18.13",
     "@babel/preset-env": "^7.18.10",
-    "cache-hash": "^1.0.0-beta.5",
+    "cache-hash": "^1.0.0-beta.10",
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
     "gulp-clean-css": "^4.3.0",
