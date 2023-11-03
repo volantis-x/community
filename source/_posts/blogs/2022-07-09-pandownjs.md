@@ -3,7 +3,7 @@ title: 好看的网盘链接
 date: 2022-05-05 12:00
 categories: [进阶玩法]
 author: cysn
-link: https://www.yt-blog.top/2022/05/05/12/00/30/pandown-js/
+link: https://www.yt-blog.top/20220505/1200/pandown-js/
 ---
 
 **这不是Node.js包！**
