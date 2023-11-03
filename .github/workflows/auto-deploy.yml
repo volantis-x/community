@@ -16,11 +16,11 @@ jobs:
         with:
           node-version: 16
           registry-url: https://registry.npmjs.org
-      - name: Setup Python 3.7
-        uses: actions/setup-python@v2
-        with:
-          python-version: "3.7"
-          architecture: "x64"
+#      - name: Setup Python 3.7
+#        uses: actions/setup-python@v2
+#        with:
+#          python-version: "3.7"
+#          architecture: "x64"
       - name: Generate Public Files
         run: |
           # Restore last modified time
@@ -29,19 +29,19 @@ jobs:
           npm install hexo-cli -g
           npm run start
 
-      - name: Run Tools
-        run: |
-          python ./.github/cache.py
+#      - name: Run Tools
+#        run: |
+#          python ./.github/cache.py
 
-      - name: NPM Publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.mhuig_npm_token }}
-        run: |
-          node ./.github/npm-version-bump.js
-          cd public
-          npm publish --access public
-          rm -rf ./package.json
-          cd ..
+#      - name: NPM Publish
+#        env:
+#          NODE_AUTH_TOKEN: ${{ secrets.mhuig_npm_token }}
+#        run: |
+#          node ./.github/npm-version-bump.js
+#          cd public
+#          npm publish --access public
+#          rm -rf ./package.json
+#          cd ..
 
 
       - name: Deploy to GitHub Pages
@@ -67,6 +67,6 @@ jobs:
 #           REMOTE_USER: ${{ secrets.REMOTE_USER }}
 #           TARGET: ${{ secrets.TARGET }}
 
-      - name: Refresh NPM Cache
-        run: |
-          curl -X PUT "https://registry.npmmirror.com/@mhg/volantis-community/sync?publish=false&nodeps=false"
+#      - name: Refresh NPM Cache
+#        run: |
+#          curl -X PUT "https://registry.npmmirror.com/@mhg/volantis-community/sync?publish=false&nodeps=false"
