@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "hexo clean && hexo g && gulp && npm run hash",
-    "hash": "cache-hash --target public --output public",
+    "hash": "cache-hash --target public --output public --selectAll {\"script\": \"src\", \"link\": \"href\", \"img\": \"src\"}",
     "g": "hexo clean && hexo generate",
     "c": "hexo clean",
     "d": "hexo deploy",
