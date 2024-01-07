@@ -773,7 +773,7 @@ cover:
 ```yaml blog/_config.volantis.yml
 cover:
   ...
-  scheme: dock # search (搜索), dock (坞), featured (精选), focus (焦点)
+  layout_scheme: dock # search (搜索), dock (坞), featured (精选), focus (焦点)
   ...
 ```
 
