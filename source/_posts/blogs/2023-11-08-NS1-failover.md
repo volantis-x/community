@@ -4,6 +4,7 @@ author: xingpingcn
 headimg: https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20231027/image.1oz9s4agroao.png
 description: 免费利用NS1权威DNS服务器实时基于不同运营商故障转移，利用监控宝平台监控指定网站
 keywords: NS1 站点监控 网站监控 故障转移 failover 监控宝 AWS Lambda
+date: 2023-11-18
 link: https://xingpingcn.top/%E5%85%8D%E8%B4%B9%E9%80%9A%E8%BF%87NS1%E5%88%A9%E7%94%A8%E7%9B%91%E6%8E%A7%E5%AE%9D%E5%B9%B3%E5%8F%B0%E5%AE%9E%E7%8E%B0%E5%AE%9E%E6%97%B6%E5%9F%BA%E4%BA%8E%E4%B8%8D%E5%90%8C%E8%BF%90%E8%90%A5%E5%95%86%E7%9A%84%E6%95%85%E9%9A%9C%E8%BD%AC%E7%A7%BB.html
 backup: https://web.archive.org/web/20231106235905/https://xingpingcn.top/%E5%85%8D%E8%B4%B9%E9%80%9A%E8%BF%87NS1%E5%88%A9%E7%94%A8%E7%9B%91%E6%8E%A7%E5%AE%9D%E5%B9%B3%E5%8F%B0%E5%AE%9E%E7%8E%B0%E5%AE%9E%E6%97%B6%E5%9F%BA%E4%BA%8E%E4%B8%8D%E5%90%8C%E8%BF%90%E8%90%A5%E5%95%86%E7%9A%84%E6%95%85%E9%9A%9C%E8%BD%AC%E7%A7%BB.html
 ---
