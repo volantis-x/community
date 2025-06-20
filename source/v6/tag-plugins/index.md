@@ -1663,7 +1663,7 @@ community_builder:
 
 可以加载来自 issues 的友链数据，除了需要在 `_data/friends.yml` 中指定 `api` 和 `repo` 外，还需要做一下几件事：
 
-从 [xaoxuu/issues-api](https://github.com/xaoxuu/issues-api) 作为模板克隆或者 fork 仓库，然后提交一个 issue 进行测试，不出意外的话，仓库中已经配置好了 issue 模板，只需要在模板中指定的位置填写信息就可以了。
+从 [xaoxuu/friends](https://github.com/xaoxuu/friends) 作为模板克隆或者 fork 仓库，然后提交一个 issue 进行测试，不出意外的话，仓库中已经配置好了 issue 模板，只需要在模板中指定的位置填写信息就可以了。
 
 提交完 issue 一分钟左右，如果仓库中出现了 `output` 分支提交，可以点击查看一下文件内容是否已经包含了刚刚提交的 issue 中的数据，如果包含，那么再次回到前端页面刷新就可以看到来自 issue 的友链数据了。
 
@@ -1678,6 +1678,17 @@ community_builder:
 ```
 {% friends api:https://raw.githubusercontent.com/volantis-x/examples/output/v2/data.json %}
 ```
+
+### 友链+文章
+
+动态友链支持显示每个友链最新的N篇文章，并按文章更新顺序给友链排序，只需要增加 `posts:true` 参数：
+
+```
+{% friends posts:true api:https://raw.githubusercontent.com/volantis-x/friends-example/output/v2/data.json %}
+```
+
+{% friends posts:true api:https://raw.githubusercontent.com/volantis-x/friends-example/output/v2/data.json %}
+
 
 ## 网站卡片标签
 
