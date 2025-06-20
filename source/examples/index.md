@@ -19,7 +19,9 @@ sidebar: []
 
 ## 使用 Volantis 的博客示例
 
-{% sites only:examples %}
+按版本号降序：
+
+{% sites only:showcase %}
 
 <br>
 
@@ -30,7 +32,7 @@ sidebar: []
 
 {% timeline 如何添加自己的博客链接 %}
 
-{% timenode 第一步：新建 [Issue](https://github.com/volantis-x/examples/issues/) 按照格式填写并提交 %}
+{% timenode 第一步：新建 [Issue](https://github.com/volantis-x/hexo-theme-volantis-showcase/issues/) 按照格式填写并提交 %}
 
 ```json
 {

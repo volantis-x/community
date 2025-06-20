@@ -763,7 +763,7 @@ rounded, circle
 
 ### 更多参数选择
 
-{% link GitHub 卡片 API 参数::https://github-readme-stats.xaoxuu.com %}
+{% link GitHub 卡片 API 参数::https://github.com/anuraghazra/github-readme-stats %}
 
 
 <br>
@@ -1631,11 +1631,7 @@ community_builder:
     - title: luosiwei-cmd
       url: https://github.com/luosiwei-cmd
       avatar: https://avatars.githubusercontent.com/u/61175380?s=60&v=4
-groupGitHub:
-  title: 来自 GitHub 的朋友
-  description: '以下友链通过 [GitHub Issue](https://github.com/xaoxuu/friends/issues/) 提交，按 issue 最后更新时间排序：'
-  api: https://issues-api.xaoxuu.com
-  repo: xaoxuu/friends
+
 ```
 
 标题和描述都支持 md 格式，需要写在引号中。如果指定了 `api` 和 `repo` 字段，则从 issues 中取第一个 `json` 代码块数据作为友链。
@@ -1680,7 +1676,7 @@ groupGitHub:
 如果您不想创建 `friends.yml` 来设置任何静态数据，可以在标签中设置 `api` 来只显示动态数据：
 
 ```
-{% friends api:https://api.vlts.cc/output_data/v2/volantis-x/examples %}
+{% friends api:https://raw.githubusercontent.com/volantis-x/examples/output/v2/data.json %}
 ```
 
 ## 网站卡片标签

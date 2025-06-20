@@ -11,13 +11,14 @@
     "s": "hexo clean && hexo server"
   },
   "hexo": {
-    "version": "7.0.0"
+    "version": "7.3.0"
   },
   "dependencies": {
     "hexo": "^7.0.0",
     "hexo-autonofollow": "^1.0.1",
     "hexo-autoprefixer": "^2.0.0",
     "hexo-deployer-git": "^3.0.0",
+    "hexo-fs": "^5.0.0",
     "hexo-generator-archive": "^1.0.0",
     "hexo-generator-category": "^1.0.0",
     "hexo-generator-feed": "^3.0.0",

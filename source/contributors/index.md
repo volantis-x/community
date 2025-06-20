@@ -24,11 +24,11 @@ Volantis 社区的发展离不开团队大佬们的无私奉献和社区小伙�
 
 ## 感谢开发者
 
-{% contributors api:https://raw.github.vlts.cc/volantis-x/github-api-cache/output/v2/repos/volantis-x/hexo-theme-volantis/contributors%3Fper_page%3D100%26direction%3Dasc/data.json %}
+{% contributors api:https://raw.githubusercontent.com/volantis-x/github-api-cache/output/v2/repos/volantis-x/hexo-theme-volantis/contributors%3Fper_page%3D100%26direction%3Dasc/data.json %}
 
 ## 感谢社区建设者
 
-{% contributors api:https://raw.github.vlts.cc/volantis-x/github-api-cache/output/v2/repos/volantis-x/community/contributors%3Fper_page%3D100%26direction%3Dasc/data.json %}
+{% contributors api:https://raw.githubusercontent.com/volantis-x/github-api-cache/output/v2/repos/volantis-x/community/contributors%3Fper_page%3D100%26direction%3Dasc/data.json %}
 
 ## 如何参与社区建设
 

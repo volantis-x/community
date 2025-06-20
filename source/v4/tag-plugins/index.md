@@ -812,7 +812,7 @@ rounded, circle
 
 ### 更多参数选择
 
-{% link GitHub 卡片 API 参数, https://github-readme-stats.xaoxuu.com %}
+{% link GitHub 卡片 API 参数, https://github.com/anuraghazra/github-readme-stats %}
 
 
 <br>

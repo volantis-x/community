@@ -33,7 +33,7 @@ test_demo:
       avatar: https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/apple-touch-icon.png
       description: Test Site For Development
 
-examples:
+showcase:
   title:
   description:
-  api: https://api.vlts.cc/output_data/v2/volantis-x/examples
+  api: https://raw.githubusercontent.com/volantis-x/hexo-theme-volantis-showcase/output/v2/data.json
