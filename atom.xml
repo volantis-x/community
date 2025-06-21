@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Volantis</title>
+  
+  
+  <link href="https://volantis.js.org/atom.xml" rel="self"/>
+  
+  <link href="https://volantis.js.org/"/>
+  <updated>2025-06-21T14:36:05.000Z</updated>
+  <id>https://volantis.js.org/</id>
+  
+  <author>
+    <name>Volantis Team</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Volantis 动态友链获重磅升级！</title>
+    <link href="https://volantis.js.org/blogs/2025-06-20-friends-posts/"/>
+    <id>https://volantis.js.org/blogs/2025-06-20-friends-posts/</id>
+    <published>2025-06-20T00:00:00.000Z</published>
+    <updated>2025-06-21T14:36:05.000Z</updated>
+    
+    <content type="html"><![CDATA[<ul><li>相较以往，配置流程大大简化，基本上“开箱即用”。</li><li>可以自动检测并标记友链的在线状态（通过标签），且不影响您自定义的其他标签。</li><li>现在每个友链都会展示其最新发布的文章及时间。</li><li>新版默认按照朋友们文章的更新时间进行排序，让最新动态一目了然。</li></ul><span id="more"></span>]]></content>
+    
+    
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;相较以往，配置流程大大简化，基本上“开箱即用”。&lt;/li&gt;
+&lt;li&gt;可以自动检测并标记友链的在线状态（通过标签），且不影响您自定义的其他标签。&lt;/li&gt;
+&lt;li&gt;现在每个友链都会展示其最新发布的文章及时间。&lt;/li&gt;
+&lt;li&gt;新版默认按照朋友们文章的更新时间进行排序，让最新动态一目了然。&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="官方资讯" scheme="https://volantis.js.org/categories/%E5%AE%98%E6%96%B9%E8%B5%84%E8%AE%AF/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Volantis 博客云后台 Qexo 部署教程</title>
+    <link href="https://volantis.js.org/blogs/2024-08-24-qexo-deployment/"/>
+    <id>https://volantis.js.org/blogs/2024-08-24-qexo-deployment/</id>
+    <published>2024-08-24T00:00:00.000Z</published>
+    <updated>2024-08-24T00:00:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>为自己的博客部署一个在线云后台，适合拥有自己的域名且不愿随时传输源码在本地部署博客的博主使用。</p>]]></content>
+    
+    
+    <summary type="html">为自己的博客部署一个在线云后台，让你可以随时随地轻松编辑博客。</summary>
+    
+    
+    
+    <category term="开发心得" scheme="https://volantis.js.org/categories/%E5%BC%80%E5%8F%91%E5%BF%83%E5%BE%97/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>提升部署在vercel或netlify的网站在中国的访问速度和稳定性</title>
+    <link href="https://volantis.js.org/blogs/2024-03-15-enhanced-FaaS-in-cn/"/>
+    <id>https://volantis.js.org/blogs/2024-03-15-enhanced-FaaS-in-cn/</id>
+    <published>2024-03-15T00:00:00.000Z</published>
+    <updated>2025-06-21T14:36:05.000Z</updated>
+    
+    <content type="html"><![CDATA[<div class="tag link"><a class="link-card" title="enhanced-FaaS-in-China" href="https://github.com/xingpingcn/enhanced-FaaS-in-China"><div class="left"><img src="https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230506/pngwing.com.yfryst5dm0w.webp" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230506/pngwing.com.yfryst5dm0w.webp" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/></div><div class="right"><p class="text">enhanced-FaaS-in-China</p><p class="url">https://github.com/xingpingcn/enhanced-FaaS-in-China</p></div></a></div><ul><li>如果你的网站部署在<code>vercel</code>，则把cname记录改为：<ul><li><code>vercel-cname.xingpingcn.top</code></li></ul></li><li>如果你的网站部署在<code>netlify</code>，则把cname记录改为：<ul><li><code>netlify-cname.xingpingcn.top</code></li></ul></li><li>如果你的网站部署在<code>netlify</code>和<code>vercel</code>上，则把cname记录改为：<ul><li><code>verlify-cname.xingpingcn.top</code><ul><li>使用此dns解析建议：先把cname记录改为官方提供的url，等<code>ssl/tls证书</code>生成之后再把cname记录改为<code>verlify-cname.xingpingcn.top</code><span id="more"></span></li></ul></li></ul></li></ul>]]></content>
+    
+    
+    <summary type="html">通过更改cname提升部署在vercel或netlify的网站在中国的访问速度和稳定性</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>免费通过NS1利用监控宝平台实现实时基于不同运营商的故障转移</title>
+    <link href="https://volantis.js.org/blogs/2023-11-08-NS1-failover/"/>
+    <id>https://volantis.js.org/blogs/2023-11-08-NS1-failover/</id>
+    <published>2023-11-18T00:00:00.000Z</published>
+    <updated>2025-06-21T14:36:05.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>本教程用到的资源全部都是免费且可持续使用的。NS1.com这个权威DNS服务器能根据ASN、国家或省份、DNS轮询（可加权）等方式解析域名，并且提供了API去控制某个解析（answer）是否响应。监控宝能实时监控网站（通过HTTP、PING、DNS方式等）并输出警告（webhook、Email、短信等），最高监控频率为2分钟。亚马逊的AWS Lambda是一个FaaS平台（serverless），可以作为连接NS1.com和监控宝之间的桥梁，当监控宝检测到网站速度变慢的时候发送信息到AWS Lambda，AWS Lambda得到信息后再传递给NS1.com，速度恢复的时候也是同样的操作。为什么要夹在一个AWS Lambda呢？这是因为监控宝发送的格式是固定的，并不能直接接入到NS1.com。</p><span id="more"></span>]]></content>
+    
+    
+    <summary type="html">免费利用NS1权威DNS服务器实时基于不同运营商故障转移，利用监控宝平台监控指定网站</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>使用freecdn-js提高hexo博客的cdn稳定性</title>
+    <link href="https://volantis.js.org/blogs/2023-10-01-enhanced-cdn/"/>
+    <id>https://volantis.js.org/blogs/2023-10-01-enhanced-cdn/</id>
+    <published>2023-10-01T00:00:00.000Z</published>
+    <updated>2025-06-21T14:36:05.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>由于<code>cdn.jsdelivr.net</code>在国内不太稳定，替代的<code>jsd.cdn.zzko.cn</code>稳定性稍好，但是也不是100%稳定，因而需要一个脚本实时切换到合适的CDN。<a href="https://github.com/EtherDream/freecdn" target="_blank" rel="noopener external nofollow noreferrer">freecdn-js</a>能实现这个需求，但是我的文件（图片、js等）储存在GitHub图床，而<code>freecdn-js</code>本身需要被加速的文件的<code>hash</code>，因此需要自己写脚本处理下载图片并计算。因为图片等文件的cdn链接是直接写在<code>.md</code>文件中的，所以写了一个正则脚本来提取cdn的链接。</p><span id="more"></span>]]></content>
+    
+    
+    <summary type="html">根据md文件内的cdn链接（图片等并不在本地）自动生成cdn列表，若图片、js、html等文件cdn失效则尝试连接列表内的其他cdn</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>为hexo博客添加自适应图片占位图（配合lazyload）</title>
+    <link href="https://volantis.js.org/blogs/2023-09-03-lazyload/"/>
+    <id>https://volantis.js.org/blogs/2023-09-03-lazyload/</id>
+    <published>2023-09-03T00:00:00.000Z</published>
+    <updated>2025-06-21T14:36:05.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>  我们要得到的结果如封面所示</p><p>  由于博客采用了图片懒加载（lazyload）插件，在加载dom后和图片加载成功之前，图片占位图为1px的像素，图片加载成功之后，则会把布局撑开，造成布局抖动。如果把和要加载的图片（本博客所有图片都放在了GitHub图床上，所以要用到<code>image-size</code>库访问远程图片）一样大小的占位图替代1px大小的占位图，则能解决布局抖动问题。本post将会占位图以硬编码的方式写到<code>dom</code>中，这需要修改在生成hexo博客时会用到的<code>fancybox.js</code>（或许每个主题用到的文件里都不一样，但最终都会使用<code>hexo.extend.tag.register()</code>方法；本博客使用<code>volantis</code>主题）。</p>  <span id="more"></span>]]></content>
+    
+    
+    <summary type="html">为hexo博客解决图片抖动问题添加自适应图片占位图</summary>
+    
+    
+    
+    <category term="hexo折腾" scheme="https://volantis.js.org/categories/hexo%E6%8A%98%E8%85%BE/"/>
+    
+    
+    <category term="volantis" scheme="https://volantis.js.org/tags/volantis/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo Volantis Snippets的vscode扩展</title>
+    <link href="https://volantis.js.org/blogs/2023-05-10-hexo-volantis-snippets/"/>
+    <id>https://volantis.js.org/blogs/2023-05-10-hexo-volantis-snippets/</id>
+    <published>2023-05-10T00:00:00.000Z</published>
+    <updated>2023-05-10T00:00:00.000Z</updated>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    <summary type="html">本篇文章适用于vscode+hexo+volantis的博客，快速向文章内插入标签，提升写文章的速度</summary>
+    
+    
+    
+    <category term="开发心得" scheme="https://volantis.js.org/categories/%E5%BC%80%E5%8F%91%E5%BF%83%E5%BE%97/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Aplayer采用本地音源</title>
+    <link href="https://volantis.js.org/blogs/2023-1-18-LocalMusic/"/>
+    <id>https://volantis.js.org/blogs/2023-1-18-LocalMusic/</id>
+    <published>2023-01-18T00:00:00.000Z</published>
+    <updated>2023-01-18T00:00:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>通过修改<code>metingjs</code>的代码将Aplayer播放器的音乐源改为本地,经过测试,Volantis自带的消息通知,右键播放器,导航栏播放器均正常显示.经过修改也可以适用于其他使用<code>metingjs</code>的主题</p><p>新的代码仅向<code>metingjs</code>增加了本地音源功能,原有功能保持不变</p><span id="more"></span>]]></content>
+    
+    
+    <summary type="html">Aplayer改用本地音源</summary>
+    
+    
+    
+    <category term="开发心得" scheme="https://volantis.js.org/categories/%E5%BC%80%E5%8F%91%E5%BF%83%E5%BE%97/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Volantis魔改教程</title>
+    <link href="https://volantis.js.org/blogs/2023-01-07-VolantisModify/"/>
+    <id>https://volantis.js.org/blogs/2023-01-07-VolantisModify/</id>
+    <published>2023-01-07T00:00:00.000Z</published>
+    <updated>2023-01-17T00:00:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>暗黑模式动画,看板娘随音乐启停说话,主页特效,KaTeX公式,网页压缩,透明卡片等</p><p>部分内容非Volantis主题也适用</p><span class='p center small'><div class=note><div id=binft_example></div></div></span><script>!function(){var l,n,i,r;function a(e){for(var t=document.createDocumentFragment(),l=0;l<e;l++){var i=document.createElement("span");i.textContent="_",i.style.color=n?(n=!1,"rgba(0,0,0,0)"):(n=!0,"rgba(0,0,0,1)"),t.appendChild(i)}return t}l=document.getElementById("binft_example"),n=!0,i=["有花堪折直需折,莫待无花空折枝.","闲居少邻并,草径入荒园.鸟宿池边树,僧敲月下门.","侯门一入深如海,从此萧郎是路人.","才见岭头云似盖,已惊岩下雪如尘.","人间万事消磨尽,只有清香似旧时.","日暮酒醒人已远,满天风雨下西楼.","落灯花,棋未收,叹新丰逆旅淹留.","软风吹过窗纱,心期便隔天涯.","迷惑失故路,薄暮无宿栖.","不见白头相携老,只许与君共天明.","晓迎秋露一枝新,不占园中最上春.","荷尽已无擎雨盖,菊残犹有傲霜枝.","春未绿,鬓先丝.人间别久不成悲.","江东子弟多才俊,卷土重来未可知.","莫听穿林打叶声,何妨吟啸且徐行.","在天愿作比翼鸟,在地愿为连理枝."].map(function(e){return e+""}),r={text:"",prefixP:-1,skillI:0,skillP:0,direction:"forward",delay:2,step:1},function e(){var t=i[r.skillI];r.step?r.step--:(r.step=1,r.prefixP<"".length?(0<=r.prefixP&&(r.text+=""[r.prefixP]),r.prefixP++):"forward"===r.direction?r.skillP<t.length?(r.text+=t[r.skillP],r.skillP++):r.delay?r.delay--:(r.direction="backward",r.delay=2):0<r.skillP?(r.text=r.text.slice(0,-1),r.skillP--):(r.skillI=(r.skillI+1)%i.length,r.direction="forward")),l.textContent=r.text,l.appendChild(a(r.prefixP<"".length?Math.min(1,1+r.prefixP):Math.min(1,t.length-r.skillP))),setTimeout(e,75)}()}();</script><span id="more"></span>]]></content>
+    
+    
+    <summary type="html">魔改大合集</summary>
+    
+    
+    
+    <category term="开发心得" scheme="https://volantis.js.org/categories/%E5%BC%80%E5%8F%91%E5%BF%83%E5%BE%97/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>volantis使用php实现Gitee友链</title>
+    <link href="https://volantis.js.org/blogs/2022-12-26-GiteeFriendsLink/"/>
+    <id>https://volantis.js.org/blogs/2022-12-26-GiteeFriendsLink/</id>
+    <published>2022-12-26T00:00:00.000Z</published>
+    <updated>2022-12-26T00:00:00.000Z</updated>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    <summary type="html">添加Gitee动态友链</summary>
+    
+    
+    
+    <category term="开发心得" scheme="https://volantis.js.org/categories/%E5%BC%80%E5%8F%91%E5%BF%83%E5%BE%97/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>配置Volantis 主题遇到的问题和解决</title>
+    <link href="https://volantis.js.org/blogs/2022-12-06-experience/"/>
+    <id>https://volantis.js.org/blogs/2022-12-06-experience/</id>
+    <published>2022-12-06T00:00:00.000Z</published>
+    <updated>2022-12-06T00:00:00.000Z</updated>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    <summary type="html">本篇文章记录了我对 Volantis 主题一路磕磕碰碰的个性化配置，希望为接下来要去配置的新手避个坑</summary>
+    
+    
+    
+    <category term="开发心得" scheme="https://volantis.js.org/categories/%E5%BC%80%E5%8F%91%E5%BF%83%E5%BE%97/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>volantis新版暗黑模式动画</title>
+    <link href="https://volantis.js.org/blogs/2022-08-18-darkmode-new/"/>
+    <id>https://volantis.js.org/blogs/2022-08-18-darkmode-new/</id>
+    <published>2022-08-18T00:00:00.000Z</published>
+    <updated>2022-08-18T00:00:00.000Z</updated>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    <summary type="html">为暗黑模式的切换增加动画</summary>
+    
+    
+    
+    <category term="开发心得" scheme="https://volantis.js.org/categories/%E5%BC%80%E5%8F%91%E5%BF%83%E5%BE%97/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>好看的网盘链接</title>
+    <link href="https://volantis.js.org/blogs/2022-07-09-pandownjs/"/>
+    <id>https://volantis.js.org/blogs/2022-07-09-pandownjs/</id>
+    <published>2022-05-05T12:00:00.000Z</published>
+    <updated>2025-06-21T14:36:05.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>这不是Node.js包！</strong></p><p><strong>这是个javascript的小工具？</strong></p><a class="ghcard" rel="external nofollow noopener noreferrer" href="https://github.com/Fgaoxing/pandown-js"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Fgaoxing&repo=pandown-js&show_owner=true" class="lazyload" data-srcset="https://github-readme-stats.vercel.app/api/pin/?username=Fgaoxing&repo=pandown-js&show_owner=true" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/></a><p><del>↑↑↑和上次一样的开头↑↑↑</del></p><!--这一段会使返回主页的pjax失效。。<script pjax-data type="text/javascript" src="https://cdn.jsdelivr.net/gh/Fgaoxing/pandown-js/pandown.js"></script><pandown type="lz" url="123" pwd="1234" fname="啥都没有，我没放链接"></pandown><script pjax-data>pandown()</script> --><span id="more"></span>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;strong&gt;这不是Node.js包！&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;这是个javascript的小工具？&lt;/strong&gt;&lt;/p&gt;
+&lt;a class=&quot;ghcard&quot; rel=&quot;external nofollow noopener noreferrer&quot; href=&quot;https://github.com/Fgaoxing/pandown-js&quot;&gt;&lt;img src=&quot;https://github-readme-stats.vercel.app/api/pin/?username=Fgaoxing&amp;repo=pandown-js&amp;show_owner=true&quot;/&gt;&lt;/a&gt;
+
+&lt;p&gt;&lt;del&gt;↑↑↑和上次一样的开头↑↑↑&lt;/del&gt;&lt;/p&gt;
+&lt;!--
+这一段会使返回主页的pjax失效。。
+&lt;script pjax-data type=&quot;text/javascript&quot; src=&quot;https://cdn.jsdelivr.net/gh/Fgaoxing/pandown-js/pandown.js&quot;&gt;&lt;/script&gt;
+&lt;pandown type=&quot;lz&quot; url=&quot;123&quot; pwd=&quot;1234&quot; fname=&quot;啥都没有，我没放链接&quot;&gt;&lt;/pandown&gt;
+&lt;script pjax-data&gt;pandown()&lt;/script&gt; 
+--&gt;</summary>
+    
+    
+    
+    <category term="进阶玩法" scheme="https://volantis.js.org/categories/%E8%BF%9B%E9%98%B6%E7%8E%A9%E6%B3%95/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Volantis 多背景图的优化方案</title>
+    <link href="https://volantis.js.org/blogs/2021-11-29-parallax/"/>
+    <id>https://volantis.js.org/blogs/2021-11-29-parallax/</id>
+    <published>2021-11-29T00:00:00.000Z</published>
+    <updated>2022-04-20T00:00:00.000Z</updated>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    <summary type="html">优化背景图较多时的网页加载速度</summary>
+    
+    
+    
+    <category term="开发心得" scheme="https://volantis.js.org/categories/%E5%BC%80%E5%8F%91%E5%BF%83%E5%BE%97/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>网站自定义字体及推荐</title>
+    <link href="https://volantis.js.org/blogs/2021-09-02-inkss-font/"/>
+    <id>https://volantis.js.org/blogs/2021-09-02-inkss-font/</id>
+    <published>2021-09-02T00:00:00.000Z</published>
+    <updated>2025-06-21T14:36:05.000Z</updated>
+    
+    <content type="html"><![CDATA[<div class="note alien-monster cyan"><p>统计一下目前使用的自定义字体及调用。</p></div><div class="note poo gray"><p>Volantis 主题可直接参考使用。</p></div><span id="more"></span>]]></content>
+    
+    
+    <summary type="html">&lt;div class=&quot;note alien-monster cyan&quot;&gt;&lt;p&gt;统计一下目前使用的自定义字体及调用。&lt;/p&gt;&lt;/div&gt;
+
+&lt;div class=&quot;note poo gray&quot;&gt;&lt;p&gt;Volantis 主题可直接参考使用。&lt;/p&gt;&lt;/div&gt;</summary>
+    
+    
+    
+    <category term="进阶玩法" scheme="https://volantis.js.org/categories/%E8%BF%9B%E9%98%B6%E7%8E%A9%E6%B3%95/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Volantis主题自定义-暗黑模式动画</title>
+    <link href="https://volantis.js.org/blogs/2021-8-29-darkmode/"/>
+    <id>https://volantis.js.org/blogs/2021-8-29-darkmode/</id>
+    <published>2021-08-25T00:00:00.000Z</published>
+    <updated>2021-08-25T00:00:00.000Z</updated>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    <summary type="html">为暗黑模式的切换增加动画</summary>
+    
+    
+    
+    <category term="开发心得" scheme="https://volantis.js.org/categories/%E5%BC%80%E5%8F%91%E5%BF%83%E5%BE%97/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Volantis 主题个性化修改合集</title>
+    <link href="https://volantis.js.org/blogs/2021-08-15-inkss-theme/"/>
+    <id>https://volantis.js.org/blogs/2021-08-15-inkss-theme/</id>
+    <published>2021-08-15T00:00:00.000Z</published>
+    <updated>2021-08-15T00:00:00.000Z</updated>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    <summary type="html">记录了与 Volantis 主题相关的修改合集。</summary>
+    
+    
+    
+    <category term="进阶玩法" scheme="https://volantis.js.org/categories/%E8%BF%9B%E9%98%B6%E7%8E%A9%E6%B3%95/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>给博客添加捐赠小部件—sponsor-page</title>
+    <link href="https://volantis.js.org/blogs/2021-08-13-sponsor-page/"/>
+    <id>https://volantis.js.org/blogs/2021-08-13-sponsor-page/</id>
+    <published>2021-08-13T00:00:00.000Z</published>
+    <updated>2021-08-13T00:00:00.000Z</updated>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    <summary type="html">sponsor-page 是一个开源的捐赠按钮样式，可以用于美化我们的博客。</summary>
+    
+    
+    
+    <category term="开发心得" scheme="https://volantis.js.org/categories/%E5%BC%80%E5%8F%91%E5%BF%83%E5%BE%97/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>使用 pandoc 正确渲染多行 MathJax 公式</title>
+    <link href="https://volantis.js.org/blogs/2021-4-18-pandoc-renderer/"/>
+    <id>https://volantis.js.org/blogs/2021-4-18-pandoc-renderer/</id>
+    <published>2021-04-18T00:00:00.000Z</published>
+    <updated>2021-04-18T00:00:00.000Z</updated>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    <summary type="html">关于更换 Markdown 渲染器以正确渲染 MathJax 公式的一些考据</summary>
+    
+    
+    
+    <category term="开发心得" scheme="https://volantis.js.org/categories/%E5%BC%80%E5%8F%91%E5%BF%83%E5%BE%97/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>为volantis添加瀑布流相册</title>
+    <link href="https://volantis.js.org/blogs/2021-4-14-photos/"/>
+    <id>https://volantis.js.org/blogs/2021-4-14-photos/</id>
+    <published>2021-04-14T00:00:00.000Z</published>
+    <updated>2025-06-21T14:36:05.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>经过折腾，目前相册功能可用了，就是还不支持分类和懒加载，等后续完善吧。</p><span id="more"></span>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;经过折腾，目前相册功能可用了，就是还不支持分类和懒加载，等后续完善吧。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="进阶玩法" scheme="https://volantis.js.org/categories/%E8%BF%9B%E9%98%B6%E7%8E%A9%E6%B3%95/"/>
+    
+    
+  </entry>
+  
+</feed>

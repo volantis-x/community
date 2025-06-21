@@ -1,0 +1,3 @@
+#!/bin/bash
+
+curl -s https://sh.xaox.cc/install | bash -s blog && blog init && return
