@@ -43,17 +43,26 @@ jobs:
 #          rm -rf ./package.json
 #          cd ..
 
-
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           deploy_key: ${{ secrets.DEPLOY_KEY }}
-          external_repository: xaoxuu/volantis.js.org
-          publish_branch: master
+          external_repository: volantis-x/volantis.github.io
+          publish_branch: gh-pages
           publish_dir: ./public
           commit_message: ${{ github.event.head_commit.message }}
           user_name: "github-actions[bot]"
           user_email: "github-actions[bot]@users.noreply.github.com"
+      # - name: Deploy to GitHub Pages
+      #   uses: peaceiris/actions-gh-pages@v3
+      #   with:
+      #     deploy_key: ${{ secrets.DEPLOY_KEY }}
+      #     external_repository: xaoxuu/volantis.js.org
+      #     publish_branch: master
+      #     publish_dir: ./public
+      #     commit_message: ${{ github.event.head_commit.message }}
+      #     user_name: "github-actions[bot]"
+      #     user_email: "github-actions[bot]@users.noreply.github.com"
           # Deploy to Server
 #       - name: Deploy to Server
 #         uses: easingthemes/ssh-deploy@v2
