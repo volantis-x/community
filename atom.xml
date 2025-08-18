@@ -6,7 +6,7 @@
   <link href="https://volantis.js.org/atom.xml" rel="self"/>
   
   <link href="https://volantis.js.org/"/>
-  <updated>2025-06-21T14:36:05.000Z</updated>
+  <updated>2025-08-18T08:23:47.000Z</updated>
   <id>https://volantis.js.org/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://volantis.js.org/blogs/2025-06-20-friends-posts/"/>
     <id>https://volantis.js.org/blogs/2025-06-20-friends-posts/</id>
     <published>2025-06-20T00:00:00.000Z</published>
-    <updated>2025-06-21T14:36:05.000Z</updated>
+    <updated>2025-08-18T08:23:47.000Z</updated>
     
     <content type="html"><![CDATA[<ul><li>相较以往，配置流程大大简化，基本上“开箱即用”。</li><li>可以自动检测并标记友链的在线状态（通过标签），且不影响您自定义的其他标签。</li><li>现在每个友链都会展示其最新发布的文章及时间。</li><li>新版默认按照朋友们文章的更新时间进行排序，让最新动态一目了然。</li></ul><span id="more"></span>]]></content>
     
@@ -64,7 +64,7 @@
     <link href="https://volantis.js.org/blogs/2024-03-15-enhanced-FaaS-in-cn/"/>
     <id>https://volantis.js.org/blogs/2024-03-15-enhanced-FaaS-in-cn/</id>
     <published>2024-03-15T00:00:00.000Z</published>
-    <updated>2025-06-21T14:36:05.000Z</updated>
+    <updated>2025-08-18T08:23:47.000Z</updated>
     
     <content type="html"><![CDATA[<div class="tag link"><a class="link-card" title="enhanced-FaaS-in-China" href="https://github.com/xingpingcn/enhanced-FaaS-in-China"><div class="left"><img src="https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230506/pngwing.com.yfryst5dm0w.webp" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230506/pngwing.com.yfryst5dm0w.webp" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/></div><div class="right"><p class="text">enhanced-FaaS-in-China</p><p class="url">https://github.com/xingpingcn/enhanced-FaaS-in-China</p></div></a></div><ul><li>如果你的网站部署在<code>vercel</code>，则把cname记录改为：<ul><li><code>vercel-cname.xingpingcn.top</code></li></ul></li><li>如果你的网站部署在<code>netlify</code>，则把cname记录改为：<ul><li><code>netlify-cname.xingpingcn.top</code></li></ul></li><li>如果你的网站部署在<code>netlify</code>和<code>vercel</code>上，则把cname记录改为：<ul><li><code>verlify-cname.xingpingcn.top</code><ul><li>使用此dns解析建议：先把cname记录改为官方提供的url，等<code>ssl/tls证书</code>生成之后再把cname记录改为<code>verlify-cname.xingpingcn.top</code><span id="more"></span></li></ul></li></ul></li></ul>]]></content>
     
@@ -81,7 +81,7 @@
     <link href="https://volantis.js.org/blogs/2023-11-08-NS1-failover/"/>
     <id>https://volantis.js.org/blogs/2023-11-08-NS1-failover/</id>
     <published>2023-11-18T00:00:00.000Z</published>
-    <updated>2025-06-21T14:36:05.000Z</updated>
+    <updated>2025-08-18T08:23:47.000Z</updated>
     
     <content type="html"><![CDATA[<p>本教程用到的资源全部都是免费且可持续使用的。NS1.com这个权威DNS服务器能根据ASN、国家或省份、DNS轮询（可加权）等方式解析域名，并且提供了API去控制某个解析（answer）是否响应。监控宝能实时监控网站（通过HTTP、PING、DNS方式等）并输出警告（webhook、Email、短信等），最高监控频率为2分钟。亚马逊的AWS Lambda是一个FaaS平台（serverless），可以作为连接NS1.com和监控宝之间的桥梁，当监控宝检测到网站速度变慢的时候发送信息到AWS Lambda，AWS Lambda得到信息后再传递给NS1.com，速度恢复的时候也是同样的操作。为什么要夹在一个AWS Lambda呢？这是因为监控宝发送的格式是固定的，并不能直接接入到NS1.com。</p><span id="more"></span>]]></content>
     
@@ -98,7 +98,7 @@
     <link href="https://volantis.js.org/blogs/2023-10-01-enhanced-cdn/"/>
     <id>https://volantis.js.org/blogs/2023-10-01-enhanced-cdn/</id>
     <published>2023-10-01T00:00:00.000Z</published>
-    <updated>2025-06-21T14:36:05.000Z</updated>
+    <updated>2025-08-18T08:23:47.000Z</updated>
     
     <content type="html"><![CDATA[<p>由于<code>cdn.jsdelivr.net</code>在国内不太稳定，替代的<code>jsd.cdn.zzko.cn</code>稳定性稍好，但是也不是100%稳定，因而需要一个脚本实时切换到合适的CDN。<a href="https://github.com/EtherDream/freecdn" target="_blank" rel="noopener external nofollow noreferrer">freecdn-js</a>能实现这个需求，但是我的文件（图片、js等）储存在GitHub图床，而<code>freecdn-js</code>本身需要被加速的文件的<code>hash</code>，因此需要自己写脚本处理下载图片并计算。因为图片等文件的cdn链接是直接写在<code>.md</code>文件中的，所以写了一个正则脚本来提取cdn的链接。</p><span id="more"></span>]]></content>
     
@@ -115,7 +115,7 @@
     <link href="https://volantis.js.org/blogs/2023-09-03-lazyload/"/>
     <id>https://volantis.js.org/blogs/2023-09-03-lazyload/</id>
     <published>2023-09-03T00:00:00.000Z</published>
-    <updated>2025-06-21T14:36:05.000Z</updated>
+    <updated>2025-08-18T08:23:47.000Z</updated>
     
     <content type="html"><![CDATA[<p>  我们要得到的结果如封面所示</p><p>  由于博客采用了图片懒加载（lazyload）插件，在加载dom后和图片加载成功之前，图片占位图为1px的像素，图片加载成功之后，则会把布局撑开，造成布局抖动。如果把和要加载的图片（本博客所有图片都放在了GitHub图床上，所以要用到<code>image-size</code>库访问远程图片）一样大小的占位图替代1px大小的占位图，则能解决布局抖动问题。本post将会占位图以硬编码的方式写到<code>dom</code>中，这需要修改在生成hexo博客时会用到的<code>fancybox.js</code>（或许每个主题用到的文件里都不一样，但最终都会使用<code>hexo.extend.tag.register()</code>方法；本博客使用<code>volantis</code>主题）。</p>  <span id="more"></span>]]></content>
     
@@ -250,7 +250,7 @@
     <link href="https://volantis.js.org/blogs/2022-07-09-pandownjs/"/>
     <id>https://volantis.js.org/blogs/2022-07-09-pandownjs/</id>
     <published>2022-05-05T12:00:00.000Z</published>
-    <updated>2025-06-21T14:36:05.000Z</updated>
+    <updated>2025-08-18T08:23:47.000Z</updated>
     
     <content type="html"><![CDATA[<p><strong>这不是Node.js包！</strong></p><p><strong>这是个javascript的小工具？</strong></p><a class="ghcard" rel="external nofollow noopener noreferrer" href="https://github.com/Fgaoxing/pandown-js"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Fgaoxing&repo=pandown-js&show_owner=true" class="lazyload" data-srcset="https://github-readme-stats.vercel.app/api/pin/?username=Fgaoxing&repo=pandown-js&show_owner=true" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/></a><p><del>↑↑↑和上次一样的开头↑↑↑</del></p><!--这一段会使返回主页的pjax失效。。<script pjax-data type="text/javascript" src="https://cdn.jsdelivr.net/gh/Fgaoxing/pandown-js/pandown.js"></script><pandown type="lz" url="123" pwd="1234" fname="啥都没有，我没放链接"></pandown><script pjax-data>pandown()</script> --><span id="more"></span>]]></content>
     
@@ -298,7 +298,7 @@
     <link href="https://volantis.js.org/blogs/2021-09-02-inkss-font/"/>
     <id>https://volantis.js.org/blogs/2021-09-02-inkss-font/</id>
     <published>2021-09-02T00:00:00.000Z</published>
-    <updated>2025-06-21T14:36:05.000Z</updated>
+    <updated>2025-08-18T08:23:47.000Z</updated>
     
     <content type="html"><![CDATA[<div class="note alien-monster cyan"><p>统计一下目前使用的自定义字体及调用。</p></div><div class="note poo gray"><p>Volantis 主题可直接参考使用。</p></div><span id="more"></span>]]></content>
     
@@ -395,7 +395,7 @@
     <link href="https://volantis.js.org/blogs/2021-4-14-photos/"/>
     <id>https://volantis.js.org/blogs/2021-4-14-photos/</id>
     <published>2021-04-14T00:00:00.000Z</published>
-    <updated>2025-06-21T14:36:05.000Z</updated>
+    <updated>2025-08-18T08:23:47.000Z</updated>
     
     <content type="html"><![CDATA[<p>经过折腾，目前相册功能可用了，就是还不支持分类和懒加载，等后续完善吧。</p><span id="more"></span>]]></content>
     
