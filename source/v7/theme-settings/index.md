@@ -1,10 +1,10 @@
 ---
 layout: docs
-group: docs-v6
+group: docs-v7
 order: 301
 title: 主题配置
 short_title: 3. 主题配置
-sidebar: [docs-v6, toc]
+sidebar: [docs-v7, toc]
 disqus:
   path: /
 ---
