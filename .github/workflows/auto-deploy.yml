@@ -1,6 +1,10 @@
 name: auto deploy # workflow name
 
-on: [push] # 触发事件
+on:
+  workflow_dispatch:
+  #push:
+  #  branches:
+  #    - main
 
 jobs:
   build: # job1 id
