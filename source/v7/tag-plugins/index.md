@@ -1,10 +1,10 @@
 ---
 layout: docs
-group: docs-v6
+group: docs-v7
 order: 501
 title: 标签插件
 short_title: 5. 标签插件
-sidebar: [docs-v6, toc]
+sidebar: [docs-v7, toc]
 disqus:
   path: /
 ---
@@ -15,7 +15,7 @@ disqus:
 
 {% note info :: 5.0 版本起临时实验使用英文双冒号 ( \:\: ) 作为分隔符，之前版本的分隔符写法向下兼容 %}
 
-{% note info :: 6.0 版本的分隔符最终计划使用 stellar 的分隔符，之前版本的分隔符写法没有兼容计划 %}
+{% note info :: 7.0 版本的分隔符最终计划使用 stellar 的分隔符，之前版本的分隔符写法没有兼容计划 %}
 
 ## text
 
