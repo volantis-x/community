@@ -54,7 +54,7 @@ npm: 8.x ~ latest LTS
 
 {% endtabs %}
 
-{% note info :: 配置和使用 volantis 6.x 之前请确保 node.js 升级至 <emp>v16.x 及以上</emp>版本！ %}
+{% note info :: 配置和使用 volantis 7.x 之前请确保 node.js 升级至 <emp>v16.x 及以上</emp>版本！ %}
 
 
 {% link FAQ List For Volantis 7::/v7/faq/::https://unpkg.com/volantis-static@0.0.1649552113628/media/twemoji/assets/svg/1fa82.svg %}
