@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: 不支持 pjax 的标签插件
-sidebar: [docs-v6, toc]
+sidebar: [docs-v7, toc]
 ---
 
 这里存放不支持 pjax 的标签插件
