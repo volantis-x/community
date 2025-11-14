@@ -4,7 +4,7 @@ seo_title: 开始使用
 short_title: 1. 开始使用
 group: docs-v7
 order: 1
-sidebar: [docs-v6, toc]
+sidebar: [docs-v7, toc]
 description: Volantis 是一个功能丰富、高度模块化的 Hexo 博客主题。得益于其强大的模块化特性，您可以轻松搭建一个极简风格的博客，也可以仿照官网搭建一个多人协作的、包含文档模块的大体量综合型博客。
 ---
 
@@ -70,7 +70,7 @@ git clone https://github.com/volantis-x/demo.git && cd demo && npm i && hexo s
 
 ## 下载与安装
 
-{% note radiation yellow :: volantis 7.x 6.x 目前正处于 「alpha 阶段」<br> volantis 5.x 目前正处于 「stable 阶段」<br> volantis 4.x 目前正处于 「EOL(End of Life) 阶段」 %}
+{% note radiation yellow :: volantis 7.x 目前正处于 「alpha 阶段」<br> volantis 6.x 目前正处于 「stable 阶段」<br> volantis 5.x 目前正处于 「EOL(End of Life) 阶段」 %}
 
 {% folding green:: Tips: volantis 开发发布周期 %}
 
@@ -78,7 +78,7 @@ git clone https://github.com/volantis-x/demo.git && cd demo && npm i && hexo s
 
 {% note guide clear :: rc 阶段的测试版本和 stable 阶段的正式版本 我们统称为 「稳定版本」 , 只有 「稳定版本」 发布到 [npm](https://www.npmjs.com/package/hexo-theme-volantis) %}
 
-{% note bug danger :: alpha 阶段的开发测试版本 和 beta 阶段的测试版本 我们统称为 「小白鼠测试版本」, 「小白鼠测试版本」 仅存在于 [Github 仓库的 dev 分支](https://github.com/volantis-x/hexo-theme-volantis/tree/dev) 和 [Github 仓库的 6.0 分支](https://github.com/volantis-x/hexo-theme-volantis/tree/6.0) %}
+{% note bug danger :: alpha 阶段的开发测试版本 和 beta 阶段的测试版本 我们统称为 「小白鼠测试版本」, 「小白鼠测试版本」 仅存在于 [Github 仓库的 7.x 分支](https://github.com/volantis-x/hexo-theme-volantis/tree/7.0) 和 [Github 仓库的 6.0 分支](https://github.com/volantis-x/hexo-theme-volantis/tree/6.0) %}
 
 {% endfolding %}
 
