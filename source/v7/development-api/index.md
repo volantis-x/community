@@ -4,13 +4,13 @@ group: docs-v6
 order: 701
 title: 开发文档
 short_title: 7. 开发文档
-sidebar: [docs-v6, toc]
+sidebar: [docs-v7, toc]
 disqus:
   path: /
 ---
 
 <p>
-{% span logo center large, <sup>&ensp;</sup>Volantis<sup>6</sup> %}
+{% span logo center large, <sup>&ensp;</sup>Volantis<sup>7</sup> %}
 {% span center small logo, Development API for Volantis %}
 </p>
 <br>
@@ -32,95 +32,12 @@ disqus:
 我们提供了全局变量 VolantisApp 和一些全局函数等主题开发调用接口。
 
 源码参考：[`/source/js/app.js`](https://github.com/volantis-x/hexo-theme-volantis/blob/8cc1f93a992ef378bc5f30a0528d28d35a804379/source/js/app.js#L44)
+
 ## Pjax
 
-### Pjax 重载区域划分接口
 
-我们提供了可以实现Pjax重载区域灵活划分的开发接口。
+> Pjax 在 7.0 版本中被移除。
 
-源码参考：[`layout/_plugins/pjax/index.ejs`](https://github.com/volantis-x/hexo-theme-volantis/blob/dev/layout/_plugins/pjax/index.ejs)
-
-#### `<pjax></pjax>` 标签
-
-所有被 `<pjax></pjax>` 标签包裹的所有元素将被pjax重载。
-
-请检查并确保 pjax 标签必须存在于所有页面 否则 pjax error.
-
-```html
-<pjax>
-    <!--我是将被pjax重载的内容 begin-->
-    <div>
-        <div></div>
-        <script></script>
-    </div>
-    <!--我是将被pjax重载的内容 end-->
-</pjax>
-```
-
-使用案例：[`/layout/_partial/scripts/index.ejs`](https://github.com/volantis-x/hexo-theme-volantis/blob/5a001b1555dc67ab61b050cded35e3c3b95750dd/layout/_partial/scripts/index.ejs#L97-L102)
-
-#### `script[data-pjax]`
-
-所有含有 `data-pjax` 标记的 `script` 标签将被pjax重载。
-
-```html
-<script data-pjax>我是将被pjax重载的内容</script>
-```
-
-#### `.pjax-reload script`
-
-所有在 `pjax-reload` Class元素内部的 `script` 标签将被pjax重载。
-
-```html
-<div class="pjax-reload">
-    <div>
-        <div>我不是将被pjax重载的内容</div>
-        <script>我是将被pjax重载的内容</script>
-    </div>
-</div>
-```
-
-### Pjax 回调方法
-
-我们提供了灵活的 Pjax 回调方法。
-
-源码参考：
-
-[`layout/_partial/scripts/global.ejs`](https://github.com/volantis-x/hexo-theme-volantis/blob/dev/layout/_partial/scripts/global.ejs)
-
-[`layout/_plugins/pjax/index.ejs`](https://github.com/volantis-x/hexo-theme-volantis/blob/dev/layout/_plugins/pjax/index.ejs)
-
-使用案例：[`layout/_plugins/pjax/animate.ejs`](https://github.com/volantis-x/hexo-theme-volantis/blob/dev/layout/_plugins/pjax/animate.ejs#L27-L29)
-
-{% note info, 中括号[]里面的内容表示选项是可选的，可以不填。下同，不再赘述。 %}
-
-#### `volantis.pjax.push` 在Pjax请求完成后触发。
-
-使用 `volantis.pjax.push(callBack[,"callBackName"])` 传入`pjax:complete`回调函数。
-
-`callBack`是回调函数,必填。
-
-`"callBackName"` `string`类型 默认值是回调函数的函数名，选填。
-
-
-
-#### `volantis.pjax.send` 在Pjax请求开始后触发。
-
-使用 `volantis.pjax.send(callBack[,"callBackName"])` 传入`pjax:send`回调函数。
-
-`callBack`是回调函数,必填。
-
-`"callBackName"` `string`类型 默认值是回调函数的函数名，选填。
-
-
-
-#### `volantis.pjax.error` 在Pjax请求失败后触发。
-
-使用 `volantis.pjax.error(callBack[,"callBackName"])` 传入`pjax:error`回调函数。
-
-`callBack`是回调函数,必填。
-
-`"callBackName"` `string`类型 默认值是回调函数的函数名，选填。
 
 
 ## 暗黑模式
