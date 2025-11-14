@@ -2,14 +2,14 @@
 layout: docs
 seo_title: 开始使用
 short_title: 1. 开始使用
-group: docs-v6
+group: docs-v7
 order: 1
 sidebar: [docs-v6, toc]
 description: Volantis 是一个功能丰富、高度模块化的 Hexo 博客主题。得益于其强大的模块化特性，您可以轻松搭建一个极简风格的博客，也可以仿照官网搭建一个多人协作的、包含文档模块的大体量综合型博客。
 ---
 
 <p>
-{% span logo center large, <sup>&ensp;</sup>Volantis<sup>6</sup> %}
+{% span logo center large, <sup>&ensp;</sup>Volantis<sup>7</sup> %}
 {% span center small logo, A Wonderful Theme for Hexo %}
 </p>
 <br>
@@ -57,7 +57,7 @@ npm: 8.x ~ latest LTS
 {% note info :: 配置和使用 volantis 6.x 之前请确保 node.js 升级至 <emp>v16.x 及以上</emp>版本！ %}
 
 
-{% link FAQ List For Volantis 6::/v6/faq/::https://unpkg.com/volantis-static@0.0.1649552113628/media/twemoji/assets/svg/1fa82.svg %}
+{% link FAQ List For Volantis 7::/v7/faq/::https://unpkg.com/volantis-static@0.0.1649552113628/media/twemoji/assets/svg/1fa82.svg %}
 
 ## 快速体验
 
@@ -70,7 +70,7 @@ git clone https://github.com/volantis-x/demo.git && cd demo && npm i && hexo s
 
 ## 下载与安装
 
-{% note radiation yellow :: volantis 6.x 目前正处于 「alpha 阶段」<br> volantis 5.x 目前正处于 「stable 阶段」<br> volantis 4.x 目前正处于 「EOL(End of Life) 阶段」 %}
+{% note radiation yellow :: volantis 7.x 6.x 目前正处于 「alpha 阶段」<br> volantis 5.x 目前正处于 「stable 阶段」<br> volantis 4.x 目前正处于 「EOL(End of Life) 阶段」 %}
 
 {% folding green:: Tips: volantis 开发发布周期 %}
 
@@ -149,11 +149,6 @@ npm i hexo-theme-volantis
 git clone https://github.com/volantis-x/hexo-theme-volantis themes/volantis
 ```
 
-如果您无法访问 GitHub 可以使用国内镜像源：
-
-```
-git clone https://e.coding.net/volantis-x/p/hexo-theme-volantis.git themes/volantis
-```
 
 {% endtimenode %}
 
@@ -274,4 +269,4 @@ git pull
 
 ## 配置与使用
 
-{% link 配置与使用, /v6/site-settings/, https://cdn.jsdelivr.net/gh/volantis-x/cdn-org@1.1/icon/2439351-arrows/005-arrows.svg %}
+{% link 配置与使用, /v7/site-settings/, https://cdn.jsdelivr.net/gh/volantis-x/cdn-org@1.1/icon/2439351-arrows/005-arrows.svg %}
