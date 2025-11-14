@@ -4,11 +4,11 @@ navbar:
   logo: # choose [img] or [icon + title]
     img: '' # volantis-static/media/org.volantis/blog/Logo-NavBar@3x.png
     icon:
-    title: 'Volantis 6 <sup style="color:#ff9800">alpha</sup>'
+    title: 'Volantis 7 <sup style="color:#ff9800">alpha</sup>'
   menu:
     - name: 文档
       icon: fa-duotone fa-book faa-tada
-      url: /v6/getting-started/
+      url: /v7/getting-started/
       target: _self
 
     - name: 示例
@@ -40,6 +40,8 @@ navbar:
         - name: 博客文章
           url: /archives/
         - name: hr
+        - name: 文档 v6
+          url: /v6/getting-started/
         - name: 文档 v5
           url: /v5/getting-started/
         # - name: 旧版文档 v4
@@ -62,7 +64,7 @@ cover:
       url: /
     - name: 文档
       img: volantis-static/media/twemoji/assets/svg/1f516.svg
-      url: /v6/getting-started/
+      url: /v7/getting-started/
       target: _self
     - name: 示例
       img: volantis-static/media/twemoji/assets/svg/1f4af.svg
@@ -264,6 +266,13 @@ sidebar:
       header:
         icon: fa-duotone fa-list-alt
         title: 文档导航 v6
+
+    docs-v7:
+      class: group
+      display: [desktop, mobile] # [desktop, mobile]
+      header:
+        icon: fa-duotone fa-list-alt
+        title: 文档导航 v7
 
     docs-latest:
       class: group
