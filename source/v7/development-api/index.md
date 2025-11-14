@@ -1,6 +1,6 @@
 ---
 layout: docs
-group: docs-v6
+group: docs-v7
 order: 701
 title: 开发文档
 short_title: 7. 开发文档
