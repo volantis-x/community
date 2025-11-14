@@ -4,7 +4,7 @@ group: docs-v6
 order: 801
 title: FAQ
 short_title: 8. FAQ
-sidebar: [docs-v6, toc]
+sidebar: [docs-v7, toc]
 disqus:
   path: /
 ---
