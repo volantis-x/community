@@ -1,6 +1,6 @@
 ---
 layout: docs
-group: docs-v6
+group: docs-v7
 order: 801
 title: FAQ
 short_title: 8. FAQ
@@ -10,8 +10,8 @@ disqus:
 ---
 
 <p>
-{% span logo center large, <sup>&ensp;</sup>Volantis<sup>6</sup> %}
-{% span center small logo, FAQ List For Volantis 6 %}
+{% span logo center large, <sup>&ensp;</sup>Volantis<sup>7</sup> %}
+{% span center small logo, FAQ List For Volantis 7 %}
 </p>
 <br>
 
