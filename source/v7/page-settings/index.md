@@ -1,10 +1,10 @@
 ---
 layout: docs
 title: 页面配置
-group: docs-v6
+group: docs-v7
 order: 401
 short_title: 4. 页面配置
-sidebar: [docs-v6, toc]
+sidebar: [docs-v7, toc]
 plugins:
   - mathjax
 disqus:
