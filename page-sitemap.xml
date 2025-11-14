@@ -11,16 +11,7 @@
     
     <url>
         <loc>https://volantis.js.org/contributors/</loc>
-        <lastmod>2025-11-14T12:10:20.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    
-    
-    <url>
-        <loc>https://volantis.js.org/examples/</loc>
-        <lastmod>2025-11-14T12:10:20.000Z</lastmod>
+        <lastmod>2025-11-14T13:22:08.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -29,7 +20,16 @@
     
     <url>
         <loc>https://volantis.js.org/faqs/</loc>
-        <lastmod>2025-11-14T12:10:20.000Z</lastmod>
+        <lastmod>2025-11-14T13:22:08.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    
+    
+    <url>
+        <loc>https://volantis.js.org/examples/</loc>
+        <lastmod>2025-11-14T13:22:08.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -38,7 +38,7 @@
     
     <url>
         <loc>https://volantis.js.org/how-to-update/</loc>
-        <lastmod>2025-11-14T12:10:20.000Z</lastmod>
+        <lastmod>2025-11-14T13:22:08.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -47,7 +47,7 @@
     
     <url>
         <loc>https://volantis.js.org/blog/categories/</loc>
-        <lastmod>2025-11-14T12:10:20.000Z</lastmod>
+        <lastmod>2025-11-14T13:22:08.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -56,7 +56,7 @@
     
     <url>
         <loc>https://volantis.js.org/blog/tags/</loc>
-        <lastmod>2025-11-14T12:10:20.000Z</lastmod>
+        <lastmod>2025-11-14T13:22:08.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -65,7 +65,7 @@
     
     <url>
         <loc>https://volantis.js.org/v4/advanced-settings/</loc>
-        <lastmod>2025-11-14T12:10:20.000Z</lastmod>
+        <lastmod>2025-11-14T13:22:08.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -74,7 +74,7 @@
     
     <url>
         <loc>https://volantis.js.org/v4/getting-started/</loc>
-        <lastmod>2025-11-14T12:10:20.000Z</lastmod>
+        <lastmod>2025-11-14T13:22:08.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -83,7 +83,7 @@
     
     <url>
         <loc>https://volantis.js.org/v4/page-settings/</loc>
-        <lastmod>2025-11-14T12:10:20.000Z</lastmod>
+        <lastmod>2025-11-14T13:22:08.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -92,7 +92,7 @@
     
     <url>
         <loc>https://volantis.js.org/v4/site-settings/</loc>
-        <lastmod>2025-11-14T12:10:20.000Z</lastmod>
+        <lastmod>2025-11-14T13:22:08.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -101,7 +101,7 @@
     
     <url>
         <loc>https://volantis.js.org/v4/tag-plugins/</loc>
-        <lastmod>2025-11-14T12:10:20.000Z</lastmod>
+        <lastmod>2025-11-14T13:22:08.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -110,7 +110,7 @@
     
     <url>
         <loc>https://volantis.js.org/v4/theme-settings/</loc>
-        <lastmod>2025-11-14T12:10:20.000Z</lastmod>
+        <lastmod>2025-11-14T13:22:08.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -119,7 +119,7 @@
     
     <url>
         <loc>https://volantis.js.org/v5/advanced-settings/</loc>
-        <lastmod>2025-11-14T12:10:20.000Z</lastmod>
+        <lastmod>2025-11-14T13:22:08.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -128,7 +128,7 @@
     
     <url>
         <loc>https://volantis.js.org/v5/development-api/</loc>
-        <lastmod>2025-11-14T12:10:20.000Z</lastmod>
+        <lastmod>2025-11-14T13:22:08.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -137,7 +137,7 @@
     
     <url>
         <loc>https://volantis.js.org/v5/faq/</loc>
-        <lastmod>2025-11-14T12:10:20.000Z</lastmod>
+        <lastmod>2025-11-14T13:22:08.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -146,16 +146,7 @@
     
     <url>
         <loc>https://volantis.js.org/v5/getting-started/</loc>
-        <lastmod>2025-11-14T12:10:20.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    
-    
-    <url>
-        <loc>https://volantis.js.org/v5/site-settings/</loc>
-        <lastmod>2025-11-14T12:10:20.000Z</lastmod>
+        <lastmod>2025-11-14T13:22:08.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -164,7 +155,16 @@
     
     <url>
         <loc>https://volantis.js.org/v5/page-settings/</loc>
-        <lastmod>2025-11-14T12:10:20.000Z</lastmod>
+        <lastmod>2025-11-14T13:22:08.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    
+    
+    <url>
+        <loc>https://volantis.js.org/v5/site-settings/</loc>
+        <lastmod>2025-11-14T13:22:08.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -173,7 +173,7 @@
     
     <url>
         <loc>https://volantis.js.org/v5/tag-plugins/</loc>
-        <lastmod>2025-11-14T12:10:20.000Z</lastmod>
+        <lastmod>2025-11-14T13:22:08.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -182,7 +182,7 @@
     
     <url>
         <loc>https://volantis.js.org/v5/theme-settings/</loc>
-        <lastmod>2025-11-14T12:10:20.000Z</lastmod>
+        <lastmod>2025-11-14T13:22:08.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -191,16 +191,7 @@
     
     <url>
         <loc>https://volantis.js.org/v6/advanced-settings/</loc>
-        <lastmod>2025-11-14T12:10:20.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    
-    
-    <url>
-        <loc>https://volantis.js.org/v6/faq/</loc>
-        <lastmod>2025-11-14T12:10:20.000Z</lastmod>
+        <lastmod>2025-11-14T13:22:08.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -209,7 +200,7 @@
     
     <url>
         <loc>https://volantis.js.org/v6/development-api/</loc>
-        <lastmod>2025-11-14T12:10:20.000Z</lastmod>
+        <lastmod>2025-11-14T13:22:08.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -218,7 +209,16 @@
     
     <url>
         <loc>https://volantis.js.org/v6/getting-started/</loc>
-        <lastmod>2025-11-14T12:10:20.000Z</lastmod>
+        <lastmod>2025-11-14T13:22:08.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    
+    
+    <url>
+        <loc>https://volantis.js.org/v6/faq/</loc>
+        <lastmod>2025-11-14T13:22:08.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -227,7 +227,7 @@
     
     <url>
         <loc>https://volantis.js.org/v6/page-settings/</loc>
-        <lastmod>2025-11-14T12:10:20.000Z</lastmod>
+        <lastmod>2025-11-14T13:22:08.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -236,16 +236,7 @@
     
     <url>
         <loc>https://volantis.js.org/v6/site-settings/</loc>
-        <lastmod>2025-11-14T12:10:20.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    
-    
-    <url>
-        <loc>https://volantis.js.org/v6/tag-plugins/no-pjax</loc>
-        <lastmod>2025-11-14T12:10:20.000Z</lastmod>
+        <lastmod>2025-11-14T13:22:08.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -254,7 +245,7 @@
     
     <url>
         <loc>https://volantis.js.org/v6/tag-plugins/</loc>
-        <lastmod>2025-11-14T12:10:20.000Z</lastmod>
+        <lastmod>2025-11-14T13:22:08.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -262,26 +253,8 @@
     
     
     <url>
-        <loc>https://volantis.js.org/v7/advanced-settings/</loc>
-        <lastmod>2025-11-14T12:10:20.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    
-    
-    <url>
-        <loc>https://volantis.js.org/v7/development-api/</loc>
-        <lastmod>2025-11-14T12:10:20.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    
-    
-    <url>
-        <loc>https://volantis.js.org/v7/faq/</loc>
-        <lastmod>2025-11-14T12:10:20.000Z</lastmod>
+        <loc>https://volantis.js.org/v6/tag-plugins/no-pjax</loc>
+        <lastmod>2025-11-14T13:22:08.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -290,7 +263,34 @@
     
     <url>
         <loc>https://volantis.js.org/v6/theme-settings/</loc>
-        <lastmod>2025-11-14T12:10:20.000Z</lastmod>
+        <lastmod>2025-11-14T13:22:08.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    
+    
+    <url>
+        <loc>https://volantis.js.org/v7/advanced-settings/</loc>
+        <lastmod>2025-11-14T13:22:08.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    
+    
+    <url>
+        <loc>https://volantis.js.org/v7/development-api/</loc>
+        <lastmod>2025-11-14T13:22:08.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    
+    
+    <url>
+        <loc>https://volantis.js.org/v7/faq/</loc>
+        <lastmod>2025-11-14T13:22:08.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -299,7 +299,7 @@
     
     <url>
         <loc>https://volantis.js.org/v7/getting-started/</loc>
-        <lastmod>2025-11-14T12:10:20.000Z</lastmod>
+        <lastmod>2025-11-14T13:22:08.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -308,7 +308,7 @@
     
     <url>
         <loc>https://volantis.js.org/v7/page-settings/</loc>
-        <lastmod>2025-11-14T12:10:20.000Z</lastmod>
+        <lastmod>2025-11-14T13:22:08.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -317,16 +317,7 @@
     
     <url>
         <loc>https://volantis.js.org/v7/site-settings/</loc>
-        <lastmod>2025-11-14T12:10:20.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    
-    
-    <url>
-        <loc>https://volantis.js.org/v7/tag-plugins/no-pjax</loc>
-        <lastmod>2025-11-14T12:10:20.000Z</lastmod>
+        <lastmod>2025-11-14T13:22:08.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -335,7 +326,16 @@
     
     <url>
         <loc>https://volantis.js.org/v7/tag-plugins/</loc>
-        <lastmod>2025-11-14T12:10:20.000Z</lastmod>
+        <lastmod>2025-11-14T13:22:08.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    
+    
+    <url>
+        <loc>https://volantis.js.org/v7/tag-plugins/no-pjax</loc>
+        <lastmod>2025-11-14T13:22:08.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -344,7 +344,7 @@
     
     <url>
         <loc>https://volantis.js.org/v7/theme-settings/</loc>
-        <lastmod>2025-11-14T12:10:20.000Z</lastmod>
+        <lastmod>2025-11-14T13:22:08.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
