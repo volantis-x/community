@@ -224,7 +224,7 @@ git submodule add https://github.com/volantis-x/hexo-theme-volantis.git themes/v
 
 ```
 cd themes/volantis
-git checkout dev
+git checkout 5.x
 ```
 
 {% endtimenode %}
