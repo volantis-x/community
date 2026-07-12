@@ -6,7 +6,7 @@
 
 中文文档：
 
-[v6](https://volantis.js.org/v6/getting-started/) ｜ [v5](https://volantis.js.org/v5/getting-started/) 
+[v7](https://volantis.js.org/v7/getting-started/) ｜ [v6](https://volantis.js.org/v6/getting-started/) ｜ [v5](https://volantis.js.org/v5/getting-started/) 
 
 
 ## 示例博客
