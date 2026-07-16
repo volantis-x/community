@@ -202,6 +202,8 @@ marked:
 jsonContent:
   ignore:
     paths:
+      - v7/
+      - v5/
       - v4/
       - v3/
       - v2/
@@ -215,3 +217,24 @@ jsonContent:
 #   views:
 #     - path: '_plugins/comments/index.ejs'
 #       file: 'source/_volantis/theme_plus/comments.ejs'
+
+
+
+
+
+# hexo-generator-archive
+## https://github.com/hexojs/hexo-generator-archive
+archive_generator:
+  enabled: true
+  per_page: 0
+  yearly: false
+  monthly: false
+  daily: false
+  order_by: -date
+
+
+
+
+
+
+
