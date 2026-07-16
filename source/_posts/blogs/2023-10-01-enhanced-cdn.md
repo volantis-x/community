@@ -4,7 +4,7 @@ date: 2023-10-01
 description: 根据md文件内的cdn链接（图片等并不在本地）自动生成cdn列表，若图片、js、html等文件cdn失效则尝试连接列表内的其他cdn
 keywords: cdn失效 cdn 提高免费cdn稳定性 freecdn cdn.jsdelivr.net 实时切换到合适的CDN 远程图片
 author: xingpingcn
-link: https://xingpingcn.top/%E4%BD%BF%E7%94%A8freecdn-js%E6%8F%90%E9%AB%98hexo%E5%8D%9A%E5%AE%A2%E7%9A%84cdn%E7%A8%B3%E5%AE%9A%E6%80%A7.html
+link: https://xingpingcn.top/hexo-blog-tweaks/%E4%BD%BF%E7%94%A8freecdn-js%E6%8F%90%E9%AB%98hexo%E5%8D%9A%E5%AE%A2%E7%9A%84cdn%E7%A8%B3%E5%AE%9A%E6%80%A7
 backup: https://web.archive.org/web/20231107000145/https://xingpingcn.top/%E4%BD%BF%E7%94%A8freecdn-js%E6%8F%90%E9%AB%98hexo%E5%8D%9A%E5%AE%A2%E7%9A%84cdn%E7%A8%B3%E5%AE%9A%E6%80%A7.html
 ---
 
