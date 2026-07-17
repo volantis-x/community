@@ -202,7 +202,6 @@ marked:
 jsonContent:
   ignore:
     paths:
-      - v7/
       - v5/
       - v4/
       - v3/
