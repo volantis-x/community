@@ -134,8 +134,8 @@ comments:
     repo: volantis-x/community  
     issue-number: 115
 sidebar:
-  for_page: [qgroup, post, category, guide]
-  for_post: [toc]
+  for:
+    home: [qgroup, post, category, guide]
   widget_library:
     toc:
       class: toc
