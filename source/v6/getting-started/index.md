@@ -70,7 +70,7 @@ git clone https://github.com/volantis-x/demo.git && cd demo && npm i && hexo s
 
 ## 下载与安装
 
-{% note radiation yellow :: volantis 6.x 目前正处于 「alpha 阶段」<br> volantis 5.x 目前正处于 「stable 阶段」<br> volantis 4.x 目前正处于 「EOL(End of Life) 阶段」 %}
+{% note radiation yellow :: volantis 6.x 目前正处于 「alpha 阶段」和「stable 阶段」<br> volantis 5.x 目前正处于 「EOL(End of Life) 阶段」<br> volantis 4.x 目前正处于 「EOL(End of Life) 阶段」 %}
 
 {% folding green:: Tips: volantis 开发发布周期 %}
 
