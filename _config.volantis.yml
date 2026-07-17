@@ -40,6 +40,15 @@ navbar:
         - name: 博客文章
           url: /archives/
         - name: hr
+        - name: 测试页面
+          rows:
+          - name: 项目
+            url: /wiki/
+          - name: 笔记
+            url: /notebooks/
+          - name: 专栏
+            url: /topic/
+        - name: hr
         - name: 文档 v7
           url: /v7/getting-started/
         - name: 文档 v5
