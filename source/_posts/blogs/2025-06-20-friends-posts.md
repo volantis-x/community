@@ -1,6 +1,7 @@
 ---
 title: Volantis 动态友链获重磅升级！
 date: 2025-06-20
+updated: 2025-06-20 
 icons: [fas fa-external-link-square-alt]
 author: xaoxuu
 link: https://xaoxuu.com/blog/20250602/
