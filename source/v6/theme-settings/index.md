@@ -910,10 +910,31 @@ article:
 ############################### Sidebar ############################### > start
 sidebar:
   position: right # left right
-  # 主页、分类、归档等独立页面
-  for_page: [blogger, category, tagcloud, donate]
-  # layout: docs/post 这类文章页面
-  for_post: [toc]
+  ##########################
+  # 站点主结构 Sidebar 配置
+  for:
+    # -- 列表类页面 -- #
+    # 主页配置
+    home: [blogger, category, tagcloud, recent]
+    # 博客列表页配置 （归档、标签、分类、专栏）
+    index_blog: [blogger,recent]
+    # 文档列表页配置
+    index_wiki: [related, recent]
+    # 笔记本列表页配置
+    notebooks: [recent]
+    # 笔记列表页配置
+    notes: [tagtree, recent]
+    # -- 内容类页面 -- #
+    # 博客文章内页配置 (同博客专栏文章内页)
+    post: [toc, related, recent]
+    # 文档内页配置
+    wiki: [toc, tree, related, recent]
+    # 笔记内页配置
+    note: [toc, tagtree, recent]
+    # 其它自定义页面配置 layout: page
+    page: [toc, recent]
+
+  ##########################
   # 侧边栏组件库
   widget_library:
     # ---------------------------------------
@@ -926,7 +947,7 @@ sidebar:
       url: /about/
       title:
       subtitle:
-      jinrishici: true # Poetry Today. You can set a string, and it will be displayed when loading fails.
+      jinrishici: false # Poetry Today. You can set a string, and it will be displayed when loading fails.
       social:
         - icon: fa-solid fa-rss
           url: /atom.xml
@@ -1022,13 +1043,60 @@ sidebar:
           text: '最后活动时间：'
           unit: '日'
     # ---------------------------------------
-    # lastupdate widget
+    # lastupdate widget # only for posts
     lastupdate:
       class: lastupdate
       display: [desktop, mobile]
       header:
         icon: fa-solid fa-clock WISTERIA
         title: 最近更新
+    # ---------------------------------------
+    # recent widget # # for posts wiki notebooks
+    recent:
+      class: recent
+      display: [desktop, mobile]
+      header:
+        icon: fa-solid fa-clock
+        title: 最近更新
+      limit: 10 # Count of posts
+    # ---------------------------------------
+    # 页面树（与当前页面强关联的上下篇文章列表） # only for wiki
+    tree:
+      class: tree
+    # 强关联的上下文章 # for 专栏 wiki(按分类)
+    related:
+      class: related
+    # 标签树 # only for notes
+    tagtree:
+      class: tagtree
+      header:
+        icon: fa-solid fa-tags
+        title: 标签
+      expand_all: false # 是否展开所有节点
+      expand_active: true # 是否展开当前节点
+      show_tagcon: true # 是否显示标签 icon
+    # Artalk widget
+    artalk:
+      class: artalk
+      stickys: true
+      display: [desktop, mobile]
+    # ---------------------------------------
+    # Memos widget
+    memos_carousel:
+      class: memos_carousel
+      display: [desktop, mobile]
+      header:
+        icon: fa-solid fa-volume-high
+        title: 说说
+        url: /blog/memos/ # 说说页面的地址
+      url: 'https://s.dusays.com/' # 替换城自己的域名，也可以用杜老师的平台托管
+      limit: '10' # 展示数量限制
+      creatorId: '1' # 替换成自己的用户的ID
+      tag: '' # 要展示的内容的标签
+      image: 'fa-solid fa-image' # 图片替换成图标
+      link: 'fa-solid fa-link' # 链接替换成图标
+      placeholder: '说说加载中...' # 占位符
+
 ############################### Sidebar ############################### > end
 ```
 {% endfolding %}
