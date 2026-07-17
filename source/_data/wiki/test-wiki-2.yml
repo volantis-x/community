@@ -1,0 +1,14 @@
+name: test-wiki-2
+title: test wiki 2
+subtitle: 'test3 xxxxx zz vvvvv'
+tags: [test]
+description: test2 aaaa  bbbbb cccc  dddd  zzzzz
+base_dir: /test-page/wiki/test-wiki-2/
+# sidebar: 
+tree:
+  'T1':
+    - index
+    - b
+  'T2':
+    - c
+    - d

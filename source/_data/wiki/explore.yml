@@ -1,0 +1,8 @@
+name: 探索
+title: 探索者的笔记本
+base_dir: /
+
+tree:
+  '探索者的笔记本':
+    - test-page/explore/index
+    - test-page/bookmark/index

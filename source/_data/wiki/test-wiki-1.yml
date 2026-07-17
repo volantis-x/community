@@ -1,0 +1,8 @@
+name: test-wiki-1
+title: test wiki 1
+subtitle: 'test xxxxx zz vvvvv'
+tags: [test]
+description: test aaaa  bbbbb cccc  dddd  zzzzz
+base_dir: /test-page/wiki/test-wiki-1/
+# sidebar: 
+# tree: 
