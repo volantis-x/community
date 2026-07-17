@@ -78,7 +78,7 @@
     <link href="https://volantis.js.org/blogs/2025-06-20-friends-posts/"/>
     <id>https://volantis.js.org/blogs/2025-06-20-friends-posts/</id>
     <published>2025-06-20T00:00:00.000Z</published>
-    <updated>2026-07-17T01:39:41.000Z</updated>
+    <updated>2026-07-17T01:40:19.000Z</updated>
     
     <content type="html"><![CDATA[<ul><li>相较以往，配置流程大大简化，基本上“开箱即用”。</li><li>可以自动检测并标记友链的在线状态（通过标签），且不影响您自定义的其他标签。</li><li>现在每个友链都会展示其最新发布的文章及时间。</li><li>新版默认按照朋友们文章的更新时间进行排序，让最新动态一目了然。</li></ul><span id="more"></span>]]></content>
     
@@ -121,7 +121,7 @@
     <link href="https://volantis.js.org/blogs/2024-03-15-enhanced-FaaS-in-cn/"/>
     <id>https://volantis.js.org/blogs/2024-03-15-enhanced-FaaS-in-cn/</id>
     <published>2024-03-15T00:00:00.000Z</published>
-    <updated>2026-07-17T01:39:41.000Z</updated>
+    <updated>2026-07-17T01:40:19.000Z</updated>
     
     <content type="html"><![CDATA[<div class="tag link"><a class="link-card" title="enhanced-FaaS-in-China" href="https://github.com/xingpingcn/enhanced-FaaS-in-China"><div class="left"><img src="https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230506/pngwing.com.yfryst5dm0w.webp" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/xingpingcn/picx-images-hosting@master/20230506/pngwing.com.yfryst5dm0w.webp" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/></div><div class="right"><p class="text">enhanced-FaaS-in-China</p><p class="url">https://github.com/xingpingcn/enhanced-FaaS-in-China</p></div></a></div><ul><li>如果你的网站部署在<code>vercel</code>，则把cname记录改为：<ul><li><code>vercel-cname.xingpingcn.top</code></li></ul></li><li>如果你的网站部署在<code>netlify</code>，则把cname记录改为：<ul><li><code>netlify-cname.xingpingcn.top</code></li></ul></li><li>如果你的网站部署在<code>netlify</code>和<code>vercel</code>上，则把cname记录改为：<ul><li><code>verlify-cname.xingpingcn.top</code><ul><li>使用此dns解析建议：先把cname记录改为官方提供的url，等<code>ssl/tls证书</code>生成之后再把cname记录改为<code>verlify-cname.xingpingcn.top</code><span id="more"></span></li></ul></li></ul></li></ul>]]></content>
     
@@ -138,7 +138,7 @@
     <link href="https://volantis.js.org/blogs/2023-11-08-NS1-failover/"/>
     <id>https://volantis.js.org/blogs/2023-11-08-NS1-failover/</id>
     <published>2023-11-18T00:00:00.000Z</published>
-    <updated>2026-07-17T01:39:41.000Z</updated>
+    <updated>2023-11-18T00:00:00.000Z</updated>
     
     <content type="html"><![CDATA[<p>本教程用到的资源全部都是免费且可持续使用的。NS1.com这个权威DNS服务器能根据ASN、国家或省份、DNS轮询（可加权）等方式解析域名，并且提供了API去控制某个解析（answer）是否响应。监控宝能实时监控网站（通过HTTP、PING、DNS方式等）并输出警告（webhook、Email、短信等），最高监控频率为2分钟。亚马逊的AWS Lambda是一个FaaS平台（serverless），可以作为连接NS1.com和监控宝之间的桥梁，当监控宝检测到网站速度变慢的时候发送信息到AWS Lambda，AWS Lambda得到信息后再传递给NS1.com，速度恢复的时候也是同样的操作。为什么要夹在一个AWS Lambda呢？这是因为监控宝发送的格式是固定的，并不能直接接入到NS1.com。</p><span id="more"></span>]]></content>
     
