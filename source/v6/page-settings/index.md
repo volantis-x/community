@@ -496,7 +496,6 @@ plugins:
   - artitalk
   - bbtalk
   - fcircle
-  - gitter
   - indent
   - snackbar: oldversion
 ---
