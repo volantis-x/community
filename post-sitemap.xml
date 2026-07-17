@@ -9,6 +9,22 @@
 
 
     <url>
+        <loc>https://volantis.js.org/test/imgcover/</loc>
+        <lastmod>2026-07-17T18:18:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://volantis.js.org/test/imgcover2/</loc>
+        <lastmod>2026-07-17T18:17:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://volantis.js.org/blogs/2025-11-23-Artalk-Stat-Data/</loc>
         <lastmod>2025-11-23T00:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -490,6 +506,38 @@
 
     <url>
         <loc>https://volantis.js.org/test/long-title/</loc>
+        <lastmod>2013-12-24T00:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://volantis.js.org/test/topic/</loc>
+        <lastmod>2013-12-24T00:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://volantis.js.org/test/topic2/</loc>
+        <lastmod>2013-12-24T00:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://volantis.js.org/test/topic4/</loc>
+        <lastmod>2013-12-24T00:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://volantis.js.org/test/topic3/</loc>
         <lastmod>2013-12-24T00:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
