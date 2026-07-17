@@ -49,8 +49,6 @@ navbar:
           - name: 专栏
             url: /topic/
         - name: hr
-        - name: 文档 v7
-          url: /v7/getting-started/
         - name: 文档 v5
           url: /v5/getting-started/
         # - name: 旧版文档 v4
