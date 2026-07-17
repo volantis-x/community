@@ -1,6 +1,7 @@
 ---
 title: 使用freecdn-js提高hexo博客的cdn稳定性
 date: 2023-10-01
+updated: 2023-10-01
 description: 根据md文件内的cdn链接（图片等并不在本地）自动生成cdn列表，若图片、js、html等文件cdn失效则尝试连接列表内的其他cdn
 keywords: cdn失效 cdn 提高免费cdn稳定性 freecdn cdn.jsdelivr.net 实时切换到合适的CDN 远程图片
 author: xingpingcn
