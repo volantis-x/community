@@ -9,14 +9,6 @@
 
 
     <url>
-        <loc>https://volantis.js.org/test/imgcover/</loc>
-        <lastmod>2026-07-17T18:18:00.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://volantis.js.org/test/imgcover2/</loc>
         <lastmod>2026-07-17T18:17:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -321,7 +313,7 @@
     </url>
 
     <url>
-        <loc>https://volantis.js.org/news/2020-03-06-2.0-beta/</loc>
+        <loc>https://volantis.js.org/test/2020-03-06-test-url/</loc>
         <lastmod>2020-03-06T00:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -329,7 +321,7 @@
     </url>
 
     <url>
-        <loc>https://volantis.js.org/test/2020-03-06-test-url/</loc>
+        <loc>https://volantis.js.org/news/2020-03-06-2.0-beta/</loc>
         <lastmod>2020-03-06T00:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -513,7 +505,7 @@
     </url>
 
     <url>
-        <loc>https://volantis.js.org/test/topic2/</loc>
+        <loc>https://volantis.js.org/test/topic/</loc>
         <lastmod>2013-12-24T00:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -521,7 +513,7 @@
     </url>
 
     <url>
-        <loc>https://volantis.js.org/test/topic/</loc>
+        <loc>https://volantis.js.org/test/topic2/</loc>
         <lastmod>2013-12-24T00:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
