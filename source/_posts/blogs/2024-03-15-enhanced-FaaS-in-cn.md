@@ -3,6 +3,7 @@ title: 提升部署在vercel或netlify的网站在中国的访问速度和稳定
 description: 通过更改cname提升部署在vercel或netlify的网站在中国的访问速度和稳定性
 keywords: vercel 国内 中国 netlify 访问速度 稳定性 网站
 date: 2024-03-15
+updated: 2024-03-15
 link: https://xingpingcn.top/enhanced-faas-in-cn.html
 author: xingpingcn
 backup: 
