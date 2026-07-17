@@ -5,8 +5,6 @@ pid: faq
 body: [article, comments]
 cover: true
 sidebar: []
-plugins:
-  - gitter
 ---
 
 通常来说，一个全新的工程全部使用默认配置是<green>正常</green>没有故障的。如果无法使用或者效果与示例有较大区别，可以使用 Hexo 官方提供的用于单元测试的博客应用本主题查看样式是否正常，对比 `_config.yml` 文件排查问题。
@@ -107,6 +105,5 @@ root: /
 | 论坛 | [@volantis-x/discussions](https://github.com/volantis-x/hexo-theme-volantis/discussions/) | 慢，相对正式，方便检索，可以给其他用户参考 |
 | QQ群 | 1146399464 (验证码: <psw>vlts-2021</psw>) | 非正式，即时通讯，易于斗图；不利于给其他用户参考 |
 | Telegram | [t.me/volantis_x](https://t.me/volantis_x) | 非正式，即时通讯，佛系交流互动 |
-| Gitter | [hexo-theme-volantis/community](https://gitter.im/hexo-theme-volantis/community) | 佛系交流互动 |
 | 评论区 | 留言 | 佛系交流互动 可以测试、灌水、推广自己的博客。 |
 {% endtable %}
