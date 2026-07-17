@@ -208,6 +208,7 @@ jsonContent:
       - v3/
       - v2/
       - test/
+      - test-page/
       - news/
       - volantis-sw.js
 
