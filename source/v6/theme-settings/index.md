@@ -2010,7 +2010,7 @@ plugins:
 plugins:
   ...
   # 聊天功能
-  chat_service: tidio # tidio or gitter
+  chat_service: tidio # tidio
 
   # Tidio
   # https://www.tidio.com/
