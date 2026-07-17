@@ -1,6 +1,6 @@
 # Volantis Community
 
-[社区主页](https://volantis.js.org) | [备用域名](https://volantis.vercel.app)
+[社区主页](https://volantis.js.org)
 
 ## 文档索引
 
