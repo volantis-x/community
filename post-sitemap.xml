@@ -537,7 +537,7 @@
     </url>
 
     <url>
-        <loc>https://volantis.js.org/test/%E4%B8%AD%E6%96%87%E6%B8%AC%E8%A9%A6/</loc>
+        <loc>https://volantis.js.org/test/topic4/</loc>
         <lastmod>2013-12-24T00:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -545,7 +545,7 @@
     </url>
 
     <url>
-        <loc>https://volantis.js.org/test/topic4/</loc>
+        <loc>https://volantis.js.org/test/%E4%B8%AD%E6%96%87%E6%B8%AC%E8%A9%A6/</loc>
         <lastmod>2013-12-24T00:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
