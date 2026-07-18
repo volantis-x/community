@@ -38,6 +38,73 @@ disqus:
 
 除了归档页面是自动生成的，其它独立页面都需要手动创建 md 文件。
 
+
+### 自动生成的页面
+
+以下配置可以自动生成页面，无需手动创建。
+
+```yml
+# 站点主结构树
+site_tree:
+  # 404 错误页配置
+  404:
+    enable: true # 或者设为false，自己创建页面
+    path: '/404.html'
+    # 以下遵守页面 Front-matter 写法
+    data:
+      sidebar: []
+      robots: "noindex,nofollow"
+      #content: "404HTML"
+  # 标签页配置
+  tag:
+    enable: true # 或者设为false，自己创建页面
+    # 以下遵守页面 Front-matter 写法
+    data:
+      title: "所有标签"
+      #sidebar: []
+      robots: "noindex,follow"
+  # 分类页配置
+  category:
+    enable: true # 或者设为false，自己创建页面
+    # 以下遵守页面 Front-matter 写法
+    data:
+      title: "所有分类"
+      #sidebar: []
+      robots: "noindex,follow"
+  # 博客专栏列表页配置
+  index_topic:
+    base_dir: topic # 只影响自动生成的页面路径
+    # 以下遵守页面 Front-matter 写法
+    data:
+      title: "专栏"
+      #sidebar: []
+      robots: "noindex,follow"
+  # 文档列表页配置
+  index_wiki:
+    base_dir: wiki # 只影响自动生成的页面路径
+    # 以下遵守页面 Front-matter 写法
+    data:
+      title: "项目"
+      #sidebar: []
+      robots: "noindex,follow"
+  # 笔记本列表页配置
+  notebooks:
+    base_dir: notebooks # 笔记本列表页的路径。以及未指定 base_dir 的笔记本的路径前缀。
+    # 以下遵守页面 Front-matter 写法
+    data:
+      title: "笔记本"
+      #sidebar: []
+      robots: "noindex,follow"
+  # 笔记列表页配置
+  notes:
+    # 以下遵守页面 Front-matter 写法
+    data:
+      title: "笔记"
+      #sidebar: []
+      robots: "noindex,follow"
+
+```
+
 ### 归档页面
 
 归档页面是自动生成的，并且初始化的时候已经生成，路径如下：
