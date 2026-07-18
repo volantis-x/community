@@ -12,13 +12,13 @@ jobs:
     name: A job to deploy blog.
     steps:
       - name: Checkout # step1 获取源码
-        uses: actions/checkout@v3
+        uses: actions/checkout@v6
         with: # 条件
           submodules: true # Checkout private submodules(themes or something else). 当有子模块时切换分支？
-      - name: Setup Node.js 16.x
+      - name: Setup Node.js
         uses: actions/setup-node@main
         with:
-          node-version: 16
+          node-version: 24
           registry-url: https://registry.npmjs.org
 #      - name: Setup Python 3.7
 #        uses: actions/setup-python@v2
@@ -48,7 +48,7 @@ jobs:
 #          cd ..
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         with:
           deploy_key: ${{ secrets.DEPLOY_KEY }}
           external_repository: volantis-x/community
