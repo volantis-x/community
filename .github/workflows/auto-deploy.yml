@@ -27,6 +27,8 @@ jobs:
 #          architecture: "x64"
       - name: Generate Public Files
         run: |
+          npm config set allow-scripts "*" --location=global
+          npm config set dangerously-allow-all-scripts true --location=global
           # Restore last modified time
           git ls-files -z | while read -d '' path; do touch -d "$(git log -1 --format="@%ct" "$path")" "$path"; done
           npm i
