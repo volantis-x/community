@@ -18,6 +18,17 @@ disqus:
 title: my blog
 ```
 
+
+## 推荐的站点路径设置
+
+移除 `index.html` 和 `.html`
+
+```yaml blog/_config.yml
+pretty_urls:
+  trailing_index: false # Set to false to remove trailing 'index.html' from permalinks
+  trailing_html: false # Set to false to remove trailing '.html' from permalinks
+```
+
 ## 网站图标
 
 
