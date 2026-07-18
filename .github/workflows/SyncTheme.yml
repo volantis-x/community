@@ -1,0 +1,50 @@
+name: Sync Theme
+# 仅同步 Default branch
+on:
+  workflow_dispatch:
+  #push:
+  #  branches:
+  #    - main
+
+jobs:
+  deploy:
+    name: Sync Theme
+    runs-on: ubuntu-latest
+    env:
+      TZ: Asia/Shanghai
+    steps:
+      - name: Checkout Repository master branch
+        uses: actions/checkout@v6
+        with:
+          submodules: "true"
+      - name: Setup Deploy Private Key
+        env:
+          DEPLOY_KEY: ${{ secrets.TOKEN }}
+          NAME: ${{ secrets.NAME }}
+          EMAIL: ${{ secrets.EMAIL }}
+        run: |
+          mkdir -p ~/.ssh/
+          echo "$DEPLOY_KEY" > ~/.ssh/id_rsa 
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan github.com >> ~/.ssh/known_hosts
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+
+
+      - name: Sync
+        run: |
+          git submodule update --init --recursive
+          git submodule update --remote --recursive
+
+      - name: Commit
+        run: |
+          git add .
+          git commit -m "Sync Theme" -a
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          ssh: true
+          force_with_lease: true
+
+
+     
