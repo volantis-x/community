@@ -17,7 +17,7 @@ disqus:
 
 ## 样式文件说明
 
-[`/source/css/Readme.md`](https://github.com/volantis-x/hexo-theme-volantis/blob/dev/source/css/Readme.md)
+[`/source/css/Readme.md`](https://github.com/volantis-x/hexo-theme-volantis/blob/v6/source/css/Readme.md)
 
 ## 全局变量
 
@@ -25,7 +25,7 @@ disqus:
 
 我们提供了全局变量 volantis 和一些全局函数等主题开发调用接口。
 
-源码参考：[`layout/_partial/scripts/global.ejs`](https://github.com/volantis-x/hexo-theme-volantis/blob/dev/layout/_partial/scripts/global.ejs)
+源码参考：[`layout/_partial/scripts/global.ejs`](https://github.com/volantis-x/hexo-theme-volantis/blob/v6/layout/_partial/scripts/global.ejs)
 
 ### VolantisApp
 
@@ -38,7 +38,7 @@ disqus:
 
 我们提供了可以实现Pjax重载区域灵活划分的开发接口。
 
-源码参考：[`layout/_plugins/pjax/index.ejs`](https://github.com/volantis-x/hexo-theme-volantis/blob/dev/layout/_plugins/pjax/index.ejs)
+源码参考：[`layout/_plugins/pjax/index.ejs`](https://github.com/volantis-x/hexo-theme-volantis/blob/v6/layout/_plugins/pjax/index.ejs)
 
 #### `<pjax></pjax>` 标签
 
@@ -86,11 +86,11 @@ disqus:
 
 源码参考：
 
-[`layout/_partial/scripts/global.ejs`](https://github.com/volantis-x/hexo-theme-volantis/blob/dev/layout/_partial/scripts/global.ejs)
+[`layout/_partial/scripts/global.ejs`](https://github.com/volantis-x/hexo-theme-volantis/blob/v6/layout/_partial/scripts/global.ejs)
 
-[`layout/_plugins/pjax/index.ejs`](https://github.com/volantis-x/hexo-theme-volantis/blob/dev/layout/_plugins/pjax/index.ejs)
+[`layout/_plugins/pjax/index.ejs`](https://github.com/volantis-x/hexo-theme-volantis/blob/v6/layout/_plugins/pjax/index.ejs)
 
-使用案例：[`layout/_plugins/pjax/animate.ejs`](https://github.com/volantis-x/hexo-theme-volantis/blob/dev/layout/_plugins/pjax/animate.ejs#L27-L29)
+使用案例：[`layout/_plugins/pjax/animate.ejs`](https://github.com/volantis-x/hexo-theme-volantis/blob/v5/layout/_plugins/pjax/animate.ejs#L27-L29)
 
 {% note info, 中括号[]里面的内容表示选项是可选的，可以不填。下同，不再赘述。 %}
 
@@ -129,14 +129,14 @@ disqus:
 
 源码参考：
 
-[`layout/_partial/scripts/global.ejs`](https://github.com/volantis-x/hexo-theme-volantis/blob/dev/layout/_partial/scripts/global.ejs)
+[`layout/_partial/scripts/global.ejs`](https://github.com/volantis-x/hexo-theme-volantis/blob/v6/layout/_partial/scripts/global.ejs)
 
-[`layout/_plugins/darkmode/script.ejs`](https://github.com/volantis-x/hexo-theme-volantis/blob/dev/layout/_plugins/darkmode/script.ejs)
+[`layout/_plugins/darkmode/script.ejs`](https://github.com/volantis-x/hexo-theme-volantis/blob/v6/layout/_plugins/darkmode/script.ejs)
 
 
 ### 暗黑模式样式
 
-详见：[`/source/css/Readme.md`](https://github.com/volantis-x/hexo-theme-volantis/blob/dev/source/css/Readme.md)
+详见：[`/source/css/Readme.md`](https://github.com/volantis-x/hexo-theme-volantis/blob/v6/source/css/Readme.md)
 
 ### 当前模式
 
@@ -150,7 +150,7 @@ disqus:
 
 调用 volantis.dark.push(callBack[,"callBackName"]) 传入触发器回调函数.
 
-使用案例：[`layout/_plugins/comments/utterances/script.ejs`](https://github.com/volantis-x/hexo-theme-volantis/blob/dev/layout/_plugins/comments/utterances/script.ejs#L41)
+使用案例：[`layout/_plugins/comments/utterances/script.ejs`](https://github.com/volantis-x/hexo-theme-volantis/blob/v6/layout/_plugins/comments/utterances/script.ejs#L41)
 
 ## Message 消息提示
 
@@ -215,7 +215,7 @@ VolantisApp.question('问卷调查', '你是否喜欢 Volantis 主题', {}, () =
 
 源码参考：
 
-[`layout/_partial/scripts/global.ejs`](https://github.com/volantis-x/hexo-theme-volantis/blob/dev/layout/_partial/scripts/global.ejs)
+[`layout/_partial/scripts/global.ejs`](https://github.com/volantis-x/hexo-theme-volantis/blob/v6/layout/_partial/scripts/global.ejs)
 
 ```js
   volantis.js("src", cb)
@@ -250,7 +250,7 @@ VolantisApp.question('问卷调查', '你是否喜欢 Volantis 主题', {}, () =
 
 源码参考：
 
-[`layout/_partial/scripts/global.ejs`](https://github.com/volantis-x/hexo-theme-volantis/blob/dev/layout/_partial/scripts/global.ejs)
+[`layout/_partial/scripts/global.ejs`](https://github.com/volantis-x/hexo-theme-volantis/blob/v6/layout/_partial/scripts/global.ejs)
 
 
 ### jQuery
