@@ -31,7 +31,7 @@ pretty_urls:
 
 该设置对应的服务端配置（Vercel、Cloudflare Pages）见：
 
-{% Tips::https://blog.mhuig.top/notes/hexo/8::https://unpkg.com/volantis-static@0.0.1649552113628/media/twemoji/assets/svg/1f433.svg %}
+{% link  Tips::https://blog.mhuig.top/notes/hexo/8::https://unpkg.com/volantis-static@0.0.1649552113628/media/twemoji/assets/svg/1f433.svg %}
 
 ## 网站图标
 
