@@ -264,7 +264,7 @@
     </author>
     <category term="进阶玩法" scheme="https://volantis.js.org/categories/%E8%BF%9B%E9%98%B6%E7%8E%A9%E6%B3%95/"/>
     <content>
-      <![CDATA[<p><strong>这不是Node.js包！</strong></p><p><strong>这是个javascript的小工具？</strong></p><a class="ghcard" rel="external nofollow noopener noreferrer" href="https://github.com/Fgaoxing/pandown-js"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Fgaoxing&repo=pandown-js&show_owner=true" class="lazyload" data-srcset="https://github-readme-stats.vercel.app/api/pin/?username=Fgaoxing&repo=pandown-js&show_owner=true" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/></a><p><del>↑↑↑和上次一样的开头↑↑↑</del></p><!--这一段会使返回主页的pjax失效。。<script pjax-data type="text/javascript" src="https://cdn.jsdelivr.net/gh/Fgaoxing/pandown-js/pandown.js"></script><pandown type="lz" url="123" pwd="1234" fname="啥都没有，我没放链接"></pandown><script pjax-data>pandown()</script> --><span id="more"></span>]]>
+      <![CDATA[<p><strong>这不是Node.js包！</strong></p><p><strong>这是个javascript的小工具？</strong></p><a class="ghcard" rel="external nofollow noopener noreferrer" href="https://github.com/Fgaoxing/pandown-js"><img src="https://github-stats-extended.vercel.app/api/pin/?username=Fgaoxing&repo=pandown-js&show_owner=true" class="lazyload" data-srcset="https://github-stats-extended.vercel.app/api/pin/?username=Fgaoxing&repo=pandown-js&show_owner=true" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/></a><p><del>↑↑↑和上次一样的开头↑↑↑</del></p><!--这一段会使返回主页的pjax失效。。<script pjax-data type="text/javascript" src="https://cdn.jsdelivr.net/gh/Fgaoxing/pandown-js/pandown.js"></script><pandown type="lz" url="123" pwd="1234" fname="啥都没有，我没放链接"></pandown><script pjax-data>pandown()</script> --><span id="more"></span>]]>
     </content>
     <id>https://volantis.js.org/blogs/2022-07-09-pandownjs/</id>
     <link href="https://volantis.js.org/blogs/2022-07-09-pandownjs/"/>
@@ -272,7 +272,7 @@
     <summary>
       <![CDATA[<p><strong>这不是Node.js包！</strong></p>
 <p><strong>这是个javascript的小工具？</strong></p>
-<a class="ghcard" rel="external nofollow noopener noreferrer" href="https://github.com/Fgaoxing/pandown-js"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Fgaoxing&repo=pandown-js&show_owner=true"/></a>
+<a class="ghcard" rel="external nofollow noopener noreferrer" href="https://github.com/Fgaoxing/pandown-js"><img src="https://github-stats-extended.vercel.app/api/pin/?username=Fgaoxing&repo=pandown-js&show_owner=true"/></a>
 
 <p><del>↑↑↑和上次一样的开头↑↑↑</del></p>
 <!--
