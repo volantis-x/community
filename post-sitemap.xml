@@ -321,7 +321,7 @@
     </url>
 
     <url>
-        <loc>https://volantis.js.org/test/2020-03-06-test-url/</loc>
+        <loc>https://volantis.js.org/news/2020-03-06-2.0-beta/</loc>
         <lastmod>2020-03-06T00:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -329,7 +329,7 @@
     </url>
 
     <url>
-        <loc>https://volantis.js.org/news/2020-03-06-2.0-beta/</loc>
+        <loc>https://volantis.js.org/test/2020-03-06-test-url/</loc>
         <lastmod>2020-03-06T00:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -417,6 +417,14 @@
     </url>
 
     <url>
+        <loc>https://volantis.js.org/test/excerpts/</loc>
+        <lastmod>2013-12-25T00:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://volantis.js.org/test/gallery-post/</loc>
         <lastmod>2013-12-25T00:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -449,7 +457,7 @@
     </url>
 
     <url>
-        <loc>https://volantis.js.org/test/excerpts/</loc>
+        <loc>https://volantis.js.org/test/tag-plugins/</loc>
         <lastmod>2013-12-25T00:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -458,14 +466,6 @@
 
     <url>
         <loc>https://volantis.js.org/test/no-title/</loc>
-        <lastmod>2013-12-25T00:00:00.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://volantis.js.org/test/tag-plugins/</loc>
         <lastmod>2013-12-25T00:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -489,6 +489,14 @@
     </url>
 
     <url>
+        <loc>https://volantis.js.org/test/link-post-without-title/</loc>
+        <lastmod>2013-12-24T00:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://volantis.js.org/test/link-post/</loc>
         <lastmod>2013-12-24T00:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -498,14 +506,6 @@
 
     <url>
         <loc>https://volantis.js.org/test/long-title/</loc>
-        <lastmod>2013-12-24T00:00:00.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://volantis.js.org/test/link-post-without-title/</loc>
         <lastmod>2013-12-24T00:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -529,7 +529,7 @@
     </url>
 
     <url>
-        <loc>https://volantis.js.org/test/topic4/</loc>
+        <loc>https://volantis.js.org/test/topic3/</loc>
         <lastmod>2013-12-24T00:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -537,7 +537,7 @@
     </url>
 
     <url>
-        <loc>https://volantis.js.org/test/topic3/</loc>
+        <loc>https://volantis.js.org/test/topic4/</loc>
         <lastmod>2013-12-24T00:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
