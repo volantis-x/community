@@ -17,7 +17,7 @@ disqus:
 
 ## 样式文件说明
 
-[`/source/css/Readme.md`](https://github.com/volantis-x/hexo-theme-volantis/blob/6.x/source/css/Readme.md)
+[`/source/css/README.md`](https://github.com/volantis-x/hexo-theme-volantis/blob/6.x/source/css/README.md)
 
 ## 全局变量
 
