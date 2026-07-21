@@ -136,7 +136,7 @@ disqus:
 
 ### 暗黑模式样式
 
-详见：[`/source/css/Readme.md`](https://github.com/volantis-x/hexo-theme-volantis/blob/6.x/source/css/Readme.md)
+详见：[`/source/css/README.md`](https://github.com/volantis-x/hexo-theme-volantis/blob/6.x/source/css/README.md)
 
 ### 当前模式
 
