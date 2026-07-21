@@ -277,6 +277,18 @@ volantis.requestAnimationFrame(() => {
 })
 ```
 
+## 防抖和节流函数
+
+```js
+// 节流函数：确保指定时间内仅执行一次 时间戳版本的节流实现
+volantis.throttle(fn)
+// 防抖函数 setTimeout实现
+volantis.debounce(fn)
+// 基于 requestAnimationFrame 的节流函数
+volantis.rafThrottle(fn)
+```
+
+
 ## Layout Helper
 
 向目标元素动态注入 HTML
