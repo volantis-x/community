@@ -562,6 +562,6 @@ hexo.extend.filter.register('theme_inject', function(injects) {
 
 ### 插件系统
 
-我们还支持 hexo 的插件系统，无需修改核心模块的源代码即可轻松扩展功能。你可以参考 https://hexo.io/docs/plugins.html#Plugin 学习如何创建插件。
+我们还支持 hexo 的插件系统，无需修改核心模块的源代码即可轻松扩展功能。你可以参考 [https://hexo.io/docs/plugins.html#Plugin](https://hexo.io/zh-cn/docs/plugins.html#%E6%8F%92%E4%BB%B6%EF%BC%88Packages%EF%BC%89) 学习如何创建插件。
 
 {% note warning up, 请注意，以上是主题开发文档，不是使用文档！ %}
