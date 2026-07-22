@@ -399,6 +399,8 @@ gulp
 
 ## 安装 Service Worker 服务
 
+{% folding red, 这是个巨坑，不推荐安装使用 %}
+
 ### 方案一 安装插件
 
 安装 [hexo-offline-popup](https://github.com/Colsrch/hexo-offline-popup)  或者 [hexo-offline](https://github.com/JLHwung/hexo-offline) 插件，初次加载速度不变，后期切换页面和刷新网页速度越来越快。
@@ -569,6 +571,8 @@ routing.setDefaultHandler(
 [volantis-sw.js](https://github.com/volantis-x/community/blob/main/source/volantis-sw.js)
 
 [discussions/791](https://github.com/volantis-x/hexo-theme-volantis/discussions/791)
+
+{% endfolding %}
 
 ## 安装「相关文章」插件
 
