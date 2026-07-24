@@ -8,5 +8,11 @@ sidebar: [docs-v6, toc]
 ---
 
 
-test
+
+## 旧版标签插件
+
+Volantis 6.6.0 之前标签插件见：
+
+{% link 旧版标签插件::/examples/::https://unpkg.com/volantis-static@0.0.1649552113628/media/twemoji/assets/svg/1f433.svg %}
+
 
