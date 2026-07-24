@@ -21,9 +21,7 @@ sidebar: [docs-v6, toc]
 - 不需要 `tabs id` 来保证唯一性（因为会设置唯一标识）
 - 不支持 `@icon` 方式设置图标
 
-{% Tabs active:1 align:center %}
-
-<!-- tab 演示效果 -->
+### 演示效果 
 
 {% Tabs active:2 align:center %}
 
@@ -45,7 +43,7 @@ print("hello world")
 
 {% endTabs %}
 
-<!-- tab 示例代码 -->
+### 示例代码
 
 ``````md
 {% Tabs active:2 align:center %}
@@ -69,7 +67,6 @@ print("hello world")
 {% endTabs %}
 ``````
 
-{% endTabs %}
 
 
 
