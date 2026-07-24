@@ -45,7 +45,7 @@ print("hello world")
 
 ### 示例代码
 
-``````md
+``````md 最后更新于 <u>6.6.0</u> 版本
 {% Tabs active:2 align:center %}
 
 <!-- tab 图片 -->
