@@ -47,7 +47,7 @@ print("hello world")
 
 <!-- tab 示例代码 -->
 
-``````
+``````md
 {% Tabs active:2 align:center %}
 
 <!-- tab 图片 -->
