@@ -489,14 +489,6 @@
     </url>
 
     <url>
-        <loc>https://volantis.js.org/test/link-post-without-title/</loc>
-        <lastmod>2013-12-24T00:00:00.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://volantis.js.org/test/link-post/</loc>
         <lastmod>2013-12-24T00:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -513,7 +505,7 @@
     </url>
 
     <url>
-        <loc>https://volantis.js.org/test/topic/</loc>
+        <loc>https://volantis.js.org/test/link-post-without-title/</loc>
         <lastmod>2013-12-24T00:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -521,7 +513,7 @@
     </url>
 
     <url>
-        <loc>https://volantis.js.org/test/topic2/</loc>
+        <loc>https://volantis.js.org/test/topic/</loc>
         <lastmod>2013-12-24T00:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -537,14 +529,6 @@
     </url>
 
     <url>
-        <loc>https://volantis.js.org/test/topic4/</loc>
-        <lastmod>2013-12-24T00:00:00.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://volantis.js.org/test/%E4%B8%AD%E6%96%87%E6%B8%AC%E8%A9%A6/</loc>
         <lastmod>2013-12-24T00:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -553,7 +537,23 @@
     </url>
 
     <url>
+        <loc>https://volantis.js.org/test/topic2/</loc>
+        <lastmod>2013-12-24T00:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://volantis.js.org/test/%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%83%86%E3%82%B9%E3%83%88/</loc>
+        <lastmod>2013-12-24T00:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://volantis.js.org/test/topic4/</loc>
         <lastmod>2013-12-24T00:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
