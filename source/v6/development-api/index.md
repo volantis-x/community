@@ -320,7 +320,7 @@ volantis.layoutHelper("page-plugins",`<div id="artitalk_main"></div>`, { pjax:fa
 
 ## 滚动事件处理
 
-源码参考：`layout/_partial/scripts/global.ejs`
+源码参考：[`source/js/global.js`](https://github.com/volantis-x/hexo-theme-volantis/blob/6.x/source/js/global.js)
 
 ### 获取滚动条距离顶部的距离
 
