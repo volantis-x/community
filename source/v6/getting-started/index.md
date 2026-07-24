@@ -108,11 +108,8 @@ npm i hexo-theme-volantis
 
 {% endtimenode %}
 
-<details><summary> 
-  
-如果您是 Mac 用户，可以使用脚本完成全部流程
+{% folding, 如果您是 Mac 用户，可以使用脚本完成全部流程 %}
 
-</summary><div class="content">
 
 
 在博客路径打开终端，下载安装并应用主题：
@@ -124,7 +121,7 @@ curl -s https://volantis.js.org/start | bash
 这行命令将会自动检测并安装所需环境，初始化博客，然后下载安装并应用主题。
 脚本详细使用方法：[#blog脚本](https://xaoxuu.com/wiki/cloud-shell/blog/)
 
-</div></details>
+{% endfolding %}
 
 <!-- endtab -->
 
@@ -154,11 +151,6 @@ npm i hexo-theme-volantis
 git clone https://github.com/volantis-x/hexo-theme-volantis themes/volantis
 ```
 
-如果您无法访问 GitHub 可以使用国内镜像源：
-
-```
-git clone https://e.coding.net/volantis-x/p/hexo-theme-volantis.git themes/volantis
-```
 
 {% endtimenode %}
 
