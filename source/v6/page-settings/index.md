@@ -565,6 +565,9 @@ plugins:
   - fcircle
   - indent
   - snackbar: oldversion
+  - mermaid
+  - memos
+  - heti
 ---
 ```
 
@@ -678,29 +681,8 @@ $$
 
 {% link 在Material-X上使用KaTeX, https://www.micdz.cn/article/katex-on-volantis/, https://www.micdz.cn/img/h.jpeg %}
 
-### 页面 gitter
 
-#### 页面配置 front-matter
 
-```yaml
----
-plugins:
-  - gitter
----
-```
-
-#### 配置 gitter
-
-在主题配置文件中找到以下内容
-
-``` yaml
-plugins:
-  ....
-  # Gitter
-  # https://gitter.im
-  gitter:
-    room: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-```
 
 ### 文章页首行缩进
 
