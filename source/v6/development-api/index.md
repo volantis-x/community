@@ -25,13 +25,14 @@ disqus:
 
 我们提供了全局变量 volantis 和一些全局函数等主题开发调用接口。
 
-源码参考：[`layout/_partial/scripts/global.ejs`](https://github.com/volantis-x/hexo-theme-volantis/blob/6.x/layout/_partial/scripts/global.ejs)
+源码参考：[`source/js/global.js`](https://github.com/volantis-x/hexo-theme-volantis/blob/6.x/source/js/global.js)
 
 ### VolantisApp
 
 我们提供了全局变量 VolantisApp 和一些全局函数等主题开发调用接口。
 
 源码参考：[`/source/js/app.js`](https://github.com/volantis-x/hexo-theme-volantis/blob/8cc1f93a992ef378bc5f30a0528d28d35a804379/source/js/app.js#L44)
+
 ## Pjax
 
 ### Pjax 重载区域划分接口
@@ -86,7 +87,7 @@ disqus:
 
 源码参考：
 
-[`layout/_partial/scripts/global.ejs`](https://github.com/volantis-x/hexo-theme-volantis/blob/6.x/layout/_partial/scripts/global.ejs)
+[`source/js/global.js`](https://github.com/volantis-x/hexo-theme-volantis/blob/6.x/source/js/global.js)
 
 [`layout/_plugins/pjax/index.ejs`](https://github.com/volantis-x/hexo-theme-volantis/blob/6.x/layout/_plugins/pjax/index.ejs)
 
@@ -129,7 +130,7 @@ disqus:
 
 源码参考：
 
-[`layout/_partial/scripts/global.ejs`](https://github.com/volantis-x/hexo-theme-volantis/blob/6.x/layout/_partial/scripts/global.ejs)
+[`source/js/global.js`](https://github.com/volantis-x/hexo-theme-volantis/blob/6.x/source/js/global.js)
 
 [`layout/_plugins/darkmode/script.ejs`](https://github.com/volantis-x/hexo-theme-volantis/blob/6.x/layout/_plugins/darkmode/script.ejs)
 
@@ -215,7 +216,7 @@ VolantisApp.question('问卷调查', '你是否喜欢 Volantis 主题', {}, () =
 
 源码参考：
 
-[`layout/_partial/scripts/global.ejs`](https://github.com/volantis-x/hexo-theme-volantis/blob/6.x/layout/_partial/scripts/global.ejs)
+[`source/js/global.js`](https://github.com/volantis-x/hexo-theme-volantis/blob/6.x/source/js/global.js)
 
 ```js
   volantis.js("src", cb)
@@ -250,7 +251,7 @@ VolantisApp.question('问卷调查', '你是否喜欢 Volantis 主题', {}, () =
 
 源码参考：
 
-[`layout/_partial/scripts/global.ejs`](https://github.com/volantis-x/hexo-theme-volantis/blob/6.x/layout/_partial/scripts/global.ejs)
+[`source/js/global.js`](https://github.com/volantis-x/hexo-theme-volantis/blob/6.x/source/js/global.js)
 
 
 ### jQuery
