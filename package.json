@@ -18,7 +18,7 @@
     "tar": "^7.5.19"
   },
   "dependencies": {
-    "hexo": "^8.1.2",
+    "hexo": "^7.3.0",
     "hexo-autonofollow": "^1.0.1",
     "hexo-autoprefixer": "^2.0.0",
     "hexo-deployer-git": "^3.0.0",
