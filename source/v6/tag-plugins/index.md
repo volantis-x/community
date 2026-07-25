@@ -39,6 +39,32 @@ Volantis 6.6.0 之前的标签插件见：
 
 {% link 旧版标签插件::/v6/tag-plugins/6.5::https://unpkg.com/volantis-static@0.0.1649552113628/media/twemoji/assets/svg/1f433.svg %}
 
+## 文本修饰标签集
+
+{% Tabs %}
+<!-- tab 效果 -->
+- 这是 {% blur 高斯模糊 %} 标签
+- 这是 {% psw 密码 %} 标签
+- 这是 {% u 下划线 %} 标签
+- 这是 {% emp 着重号 %} 标签
+- 这是 {% wavy 波浪线 %} 标签
+- 这是 {% del 删除线 %} 标签
+- 这是 {% sup 上角标 color:red %} 标签
+- 这是 {% sub 下角标 %} 标签
+- 这是 {% kbd 键盘样式 %} 标签，试一试：{% kbd ⌘ %} + {% kbd D %}
+<!-- tab 源码 -->
+```md
+- 这是 {% blur 高斯模糊 %} 标签
+- 这是 {% psw 密码 %} 标签
+- 这是 {% u 下划线 %} 标签
+- 这是 {% emp 着重号 %} 标签
+- 这是 {% wavy 波浪线 %} 标签
+- 这是 {% del 删除线 %} 标签
+- 这是 {% sup 上角标 color:red %} 标签
+- 这是 {% sub 下角标 %} 标签
+- 这是 {% kbd 键盘样式 %} 标签，试一试：{% kbd ⌘ %} + {% kbd D %}
+```
+{% endTabs %}
 
 ## Tabs
 
