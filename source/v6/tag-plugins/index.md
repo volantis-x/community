@@ -66,6 +66,75 @@ Volantis 6.6.0 之前的标签插件见：
 ```
 {% endTabs %}
 
+## emoji
+
+{% Tabs %}
+<!-- tab 效果演示 -->
+内置了可配置的表情标签 {% emoji aini %} {% emoji blobcat 0_0 %} {% emoji tieba huaji %} 使用方法如下：
+
+```md 最后更新于 <u>6.6.0</u> 版本
+{% emoji aini %}
+{% emoji blobcat 0_0 %}
+{% emoji tieba huaji %}
+```
+
+如果对高度有特别要求，可以指定高度，例如：
+<center>{% emoji blobcat party height:1em %}{% emoji blobcat party height:2em %}{% emoji blobcat party height:3em %}{% emoji blobcat party height:2em %}{% emoji blobcat party height:1em %}</center>
+
+```md
+<center>{% emoji blobcat party height:1em %}{% emoji blobcat party height:2em %}{% emoji blobcat party height:3em %}{% emoji blobcat party height:2em %}{% emoji blobcat party height:1em %}</center>
+```
+
+<!-- tab 语法格式 -->
+
+```md
+{% emoji [source] name [height:1.75em] %}
+```
+
+其中 `source` 可省略，默认为配置中的第一个 `source`（详见「引入表情包」部分）
+
+> 表情速查表：[Stellar内嵌blobcat小表情](https://weekdaycare.cn/posts/emoji-blob/)
+
+<!-- tab 引入表情包 -->
+
+```yaml blog/_config.volantis.yml
+tag_plugins:
+  ...
+  emoji:
+    default: https://gcore.jsdelivr.net/gh/cdn-x/emoticons/qq/{name}.gif
+    twemoji: https://gcore.jsdelivr.net/gh/twitter/twemoji/assets/svg/{name}.svg
+    qq: https://gcore.jsdelivr.net/gh/cdn-x/emoticons/qq/{name}.gif
+    aru: https://gcore.jsdelivr.net/gh/cdn-x/emoticons/aru-l/{name}.gif
+    tieba: https://gcore.jsdelivr.net/gh/cdn-x/emoticons/tieba/{name}.png
+```
+
+> 在配置文件中，文件名用 `{name}` 代替。
+
+{% endTabs %}
+
+## icon
+
+支持在任意{% icon solar:planet-bold-duotone %}位置插入图标，支持外链{% icon https://api.iconify.design/fluent-color:link-multiple-20.svg?color=%23888888 %}图标，也可以在 icons.yml 中提前配置好。
+
+**{% icon ph:seal-question-fill color:purple %}可以指定图标的颜色吗？**
+
+当然可以，还可以在主题配置中设置默认颜色：
+
+```md 最后更新于 <u>6.6.0</u> 版本
+icons.yml 中的图标：{% icon solar:planet-bold-duotone %}
+外链图标：{% icon https://api.iconify.design/solar:link-circle-bold.svg %}
+指定颜色：{% icon ph:seal-question-fill color:red %}
+```
+
+```yaml 配置默认颜色
+tag_plugins:
+  icon:
+    # 留空时，图标和文字颜色相同
+    default_color: accent # theme, accent, red, orange, yellow, green, cyan, blue, purple
+```
+
+> 还支持 style 参数，可以直接对样式进行修改，仅支持外链图标，style 参数中间不能有空格。
+
 ## Tabs
 
 这个标签移植自 [NexT](https://theme-next.js.org/docs/tag-plugins/tabs.html) 主题，但做了以下修改：
