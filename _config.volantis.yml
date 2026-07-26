@@ -383,7 +383,7 @@ custom_css:
 
 
 rightmenus:
-  enable: true
+  enable: #true
   order:
     - plugins.navigation  
     - hr
