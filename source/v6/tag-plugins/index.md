@@ -140,7 +140,7 @@ tag_plugins:
 ## Folding
 
 
-折叠块标签的语法格式为：
+折叠容器，折叠块标签的语法格式为：
 
 ```md 最后更新于 <u>6.7.0</u> 版本
 {% Folding title [codeblock:bool] [open:bool] [color:color] %}
@@ -185,11 +185,39 @@ func test() {
 {% endFolding %}
 
 
+## folders
+
+多个折叠容器聚合，样式相比 `folding` 简单一些，适用于多个折叠标签平铺显示的场景，例如题目列表：
+
+{% folders %}
+<!-- folder 题目1 -->
+这是答案1
+<!-- folder 题目2 -->
+这是答案2
+<!-- folder 题目3 -->
+这是答案3
+{% endfolders %}
+
+代码如下：
+
+```md 最后更新于 <u>6.7.0</u> 版本
+{% folders %}
+<!-- folder 题目1 -->
+这是答案1
+<!-- folder 题目2 -->
+这是答案2
+<!-- folder 题目3 -->
+这是答案3
+{% endfolders %}
+```
+
+
+
 
 
 ## Tabs
 
-这个标签移植自 [NexT](https://theme-next.js.org/docs/tag-plugins/tabs.html) 主题，但做了以下修改：
+分栏容器，这个标签移植自 [NexT](https://theme-next.js.org/docs/tag-plugins/tabs.html) 主题，但做了以下修改：
 
 - 支持设置 `align:center` 来使内容居中
 - 设置默认激活的标签方式为 `active:1` 而非 `, 1`（使用默认格式降低学习成本，且显式声明可读性更强）
@@ -245,7 +273,7 @@ print("hello world")
 
 ## swiper
 
-默认一张图片是 50% 宽度，通过设置 `width:min` 设置为 25% 宽度，`width:max` 设置为 100% 宽度。
+轮播容器，默认一张图片是 50% 宽度，通过设置 `width:min` 设置为 25% 宽度，`width:max` 设置为 100% 宽度。
 
 {% swiper effect:cards %}
 ![](https://images.unsplash.com/photo-1625171515821-1870deb2743b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80)
