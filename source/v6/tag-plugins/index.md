@@ -232,7 +232,7 @@ print("hello world")
 
 
 
-## site
+## site 网站卡片标签
 
 
 网站卡片可以显示网站截图、logo、标题、描述，使用方法和 `友链标签` 一模一样，唯一的区别是数据文件名称为 `sites.yml`，可以和友链数据混用，通过分组过滤实现不一样的效果。
@@ -268,9 +268,12 @@ print("hello world")
 {% sites only:communtiy_team, communtiy_builder %}
 ```
 
+
+
+
 <br>
 
-## 友链标签
+## friends 友链标签
 
 您可以在任何位置插入友链，支持静态数据和动态数据，静态数据需要写在数据文件中：
 
@@ -386,17 +389,6 @@ community_builder:
 {% friends posts:true api:https://raw.githubusercontent.com/volantis-x/friends-example/output/v2/data.json %}
 
 
-## 网站卡片标签
-
-网站卡片可以显示网站截图、logo、标题、描述，使用方法和友链标签一模一样，唯一的区别是数据文件名称为 `sites.yml`，可以和友链数据混用，通过分组过滤实现不一样的效果。
-
-```md 示例写法
-{% sites only:test_demo %}
-```
-
-{% folding sites only:test_demo %}
-{% sites only:test_demo %}
-{% endfolding %}
 
 
 
