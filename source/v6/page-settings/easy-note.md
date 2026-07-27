@@ -32,3 +32,29 @@ wiki: explore # 这个跟上面的 /wiki/explore.yml 关联起来
 ```
 
 这样就可以啦～
+
+
+{% folding 相关文档 %}
+
+
+{% link 如何使用文档系统::/v6/page-settings/wiki::https://unpkg.com/volantis-static@0.0.1649552113628/media/twemoji/assets/svg/1f433.svg %}
+
+
+
+{% link 用文档系统制作一本简易笔记::/v6/page-settings/easy-note::https://unpkg.com/volantis-static@0.0.1649552113628/media/twemoji/assets/svg/1f433.svg %}
+
+
+{% link 实现完整的笔记体系::/v6/page-settings/notebooks::https://unpkg.com/volantis-static@0.0.1649552113628/media/twemoji/assets/svg/1f433.svg %}
+
+
+{% link 实现博客专栏/专题::/v6/page-settings/topic::https://unpkg.com/volantis-static@0.0.1649552113628/media/twemoji/assets/svg/1f433.svg %}
+
+
+{% link 分组索引::/v6/page-settings/group::https://unpkg.com/volantis-static@0.0.1649552113628/media/twemoji/assets/svg/1f433.svg %}
+
+
+{% endfolding %}
+
+
+
+
