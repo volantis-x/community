@@ -100,7 +100,7 @@ tags: [博客主题, 开源项目]
 
 可以覆盖组件：
 ```yaml blog/source/_data/wiki/test-wiki-2.yml
-leftbar:
+sidebar:
   - tree
   - related
 ```
