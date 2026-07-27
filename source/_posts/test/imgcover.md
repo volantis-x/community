@@ -25,3 +25,20 @@ bbbbbb
 ## cc
 
 ccccccc
+
+
+<!-- more -->
+
+
+```yaml front-matter
+---
+title: imgcover test
+imgcover: true
+headimg: https://unpkg.com/volantis-static@0.0.1761982841160/media/wallpaper/minimalist/2020/001.webp
+---
+```
+
+
+
+
+
