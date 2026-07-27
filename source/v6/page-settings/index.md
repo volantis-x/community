@@ -724,3 +724,34 @@ plugins:
   - snackbar: oldversion
 ---
 ```
+
+
+## 自动化索引系统
+
+### Wiki 文档系统
+
+{% link 如何使用文档系统::/v6/page-settings/wiki::https://unpkg.com/volantis-static@0.0.1649552113628/media/twemoji/assets/svg/1f433.svg %}
+
+
+### 用文档系统制作一本简易笔记
+
+{% link 用文档系统制作一本简易笔记::/v6/page-settings/easy-note::https://unpkg.com/volantis-static@0.0.1649552113628/media/twemoji/assets/svg/1f433.svg %}
+
+### 实现完整的笔记体系
+
+{% link 实现完整的笔记体系::/v6/page-settings/notebooks::https://unpkg.com/volantis-static@0.0.1649552113628/media/twemoji/assets/svg/1f433.svg %}
+
+### 实现博客专栏/专题
+
+{% link 实现博客专栏/专题::/v6/page-settings/topic::https://unpkg.com/volantis-static@0.0.1649552113628/media/twemoji/assets/svg/1f433.svg %}
+
+
+
+
+
+
+
+
+
+
+
