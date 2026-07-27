@@ -135,6 +135,58 @@ tag_plugins:
 
 > 还支持 style 参数，可以直接对样式进行修改，仅支持外链图标，style 参数中间不能有空格。
 
+
+
+## Folding
+
+
+折叠块标签的语法格式为：
+
+```md 最后更新于 <u>6.7.0</u> 版本
+{% Folding title [codeblock:bool] [open:bool] [color:color] %}
+content
+{% endFolding %}
+```
+
+```yaml 参数说明
+codeblock: true/false
+open: true/false
+color: red/orange/yellow/green/cyan/blue/purple/light/dark
+```
+
+### 彩色可折叠代码块
+
+备注标签相较于旧版进行了增强，可以实现更多种颜色，还可以通过设置 `child:codeblock` 来实现可折叠的代码块。以下是一个默认打开的代码折叠框：
+
+{% Folding child:codeblock open:true color:yellow 默认打开的代码折叠框 %}
+```swift
+func test() {
+  print("hello world")
+}
+```
+{% endFolding %}
+
+代码如下：
+
+```
+{% Folding child:codeblock open:true color:yellow 默认打开的代码折叠框 %}
+代码块
+{% endFolding %}
+```
+
+{% Folding color:yellow 危险，请不要打开这个 %}
+通过设置颜色，以实现更醒目的作用，但不要滥用色彩哦～
+{% Folding color:orange 警告，真的很危险 %}
+通过设置颜色，以实现更醒目的作用，但不要滥用色彩哦～
+{% Folding color:red 最后一次警告，千万不要打开这个 %}
+不要说我们没有警告过你，Windows 10 不是為所有人設計，而是為每個人設計。
+{% endFolding %}
+{% endFolding %}
+{% endFolding %}
+
+
+
+
 ## Tabs
 
 这个标签移植自 [NexT](https://theme-next.js.org/docs/tag-plugins/tabs.html) 主题，但做了以下修改：
