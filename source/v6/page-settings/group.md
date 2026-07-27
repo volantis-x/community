@@ -5,7 +5,7 @@ sidebar: [docs-v6, toc]
 ---
 
 
-这是 Volantis 自古早时期一直存在的方法。
+这是 Volantis 自古早时期 2.6 版本一直存在的方法。
 
 
 ## 创建分组索引导航
