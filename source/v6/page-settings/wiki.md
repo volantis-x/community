@@ -8,9 +8,11 @@ Wiki 文档系统可以自动找到一个项目的所有文档分页，生成一
 
 ## 基本流程
 
-{% timeline %}
-<!-- node 1/3 创建项目描述文件 -->
+
+### 创建项目描述文件
+
 在 `blog/source/_data/` 文件夹中创建一个 `wiki` 文件夹，在其中放入各个项目的文档。以官网为例，文件名就是项目的 `id`：
+
 ```yaml blog/source/_data/wiki/test-wiki-2.yml
 name: test-wiki-2
 title: test wiki 2
@@ -30,7 +32,8 @@ tree:
     - d
 ```
 
-<!-- node 2/3 设置布局模板和项目名称 -->
+### 设置布局模板和项目名称
+
 在此文档项目的 `md` 文件的 `front-matter` 部分指定所属的项目 `id` （即上一步创建的文件名 `id.yml`）
 ```yaml blog/source/test-page/test-wiki-2/index.md
 ---
@@ -39,7 +42,8 @@ title: 这是分页标题
 ---
 ```
 
-<!-- node 3/3 将此项目「上架」 -->
+### 将此项目「上架」
+
 在 `blog/source/_data/` 文件夹中创建一个 `wiki.yml` 文件，在其中写入需要显示的项目 `id`：
 
 ```yaml blog/source/_data/wiki.yml
@@ -49,7 +53,7 @@ title: 这是分页标题
 
 这样在项目列表（wiki）页面就可以看到刚刚创建的项目了。
 
-{% endtimeline %}
+
 
 ## 项目分页索引
 
