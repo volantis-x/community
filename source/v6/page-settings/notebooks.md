@@ -47,69 +47,45 @@ sidebar: [docs-v6, toc]
 ``` yaml
 name: Demo
 title: Demo Notebook
-icon: /images/favicon.png
+#icon: /images/favicon.png
+#svg: <svg xxxxxxx />
 description: 这是一本用来演示的笔记本
-base_dir: /notes/
+base_dir: /test-page/notebooks/book/
 
-sort: 1
+sort: 2
 per_page: 10
 order_by: -updated
-license: true
-share: true
-
-menu_id: notes
-# 笔记列表页的左/右侧栏
-# leftbar: [tagtree, recent]
-# rightbar: []
-# 笔记页的左/右侧栏
-# note_leftbar: [tagtree, recent]
-# note_rightbar: [toc]
 ```
 
 ## 标签树（tagtree）widget
 
 在笔记列表页和笔记页，可以在左侧边栏显示当前笔记本的标签树。笔记的标签定义在 front-matter 中的 `tags` 字段，类似于普通文章。嵌套标签用 `/` 进行分割，就跟文件系统的目录类似，比如 `knowledge/math/probability`。一篇笔记可以有任意多个标签。
 
-标签树组件会以树形结构显示出所有的标签及其层级结构，另外可以配置比如是否自动展开所有标签（默认否）、是否自动展开当前标签（默认是）、是否显示标签的 icon（默认是）。用户可以在主题配置中为任何标签配置 icon，默认使用新增的 `solar:hashtag-linear` icon。
+标签树组件会以树形结构显示出所有的标签及其层级结构。
 
-标签树组件看起来大致是这样：
 
-{% image https://github.com/xaoxuu/hexo-theme-stellar/assets/3761553/87935943-58f5-440b-9abb-be6ec25a759a width:300px ratio:560/1000 %}
 
 ## 笔记本列表页
 
-主体部分是以卡片形式显示的笔记本列表，跟 index wiki 页面类似，支持通过 sort 对笔记本进行排序，但目前不支持笔记本上的 tag。示例：
+主体部分是以卡片形式显示的笔记本列表，跟 index wiki 页面类似，支持通过 sort 对笔记本进行排序，但目前不支持笔记本上的 tag。
 
-{% image https://github.com/xaoxuu/hexo-theme-stellar/assets/3761553/b6c66171-9f87-4594-9038-e67a9d2cdcf3 width:500px ratio:627/529 %}
 
-默认的左侧边栏是 recent 组件，列出所有笔记本中最近更新的几篇笔记。跟 index wiki 页面的 recent 组件类似，会在笔记标题前面加上笔记本的名称。示例：
 
-{% image https://github.com/xaoxuu/hexo-theme-stellar/assets/3761553/4616fa3c-11fc-4bd1-aae4-64f29f9dfacb width:300px ratio:279/387 %}
+默认的左侧边栏是 recent 组件，列出所有笔记本中最近更新的几篇笔记。跟 index wiki 页面的 recent 组件类似，会在笔记标题前面加上笔记本的名称。
 
 ## 笔记列表页
 
-主体部分是分页的笔记卡片，跟博客的近期发布页面类似，但默认按照笔记的更新时间逆序排列。支持在笔记的 front-matter 中通过 `pin` 或 `sticky` 字段来置顶笔记。卡片会显示笔记的更新时间和标签。示例：
+主体部分是分页的笔记卡片，默认按照笔记的更新时间逆序排列。支持在笔记的 front-matter 中通过 `pin` 或 `sticky` 字段来置顶笔记。
 
-{% image https://github.com/xaoxuu/hexo-theme-stellar/assets/3761553/cff0595b-e6b2-4992-a18e-6f69d08d804c width:500px ratio:1374/1820 %}
 
-笔记卡片支持类似于博客文章的 cover，但目前不支持 poster。示例：
-
-{% image https://github.com/xaoxuu/hexo-theme-stellar/assets/3761553/4a70cb9e-8a6b-4922-8b2f-82ecb78bc0e2 width:500px ratio:627/615 %}
 
 默认的左侧边栏是 tagtree 和 recent 组件。tagtree 组件会高亮当前选中的标签，如果没有选中标签，则高亮「全部笔记」。recent 组件会列出当前笔记本内最近更新的几篇笔记。
 
-搜索框会限定在当前笔记本中进行搜索。暂时不支持仅在当前选中的标签内搜索。
 
 ## 笔记页
 
-主体部分就是笔记（本质就是一个 page）的内容。顶部优先展示更新时间，鼠标悬浮时展开发表时间。示例：
+主体部分就是笔记（本质就是一个 page）的内容。
 
-{% image https://github.com/xaoxuu/hexo-theme-stellar/assets/3761553/972f5e84-1f1a-4706-b018-c88b3fcea06c width:300px ratio:296/65 %}
 
-底部展示该笔记所属的所有标签，样式类似于博客的标签页，示例：
 
-{% image https://github.com/xaoxuu/hexo-theme-stellar/assets/3761553/4f0eade5-457b-4e64-9367-b9a34cdc7ec5 width:300px ratio:382/88 %}
 
-另外跟博客、文档类似，可以控制是否显示许可协议和分享按钮。
-
-默认的左侧边栏和搜索框跟笔记列表页类似。
