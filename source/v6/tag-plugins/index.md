@@ -11,7 +11,7 @@ sidebar: [docs-v6, toc]
 
 自 Volantis 6.6.0 起使用新的标签插件语法，代号 Stellar 语法。
 
-为了兼容旧版本的插件，新版标签的名称「开头首字母」统一设计成「大写」字母。
+为了兼容旧版本的插件，如果开发中存在冲突，新版标签的名称「开头首字母」统一设计成「大写」字母。
 
 Volantis 6.6.0 起内置的标签组件和 Hexo 官方的一样使用空格分隔多个参数，所以如果参数内容中需要出现的空格被意外分隔开了的时候，请使用 `&nbsp;` 代替。为了方便理解，本文档语法格式中的可选参数用方括号括起来，键值对参数用冒号分隔开，例如：
 
@@ -231,6 +231,172 @@ print("hello world")
 {% endTabs %}
 
 
+
+## site
+
+
+网站卡片可以显示网站截图、logo、标题、描述，使用方法和 `友链标签` 一模一样，唯一的区别是数据文件名称为 `sites.yml`，可以和友链数据混用，通过分组过滤实现不一样的效果。
+
+```md 最后更新于 <u>6.2.0</u> 版本
+{% sites [筛选方式]:[组名] %}
+```
+
+### 演示效果
+
+{% sites only:community_team %}
+
+### 上述示例的源码
+
+```md example
+{% sites only:community_team %}
+```
+
+### 可以支持的参数
+
+#### 数据按组筛选
+
+支持分组（白名单模式和黑名单模式）显示:
+
+```
+// 显示 communtiy_team
+{% sites only:communtiy_team %}
+
+// 除了 communtiy_team 别的都显示
+{% sites not:community_team %}
+
+// 多个分组使用 `,` 分隔
+{% sites only:communtiy_team, communtiy_builder %}
+```
+
+<br>
+
+## 友链标签
+
+您可以在任何位置插入友链，支持静态数据和动态数据，静态数据需要写在数据文件中：
+
+```yaml blog/source/_data/friends.yml
+volantis_developer:
+  title:
+  description:
+  items:
+    - title: xaoxuu
+      url: https://github.com/xaoxuu
+      avatar: https://avatars.githubusercontent.com/u/16400144?s=60&v=4
+    - title: MHuiG
+      url: https://github.com/MHuiG
+      avatar: https://avatars.githubusercontent.com/u/38281581?s=60&v=4
+    - title: inkss
+      url: https://github.com/inkss
+      avatar: https://avatars.githubusercontent.com/u/31947043?s=60&v=4
+    - title: Colsrch
+      url: https://github.com/Colsrch
+      avatar: https://avatars.githubusercontent.com/u/58458181?s=60&v=4
+    - title: Drew233
+      url: https://github.com/Drew233
+      avatar: https://avatars.githubusercontent.com/u/47592224?s=60&v=4
+    - title: Linhk1606
+      url: https://github.com/Linhk1606
+      avatar: https://avatars.githubusercontent.com/u/50829219?s=60&v=4
+    - title: W4J1e
+      url: https://github.com/W4J1e
+      avatar: https://avatars.githubusercontent.com/u/74824162?s=60&v=4
+
+
+community_builder:
+  title:
+  description:
+  items:
+    - title: xaoxuu
+      url: https://github.com/xaoxuu
+      avatar: https://avatars.githubusercontent.com/u/16400144?s=60&v=4
+    - title: MHuiG
+      url: https://github.com/MHuiG
+      avatar: https://avatars.githubusercontent.com/u/38281581?s=60&v=4
+    - title: Colsrch
+      url: https://github.com/Colsrch
+      avatar: https://avatars.githubusercontent.com/u/58458181?s=60&v=4
+    - title: penndu
+      url: https://github.com/penndu
+      avatar: https://avatars.githubusercontent.com/u/46226528?s=60&v=4
+    - title: heson525
+      url: https://github.com/heson525
+      avatar: https://avatars.githubusercontent.com/u/32234343?s=60&v=4
+    - title: W4J1e
+      url: https://github.com/W4J1e
+      avatar: https://avatars.githubusercontent.com/u/74824162?s=60&v=4
+    - title: luosiwei-cmd
+      url: https://github.com/luosiwei-cmd
+      avatar: https://avatars.githubusercontent.com/u/61175380?s=60&v=4
+
+```
+
+标题和描述都支持 md 格式，需要写在引号中。如果指定了 `api` 和 `repo` 字段，则从 issues 中取第一个 `json` 代码块数据作为友链。
+
+```md 写法如下
+{% friends %}
+```
+
+### 数据按组筛选
+
+友链支持分组（白名单模式和黑名单模式）显示：
+
+```md 最后更新于 <u>6.2.0</u> 版本
+// 显示 volantis_developer
+{% friends only:volantis_developer %}
+
+// 显示 volantis_developer 和 community_builder
+{% friends only:volantis_developer,community_builder %}
+
+// 除了 community_builder 别的都显示
+{% friends not:community_builder %}
+```
+
+{% folding friends only:volantis_developer %}
+{% friends only:volantis_developer %}
+{% endfolding %}
+
+### 实现动态友链
+
+可以加载来自 issues 的友链数据，除了需要在 `_data/friends.yml` 中指定 `api` 和 `repo` 外，还需要做一下几件事：
+
+从 [xaoxuu/friends](https://github.com/xaoxuu/friends) 作为模板克隆或者 fork 仓库，然后提交一个 issue 进行测试，不出意外的话，仓库中已经配置好了 issue 模板，只需要在模板中指定的位置填写信息就可以了。
+
+提交完 issue 一分钟左右，如果仓库中出现了 `output` 分支提交，可以点击查看一下文件内容是否已经包含了刚刚提交的 issue 中的数据，如果包含，那么再次回到前端页面刷新就可以看到来自 issue 的友链数据了。
+
+{% note 关于自建&nbsp;Vercel&nbsp;API 如果您想使用自己的 api，请把您刚创建的仓库导入到 Vercel 项目，详见 [小冰博客](https://zfe.space/post/python-issues-api.html) 的教程。 %}
+
+{% note green::特别感谢小冰博客通过 Vercel 进行加速的方案，解决了原本直接请求 GitHub API 速度过慢的问题。 %}
+
+### 只显示动态数据
+
+如果您不想创建 `friends.yml` 来设置任何静态数据，可以在标签中设置 `api` 来只显示动态数据：
+
+```
+{% friends api:https://raw.githubusercontent.com/volantis-x/examples/output/v2/data.json %}
+```
+
+### 友链+文章
+
+动态友链支持显示每个友链最新的N篇文章，并按文章更新顺序给友链排序，只需要增加 `posts:true` 参数：
+
+```
+{% friends posts:true api:https://raw.githubusercontent.com/volantis-x/friends-example/output/v2/data.json %}
+```
+
+{% friends posts:true api:https://raw.githubusercontent.com/volantis-x/friends-example/output/v2/data.json %}
+
+
+## 网站卡片标签
+
+网站卡片可以显示网站截图、logo、标题、描述，使用方法和友链标签一模一样，唯一的区别是数据文件名称为 `sites.yml`，可以和友链数据混用，通过分组过滤实现不一样的效果。
+
+```md 示例写法
+{% sites only:test_demo %}
+```
+
+{% folding sites only:test_demo %}
+{% sites only:test_demo %}
+{% endfolding %}
 
 
 
