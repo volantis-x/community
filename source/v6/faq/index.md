@@ -111,9 +111,12 @@ node.js 版本过低，请升级至 v16.x 及以上版本！
 [volantis-x/hexo-theme-volantis/discussions/738](https://github.com/volantis-x/hexo-theme-volantis/discussions/738)
 
 
-## 5.0 的友情链接页有啥变化？
+## 友情链接页有啥变化？
 
-[volantis-x/hexo-theme-volantis/discussions/734](https://github.com/volantis-x/hexo-theme-volantis/discussions/734)
+6.2: [友链标签](https://volantis.js.org/v6/tag-plugins/#friends-友链标签) [Volantis 动态友链获重磅升级！](https://xaoxuu.com/blog/20250602/)
+
+
+5.0: [volantis-x/hexo-theme-volantis/discussions/734](https://github.com/volantis-x/hexo-theme-volantis/discussions/734)
 
 
 
