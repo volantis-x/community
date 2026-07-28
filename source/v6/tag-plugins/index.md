@@ -135,7 +135,29 @@ tag_plugins:
 
 > 还支持 style 参数，可以直接对样式进行修改，仅支持外链图标，style 参数中间不能有空格。
 
+## mark
 
+标记标签，支持多彩标记，包括：{% mark 默认 %} {% mark 红 color:red %} {% mark 橙 color:orange %} {% mark 黄 color:yellow %} {% mark 绿 color:green %} {% mark 青 color:cyan %} {% mark 蓝 color:blue %} {% mark 紫 color:purple %} {% mark 亮 color:light %} {% mark 暗 color:dark %} {% mark 警告 color:warning %} {% mark 错误 color:error %} 一共 12 种颜色。
+
+```md 最后更新于 <u>6.7.0</u> 版本
+支持多彩标记，包括：{% mark 默认 %} {% mark 红 color:red %} {% mark 橙 color:orange %} {% mark 黄 color:yellow %} {% mark 绿 color:green %} {% mark 青 color:cyan %} {% mark 蓝 color:blue %} {% mark 紫 color:purple %} {% mark 亮 color:light %} {% mark 暗 color:dark %} {% mark 警告 color:warning %} {% mark 错误 color:error %} 一共 12 种颜色。
+```
+
+## hashtag
+
+{% hashtag Volantis https://volantis.js.org/ %}
+{% hashtag Hexo https://hexo.io/ %}
+{% hashtag GitHub https://github.com/ %}
+{% hashtag Gitea https://github.com/ color:green %}
+
+如果没有指定颜色，且没有设置默认颜色，则随机取一个颜色，快来试试吧～
+
+```md 最后更新于 <u>6.7.0</u> 版本
+{% hashtag Volantis https://volantis.js.org/ %}
+{% hashtag Hexo https://hexo.io/ %}
+{% hashtag GitHub https://github.com/ %}
+{% hashtag Gitea https://github.com/ color:green %}
+```
 
 ## Folding
 
