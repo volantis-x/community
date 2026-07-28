@@ -16,7 +16,7 @@ sidebar: [docs-v6, toc]
 Volantis 6.6.0 起内置的标签组件和 Hexo 官方的一样使用空格分隔多个参数，所以如果参数内容中需要出现的空格被意外分隔开了的时候，请使用 `&nbsp;` 代替。为了方便理解，本文档语法格式中的可选参数用方括号括起来，键值对参数用冒号分隔开，例如：
 
 ```
-{% image src [description] [download:bool/string] %}
+{% Image src [description] [download:bool/string] %}
 ```
 
 就表明第一个参数是图片链接，第二个参数是图片描述，而 `download` 是可选参数，并且值是布尔或字符串类型，第二三个参数为可选参数。
@@ -26,7 +26,7 @@ Volantis 6.6.0 起内置的标签组件和 Hexo 官方的一样使用空格分�
 以图片标签为例，使用空格分隔开之后得到一个数组，如果图片描述文字中有空格，多分出来的这些「参数」被合并到最后一个「非键值对参数」中，什么是「非键值对参数」呢？举个例子您就明白了：
 
 ```
-{% image https://gcore.jsdelivr.net/gh/cdn-x/wiki/stellar/photos/183e71e0ad995.jpg 来自印度的 Rohit Vohra 使用 iPhone 12 Pro Max 拍摄。 download:https://www.apple.com.cn/newsroom/images/product/iphone/lifestyle/Apple_ShotoniPhone-rohit_vohra_12172020.zip ratio:1960/1468 %}
+{% Image https://gcore.jsdelivr.net/gh/cdn-x/wiki/stellar/photos/183e71e0ad995.jpg 来自印度的 Rohit Vohra 使用 iPhone 12 Pro Max 拍摄。 download:https://www.apple.com.cn/newsroom/images/product/iphone/lifestyle/Apple_ShotoniPhone-rohit_vohra_12172020.zip ratio:1960/1468 %}
 ```
 
 这个例子中，`download:https://xxxx` 是有冒号分隔开的，`download` 为键，后面的网址为值，所以叫做「键值对参数」；与此相对的，没有冒号分隔的就叫做「非键值对参数」。键值对参数可以放在任何位置，我可以通过匹配键来解析，而非键值对参数则只能通过顺序解析，所以它们必须和文档中要求的前后顺序一致。
@@ -158,6 +158,82 @@ tag_plugins:
 {% hashtag GitHub https://github.com/ %}
 {% hashtag Gitea https://github.com/ color:green %}
 ```
+
+## Image
+
+图片标签是一个精心设计的应对各种尺寸插图的标签，对于大图，可以放置一个「下载」按钮，语法格式如下：
+
+```md 最后更新于 <u>6.7.0</u> 版本
+{% Image src [description] [download:bool/string] [width:px] [padding:px] [bg:hex] [fancybox:bool/string] %}
+```
+
+```yaml 参数说明
+src: 图片地址
+description: 图片描述
+download: href # 下载地址，设置此值后鼠标放在图片上会显示下载地址，如果下载地址为图片地址，可以设置为 true
+width: 200px # 图片宽度
+padding: 16px # 图片四周填充宽度
+bg: '#ffffff' # 图片区域背景颜色，16进制
+fancybox: href # fancybox 放大地址，设置此值后会调用该链接放大，如果放大地址为图片地址，可以设置为 true
+```
+
+### 横向铺满的图片
+
+无论在什么宽度的设备上都希望横向铺满的图片，一般不需要额外操作。可以在链接后面写上图片描述，如有必要，可以通过设置 `download:true` 使其显示一个「下载」按钮链接指向图片地址，如果下载链接与显示的图片地址不同，可以 `download:下载链接` 来使其能够下载原图。
+
+{% Image https://unpkg.com/volantis-static@0.0.1761982841160/media/wallpaper/minimalist/2020/001.webp 这是图片描述 download:https://unpkg.com/volantis-static@0.0.1761982841160/media/wallpaper/minimalist/2020/001.webp ratio:1280/960 %}
+
+```md 写法如下
+{% Image https://unpkg.com/volantis-static@0.0.1761982841160/media/wallpaper/minimalist/2020/001.webp 这是图片描述 download:https://unpkg.com/volantis-static@0.0.1761982841160/media/wallpaper/minimalist/2020/001.webp ratio:1280/960 %}
+```
+
+### 竖图（小图）优化
+
+宽度较小而高度较大的图片，可以设置宽、高、填充间距、背景色等对其布局进行优化，使得它在不同宽度的屏幕下都能获得不错的视觉体验：
+
+{% Tabs %}
+
+<!-- tab 限制宽度 -->
+
+{% Image https://images.unsplash.com/photo-1625171515821-1870deb2743b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80 width:350px 这是图片的描述文字 ratio:720/1080 %}
+
+```
+{% Image https://images.unsplash.com/photo-1625171515821-1870deb2743b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80 width:350px 这是图片的描述文字 ratio:720/1080 %}
+```
+
+{% Folding 如果不进行约束，在宽屏设备上会占用很大篇幅 %}
+{% Image https://images.unsplash.com/photo-1625171515821-1870deb2743b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80  ratio:720/1080 %}
+{% endFolding %}
+
+<!-- tab 设置填充区域 -->
+
+可以设置填充宽度和颜色，支持 `bg:var(--background)` 动态颜色，能够适配暗黑模式：
+
+{% Image https://unpkg.com/volantis-static@0.0.1761982841160/media/org.volantis/blog/Logo-NavBar@3x.png bg:var(--background) padding:16px width:100px ratio:512/512 %}
+
+```
+{% Image https://unpkg.com/volantis-static@0.0.1761982841160/media/wallpaper/minimalist/2020/004.webp bg:var(--background) padding:16px width:100px ratio:512/512 %}
+```
+
+{% endTabs %}
+
+### 支持 Fancybox 插件点击放大
+
+在任意 `Image` 标签中增加 `fancybox:true` 参数即可为特定图片开启缩放功能。如果一个页面没有任何地方使用，则不会加载 Fancybox 插件。
+
+{% Image fancybox:true https://www.apple.com.cn/newsroom/images/product/iphone/lifestyle/2022/Apple_Shot-on-iphone-macro-challenge_Cat_big.jpg.large_2x.jpg download:https://www.apple.com.cn/newsroom/images/product/iphone/lifestyle/2022/Images-of-Shot-on-iphone-macro-challenge.zip 图片来自 Apple 官网 ratio:1960/1470 %}
+
+如果您希望全站所有的 `Image` 标签都开启此功能，可在主题配置文件中修改以下参数：
+
+```yaml blog/_config.volantis.yml
+######## Tag Plugins ########
+tag_plugins:
+  # {% Image %}
+  Image:
+    fancybox: false
+```
+
+如果想在页面中展示较小的图片，但在 fancybox 中展示较大的高清的图片，可以用 `fancybox:大图链接` 参数。
 
 ## Folding
 
