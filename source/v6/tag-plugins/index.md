@@ -303,7 +303,7 @@ color: red/orange/yellow/green/cyan/blue/purple/light/dark/warning/error
 
 ## box
 
-盒子容器 note 标签就是使用 box 容器实现的，它们样式是相同的：
+盒子容器 Note 标签就是使用 box 容器实现的，它们样式是相同的：
 
 ```md 最后更新于 <u>6.7.0</u> 版本
 {% box [title] [color:color] [child:codeblock/tabs] %}
