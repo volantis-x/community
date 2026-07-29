@@ -91,6 +91,10 @@ node.js 版本过低，请升级至 v16.x 及以上版本！
 
 ## 图片怎么添加灯箱放大效果？
 
+[使用 Image 标签](/v6/tag-plugins/#Image)
+
+[使用 Gallery 标签](/v6/tag-plugins/#Gallery)
+
 [使用 gallery 标签](/v5/tag-plugins/#gallery)
 
 
