@@ -235,6 +235,90 @@ tag_plugins:
 
 如果想在页面中展示较小的图片，但在 fancybox 中展示较大的高清的图片，可以用 `fancybox:大图链接` 参数。
 
+
+
+## Note
+
+备注块
+
+{% Tabs %}
+
+<!-- tab 示例 -->
+```md 最后更新于 <u>6.7.0</u> 版本
+{% Note [title] content [color:color] %}
+```
+<!-- tab 写法 -->
+```yaml
+title: 标题（可选）
+content: 内容
+color: red/orange/yellow/green/cyan/blue/purple/light/dark/warning/error
+```
+{% endTabs %}
+
+
+### 具有标题的备注块
+
+直接写备注内容，默认是和代码块一样的样式，第一个空格前面的是标题，后面的是正文，如果标题中需要显示空格，请使用 `&nbsp;` 代替。
+
+{% Tabs %}
+
+<!-- tab 示例 -->
+{% Note 这&nbsp;是标题 这是正文 哈哈。 %}
+<!-- tab 写法 -->
+```
+{% Note 这&nbsp;是标题 这是正文 哈哈。 %}
+```
+{% endTabs %}
+
+
+### 彩色备注块
+
+{% Note color:cyan 一共支持12种颜色，可以满足几乎所有的需求了。 color 可设置 red、orange、amber、yellow、green、cyan、blue、purple、light、dark、warning、error 几种取值。 [link](/) %}
+
+{% Tabs %}
+
+<!-- tab 示例 -->
+{% Folding 一共支持12种颜色，可以满足几乎所有的需求了 %}
+{% Note 一共支持12种颜色，可以满足几乎所有的需求了。 color 可设置 red、orange、amber、yellow、green、cyan、blue、purple、light、dark、warning、error 几种取值。 [link](/) %}
+{% Note color:red 一共支持12种颜色，可以满足几乎所有的需求了。 color 可设置 red、orange、amber、yellow、green、cyan、blue、purple、light、dark、warning、error 几种取值。 [link](/) %}
+{% Note color:orange 一共支持12种颜色，可以满足几乎所有的需求了。 color 可设置 red、orange、amber、yellow、green、cyan、blue、purple、light、dark、warning、error 几种取值。 [link](/) %}
+{% Note color:amber 一共支持12种颜色，可以满足几乎所有的需求了。 color 可设置 red、orange、amber、yellow、green、cyan、blue、purple、light、dark、warning、error 几种取值。 [link](/) %}
+{% Note color:yellow 一共支持12种颜色，可以满足几乎所有的需求了。 color 可设置 red、orange、amber、yellow、green、cyan、blue、purple、light、dark、warning、error 几种取值。 [link](/) %}
+{% Note color:green 一共支持12种颜色，可以满足几乎所有的需求了。 color 可设置 red、orange、amber、yellow、green、cyan、blue、purple、light、dark、warning、error 几种取值。 [link](/) %}
+{% Note color:cyan 一共支持12种颜色，可以满足几乎所有的需求了。 color 可设置 red、orange、amber、yellow、green、cyan、blue、purple、light、dark、warning、error 几种取值。 [link](/) %}
+{% Note color:blue 一共支持12种颜色，可以满足几乎所有的需求了。 color 可设置 red、orange、amber、yellow、green、cyan、blue、purple、light、dark、warning、error 几种取值。 [link](/) %}
+{% Note color:purple 一共支持12种颜色，可以满足几乎所有的需求了。 color 可设置 red、orange、amber、yellow、green、cyan、blue、purple、light、dark、warning、error 几种取值。 [link](/) %}
+{% Note color:light 一共支持12种颜色，可以满足几乎所有的需求了。 color 可设置 red、orange、amber、yellow、green、cyan、blue、purple、light、dark、warning、error 几种取值。 [link](/) %}
+{% Note color:dark 一共支持12种颜色，可以满足几乎所有的需求了。 color 可设置 red、orange、amber、yellow、green、cyan、blue、purple、light、dark、warning、error 几种取值。 [link](/) %}
+{% Note color:warning 一共支持12种颜色，可以满足几乎所有的需求了。 color 可设置 red、orange、amber、yellow、green、cyan、blue、purple、light、dark、warning、error 几种取值。 [link](/) %}
+{% Note color:error 一共支持12种颜色，可以满足几乎所有的需求了。 color 可设置 red、orange、amber、yellow、green、cyan、blue、purple、light、dark、warning、error 几种取值。 [link](/) %}
+{% endFolding %}
+<!-- tab 写法 -->
+```md
+{% Note 一共支持12种颜色，可以满足几乎所有的需求了。 color 可设置 red、orange、amber、yellow、green、cyan、blue、purple、light、dark、warning、error 几种取值。 [link](/) %}
+{% Note color:cyan 一共支持12种颜色，可以满足几乎所有的需求了。 color 可设置 red、orange、amber、yellow、green、cyan、blue、purple、light、dark、warning、error 几种取值。 [link](/) %}
+```
+{% endTabs %}
+
+
+## box
+
+盒子容器 note 标签就是使用 box 容器实现的，它们样式是相同的：
+
+```md 最后更新于 <u>6.7.0</u> 版本
+{% box [title] [color:color] [child:codeblock/tabs] %}
+...
+{% endbox %}
+```
+
+
+{% box 这是标题 color:red %}
+这是 box 内容
+{% endbox %}
+
+
+
+
 ## Folding
 
 
