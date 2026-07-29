@@ -41,6 +41,8 @@ Volantis 6.6.0 之前的标签插件见：
 
 ## 文本修饰标签集
 
+最后更新于 <u>6.6.0</u> 版本
+
 {% Tabs %}
 <!-- tab 效果 -->
 - 这是 {% blur 高斯模糊 %} 标签
@@ -53,7 +55,7 @@ Volantis 6.6.0 之前的标签插件见：
 - 这是 {% sub 下角标 %} 标签
 - 这是 {% kbd 键盘样式 %} 标签，试一试：{% kbd ⌘ %} + {% kbd D %}
 <!-- tab 源码 -->
-```md 最后更新于 <u>6.6.0</u> 版本
+```md 写法如下：
 - 这是 {% blur 高斯模糊 %} 标签
 - 这是 {% psw 密码 %} 标签
 - 这是 {% u 下划线 %} 标签
@@ -68,11 +70,13 @@ Volantis 6.6.0 之前的标签插件见：
 
 ## emoji
 
+最后更新于 <u>6.6.0</u> 版本
+
 {% Tabs %}
 <!-- tab 效果演示 -->
 内置了可配置的表情标签 {% emoji aini %} {% emoji blobcat 0_0 %} {% emoji tieba huaji %} 使用方法如下：
 
-```md 最后更新于 <u>6.6.0</u> 版本
+```md 写法如下：
 {% emoji aini %}
 {% emoji blobcat 0_0 %}
 {% emoji tieba huaji %}
@@ -114,13 +118,15 @@ tag_plugins:
 
 ## icon
 
+最后更新于 <u>6.6.0</u> 版本
+
 支持在任意{% icon solar:planet-bold-duotone %}位置插入图标，支持外链{% icon https://api.iconify.design/fluent-color:link-multiple-20.svg?color=%23888888 %}图标，也可以在 icons.yml 中提前配置好。
 
 **{% icon ph:seal-question-fill color:purple %}可以指定图标的颜色吗？**
 
 当然可以，还可以在主题配置中设置默认颜色：
 
-```md 最后更新于 <u>6.6.0</u> 版本
+```md 写法如下
 icons.yml 中的图标：{% icon solar:planet-bold-duotone %}
 外链图标：{% icon https://api.iconify.design/solar:link-circle-bold.svg %}
 指定颜色：{% icon ph:seal-question-fill color:red %}
@@ -137,13 +143,17 @@ tag_plugins:
 
 ## mark
 
+最后更新于 <u>6.7.0</u> 版本
+
 标记标签，支持多彩标记，包括：{% mark 默认 %} {% mark 红 color:red %} {% mark 橙 color:orange %} {% mark 黄 color:yellow %} {% mark 绿 color:green %} {% mark 青 color:cyan %} {% mark 蓝 color:blue %} {% mark 紫 color:purple %} {% mark 亮 color:light %} {% mark 暗 color:dark %} {% mark 警告 color:warning %} {% mark 错误 color:error %} 一共 12 种颜色。
 
-```md 最后更新于 <u>6.7.0</u> 版本
+```md 写法如下：
 支持多彩标记，包括：{% mark 默认 %} {% mark 红 color:red %} {% mark 橙 color:orange %} {% mark 黄 color:yellow %} {% mark 绿 color:green %} {% mark 青 color:cyan %} {% mark 蓝 color:blue %} {% mark 紫 color:purple %} {% mark 亮 color:light %} {% mark 暗 color:dark %} {% mark 警告 color:warning %} {% mark 错误 color:error %} 一共 12 种颜色。
 ```
 
 ## hashtag
+
+最后更新于 <u>6.7.0</u> 版本
 
 {% hashtag Volantis https://volantis.js.org/ %}
 {% hashtag Hexo https://hexo.io/ %}
@@ -152,7 +162,7 @@ tag_plugins:
 
 如果没有指定颜色，且没有设置默认颜色，则随机取一个颜色，快来试试吧～
 
-```md 最后更新于 <u>6.7.0</u> 版本
+```md 写法如下
 {% hashtag Volantis https://volantis.js.org/ %}
 {% hashtag Hexo https://hexo.io/ %}
 {% hashtag GitHub https://github.com/ %}
@@ -161,9 +171,11 @@ tag_plugins:
 
 ## Image
 
+最后更新于 <u>6.7.0</u> 版本
+
 图片标签是一个精心设计的应对各种尺寸插图的标签，对于大图，可以放置一个「下载」按钮，语法格式如下：
 
-```md 最后更新于 <u>6.7.0</u> 版本
+```md 写法如下：
 {% Image src [description] [download:bool/string] [width:px] [padding:px] [bg:hex] [fancybox:bool/string] %}
 ```
 
@@ -237,14 +249,102 @@ tag_plugins:
 
 
 
+## blockquote
+
+最后更新于 <u>6.7.0</u> 版本
+
+段落引用，这个是标准写法 `> 引用内容` 的增强版本，适合不太强调的、大段落的引用。
+
+{% Tabs %}
+<!-- tab 效果对比 -->
+
+> 这是使用 "> 引用" 写法的例子
+
+{% blockquote %}
+这是使用 blockquote 标签的例子
+{% endblockquote %}
+
+<!-- tab 写法 -->
+
+```
+> 这是使用 "> 引用" 写法的例子
+
+{% blockquote %}
+这是使用 blockquote 标签的例子
+{% endblockquote %}
+```
+
+{% endTabs %}
+
+
+{% Note 题外话 本来这个叫 quote，但是发现文章显示不全，和 box 标签以前命名为 noteblock 时的表现一样，可能又命中了 hexo 某些隐藏彩蛋。 %}
+
+## quot
+
+最后更新于 <u>6.7.0</u> 版本
+
+强调引用
+
+适合居中且醒目的引用：{% quot 居中且醒目的引用 %}
+
+支持自定义引号：{% quot 热门话题 icon:hashtag %}
+
+其中自定义引号素材在主题配置文件的 `tag_plugins.quot` 中配置：
+
+```yaml
+tag_plugins:
+  ...
+  # {% quot %}
+  quot:
+    default: # 可以自行配置多种图标方案，支持icons.yml中配置的图片key，也支持直接设置svg/png等文件链接
+      prefix: bxs:quote-left
+      suffix: bxs:quote-right
+    hashtag:
+      prefix: solar:hashtag-square-bold
+```
+
+{% Folding child:codeblock 写法如下 open:true %}
+```
+适合居中且醒目的引用：{% quot 居中且醒目的引用 %}
+支持自定义引号：{% quot 热门话题 icon:hashtag %}、{% quot 特别引用 icon:default %}
+```
+{% endFolding %}
+
+{% quot 特别引用 icon:default %}
+
+> 此外，加上 `el:h2/h3/h4/h5/h6` 可以作为标题使用
+
+### 使用任意图标
+
+您可以通过 prefix 或 suffix 参数设置任意图标或图片，支持 URL 或 icons.yml 文件中配置，例如：
+
+{% quot prefix:solar:planet-bold-duotone 这是一个 icons.yml 配置的示例 %}
+
+{% quot prefix:https://api.iconify.design/fluent-color:chat-bubbles-question-20.svg?color=%23888888 这是一个 url 的示例 suffix:https://api.iconify.design/fluent-color:drafts-20.svg?color=%23888888 %}
+{% Folding child:codeblock 写法如下 open:true %}
+```
+{% quot prefix:solar:planet-bold-duotone 这是一个 icons.yml 配置的示例 %}
+
+{% quot prefix:https://api.iconify.design/line-md:moon-alt-to-sunny-outline-loop-transition.svg 这是一个 url 的示例 suffix:https://api.iconify.design/solar:list-heart-minimalistic-line-duotone.svg %}
+```
+{% endFolding %}
+
+> 虽然丰富多彩的图标可以使其变得更醒目，但是滥用就会导致文章显得杂乱无章。
+
+
+
+
+
 ## Note
+
+最后更新于 <u>6.7.0</u> 版本
 
 备注块
 
 {% Tabs %}
 
 <!-- tab 示例 -->
-```md 最后更新于 <u>6.7.0</u> 版本
+```md 写法如下：
 {% Note [title] content [color:color] %}
 ```
 <!-- tab 写法 -->
@@ -303,9 +403,11 @@ color: red/orange/yellow/green/cyan/blue/purple/light/dark/warning/error
 
 ## box
 
+最后更新于 <u>6.7.0</u> 版本
+
 盒子容器 Note 标签就是使用 box 容器实现的，它们样式是相同的：
 
-```md 最后更新于 <u>6.7.0</u> 版本
+```md 写法如下：
 {% box [title] [color:color] [child:codeblock/tabs] %}
 ...
 {% endbox %}
@@ -427,7 +529,7 @@ func setup() {
 
 ### 嵌套其它标签
 
-例如嵌套一个 `tabs` 标签：
+例如嵌套一个 `Tabs` 标签：
 
 {% box child:tabs %}
 {% Tabs %}
@@ -439,7 +541,7 @@ func setup() {
 <!-- tab 示例代码 -->
 ``````md
 {% box child:tabs %}
-{% tabs %}
+{% Tabs %}
 <!-- tab 图文混排 -->
 {% Image https://unpkg.com/volantis-static@0.0.1761982841160/media/wallpaper/minimalist/2020/004.webp 这是图片描述  download:true ratio:1200/600 %}
 
@@ -448,7 +550,7 @@ func setup() {
 ```md
 这是示例代码
 ```
-{% endtabs %}
+{% endTabs %}
 {% endbox %}
 ``````
 {% endTabs %}
@@ -456,9 +558,11 @@ func setup() {
 
 ## grid
 
+最后更新于 <u>6.7.0</u> 版本
+
 网格分区容器，支持固定列数、动态列数、设置间距和圆角。
 
-{ % quot el:h3 动态列数 % }
+{% quot el:h3 动态列数 %}
 
 默认的布局为【最小宽度为240px】即如果页面宽度大于 480px 则会显示为 2 列，大于 720px 则会显示为 3 列，以此类推，下面是效果：
 
@@ -477,7 +581,7 @@ The Galactic Center is the rotational center of the Milky Way galaxy. Its centra
 
 {% endgrid %}
 
-```md 最后更新于 <u>6.7.0</u> 版本
+```md 示例写法如下：
 {% grid %}
 <!-- cell -->
 {% image https://images.unsplash.com/photo-1653979731557-530f259e0c2c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80 download:https://unsplash.com/photos/bcql6CtuNv0/download?ixid=MnwxMjA3fDB8MXx0b3BpY3x8NnNNVmpUTFNrZVF8fHx8fDJ8fDE2Njg4NDAxMDI&force=true ratio:774/1161 %}
@@ -502,7 +606,7 @@ The Galactic Center is the rotational center of the Milky Way galaxy. Its centra
 {% endgrid %}
 ```
 
-{ % quot el:h3 固定列数 % }
+{% quot el:h3 固定列数 %}
 
 如果要固定为 2 列，可以这样写：
 
@@ -512,7 +616,7 @@ The Galactic Center is the rotational center of the Milky Way galaxy. Its centra
 {% endgrid %}
 ```
 
-{ % quot el:h3 背景样式 % }
+{% quot el:h3 背景样式 %}
 
 普通 Box 样式：
 
@@ -569,7 +673,7 @@ cell 4
 ```
 
 
-{ % quot el:h3 设置间距 % }
+{% quot el:h3 设置间距 %}
 
 默认间距为 `16px`，如果需要修改，可以这样写：
 
@@ -597,7 +701,7 @@ cell 3
 cell 4
 {% endgrid %}
 
-{ % quot el:h3 设置圆角半径 % }
+{% quot el:h3 设置圆角半径 %}
 
 默认圆角半径等同于卡片的圆角半径，如果需要修改，可以这样写：
 
@@ -632,10 +736,12 @@ cell 4
 
 ## Folding
 
+最后更新于 <u>6.7.0</u> 版本
+
 
 折叠容器，折叠块标签的语法格式为：
 
-```md 最后更新于 <u>6.7.0</u> 版本
+```md 写法如下：
 {% Folding title [codeblock:bool] [open:bool] [color:color] %}
 content
 {% endFolding %}
@@ -680,6 +786,8 @@ func test() {
 
 ## folders
 
+最后更新于 <u>6.7.0</u> 版本
+
 多个折叠容器聚合，样式相比 `Folding` 简单一些，适用于多个折叠标签平铺显示的场景，例如题目列表：
 
 {% folders %}
@@ -693,7 +801,7 @@ func test() {
 
 代码如下：
 
-```md 最后更新于 <u>6.7.0</u> 版本
+```md 写法如下：
 {% folders %}
 <!-- folder 题目1 -->
 这是答案1
@@ -709,6 +817,8 @@ func test() {
 
 
 ## Tabs
+
+最后更新于 <u>6.6.0</u> 版本
 
 分栏容器，这个标签移植自 [NexT](https://theme-next.js.org/docs/tag-plugins/tabs.html) 主题，但做了以下修改：
 
@@ -742,7 +852,7 @@ print("hello world")
 
 ### 示例代码
 
-``````md 最后更新于 <u>6.6.0</u> 版本
+``````md 写法如下：
 {% Tabs active:2 align:center %}
 
 <!-- tab 图片 -->
@@ -766,9 +876,11 @@ print("hello world")
 
 ## Gallery
 
+最后更新于 <u>6.7.0</u> 版本
+
 图库功能，其内部只能填写 md 格式的图片。
 
-```md 最后更新于 <u>6.7.0</u> 版本
+```md 写法如下：
 {% Gallery [layout:grid/flow] [size:mix/s/m/l/xl] [ratio:origin/square] %}
 ![title](/xxx.png)
 ![title](/xxx.png)
@@ -802,6 +914,8 @@ layout:flow 瀑布流布局，竖排，适合图片量大的时候使用（体�
 
 ## swiper
 
+最后更新于 <u>6.3.0</u> 版本
+
 轮播容器，默认一张图片是 50% 宽度，通过设置 `width:min` 设置为 25% 宽度，`width:max` 设置为 100% 宽度。
 
 {% swiper effect:cards %}
@@ -811,7 +925,7 @@ layout:flow 瀑布流布局，竖排，适合图片量大的时候使用（体�
 ![](https://images.unsplash.com/photo-1524797905120-92940d3a18d6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80)
 {% endswiper %}
 
-```md 最后更新于 <u>6.3.0</u> 版本
+```md 写法如下：
 {% swiper effect:cards %}
 ![](https://images.unsplash.com/photo-1625171515821-1870deb2743b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80)
 ![](https://images.unsplash.com/photo-1528283648649-33347faa5d9e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80)
@@ -843,10 +957,12 @@ layout:flow 瀑布流布局，竖排，适合图片量大的时候使用（体�
 
 ## site 网站卡片标签
 
+最后更新于 <u>6.2.0</u> 版本
+
 
 网站卡片可以显示网站截图、logo、标题、描述，使用方法和 `友链标签` 一模一样，唯一的区别是数据文件名称为 `sites.yml`，可以和友链数据混用，通过分组过滤实现不一样的效果。
 
-```md 最后更新于 <u>6.2.0</u> 版本
+```md 
 {% sites [筛选方式]:[组名] %}
 ```
 
@@ -883,6 +999,8 @@ layout:flow 瀑布流布局，竖排，适合图片量大的时候使用（体�
 <br>
 
 ## friends 友链标签
+
+最后更新于 <u>6.2.0</u> 版本
 
 您可以在任何位置插入友链，支持静态数据和动态数据，静态数据需要写在数据文件中：
 
@@ -952,7 +1070,7 @@ community_builder:
 
 友链支持分组（白名单模式和黑名单模式）显示：
 
-```md 最后更新于 <u>6.2.0</u> 版本
+```md 
 // 显示 volantis_developer
 {% friends only:volantis_developer %}
 
