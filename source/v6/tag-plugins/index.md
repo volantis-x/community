@@ -463,6 +463,346 @@ footer: # 页脚信息
 
 
 
+## Link
+
+目前处于不可用状态
+
+最后更新于 <u>6.7.0</u> 版本
+
+链接卡片
+
+{% Tabs %}
+
+<!-- tab 效果演示 -->
+{% Link https://volantis.js.org/ %}
+{% Link https://volantis.js.org/ desc:true %}
+<!-- tab 语法格式 -->
+外链卡片标签的语法格式为：
+```
+{% Link href [title] [icon:src] [desc:true/false] %}
+```
+参数含义：
+```yaml
+href: 链接
+title: 可选，手动设置标题（为空时会自动抓取页面标题）
+icon: 可选，手动设置图标（为空时会自动抓取页面图标）
+desc: 可选，是否显示摘要描述，为true时将会显示页面描述
+```
+<!-- tab 写法示例 -->
+```md
+不带摘要的样式：
+{% Link https://volantis.js.org/ %}
+带摘要的样式：
+{% Link https://volantis.js.org/ desc:true %}
+```
+{% endTabs %}
+
+随着网站流量的增加，使用主题默认的 `api` 很可能会导致流量超限，推荐使用自部署的 `api` 抓取网站信息。参考下方仓库的 `README` 。
+
+{% Link https://github.com/xaoxuu/site-info-api %}
+
+并在主题配置中填入你的 `api`
+
+```yaml blog/_config.volantis.yml
+data_services:
+  # {% Link %}
+  siteinfo:
+    # 设置 api 可以自动提取网页标题、图标，服务部署方法：https://github.com/xaoxuu/site-info-api/
+    # 接口测试通过后，把按钮的 href 部分替换成 {href} 之后填写到下方，例如：https://api.xaox.cc/site_info/v1?url={href}
+    api: 
+```
+
+
+## button
+
+最后更新于 <u>6.7.0</u> 版本
+
+按钮这个功能在 {% button 6.7.0 https://github.com/volantis-x/hexo-theme-volantis/ size:xs %} 版本后开始支持。
+
+{% button 文档 https://volantis.js.org/ icon:solar:notebook-bold %} {% button 源码 https://github.com/volantis-x/hexo-theme-volantis/ icon:solar:code-square-bold %} {% button 示例 https://volantis.js.org/examples/ icon:solar:cup-star-bold-duotone %}
+
+```md 写法如下
+{% button 探索 https://volantis.js.org/ icon:solar:planet-bold-duotone %}
+```
+
+```md 语法格式
+{% button text url [icon:key/src] [color:color] [size:xs] %}
+```
+
+```yaml 参数含义
+# 必填
+text: 探索 # 显示文字
+url: # 跳转链接
+# 可选参数
+color: orange # theme, accent, red, orange, yellow, green, cyan, blue, purple
+icon: solar:planet-bold-duotone # 显示图标，支持 icon.yml 中的文件名和外链图标
+size: xs # 按钮尺寸，目前只有两种尺寸：默认是普通大小， xs 是最小号
+```
+
+## okr
+
+最后更新于 <u>6.7.0</u> 版本
+
+目标管理，这是一个 OKR（Objectives and Key Results）示例：
+
+{% okr o1 %}
+
+2088年的小目标：完成 Volantis 42.0 并发布上线
+来自2088年末的复盘：已《基本》实现目标 {% emoji tieba huaji %}
+
+<!-- okr kr1 percent:100 -->
+重构 tag-plugins 和 wiki 系统
+- 当 {% mark KR %} 进度为 100% 时，标签默认显示为 {% mark color:green 已完成 %}
+- 当 {% mark KR %} 未设置进度时，默认为 {% mark 0% %}
+- 当 {% mark O %} 未设置进度时，则显示所有 {% mark KR %} 进度平均值
+
+<!-- okr kr2 percent:90 status:off_track -->
+完成主要页面设计稿
+{% Tabs align:left %}
+<!-- tab 小提示1 -->
+您可以在 _config.yml 文件中修改标签的颜色和文案
+<!-- tab 小提示2 -->
+您可以在 _config.yml 文件中增加任意的标签配置
+{% endTabs %}
+
+<!-- okr kr3 percent:-12 status:unfinished -->
+完成前置准备工作（如果你知道答案，请在留言区帮帮我！🥹）
+{% checkbox 在咸水和海滩之间找一亩地 %}
+{% checkbox 求出圆周率后15位 %}
+{% checkbox 找出宇宙的终极逻辑 %}
+{% checkbox 去地狱里走两步 %}
+
+
+<!-- okr kr-4 status:at_risk -->
+开发、测试和发布
+{% Image https://unpkg.com/volantis-static@0.0.1761982841160/media/org.volantis/blog/Logo-NavBar@3x.png height:64px 支持嵌套插入图片等其它简单组件 ratio:512/512 %}
+
+{% endokr %}
+
+写法如下：
+
+```
+{% okr o1 %}
+
+2088年的小目标：完成 Volantis 42.0 并发布上线
+来自2088年末的复盘：已《基本》实现目标 {% emoji tieba huaji %}
+
+<!-- okr kr1 percent:100 -->
+重构 tag-plugins 和 wiki 系统
+- 当 {% mark KR %} 进度为 100% 时，标签默认显示为 {% mark color:green 已完成 %}
+- 当 {% mark KR %} 未设置进度时，默认为 {% mark 0% %}
+- 当 {% mark O %} 未设置进度时，则显示所有 {% mark KR %} 进度平均值
+
+<!-- okr kr2 percent:90 status:off_track -->
+完成主要页面设计稿
+{% Tabs align:left %}
+<!-- tab 小提示1 -->
+您可以在 _config.yml 文件中修改标签的颜色和文案
+<!-- tab 小提示2 -->
+您可以在 _config.yml 文件中增加任意的标签配置
+{% endTabs %}
+
+<!-- okr kr3 percent:-12 status:unfinished -->
+完成前置准备工作（如果你知道答案，请在留言区帮帮我！🥹）
+{% Checkbox 在咸水和海滩之间找一亩地 %}
+{% Checkbox 求出圆周率后15位 %}
+{% Checkbox 找出宇宙的终极逻辑 %}
+{% Checkbox 去地狱里走两步 %}
+
+<!-- okr kr-4 status:at_risk -->
+开发、测试和发布
+{% Image https://unpkg.com/volantis-static@0.0.1761982841160/media/org.volantis/blog/Logo-NavBar@3x.png height:64px 支持嵌套插入图片等其它简单组件 ratio:512/512 %}
+
+{% endokr %}
+```
+
+
+## copy
+
+目前处于不可用状态
+
+最后更新于 <u>6.7.0</u> 版本
+
+复制行
+
+
+{% Tabs %}
+
+<!-- tab 示例 -->
+对于单行内容，可以使用 `copy` 标签来实现复制功能：
+
+{% copy curl -s https://sh.xaox.cc/install | sh prefix:$ %}
+
+您可以设置 `git:https` 或者 `git:ssh` 或者 `git:gh` 来快速放置一个 git 仓库链接：
+{% copy git:https xaoxuu.com/hexo-theme-stellar prefix:HTTPS %}
+<!-- tab 写法 -->
+```md
+{% copy curl -s https://sh.xaox.cc/install | sh %}
+{% copy curl -s https://sh.xaox.cc/install | sh prefix:$ %}
+{% copy git:https xaoxuu.com/hexo-theme-stellar %}
+{% copy git:ssh xaoxuu.com/hexo-theme-stellar %}
+{% copy git:gh xaoxuu.com/hexo-theme-stellar %}
+```
+{% endTabs %}
+
+
+## Radio
+
+最后更新于 <u>6.7.0</u> 版本
+
+单选
+
+
+{% Tabs %}
+
+<!-- tab 示例 -->
+{% Radio 没有勾选的单选框 %}
+{% Radio checked:true 已勾选的单选框 %}
+<!-- tab 写法 -->
+```
+{% Radio 没有勾选的单选框 %}
+{% Radio checked:true 已勾选的单选框 %}
+```
+```yaml 支持的参数
+checked: true/false
+color: red/orange/yellow/green/cyan/blue/purple
+```
+{% endTabs %}
+
+
+## Checkbox
+
+最后更新于 <u>6.7.0</u> 版本
+
+复选
+
+
+{% Tabs %}
+
+<!-- tab 示例 -->
+{% Checkbox 普通的没有勾选的复选框 %}
+{% Checkbox checked:true 普通的已勾选的复选框 %}
+{% Checkbox symbol:plus color:green checked:true 显示为加号的绿色的已勾选的复选框 %}
+{% Checkbox symbol:minus color:yellow checked:true 显示为减号的黄色的已勾选的复选框 %}
+{% Checkbox symbol:times color:red checked:true 显示为乘号的红色的已勾选的复选框 %}
+<!-- tab 写法 -->
+```md
+{% Checkbox 普通的没有勾选的复选框 %}
+{% Checkbox checked:true 普通的已勾选的复选框 %}
+{% Checkbox symbol:plus color:green checked:true 显示为加号的绿色的已勾选的复选框 %}
+{% Checkbox symbol:minus color:yellow checked:true 显示为减号的黄色的已勾选的复选框 %}
+{% Checkbox symbol:times color:red checked:true 显示为乘号的红色的已勾选的复选框 %}
+```
+
+```yaml 支持的参数
+checked: true/false
+color: red/orange/yellow/green/cyan/blue/purple
+symbol: plus/minus/times
+```
+
+{% endTabs %}
+
+## Audio
+
+最后更新于 <u>6.7.0</u> 版本
+
+音频标签
+
+支持音乐外链以及网易云音乐，网易云支持设置 `type` 以及 `autoplay` 参数。
+
+{% Audio https://github.com/volantis-x/volantis-docs/releases/download/assets/Lumia1020.mp3 %}
+
+{% Audio type:2 netease:1856385686 autoplay:0 %}
+
+```md 写法如下
+{% Audio https://github.com/volantis-x/volantis-docs/releases/download/assets/Lumia1020.mp3 %}
+
+{% Audio netease:1856385686 %}
+
+{% Audio type:2 netease:1856385686 autoplay:0 %}
+```
+
+```yaml 支持的参数
+type: 2/0 # 歌曲/歌单 # 不设置默认为2歌曲模式
+netease: xxx # 歌曲/歌单 id ，具体 id 在网易云网页版的网址链接中寻找 
+autoplay: 1/0 # 自动播放/手动播放 # 不设置默认0手动播放
+```
+
+## Video
+
+最后更新于 <u>6.7.0</u> 版本
+
+视频标签
+
+支持 bilibili, youtube 和视频外链，可设置最大宽度， bili, yt 均可设置宽度和自动播放
+
+{% Video bilibili:BV1GP4y1d729 %}
+
+{% Video youtube:LB8KwiiUGy0 %}
+
+{% grid c:2 %}
+<!-- cell -->
+{% Video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+<!-- cell -->
+{% Video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% endgrid %}
+
+```md 写法如下
+{% Video bilibili:BV1GP4y1d729 %}
+
+{% Video bilibili:BV1GP4y1d729 width:100% autoplay:0 %}
+
+{% Video youtube:LB8KwiiUGy0 %}
+
+{% Video youtube:LB8KwiiUGy0 width:100% autoplay:0 %}
+
+{% grid c:2 %}
+<!-- cell -->
+{% Video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+<!-- cell -->
+{% Video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov width:100% %}
+{% endgrid %}
+```
+
+```yaml 支持的参数
+width: 500px # 须带单位 80% 20em 100mm...
+autoplay: 1/0 # 自动播放/手动播放 # 不设置默认为0手动播放
+```
+
+> 目前 bilibili 的 iframe 标签不能放进 grid 容器里，原因未知。
+
+## chat
+
+未经测试，应该处于不可用状态
+
+最后更新于 <u>6.7.0</u> 版本
+
+聊天标签
+
+非常感谢 [@且听风吟](https://github.com/HcGys) 开发了精美的聊天风格标签，并提供了详细的使用文档。内置qq和微信风格，可配单聊、群聊、user、设备等，支持文本、icon、图片、语音、视频、文件和链接。user可在chat_users.yaml中统一设置，也可在具体使用时单独设置。
+
+- 示例：[https://stellar.listentothewind.cn](https://stellar.listentothewind.cn/blog/2023-09-22-%E6%B5%8B%E8%AF%95/#chat)
+- 文档：https://github.com/xaoxuu/hexo-theme-stellar/pull/560
+
+
+
+
+## Frame
+
+最后更新于 <u>6.7.0</u> 版本
+
+设备框架
+
+
+{% Tabs %}
+<!-- tab 示例 -->
+{% Frame iphone11 img:https://res.xaox.cc/gh/cdn-x/wiki@main/prohud/toast/demo-loading.png video:https://res.xaox.cc/gh/cdn-x/wiki@main/prohud/toast/demo-loading.mp4 focus:top %}
+<!-- tab 写法 -->
+```md
+{% Frame iphone11 img:https://res.xaox.cc/gh/cdn-x/wiki@main/prohud/toast/demo-loading.png video:https://res.xaox.cc/gh/cdn-x/wiki@main/prohud/toast/demo-loading.mp4 focus:top %}
+```
+{% endTabs %}
+
 
 
 
