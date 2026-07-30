@@ -529,7 +529,7 @@
     </url>
 
     <url>
-        <loc>https://volantis.js.org/test/topic3/</loc>
+        <loc>https://volantis.js.org/test/topic4/</loc>
         <lastmod>2013-12-24T00:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -537,7 +537,7 @@
     </url>
 
     <url>
-        <loc>https://volantis.js.org/test/topic4/</loc>
+        <loc>https://volantis.js.org/test/topic3/</loc>
         <lastmod>2013-12-24T00:00:00.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
