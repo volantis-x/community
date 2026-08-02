@@ -309,6 +309,7 @@ https://github.com/volantis-x/community/blob/main/gulpfile.js
 const gulp = require('gulp');
 const cleanCSS = require('gulp-clean-css');
 const htmlmin = require('gulp-html-minifier-terser');
+const htmlclean = require('gulp-htmlclean');
 const terser = require('gulp-terser');
 const sourcemaps = require('gulp-sourcemaps');
 
@@ -324,6 +325,7 @@ const minify_css = () => (
 // 压缩html文件
 const minify_html = () => (
     gulp.src(['./public/**/*.html','!./public/{lib,lib/**}','!./public/{libs,libs/**}','!./public/{media,media/**}'])
+        .pipe(htmlclean())
         .pipe(htmlmin({
             removeComments: true,
             minifyJS: true,
