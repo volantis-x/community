@@ -325,7 +325,10 @@ const minify_css = () => (
 // 压缩html文件
 const minify_html = () => (
     gulp.src(['./public/**/*.html','!./public/{lib,lib/**}','!./public/{libs,libs/**}','!./public/{media,media/**}'])
-        .pipe(htmlclean())
+        .pipe(htmlclean({
+      // 保护 SVG 相关属性
+      protect: /<\s*svg[\s\S]*?\/\s*svg\s*>/gi,
+    }))
         .pipe(htmlmin({
             removeComments: true,
             minifyJS: true,
