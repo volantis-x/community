@@ -200,6 +200,47 @@ marked:
     nofollow: true
 
 jsonContent:
+  meta: true
+  drafts: false
+  file: content.json
+  keywords: undefined
+  dateFormat: undefined
+  pages:
+    content: true
+    description: true
+    headimg: true
+    title: true
+    slug: true
+    date: true
+    updated: true
+    comments: true
+    path: true
+    link: true
+    permalink: true
+    excerpt: true
+    keywords: false
+    text: true
+    raw: false
+    author: true
+  posts:
+    content: true
+    description: true
+    headimg: true
+    title: true
+    slug: true
+    date: true
+    updated: true
+    comments: true
+    path: true
+    link: true
+    permalink: true
+    excerpt: true
+    keywords: false
+    text: true
+    raw: false
+    author: true
+    categories: true
+    tags: true
   ignore:
     paths:
       - v5/
