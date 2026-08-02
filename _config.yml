@@ -204,8 +204,7 @@ jsonContent:
   drafts: false
   file: content.json
   pages:
-    content: true
-    description: true
+    content: false
     headimg: true
     title: true
     slug: true
@@ -221,8 +220,7 @@ jsonContent:
     raw: false
     author: true
   posts:
-    content: true
-    description: true
+    content: false
     headimg: true
     title: true
     slug: true
