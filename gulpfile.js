@@ -24,6 +24,7 @@ const minify_html = () => (
       minifyJS: true,
       minifyCSS: true,
       minifyURLs: true,
+      ignoreCustomFragments: [/<svg[\s\S]*?<\/svg>/],  // 跳过SVG标签
     }))
     .pipe(gulp.dest('./public'))
 )
