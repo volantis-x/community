@@ -309,7 +309,6 @@ https://github.com/volantis-x/community/blob/main/gulpfile.js
 const gulp = require('gulp');
 const cleanCSS = require('gulp-clean-css');
 const htmlmin = require('gulp-html-minifier-terser');
-const htmlclean = require('gulp-htmlclean');
 const terser = require('gulp-terser');
 const sourcemaps = require('gulp-sourcemaps');
 
@@ -325,12 +324,12 @@ const minify_css = () => (
 // 压缩html文件
 const minify_html = () => (
     gulp.src(['./public/**/*.html','!./public/{lib,lib/**}','!./public/{libs,libs/**}','!./public/{media,media/**}'])
-        .pipe(htmlclean())
         .pipe(htmlmin({
             removeComments: true,
             minifyJS: true,
             minifyCSS: true,
             minifyURLs: true,
+            ignoreCustomFragments: [/<svg[\s\S]*?<\/svg>/],  // 跳过SVG标签
         }))
         .pipe(gulp.dest('./public'))
 )
@@ -364,7 +363,7 @@ gulp
 
 ## 尝试使用 babel 转换兼容 ES6
 
-如果想要兼容旧版浏览器，可以尝试使用 [gulp-babel](https://github.com/babel/gulp-babel) 将 ES6 转换为 ES5。
+如果想要兼容旧版浏览器，可以尝试使用 [gulp-babel](https://github.com/babel/gulp-babel) 将 ES6 转换为 ES5。最新版本的babel已默认不再转换es5。
 
 ### 安装 gulp-babel 工具
 
