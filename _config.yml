@@ -203,8 +203,6 @@ jsonContent:
   meta: true
   drafts: false
   file: content.json
-  keywords: undefined
-  dateFormat: undefined
   pages:
     content: true
     description: true
