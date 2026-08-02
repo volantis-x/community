@@ -619,9 +619,7 @@ size: xs # 按钮尺寸，目前只有两种尺寸：默认是普通大小， xs
 
 ## copy
 
-目前处于不可用状态
-
-最后更新于 <u>6.7.0</u> 版本
+最后更新于 <u>6.8.0</u> 版本
 
 复制行
 
@@ -634,14 +632,14 @@ size: xs # 按钮尺寸，目前只有两种尺寸：默认是普通大小， xs
 {% copy curl -s https://sh.xaox.cc/install | sh prefix:$ %}
 
 您可以设置 `git:https` 或者 `git:ssh` 或者 `git:gh` 来快速放置一个 git 仓库链接：
-{% copy git:https xaoxuu.com/hexo-theme-stellar prefix:HTTPS %}
+{% copy git:https volantis-x/hexo-theme-volantis prefix:HTTPS %}
 <!-- tab 写法 -->
 ```md
 {% copy curl -s https://sh.xaox.cc/install | sh %}
 {% copy curl -s https://sh.xaox.cc/install | sh prefix:$ %}
-{% copy git:https xaoxuu.com/hexo-theme-stellar %}
-{% copy git:ssh xaoxuu.com/hexo-theme-stellar %}
-{% copy git:gh xaoxuu.com/hexo-theme-stellar %}
+{% copy git:https volantis-x/hexo-theme-volantis %}
+{% copy git:ssh volantis-x/hexo-theme-volantis %}
+{% copy git:gh volantis-x/hexo-theme-volantis %}
 ```
 {% endTabs %}
 
