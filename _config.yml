@@ -200,41 +200,25 @@ marked:
     nofollow: true
 
 jsonContent:
-  meta: true
+  meta: false
   drafts: false
   file: content.json
   pages:
-    content: false
-    headimg: true
     title: true
-    slug: true
+    permalink: true
     date: true
     updated: true
-    comments: true
-    path: true
-    link: true
-    permalink: true
-    excerpt: true
-    keywords: false
     text: true
-    raw: false
-    author: true
+    excerpt: true
+    headimg: true
   posts:
-    content: false
-    headimg: true
     title: true
-    slug: true
+    permalink: true
     date: true
     updated: true
-    comments: true
-    path: true
-    link: true
-    permalink: true
-    excerpt: true
-    keywords: false
     text: true
-    raw: false
-    author: true
+    excerpt: true
+    headimg: true
     categories: true
     tags: true
   ignore:
