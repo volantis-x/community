@@ -465,21 +465,45 @@ footer: # 页脚信息
 
 ## Link
 
-目前处于不可用状态
+最后更新于 <u>6.8.0</u> 版本
 
-最后更新于 <u>6.7.0</u> 版本
+```md
+{% Link title url [icon:src] %}
+
+title: 标题
+url: 链接
+icon: 可选，图标
+```
+
+### 演示效果
+
+{% Link 这是标题 https://volantis.js.org/ icon:https://unpkg.com/volantis-static@0.0.1761982841160/media/org.volantis/blog/Logo-NavBar@3x.png %}
+
+### 上述示例的源码
+
+```md example:
+{% Link 这是标题 https://volantis.js.org/ icon:https://unpkg.com/volantis-static@0.0.1761982841160/media/org.volantis/blog/Logo-NavBar@3x.png %}
+```
+
+
+
+
+
+## xlink
+
+最后更新于 <u>6.8.0</u> 版本
 
 链接卡片
 
 {% Tabs %}
 
 <!-- tab 效果演示 -->
-{% Link https://volantis.js.org/ %}
-{% Link https://volantis.js.org/ desc:true %}
+{% xlink https://volantis.js.org/ %}
+{% xlink https://volantis.js.org/ desc:true %}
 <!-- tab 语法格式 -->
 外链卡片标签的语法格式为：
 ```
-{% Link href [title] [icon:src] [desc:true/false] %}
+{% xlink href [title] [icon:src] [desc:true/false] %}
 ```
 参数含义：
 ```yaml
@@ -491,26 +515,27 @@ desc: 可选，是否显示摘要描述，为true时将会显示页面描述
 <!-- tab 写法示例 -->
 ```md
 不带摘要的样式：
-{% Link https://volantis.js.org/ %}
+{% xlink https://volantis.js.org/ %}
 带摘要的样式：
-{% Link https://volantis.js.org/ desc:true %}
+{% xlink https://volantis.js.org/ desc:true %}
 ```
 {% endTabs %}
 
 随着网站流量的增加，使用主题默认的 `api` 很可能会导致流量超限，推荐使用自部署的 `api` 抓取网站信息。参考下方仓库的 `README` 。
 
-{% Link https://github.com/xaoxuu/site-info-api %}
+{% Link site-info-api https://github.com/xaoxuu/site-info-api %}
 
 并在主题配置中填入你的 `api`
 
 ```yaml blog/_config.volantis.yml
 data_services:
-  # {% Link %}
+  # {% xlink %}
   siteinfo:
     # 设置 api 可以自动提取网页标题、图标，服务部署方法：https://github.com/xaoxuu/site-info-api/
     # 接口测试通过后，把按钮的 href 部分替换成 {href} 之后填写到下方，例如：https://api.xaox.cc/site_info/v1?url={href}
     api: 
 ```
+
 
 
 ## button
