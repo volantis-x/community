@@ -1612,6 +1612,118 @@ layout:flow 瀑布流布局，竖排，适合图片量大的时候使用（体�
 
 {% endTabs %}
 
+## Timeline
+
+最后更新于 <u>6.8.0</u> 版本
+
+时间线
+
+支持静态和动态时间线数据源：
+- 静态数据
+- github issues 支持多种筛选参数，详见 [API](https://docs.github.com/en/rest/issues/issues?apiVersion=2022-11-28#list-issues-assigned-to-the-authenticated-user)
+- github releases 支持多种筛选参数，详见 [API](https://docs.github.com/en/rest/releases/releases?apiVersion=2022-11-28#list-releases)
+- gitea issues 支持多种筛选参数，详见 [API](https://docs.gitea.com/zh-cn/api/1.20/#tag/issue/operation/issueListIssues)
+- gitea releases 支持多种筛选参数，详见 [API](https://docs.gitea.com/zh-cn/api/1.20/#tag/repository/operation/repoListReleases)
+- memos
+- ...
+
+常见的使用场景请看这篇文章：
+
+{% Link 时间线标签的N种用法 https://xaoxuu.com/blog/20221029/ %}
+
+
+### 静态时间线
+
+静态数据是写死在 `md` 源文件中的，在 `deploy` 时就已经确定了。
+
+{% Timeline %}
+<!-- node 2021 年 2 月 16 日 -->
+主要部分功能已经开发的差不多了。
+{% Image https://res.xaox.cc/gh/cdn-x/wiki@main/stellar/photos/hello@1x.png width:300px ratio:1179/390 %}
+<!-- node 2021 年 2 月 11 日 -->
+今天除夕，也是生日，一个人在外地过年+过生日，熬夜开发新主题，尽量在假期结束前放出公测版。
+{% endTimeline %}
+
+```md 写法如下
+{% Timeline %}
+<!-- node 2021 年 2 月 16 日 -->
+主要部分功能已经开发的差不多了。
+{% Image https://res.xaox.cc/gh/cdn-x/wiki@main/stellar/photos/hello@1x.png width:300px ratio:1179/390 %}
+<!-- node 2021 年 2 月 11 日 -->
+今天除夕，也是生日，一个人在外地过年+过生日，熬夜开发新主题，尽量在假期结束前放出公测版。
+{% endTimeline %}
+```
+
+### 动态时间线
+
+{% Tabs active:1 %}
+
+<!-- tab 动态说说 -->
+
+动态数据是从 GitHub Issues 中拉取的，使用方法为：
+
+1. 建一个仓库
+2. 创建一个 `issue` 并添加一个 `label` 进行测试
+3. 写 `Timeline` 标签时加上 `api:https://api.github.com/repos/your-name/your-repo/issues`
+
+例如：
+```md _posts/xxx.md
+{% Timeline api:https://api.github.com/repos/xaoxuu/blog-timeline/issues?direction=asc&per_page=3 %}{% endtimeline %}
+```
+
+效果如下：
+{% Timeline api:https://raw.github.xaox.cc/xaoxuu/ghapi-json-generator/refs/heads/output/v2/repos/xaoxuu/blog-timeline/issues%3Fper_page%3D5/data.json %}{% endTimeline %}
+
+<!-- tab 微博动态 -->
+
+1. fork shaoyaoqian/WeiboSpider 的爬虫，修改自己的仓库名
+2. 修改 `.github/workflows/main.yml` 中的微博ID为你想爬取的ID，修改完后每天会自动爬取你的微博，存储为 json 文件，输出文件在 {% mark output %} 分支
+
+```md _posts/xxx.md
+{% Timeline limit:20 type:weibo api:你的json文件地址 %}{% endTimeline %}
+```
+
+{% endTabs %}
+
+### 静态 + 动态
+
+用法同静态和动态单独使用时一样，例如：
+
+```
+{% Timeline reversed:true api:https://raw.github.xaox.cc/xaoxuu/ghapi-json-generator/refs/heads/output/v2/repos/xaoxuu/blog-timeline/issues%3Fper_page%3D5/data.json %}
+<!-- node 这条内容为静态数据 -->
+这条内容为静态数据，静态数据在 `deploy` 时就已经确定了。
+{% endTimeline %}
+```
+
+### 数据筛选
+
+{% folders %}
+<!-- folder 只显示某个人的数据 -->
+{% Timeline user:xaoxuu api:https://api.github.xaox.cc/repos/volantis-x/hexo-theme-volantis/issues %}{% endTimeline %}
+<!-- folder 筛选最近3条todo -->
+{% Timeline api:https://api.github.xaox.cc/repos/xaoxuu/hexo-theme-stellar/issues?labels=todo&per_page=3 %}{% endTimeline %}
+<!-- folder 筛选评论最多的3条建议 -->
+{% Timeline api:https://api.github.xaox.cc/repos/volantis-x/hexo-theme-volantis/issues?labels=feature-request&per_page=3&sort=comments %}{% endTimeline %}
+{% endfolders %}
+
+上述示例代码如下：
+
+```
+{% folders %}
+<!-- 只显示某个人的数据 -->
+{% Timeline user:xaoxuu api:https://api.github.xaox.cc/repos/volantis-x/hexo-theme-volantis/issues %}{% endTimeline %}
+<!-- 筛选最近3条todo -->
+{% Timeline api:https://api.github.xaox.cc/repos/xaoxuu/hexo-theme-stellar/issues?labels=todo&per_page=3 %}{% endTimeline %}
+<!-- 筛选评论最多的3条建议 -->
+{% Timeline api:https://api.github.xaox.cc/repos/volantis-x/hexo-theme-volantis/issues?labels=feature-request&per_page=3&sort=comments %}{% endTimeline %}
+{% endfolders %}
+```
+
+更多用法详见：
+
+{% Link GitHub&nbsp;REST&nbsp;API https://docs.github.com/en/rest/issues/issues#list-issues-assigned-to-the-authenticated-user %}
+
 ## albums
 
 最后更新于 <u>6.8.0</u> 版本
@@ -1671,10 +1783,11 @@ layout:flow 瀑布流布局，竖排，适合图片量大的时候使用（体�
 {% endfolding %}
 
 
-## site 网站卡片标签
+## site
 
 最后更新于 <u>6.2.0</u> 版本
 
+网站卡片标签
 
 网站卡片可以显示网站截图、logo、标题、描述，使用方法和 `友链标签` 一模一样，唯一的区别是数据文件名称为 `sites.yml`，可以和友链数据混用，通过分组过滤实现不一样的效果。
 
@@ -1714,9 +1827,11 @@ layout:flow 瀑布流布局，竖排，适合图片量大的时候使用（体�
 
 <br>
 
-## friends 友链标签
+## friends
 
 最后更新于 <u>6.2.0</u> 版本
+
+友链标签
 
 您可以在任何位置插入友链，支持静态数据和动态数据，静态数据需要写在数据文件中：
 
