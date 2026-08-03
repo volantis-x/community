@@ -1612,6 +1612,63 @@ layout:flow 瀑布流布局，竖排，适合图片量大的时候使用（体�
 
 {% endTabs %}
 
+## navbar
+
+最后更新于 <u>6.8.0</u> 版本
+
+导航栏
+
+文章内也可以插入一个导航栏：
+
+```md
+{% navbar active:/wiki/ [文章](/) [项目](/wiki/) [留言](#comments) [GitHub](https://github.com/xaoxuu/) %}
+```
+
+> active 传入要高亮的那个按钮的 url
+
+{% navbar active:/wiki/ [文章](/) [项目](/wiki/) [留言](#comments) [GitHub](https://github.com/) %}
+
+
+## banner
+
+最后更新于 <u>6.8.0</u> 版本
+
+横幅容器
+
+### 用于独立页面顶部
+
+{% banner 随记 bg:https://res.xaox.cc/gh/cdn-x/xaoxuu@main/posts/20250706164631268.webp %}
+{% navbar active:/notes/ [随记](/notes/) [收藏](/bookmark/) %}
+{% endbanner %}
+
+```md 写法如下：
+{% banner 随记 bg:https://res.xaox.cc/gh/cdn-x/xaoxuu@main/posts/20250706164631268.webp %}
+{% navbar active:/notes/ [随记](/notes/) [收藏](/bookmark/) %}
+{% endbanner %}
+```
+
+### 用于用户个人资料页
+
+{% banner 某某 这是个人简介 avatar:https://res.xaox.cc/gh/cdn-x/xaoxuu@main/avatar/classic.webp bg:https://res.xaox.cc/gh/cdn-x/xaoxuu@main/posts/20250706163949681.webp %}
+{% endbanner %}
+
+```md 写法如下：
+{% banner 某某 这是个人简介 avatar:https://res.xaox.cc/gh/cdn-x/xaoxuu@main/avatar/classic.webp bg:https://res.xaox.cc/gh/cdn-x/xaoxuu@main/posts/20250706163949681.webp %}
+{% endbanner %}
+```
+
+### 用作文章摘要卡片
+
+设置 link 可以让整个卡片响应点击事件，实现点击跳转到对应文章：
+
+```md
+{% banner 博客进阶：自动化部署 本文讲了如何利用脚本和 GitHub Actions 简化博客搭建和部署流程，提高效率。 bg:https://res.xaox.cc/gh/cdn-x/xaoxuu@main/posts/20250706160404696.webp link:/blog/20221126/ %}
+{% endbanner %}
+```
+
+{% banner 博客进阶：自动化部署 本文讲了如何利用脚本和 GitHub Actions 简化博客搭建和部署流程，提高效率。 bg:https://res.xaox.cc/gh/cdn-x/xaoxuu@main/posts/20250706160404696.webp link:/blog/20221126/ %}
+{% endbanner %}
+
 ## Timeline
 
 最后更新于 <u>6.8.0</u> 版本
@@ -1672,7 +1729,9 @@ layout:flow 瀑布流布局，竖排，适合图片量大的时候使用（体�
 ```
 
 效果如下：
+{% Folding color:yellow 示例 %}
 {% Timeline api:https://raw.github.xaox.cc/xaoxuu/ghapi-json-generator/refs/heads/output/v2/repos/xaoxuu/blog-timeline/issues%3Fper_page%3D5/data.json %}{% endTimeline %}
+{% endFolding %}
 
 <!-- tab 微博动态 -->
 
