@@ -1,0 +1,21 @@
+user1:
+  name: 且听风吟
+  avatar: https://avatars.githubusercontent.com/u/93642775?v=4&size=64
+  label:
+    text: 群主
+    textColor: white
+    bgColor: '#2196f3'
+user2:
+  name: 聆听的访友
+  avatar: https://gcore.jsdelivr.net/gh/HcGys/DataSource/stellar/img/twikoo-default-avatar.jpeg
+  label:
+    text: 管理员
+    textColor: white
+    bgColor: '#f44336'
+user3:
+  name: custom2
+  avatar: https://gcore.jsdelivr.net/gh/HcGys/DataSource/stellar/img/twikoo-default-avatar.jpeg
+  label:
+    text: 普通用户
+    textColor: white
+    bgColor: '#2196f3'
