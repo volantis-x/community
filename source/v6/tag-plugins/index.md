@@ -796,9 +796,9 @@ autoplay: 1/0 # 自动播放/手动播放 # 不设置默认为0手动播放
 
 ## chat
 
-未经测试，应该处于不可用状态
+目前是半成品，处于不可用状态
 
-最后更新于 <u>6.7.0</u> 版本
+最后更新于 <u>6.8.0</u> 版本
 
 聊天标签
 
@@ -807,7 +807,170 @@ autoplay: 1/0 # 自动播放/手动播放 # 不设置默认为0手动播放
 - 示例：[https://stellar.listentothewind.cn](https://stellar.listentothewind.cn/blog/2023-09-22-%E6%B5%8B%E8%AF%95/#chat)
 - 文档：https://github.com/xaoxuu/hexo-theme-stellar/pull/560
 
+{% Folding color:yellow 示例 %}
 
+{% chat iphone11 style:qq title:这是一个群聊 me:user1 %}
+
+user1:
+    label:
+        text: 春风不语，即随本心
+
+<!-- chattip 2024年5月22日 21:43 -->
+<!-- chatcell user:user1 md:你好 tag:1 -->
+<!-- chatcell user:user2  md:Are U OK quote:1 -->
+<!-- chatcell user:user1 image:https://s2.loli.net/2024/05/06/tU5mxiDagzkZH4O.jpg tag:2 -->
+<!-- chatcell user:user1 emoji:ablobcatrainbow source:blobcat -->
+<!-- chatcell user:user2  emoji:爱你 -->
+<!-- chattip 2024年5月28日 21:43 -->
+<!-- chatcell user:user1  link:https://xaoxuu.com/blog/20221029/ -->
+<!-- chatcell user:user2  link:https://github.com/xaoxuu/site-info-api from:Google浏览器 -->
+<!-- chatcell user:user2  link:https://stellar.listentothewind.cn/blog/2023-09-22-%E6%B5%8B%E8%AF%95/ from:Google浏览器 -->
+<!-- chatcell user:user2  link:https://inkss.cn/post/8fe38c87/ from:Firefox浏览器 -->
+<!-- chatcell user:user1 voice:https://down.ear0.com:3321/index/preview?soundid=35378&type=mp3&audio=sound.mp3&token=czovL2Rvd24uZWFyMC5jb206MzMyMS9pbmRleC9wcmV2aWV3P3NvdW5kaWQ9MzUzNzgmdHlwZT1tcDMmYXVkaW89c291bmQubXAz&sound=audio.mp3 -->
+<!-- chatcell user:user2  voice:https://img.tukuppt.com/newpreview_music/09/00/86/5c8957e520f937335.mp3 -->
+<!-- chatcell user:user1 video:https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov -->
+<!-- chatcell user:user1 file:https://raw.githubusercontent.com/HcGys/friends-rss-generator/refs/heads/main/vercel.json -->
+<!-- chatcell user:user2  file:https://raw.githubusercontent.com/HcGys/site-info-api/refs/heads/main/api/v1/index.js -->
+<!-- chatcell user:user2  file:https://inkss.cn/img/avatar.png -->
+<!-- chatcell user:user2  md:Are U OK quote:1 -->
+<!-- chatcell user:user2  md:欢迎欢迎 quote:2 -->
+<!-- chatcell 
+user:user1 
+md:
+这是一个图片![](https://s2.loli.net/2024/05/06/tU5mxiDagzkZH4O.jpg)
+tag:3
+-->
+<!-- chatcell 
+user:user2
+md:
+好哦
+quote:3
+-->
+
+{% endchat %}
+
+{% chat iphone11 style:qq title:且听风吟 scene:person me:user1 %}
+
+<!-- chattip 2024年5月22日 21:43 -->
+<!-- chatcell user:user1 md:你好 -->
+<!-- chatcell user:user2  md:Are U OK -->
+<!-- chatcell user:user1 image:https://s2.loli.net/2024/05/06/tU5mxiDagzkZH4O.jpg -->
+<!-- chatcell user:user1 emoji:ablobcatrainbow source:blobcat -->
+<!-- chatcell user:user2  emoji:爱你 -->
+<!-- chatcell user:user1  link:https://xaoxuu.com/blog/20221029/ -->
+<!-- chatcell user:user2  link:https://github.com/xaoxuu/site-info-api from:Google浏览器 -->
+<!-- chatcell user:user2  link:https://stellar.listentothewind.cn/blog/2023-09-22-%E6%B5%8B%E8%AF%95/ from:Google浏览器 -->
+<!-- chatcell user:user2  link:https://inkss.cn/post/8fe38c87/ from:Firefox浏览器 -->
+<!-- chatcell user:user1 voice:https://down.ear0.com:3321/index/preview?soundid=35378&type=mp3&audio=sound.mp3&token=czovL2Rvd24uZWFyMC5jb206MzMyMS9pbmRleC9wcmV2aWV3P3NvdW5kaWQ9MzUzNzgmdHlwZT1tcDMmYXVkaW89c291bmQubXAz&sound=audio.mp3 -->
+<!-- chatcell user:user2  voice:https://img.tukuppt.com/newpreview_music/09/00/86/5c8957e520f937335.mp3 -->
+<!-- chatcell user:user1 video:https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov -->
+<!-- chatcell user:user1 file:https://raw.githubusercontent.com/HcGys/friends-rss-generator/refs/heads/main/vercel.json -->
+<!-- chatcell user:user2  file:https://raw.githubusercontent.com/HcGys/site-info-api/refs/heads/main/api/v1/index.js -->
+<!-- chatcell user:user2  file:https://inkss.cn/img/avatar.png -->
+
+{% endchat %}
+
+{% chat title:且听风吟 scene:person me:user1 %}
+
+<!-- chattip 2024年5月22日 21:43 -->
+<!-- chatcell user:user1 md:你好 -->
+<!-- chatcell user:user2  md:Are U OK -->
+<!-- chatcell user:user1 image:https://s2.loli.net/2024/05/06/tU5mxiDagzkZH4O.jpg -->
+<!-- chatcell user:user1 emoji:ablobcatrainbow source:blobcat -->
+<!-- chatcell user:user2  emoji:爱你 -->
+<!-- chatcell user:user1  link:https://xaoxuu.com/blog/20221029/ -->
+<!-- chatcell user:user2  link:https://github.com/xaoxuu/site-info-api from:Google浏览器 -->
+<!-- chatcell user:user2  link:https://stellar.listentothewind.cn/blog/2023-09-22-%E6%B5%8B%E8%AF%95/ from:Google浏览器 -->
+<!-- chatcell user:user2  link:https://inkss.cn/post/8fe38c87/ from:Firefox浏览器 -->
+<!-- chatcell user:user1 voice:https://down.ear0.com:3321/index/preview?soundid=35378&type=mp3&audio=sound.mp3&token=czovL2Rvd24uZWFyMC5jb206MzMyMS9pbmRleC9wcmV2aWV3P3NvdW5kaWQ9MzUzNzgmdHlwZT1tcDMmYXVkaW89c291bmQubXAz&sound=audio.mp3 -->
+<!-- chatcell user:user2  voice:https://img.tukuppt.com/newpreview_music/09/00/86/5c8957e520f937335.mp3 -->
+<!-- chatcell user:user1 video:https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov -->
+<!-- chatcell user:user1 file:https://raw.githubusercontent.com/HcGys/friends-rss-generator/refs/heads/main/vercel.json -->
+<!-- chatcell user:user2  file:https://raw.githubusercontent.com/HcGys/site-info-api/refs/heads/main/api/v1/index.js -->
+<!-- chatcell user:user2  file:https://inkss.cn/img/avatar.png -->
+
+{% endchat %}
+
+{% chat iphone11 style:wechat title:且听风吟 scene:person me:user1 %}
+
+<!-- chattip 2024年5月22日 21:43 -->
+<!-- chatcell user:user1 md:你好 tag:1 -->
+<!-- chatcell user:user2  md:Are U OK quote:1 -->
+<!-- chatcell user:user1 image:https://s2.loli.net/2024/05/06/tU5mxiDagzkZH4O.jpg tag:2 -->
+<!-- chatcell user:user1 emoji:ablobcatrainbow source:blobcat -->
+<!-- chatcell user:user2  emoji:爱你 -->
+<!-- chatcell user:user1  link:https://xaoxuu.com/blog/20221029/ -->
+<!-- chatcell user:user2  link:https://github.com/xaoxuu/site-info-api from:Google浏览器 -->
+<!-- chatcell user:user2  link:https://stellar.listentothewind.cn/blog/2023-09-22-%E6%B5%8B%E8%AF%95/ from:Google浏览器 -->
+<!-- chatcell user:user2  link:https://inkss.cn/post/8fe38c87/ from:Firefox浏览器 -->
+<!-- chatcell user:user1 voice:https://down.ear0.com:3321/index/preview?soundid=35378&type=mp3&audio=sound.mp3&token=czovL2Rvd24uZWFyMC5jb206MzMyMS9pbmRleC9wcmV2aWV3P3NvdW5kaWQ9MzUzNzgmdHlwZT1tcDMmYXVkaW89c291bmQubXAz&sound=audio.mp3 -->
+<!-- chatcell user:user2  voice:https://img.tukuppt.com/newpreview_music/09/00/86/5c8957e520f937335.mp3 -->
+<!-- chatcell user:user1 video:https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov -->
+<!-- chatcell user:user1 file:https://raw.githubusercontent.com/HcGys/friends-rss-generator/refs/heads/main/vercel.json -->
+<!-- chatcell user:user2  file:https://raw.githubusercontent.com/HcGys/site-info-api/refs/heads/main/api/v1/index.js -->
+<!-- chatcell user:user2  file:https://inkss.cn/img/avatar.png -->
+<!-- chatcell user:user2  md:Are U OK quote:1 -->
+<!-- chatcell user:user2  md:欢迎欢迎 quote:2 -->
+<!-- chatcell 
+user:user1 
+md:
+这是一个图片
+![](https://s2.loli.net/2024/05/06/tU5mxiDagzkZH4O.jpg)
+tag:3
+-->
+<!-- chatcell 
+user:user2
+md:
+好哦
+quote:3
+-->
+
+{% endchat %}
+
+{% chat iphone11 style:wechat title:且听风吟 scene:group me:user1 %}
+
+<!-- chattip 2024年5月22日 21:43 -->
+<!-- chatcell user:user1 md:你好 -->
+<!-- chatcell user:user2  md:Are U OK -->
+<!-- chatcell user:user1 image:https://s2.loli.net/2024/05/06/tU5mxiDagzkZH4O.jpg -->
+<!-- chatcell user:user1 emoji:ablobcatrainbow source:blobcat -->
+<!-- chatcell user:user2  emoji:爱你 -->
+<!-- chatcell user:user1  link:https://xaoxuu.com/blog/20221029/ -->
+<!-- chatcell user:user2  link:https://github.com/xaoxuu/site-info-api from:Google浏览器 -->
+<!-- chatcell user:user2  link:https://stellar.listentothewind.cn/blog/2023-09-22-%E6%B5%8B%E8%AF%95/ from:Google浏览器 -->
+<!-- chatcell user:user2  link:https://inkss.cn/post/8fe38c87/ from:Firefox浏览器 -->
+<!-- chatcell user:user1 voice:https://down.ear0.com:3321/index/preview?soundid=35378&type=mp3&audio=sound.mp3&token=czovL2Rvd24uZWFyMC5jb206MzMyMS9pbmRleC9wcmV2aWV3P3NvdW5kaWQ9MzUzNzgmdHlwZT1tcDMmYXVkaW89c291bmQubXAz&sound=audio.mp3 -->
+<!-- chatcell user:user2  voice:https://img.tukuppt.com/newpreview_music/09/00/86/5c8957e520f937335.mp3 -->
+<!-- chatcell user:user1 video:https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov -->
+<!-- chatcell user:user1 file:https://raw.githubusercontent.com/HcGys/friends-rss-generator/refs/heads/main/vercel.json -->
+<!-- chatcell user:user2  file:https://raw.githubusercontent.com/HcGys/site-info-api/refs/heads/main/api/v1/index.js -->
+<!-- chatcell user:user2  file:https://inkss.cn/img/avatar.png -->
+
+{% endchat %}
+
+{% chat style:wechat title:且听风吟 scene:person me:user1 %}
+
+<!-- chattip 2024年5月22日 21:43 -->
+<!-- chatcell user:user1 md:你好 -->
+<!-- chatcell user:user2  md:Are U OK -->
+<!-- chatcell user:user1 image:https://s2.loli.net/2024/05/06/tU5mxiDagzkZH4O.jpg -->
+<!-- chatcell user:user1 emoji:ablobcatrainbow source:blobcat -->
+<!-- chatcell user:user2  emoji:爱你 -->
+<!-- chatcell user:user1  link:https://xaoxuu.com/blog/20221029/ -->
+<!-- chatcell user:user2  link:https://github.com/xaoxuu/site-info-api from:Google浏览器 -->
+<!-- chatcell user:user2  link:https://stellar.listentothewind.cn/blog/2023-09-22-%E6%B5%8B%E8%AF%95/ from:Google浏览器 -->
+<!-- chatcell user:user2  link:https://inkss.cn/post/8fe38c87/ from:Firefox浏览器 -->
+<!-- chatcell user:user1 voice:https://down.ear0.com:3321/index/preview?soundid=35378&type=mp3&audio=sound.mp3&token=czovL2Rvd24uZWFyMC5jb206MzMyMS9pbmRleC9wcmV2aWV3P3NvdW5kaWQ9MzUzNzgmdHlwZT1tcDMmYXVkaW89c291bmQubXAz&sound=audio.mp3 -->
+<!-- chatcell user:user2  voice:https://img.tukuppt.com/newpreview_music/09/00/86/5c8957e520f937335.mp3 -->
+<!-- chatcell user:user1 video:https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov -->
+<!-- chatcell user:user1 file:https://raw.githubusercontent.com/HcGys/friends-rss-generator/refs/heads/main/vercel.json -->
+<!-- chatcell user:user2  file:https://raw.githubusercontent.com/HcGys/site-info-api/refs/heads/main/api/v1/index.js -->
+<!-- chatcell user:user2  file:https://inkss.cn/img/avatar.png -->
+
+{% endchat %}
+
+
+{% endFolding %}
 
 
 ## Frame
