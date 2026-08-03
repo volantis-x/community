@@ -117,7 +117,7 @@ node.js 版本过低，请升级至 v16.x 及以上版本！
 
 ## 友情链接页有啥变化？
 
-6.6: [友链标签](https://volantis.js.org/v6/tag-plugins/#friends-友链标签) & [Volantis 动态友链获重磅升级！](https://xaoxuu.com/blog/20250602/)
+6.6: [友链标签](https://volantis.js.org/v6/tag-plugins/#friends) & [Volantis 动态友链获重磅升级！](https://xaoxuu.com/blog/20250602/)
 
 
 5.0: [volantis-x/hexo-theme-volantis/discussions/734](https://github.com/volantis-x/hexo-theme-volantis/discussions/734)
@@ -125,6 +125,8 @@ node.js 版本过低，请升级至 v16.x 及以上版本！
 
 
 ## 如何正确渲染多行 MathJax 公式？
+
+[如何在Volantis主题上优雅地书写数学公式](/blogs/2025-10-25-latex/)
 
 [使用 pandoc 正确渲染多行 MathJax 公式](https://shiraha.cn/2021/use-pandoc-to-render-multiline-formulas-correctly/)
 
