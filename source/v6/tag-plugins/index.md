@@ -1612,6 +1612,19 @@ layout:flow 瀑布流布局，竖排，适合图片量大的时候使用（体�
 
 {% endTabs %}
 
+## md
+
+最后更新于 <u>5.0</u> 版本
+
+在局部渲染外部md文件。
+
+```md 示例写法
+{% md https://cdn.jsdelivr.net/gh/volantis-x/hexo-theme-volantis/README.md %}
+```
+
+{% folding md %}
+{% md https://cdn.jsdelivr.net/gh/volantis-x/hexo-theme-volantis/README.md %}
+{% endfolding %}
 
 
 ## site 网站卡片标签
