@@ -1612,6 +1612,50 @@ layout:flow 瀑布流布局，竖排，适合图片量大的时候使用（体�
 
 {% endTabs %}
 
+## albums
+
+最后更新于 <u>6.8.0</u> 版本
+
+专辑
+
+配置数据源：
+
+```yaml blog/source/_data/links/分组名.yml
+- title: 标题
+  url: https://
+  cover:
+```
+
+文章中插入方式：
+
+```md blog/source/_posts/xxx.md
+{% albums 分组名 %}
+```
+
+{% albums music %}
+
+## posters
+
+最后更新于 <u>6.8.0</u> 版本
+
+海报
+
+配置数据源：
+
+```yaml blog/source/_data/links/分组名.yml
+- title: 标题
+  url: https://
+  cover:
+```
+
+文章中插入方式：
+
+```md blog/source/_posts/xxx.md
+{% posters 分组名 %}
+```
+
+{% posters games %}
+
 ## md
 
 最后更新于 <u>5.0</u> 版本
