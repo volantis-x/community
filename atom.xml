@@ -299,15 +299,15 @@
     </author>
     <category term="进阶玩法" scheme="https://volantis.js.org/categories/%E8%BF%9B%E9%98%B6%E7%8E%A9%E6%B3%95/"/>
     <content>
-      <![CDATA[<div class="note alien-monster cyan"><p>统计一下目前使用的自定义字体及调用。</p></div><div class="note poo gray"><p>Volantis 主题可直接参考使用。</p></div><span id="more"></span>]]>
+      <![CDATA[<div class="note v5 alien-monster cyan"><p>统计一下目前使用的自定义字体及调用。</p></div><div class="note v5 poo gray"><p>Volantis 主题可直接参考使用。</p></div><span id="more"></span>]]>
     </content>
     <id>https://volantis.js.org/blogs/2021-09-02-inkss-font/</id>
     <link href="https://volantis.js.org/blogs/2021-09-02-inkss-font/"/>
     <published>2021-09-02T00:00:00.000Z</published>
     <summary>
-      <![CDATA[<div class="note alien-monster cyan"><p>统计一下目前使用的自定义字体及调用。</p></div>
+      <![CDATA[<div class="note v5 alien-monster cyan"><p>统计一下目前使用的自定义字体及调用。</p></div>
 
-<div class="note poo gray"><p>Volantis 主题可直接参考使用。</p></div>]]>
+<div class="note v5 poo gray"><p>Volantis 主题可直接参考使用。</p></div>]]>
     </summary>
     <title>网站自定义字体及推荐</title>
     <updated>2021-09-02T00:00:00.000Z</updated>
