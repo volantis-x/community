@@ -69,10 +69,7 @@ fetch(url)
 const tbody = document.querySelector('#'+id+' tbody');
 data.items.forEach((it) => {
 const tr = document.createElement('tr');
-tr.innerHTML = `
-<td><img nolazy src="${it.val}" alt="${it.key}"></td>
-<td>${it.key}</td>
-`;
+tr.innerHTML = `<td><img nolazy src="${it.val}" alt="${it.key}"></td><td>${it.key}</td>`;
 tbody.appendChild(tr);
 });
 }).catch(err => console.error('加载失败:', err));
