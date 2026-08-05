@@ -97,7 +97,7 @@ Volantis 6.6.0 之前的标签插件见：
 
 其中 `source` 可省略，默认为配置中的第一个 `source`（详见「引入表情包」部分）
 
-> 表情速查表：[Stellar内嵌blobcat小表情](https://weekdaycare.cn/posts/emoji-blob/)
+> 表情速查表：[表情速查](/v6/tag-plugins/emoji)
 
 <!-- tab 引入表情包 -->
 
