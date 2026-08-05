@@ -74,12 +74,12 @@ tbody.appendChild(tr);
 });
 }).catch(err => console.error('加载失败:', err));
 };
-const url1 = 'https://gcore.jsdelivr.net/gh/cdn-x/emoticons/artalk/blobcat.json';
-const url2 = 'https://gcore.jsdelivr.net/gh/cdn-x/emoticons/artalk/aru.json';
-const url3 = 'https://gcore.jsdelivr.net/gh/cdn-x/emoticons/artalk/qq.json';
-const url4 = 'https://gcore.jsdelivr.net/gh/cdn-x/emoticons/artalk/tieba.json';
-const url5 = 'https://gcore.jsdelivr.net/gh/cdn-x/emoticons/artalk/twemoji.json';
-const url6 = 'https://gcore.jsdelivr.net/gh/cdn-x/emoticons/artalk/weibo.json';
+var url1 = 'https://gcore.jsdelivr.net/gh/cdn-x/emoticons/artalk/blobcat.json';
+var url2 = 'https://gcore.jsdelivr.net/gh/cdn-x/emoticons/artalk/aru.json';
+var url3 = 'https://gcore.jsdelivr.net/gh/cdn-x/emoticons/artalk/qq.json';
+var url4 = 'https://gcore.jsdelivr.net/gh/cdn-x/emoticons/artalk/tieba.json';
+var url5 = 'https://gcore.jsdelivr.net/gh/cdn-x/emoticons/artalk/twemoji.json';
+var url6 = 'https://gcore.jsdelivr.net/gh/cdn-x/emoticons/artalk/weibo.json';
 
 show_emoji(url1,"Blobcat");
 show_emoji(url2,"Aru");
