@@ -326,15 +326,19 @@ const minify_css = () => (
 const minify_html = () => (
     gulp.src(['./public/**/*.html','!./public/{lib,lib/**}','!./public/{libs,libs/**}','!./public/{media,media/**}'])
         .pipe(htmlclean({
-      // 保护 SVG 相关属性
-      protect: /<\s*svg[\s\S]*?\/\s*svg\s*>/gi,
-    }))
+          // 保护 SVG 和 mathjax 相关属性
+          protect: /<gulp-ignore[\s\S]*?<\/gulp-ignore>|<mjx-container[\s\S]*?<\/mjx-container>|<svg[\s\S]*?<\/svg>/gi,
+        }))
         .pipe(htmlmin({
             removeComments: true,
             minifyJS: true,
             minifyCSS: true,
             minifyURLs: true,
-            ignoreCustomFragments: [/<svg[\s\S]*?<\/svg>/],  // 跳过SVG标签
+            ignoreCustomFragments: [
+              /<gulp-ignore[\s\S]*?<\/gulp-ignore>/,  // 跳过 gulp-ignore 标签
+              /<mjx-container[\s\S]*?<\/mjx-container>/,  // 跳过 MathJax 容器
+              /<svg[\s\S]*?<\/svg>/,  // 跳过 SVG 标签
+            ],
         }))
         .pipe(gulp.dest('./public'))
 )
