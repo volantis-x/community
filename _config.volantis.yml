@@ -343,10 +343,10 @@ plugins:
     # id: 4917530132 # vol red
     # id: 4917524698 # vol blue
     # id: 76244489 # vol white
-    # id: 5135845906 # for Volantis 3.0
-    id: 5062959861 # TOP 30
+    id: 5135845906 # for Volantis 3.0
+    #id: 5062959861 # TOP 30
   message:          # 音乐通知，播放、暂停、失败 时的图标
-    enable: true
+    enable: false
     icon:     # 默认图标，支持对图标添加颜色，可选值：see：/source/css/_plugins/message.styl
       default: fa-light fa-info-circle light-blue
       quection: fa-light fa-question-circle light-blue
@@ -365,6 +365,10 @@ plugins:
   gitter:
     room: hexo-theme-volantis/community
   scrollreveal:
+    enable: true
+  pace:
+    enable: false
+  nprogress:
     enable: true
 
 custom_css:
