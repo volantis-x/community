@@ -344,7 +344,8 @@ plugins:
     # id: 4917524698 # vol blue
     # id: 76244489 # vol white
     # id: 5135845906 # for Volantis 3.0
-    id: 5062959861 # TOP 30
+    # id: 5062959861 # TOP 30
+    id: 2411863840
 
   message:          # 音乐通知，播放、暂停、失败 时的图标
     enable: false
