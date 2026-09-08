@@ -375,7 +375,7 @@ plugins:
 
 custom_css:
   cursor:
-    enable: true
+    enable: false
   font_smoothing: true
   # sidebar:
   #   effect: [shadow] # [shadow, floatable, blur]
